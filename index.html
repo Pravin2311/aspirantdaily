@@ -56,6 +56,7 @@
   <!-- MAIN -->
   <main class="container">
     <h2 class="section-title">Choose Your Exam</h2>
+    
 
     <div class="exam-grid">
       <a href="quiz.html?exam=ssc" class="exam-card"><div><h3>SSC</h3><p>CGL, CHSL</p></div><span>📘</span></a>
@@ -75,26 +76,39 @@
 
   <!-- INSTALL SCRIPT -->
   <script>
-    let deferredPrompt;
-    const installBtn = document.getElementById("installBtn");
-    const installHint = document.getElementById("installHint");
+  let deferredPrompt;
+  const installBtn = document.getElementById("installBtn");
+  const installHint = document.getElementById("installHint");
 
+  // Detect if user is on iOS
+  const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+
+  // On iOS: always show hint, hide button (optional)
+  if (isIOS) {
+    installBtn.style.display = "none";
+    installHint.classList.remove("hidden");
+  } else {
+    // On Android/Desktop: use real install prompt
     window.addEventListener("beforeinstallprompt", (e) => {
       e.preventDefault();
       deferredPrompt = e;
+      // Optional: show button only when installable
+      installBtn.style.display = "block";
     });
 
     installBtn.addEventListener("click", async () => {
       if (deferredPrompt) {
         deferredPrompt.prompt();
-        await deferredPrompt.userChoice;
+        const { outcome } = await deferredPrompt.userChoice;
         deferredPrompt = null;
+        installBtn.style.display = "none"; // hide after install attempt
       } else {
-        // Likely iOS Safari
-        installHint.classList.remove("hidden");
+        // This should rarely happen on desktop
+        alert("App install is not supported in this browser.");
       }
     });
-  </script>
+  }
+</script>
 <script>
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
