@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="./styles.css">
 
   <!-- PWA -->
-  <link rel="manifest" href="/manifest.json">
+  <link rel="manifest" href="/manifest.webmanifest">
   <meta name="theme-color" content="#6C63FF">
   <link rel="apple-touch-icon" href="/icons/icon-192.png">
 
@@ -95,6 +95,14 @@
       }
     });
   </script>
-
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/service-worker.js')
+        .then(reg => console.log('SW registered:', reg.scope))
+        .catch(err => console.warn('SW failed:', err));
+    });
+  }
+</script>
 </body>
 </html>
