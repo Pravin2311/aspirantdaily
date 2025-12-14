@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exam Prep Booster – Daily 25 Questions</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body {
+      background: #f3f5ff;
+    }
+    .card-hover {
+      transition: transform .25s ease, box-shadow .25s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 20px rgba(108, 99, 255, 0.25);
+    }
+  </style>
+</head>
+
+<body class="min-h-screen flex flex-col items-center">
+
+  <header class="w-full text-center py-6 bg-white shadow-sm">
+    <h1 class="text-3xl font-extrabold text-[#6C63FF]">Exam Prep Booster</h1>
+    <p class="text-gray-600 mt-1">Free Daily 25 Questions • No Login • Auto Updated</p>
+  </header>
+
+  <section class="mt-10 w-full max-w-4xl px-6">
+    <h2 class="text-2xl font-bold text-gray-800 mb-5">Choose Your Exam</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+
+      <!-- SSC -->
+      <a href="quiz.html?exam=ssc" class="card-hover bg-white p-6 rounded-xl shadow-md flex items-center justify-between">
+        <div>
+          <h3 class="text-xl font-bold text-[#6C63FF]">SSC Exams</h3>
+          <p class="text-gray-600">CGL, CHSL, GD…</p>
+        </div>
+        <span class="text-3xl">📘</span>
+      </a>
+
+      <!-- Bank -->
+      <a href="quiz.html?exam=bank" class="card-hover bg-white p-6 rounded-xl shadow-md flex items-center justify-between">
+        <div>
+          <h3 class="text-xl font-bold text-[#6C63FF]">Banking</h3>
+          <p class="text-gray-600">IBPS, SBI, Clerk, PO</p>
+        </div>
+        <span class="text-3xl">🏦</span>
+      </a>
+
+      <!-- UPSC -->
+      <a href="quiz.html?exam=upsc" class="card-hover bg-white p-6 rounded-xl shadow-md flex items-center justify-between">
+        <div>
+          <h3 class="text-xl font-bold text-[#6C63FF]">UPSC Prelims</h3>
+          <p class="text-gray-600">GS Paper 1</p>
+        </div>
+        <span class="text-3xl">🇮🇳</span>
+      </a>
+
+      <!-- State PSC -->
+      <a href="quiz.html?exam=psc" class="card-hover bg-white p-6 rounded-xl shadow-md flex items-center justify-between">
+        <div>
+          <h3 class="text-xl font-bold text-[#6C63FF]">State PSC</h3>
+          <p class="text-gray-600">All states</p>
+        </div>
+        <span class="text-3xl">📜</span>
+      </a>
+
+      <!-- RRB -->
+      <a href="quiz.html?exam=rrb" class="card-hover bg-white p-6 rounded-xl shadow-md flex items-center justify-between">
+        <div>
+          <h3 class="text-xl font-bold text-[#6C63FF]">RRB Railway</h3>
+          <p class="text-gray-600">ALP, NTPC, Group D</p>
+        </div>
+        <span class="text-3xl">🚆</span>
+      </a>
+
+      <!-- CUET -->
+      <a href="quiz.html?exam=cuet" class="card-hover bg-white p-6 rounded-xl shadow-md flex items-center justify-between">
+        <div>
+          <h3 class="text-xl font-bold text-[#6C63FF]">CUET (General)</h3>
+          <p class="text-gray-600">Aptitude + GK</p>
+        </div>
+        <span class="text-3xl">🎓</span>
+      </a>
+
+      <!-- Mixed Daily Challenge -->
+      <a href="quiz.html?exam=mixed" class="card-hover bg-white p-6 rounded-xl shadow-md flex items-center justify-between">
+        <div>
+          <h3 class="text-xl font-bold text-[#00C9A7]">Daily Mixed 25</h3>
+          <p class="text-gray-600">Random from all exams</p>
+        </div>
+        <span class="text-3xl">🔥</span>
+      </a>
+
+    </div>
+  </section>
+
+  <footer class="mt-12 mb-6 text-gray-500">
+    © 2025 Exam Prep Booster
+  </footer>
+
+</body>
+</html>
