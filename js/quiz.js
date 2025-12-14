@@ -1,6 +1,6 @@
 // ===============================
-// quiz.js – FINAL PRODUCTION VERSION
-// Uses /api/exam proxy via Vercel
+// quiz.js – FINAL VERIFIED VERSION
+// Cloudflare Worker API SAFE MODE
 // ===============================
 
 // --------------------------------
@@ -29,11 +29,11 @@ let userAnswers = [];
 loadQuestions();
 
 // --------------------------------
-// Load questions from API (proxied through Vercel)
+// Load questions from Worker API
 // --------------------------------
 async function loadQuestions() {
-  // ✅ Use relative path for Vercel proxy
-  const apiUrl = `/api/exam?exam=${encodeURIComponent(exam)}`;
+  // ✅ FIXED: Removed extra spaces in URL
+  const apiUrl = `https://exam-prep-generator.mydomain2311.workers.dev/?exam=${exam}`;
   
   console.log("Fetching from URL:", apiUrl);
 
@@ -45,6 +45,8 @@ async function loadQuestions() {
 
     const rawText = await res.text();
     console.log("RAW API RESPONSE:", rawText);
+
+    // Log status for clarity
     console.log("Response status:", res.status);
 
     if (!res.ok) {
@@ -53,11 +55,7 @@ async function loadQuestions() {
         const errorJson = JSON.parse(rawText);
         throw new Error(`API error ${res.status}: ${errorJson.error || 'Unknown error'}`);
       } catch {
-        // Check for firewall block (Zscaler, etc.)
-        if (rawText.includes("Zscaler") || rawText.includes("<html>")) {
-          throw new Error("Network firewall blocked the request. Please try on a different network.");
-        }
-        throw new Error(`API error ${res.status}: ${rawText.substring(0, 100)}`);
+        throw new Error(`API error ${res.status}: ${rawText || 'No response body'}`);
       }
     }
 
@@ -86,10 +84,11 @@ async function loadQuestions() {
   } catch (err) {
     console.error("Quiz load failed:", err);
 
+    // ✅ Better user feedback
     alert(
       "Unable to load today's quiz.\n\n" +
       "Error: " + err.message + "\n\n" +
-      "Tip: Try again later or use a different network."
+      "Please try again later or check your internet connection."
     );
   }
 }
@@ -182,20 +181,4 @@ function submitQuiz() {
   );
 
   window.location.href = `result.html?data=${encoded}`;
-}
-
-function confirmExit() {
-  // If quiz hasn't started yet
-  if (!questions.length || userAnswers.every(a => a === null)) {
-    window.location.href = "index.html";
-    return;
-  }
-
-  const sure = confirm(
-    "If you go back, your current progress will be lost.\n\nDo you want to change exam?"
-  );
-
-  if (sure) {
-    window.location.href = "index.html";
-  }
 }
