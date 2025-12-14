@@ -406,3 +406,113 @@ body {
 .hidden {
   display: none;
 }
+
+.materials-section {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.section-desc {
+  text-align: center;
+  color: #64748b;
+  margin-bottom: 1.5rem;
+}
+
+.materials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.material-card {
+  display: flex;
+  gap: 1rem;
+  padding: 1.25rem;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.material-card:hover {
+  background: #f1f5f9;
+  transform: translateY(-2px);
+}
+
+.material-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.material-card h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0 0 0.25rem;
+}
+
+.material-card p {
+  margin: 0;
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+.materials-note {
+  text-align: center;
+  color: #64748b;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+.announcement-bar {
+  background: linear-gradient(90deg, #6C63FF, #8A7CF0, #6C63FF);
+  color: white;
+  padding: 0.5rem 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.announcement-bar span {
+  display: inline-block;
+  padding: 0 8px;
+}
+
+.announcement-email {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: underline;
+  padding: 0 4px;
+}
+
+.announcement-email:hover {
+  color: #f3f5ff;
+}
+
+/* Optional: Add subtle animation for smooth scroll */
+.announcement-bar span:first-child {
+  animation: scrollText 25s linear infinite;
+}
+
+@keyframes scrollText {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+.announcement-close {
+  background: none;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-left: 12px;
+  padding: 0 4px;
+}
