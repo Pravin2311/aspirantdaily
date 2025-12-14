@@ -3,105 +3,87 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aspirant Daily – Daily 25 Questions</title>
+  <title>Aspirant Daily – Daily Practice for Competitive Exams</title>
 
-  <!-- Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <style>
-    body {
-      background: #f3f5ff;
-    }
-    .card-hover {
-      transition: transform .25s ease, box-shadow .25s ease;
-    }
-    .card-hover:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 10px 20px rgba(108, 99, 255, 0.25);
-    }
-  </style>
+  <link rel="stylesheet" href="./styles.css">
 </head>
 
-<body class="min-h-screen flex flex-col items-center">
+<body>
 
-  <header class="w-full text-center py-6 bg-white shadow-sm">
-    <h1 class="text-3xl font-extrabold text-[#6C63FF]">Aspirant Daily</h1>
-    <p class="text-gray-600 mt-1">Free Daily 25 Questions • No Login • Auto Updated</p>
+  <!-- HEADER -->
+  <header class="site-header">
+    <h1>Aspirant Daily</h1>
+    <p>Free Daily 25 Questions • No Login • Auto Updated</p>
   </header>
 
-  <section class="mt-10 w-full max-w-4xl px-6">
-    <h2 class="text-2xl font-bold text-gray-800 mb-5">Choose Your Exam</h2>
+  <!-- MAIN -->
+  <main class="container">
+    <h2 class="section-title">Choose Your Exam</h2>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+    <div class="exam-grid">
 
-      <!-- SSC -->
-      <a href="quiz.html?exam=ssc" class="card-hover bg-white p-6 rounded-xl shadow-md flex items-center justify-between">
+      <a href="quiz.html?exam=ssc" class="exam-card">
         <div>
-          <h3 class="text-xl font-bold text-[#6C63FF]">SSC Exams</h3>
-          <p class="text-gray-600">CGL, CHSL, GD…</p>
+          <h3>SSC Exams</h3>
+          <p>CGL, CHSL, GD</p>
         </div>
-        <span class="text-3xl">📘</span>
+        <span>📘</span>
       </a>
 
-      <!-- Bank -->
-      <a href="quiz.html?exam=bank" class="card-hover bg-white p-6 rounded-xl shadow-md flex items-center justify-between">
+      <a href="quiz.html?exam=bank" class="exam-card">
         <div>
-          <h3 class="text-xl font-bold text-[#6C63FF]">Banking</h3>
-          <p class="text-gray-600">IBPS, SBI, Clerk, PO</p>
+          <h3>Banking</h3>
+          <p>IBPS, SBI, Clerk, PO</p>
         </div>
-        <span class="text-3xl">🏦</span>
+        <span>🏦</span>
       </a>
 
-      <!-- UPSC -->
-      <a href="quiz.html?exam=upsc" class="card-hover bg-white p-6 rounded-xl shadow-md flex items-center justify-between">
+      <a href="quiz.html?exam=upsc" class="exam-card">
         <div>
-          <h3 class="text-xl font-bold text-[#6C63FF]">UPSC Prelims</h3>
-          <p class="text-gray-600">GS Paper 1</p>
+          <h3>UPSC Prelims</h3>
+          <p>GS Paper 1</p>
         </div>
-        <span class="text-3xl">🇮🇳</span>
+        <span>🇮🇳</span>
       </a>
 
-      <!-- State PSC -->
-      <a href="quiz.html?exam=psc" class="card-hover bg-white p-6 rounded-xl shadow-md flex items-center justify-between">
+      <a href="quiz.html?exam=psc" class="exam-card">
         <div>
-          <h3 class="text-xl font-bold text-[#6C63FF]">State PSC</h3>
-          <p class="text-gray-600">All states</p>
+          <h3>State PSC</h3>
+          <p>All States</p>
         </div>
-        <span class="text-3xl">📜</span>
+        <span>📜</span>
       </a>
 
-      <!-- RRB -->
-      <a href="quiz.html?exam=rrb" class="card-hover bg-white p-6 rounded-xl shadow-md flex items-center justify-between">
+      <a href="quiz.html?exam=rrb" class="exam-card">
         <div>
-          <h3 class="text-xl font-bold text-[#6C63FF]">RRB Railway</h3>
-          <p class="text-gray-600">ALP, NTPC, Group D</p>
+          <h3>RRB Railway</h3>
+          <p>ALP, NTPC, Group D</p>
         </div>
-        <span class="text-3xl">🚆</span>
+        <span>🚆</span>
       </a>
 
-      <!-- CUET -->
-      <a href="quiz.html?exam=cuet" class="card-hover bg-white p-6 rounded-xl shadow-md flex items-center justify-between">
+      <a href="quiz.html?exam=cuet" class="exam-card">
         <div>
-          <h3 class="text-xl font-bold text-[#6C63FF]">CUET (General)</h3>
-          <p class="text-gray-600">Aptitude + GK</p>
+          <h3>CUET (General)</h3>
+          <p>Aptitude + GK</p>
         </div>
-        <span class="text-3xl">🎓</span>
+        <span>🎓</span>
       </a>
 
-      <!-- Mixed Daily Challenge -->
-      <a href="quiz.html?exam=mixed" class="card-hover bg-white p-6 rounded-xl shadow-md flex items-center justify-between">
+      <a href="quiz.html?exam=mixed" class="exam-card highlight">
         <div>
-          <h3 class="text-xl font-bold text-[#00C9A7]">Daily Mixed 25</h3>
-          <p class="text-gray-600">Random from all exams</p>
+          <h3>Daily Mixed 25</h3>
+          <p>All Exams Combined</p>
         </div>
-        <span class="text-3xl">🔥</span>
+        <span>🔥</span>
       </a>
 
     </div>
-  </section>
+  </main>
 
-  <footer class="mt-12 mb-6 text-gray-500">
-    © 2025 Aspirant Daily
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    © 2025 Aspirant Daily • Made for Indian Aspirants 🇮🇳
   </footer>
 
 </body>

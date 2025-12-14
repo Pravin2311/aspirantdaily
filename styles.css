@@ -1,0 +1,386 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, sans-serif;
+}
+
+body {
+  background: #f4f6fb;
+  color: #1c1d1f;
+}
+
+/* HEADER */
+.site-header {
+  background: white;
+  text-align: center;
+  padding: 24px 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.site-header h1 {
+  color: #6c63ff;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.site-header p {
+  margin-top: 6px;
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1000px;
+  margin: 32px auto;
+  padding: 0 16px;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* GRID */
+.exam-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+/* CARD */
+.exam-card {
+  background: white;
+  border-radius: 14px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.exam-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(108,99,255,0.25);
+}
+
+.exam-card h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #6c63ff;
+}
+
+.exam-card p {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+.exam-card span {
+  font-size: 2rem;
+}
+
+/* HIGHLIGHT */
+.exam-card.highlight h3 {
+  color: #00b894;
+}
+
+/* FOOTER */
+.site-footer {
+  text-align: center;
+  margin: 40px 0 20px;
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
+
+/* ============================= */
+/* QUIZ PAGE STYLES */
+/* ============================= */
+
+.quiz-card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.08);
+}
+
+.hidden {
+  display: none;
+}
+
+.question-count {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.question-text {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+/* OPTIONS */
+.options-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.option {
+  background: #f5f6ff;
+  border-radius: 10px;
+  padding: 14px 16px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.option:hover {
+  background: #ebe9ff;
+}
+
+.option.selected {
+  border-color: #6c63ff;
+  background: #e9e6ff;
+}
+
+/* NAVIGATION */
+.quiz-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 28px;
+}
+
+/* BUTTONS */
+.btn {
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.btn.primary {
+  background: #6c63ff;
+  color: white;
+}
+
+.btn.primary:hover {
+  background: #584fe0;
+}
+
+.btn.secondary {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+.btn.secondary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* LOADING */
+.loading-box {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #374151;
+  margin-top: 40px;
+}
+
+/* ============================= */
+/* RESULT PAGE STYLES */
+/* ============================= */
+
+.container.wide {
+  max-width: 900px;
+}
+
+/* RESULT CARDS */
+.result-card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.08);
+}
+
+/* SCORE CARD */
+.score-card {
+  text-align: center;
+}
+
+.score-text {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #6c63ff;
+}
+
+.score-stats {
+  margin-top: 8px;
+  color: #6b7280;
+  font-size: 1rem;
+}
+
+/* SECTION TITLES */
+.section-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #111827;
+}
+
+/* SUBJECT BREAKDOWN */
+.subject-list > div {
+  display: flex;
+  justify-content: space-between;
+  background: #f5f6ff;
+  padding: 12px 14px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+/* ANSWER REVIEW */
+.answers-list > div {
+  background: #f9fafb;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 14px;
+  border-left: 5px solid #6c63ff;
+}
+
+.answers-list h4 {
+  font-size: 1rem;
+  margin-bottom: 6px;
+}
+
+.answers-list p {
+  font-size: 0.95rem;
+  color: #374151;
+}
+
+/* BUTTON VARIANTS */
+.btn.success {
+  background: #00c9a7;
+  color: white;
+  margin-top: 16px;
+}
+
+.btn.success:hover {
+  background: #00b096;
+}
+
+.btn.large {
+  padding: 14px 28px;
+  font-size: 1rem;
+}
+
+/* CTA */
+.cta-center {
+  text-align: center;
+  margin-top: 32px;
+}
+
+/* ============================= */
+/* QUIZ HEADER */
+/* ============================= */
+
+.quiz-header {
+  position: sticky;
+  top: 0;
+  background: white;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  z-index: 10;
+}
+
+.quiz-title {
+  flex: 1;
+  text-align: center;
+}
+
+.quiz-title h1 {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #6c63ff;
+}
+
+.quiz-title p {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #6c63ff;
+  cursor: pointer;
+}
+
+/* ============================= */
+/* EXIT MODAL */
+/* ============================= */
+
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+}
+
+.modal-box {
+  position: relative;
+  max-width: 320px;
+  margin: 25vh auto;
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.modal-box h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.modal-box p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 16px;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.btn.danger {
+  background: #ef4444;
+  color: white;
+}

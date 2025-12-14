@@ -3,63 +3,54 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Results - Aspirant Daily</title>
+  <title>Your Results – Aspirant Daily</title>
 
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <style>
-    body { background: #f3f5ff; }
-    .expand-card {
-      transition: 0.2s ease;
-    }
-    .expand-card:hover {
-      background: #f0efff;
-    }
-  </style>
+  <link rel="stylesheet" href="./styles.css">
 </head>
 
-<body class="min-h-screen flex flex-col items-center">
+<body>
 
-  <header class="w-full text-center py-5 bg-white shadow-sm">
-    <h1 class="text-2xl font-extrabold text-[#6C63FF]">Your Results</h1>
+  <!-- HEADER -->
+  <header class="site-header">
+    <h1>Your Results</h1>
   </header>
 
-  <main class="w-full max-w-3xl p-6">
+  <!-- MAIN -->
+  <main class="container wide">
 
     <!-- SCORE SUMMARY -->
-    <div class="bg-white p-6 rounded-xl shadow-md text-center mb-6">
-      <h2 class="text-3xl font-extrabold text-[#6C63FF]" id="scoreText"></h2>
+    <section class="result-card score-card">
+      <h2 id="scoreText" class="score-text"></h2>
+      <p id="statsText" class="score-stats"></p>
 
-      <p class="mt-2 text-gray-600" id="statsText"></p>
-
-      <button onclick="shareScore()"
-        class="mt-4 px-4 py-2 bg-[#00C9A7] text-white font-semibold rounded-lg">
+      <button class="btn success" onclick="shareScore()">
         Share My Score
       </button>
-    </div>
+    </section>
 
     <!-- SUBJECT BREAKDOWN -->
-    <div id="subjectBreakdown" class="bg-white p-6 rounded-xl shadow-md mb-6">
-      <h3 class="text-xl font-bold text-gray-800 mb-4">Subject Breakdown</h3>
-      <div id="subjectList" class="space-y-3"></div>
-    </div>
+    <section id="subjectBreakdown" class="result-card">
+      <h3 class="section-title">Subject Breakdown</h3>
+      <div id="subjectList" class="subject-list"></div>
+    </section>
 
-    <!-- EXPLANATIONS -->
-    <div class="bg-white p-6 rounded-xl shadow-md">
-      <h3 class="text-xl font-bold text-gray-800 mb-4">Review Answers</h3>
-      
-      <div id="answersContainer" class="space-y-4"></div>
-    </div>
+    <!-- ANSWER REVIEW -->
+    <section class="result-card">
+      <h3 class="section-title">Review Answers</h3>
+      <div id="answersContainer" class="answers-list"></div>
+    </section>
 
-    <div class="text-center mt-8">
-      <a href="index.html"
-        class="px-6 py-3 bg-[#6C63FF] text-white rounded-xl font-bold">
-        Try Again Tomorrow → 
+    <!-- CTA -->
+    <div class="cta-center">
+      <a href="index.html" class="btn primary large">
+        Try Again Tomorrow →
       </a>
     </div>
+
   </main>
 
-  <footer class="mt-auto py-6 text-gray-500">
+  <!-- FOOTER -->
+  <footer class="site-footer">
     © 2025 Aspirant Daily
   </footer>
 
