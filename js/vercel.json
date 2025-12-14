@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/exam",
+      "destination": "https://exam-prep-generator.mydomain2311.workers.dev"
+    },
+    {
+      "source": "/api/exam/:path*",
+      "destination": "https://exam-prep-generator.mydomain2311.workers.dev/:path*"
+    }
+  ]
+}
