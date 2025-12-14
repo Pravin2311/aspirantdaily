@@ -3,70 +3,54 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <!-- Primary Meta Tags -->
-<title>Daily MCQ Practice for SSC, Bank, UPSC & More | AspirantDaily</title>
-<meta name="title" content="Daily MCQ Practice for SSC, Bank, UPSC & More | AspirantDaily">
-<meta name="description" content="Free daily multiple-choice questions (MCQs) for Indian competitive exams like SSC, Bank, UPSC, RRB, CUET, PSC. Practice 5 new questions every day with instant results.">
+  <title>Daily MCQ Practice for SSC, Bank, UPSC & More | AspirantDaily</title>
+  <meta name="description" content="Free daily MCQs for SSC, Bank, UPSC, RRB, CUET & PSC exams. No login. Instant results." />
 
-<!-- Open Graph / Facebook -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://aspirantdaily.com/">
-<meta property="og:title" content="Daily MCQ Practice for SSC, Bank, UPSC & More | AspirantDaily">
-<meta property="og:description" content="Free daily multiple-choice questions (MCQs) for Indian competitive exams like SSC, Bank, UPSC, RRB, CUET, PSC. Practice 5 new questions every day with instant results.">
-<meta property="og:image" content="https://aspirantdaily.com/og-image.jpg">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aspirantdaily.com/">
+  <meta property="og:title" content="Daily MCQ Practice | AspirantDaily">
+  <meta property="og:description" content="Free daily MCQs for Indian competitive exams.">
+  <meta property="og:image" content="https://aspirantdaily.com/og-image.jpg">
 
-<!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://aspirantdaily.com/">
-<meta property="twitter:title" content="Daily MCQ Practice for SSC, Bank, UPSC & More | AspirantDaily">
-<meta property="twitter:description" content="Free daily multiple-choice questions (MCQs) for Indian competitive exams like SSC, Bank, UPSC, RRB, CUET, PSC. Practice 5 new questions every day with instant results.">
-<meta property="twitter:image" content="https://aspirantdaily.com/og-image.jpg">
+  <!-- Canonical -->
+  <link rel="canonical" href="https://aspirantdaily.com/">
 
-<!-- Canonical URL -->
-<link rel="canonical" href="https://aspirantdaily.com/">
-
+  <!-- Styles -->
   <link rel="stylesheet" href="./styles.css">
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebApplication",
-  "name": "AspirantDaily",
-  "url": "https://aspirantdaily.com",
-  "description": "Free daily MCQ practice platform for Indian competitive exams including SSC, Bank, UPSC, RRB, CUET, and State PSCs.",
-  "applicationCategory": "Education",
-  "operatingSystem": "Web",
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "INR",
-    "availability": "https://schema.org/InStock"
-  },
-  "creator": {
-    "@type": "Organization",
-    "name": "AspirantDaily"
-  },
-  "keywords": "ssc mcq, bank exam questions, upsc daily quiz, rrb ntpc practice, cuet mock test, psc questions, free daily mcq, indian competitive exams"
-}
-</script>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-51XLJE4TVH"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- PWA -->
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#6C63FF">
+  <link rel="apple-touch-icon" href="/icons/icon-192.png">
 
-  gtag('config', 'G-51XLJE4TVH');
-</script>
-
+  <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-51XLJE4TVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-51XLJE4TVH');
+  </script>
 </head>
 
 <body>
 
   <!-- HEADER -->
   <header class="site-header">
-    <h1>Aspirant Daily</h1>
-    <p>Free Daily 25 Questions • No Login • Auto Updated</p>
+    <h1 class="brand">Aspirant Daily</h1>
+    <p class="tagline">Free Daily 25 Questions • No Login • Auto Updated</p>
+
+    <!-- INSTALL BUTTON (always visible) -->
+    <button id="installBtn" class="install-btn">
+      📲 Download App
+    </button>
+
+    <p id="installHint" class="install-hint hidden">
+      On iPhone: Tap <strong>Share</strong> → <strong>Add to Home Screen</strong>
+    </p>
   </header>
 
   <!-- MAIN -->
@@ -74,63 +58,13 @@
     <h2 class="section-title">Choose Your Exam</h2>
 
     <div class="exam-grid">
-
-      <a href="quiz.html?exam=ssc" class="exam-card">
-        <div>
-          <h3>SSC Exams</h3>
-          <p>CGL, CHSL, GD</p>
-        </div>
-        <span>📘</span>
-      </a>
-
-      <a href="quiz.html?exam=bank" class="exam-card">
-        <div>
-          <h3>Banking</h3>
-          <p>IBPS, SBI, Clerk, PO</p>
-        </div>
-        <span>🏦</span>
-      </a>
-
-      <a href="quiz.html?exam=upsc" class="exam-card">
-        <div>
-          <h3>UPSC Prelims</h3>
-          <p>GS Paper 1</p>
-        </div>
-        <span>🇮🇳</span>
-      </a>
-
-      <a href="quiz.html?exam=psc" class="exam-card">
-        <div>
-          <h3>State PSC</h3>
-          <p>All States</p>
-        </div>
-        <span>📜</span>
-      </a>
-
-      <a href="quiz.html?exam=rrb" class="exam-card">
-        <div>
-          <h3>RRB Railway</h3>
-          <p>ALP, NTPC, Group D</p>
-        </div>
-        <span>🚆</span>
-      </a>
-
-      <a href="quiz.html?exam=cuet" class="exam-card">
-        <div>
-          <h3>CUET (General)</h3>
-          <p>Aptitude + GK</p>
-        </div>
-        <span>🎓</span>
-      </a>
-
-      <a href="quiz.html?exam=mixed" class="exam-card highlight">
-        <div>
-          <h3>Daily Mixed 25</h3>
-          <p>All Exams Combined</p>
-        </div>
-        <span>🔥</span>
-      </a>
-
+      <a href="quiz.html?exam=ssc" class="exam-card"><div><h3>SSC</h3><p>CGL, CHSL</p></div><span>📘</span></a>
+      <a href="quiz.html?exam=bank" class="exam-card"><div><h3>Bank</h3><p>IBPS, SBI</p></div><span>🏦</span></a>
+      <a href="quiz.html?exam=upsc" class="exam-card"><div><h3>UPSC</h3><p>Prelims</p></div><span>🇮🇳</span></a>
+      <a href="quiz.html?exam=psc" class="exam-card"><div><h3>PSC</h3><p>States</p></div><span>📜</span></a>
+      <a href="quiz.html?exam=rrb" class="exam-card"><div><h3>RRB</h3><p>Railway</p></div><span>🚆</span></a>
+      <a href="quiz.html?exam=cuet" class="exam-card"><div><h3>CUET</h3><p>General</p></div><span>🎓</span></a>
+      <a href="quiz.html?exam=mixed" class="exam-card highlight"><div><h3>Daily Mixed</h3><p>All Exams</p></div><span>🔥</span></a>
     </div>
   </main>
 
@@ -138,6 +72,29 @@
   <footer class="site-footer">
     © 2025 Aspirant Daily • Made for Indian Aspirants 🇮🇳
   </footer>
+
+  <!-- INSTALL SCRIPT -->
+  <script>
+    let deferredPrompt;
+    const installBtn = document.getElementById("installBtn");
+    const installHint = document.getElementById("installHint");
+
+    window.addEventListener("beforeinstallprompt", (e) => {
+      e.preventDefault();
+      deferredPrompt = e;
+    });
+
+    installBtn.addEventListener("click", async () => {
+      if (deferredPrompt) {
+        deferredPrompt.prompt();
+        await deferredPrompt.userChoice;
+        deferredPrompt = null;
+      } else {
+        // Likely iOS Safari
+        installHint.classList.remove("hidden");
+      }
+    });
+  </script>
 
 </body>
 </html>

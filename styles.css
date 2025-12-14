@@ -384,3 +384,25 @@ body {
   background: #ef4444;
   color: white;
 }
+
+.install-btn {
+  margin: 20px auto;
+  padding: 12px 22px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background: #6C63FF;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  display: block;
+  box-shadow: 0 6px 14px rgba(108, 99, 255, 0.3);
+}
+
+.install-btn:hover {
+  background: #5a52e0;
+}
+
+.hidden {
+  display: none;
+}
