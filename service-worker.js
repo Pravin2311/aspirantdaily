@@ -1,19 +1,20 @@
-const CACHE_NAME = "aspirant-daily-v2"; // increment version to force update
-const OFFLINE_PAGES = ["/", "/index.html", "/quiz.html", "/result.html"];
+const CACHE_NAME = "aspirant-daily-v3"; // bump version after fix
+
 const ASSETS_TO_CACHE = [
   "/",
   "/index.html",
   "/quiz.html",
   "/result.html",
-  "/styles.css",     // ✅ matches your file
-  "/js/quiz.js",     // ✅ your JS is in /js/
+  "/styles.css",
+  "/js/quiz.js",
   "/js/result.js",
   "/manifest.webmanifest"
 ];
+
 self.addEventListener("install", (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
-      return cache.addAll([...OFFLINE_PAGES, ...STATIC_ASSETS]).catch(err => {
+      return cache.addAll(ASSETS_TO_CACHE).catch(err => {
         console.warn("Cache addAll failed:", err);
       });
     })
@@ -36,35 +37,29 @@ self.addEventListener("activate", (event) => {
   self.clients.claim();
 });
 
-// Smart fetch handler
 self.addEventListener("fetch", (event) => {
   const url = new URL(event.request.url);
 
-  // 1. Ignore non-GET requests & non-HTTP(S)
-  if (event.request.method !== "GET" || !url.origin.includes("aspirantdaily.com")) {
+  // Skip non-GET or cross-origin requests
+  if (event.request.method !== "GET" || url.origin !== self.location.origin) {
     return;
   }
 
-  // 2. Bypass API calls — always fetch fresh
+  // Bypass API calls
   if (url.pathname.startsWith("/api/")) {
     return;
   }
 
-  // 3. For HTML pages with query params (e.g., /quiz.html?exam=ssc)
-  // → Serve shell (/quiz.html) from cache, let JS fetch fresh data
+  // Serve HTML shells from cache (ignore query params)
   if (url.pathname.endsWith(".html")) {
     event.respondWith(
-      caches.match(url.pathname).then((response) => {
-        return response || fetch(event.request);
-      })
+      caches.match(url.pathname).then(response => response || fetch(event.request))
     );
     return;
   }
 
-  // 4. Default: cache-first for static assets
+  // Cache-first for everything else
   event.respondWith(
-    caches.match(event.request).then((response) => {
-      return response || fetch(event.request);
-    })
+    caches.match(event.request).then(response => response || fetch(event.request))
   );
 });
