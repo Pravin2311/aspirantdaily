@@ -72,7 +72,9 @@ function prevQuestion() {
 }
 
 function submitQuiz() {
-  localStorage.setItem("examData", JSON.stringify({ questions }));
-  localStorage.setItem("userAnswers", JSON.stringify(userAnswers));
+  // 🔒 Use sessionStorage (stable across navigation)
+  sessionStorage.setItem("examData", JSON.stringify({ questions }));
+  sessionStorage.setItem("userAnswers", JSON.stringify(userAnswers));
+
   window.location.href = "result.html";
 }
