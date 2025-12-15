@@ -497,15 +497,45 @@ body {
   color: #f3f5ff;
 }
 
-/* Optional: Add subtle animation for smooth scroll */
-.announcement-bar span:first-child {
-  animation: scrollText 25s linear infinite;
+/* SCROLLING ANNOUNCEMENT BAR */
+.announcement-bar {
+  background: linear-gradient(90deg, #6C63FF, #8A7CF0, #6C63FF);
+  color: white;
+  padding: 0.5rem 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-@keyframes scrollText {
-  0% { transform: translateX(100%); }
-  100% { transform: translateX(-100%); }
+.announcement-bar > * {
+  flex-shrink: 0;
 }
+
+.announcement-bar span,
+.announcement-bar a,
+.announcement-bar button {
+  display: inline-block;
+  margin: 0 6px;
+}
+
+.announcement-email {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.announcement-email:hover {
+  color: #f3f5ff;
+}
+
 .announcement-close {
   background: none;
   border: none;
@@ -513,6 +543,18 @@ body {
   font-weight: bold;
   font-size: 1.2rem;
   cursor: pointer;
-  margin-left: 12px;
   padding: 0 4px;
+  margin-left: auto;
+}
+
+/* 👇 THIS IS THE MISSING PART: SMOOTH SCROLLING */
+@keyframes scrollText {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.announcement-content {
+  display: inline-block;
+  min-width: 100%;
+  animation: scrollText 40s linear infinite;
 }

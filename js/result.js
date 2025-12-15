@@ -1,105 +1,98 @@
-// Read encoded data from URL
-const urlParams = new URLSearchParams(window.location.search);
-const rawData = urlParams.get("data");
+// ==========================================
+// RESULT PAGE LOGIC – FINAL FIXED VERSION
+// Works with new generator.js (25 questions)
+// ==========================================
 
-if (!rawData) {
-  document.body.innerHTML = "<h2 class='text-center mt-20 text-2xl'>No data found.</h2>";
-}
+// Expected storage format:
+// localStorage.setItem("examData", JSON.stringify({ questions: [...] }));
+// localStorage.setItem("userAnswers", JSON.stringify({ 0: "Option A", ... }));
 
-const { questions, userAnswers } = JSON.parse(decodeURIComponent(rawData));
+document.addEventListener("DOMContentLoaded", () => {
+  const examData = JSON.parse(localStorage.getItem("examData"));
+  const userAnswers = JSON.parse(localStorage.getItem("userAnswers")) || {};
 
-let correctCount = 0;
-let wrongCount = 0;
-
-// Subject breakdown
-let subjectMap = {};
-
-// Calculate results
-questions.forEach((q, i) => {
-  const isCorrect = q.options[userAnswers[i]] === q.answer;
-
-  if (!subjectMap[q.subject]) {
-    subjectMap[q.subject] = { correct: 0, total: 0 };
+  if (!examData || !Array.isArray(examData.questions)) {
+    document.getElementById("scoreText").innerText =
+      "Result data not found.";
+    return;
   }
 
-  subjectMap[q.subject].total++;
+  const questions = examData.questions;
+  const totalQuestions = questions.length;
 
-  if (isCorrect) {
-    correctCount++;
-    subjectMap[q.subject].correct++;
-  } else {
-    wrongCount++;
-  }
-});
+  let correct = 0;
+  let attempted = 0;
+  let subjectStats = {};
 
-// Update score UI
-document.getElementById("scoreText").innerText =
-  `Score: ${correctCount} / ${questions.length}`;
+  const answersContainer = document.getElementById("answersContainer");
 
-document.getElementById("statsText").innerText =
-  `${correctCount} correct • ${wrongCount} incorrect`;
+  questions.forEach((q, index) => {
+    const userAnswer = (userAnswers[index] || "").trim();
+    const correctAnswer = (q.answer || "").trim();
 
-// Subject Breakdown UI
-const subjectList = document.getElementById("subjectList");
+    if (userAnswer) attempted++;
 
-Object.keys(subjectMap).forEach(sub => {
-  const entry = subjectMap[sub];
-  const percent = Math.round((entry.correct / entry.total) * 100);
+    const isCorrect = userAnswer === correctAnswer;
+    if (isCorrect) correct++;
 
-  const row = document.createElement("div");
-  row.innerHTML = `
-    <p class="font-semibold text-gray-700">${sub}</p>
-    <div class="w-full bg-gray-200 rounded-full h-3">
-      <div class="h-3 rounded-full" 
-           style="width:${percent}%; background:#6C63FF;"></div>
-    </div>
-    <p class="text-sm text-gray-500">${entry.correct} / ${entry.total} correct</p>
-  `;
-  subjectList.appendChild(row);
-});
+    // Subject stats
+    const subject = q.subject || "General";
+    if (!subjectStats[subject]) {
+      subjectStats[subject] = { correct: 0, total: 0 };
+    }
+    subjectStats[subject].total++;
+    if (isCorrect) subjectStats[subject].correct++;
 
-// Build expandable answers list
-const container = document.getElementById("answersContainer");
+    // ---- Answer Review UI ----
+    const div = document.createElement("div");
+    div.className = "answer-item";
 
-questions.forEach((q, i) => {
-  const userAns = q.options[userAnswers[i]];
-  const isCorrect = userAns === q.answer;
-
-  const card = document.createElement("div");
-  card.className =
-    "expand-card p-4 border rounded-lg cursor-pointer";
-
-  card.innerHTML = `
-    <div class="flex justify-between">
-      <p class="font-semibold ${isCorrect ? 'text-green-600' : 'text-red-600'}">
-        ${isCorrect ? "✔ Correct" : "✘ Wrong"}
+    div.innerHTML = `
+      <p class="question"><strong>Q${index + 1}.</strong> ${q.question}</p>
+      <p class="user-answer ${isCorrect ? "correct" : "wrong"}">
+        Your Answer: ${userAnswer || "Not Answered"}
       </p>
-      <p class="text-gray-600 text-sm">Q${i + 1}</p>
-    </div>
+      ${!isCorrect ? `<p class="correct-answer">Correct Answer: ${correctAnswer}</p>` : ""}
+      <p class="explanation">${q.explanation || ""}</p>
+    `;
 
-    <p class="mt-2 font-semibold">${q.question}</p>
+    answersContainer.appendChild(div);
+  });
 
-    <div class="hidden mt-3 text-gray-700 explanation-box">
-      <p><strong>Your answer:</strong> ${userAns || "No Answer"}</p>
-      <p><strong>Correct answer:</strong> ${q.answer}</p>
-      <p class="mt-2"><strong>Explanation:</strong><br>${q.explanation}</p>
-    </div>
-  `;
+  // ---- SCORE SUMMARY ----
+  document.getElementById("scoreText").innerText =
+    `Score: ${correct} / ${totalQuestions}`;
 
-  card.onclick = () => {
-    const box = card.querySelector(".explanation-box");
-    box.classList.toggle("hidden");
-  };
+  document.getElementById("statsText").innerText =
+    `Attempted ${attempted} out of ${totalQuestions} questions`;
 
-  container.appendChild(card);
+  // ---- SUBJECT BREAKDOWN ----
+  const subjectList = document.getElementById("subjectList");
+  Object.entries(subjectStats).forEach(([subject, stat]) => {
+    const row = document.createElement("div");
+    row.className = "subject-row";
+    row.innerHTML = `
+      <span>${subject}</span>
+      <span>${stat.correct} / ${stat.total}</span>
+    `;
+    subjectList.appendChild(row);
+  });
 });
 
+// ==========================================
+// SHARE SCORE
+// ==========================================
 function shareScore() {
-  const text = `I scored ${correctCount}/${questions.length} in today's Daily 25 Quiz on Exam Prep Booster! 🔥`;
+  const scoreText = document.getElementById("scoreText").innerText;
+  const shareText = `I scored ${scoreText} on AspirantDaily! 🚀`;
 
   if (navigator.share) {
-    navigator.share({ text });
+    navigator.share({
+      title: "My AspirantDaily Score",
+      text: shareText,
+      url: window.location.origin
+    });
   } else {
-    alert("Copy this score:\n\n" + text);
+    alert(shareText);
   }
 }
