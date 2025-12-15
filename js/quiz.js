@@ -1,7 +1,7 @@
 // ===============================
 // quiz.js – FINAL VERSION
 // ===============================
-
+const lang = localStorage.getItem("lang") || "en";
 // 🔒 Clear legacy attempts (fixes SSC score issue)
 localStorage.removeItem("examData");
 localStorage.removeItem("userAnswers");
@@ -35,7 +35,7 @@ function loadQuestion() {
   const q = questions[currentIndex];
   document.getElementById("questionNumber").innerText =
     `Question ${currentIndex + 1} of ${questions.length}`;
-  document.getElementById("questionText").innerText = q.question;
+  document.getElementById("questionText").innerText = q.question[lang];
 
   const container = document.getElementById("optionsContainer");
   container.innerHTML = "";
