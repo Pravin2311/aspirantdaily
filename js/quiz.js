@@ -3,8 +3,11 @@
 // ===============================
 
 // 🔒 Clear legacy attempts (fixes SSC score issue)
-localStorage.removeItem("examData");
-localStorage.removeItem("userAnswers");
+// ✅ Reset only when quiz starts fresh
+if (currentIndex === 0) {
+  localStorage.removeItem("examData");
+  localStorage.removeItem("userAnswers");
+}
 
 const exam = new URLSearchParams(window.location.search)
   .get("exam")?.toLowerCase() || "mixed";
