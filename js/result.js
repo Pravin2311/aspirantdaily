@@ -1,19 +1,19 @@
 // ==========================================
-// RESULT PAGE LOGIC – FINAL FIXED VERSION
-// Works with new generator.js (25 questions)
+// RESULT PAGE LOGIC – FINAL STABLE VERSION
+// Compatible with OLD (index-based) + NEW (text-based) answers
 // ==========================================
-
-// Expected storage format:
-// localStorage.setItem("examData", JSON.stringify({ questions: [...] }));
-// localStorage.setItem("userAnswers", JSON.stringify({ 0: "Option A", ... }));
 
 document.addEventListener("DOMContentLoaded", () => {
   const examData = JSON.parse(localStorage.getItem("examData"));
   const userAnswers = JSON.parse(localStorage.getItem("userAnswers")) || {};
 
+  const scoreTextEl = document.getElementById("scoreText");
+  const statsTextEl = document.getElementById("statsText");
+  const answersContainer = document.getElementById("answersContainer");
+  const subjectList = document.getElementById("subjectList");
+
   if (!examData || !Array.isArray(examData.questions)) {
-    document.getElementById("scoreText").innerText =
-      "Result data not found.";
+    scoreTextEl.innerText = "Result data not found.";
     return;
   }
 
@@ -22,20 +22,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let correct = 0;
   let attempted = 0;
-  let subjectStats = {};
-
-  const answersContainer = document.getElementById("answersContainer");
+  const subjectStats = {};
 
   questions.forEach((q, index) => {
-    const userAnswer = (userAnswers[index] || "").trim();
-    const correctAnswer = (q.answer || "").trim();
+    let userAnswerRaw = userAnswers[index];
+    const options = Array.isArray(q.options) ? q.options : [];
+
+    // ✅ FIX 1: Convert index-based answers (SSC legacy)
+    if (typeof userAnswerRaw === "number" && options[userAnswerRaw]) {
+      userAnswerRaw = options[userAnswerRaw];
+    }
+
+    const userAnswer = String(userAnswerRaw || "").trim();
+    const correctAnswer = String(q.answer || "").trim();
 
     if (userAnswer) attempted++;
 
-    const isCorrect = userAnswer === correctAnswer;
+    const isCorrect = userAnswer && userAnswer === correctAnswer;
     if (isCorrect) correct++;
 
-    // Subject stats
+    // ✅ Subject stats
     const subject = q.subject || "General";
     if (!subjectStats[subject]) {
       subjectStats[subject] = { correct: 0, total: 0 };
@@ -52,7 +58,11 @@ document.addEventListener("DOMContentLoaded", () => {
       <p class="user-answer ${isCorrect ? "correct" : "wrong"}">
         Your Answer: ${userAnswer || "Not Answered"}
       </p>
-      ${!isCorrect ? `<p class="correct-answer">Correct Answer: ${correctAnswer}</p>` : ""}
+      ${
+        !isCorrect
+          ? `<p class="correct-answer">Correct Answer: ${correctAnswer}</p>`
+          : ""
+      }
       <p class="explanation">${q.explanation || ""}</p>
     `;
 
@@ -60,14 +70,11 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // ---- SCORE SUMMARY ----
-  document.getElementById("scoreText").innerText =
-    `Score: ${correct} / ${totalQuestions}`;
-
-  document.getElementById("statsText").innerText =
-    `Attempted ${attempted} out of ${totalQuestions} questions`;
+  scoreTextEl.innerText = `Score: ${correct} / ${totalQuestions}`;
+  statsTextEl.innerText = `Attempted ${attempted} out of ${totalQuestions} questions`;
 
   // ---- SUBJECT BREAKDOWN ----
-  const subjectList = document.getElementById("subjectList");
+  subjectList.innerHTML = "";
   Object.entries(subjectStats).forEach(([subject, stat]) => {
     const row = document.createElement("div");
     row.className = "subject-row";
