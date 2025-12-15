@@ -1,13 +1,6 @@
 // ===============================
-// quiz.js – FINAL VERSION
+// quiz.js – FINAL CORRECTED VERSION
 // ===============================
-
-// 🔒 Clear legacy attempts (fixes SSC score issue)
-// ✅ Reset only when quiz starts fresh
-if (currentIndex === 0) {
-  localStorage.removeItem("examData");
-  localStorage.removeItem("userAnswers");
-}
 
 const exam = new URLSearchParams(window.location.search)
   .get("exam")?.toLowerCase() || "mixed";
@@ -19,22 +12,9 @@ let questions = [];
 let currentIndex = 0;
 let userAnswers = [];
 
-loadQuestions();
-
+// ✅ ONLY ONE loadQuestions function
 async function loadQuestions() {
-  const res = await fetch(`https://exam-prep-generator.mydomain2311.workers.dev/?exam=${exam}`, { cache: "no-store" });
-  const data = await res.json();
-
-  questions = data.questions;
-  userAnswers = Array(questions.length).fill(null);
-
-  document.getElementById("loadingBox").classList.add("hidden");
-  document.getElementById("quizBox").classList.remove("hidden");
-
-  loadQuestion();
-}
-
-async function loadQuestions() {
+  // ✅ FIXED: No trailing spaces
   const apiUrl = `https://exam-prep-generator.mydomain2311.workers.dev/?exam=${exam}`;
 
   try {
@@ -58,7 +38,6 @@ async function loadQuestions() {
     questions = data.questions;
     userAnswers = Array(questions.length).fill(null);
 
-    // ✅ UI switch (THIS WAS NEVER REACHED BEFORE)
     document.getElementById("loadingBox").classList.add("hidden");
     document.getElementById("quizBox").classList.remove("hidden");
 
@@ -66,7 +45,6 @@ async function loadQuestions() {
 
   } catch (err) {
     console.error("Quiz load failed:", err);
-
     document.getElementById("loadingBox").innerHTML = `
       <p style="color:red; text-align:center;">
         Unable to load today's questions.<br>
@@ -76,28 +54,66 @@ async function loadQuestions() {
   }
 }
 
+function loadQuestion() {
+  if (!questions[currentIndex] || !Array.isArray(questions[currentIndex].options)) {
+    alert("Question data is unavailable. Please refresh.");
+    return;
+  }
 
-function selectOption(opt, el) {
-  userAnswers[currentIndex] = opt;
-  document.querySelectorAll(".option").forEach(e => e.classList.remove("selected"));
-  el.classList.add("selected");
+  const q = questions[currentIndex];
+
+  document.getElementById("questionNumber").innerText =
+    `Question ${currentIndex + 1} of ${questions.length}`;
+
+  document.getElementById("questionText").innerText = q.question || "";
+
+  const container = document.getElementById("optionsContainer");
+  container.innerHTML = "";
+
+  q.options.forEach((opt, idx) => {
+    const div = document.createElement("div");
+    div.className = "option bg-gray-100 p-3 rounded-lg cursor-pointer border";
+    if (userAnswers[currentIndex] === idx) {
+      div.classList.add("selected");
+    }
+    div.innerText = opt;
+    div.onclick = () => selectOption(idx, div);
+    container.appendChild(div);
+  });
+
+  document.getElementById("prevBtn").disabled = currentIndex === 0;
+  document.getElementById("nextBtn").innerText =
+    currentIndex === questions.length - 1 ? "Submit" : "Next";
+}
+
+function selectOption(optionIndex, element) {
+  userAnswers[currentIndex] = optionIndex;
+  document.querySelectorAll(".option").forEach(el => el.classList.remove("selected"));
+  element.classList.add("selected");
 }
 
 function nextQuestion() {
-  if (currentIndex === questions.length - 1) return submitQuiz();
+  if (currentIndex === questions.length - 1) {
+    submitQuiz();
+    return;
+  }
   currentIndex++;
   loadQuestion();
 }
 
 function prevQuestion() {
-  if (currentIndex > 0) currentIndex--;
-  loadQuestion();
+  if (currentIndex > 0) {
+    currentIndex--;
+    loadQuestion();
+  }
 }
 
 function submitQuiz() {
-  // 🔒 Use sessionStorage (stable across navigation)
+  // ✅ Use sessionStorage only — no localStorage wipe
   sessionStorage.setItem("examData", JSON.stringify({ questions }));
   sessionStorage.setItem("userAnswers", JSON.stringify(userAnswers));
-
   window.location.href = "result.html";
 }
+
+// ✅ INIT
+loadQuestions();

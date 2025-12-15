@@ -1,17 +1,10 @@
 // ===============================
 // result.js – FINAL FIXED VERSION
-// Session-safe + backward compatible
 // ===============================
 
 document.addEventListener("DOMContentLoaded", () => {
-  // 🔒 Read from sessionStorage FIRST, fallback to localStorage
-  let examDataRaw =
-    sessionStorage.getItem("examData") ||
-    localStorage.getItem("examData");
-
-  let userAnswersRaw =
-    sessionStorage.getItem("userAnswers") ||
-    localStorage.getItem("userAnswers");
+  let examDataRaw = sessionStorage.getItem("examData") || localStorage.getItem("examData");
+  let userAnswersRaw = sessionStorage.getItem("userAnswers") || localStorage.getItem("userAnswers");
 
   if (!examDataRaw || !userAnswersRaw) {
     showError("Result data not found. Please take the quiz again.");
@@ -34,14 +27,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const questions = examData.questions;
   const total = questions.length;
-
   let correct = 0;
   let attempted = 0;
 
   questions.forEach((q, i) => {
     let ua = userAnswers[i];
 
-    // ✅ Legacy support: index → option text (old SSC)
+    // ✅ Legacy support: index → option text (for old quiz versions)
     if (typeof ua === "number" && Array.isArray(q.options) && q.options[ua]) {
       ua = q.options[ua];
     }
@@ -55,21 +47,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // ---- UI UPDATE ----
-  document.getElementById("scoreText").innerText =
-    `Score: ${correct} / ${total}`;
-
-  document.getElementById("statsText").innerText =
-    `Attempted ${attempted} out of ${total} questions`;
+  document.getElementById("scoreText").innerText = `Score: ${correct} / ${total}`;
+  document.getElementById("statsText").innerText = `Attempted ${attempted} out of ${total} questions`;
 });
 
-// ===============================
-// Helper
-// ===============================
 function showError(message) {
   const scoreEl = document.getElementById("scoreText");
   const statsEl = document.getElementById("statsText");
-
   if (scoreEl) scoreEl.innerText = message;
   if (statsEl) statsEl.innerText = "";
 }
