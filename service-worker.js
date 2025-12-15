@@ -1,27 +1,27 @@
-const CACHE_NAME = "aspirant-daily-v3"; // bump version after fix
+// ===============================
+// sw.js – FINAL PRODUCTION VERSION
+// ===============================
 
-const ASSETS_TO_CACHE = [
-  "/",
-  "/index.html",
-  "/quiz.html",
-  "/result.html",
+const CACHE_NAME = "aspirant-daily-v4"; // 🔥 bump on every deploy
+
+const STATIC_ASSETS = [
   "/styles.css",
-  "/js/quiz.js",
-  "/js/result.js",
   "/manifest.webmanifest"
 ];
 
+// --------------------------------
+// INSTALL
+// --------------------------------
 self.addEventListener("install", (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => {
-      return cache.addAll(ASSETS_TO_CACHE).catch(err => {
-        console.warn("Cache addAll failed:", err);
-      });
-    })
+    caches.open(CACHE_NAME).then((cache) => cache.addAll(STATIC_ASSETS))
   );
   self.skipWaiting();
 });
 
+// --------------------------------
+// ACTIVATE
+// --------------------------------
 self.addEventListener("activate", (event) => {
   event.waitUntil(
     caches.keys().then((keys) =>
@@ -37,29 +37,42 @@ self.addEventListener("activate", (event) => {
   self.clients.claim();
 });
 
+// --------------------------------
+// FETCH
+// --------------------------------
 self.addEventListener("fetch", (event) => {
-  const url = new URL(event.request.url);
+  const req = event.request;
+  const url = new URL(req.url);
 
-  // Skip non-GET or cross-origin requests
-  if (event.request.method !== "GET" || url.origin !== self.location.origin) {
+  // 🚫 Ignore non-GET and cross-origin
+  if (req.method !== "GET" || url.origin !== self.location.origin) {
     return;
   }
 
-  // Bypass API calls
-  if (url.pathname.startsWith("/api/")) {
+  // 🚫 NEVER cache API calls
+  if (url.pathname.startsWith("/api") || url.search.includes("exam=")) {
     return;
   }
 
-  // Serve HTML shells from cache (ignore query params)
-  if (url.pathname.endsWith(".html")) {
-    event.respondWith(
-      caches.match(url.pathname).then(response => response || fetch(event.request))
-    );
+  // 🚫 NEVER cache HTML or JS
+  if (
+    req.destination === "document" ||
+    req.destination === "script"
+  ) {
+    event.respondWith(fetch(req));
     return;
   }
 
-  // Cache-first for everything else
+  // ✅ Cache-first ONLY for static assets (CSS, images, etc.)
   event.respondWith(
-    caches.match(event.request).then(response => response || fetch(event.request))
+    caches.match(req).then((cached) => {
+      if (cached) return cached;
+      return fetch(req).then((networkRes) => {
+        return caches.open(CACHE_NAME).then((cache) => {
+          cache.put(req, networkRes.clone());
+          return networkRes;
+        });
+      });
+    })
   );
 });
