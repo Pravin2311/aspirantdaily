@@ -65,8 +65,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const div = document.createElement("div");
     div.className = "answer-item";
     div.innerHTML = `
-      <p><strong>Q${i + 1}.</strong> ${q.question}</p>
-      <p class="${isCorrect ? "correct" : "wrong"}">
+      <p class="question"><strong>Q${i + 1}.</strong> ${q.question}</p>
+      <p class="user-answer${isCorrect ? "correct" : "wrong"}">
         Your Answer: ${userAnswer || "Not Answered"}
       </p>
       ${
