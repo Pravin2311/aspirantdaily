@@ -1,9 +1,11 @@
 // ==========================================
-// result.js – FINAL BULLETPROOF VERSION
-// Fixes SSC empty result permanently
+// result.js – FINAL BULLETPROOF VERSION (FIXED)
+// Bilingual-safe + legacy-safe
 // ==========================================
 
 document.addEventListener("DOMContentLoaded", () => {
+  const lang = localStorage.getItem("lang") || "en";
+
   let examData = localStorage.getItem("examData");
   let userAnswers = localStorage.getItem("userAnswers");
 
@@ -39,15 +41,21 @@ document.addEventListener("DOMContentLoaded", () => {
   questions.forEach((q, i) => {
     let ua = userAnswers[i];
 
-    // ✅ Legacy index → text support (SSC)
-    if (typeof ua === "number" && q.options?.[ua]) {
-      ua = q.options[ua];
+    const options =
+      q.options?.[lang] || q.options?.en || [];
+
+    // ✅ Legacy numeric index support (old SSC data)
+    if (typeof ua === "number" && options[ua]) {
+      ua = options[ua];
     }
 
     const userAnswer = String(ua || "").trim();
-    const correctAnswer = String(q.answer || "").trim();
+
+    const correctAnswer =
+      String(q.answer?.[lang] || q.answer?.en || "").trim();
 
     if (userAnswer) attempted++;
+
     const isCorrect =
       userAnswer &&
       correctAnswer &&
@@ -62,19 +70,25 @@ document.addEventListener("DOMContentLoaded", () => {
     if (isCorrect) subjectStats[subject].correct++;
 
     // UI
+    const questionText =
+      q.question?.[lang] || q.question?.en || "Question unavailable";
+
+    const explanationText =
+      q.explanation?.[lang] || q.explanation?.en || "";
+
     const div = document.createElement("div");
     div.className = "answer-item";
     div.innerHTML = `
-      <p class="question"><strong>Q${i + 1}.</strong> ${q.question}</p>
-      <p class="user-answer${isCorrect ? "correct" : "wrong"}">
+      <p class="question"><strong>Q${i + 1}.</strong> ${questionText}</p>
+      <p class="user-answer ${isCorrect ? "correct" : "wrong"}">
         Your Answer: ${userAnswer || "Not Answered"}
       </p>
       ${
-        !isCorrect
+        !isCorrect && correctAnswer
           ? `<p class="correct-answer">Correct Answer: ${correctAnswer}</p>`
           : ""
       }
-      <p class="explanation">${q.explanation || ""}</p>
+      ${explanationText ? `<p class="explanation">${explanationText}</p>` : ""}
     `;
     answersContainer.appendChild(div);
   });
@@ -87,6 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const subjectList = document.getElementById("subjectList");
   subjectList.innerHTML = "";
+
   Object.entries(subjectStats).forEach(([s, v]) => {
     const row = document.createElement("div");
     row.className = "subject-row";
