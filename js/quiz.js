@@ -34,25 +34,48 @@ async function loadQuestions() {
   loadQuestion();
 }
 
-function loadQuestion() {
-  const q = questions[currentIndex];
-  document.getElementById("questionNumber").innerText =
-    `Question ${currentIndex + 1} of ${questions.length}`;
-  document.getElementById("questionText").innerText = q.question;
+async function loadQuestions() {
+  const apiUrl = `https://exam-prep-generator.mydomain2311.workers.dev/?exam=${exam}`;
 
-  const container = document.getElementById("optionsContainer");
-  container.innerHTML = "";
+  try {
+    const res = await fetch(apiUrl, { cache: "no-store" });
 
-  q.options.forEach(opt => {
-    if (!opt) return;
-    const div = document.createElement("div");
-    div.className = "option";
-    if (userAnswers[currentIndex] === opt) div.classList.add("selected");
-    div.innerText = opt;
-    div.onclick = () => selectOption(opt, div);
-    container.appendChild(div);
-  });
+    if (!res.ok) {
+      throw new Error(`Server error: ${res.status}`);
+    }
+
+    let data;
+    try {
+      data = await res.json();
+    } catch {
+      throw new Error("Invalid JSON response from server");
+    }
+
+    if (!data || !Array.isArray(data.questions) || data.questions.length === 0) {
+      throw new Error("No questions available today");
+    }
+
+    questions = data.questions;
+    userAnswers = Array(questions.length).fill(null);
+
+    // ✅ UI switch (THIS WAS NEVER REACHED BEFORE)
+    document.getElementById("loadingBox").classList.add("hidden");
+    document.getElementById("quizBox").classList.remove("hidden");
+
+    loadQuestion();
+
+  } catch (err) {
+    console.error("Quiz load failed:", err);
+
+    document.getElementById("loadingBox").innerHTML = `
+      <p style="color:red; text-align:center;">
+        Unable to load today's questions.<br>
+        Please try again later.
+      </p>
+    `;
+  }
 }
+
 
 function selectOption(opt, el) {
   userAnswers[currentIndex] = opt;
