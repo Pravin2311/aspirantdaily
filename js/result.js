@@ -1,34 +1,28 @@
-// ===============================
-// result.js – FINAL FIXED VERSION
-// Session-safe + backward compatible
-// ===============================
+// ==========================================
+// result.js – FINAL BULLETPROOF VERSION
+// Fixes SSC empty result permanently
+// ==========================================
 
 document.addEventListener("DOMContentLoaded", () => {
-  // 🔒 Read from sessionStorage FIRST, fallback to localStorage
-  let examDataRaw =
-    sessionStorage.getItem("examData") ||
-    localStorage.getItem("examData");
+  let examData = localStorage.getItem("examData");
+  let userAnswers = localStorage.getItem("userAnswers");
 
-  let userAnswersRaw =
-    sessionStorage.getItem("userAnswers") ||
-    localStorage.getItem("userAnswers");
-
-  if (!examDataRaw || !userAnswersRaw) {
-    showError("Result data not found. Please take the quiz again.");
+  // 🔒 HARD FAIL GUARD
+  if (!examData || !userAnswers) {
+    showError();
     return;
   }
 
-  let examData, userAnswers;
   try {
-    examData = JSON.parse(examDataRaw);
-    userAnswers = JSON.parse(userAnswersRaw);
-  } catch (e) {
-    showError("Result data corrupted. Please retry the quiz.");
+    examData = JSON.parse(examData);
+    userAnswers = JSON.parse(userAnswers);
+  } catch {
+    showError();
     return;
   }
 
   if (!examData.questions || !Array.isArray(examData.questions)) {
-    showError("Invalid result format.");
+    showError();
     return;
   }
 
@@ -37,39 +31,71 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let correct = 0;
   let attempted = 0;
+  const subjectStats = {};
+
+  const answersContainer = document.getElementById("answersContainer");
+  answersContainer.innerHTML = "";
 
   questions.forEach((q, i) => {
     let ua = userAnswers[i];
 
-    // ✅ Legacy support: index → option text (old SSC)
-    if (typeof ua === "number" && Array.isArray(q.options) && q.options[ua]) {
+    // ✅ Legacy index → text support (SSC)
+    if (typeof ua === "number" && q.options?.[ua]) {
       ua = q.options[ua];
     }
 
-    const userAnswer = String(ua || "").trim().toLowerCase();
-    const correctAnswer = String(q.answer || "").trim().toLowerCase();
+    const userAnswer = String(ua || "").trim();
+    const correctAnswer = String(q.answer || "").trim();
 
     if (userAnswer) attempted++;
-    if (userAnswer && userAnswer === correctAnswer) {
-      correct++;
-    }
+    const isCorrect =
+      userAnswer &&
+      correctAnswer &&
+      userAnswer.toLowerCase() === correctAnswer.toLowerCase();
+
+    if (isCorrect) correct++;
+
+    // Subject stats
+    const subject = q.subject || "General";
+    subjectStats[subject] ??= { correct: 0, total: 0 };
+    subjectStats[subject].total++;
+    if (isCorrect) subjectStats[subject].correct++;
+
+    // UI
+    const div = document.createElement("div");
+    div.className = "answer-item";
+    div.innerHTML = `
+      <p><strong>Q${i + 1}.</strong> ${q.question}</p>
+      <p class="${isCorrect ? "correct" : "wrong"}">
+        Your Answer: ${userAnswer || "Not Answered"}
+      </p>
+      ${
+        !isCorrect
+          ? `<p class="correct-answer">Correct Answer: ${correctAnswer}</p>`
+          : ""
+      }
+      <p class="explanation">${q.explanation || ""}</p>
+    `;
+    answersContainer.appendChild(div);
   });
 
-  // ---- UI UPDATE ----
   document.getElementById("scoreText").innerText =
     `Score: ${correct} / ${total}`;
 
   document.getElementById("statsText").innerText =
     `Attempted ${attempted} out of ${total} questions`;
+
+  const subjectList = document.getElementById("subjectList");
+  subjectList.innerHTML = "";
+  Object.entries(subjectStats).forEach(([s, v]) => {
+    const row = document.createElement("div");
+    row.className = "subject-row";
+    row.innerHTML = `<span>${s}</span><span>${v.correct}/${v.total}</span>`;
+    subjectList.appendChild(row);
+  });
 });
 
-// ===============================
-// Helper
-// ===============================
-function showError(message) {
-  const scoreEl = document.getElementById("scoreText");
-  const statsEl = document.getElementById("statsText");
-
-  if (scoreEl) scoreEl.innerText = message;
-  if (statsEl) statsEl.innerText = "";
+function showError() {
+  document.getElementById("scoreText").innerText =
+    "Result not found. Please take the quiz again.";
 }
