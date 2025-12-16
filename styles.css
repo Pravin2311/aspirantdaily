@@ -667,3 +667,34 @@ body {
   color: #6b7280;
   text-align: center;
 }
+
+/* ===============================
+   QUIZ SELECTOR STYLES
+   =============================== */
+
+.quiz-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.quiz-list .btn {
+  padding: 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 12px;
+  text-align: center;
+}
+
+/* Full width button utility */
+.btn.block {
+  width: 100%;
+}
+
+/* Selector page container tweak */
+.quiz-selector-container {
+  max-width: 720px;
+  margin: 40px auto;
+  padding: 0 16px;
+}

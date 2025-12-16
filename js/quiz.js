@@ -189,3 +189,9 @@ function submitQuiz() {
   localStorage.setItem("userAnswers", JSON.stringify(userAnswers));
   window.location.href = "result.html";
 }
+
+// ===============================
+// FIX: expose navigation to HTML
+// ===============================
+window.nextQuestion = nextQuestion;
+window.prevQuestion = prevQuestion;
