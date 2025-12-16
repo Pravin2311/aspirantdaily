@@ -1,62 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
   <title>Admin Dashboard – AspirantDaily</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
 
-<h1>Admin Dashboard</h1>
+  <div class="admin-container">
+    <h1>Admin Dashboard</h1>
+    <p class="admin-hint">
+      Internal use only • Admin actions are irreversible
+    </p>
 
-<section>
-  <h2>Regenerate Subject Pool</h2>
+    <!-- ===============================
+         REGENERATE SUBJECT
+         =============================== -->
+    <div class="admin-section">
+      <h2>Regenerate Subject Pool</h2>
 
-  <select id="subjectSelect">
-    <option value="reasoning">Reasoning</option>
-    <option value="quant">Quant</option>
-    <option value="computer">Computer</option>
-    <option value="science">Science</option>
-    <option value="static-gk">Static GK</option>
-    <option value="current-affairs">Current Affairs</option>
-  </select>
+      <select id="subjectSelect">
+        <option value="reasoning">Reasoning</option>
+        <option value="quant">Quantitative Aptitude</option>
+        <option value="computer">Computer Awareness</option>
+        <option value="science">General Science</option>
+        <option value="static-gk">Static GK</option>
+        <option value="current-affairs">Current Affairs</option>
+      </select>
 
-  <button onclick="regenerate()">Regenerate</button>
-</section>
+      <button class="admin-btn primary" onclick="regenerate()">
+        Regenerate Subject
+      </button>
+    </div>
 
-<section>
-  <h2>Monthly CA Archive</h2>
-  <button onclick="archiveCA()">Archive Current Month</button>
-</section>
+    <!-- ===============================
+         MONTHLY CA ARCHIVE
+         =============================== -->
+    <div class="admin-section">
+      <h2>Monthly Current Affairs Archive</h2>
 
-<p id="status"></p>
+      <button class="admin-btn warning" onclick="archiveCA()">
+        Archive Current Month
+      </button>
+    </div>
 
-<script>
-const API = "https://exam-prep-generator.mydomain2311.workers.dev";
-const TOKEN = prompt("Enter admin token:");
+    <!-- STATUS -->
+    <div id="status" class="admin-status">
+      Ready
+    </div>
 
-async function regenerate() {
-  const subject = document.getElementById("subjectSelect").value;
+    <div class="admin-hint">
+      Tip: Regenerating non-daily subjects should be done rarely
+    </div>
+  </div>
 
-  const res = await fetch(
-    `${API}/?admin=1&action=regenerate&subject=${subject}&token=${TOKEN}`
-  );
+  <!-- ===============================
+       ADMIN LOGIC
+       =============================== -->
+  <script>
+    const API = "https://exam-prep-generator.mydomain2311.workers.dev";
+    const TOKEN = prompt("Enter admin token:");
 
-  const data = await res.json();
-  document.getElementById("status").innerText =
-    data.success ? "Regenerated successfully" : JSON.stringify(data);
-}
+    async function regenerate() {
+      const subject = document.getElementById("subjectSelect").value;
+      setStatus("Regenerating " + subject + "…");
 
-async function archiveCA() {
-  const res = await fetch(
-    `${API}/?admin=1&action=archive-ca&token=${TOKEN}`
-  );
+      try {
+        const res = await fetch(
+          `${API}/?admin=1&action=regenerate&subject=${subject}&token=${TOKEN}`
+        );
+        const data = await res.json();
 
-  const data = await res.json();
-  document.getElementById("status").innerText =
-    data.success ? `Archived ${data.archive}` : JSON.stringify(data);
-}
-</script>
+        setStatus(
+          data.success
+            ? `✅ ${subject} regenerated successfully`
+            : `❌ ${JSON.stringify(data)}`
+        );
+      } catch (e) {
+        setStatus("❌ Network error");
+      }
+    }
+
+    async function archiveCA() {
+      setStatus("Archiving current affairs…");
+
+      try {
+        const res = await fetch(
+          `${API}/?admin=1&action=archive-ca&token=${TOKEN}`
+        );
+        const data = await res.json();
+
+        setStatus(
+          data.success
+            ? `📦 Current Affairs archived for ${data.archived}`
+            : `❌ ${JSON.stringify(data)}`
+        );
+      } catch (e) {
+        setStatus("❌ Network error");
+      }
+    }
+
+    function setStatus(msg) {
+      document.getElementById("status").innerText = msg;
+    }
+  </script>
 
 </body>
 </html>
