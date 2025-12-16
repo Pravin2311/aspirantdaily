@@ -1,5 +1,6 @@
 // ==========================================
-// result.js – FINAL BULLETPROOF VERSION (FIXED)
+// result.js – FINAL BULLETPROOF VERSION
+// Exam + Subject aware
 // Bilingual-safe + legacy-safe
 // ==========================================
 
@@ -28,9 +29,27 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
+  // ===============================
+  // CONTEXT
+  // ===============================
+  const mode = examData.mode;            // "exam" | "subject"
+  const exam = examData.exam;            // ssc, bank, upsc...
+  const subjectMode = examData.subject;  // reasoning, quant...
   const questions = examData.questions;
-  const total = questions.length;
 
+  // ===============================
+  // OPTIONAL TITLE UPDATE (SAFE)
+  // ===============================
+  const titleEl = document.getElementById("resultTitle");
+  if (titleEl) {
+    if (mode === "subject") {
+      titleEl.innerText = `Result • ${subjectMode?.replace("-", " ") || "Practice"}`;
+    } else {
+      titleEl.innerText = `Result • ${(exam || "Exam").toUpperCase()}`;
+    }
+  }
+
+  const total = questions.length;
   let correct = 0;
   let attempted = 0;
   const subjectStats = {};
@@ -38,13 +57,16 @@ document.addEventListener("DOMContentLoaded", () => {
   const answersContainer = document.getElementById("answersContainer");
   answersContainer.innerHTML = "";
 
+  // ===============================
+  // PROCESS QUESTIONS
+  // ===============================
   questions.forEach((q, i) => {
     let ua = userAnswers[i];
 
     const options =
       q.options?.[lang] || q.options?.en || [];
 
-    // ✅ Legacy numeric index support (old SSC data)
+    // ✅ Legacy numeric index support
     if (typeof ua === "number" && options[ua]) {
       ua = options[ua];
     }
@@ -63,13 +85,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (isCorrect) correct++;
 
-    // Subject stats
-    const subject = q.subject || "General";
+    // ===============================
+    // SUBJECT STATS (FIXED)
+    // ===============================
+    const subject =
+      q.subject ||
+      subjectMode ||
+      exam ||
+      "General";
+
     subjectStats[subject] ??= { correct: 0, total: 0 };
     subjectStats[subject].total++;
     if (isCorrect) subjectStats[subject].correct++;
 
+    // ===============================
     // UI
+    // ===============================
     const questionText =
       q.question?.[lang] || q.question?.en || "Question unavailable";
 
@@ -93,6 +124,9 @@ document.addEventListener("DOMContentLoaded", () => {
     answersContainer.appendChild(div);
   });
 
+  // ===============================
+  // SUMMARY
+  // ===============================
   document.getElementById("scoreText").innerText =
     `Score: ${correct} / ${total}`;
 
@@ -110,7 +144,12 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+// ===============================
+// ERROR HANDLER
+// ===============================
 function showError() {
-  document.getElementById("scoreText").innerText =
-    "Result not found. Please take the quiz again.";
+  const el = document.getElementById("scoreText");
+  if (el) {
+    el.innerText = "Result not found. Please take the quiz again.";
+  }
 }

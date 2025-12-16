@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Dashboard – AspirantDaily</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<h1>Admin Dashboard</h1>
+
+<section>
+  <h2>Regenerate Subject Pool</h2>
+
+  <select id="subjectSelect">
+    <option value="reasoning">Reasoning</option>
+    <option value="quant">Quant</option>
+    <option value="computer">Computer</option>
+    <option value="science">Science</option>
+    <option value="static-gk">Static GK</option>
+    <option value="current-affairs">Current Affairs</option>
+  </select>
+
+  <button onclick="regenerate()">Regenerate</button>
+</section>
+
+<section>
+  <h2>Monthly CA Archive</h2>
+  <button onclick="archiveCA()">Archive Current Month</button>
+</section>
+
+<p id="status"></p>
+
+<script>
+const API = "https://exam-prep-generator.mydomain2311.workers.dev";
+const TOKEN = prompt("Enter admin token:");
+
+async function regenerate() {
+  const subject = document.getElementById("subjectSelect").value;
+
+  const res = await fetch(
+    `${API}/?admin=1&action=regenerate&subject=${subject}&token=${TOKEN}`
+  );
+
+  const data = await res.json();
+  document.getElementById("status").innerText =
+    data.success ? "Regenerated successfully" : JSON.stringify(data);
+}
+
+async function archiveCA() {
+  const res = await fetch(
+    `${API}/?admin=1&action=archive-ca&token=${TOKEN}`
+  );
+
+  const data = await res.json();
+  document.getElementById("status").innerText =
+    data.success ? `Archived ${data.archive}` : JSON.stringify(data);
+}
+</script>
+
+</body>
+</html>

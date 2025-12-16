@@ -1,40 +1,99 @@
 // ===============================
-// quiz.js – FINAL VERSION (SAFE FIXED)
+// quiz.js – FINAL VERSION
+// SUBJECT-WISE + LOCAL EXAM COMPOSER
 // ===============================
+
 const lang = localStorage.getItem("lang") || "en";
 
-// 🔒 Clear legacy attempts (fixes SSC score issue)
+// 🔒 Clear previous attempts
 localStorage.removeItem("examData");
 localStorage.removeItem("userAnswers");
 
-const exam = new URLSearchParams(window.location.search)
-  .get("exam")?.toLowerCase() || "mixed";
+// ===============================
+// DETECT MODE
+// ===============================
+const urlParams = new URLSearchParams(window.location.search);
+const exam = urlParams.get("exam")?.toLowerCase();
 
-document.getElementById("examLabel").innerText =
-  exam.toUpperCase() + " • Daily Practice";
+const context = JSON.parse(localStorage.getItem("practiceContext") || "{}");
+const isSubjectMode = !!context.subject;
 
+const subject = context.subject;
+const quizIndex = context.quizIndex ?? 0;
+
+// ===============================
+// LABELS
+// ===============================
+const subjectLabels = {
+  "current-affairs": "Current Affairs",
+  reasoning: "Reasoning",
+  quant: "Quantitative Aptitude",
+  computer: "Computer Awareness",
+  science: "General Science",
+  "static-gk": "Static GK"
+};
+
+if (isSubjectMode) {
+  document.getElementById("examLabel").innerText =
+    `${subjectLabels[subject] || "Practice"} • Quiz ${quizIndex + 1}`;
+} else {
+  document.getElementById("examLabel").innerText =
+    `${(exam || "mixed").toUpperCase()} • Daily Practice`;
+}
+
+// ===============================
+// STATE
+// ===============================
 let questions = [];
 let currentIndex = 0;
 let userAnswers = [];
 
+// ===============================
+// LOAD QUESTIONS
+// ===============================
 loadQuestions();
 
 async function loadQuestions() {
   try {
-    const res = await fetch(
-      `https://exam-prep-generator.mydomain2311.workers.dev/?exam=${exam}`,
-      { cache: "no-store" }
-    );
+    // ===============================
+    // SUBJECT MODE → BACKEND
+    // ===============================
+    if (isSubjectMode) {
+      const res = await fetch(
+        `https://exam-prep-generator.mydomain2311.workers.dev/?subject=${subject}`,
+        { cache: "no-store" }
+      );
+      const data = await res.json();
 
-    const data = await res.json();
+      if (!data?.questions || !Array.isArray(data.questions)) {
+        alert("Questions not available.");
+        return;
+      }
 
-    // ✅ FIX: API safety guard
-    if (!data?.questions || !Array.isArray(data.questions) || data.questions.length === 0) {
+      if (subject === "current-affairs") {
+        questions = data.questions.slice(0, 25);
+      } else {
+        const start = quizIndex * 25;
+        questions = data.questions.slice(start, start + 25);
+      }
+    }
+
+    // ===============================
+    // EXAM MODE → LOCAL COMPOSER
+    // ===============================
+    else {
+      const { buildExam } = await import("./examComposer.js");
+      questions = await buildExam(exam || "mixed");
+    }
+
+    // ===============================
+    // FINAL SAFETY
+    // ===============================
+    if (!questions || questions.length === 0) {
       alert("Questions not available. Please try again later.");
       return;
     }
 
-    questions = data.questions;
     userAnswers = Array(questions.length).fill(null);
 
     document.getElementById("loadingBox").classList.add("hidden");
@@ -42,24 +101,26 @@ async function loadQuestions() {
 
     loadQuestion();
   } catch (e) {
+    console.error(e);
     alert("Failed to load quiz. Please refresh.");
   }
 }
 
+// ===============================
+// RENDER QUESTION
+// ===============================
 function loadQuestion() {
   const q = questions[currentIndex];
 
   document.getElementById("questionNumber").innerText =
     `Question ${currentIndex + 1} of ${questions.length}`;
 
-  // ✅ FIX: safe language fallback
   document.getElementById("questionText").innerText =
     q.question?.[lang] || q.question?.en || "Question unavailable";
 
   const container = document.getElementById("optionsContainer");
   container.innerHTML = "";
 
-  // ✅ FIX: safe options fallback
   const options = q.options?.[lang] || q.options?.en || [];
 
   options.forEach(opt => {
@@ -77,8 +138,13 @@ function loadQuestion() {
 
     container.appendChild(div);
   });
+
+  document.getElementById("prevBtn").disabled = currentIndex === 0;
 }
 
+// ===============================
+// ANSWER SELECTION
+// ===============================
 function selectOption(opt, el) {
   userAnswers[currentIndex] = opt;
   document
@@ -87,6 +153,9 @@ function selectOption(opt, el) {
   el.classList.add("selected");
 }
 
+// ===============================
+// NAVIGATION
+// ===============================
 function nextQuestion() {
   if (currentIndex === questions.length - 1) {
     return submitQuiz();
@@ -102,8 +171,21 @@ function prevQuestion() {
   }
 }
 
+// ===============================
+// SUBMIT
+// ===============================
 function submitQuiz() {
-  localStorage.setItem("examData", JSON.stringify({ questions }));
+  localStorage.setItem(
+    "examData",
+    JSON.stringify({
+      mode: isSubjectMode ? "subject" : "exam",
+      exam,
+      subject,
+      quizIndex,
+      questions
+    })
+  );
+
   localStorage.setItem("userAnswers", JSON.stringify(userAnswers));
   window.location.href = "result.html";
 }

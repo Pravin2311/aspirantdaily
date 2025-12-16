@@ -1,31 +1,45 @@
 // ===============================
-// loader.js – Production Version
+// loader.js – FINAL VERSION
+// Navigation Controller Only
 // ===============================
 
-const API_BASE = "https://exam-prep-generator.mydomain2311.workers.dev";
+(function () {
+  const params = new URLSearchParams(window.location.search);
 
-/**
- * Load questions for a given exam
- * @param {string} exam - ssc | bank | upsc | psc | rrb | cuet | mixed
- * @returns {Promise<Array>} questions array
- */
-async function loadQuestions(exam) {
-  try {
-    const res = await fetch(`${API_BASE}/?exam=${exam}`);
+  const exam = params.get("exam");
+  const subject = params.get("subject");
+  const quiz = parseInt(params.get("quiz"), 10);
 
-    if (!res.ok) {
-      throw new Error("Exam not ready");
-    }
-
-    const data = await res.json();
-
-    if (!data || !Array.isArray(data.questions)) {
-      throw new Error("Invalid question format");
-    }
-
-    return data.questions;
-  } catch (err) {
-    console.error("Loader error:", err);
-    throw err;
+  // ===============================
+  // EXAM MODE (direct)
+  // ===============================
+  if (exam) {
+    window.location.href = `quiz.html?exam=${exam}`;
+    return;
   }
-}
+
+  // ===============================
+  // SUBJECT MODE (via selector)
+  // ===============================
+  if (subject) {
+    const quizIndex =
+      !isNaN(quiz) && quiz >= 1 && quiz <= 4 ? quiz - 1 : 0;
+
+    localStorage.setItem(
+      "practiceContext",
+      JSON.stringify({
+        subject,
+        quizIndex
+      })
+    );
+
+    window.location.href = "quiz.html";
+    return;
+  }
+
+  // ===============================
+  // INVALID ACCESS
+  // ===============================
+  alert("Invalid selection. Redirecting to home.");
+  window.location.href = "index.html";
+})();
