@@ -73,7 +73,7 @@
 
 <div class="exam-grid">
 
-  <a href="quiz-selector.html?subject=current-affairs" class="exam-card highlight">
+  <a href="#" class="exam-card highlight" onclick="openSubject('current-affairs')">
     <div>
       <h3>Current Affairs</h3>
       <p>Daily Updates</p>
@@ -81,7 +81,7 @@
     <span>📰</span>
   </a>
 
-  <a href="quiz-selector.html?subject=reasoning" class="exam-card">
+  <a href="#" class="exam-card" onclick="openSubject('reasoning')">
     <div>
       <h3>Reasoning</h3>
       <p>100 Q • 4 Quizzes</p>
@@ -89,7 +89,7 @@
     <span>🧠</span>
   </a>
 
-  <a href="quiz-selector.html?subject=quant" class="exam-card">
+  <a href="#" class="exam-card" onclick="openSubject('quant')">
     <div>
       <h3>Quantitative Aptitude</h3>
       <p>100 Q • Arithmetic</p>
@@ -97,7 +97,7 @@
     <span>➗</span>
   </a>
 
-  <a href="quiz-selector.html?subject=computer" class="exam-card">
+  <a href="#" class="exam-card" onclick="openSubject('computer')">
     <div>
       <h3>Computer Awareness</h3>
       <p>Bank & SSC</p>
@@ -105,7 +105,7 @@
     <span>💻</span>
   </a>
 
-  <a href="quiz-selector.html?subject=science" class="exam-card">
+  <a href="#" class="exam-card" onclick="openSubject('science')">
     <div>
       <h3>General Science</h3>
       <p>Physics • Chem • Bio</p>
@@ -113,7 +113,7 @@
     <span>🔬</span>
   </a>
 
-  <a href="quiz-selector.html?subject=static-gk" class="exam-card">
+  <a href="#" class="exam-card" onclick="openSubject('static-gk')">
     <div>
       <h3>Static GK</h3>
       <p>One-time Prep</p>
@@ -122,6 +122,7 @@
   </a>
 
 </div>
+
     <h2 class="section-title">Choose Your Exam</h2>
     <div class="exam-grid">
       <a href="quiz.html?exam=mixed" class="exam-card highlight"><div><h3>Daily Mixed</h3><p>All Exams</p></div><span>🔥</span></a>
@@ -226,5 +227,15 @@
   }
 </script>
 <script src="script.js"></script>
+<script>
+  function openSubject(subject) {
+    localStorage.setItem(
+      "practiceContext",
+      JSON.stringify({ subject })
+    );
+    window.location.href = "quiz-selector.html";
+  }
+</script>
+
 </body>
 </html>
