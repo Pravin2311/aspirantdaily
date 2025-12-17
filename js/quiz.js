@@ -30,7 +30,12 @@ const subjectLabels = {
   quant: "Quantitative Aptitude",
   computer: "Computer Awareness",
   science: "General Science",
-  "static-gk": "Static GK"
+  "static-gk": "Static GK",
+
+  // NEW
+  english: "English (Grammar & Verbal)",
+  economics: "Economics",
+  geography: "Geography",
 };
 
 if (isSubjectMode) {
