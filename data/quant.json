@@ -1,0 +1,591 @@
+{
+  "subject": "quant",
+  "last_updated": "2025-12-20",
+  "questions": [
+    {
+      "question": {
+        "en": "What is the value of 7 + 5 × 2?",
+        "hi": "7 + 5 × 2 का मान क्या है?"
+      },
+      "options": {
+        "en": ["17", "12", "10", "19"],
+        "hi": ["17", "12", "10", "19"]
+      },
+      "answer": {"en": "17", "hi": "17"},
+      "explanation": {"en": "According to the order of operations, multiplication comes before addition. So, 5 × 2 = 10, and then 7 + 10 = 17.", "hi": "ऑर्डर ऑफ ऑपरेशंस के अनुसार, गुणा पहले आता है। इसलिए, 5 × 2 = 10, और फिर 7 + 10 = 17।"},
+      "subject": "quant"
+    },
+    {
+      "question": {
+        "en": "If a rectangle has a length of 10 cm and a width of 5 cm, what is its area?",
+        "hi": "यदि एक आयत की लंबाई 10 सेमी और चौड़ाई 5 सेमी है, तो इसका क्षेत्रफल क्या होगा?"
+      },
+      "options": {
+        "en": ["50 cm²", "15 cm²", "25 cm²", "100 cm²"],
+        "hi": ["50 सेमी²", "15 सेमी²", "25 सेमी²", "100 सेमी²"]
+      },
+      "answer": {"en": "50 cm²", "hi": "50 सेमी²"},
+      "explanation": {"en": "The area of a rectangle is calculated by multiplying length by width. So, 10 cm × 5 cm = 50 cm².", "hi": "आयत का क्षेत्रफल लंबाई और चौड़ाई को गुणा करके निकाला जाता है। इसलिए, 10 सेमी × 5 सेमी = 50 सेमी²।"},
+      "subject": "quant"
+    },
+    {
+      "question": {
+        "en": "What is the square root of 144?",
+        "hi": "144 का वर्गमूल क्या है?"
+      },
+      "options": {
+        "en": ["12", "14", "10", "16"],
+        "hi": ["12", "14", "10", "16"]
+      },
+      "answer": {"en": "12", "hi": "12"},
+      "explanation": {"en": "The square root of 144 is the number that, when multiplied by itself, gives 144. That number is 12.", "hi": "144 का वर्गमूल वह संख्या है, जो अपने आप से गुणा करने पर 144 देती है। वह संख्या 12 है।"},
+      "subject": "quant"
+    },
+    {
+      "question": {
+        "en": "What is 15% of 200?",
+        "hi": "200 का 15% क्या है?"
+      },
+      "options": {
+        "en": ["30", "25", "35", "20"],
+        "hi": ["30", "25", "35", "20"]
+      },
+      "answer": {"en": "30", "hi": "30"},
+      "explanation": {"en": "To find 15% of 200, multiply 200 by 0.15. So, 200 × 0.15 = 30.", "hi": "200 का 15% निकालने के लिए, 200 को 0.15 से गुणा करें। इसलिए, 200 × 0.15 = 30।"},
+      "subject": "quant"
+    },
+    {
+      "question": {
+        "en": "If a car travels 60 km in 1 hour, how far will it travel in 3 hours?",
+        "hi": "यदि एक कार 1 घंटे में 60 किमी यात्रा करती है, तो यह 3 घंटे में कितनी दूर यात्रा करेगी?"
+      },
+      "options": {
+        "en": ["180 km", "150 km", "120 km", "200 km"],
+        "hi": ["180 किमी", "150 किमी", "120 किमी", "200 किमी"]
+      },
+      "answer": {"en": "180 km", "hi": "180 किमी"},
+      "explanation": {"en": "Distance = Speed × Time. So, 60 km/h × 3 hours = 180 km.", "hi": "दूरी = गति × समय। इसलिए, 60 किमी/घंटा × 3 घंटे = 180 किमी।"},
+      "subject": "quant"
+    },
+    {
+      "question": {
+        "en": "If a triangle has sides of lengths 3, 4, and 5, what type of triangle is it?",
+        "hi": "यदि एक त्रिकोण की भुजाएँ 3, 4, और 5 की लंबाई की हैं, तो यह किस प्रकार का त्रिकोण है?"
+      },
+      "options": {
+        "en": ["Right triangle", "Equilateral triangle", "Isosceles triangle", "Scalene triangle"],
+        "hi": ["सही त्रिकोण", "समबाहु त्रिकोण", "समद्विबाहु त्रिकोण", "विषमबाहु त्रिकोण"]
+      },
+      "answer": {"en": "Right triangle", "hi": "सही त्रिकोण"},
+      "explanation": {"en": "A triangle with sides 3, 4, and 5 satisfies the Pythagorean theorem, thus it is a right triangle.", "hi": "3, 4, और 5 भुजाओं वाला त्रिकोण पायथागोरस के प्रमेय को संतुष्ट करता है, इसलिए यह सही त्रिकोण है।"},
+      "subject": "quant"
+    },
+    {
+      "question": {
+        "en": "What is the value of 2^3 + 3^2?",
+        "hi": "2^3 + 3^2 का मान क्या है?"
+      },
+      "options": {
+        "en": ["17", "11", "9", "8"],
+        "hi": ["17", "11", "9", "8"]
+      },
+      "answer": {"en": "17", "hi": "17"},
+      "explanation": {"en": "2^3 = 8 and 3^2 = 9, so 8 + 9 = 17.", "hi": "2^3 = 8 और 3^2 = 9, इसलिए 8 + 9 = 17।"},
+      "subject": "quant"
+    },
+    {
+      "question": {
+        "en": "What is the value of the expression 3(4 + 5) - 6?",
+        "hi": "3(4 + 5) - 6 अभिव्यक्ति का मान क्या है?"
+      },
+      "options": {
+        "en": ["24", "27", "21", "18"],
+        "hi": ["24", "27", "21", "18"]
+      },
+      "answer": {"en": "21", "hi": "21"},
+      "explanation": {"en": "First, calculate the expression inside the parentheses: 4 + 5 = 9. Then, multiply by 3: 3 × 9 = 27. Finally, subtract 6: 27 - 6 = 21.", "hi": "पहले, कोष्ठक के अंदर की अभिव्यक्ति की गणना करें: 4 + 5 = 9। फिर, 3 से गुणा करें: 3 × 9 = 27। अंत में, 6 घटाएं: 27 - 6 = 21।"},
+      "subject": "quant"
+    },
+    {
+      "question": {
+        "en": "What is the value of 3² + 4²?",
+        "hi": "3² + 4² का मान क्या है?"
+      },
+      "options": {
+        "en": ["25", "20", "15", "10"],
+        "hi": ["25", "20", "15", "10"]
+      },
+      "answer": {"en": "25", "hi": "25"},
+      "explanation": {"en": "3² is 9 and 4² is 16. Adding them gives 9 + 16 = 25.", "hi": "3² का मान 9 है और 4² का मान 16 है। इन्हें जोड़ने पर 9 + 16 = 25 मिलता है।"},
+      "subject": "quant"
+    },
+    {
+      "question": {
+        "en": "If a triangle has angles of 30° and 60°, what is the third angle?",
+        "hi": "यदि एक त्रिकोण के कोण 30° और 60° हैं, तो तीसरा कोण क्या होगा?"
+      },
+      "options": {
+        "en": ["90°", "60°", "30°", "120°"],
+        "hi": ["90°", "60°", "30°", "120°"]
+      },
+      "answer": {"en": "90°", "hi": "90°"},
+      "explanation": {"en": "The sum of angles in a triangle is always 180°. Therefore, the third angle is 180° - (30° + 60°) = 90°.", "hi": "त्रिकोण में कोणों का योग हमेशा 180° होता है। इसलिए, तीसरा कोण 180° - (30° + 60°) = 90° है।"},
+      "subject": "quant"
+    },
+    {
+      "question": {
+        "en": "What is the value of x in the equation 2x + 3 = 11?",
+        "hi": "समीकरण 2x + 3 = 11 में x का मान क्या है?"
+      },
+      "options": {
+        "en": ["4", "5", "3", "6"],
+        "hi": ["4", "5", "3", "6"]
+      },
+      "answer": {"en": "4", "hi": "4"},
+      "explanation": {"en": "To solve for x, subtract 3 from both sides to get 2x = 8, then divide by 2 to find x = 4.", "hi": "x के लिए हल करने के लिए, दोनों पक्षों से 3 घटाएं ताकि 2x = 8 हो जाए, फिर 2 से विभाजित करें ताकि x = 4 हो जाए।"},
+      "subject": "quant"
+    },
+    {
+      "question": {
+        "en": "What is the value of the expression 2(3 + 4) - 5?",
+        "hi": "व्यंजना 2(3 + 4) - 5 का मान क्या है?"
+      },
+      "options": {
+        "en": ["9", "10", "11", "12"],
+        "hi": ["9", "10", "11", "12"]
+      },
+      "answer": {"en": "9", "hi": "9"},
+      "explanation": {"en": "First, calculate the expression inside the parentheses: 3 + 4 = 7. Then, multiply by 2: 2 × 7 = 14. Finally, subtract 5: 14 - 5 = 9.", "hi": "पहले, कोष्ठक के अंदर की व्यंजना की गणना करें: 3 + 4 = 7। फिर, 2 से गुणा करें: 2 × 7 = 14। अंत में, 5 घटाएं: 14 - 5 = 9।"},
+      "subject": "quant"
+    },
+    {
+      "question": {
+        "en": "What is the next number in the sequence: 2, 4, 8, 16, ...?",
+        "hi": "अनुक्रम में अगला संख्या क्या है: 2, 4, 8, 16, ...?"
+      },
+      "options": {
+        "en": ["32", "24", "20", "30"],
+        "hi": ["32", "24", "20", "30"]
+      },
+      "answer": {"en": "32", "hi": "32"},
+      "explanation": {"en": "The sequence is a geometric progression where each number is multiplied by 2. So, 16 × 2 = 32.", "hi": "यह अनुक्रम एक ज्यामितीय प्रगति है जहाँ प्रत्येक संख्या को 2 से गुणा किया जाता है। इसलिए, 16 × 2 = 32।"},
+      "subject": "quant"
+    },
+    {
+      "question": {
+        "en": "If x = 3, what is the value of 2x² + 3x - 5?",
+        "hi": "यदि x = 3 है, तो 2x² + 3x - 5 का मान क्या है?"
+      },
+      "options": {
+        "en": ["16", "20", "18", "14"],
+        "hi": ["16", "20", "18", "14"]
+      },
+      "answer": {"en": "16", "hi": "16"},
+      "explanation": {"en": "Substituting x = 3 gives 2(3)² + 3(3) - 5 = 2(9) + 9 - 5 = 18 + 9 - 5 = 22 - 5 = 16.", "hi": "x = 3 डालने पर 2(3)² + 3(3) - 5 = 2(9) + 9 - 5 = 18 + 9 - 5 = 22 - 5 = 16।"},
+      "subject": "quant"
+    },
+    {
+      "question": {
+        "en": "What is the average of 10, 20, and 30?",
+        "hi": "10, 20 और 30 का औसत क्या है?"
+      },
+      "options": {
+        "en": ["20", "25", "15", "30"],
+        "hi": ["20", "25", "15", "30"]
+      },
+      "answer": {"en": "20", "hi": "20"},
+      "explanation": {"en": "Average = (10 + 20 + 30) / 3 = 60 / 3 = 20.", "hi": "औसत = (10 + 20 + 30) / 3 = 60 / 3 = 20।"},
+      "subject": "quant"
+    },
+    {
+      "question": {
+        "en": "If the radius of a circle is 7 cm, what is its circumference? (Use π = 22/7)",
+        "hi": "यदि एक वृत्त की त्रिज्या 7 सेमी है, तो इसकी परिधि क्या है? (π = 22/7 लें)"
+      },
+      "options": {
+        "en": ["44 cm", "22 cm", "154 cm", "88 cm"],
+        "hi": ["44 सेमी", "22 सेमी", "154 सेमी", "88 सेमी"]
+      },
+      "answer": {"en": "44 cm", "hi": "44 सेमी"},
+      "explanation": {"en": "Circumference = 2πr = 2 × (22/7) × 7 = 44 cm.", "hi": "परिधि = 2πr = 2 × (22/7) × 7 = 44 सेमी।"},
+      "subject": "quant"
+    },
+    {
+      "question": {
+        "en": "What is the LCM of 12 and 18?",
+        "hi": "12 और 18 का LCM क्या है?"
+      },
+      "options": {
+        "en": ["36", "18", "24", "54"],
+        "hi": ["36", "18", "24", "54"]
+      },
+      "answer": {"en": "36", "hi": "36"},
+      "explanation": {"en": "LCM of 12 and 18 is 36, as it is the smallest number divisible by both.", "hi": "12 और 18 का LCM 36 है, क्योंकि यह दोनों से विभाज्य सबसे छोटी संख्या है।"},
+      "subject": "quant"
+    },
+    {
+      "question": {
+        "en": "If 5x - 10 = 15, what is x?",
+        "hi": "यदि 5x - 10 = 15 है, तो x क्या है?"
+      },
+      "options": {
+        "en": ["5", "4", "6", "3"],
+        "hi": ["5", "4", "6", "3"]
+      },
+      "answer": {"en": "5", "hi": "5"},
+      "explanation": {"en": "Add 10 to both sides: 5x = 25. Divide by 5: x = 5.", "hi": "दोनों पक्षों में 10 जोड़ें: 5x = 25। 5 से विभाजित करें: x = 5।"},
+      "subject": "quant"
+    },
+    {
+      "question": {
+        "en": "What is 25% of 80?",
+        "hi": "80 का 25% क्या है?"
+      },
+      "options": {
+        "en": ["20", "25", "30", "15"],
+        "hi": ["20", "25", "30", "15"]
+      },
+      "answer": {"en": "20", "hi": "20"},
+      "explanation": {"en": "25% of 80 = 0.25 × 80 = 20.", "hi": "80 का 25% = 0.25 × 80 = 20।"},
+      "subject": "quant"
+    },
+    {
+      "question": {
+        "en": "If a number is increased by 20% and becomes 60, what was the original number?",
+        "hi": "यदि एक संख्या में 20% की वृद्धि करने पर यह 60 हो जाती है, तो मूल संख्या क्या थी?"
+      },
+      "options": {
+        "en": ["50", "48", "60", "40"],
+        "hi": ["50", "48", "60", "40"]
+      },
+      "answer": {"en": "50", "hi": "50"},
+      "explanation": {"en": "Let original number be x. Then x + 0.2x = 60 → 1.2x = 60 → x = 50.", "hi": "मान लीजिए मूल संख्या x है। तब x + 0.2x = 60 → 1.2x = 60 → x = 50।"},
+      "subject": "quant"
+    },
+    {
+      "question": {
+        "en": "What is the value of 5! (5 factorial)?",
+        "hi": "5! (5 फैक्टोरियल) का मान क्या है?"
+      },
+      "options": {
+        "en": ["120", "60", "25", "100"],
+        "hi": ["120", "60", "25", "100"]
+      },
+      "answer": {"en": "120", "hi": "120"},
+      "explanation": {"en": "5! = 5 × 4 × 3 × 2 × 1 = 120.", "hi": "5! = 5 × 4 × 3 × 2 × 1 = 120।"},
+      "subject": "quant"
+    },
+    {
+      "question": {
+        "en": "If the ratio of boys to girls in a class is 3:2 and there are 30 boys, how many girls are there?",
+        "hi": "यदि कक्षा में लड़कों और लड़कियों का अनुपात 3:2 है और 30 लड़के हैं, तो कितनी लड़कियाँ हैं?"
+      },
+      "options": {
+        "en": ["20", "15", "25", "18"],
+        "hi": ["20", "15", "25", "18"]
+      },
+      "answer": {"en": "20", "hi": "20"},
+      "explanation": {"en": "Boys:Girls = 3:2. So 3 parts = 30 → 1 part = 10 → Girls = 2×10 = 20.", "hi": "लड़के:लड़कियाँ = 3:2। इसलिए 3 भाग = 30 → 1 भाग = 10 → लड़कियाँ = 2×10 = 20।"},
+      "subject": "quant"
+    },
+    {
+      "question": {
+        "en": "What is the simple interest on ₹2000 at 5% per annum for 2 years?",
+        "hi": "₹2000 पर 5% प्रति वर्ष की दर से 2 वर्षों का साधारण ब्याज क्या है?"
+      },
+      "options": {
+        "en": ["₹200", "₹100", "₹150", "₹250"],
+        "hi": ["₹200", "₹100", "₹150", "₹250"]
+      },
+      "answer": {"en": "₹200", "hi": "₹200"},
+      "explanation": {"en": "SI = (P × R × T)/100 = (2000 × 5 × 2)/100 = ₹200.", "hi": "SI = (P × R × T)/100 = (2000 × 5 × 2)/100 = ₹200।"},
+      "subject": "quant"
+    },
+    {
+      "question": {
+        "en": "If a number is divided by 4 and the result is 9, what is the number?",
+        "hi": "यदि किसी संख्या को 4 से विभाजित किया जाता है और परिणाम 9 है, तो संख्या क्या है?"
+      },
+      "options": {
+        "en": ["36", "24", "18", "40"],
+        "hi": ["36", "24", "18", "40"]
+      },
+      "answer": {"en": "36", "hi": "36"},
+      "explanation": {"en": "Number = 9 × 4 = 36.", "hi": "संख्या = 9 × 4 = 36।"},
+      "subject": "quant"
+    },
+    {
+      "question": {
+        "en": "What is the median of the numbers: 5, 7, 9, 11, 13?",
+        "hi": "संख्याओं का माध्यक क्या है: 5, 7, 9, 11, 13?"
+      },
+      "options": {
+        "en": ["9", "10", "11", "7"],
+        "hi": ["9", "10", "11", "7"]
+      },
+      "answer": {"en": "9", "hi": "9"},
+      "explanation": {"en": "The median is the middle value in an ordered list. Here, it is 9.", "hi": "माध्यक एक क्रमबद्ध सूची में मध्य मान है। यहाँ, यह 9 है।"},
+      "subject": "quant"
+    },
+    {
+      "question": {
+        "en": "If the area of a square is 64 cm², what is its perimeter?",
+        "hi": "यदि एक वर्ग का क्षेत्रफल 64 सेमी² है, तो इसका परिमाप क्या है?"
+      },
+      "options": {
+        "en": ["32 cm", "16 cm", "64 cm", "24 cm"],
+        "hi": ["32 सेमी", "16 सेमी", "64 सेमी", "24 सेमी"]
+      },
+      "answer": {"en": "32 cm", "hi": "32 सेमी"},
+      "explanation": {"en": "Side = √64 = 8 cm. Perimeter = 4 × 8 = 32 cm.", "hi": "भुजा = √64 = 8 सेमी। परिमाप = 4 × 8 = 32 सेमी।"},
+      "subject": "quant"
+    },
+    {
+      "question": {
+        "en": "What is the HCF of 24 and 36?",
+        "hi": "24 और 36 का HCF क्या है?"
+      },
+      "options": {
+        "en": ["12", "6", "18", "8"],
+        "hi": ["12", "6", "18", "8"]
+      },
+      "answer": {"en": "12", "hi": "12"},
+      "explanation": {"en": "HCF of 24 and 36 is 12, the highest number that divides both.", "hi": "24 और 36 का HCF 12 है, जो उच्चतम संख्या है जो दोनों को विभाजित करती है।"},
+      "subject": "quant"
+    },
+    {
+      "question": {
+        "en": "If 3x + 5 = 20, what is x?",
+        "hi": "यदि 3x + 5 = 20 है, तो x क्या है?"
+      },
+      "options": {
+        "en": ["5", "4", "6", "7"],
+        "hi": ["5", "4", "6", "7"]
+      },
+      "answer": {"en": "5", "hi": "5"},
+      "explanation": {"en": "3x = 15 → x = 5.", "hi": "3x = 15 → x = 5।"},
+      "subject": "quant"
+    },
+    {
+      "question": {
+        "en": "What is the value of √(64 + 36)?",
+        "hi": "√(64 + 36) का मान क्या है?"
+      },
+      "options": {
+        "en": ["10", "8", "12", "14"],
+        "hi": ["10", "8", "12", "14"]
+      },
+      "answer": {"en": "10", "hi": "10"},
+      "explanation": {"en": "√(64 + 36) = √100 = 10.", "hi": "√(64 + 36) = √100 = 10।"},
+      "subject": "quant"
+    },
+    {
+      "question": {
+        "en": "If a shopkeeper sells an item for ₹120 and gains 20%, what was the cost price?",
+        "hi": "यदि एक दुकानदार एक वस्तु को ₹120 में बेचता है और 20% लाभ कमाता है, तो क्रय मूल्य क्या था?"
+      },
+      "options": {
+        "en": ["₹100", "₹96", "₹108", "₹80"],
+        "hi": ["₹100", "₹96", "₹108", "₹80"]
+      },
+      "answer": {"en": "₹100", "hi": "₹100"},
+      "explanation": {"en": "Let CP be x. Then 1.2x = 120 → x = ₹100.", "hi": "मान लीजिए CP x है। तब 1.2x = 120 → x = ₹100।"},
+      "subject": "quant"
+    },
+    {
+      "question": {
+        "en": "What is the sum of the first 10 natural numbers?",
+        "hi": "पहले 10 प्राकृतिक संख्याओं का योग क्या है?"
+      },
+      "options": {
+        "en": ["55", "50", "45", "60"],
+        "hi": ["55", "50", "45", "60"]
+      },
+      "answer": {"en": "55", "hi": "55"},
+      "explanation": {"en": "Sum = n(n+1)/2 = 10×11/2 = 55.", "hi": "योग = n(n+1)/2 = 10×11/2 = 55।"},
+      "subject": "quant"
+    },
+    {
+      "question": {
+        "en": "If a number is divisible by both 3 and 4, is it divisible by 12?",
+        "hi": "यदि कोई संख्या 3 और 4 दोनों से विभाज्य है, तो क्या यह 12 से विभाज्य है?"
+      },
+      "options": {
+        "en": ["Yes", "No", "Only if even", "Only if odd"],
+        "hi": ["हाँ", "नहीं", "केवल यदि सम", "केवल यदि विषम"]
+      },
+      "answer": {"en": "Yes", "hi": "हाँ"},
+      "explanation": {"en": "Since 3 and 4 are co-prime, LCM is 12. So yes.", "hi": "चूँकि 3 और 4 सह-अभाज्य हैं, LCM 12 है। इसलिए हाँ।"},
+      "subject": "quant"
+    },
+    {
+      "question": {
+        "en": "What is 0.5 × 0.4?",
+        "hi": "0.5 × 0.4 क्या है?"
+      },
+      "options": {
+        "en": ["0.2", "0.9", "2.0", "0.02"],
+        "hi": ["0.2", "0.9", "2.0", "0.02"]
+      },
+      "answer": {"en": "0.2", "hi": "0.2"},
+      "explanation": {"en": "0.5 × 0.4 = 0.20 = 0.2.", "hi": "0.5 × 0.4 = 0.20 = 0.2।"},
+      "subject": "quant"
+    },
+    {
+      "question": {
+        "en": "If the diameter of a circle is 14 cm, what is its area? (Use π = 22/7)",
+        "hi": "यदि एक वृत्त का व्यास 14 सेमी है, तो इसका क्षेत्रफल क्या है? (π = 22/7 लें)"
+      },
+      "options": {
+        "en": ["154 cm²", "44 cm²", "308 cm²", "88 cm²"],
+        "hi": ["154 सेमी²", "44 सेमी²", "308 सेमी²", "88 सेमी²"]
+      },
+      "answer": {"en": "154 cm²", "hi": "154 सेमी²"},
+      "explanation": {"en": "Radius = 7 cm. Area = πr² = (22/7) × 49 = 154 cm².", "hi": "त्रिज्या = 7 सेमी। क्षेत्रफल = πr² = (22/7) × 49 = 154 सेमी²।"},
+      "subject": "quant"
+    },
+    {
+      "question": {
+        "en": "What is the value of (2 + 3)²?",
+        "hi": "(2 + 3)² का मान क्या है?"
+      },
+      "options": {
+        "en": ["25", "10", "13", "36"],
+        "hi": ["25", "10", "13", "36"]
+      },
+      "answer": {"en": "25", "hi": "25"},
+      "explanation": {"en": "(2 + 3)² = 5² = 25.", "hi": "(2 + 3)² = 5² = 25।"},
+      "subject": "quant"
+    },
+    {
+      "question": {
+        "en": "If a train travels 300 km in 5 hours, what is its average speed?",
+        "hi": "यदि एक ट्रेन 5 घंटे में 300 किमी यात्रा करती है, तो इसकी औसत गति क्या है?"
+      },
+      "options": {
+        "en": ["60 km/h", "50 km/h", "70 km/h", "45 km/h"],
+        "hi": ["60 किमी/घंटा", "50 किमी/घंटा", "70 किमी/घंटा", "45 किमी/घंटा"]
+      },
+      "answer": {"en": "60 km/h", "hi": "60 किमी/घंटा"},
+      "explanation": {"en": "Speed = Distance / Time = 300 / 5 = 60 km/h.", "hi": "गति = दूरी / समय = 300 / 5 = 60 किमी/घंटा।"},
+      "subject": "quant"
+    },
+    {
+      "question": {
+        "en": "What is the cube of 4?",
+        "hi": "4 का घन क्या है?"
+      },
+      "options": {
+        "en": ["64", "16", "81", "125"],
+        "hi": ["64", "16", "81", "125"]
+      },
+      "answer": {"en": "64", "hi": "64"},
+      "explanation": {"en": "4³ = 4 × 4 × 4 = 64.", "hi": "4³ = 4 × 4 × 4 = 64।"},
+      "subject": "quant"
+    },
+    {
+      "question": {
+        "en": "If 20% of a number is 40, what is the number?",
+        "hi": "यदि किसी संख्या का 20% 40 है, तो संख्या क्या है?"
+      },
+      "options": {
+        "en": ["200", "160", "240", "100"],
+        "hi": ["200", "160", "240", "100"]
+      },
+      "answer": {"en": "200", "hi": "200"},
+      "explanation": {"en": "Let number be x. 0.2x = 40 → x = 200.", "hi": "मान लीजिए संख्या x है। 0.2x = 40 → x = 200।"},
+      "subject": "quant"
+    },
+    {
+      "question": {
+        "en": "What is the value of (1/2) + (1/4)?",
+        "hi": "(1/2) + (1/4) का मान क्या है?"
+      },
+      "options": {
+        "en": ["3/4", "1/8", "2/6", "1/2"],
+        "hi": ["3/4", "1/8", "2/6", "1/2"]
+      },
+      "answer": {"en": "3/4", "hi": "3/4"},
+      "explanation": {"en": "1/2 = 2/4. So 2/4 + 1/4 = 3/4.", "hi": "1/2 = 2/4। इसलिए 2/4 + 1/4 = 3/4।"},
+      "subject": "quant"
+    },
+    {
+      "question": {
+        "en": "If the price of a book is ₹250 and it is sold at a 10% discount, what is the selling price?",
+        "hi": "यदि एक किताब की कीमत ₹250 है और इसे 10% छूट पर बेचा जाता है, तो विक्रय मूल्य क्या है?"
+      },
+      "options": {
+        "en": ["₹225", "₹200", "₹240", "₹230"],
+        "hi": ["₹225", "₹200", "₹240", "₹230"]
+      },
+      "answer": {"en": "₹225", "hi": "₹225"},
+      "explanation": {"en": "Discount = 10% of 250 = ₹25. SP = 250 - 25 = ₹225.", "hi": "छूट = 250 का 10% = ₹25। विक्रय मूल्य = 250 - 25 = ₹225।"},
+      "subject": "quant"
+    },
+    {
+      "question": {
+        "en": "What is the value of 8² - 6²?",
+        "hi": "8² - 6² का मान क्या है?"
+      },
+      "options": {
+        "en": ["28", "4", "100", "14"],
+        "hi": ["28", "4", "100", "14"]
+      },
+      "answer": {"en": "28", "hi": "28"},
+      "explanation": {"en": "8² = 64, 6² = 36. 64 - 36 = 28.", "hi": "8² = 64, 6² = 36। 64 - 36 = 28।"},
+      "subject": "quant"
+    },
+    {
+      "question": {
+        "en": "If a number is increased by 50% and becomes 90, what was the original number?",
+        "hi": "यदि किसी संख्या में 50% की वृद्धि की जाती है और यह 90 हो जाती है, तो मूल संख्या क्या थी?"
+      },
+      "options": {
+        "en": ["60", "45", "75", "50"],
+        "hi": ["60", "45", "75", "50"]
+      },
+      "answer": {"en": "60", "hi": "60"},
+      "explanation": {"en": "1.5x = 90 → x = 60.", "hi": "1.5x = 90 → x = 60।"},
+      "subject": "quant"
+    },
+    {
+      "question": {
+        "en": "What is the value of 12 ÷ (3 × 2)?",
+        "hi": "12 ÷ (3 × 2) का मान क्या है?"
+      },
+      "options": {
+        "en": ["2", "4", "6", "1"],
+        "hi": ["2", "4", "6", "1"]
+      },
+      "answer": {"en": "2", "hi": "2"},
+      "explanation": {"en": "First, 3 × 2 = 6. Then, 12 ÷ 6 = 2.", "hi": "पहले, 3 × 2 = 6। फिर, 12 ÷ 6 = 2।"},
+      "subject": "quant"
+    },
+    {
+      "question": {
+        "en": "If the cost price is ₹500 and selling price is ₹600, what is the profit percentage?",
+        "hi": "यदि क्रय मूल्य ₹500 और विक्रय मूल्य ₹600 है, तो लाभ प्रतिशत क्या है?"
+      },
+      "options": {
+        "en": ["20%", "25%", "15%", "30%"],
+        "hi": ["20%", "25%", "15%", "30%"]
+      },
+      "answer": {"en": "20%", "hi": "20%"},
+      "explanation": {"en": "Profit = 100. Profit% = (100/500) × 100 = 20%.", "hi": "लाभ = 100। लाभ% = (100/500) × 100 = 20%।"},
+      "subject": "quant"
+    },
+    {
+      "question": {
+        "en": "What is the next number in the sequence: 1, 4, 9, 16, ...?",
+        "hi": "अनुक्रम में अगली संख्या क्या है: 1, 4, 9, 16, ...?"
+      },
+      "options": {
+        "en": ["25", "20", "30", "36"],
+        "hi": ["25", "20", "30", "36"]
+      },
+      "answer": {"en": "25", "hi": "25"},
+      "explanation": {"en": "These are perfect squares: 1², 2², 3², 4², so next is 5² = 25.", "hi": "ये पूर्ण वर्ग हैं: 1², 2², 3², 4², इसलिए अगला 5² = 25 है।"},
+      "subject": "quant"
+    }
+  ]
+}

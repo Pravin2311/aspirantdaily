@@ -1,0 +1,669 @@
+{
+  "subject": "economics",
+  "last_updated": "2025-12-20",
+  "questions": [
+    {
+      "question": {
+        "en": "What is the primary goal of monetary policy?",
+        "hi": "मौद्रिक नीति का प्राथमिक लक्ष्य क्या है?"
+      },
+      "options": {
+        "en": ["Control inflation", "Increase unemployment", "Reduce government spending", "Boost trade deficits"],
+        "hi": ["महंगाई को नियंत्रित करना", "बेरोजगारी बढ़ाना", "सरकारी खर्च कम करना", "व्यापार घाटे को बढ़ाना"]
+      },
+      "answer": {"en": "Control inflation", "hi": "महंगाई को नियंत्रित करना"},
+      "explanation": {"en": "The primary goal of monetary policy is to control inflation and stabilize the currency.", "hi": "मौद्रिक नीति का प्राथमिक लक्ष्य महंगाई को नियंत्रित करना और मुद्रा को स्थिर करना है।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "Which of the following is a characteristic of a monopoly?",
+        "hi": "निम्नलिखित में से कौन सी एकाधिकार की विशेषता है?"
+      },
+      "options": {
+        "en": ["Single seller", "Many buyers", "Perfect competition", "Homogeneous products"],
+        "hi": ["एकल विक्रेता", "कई खरीदार", "पूर्ण प्रतिस्पर्धा", "समान उत्पाद"]
+      },
+      "answer": {"en": "Single seller", "hi": "एकल विक्रेता"},
+      "explanation": {"en": "A monopoly is characterized by a single seller dominating the market.", "hi": "एकाधिकार की विशेषता एकल विक्रेता है जो बाजार पर हावी होता है।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "What does GDP stand for?",
+        "hi": "GDP का क्या अर्थ है?"
+      },
+      "options": {
+        "en": ["Gross Domestic Product", "General Domestic Price", "Gross Development Plan", "General Debt Policy"],
+        "hi": ["सकल घरेलू उत्पाद", "सामान्य घरेलू मूल्य", "सकल विकास योजना", "सामान्य ऋण नीति"]
+      },
+      "answer": {"en": "Gross Domestic Product", "hi": "सकल घरेलू उत्पाद"},
+      "explanation": {"en": "GDP stands for Gross Domestic Product, which measures the economic performance of a country.", "hi": "GDP का अर्थ सकल घरेलू उत्पाद है, जो किसी देश की आर्थिक प्रदर्शन को मापता है।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "What is the law of demand?",
+        "hi": "मांग का नियम क्या है?"
+      },
+      "options": {
+        "en": ["Price increases, demand decreases", "Price decreases, demand decreases", "Price increases, demand increases", "Price is irrelevant to demand"],
+        "hi": ["कीमत बढ़ती है, मांग घटती है", "कीमत घटती है, मांग घटती है", "कीमत बढ़ती है, मांग बढ़ती है", "कीमत मांग के लिए अप्रासंगिक है"]
+      },
+      "answer": {"en": "Price increases, demand decreases", "hi": "कीमत बढ़ती है, मांग घटती है"},
+      "explanation": {"en": "The law of demand states that as the price of a good increases, the quantity demanded decreases.", "hi": "मांग का नियम कहता है कि जैसे-जैसे किसी वस्तु की कीमत बढ़ती है, मांग की गई मात्रा घटती है।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "What is inflation?",
+        "hi": "महंगाई क्या है?"
+      },
+      "options": {
+        "en": ["Increase in prices", "Decrease in prices", "Stability in prices", "Increase in wages"],
+        "hi": ["कीमतों में वृद्धि", "कीमतों में कमी", "कीमतों में स्थिरता", "वेतन में वृद्धि"]
+      },
+      "answer": {"en": "Increase in prices", "hi": "कीमतों में वृद्धि"},
+      "explanation": {"en": "Inflation is defined as the rate at which the general level of prices for goods and services rises.", "hi": "महंगाई को उन वस्तुओं और सेवाओं की सामान्य स्तर की कीमतों में वृद्धि की दर के रूप में परिभाषित किया जाता है।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "What is opportunity cost?",
+        "hi": "अवसर लागत क्या है?"
+      },
+      "options": {
+        "en": ["Cost of the next best alternative", "Total cost of production", "Cost of raw materials", "Cost of labor"],
+        "hi": ["अगले सर्वोत्तम विकल्प की लागत", "उत्पादन की कुल लागत", "कच्चे माल की लागत", "श्रम की लागत"]
+      },
+      "answer": {"en": "Cost of the next best alternative", "hi": "अगले सर्वोत्तम विकल्प की लागत"},
+      "explanation": {"en": "Opportunity cost is the cost of the next best alternative that is foregone when making a decision.", "hi": "अवसर लागत उस अगले सर्वोत्तम विकल्प की लागत है जिसे निर्णय लेते समय छोड़ दिया जाता है।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "What is a public good?",
+        "hi": "सार्वजनिक वस्तु क्या है?"
+      },
+      "options": {
+        "en": ["Non-excludable and non-rivalrous", "Excludable and rivalrous", "Private and limited", "None of the above"],
+        "hi": ["अवरोधक और गैर-प्रतिस्पर्धी", "अवरोधक और प्रतिस्पर्धी", "निजी और सीमित", "उपरोक्त में से कोई नहीं"]
+      },
+      "answer": {"en": "Non-excludable and non-rivalrous", "hi": "अवरोधक और गैर-प्रतिस्पर्धी"},
+      "explanation": {"en": "A public good is characterized by being non-excludable and non-rivalrous, meaning it can be consumed by many without diminishing its availability.", "hi": "सार्वजनिक वस्तु की विशेषता यह है कि यह अवरोधक और गैर-प्रतिस्पर्धी होती है, अर्थात् इसे कई लोग बिना इसकी उपलब्धता को कम किए उपभोग कर सकते हैं।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "Which of the following is a type of market structure?",
+        "hi": "निम्नलिखित में से कौन सा बाजार संरचना का प्रकार है?"
+      },
+      "options": {
+        "en": ["Oligopoly", "Monopoly", "Perfect competition", "All of the above"],
+        "hi": ["ओलिगोपॉली", "एकाधिकार", "पूर्ण प्रतिस्पर्धा", "उपरोक्त सभी"]
+      },
+      "answer": {"en": "All of the above", "hi": "उपरोक्त सभी"},
+      "explanation": {"en": "Oligopoly, monopoly, and perfect competition are all types of market structures.", "hi": "ओलिगोपॉली, एकाधिकार, और पूर्ण प्रतिस्पर्धा सभी बाजार संरचना के प्रकार हैं।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "What is an externality?",
+        "hi": "बाह्य प्रभाव क्या है?"
+      },
+      "options": {
+        "en": ["A cost or benefit affecting a third party", "A government regulation", "A market failure", "A type of tax"],
+        "hi": ["एक लागत या लाभ जो तीसरे पक्ष को प्रभावित करता है", "एक सरकारी विनियमन", "एक बाजार विफलता", "एक प्रकार का कर"]
+      },
+      "answer": {"en": "A cost or benefit affecting a third party", "hi": "एक लागत या लाभ जो तीसरे पक्ष को प्रभावित करता है"},
+      "explanation": {"en": "An externality is a cost or benefit that affects a third party who did not choose to incur that cost or benefit.", "hi": "बाह्य प्रभाव एक लागत या लाभ है जो तीसरे पक्ष को प्रभावित करता है जिसने उस लागत या लाभ को उठाने का चुनाव नहीं किया।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "Which economic system is characterized by private ownership?",
+        "hi": "कौन सा आर्थिक प्रणाली निजी स्वामित्व द्वारा विशेषता है?"
+      },
+      "options": {
+        "en": ["Capitalism", "Socialism", "Communism", "Feudalism"],
+        "hi": ["पूंजीवाद", "सोशलिज्म", "कम्युनिज्म", "जमींदारी"]
+      },
+      "answer": {"en": "Capitalism", "hi": "पूंजीवाद"},
+      "explanation": {"en": "Capitalism is characterized by private ownership of resources and means of production.", "hi": "पूंजीवाद की विशेषता संसाधनों और उत्पादन के साधनों का निजी स्वामित्व है।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "What is fiscal policy?",
+        "hi": "वित्तीय नीति क्या है?"
+      },
+      "options": {
+        "en": ["Government use of taxation and spending", "Central bank's control of money supply", "Trade policy with other countries", "Regulation of private businesses"],
+        "hi": ["कराधान और व्यय का सरकारी उपयोग", "मुद्रा आपूर्ति पर केंद्रीय बैंक का नियंत्रण", "अन्य देशों के साथ व्यापार नीति", "निजी व्यवसायों का विनियमन"]
+      },
+      "answer": {"en": "Government use of taxation and spending", "hi": "कराधान और व्यय का सरकारी उपयोग"},
+      "explanation": {"en": "Fiscal policy involves government decisions on taxation and spending to influence the economy.", "hi": "वित्तीय नीति में अर्थव्यवस्था को प्रभावित करने के लिए कराधान और व्यय पर सरकारी निर्णय शामिल होते हैं।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "What is a mixed economy?",
+        "hi": "मिश्रित अर्थव्यवस्था क्या है?"
+      },
+      "options": {
+        "en": ["Combines elements of both public and private sectors", "Only government-controlled", "Only privately-owned", "No government intervention"],
+        "hi": ["सार्वजनिक और निजी दोनों क्षेत्रों के तत्वों का संयोजन", "केवल सरकार नियंत्रित", "केवल निजी स्वामित्व", "कोई सरकारी हस्तक्षेप नहीं"]
+      },
+      "answer": {"en": "Combines elements of both public and private sectors", "hi": "सार्वजनिक और निजी दोनों क्षेत्रों के तत्वों का संयोजन"},
+      "explanation": {"en": "A mixed economy includes both government and private sector involvement in the economy.", "hi": "मिश्रित अर्थव्यवस्था में अर्थव्यवस्था में सरकार और निजी क्षेत्र दोनों की भागीदारी शामिल होती है।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "What is the role of the central bank?",
+        "hi": "केंद्रीय बैंक की भूमिका क्या है?"
+      },
+      "options": {
+        "en": ["Regulate money supply and interest rates", "Print currency only", "Manage government budget", "Control stock market"],
+        "hi": ["मुद्रा आपूर्ति और ब्याज दरों को नियंत्रित करना", "केवल मुद्रा छापना", "सरकारी बजट प्रबंधित करना", "शेयर बाजार नियंत्रित करना"]
+      },
+      "answer": {"en": "Regulate money supply and interest rates", "hi": "मुद्रा आपूर्ति और ब्याज दरों को नियंत्रित करना"},
+      "explanation": {"en": "The central bank manages monetary policy by controlling money supply and setting interest rates.", "hi": "केंद्रीय बैंक मुद्रा आपूर्ति को नियंत्रित करके और ब्याज दरें निर्धारित करके मौद्रिक नीति का प्रबंधन करता है।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "What is comparative advantage?",
+        "hi": "तुलनात्मक लाभ क्या है?"
+      },
+      "options": {
+        "en": ["Ability to produce at a lower opportunity cost", "Ability to produce more than others", "Producing goods faster", "Having more resources"],
+        "hi": ["कम अवसर लागत पर उत्पादन करने की क्षमता", "दूसरों की तुलना में अधिक उत्पादन करने की क्षमता", "वस्तुओं का तेजी से उत्पादन करना", "अधिक संसाधन रखना"]
+      },
+      "answer": {"en": "Ability to produce at a lower opportunity cost", "hi": "कम अवसर लागत पर उत्पादन करने की क्षमता"},
+      "explanation": {"en": "Comparative advantage refers to producing goods at a lower opportunity cost than others.", "hi": "तुलनात्मक लाभ का तात्पर्य दूसरों की तुलना में कम अवसर लागत पर वस्तुओं का उत्पादन करना है।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "What is a budget deficit?",
+        "hi": "बजट घाटा क्या है?"
+      },
+      "options": {
+        "en": ["When government spending exceeds revenue", "When revenue exceeds spending", "When GDP decreases", "When inflation is high"],
+        "hi": ["जब सरकारी व्यय राजस्व से अधिक होता है", "जब राजस्व व्यय से अधिक होता है", "जब सकल घरेलू उत्पाद घटता है", "जब महंगाई अधिक होती है"]
+      },
+      "answer": {"en": "When government spending exceeds revenue", "hi": "जब सरकारी व्यय राजस्व से अधिक होता है"},
+      "explanation": {"en": "A budget deficit occurs when a government spends more money than it collects in revenues.", "hi": "बजट घाटा तब होता है जब सरकार राजस्व से अधिक पैसा खर्च करती है।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "What is the balance of payments?",
+        "hi": "भुगतान संतुलन क्या है?"
+      },
+      "options": {
+        "en": ["Record of all economic transactions between a country and the rest of the world", "Total exports of a country", "Government budget statement", "Stock market performance"],
+        "hi": ["किसी देश और विश्व के शेष देशों के बीच सभी आर्थिक लेनदेन का रिकॉर्ड", "किसी देश का कुल निर्यात", "सरकारी बजट विवरण", "शेयर बाजार प्रदर्शन"]
+      },
+      "answer": {"en": "Record of all economic transactions between a country and the rest of the world", "hi": "किसी देश और विश्व के शेष देशों के बीच सभी आर्थिक लेनदेन का रिकॉर्ड"},
+      "explanation": {"en": "The balance of payments includes all transactions between residents of a country and the rest of the world.", "hi": "भुगतान संतुलन किसी देश के निवासियों और विश्व के शेष देशों के बीच सभी लेनदेन को शामिल करता है।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "What is microeconomics?",
+        "hi": "सूक्ष्म अर्थशास्त्र क्या है?"
+      },
+      "options": {
+        "en": ["Study of individual economic units", "Study of the entire economy", "Study of government budgets", "Study of international trade"],
+        "hi": ["व्यक्तिगत आर्थिक इकाइयों का अध्ययन", "पूरी अर्थव्यवस्था का अध्ययन", "सरकारी बजटों का अध्ययन", "अंतर्राष्ट्रीय व्यापार का अध्ययन"]
+      },
+      "answer": {"en": "Study of individual economic units", "hi": "व्यक्तिगत आर्थिक इकाइयों का अध्ययन"},
+      "explanation": {"en": "Microeconomics focuses on individual consumers, firms, and markets.", "hi": "सूक्ष्म अर्थशास्त्र व्यक्तिगत उपभोक्ताओं, फर्मों और बाजारों पर केंद्रित है।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "What is macroeconomics?",
+        "hi": "समष्टि अर्थशास्त्र क्या है?"
+      },
+      "options": {
+        "en": ["Study of the whole economy", "Study of individual firms", "Study of product markets", "Study of household behavior"],
+        "hi": ["पूरी अर्थव्यवस्था का अध्ययन", "व्यक्तिगत फर्मों का अध्ययन", "उत्पाद बाजारों का अध्ययन", "घरेलू व्यवहार का अध्ययन"]
+      },
+      "answer": {"en": "Study of the whole economy", "hi": "पूरी अर्थव्यवस्था का अध्ययन"},
+      "explanation": {"en": "Macroeconomics deals with aggregate economic variables like GDP, inflation, and unemployment.", "hi": "समष्टि अर्थशास्त्र सकल घरेलू उत्पाद, महंगाई और बेरोजगारी जैसे समग्र आर्थिक चरों से निपटता है।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "What is a tariff?",
+        "hi": "शुल्क क्या है?"
+      },
+      "options": {
+        "en": ["Tax on imported goods", "Subsidy for local producers", "Government spending", "Interest rate"],
+        "hi": ["आयातित वस्तुओं पर कर", "स्थानीय उत्पादकों के लिए सब्सिडी", "सरकारी खर्च", "ब्याज दर"]
+      },
+      "answer": {"en": "Tax on imported goods", "hi": "आयातित वस्तुओं पर कर"},
+      "explanation": {"en": "A tariff is a tax imposed on goods imported from other countries.", "hi": "शुल्क अन्य देशों से आयातित वस्तुओं पर लगाया गया कर है।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "What is elasticity of demand?",
+        "hi": "मांग की लोच क्या है?"
+      },
+      "options": {
+        "en": ["Responsiveness of quantity demanded to price changes", "Total demand in the market", "Supply response to price", "Government price control"],
+        "hi": ["कीमत परिवर्तनों के प्रति मांग की मात्रा की प्रतिक्रियाशीलता", "बाजार में कुल मांग", "कीमत के प्रति आपूर्ति प्रतिक्रिया", "सरकारी कीमत नियंत्रण"]
+      },
+      "answer": {"en": "Responsiveness of quantity demanded to price changes", "hi": "कीमत परिवर्तनों के प्रति मांग की मात्रा की प्रतिक्रियाशीलता"},
+      "explanation": {"en": "Elasticity of demand measures how much the quantity demanded changes in response to a price change.", "hi": "मांग की लोच मापती है कि कीमत परिवर्तन के जवाब में मांग की मात्रा में कितना परिवर्तन होता है।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "What is the poverty line?",
+        "hi": "गरीबी रेखा क्या है?"
+      },
+      "options": {
+        "en": ["Minimum income needed for basic necessities", "Average income of a country", "Maximum income for tax exemption", "Income of the middle class"],
+        "hi": ["बुनियादी आवश्यकताओं के लिए आवश्यक न्यूनतम आय", "किसी देश की औसत आय", "कर छूट के लिए अधिकतम आय", "मध्यम वर्ग की आय"]
+      },
+      "answer": {"en": "Minimum income needed for basic necessities", "hi": "बुनियादी आवश्यकताओं के लिए आवश्यक न्यूनतम आय"},
+      "explanation": {"en": "The poverty line is the threshold below which individuals are considered to be living in poverty.", "hi": "गरीबी रेखा वह सीमा है जिसके नीचे व्यक्तियों को गरीबी में रहने के रूप में माना जाता है।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "What is national income?",
+        "hi": "राष्ट्रीय आय क्या है?"
+      },
+      "options": {
+        "en": ["Total income earned by a country's residents", "Total exports", "Government revenue", "Total imports"],
+        "hi": ["किसी देश के निवासियों द्वारा अर्जित कुल आय", "कुल निर्यात", "सरकारी राजस्व", "कुल आयात"]
+      },
+      "answer": {"en": "Total income earned by a country's residents", "hi": "किसी देश के निवासियों द्वारा अर्जित कुल आय"},
+      "explanation": {"en": "National income is the total value of all goods and services produced by a country in a year.", "hi": "राष्ट्रीय आय किसी देश द्वारा एक वर्ष में उत्पादित सभी वस्तुओं और सेवाओं का कुल मूल्य है।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "What is a recession?",
+        "hi": "मंदी क्या है?"
+      },
+      "options": {
+        "en": ["Period of economic decline", "Period of high growth", "High inflation", "Budget surplus"],
+        "hi": ["आर्थिक मंदी की अवधि", "उच्च विकास की अवधि", "उच्च महंगाई", "बजट अधिशेष"]
+      },
+      "answer": {"en": "Period of economic decline", "hi": "आर्थिक मंदी की अवधि"},
+      "explanation": {"en": "A recession is a significant decline in economic activity lasting more than a few months.", "hi": "मंदी आर्थिक गतिविधि में उल्लेखनीय गिरावट है जो कुछ महीनों से अधिक समय तक रहती है।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "What is globalization?",
+        "hi": "वैश्वीकरण क्या है?"
+      },
+      "options": {
+        "en": ["Integration of economies worldwide", "Isolation of national economies", "Reduction in trade", "Government control of markets"],
+        "hi": ["विश्व भर में अर्थव्यवस्थाओं का एकीकरण", "राष्ट्रीय अर्थव्यवस्थाओं का अलगाव", "व्यापार में कमी", "बाजारों पर सरकारी नियंत्रण"]
+      },
+      "answer": {"en": "Integration of economies worldwide", "hi": "विश्व भर में अर्थव्यवस्थाओं का एकीकरण"},
+      "explanation": {"en": "Globalization refers to the increasing interconnectedness of economies and cultures across the world.", "hi": "वैश्वीकरण दुनिया भर में अर्थव्यवस्थाओं और संस्कृतियों के बढ़ते आपसी जुड़ाव को संदर्भित करता है।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "What is a progressive tax?",
+        "hi": "प्रगतिशील कर क्या है?"
+      },
+      "options": {
+        "en": ["Tax rate increases with income", "Tax rate decreases with income", "Fixed tax rate for all", "No tax for rich"],
+        "hi": ["आय के साथ कर दर बढ़ती है", "आय के साथ कर दर घटती है", "सभी के लिए निश्चित कर दर", "अमीरों के लिए कोई कर नहीं"]
+      },
+      "answer": {"en": "Tax rate increases with income", "hi": "आय के साथ कर दर बढ़ती है"},
+      "explanation": {"en": "A progressive tax system imposes higher tax rates on higher income levels.", "hi": "प्रगतिशील कर प्रणाली उच्च आय स्तरों पर उच्च कर दरें लगाती है।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "What is the Human Development Index (HDI)?",
+        "hi": "मानव विकास सूचकांक (HDI) क्या है?"
+      },
+      "options": {
+        "en": ["Measure of life expectancy, education, and per capita income", "Measure of GDP only", "Measure of military strength", "Measure of industrial output"],
+        "hi": ["जीवन प्रत्याशा, शिक्षा और प्रति व्यक्ति आय का माप", "केवल सकल घरेलू उत्पाद का माप", "सैन्य शक्ति का माप", "औद्योगिक उत्पादन का माप"]
+      },
+      "answer": {"en": "Measure of life expectancy, education, and per capita income", "hi": "जीवन प्रत्याशा, शिक्षा और प्रति व्यक्ति आय का माप"},
+      "explanation": {"en": "HDI is a composite index measuring average achievement in key dimensions of human development.", "hi": "HDI मानव विकास के प्रमुख आयामों में औसत उपलब्धि का एक संयुक्त सूचकांक है।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "What is sustainable development?",
+        "hi": "सतत विकास क्या है?"
+      },
+      "options": {
+        "en": ["Development that meets present needs without compromising future generations", "Development focused only on economic growth", "Ignoring environmental concerns", "Short-term planning"],
+        "hi": ["विकास जो भविष्य की पीढ़ियों को समझौता किए बिना वर्तमान आवश्यकताओं को पूरा करता है", "केवल आर्थिक विकास पर केंद्रित विकास", "पर्यावरणीय चिंताओं को नजरअंदाज करना", "अल्पकालिक योजना"]
+      },
+      "answer": {"en": "Development that meets present needs without compromising future generations", "hi": "विकास जो भविष्य की पीढ़ियों को समझौता किए बिना वर्तमान आवश्यकताओं को पूरा करता है"},
+      "explanation": {"en": "Sustainable development balances economic growth, environmental care, and social inclusion.", "hi": "सतत विकास आर्थिक विकास, पर्यावरणीय देखभाल और सामाजिक समावेशन का संतुलन बनाता है।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "What is a trade deficit?",
+        "hi": "व्यापार घाटा क्या है?"
+      },
+      "options": {
+        "en": ["When imports exceed exports", "When exports exceed imports", "When government spending is high", "When inflation is low"],
+        "hi": ["जब आयात निर्यात से अधिक होता है", "जब निर्यात आयात से अधिक होता है", "जब सरकारी खर्च अधिक होता है", "जब महंगाई कम होती है"]
+      },
+      "answer": {"en": "When imports exceed exports", "hi": "जब आयात निर्यात से अधिक होता है"},
+      "explanation": {"en": "A trade deficit occurs when a country imports more goods and services than it exports.", "hi": "व्यापार घाटा तब होता है जब कोई देश उसके निर्यात की तुलना में अधिक वस्तुएँ और सेवाएँ आयात करता है।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "What is the role of the Reserve Bank of India (RBI)?",
+        "hi": "भारतीय रिजर्व बैंक (RBI) की भूमिका क्या है?"
+      },
+      "options": {
+        "en": ["Monetary authority and regulator of banks", "Fiscal policy maker", "Stock market regulator", "Trade policy maker"],
+        "hi": ["मौद्रिक प्राधिकरण और बैंकों का नियामक", "वित्तीय नीति निर्माता", "शेयर बाजार नियामक", "व्यापार नीति निर्माता"]
+      },
+      "answer": {"en": "Monetary authority and regulator of banks", "hi": "मौद्रिक प्राधिकरण और बैंकों का नियामक"},
+      "explanation": {"en": "RBI controls monetary policy, issues currency, and regulates the banking system in India.", "hi": "RBI मौद्रिक नीति को नियंत्रित करता है, मुद्रा जारी करता है और भारत में बैंकिंग प्रणाली को विनियमित करता है।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "What is a subsidy?",
+        "hi": "अनुदान क्या है?"
+      },
+      "options": {
+        "en": ["Financial support by government to reduce production costs", "Tax on goods", "Penalty for pollution", "Interest on loans"],
+        "hi": ["उत्पादन लागत को कम करने के लिए सरकार द्वारा वित्तीय समर्थन", "वस्तुओं पर कर", "प्रदूषण के लिए जुर्माना", "ऋण पर ब्याज"]
+      },
+      "answer": {"en": "Financial support by government to reduce production costs", "hi": "उत्पादन लागत को कम करने के लिए सरकार द्वारा वित्तीय समर्थन"},
+      "explanation": {"en": "A subsidy is a benefit given by the government to groups or individuals, often to support essential goods.", "hi": "अनुदान सरकार द्वारा समूहों या व्यक्तियों को दिया जाने वाला लाभ है, अक्सर आवश्यक वस्तुओं का समर्थन करने के लिए।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "What is the difference between GNP and GDP?",
+        "hi": "GNP और GDP में क्या अंतर है?"
+      },
+      "options": {
+        "en": ["GNP includes income from abroad, GDP does not", "GDP includes income from abroad, GNP does not", "Both are the same", "GNP is only for developed countries"],
+        "hi": ["GNP में विदेशों से आय शामिल है, GDP में नहीं", "GDP में विदेशों से आय शामिल है, GNP में नहीं", "दोनों एक समान हैं", "GNP केवल विकसित देशों के लिए है"]
+      },
+      "answer": {"en": "GNP includes income from abroad, GDP does not", "hi": "GNP में विदेशों से आय शामिल है, GDP में नहीं"},
+      "explanation": {"en": "Gross National Product (GNP) includes net income from abroad, while GDP only measures domestic production.", "hi": "सकल राष्ट्रीय उत्पाद (GNP) में विदेशों से शुद्ध आय शामिल है, जबकि GDP केवल घरेलू उत्पादन को मापता है।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "What is the multiplier effect?",
+        "hi": "गुणक प्रभाव क्या है?"
+      },
+      "options": {
+        "en": ["Increase in final income from an initial spending", "Decrease in spending", "Inflation control", "Tax reduction"],
+        "hi": ["प्रारंभिक व्यय से अंतिम आय में वृद्धि", "व्यय में कमी", "महंगाई नियंत्रण", "कर में कमी"]
+      },
+      "answer": {"en": "Increase in final income from an initial spending", "hi": "प्रारंभिक व्यय से अंतिम आय में वृद्धि"},
+      "explanation": {"en": "The multiplier effect shows how an initial increase in spending leads to a greater increase in national income.", "hi": "गुणक प्रभाव दर्शाता है कि व्यय में प्रारंभिक वृद्धि से राष्ट्रीय आय में अधिक वृद्धि होती है।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "What is disguised unemployment?",
+        "hi": "छिपी हुई बेरोजगारी क्या है?"
+      },
+      "options": {
+        "en": ["More people employed than needed for work", "No job seekers", "Highly skilled unemployed", "Seasonal unemployment"],
+        "hi": ["काम के लिए आवश्यकता से अधिक लोग काम पर लगे हुए", "कोई नौकरी तलाशकर्ता नहीं", "अत्यधिक कुशल बेरोजगार", "मौसमी बेरोजगारी"]
+      },
+      "answer": {"en": "More people employed than needed for work", "hi": "काम के लिए आवश्यकता से अधिक लोग काम पर लगे हुए"},
+      "explanation": {"en": "Disguised unemployment occurs when more workers are employed than actually required, common in agriculture.", "hi": "छिपी हुई बेरोजगारी तब होती है जब वास्तव में आवश्यकता से अधिक श्रमिक काम पर लगे होते हैं, कृषि में सामान्य।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "What is the repo rate?",
+        "hi": "रेपो दर क्या है?"
+      },
+      "options": {
+        "en": ["Rate at which RBI lends money to commercial banks", "Rate at which banks lend to customers", "Government bond rate", "Inflation rate"],
+        "hi": ["वह दर जिस पर RBI व्यावसायिक बैंकों को धन उधार देता है", "वह दर जिस पर बैंक ग्राहकों को ऋण देते हैं", "सरकारी बॉन्ड दर", "महंगाई दर"]
+      },
+      "answer": {"en": "Rate at which RBI lends money to commercial banks", "hi": "वह दर जिस पर RBI व्यावसायिक बैंकों को धन उधार देता है"},
+      "explanation": {"en": "Repo rate is the rate at which the central bank lends short-term funds to commercial banks.", "hi": "रेपो दर वह दर है जिस पर केंद्रीय बैंक व्यावसायिक बैंकों को अल्पकालिक धन उधार देता है।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "What is the main objective of the Five-Year Plans in India?",
+        "hi": "भारत में पंचवर्षीय योजनाओं का मुख्य उद्देश्य क्या है?"
+      },
+      "options": {
+        "en": ["Economic development and poverty reduction", "Military expansion", "Political dominance", "Cultural preservation"],
+        "hi": ["आर्थिक विकास और गरीबी में कमी", "सैन्य विस्तार", "राजनीतिक प्रभुत्व", "सांस्कृतिक संरक्षण"]
+      },
+      "answer": {"en": "Economic development and poverty reduction", "hi": "आर्थिक विकास और गरीबी में कमी"},
+      "explanation": {"en": "The Five-Year Plans aimed at balanced economic growth and reducing poverty through planned development.", "hi": "पंचवर्षीय योजनाओं का उद्देश्य योजनाबद्ध विकास के माध्यम से संतुलित आर्थिक विकास और गरीबी में कमी लाना था।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "What is the 'Make in India' initiative?",
+        "hi": "'मेक इन इंडिया' पहल क्या है?"
+      },
+      "options": {
+        "en": ["Program to boost manufacturing in India", "Program to increase imports", "Program for digital governance", "Program for agricultural subsidies"],
+        "hi": ["भारत में विनिर्माण को बढ़ावा देने के लिए कार्यक्रम", "आयात बढ़ाने के लिए कार्यक्रम", "डिजिटल शासन के लिए कार्यक्रम", "कृषि अनुदान के लिए कार्यक्रम"]
+      },
+      "answer": {"en": "Program to boost manufacturing in India", "hi": "भारत में विनिर्माण को बढ़ावा देने के लिए कार्यक्रम"},
+      "explanation": {"en": "'Make in India' aims to transform India into a global design and manufacturing hub.", "hi": "'मेक इन इंडिया' भारत को एक वैश्विक डिजाइन और विनिर्माण केंद्र में परिवर्तित करने का लक्ष्य रखता है।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "What is NITI Aayog?",
+        "hi": "NITI आयोग क्या है?"
+      },
+      "options": {
+        "en": ["Policy think tank of the Government of India", "Central bank of India", "Tax collection agency", "Trade union organization"],
+        "hi": ["भारत सरकार का नीति थिंक टैंक", "भारत का केंद्रीय बैंक", "कर संग्रह एजेंसी", "श्रम संघ संगठन"]
+      },
+      "answer": {"en": "Policy think tank of the Government of India", "hi": "भारत सरकार का नीति थिंक टैंक"},
+      "explanation": {"en": "NITI Aayog replaced the Planning Commission and serves as a policy think tank for sustainable development.", "hi": "NITI आयोग योजना आयोग का स्थान लेता है और सतत विकास के लिए एक नीति थिंक टैंक के रूप में कार्य करता है।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "What is demonetization?",
+        "hi": "नोटबंदी क्या है?"
+      },
+      "options": {
+        "en": ["Withdrawal of currency from circulation", "Introduction of new currency", "Increase in money supply", "Reduction in interest rates"],
+        "hi": ["मुद्रा को प्रचलन से वापस लेना", "नई मुद्रा का परिचय", "मुद्रा आपूर्ति में वृद्धि", "ब्याज दरों में कमी"]
+      },
+      "answer": {"en": "Withdrawal of currency from circulation", "hi": "मुद्रा को प्रचलन से वापस लेना"},
+      "explanation": {"en": "Demonetization is the act of stripping a currency unit of its status as legal tender.", "hi": "नोटबंदी मुद्रा इकाई को कानूनी मुद्रा के रूप में उसकी स्थिति से वंचित करने का कार्य है।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "What is GST?",
+        "hi": "जीएसटी क्या है?"
+      },
+      "options": {
+        "en": ["Goods and Services Tax", "General Sales Tax", "Government Service Tax", "Global Standard Tax"],
+        "hi": ["वस्तु एवं सेवा कर", "सामान्य बिक्री कर", "सरकारी सेवा कर", "वैश्विक मानक कर"]
+      },
+      "answer": {"en": "Goods and Services Tax", "hi": "वस्तु एवं सेवा कर"},
+      "explanation": {"en": "GST is a comprehensive indirect tax on manufacture, sale, and consumption of goods and services in India.", "hi": "जीएसटी भारत में वस्तुओं और सेवाओं के निर्माण, बिक्री और उपभोग पर एक व्यापक अप्रत्यक्ष कर है।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "What is the Phillips Curve?",
+        "hi": "फिलिप्स वक्र क्या है?"
+      },
+      "options": {
+        "en": ["Inverse relationship between inflation and unemployment", "Direct relationship between GDP and inflation", "Relationship between exports and imports", "Link between interest rates and savings"],
+        "hi": ["महंगाई और बेरोजगारी के बीच प्रतिलोम संबंध", "सकल घरेलू उत्पाद और महंगाई के बीच प्रत्यक्ष संबंध", "निर्यात और आयात के बीच संबंध", "ब्याज दरों और बचत के बीच कड़ी"]
+      },
+      "answer": {"en": "Inverse relationship between inflation and unemployment", "hi": "महंगाई और बेरोजगारी के बीच प्रतिलोम संबंध"},
+      "explanation": {"en": "The Phillips Curve shows that lower unemployment is associated with higher inflation, and vice versa.", "hi": "फिलिप्स वक्र दर्शाता है कि कम बेरोजगारी का उच्च महंगाई से संबंध है, और इसके विपरीत।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "What is the purpose of Special Economic Zones (SEZs)?",
+        "hi": "विशेष आर्थिक क्षेत्रों (SEZ) का उद्देश्य क्या है?"
+      },
+      "options": {
+        "en": ["Promote exports and attract foreign investment", "Increase import taxes", "Restrict foreign companies", "Control domestic prices"],
+        "hi": ["निर्यात को बढ़ावा देना और विदेशी निवेश आकर्षित करना", "आयात कर बढ़ाना", "विदेशी कंपनियों को प्रतिबंधित करना", "घरेलू कीमतों को नियंत्रित करना"]
+      },
+      "answer": {"en": "Promote exports and attract foreign investment", "hi": "निर्यात को बढ़ावा देना और विदेशी निवेश आकर्षित करना"},
+      "explanation": {"en": "SEZs offer tax and business incentives to boost exports and foreign direct investment.", "hi": "SEZ कर और व्यवसाय प्रोत्साहन प्रदान करते हैं ताकि निर्यात और प्रत्यक्ष विदेशी निवेश को बढ़ावा मिल सके।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "What is the main source of revenue for the Indian government?",
+        "hi": "भारत सरकार के लिए राजस्व का मुख्य स्रोत क्या है?"
+      },
+      "options": {
+        "en": ["Tax revenue", "Foreign aid", "Printing money", "Donations"],
+        "hi": ["कर राजस्व", "विदेशी सहायता", "मुद्रा छापना", "दान"]
+      },
+      "answer": {"en": "Tax revenue", "hi": "कर राजस्व"},
+      "explanation": {"en": "The Indian government primarily relies on taxes like income tax, GST, and corporate tax for revenue.", "hi": "भारत सरकार मुख्य रूप से राजस्व के लिए आयकर, जीएसटी और कॉर्पोरेट कर जैसे करों पर निर्भर है।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "What is the difference between direct and indirect taxes?",
+        "hi": "प्रत्यक्ष और अप्रत्यक्ष करों में क्या अंतर है?"
+      },
+      "options": {
+        "en": ["Direct tax is paid directly to government; indirect tax is paid via goods/services", "Both are the same", "Indirect tax is only for businesses", "Direct tax is on consumption"],
+        "hi": ["प्रत्यक्ष कर सीधे सरकार को दिया जाता है; अप्रत्यक्ष कर वस्तुओं/सेवाओं के माध्यम से दिया जाता है", "दोनों एक समान हैं", "अप्रत्यक्ष कर केवल व्यवसायों के लिए है", "प्रत्यक्ष कर उपभोग पर है"]
+      },
+      "answer": {"en": "Direct tax is paid directly to government; indirect tax is paid via goods/services", "hi": "प्रत्यक्ष कर सीधे सरकार को दिया जाता है; अप्रत्यक्ष कर वस्तुओं/सेवाओं के माध्यम से दिया जाता है"},
+      "explanation": {"en": "Income tax is direct; GST is indirect.", "hi": "आयकर प्रत्यक्ष है; जीएसटी अप्रत्यक्ष है।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "What is the base year for India's current GDP calculation?",
+        "hi": "भारत की वर्तमान सकल घरेलू उत्पाद गणना के लिए आधार वर्ष क्या है?"
+      },
+      "options": {
+        "en": ["2011-12", "2004-05", "1993-94", "2020-21"],
+        "hi": ["2011-12", "2004-05", "1993-94", "2020-21"]
+      },
+      "answer": {"en": "2011-12", "hi": "2011-12"},
+      "explanation": {"en": "India changed the base year for GDP calculation to 2011-12 to reflect the current economic structure.", "hi": "भारत ने वर्तमान आर्थिक संरचना को दर्शाने के लिए सकल घरेलू उत्पाद गणना के लिए आधार वर्ष 2011-12 कर दिया।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "What is the main objective of the National Rural Employment Guarantee Act (NREGA)?",
+        "hi": "राष्ट्रीय ग्रामीण रोजगार गारंटी अधिनियम (NREGA) का मुख्य उद्देश्य क्या है?"
+      },
+      "options": {
+        "en": ["Guarantee 100 days of wage employment per year", "Provide free education", "Supply free electricity", "Build urban infrastructure"],
+        "hi": ["प्रति वर्ष 100 दिनों के मजदूरी रोजगार की गारंटी प्रदान करना", "मुफ्त शिक्षा प्रदान करना", "मुफ्त बिजली की आपूर्ति करना", "शहरी बुनियादी ढांचा बनाना"]
+      },
+      "answer": {"en": "Guarantee 100 days of wage employment per year", "hi": "प्रति वर्ष 100 दिनों के मजदूरी रोजगार की गारंटी प्रदान करना"},
+      "explanation": {"en": "NREGA aims to enhance livelihood security in rural areas by providing at least 100 days of wage employment.", "hi": "NREGA कम से कम 100 दिनों के मजदूरी रोजगार प्रदान करके ग्रामीण क्षेत्रों में आजीविका सुरक्षा को बढ़ाने का लक्ष्य रखता है।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "What is the role of the Securities and Exchange Board of India (SEBI)?",
+        "hi": "भारतीय प्रतिभूति एवं विनिमय बोर्ड (SEBI) की भूमिका क्या है?"
+      },
+      "options": {
+        "en": ["Regulate securities market", "Control money supply", "Set interest rates", "Collect taxes"],
+        "hi": ["प्रतिभूति बाजार को विनियमित करना", "मुद्रा आपूर्ति नियंत्रित करना", "ब्याज दरें निर्धारित करना", "कर एकत्र करना"]
+      },
+      "answer": {"en": "Regulate securities market", "hi": "प्रतिभूति बाजार को विनियमित करना"},
+      "explanation": {"en": "SEBI protects investors and promotes orderly development of the securities market.", "hi": "SEBI निवेशकों की सुरक्षा करता है और प्रतिभूति बाजार के व्यवस्थित विकास को बढ़ावा देता है।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "What is the main function of the World Bank?",
+        "hi": "विश्व बैंक का मुख्य कार्य क्या है?"
+      },
+      "options": {
+        "en": ["Provide financial and technical assistance to developing countries", "Control global interest rates", "Issue world currency", "Manage global trade"],
+        "hi": ["विकासशील देशों को वित्तीय और तकनीकी सहायता प्रदान करना", "वैश्विक ब्याज दरों को नियंत्रित करना", "विश्व मुद्रा जारी करना", "वैश्विक व्यापार प्रबंधित करना"]
+      },
+      "answer": {"en": "Provide financial and technical assistance to developing countries", "hi": "विकासशील देशों को वित्तीय और तकनीकी सहायता प्रदान करना"},
+      "explanation": {"en": "The World Bank supports development projects in low and middle-income countries.", "hi": "विश्व बैंक कम और मध्यम आय वाले देशों में विकास परियोजनाओं का समर्थन करता है।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "What is the primary sector of the economy?",
+        "hi": "अर्थव्यवस्था का प्राथमिक क्षेत्र क्या है?"
+      },
+      "options": {
+        "en": ["Agriculture and raw material extraction", "Manufacturing", "Services", "Information Technology"],
+        "hi": ["कृषि और कच्चे माल का निष्कर्षण", "विनिर्माण", "सेवाएँ", "सूचना प्रौद्योगिकी"]
+      },
+      "answer": {"en": "Agriculture and raw material extraction", "hi": "कृषि और कच्चे माल का निष्कर्षण"},
+      "explanation": {"en": "The primary sector involves extraction and production of raw materials like farming and mining.", "hi": "प्राथमिक क्षेत्र में कृषि और खनन जैसे कच्चे माल का निष्कर्षण और उत्पादन शामिल है।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "What is the secondary sector of the economy?",
+        "hi": "अर्थव्यवस्था का द्वितीयक क्षेत्र क्या है?"
+      },
+      "options": {
+        "en": ["Manufacturing and processing", "Agriculture", "Services", "Trade"],
+        "hi": ["विनिर्माण और प्रसंस्करण", "कृषि", "सेवाएँ", "व्यापार"]
+      },
+      "answer": {"en": "Manufacturing and processing", "hi": "विनिर्माण और प्रसंस्करण"},
+      "explanation": {"en": "The secondary sector transforms raw materials into finished goods through manufacturing.", "hi": "द्वितीयक क्षेत्र विनिर्माण के माध्यम से कच्चे माल को तैयार माल में बदलता है।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "What is the tertiary sector of the economy?",
+        "hi": "अर्थव्यवस्था का तृतीयक क्षेत्र क्या है?"
+      },
+      "options": {
+        "en": ["Services", "Agriculture", "Manufacturing", "Mining"],
+        "hi": ["सेवाएँ", "कृषि", "विनिर्माण", "खनन"]
+      },
+      "answer": {"en": "Services", "hi": "सेवाएँ"},
+      "explanation": {"en": "The tertiary sector includes services like banking, education, healthcare, and transport.", "hi": "तृतीयक क्षेत्र में बैंकिंग, शिक्षा, स्वास्थ्य देखभाल और परिवहन जैसी सेवाएँ शामिल हैं।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "What is a free market economy?",
+        "hi": "मुक्त बाजार अर्थव्यवस्था क्या है?"
+      },
+      "options": {
+        "en": ["Prices determined by supply and demand", "Prices fixed by government", "No private property", "No competition"],
+        "hi": ["आपूर्ति और मांग द्वारा निर्धारित कीमतें", "सरकार द्वारा निश्चित कीमतें", "कोई निजी संपत्ति नहीं", "कोई प्रतिस्पर्धा नहीं"]
+      },
+      "answer": {"en": "Prices determined by supply and demand", "hi": "आपूर्ति और मांग द्वारा निर्धारित कीमतें"},
+      "explanation": {"en": "In a free market, economic decisions are made by individuals and businesses without government intervention.", "hi": "मुक्त बाजार में, आर्थिक निर्णय व्यक्तियों और व्यवसायों द्वारा सरकारी हस्तक्षेप के बिना लिए जाते हैं।"},
+      "subject": "economics"
+    }
+  ]
+}

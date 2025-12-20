@@ -1,0 +1,604 @@
+{
+  "subject": "science",
+  "last_updated": "2025-12-20",
+  "questions": [
+    {
+      "question": {
+        "en": "What is the chemical symbol for water?",
+        "hi": "पानी का रासायनिक प्रतीक क्या है?"
+      },
+      "options": {
+        "en": ["H2O", "CO2", "O2", "NaCl"],
+        "hi": ["H2O", "CO2", "O2", "NaCl"]
+      },
+      "answer": {"en": "H2O", "hi": "H2O"},
+      "explanation": {"en": "The chemical symbol for water is H2O, which indicates that each molecule consists of two hydrogen atoms and one oxygen atom.", "hi": "पानी का रासायनिक प्रतीक H2O है, जो दर्शाता है कि प्रत्येक अणु में दो हाइड्रोजन परमाणु और एक ऑक्सीजन परमाणु होता है।"},
+      "subject": "science"
+    },
+    {
+      "question": {
+        "en": "What is the powerhouse of the cell?",
+        "hi": "कोशिका का ऊर्जा घर कौन सा है?"
+      },
+      "options": {
+        "en": ["Nucleus", "Mitochondria", "Ribosome", "Endoplasmic Reticulum"],
+        "hi": ["न्यूक्लियस", "माइटोकॉन्ड्रिया", "राइबोसोम", "एंडोप्लास्मिक रेटिकुलम"]
+      },
+      "answer": {"en": "Mitochondria", "hi": "माइटोकॉन्ड्रिया"},
+      "explanation": {"en": "Mitochondria are known as the powerhouse of the cell because they produce ATP, the energy currency of the cell.", "hi": "माइटोकॉन्ड्रिया को कोशिका का ऊर्जा घर कहा जाता है क्योंकि वे ATP, कोशिका की ऊर्जा मुद्रा, का उत्पादन करते हैं।"},
+      "subject": "science"
+    },
+    {
+      "question": {
+        "en": "Which planet is known as the Red Planet?",
+        "hi": "कौन सा ग्रह लाल ग्रह के रूप में जाना जाता है?"
+      },
+      "options": {
+        "en": ["Earth", "Mars", "Jupiter", "Venus"],
+        "hi": ["पृथ्वी", "मंगल", "बृहस्पति", "शुक्र"]
+      },
+      "answer": {"en": "Mars", "hi": "मंगल"},
+      "explanation": {"en": "Mars is known as the Red Planet due to its reddish appearance, which is caused by iron oxide on its surface.", "hi": "मंगल को लाल ग्रह के रूप में जाना जाता है क्योंकि इसका रंग लाल है, जो इसकी सतह पर लोहे के ऑक्साइड के कारण होता है।"},
+      "subject": "science"
+    },
+    {
+      "question": {
+        "en": "What gas do plants absorb from the atmosphere?",
+        "hi": "पौधे वायुमंडल से कौन सा गैस अवशोषित करते हैं?"
+      },
+      "options": {
+        "en": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
+        "hi": ["ऑक्सीजन", "कार्बन डाइऑक्साइड", "नाइट्रोजन", "हाइड्रोजन"]
+      },
+      "answer": {"en": "Carbon Dioxide", "hi": "कार्बन डाइऑक्साइड"},
+      "explanation": {"en": "Plants absorb carbon dioxide from the atmosphere during the process of photosynthesis to produce oxygen.", "hi": "पौधे प्रकाश संश्लेषण की प्रक्रिया के दौरान वायुमंडल से कार्बन डाइऑक्साइड अवशोषित करते हैं ताकि ऑक्सीजन का उत्पादन किया जा सके।"},
+      "subject": "science"
+    },
+    {
+      "question": {
+        "en": "What is the main function of red blood cells?",
+        "hi": "लाल रक्त कोशिकाओं का मुख्य कार्य क्या है?"
+      },
+      "options": {
+        "en": ["Fight infections", "Transport oxygen", "Clot blood", "Regulate temperature"],
+        "hi": ["संक्रमण से लड़ना", "ऑक्सीजन का परिवहन", "रक्त का थक्का बनाना", "तापमान को नियंत्रित करना"]
+      },
+      "answer": {"en": "Transport oxygen", "hi": "ऑक्सीजन का परिवहन"},
+      "explanation": {"en": "The main function of red blood cells is to transport oxygen from the lungs to the rest of the body.", "hi": "लाल रक्त कोशिकाओं का मुख्य कार्य फेफड़ों से शरीर के बाकी हिस्सों में ऑक्सीजन का परिवहन करना है।"},
+      "subject": "science"
+    },
+    {
+      "question": {
+        "en": "What is the process by which plants make their food?",
+        "hi": "पौधे अपने भोजन का निर्माण किस प्रक्रिया द्वारा करते हैं?"
+      },
+      "options": {
+        "en": ["Photosynthesis", "Respiration", "Transpiration", "Digestion"],
+        "hi": ["फोटोसिंथेसिस", "श्वसन", "पार्श्ववाष्पीकरण", "पाचन"]
+      },
+      "answer": {"en": "Photosynthesis", "hi": "फोटोसिंथेसिस"},
+      "explanation": {"en": "Photosynthesis is the process by which plants use sunlight to convert carbon dioxide and water into glucose and oxygen.", "hi": "फोटोसिंथेसिस वह प्रक्रिया है जिसके द्वारा पौधे सूर्य के प्रकाश का उपयोग करके कार्बन डाइऑक्साइड और पानी को ग्लूकोज और ऑक्सीजन में परिवर्तित करते हैं।"},
+      "subject": "science"
+    },
+    {
+      "question": {
+        "en": "What is the main gas found in the Earth's atmosphere?",
+        "hi": "पृथ्वी के वायुमंडल में मुख्य गैस कौन सी है?"
+      },
+      "options": {
+        "en": ["Nitrogen", "Oxygen", "Carbon Dioxide", "Hydrogen"],
+        "hi": ["नाइट्रोजन", "ऑक्सीजन", "कार्बन डाइऑक्साइड", "हाइड्रोजन"]
+      },
+      "answer": {"en": "Nitrogen", "hi": "नाइट्रोजन"},
+      "explanation": {"en": "Nitrogen makes up about 78% of the Earth's atmosphere, making it the most abundant gas.", "hi": "नाइट्रोजन पृथ्वी के वायुमंडल का लगभग 78% बनाता है, जिससे यह सबसे प्रचुर गैस बन जाती है।"},
+      "subject": "science"
+    },
+    {
+      "question": {
+        "en": "Which organ is responsible for pumping blood in the human body?",
+        "hi": "मानव शरीर में रक्त पंप करने के लिए कौन सा अंग जिम्मेदार है?"
+      },
+      "options": {
+        "en": ["Heart", "Liver", "Lungs", "Kidneys"],
+        "hi": ["दिल", "जिगर", "फेफड़े", "गुर्दे"]
+      },
+      "answer": {"en": "Heart", "hi": "दिल"},
+      "explanation": {"en": "The heart is responsible for pumping blood throughout the human body, supplying oxygen and nutrients to tissues.", "hi": "दिल मानव शरीर में रक्त पंप करने के लिए जिम्मेदार है, जो ऊतकों को ऑक्सीजन और पोषक तत्वों की आपूर्ति करता है।"},
+      "subject": "science"
+    },
+    {
+      "question": {
+        "en": "Which gas do living beings need to breathe?",
+        "hi": "जीवित प्राणियों को सांस लेने के लिए कौन सा गैस चाहिए?"
+      },
+      "options": {
+        "en": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
+        "hi": ["ऑक्सीजन", "कार्बन डाइऑक्साइड", "नाइट्रोजन", "हाइड्रोजन"]
+      },
+      "answer": {"en": "Oxygen", "hi": "ऑक्सीजन"},
+      "explanation": {"en": "Living beings need oxygen to breathe as it is essential for cellular respiration, which produces energy.", "hi": "जीवित प्राणियों को सांस लेने के लिए ऑक्सीजन की आवश्यकता होती है क्योंकि यह कोशिका श्वसन के लिए आवश्यक है, जो ऊर्जा उत्पन्न करता है।"},
+      "subject": "science"
+    },
+    {
+      "question": {
+        "en": "Which gas do plants absorb during photosynthesis?",
+        "hi": "पौधे फोटोसिंथेसिस के दौरान कौन सा गैस अवशोषित करते हैं?"
+      },
+      "options": {
+        "en": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
+        "hi": ["ऑक्सीजन", "कार्बन डाइऑक्साइड", "नाइट्रोजन", "हाइड्रोजन"]
+      },
+      "answer": {"en": "Carbon Dioxide", "hi": "कार्बन डाइऑक्साइड"},
+      "explanation": {"en": "Plants absorb carbon dioxide from the atmosphere during photosynthesis to produce glucose.", "hi": "पौधे फोटोसिंथेसिस के दौरान वातावरण से कार्बन डाइऑक्साइड अवशोषित करते हैं ताकि ग्लूकोज का उत्पादन किया जा सके।"},
+      "subject": "science"
+    },
+    {
+      "question": {
+        "en": "What is the chemical symbol for table salt?",
+        "hi": "नमक का रासायनिक प्रतीक क्या है?"
+      },
+      "options": {
+        "en": ["NaCl", "KCl", "CaCO3", "H2O"],
+        "hi": ["NaCl", "KCl", "CaCO3", "H2O"]
+      },
+      "answer": {"en": "NaCl", "hi": "NaCl"},
+      "explanation": {"en": "Table salt is sodium chloride, with the chemical formula NaCl.", "hi": "नमक सोडियम क्लोराइड है, जिसका रासायनिक सूत्र NaCl है।"},
+      "subject": "science"
+    },
+    {
+      "question": {
+        "en": "Which vitamin is produced by the human body when exposed to sunlight?",
+        "hi": "मानव शरीर धूप में आने पर कौन सा विटामिन बनाता है?"
+      },
+      "options": {
+        "en": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
+        "hi": ["विटामिन A", "विटामिन B", "विटामिन C", "विटामिन D"]
+      },
+      "answer": {"en": "Vitamin D", "hi": "विटामिन D"},
+      "explanation": {"en": "Vitamin D is synthesized in the skin when exposed to sunlight.", "hi": "विटामिन D त्वचा में धूप के संपर्क में आने पर संश्लेषित होता है।"},
+      "subject": "science"
+    },
+    {
+      "question": {
+        "en": "What is the hardest natural substance on Earth?",
+        "hi": "पृथ्वी पर सबसे कठोर प्राकृतिक पदार्थ क्या है?"
+      },
+      "options": {
+        "en": ["Gold", "Iron", "Diamond", "Quartz"],
+        "hi": ["सोना", "लोहा", "हीरा", "क्वार्ट्ज"]
+      },
+      "answer": {"en": "Diamond", "hi": "हीरा"},
+      "explanation": {"en": "Diamond is the hardest known natural material, made of carbon atoms arranged in a crystal lattice.", "hi": "हीरा सबसे कठोर प्राकृतिक पदार्थ है, जो कार्बन परमाणुओं से बना है जो क्रिस्टल जाली में व्यवस्थित होते हैं।"},
+      "subject": "science"
+    },
+    {
+      "question": {
+        "en": "Which part of the plant is responsible for photosynthesis?",
+        "hi": "पौधे का कौन सा भाग प्रकाश संश्लेषण के लिए जिम्मेदार है?"
+      },
+      "options": {
+        "en": ["Roots", "Stem", "Leaves", "Flowers"],
+        "hi": ["जड़ें", "तना", "पत्तियाँ", "फूल"]
+      },
+      "answer": {"en": "Leaves", "hi": "पत्तियाँ"},
+      "explanation": {"en": "Leaves contain chlorophyll, which captures sunlight for photosynthesis.", "hi": "पत्तियों में क्लोरोफिल होता है, जो प्रकाश संश्लेषण के लिए सूर्य के प्रकाश को पकड़ता है।"},
+      "subject": "science"
+    },
+    {
+      "question": {
+        "en": "What is the pH value of pure water?",
+        "hi": "शुद्ध जल का pH मान क्या है?"
+      },
+      "options": {
+        "en": ["5", "7", "10", "14"],
+        "hi": ["5", "7", "10", "14"]
+      },
+      "answer": {"en": "7", "hi": "7"},
+      "explanation": {"en": "Pure water is neutral with a pH of 7.", "hi": "शुद्ध जल उदासीन होता है जिसका pH 7 होता है।"},
+      "subject": "science"
+    },
+    {
+      "question": {
+        "en": "Which of these is NOT a greenhouse gas?",
+        "hi": "इनमें से कौन सी ग्रीनहाउस गैस नहीं है?"
+      },
+      "options": {
+        "en": ["Carbon Dioxide", "Methane", "Oxygen", "Nitrous Oxide"],
+        "hi": ["कार्बन डाइऑक्साइड", "मीथेन", "ऑक्सीजन", "नाइट्रस ऑक्साइड"]
+      },
+      "answer": {"en": "Oxygen", "hi": "ऑक्सीजन"},
+      "explanation": {"en": "Oxygen is not a greenhouse gas; it does not trap heat in the atmosphere.", "hi": "ऑक्सीजन ग्रीनहाउस गैस नहीं है; यह वातावरण में गर्मी को नहीं रोकती है।"},
+      "subject": "science"
+    },
+    {
+      "question": {
+        "en": "What is the unit of electric current?",
+        "hi": "विद्युत धारा की इकाई क्या है?"
+      },
+      "options": {
+        "en": ["Volt", "Ampere", "Ohm", "Watt"],
+        "hi": ["वोल्ट", "एम्पियर", "ओम", "वाट"]
+      },
+      "answer": {"en": "Ampere", "hi": "एम्पियर"},
+      "explanation": {"en": "The unit of electric current is the ampere (A).", "hi": "विद्युत धारा की इकाई एम्पियर (A) है।"},
+      "subject": "science"
+    },
+    {
+      "question": {
+        "en": "Which metal is liquid at room temperature?",
+        "hi": "कौन सी धातु कमरे के तापमान पर तरल होती है?"
+      },
+      "options": {
+        "en": ["Iron", "Mercury", "Copper", "Aluminum"],
+        "hi": ["लोहा", "पारा", "तांबा", "एल्यूमीनियम"]
+      },
+      "answer": {"en": "Mercury", "hi": "पारा"},
+      "explanation": {"en": "Mercury is the only metal that is liquid at room temperature.", "hi": "पारा एकमात्र धातु है जो कमरे के तापमान पर तरल होती है।"},
+      "subject": "science"
+    },
+    {
+      "question": {
+        "en": "What is the speed of light in vacuum?",
+        "hi": "निर्वात में प्रकाश की गति क्या है?"
+      },
+      "options": {
+        "en": ["3 × 10⁶ m/s", "3 × 10⁸ m/s", "3 × 10⁵ m/s", "3 × 10⁷ m/s"],
+        "hi": ["3 × 10⁶ मी/से", "3 × 10⁸ मी/से", "3 × 10⁵ मी/से", "3 × 10⁷ मी/से"]
+      },
+      "answer": {"en": "3 × 10⁸ m/s", "hi": "3 × 10⁸ मी/से"},
+      "explanation": {"en": "The speed of light in vacuum is approximately 3 × 10⁸ meters per second.", "hi": "निर्वात में प्रकाश की गति लगभग 3 × 10⁸ मीटर प्रति सेकंड है।"},
+      "subject": "science"
+    },
+    {
+      "question": {
+        "en": "Which of the following is a renewable source of energy?",
+        "hi": "निम्नलिखित में से कौन सा ऊर्जा का नवीकरणीय स्रोत है?"
+      },
+      "options": {
+        "en": ["Coal", "Petroleum", "Solar energy", "Natural gas"],
+        "hi": ["कोयला", "पेट्रोलियम", "सौर ऊर्जा", "प्राकृतिक गैस"]
+      },
+      "answer": {"en": "Solar energy", "hi": "सौर ऊर्जा"},
+      "explanation": {"en": "Solar energy is renewable as it comes from the sun and will not deplete.", "hi": "सौर ऊर्जा नवीकरणीय है क्योंकि यह सूर्य से आती है और समाप्त नहीं होगी।"},
+      "subject": "science"
+    },
+    {
+      "question": {
+        "en": "What is the chemical name of baking soda?",
+        "hi": "बेकिंग सोडा का रासायनिक नाम क्या है?"
+      },
+      "options": {
+        "en": ["Sodium bicarbonate", "Sodium chloride", "Calcium carbonate", "Potassium nitrate"],
+        "hi": ["सोडियम बाइकार्बोनेट", "सोडियम क्लोराइड", "कैल्शियम कार्बोनेट", "पोटेशियम नाइट्रेट"]
+      },
+      "answer": {"en": "Sodium bicarbonate", "hi": "सोडियम बाइकार्बोनेट"},
+      "explanation": {"en": "Baking soda is chemically known as sodium bicarbonate (NaHCO₃).", "hi": "बेकिंग सोडा को रासायनिक रूप से सोडियम बाइकार्बोनेट (NaHCO₃) के रूप में जाना जाता है।"},
+      "subject": "science"
+    },
+    {
+      "question": {
+        "en": "Which gas is released during respiration in humans?",
+        "hi": "मनुष्यों में श्वसन के दौरान कौन सी गैस निकलती है?"
+      },
+      "options": {
+        "en": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
+        "hi": ["ऑक्सीजन", "कार्बन डाइऑक्साइड", "नाइट्रोजन", "हाइड्रोजन"]
+      },
+      "answer": {"en": "Carbon Dioxide", "hi": "कार्बन डाइऑक्साइड"},
+      "explanation": {"en": "Humans release carbon dioxide as a waste product during respiration.", "hi": "मनुष्य श्वसन के दौरान अपशिष्ट के रूप में कार्बन डाइऑक्साइड छोड़ते हैं।"},
+      "subject": "science"
+    },
+    {
+      "question": {
+        "en": "What is the SI unit of force?",
+        "hi": "बल की SI इकाई क्या है?"
+      },
+      "options": {
+        "en": ["Newton", "Joule", "Watt", "Pascal"],
+        "hi": ["न्यूटन", "जूल", "वाट", "पास्कल"]
+      },
+      "answer": {"en": "Newton", "hi": "न्यूटन"},
+      "explanation": {"en": "The SI unit of force is the newton (N).", "hi": "बल की SI इकाई न्यूटन (N) है।"},
+      "subject": "science"
+    },
+    {
+      "question": {
+        "en": "Which planet is the largest in our solar system?",
+        "hi": "हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?"
+      },
+      "options": {
+        "en": ["Earth", "Saturn", "Jupiter", "Neptune"],
+        "hi": ["पृथ्वी", "शनि", "बृहस्पति", "नेपच्यून"]
+      },
+      "answer": {"en": "Jupiter", "hi": "बृहस्पति"},
+      "explanation": {"en": "Jupiter is the largest planet in our solar system, more than twice as massive as all other planets combined.", "hi": "बृहस्पति हमारे सौर मंडल का सबसे बड़ा ग्रह है, जो अन्य सभी ग्रहों के संयुक्त द्रव्यमान से दोगुना से अधिक भारी है।"},
+      "subject": "science"
+    },
+    {
+      "question": {
+        "en": "What is the process of conversion of vapor into liquid called?",
+        "hi": "वाष्प के द्रव में परिवर्तन की प्रक्रिया क्या कहलाती है?"
+      },
+      "options": {
+        "en": ["Evaporation", "Condensation", "Sublimation", "Freezing"],
+        "hi": ["वाष्पीकरण", "संघनन", "उर्ध्वपातन", "हिमीकरण"]
+      },
+      "answer": {"en": "Condensation", "hi": "संघनन"},
+      "explanation": {"en": "Condensation is the process where vapor turns into liquid, such as when dew forms.", "hi": "संघनन वह प्रक्रिया है जिसमें वाष्प द्रव में बदल जाती है, जैसे कि ओस बनती है।"},
+      "subject": "science"
+    },
+    {
+      "question": {
+        "en": "Which element has the atomic number 1?",
+        "hi": "किस तत्व की परमाणु संख्या 1 है?"
+      },
+      "options": {
+        "en": ["Helium", "Hydrogen", "Lithium", "Oxygen"],
+        "hi": ["हीलियम", "हाइड्रोजन", "लिथियम", "ऑक्सीजन"]
+      },
+      "answer": {"en": "Hydrogen", "hi": "हाइड्रोजन"},
+      "explanation": {"en": "Hydrogen is the first element in the periodic table with atomic number 1.", "hi": "हाइड्रोजन आवर्त सारणी का पहला तत्व है जिसकी परमाणु संख्या 1 है।"},
+      "subject": "science"
+    },
+    {
+      "question": {
+        "en": "What is the main component of natural gas?",
+        "hi": "प्राकृतिक गैस का मुख्य घटक क्या है?"
+      },
+      "options": {
+        "en": ["Methane", "Ethane", "Propane", "Butane"],
+        "hi": ["मीथेन", "एथेन", "प्रोपेन", "ब्यूटेन"]
+      },
+      "answer": {"en": "Methane", "hi": "मीथेन"},
+      "explanation": {"en": "Natural gas is primarily composed of methane (CH₄).", "hi": "प्राकृतिक गैस मुख्य रूप से मीथेन (CH₄) से बनी होती है।"},
+      "subject": "science"
+    },
+    {
+      "question": {
+        "en": "Which of the following is a non-metal?",
+        "hi": "निम्नलिखित में से कौन सा एक अधातु है?"
+      },
+      "options": {
+        "en": ["Iron", "Copper", "Sulfur", "Aluminum"],
+        "hi": ["लोहा", "तांबा", "गंधक", "एल्यूमीनियम"]
+      },
+      "answer": {"en": "Sulfur", "hi": "गंधक"},
+      "explanation": {"en": "Sulfur is a non-metal, while the others are metals.", "hi": "गंधक एक अधातु है, जबकि अन्य धातुएँ हैं।"},
+      "subject": "science"
+    },
+    {
+      "question": {
+        "en": "What is the function of white blood cells?",
+        "hi": "श्वेत रक्त कोशिकाओं का क्या कार्य है?"
+      },
+      "options": {
+        "en": ["Carry oxygen", "Fight infections", "Clot blood", "Transport nutrients"],
+        "hi": ["ऑक्सीजन ले जाना", "संक्रमण से लड़ना", "रक्त का थक्का बनाना", "पोषक तत्वों का परिवहन करना"]
+      },
+      "answer": {"en": "Fight infections", "hi": "संक्रमण से लड़ना"},
+      "explanation": {"en": "White blood cells are part of the immune system and defend the body against infections.", "hi": "श्वेत रक्त कोशिकाएँ प्रतिरक्षा प्रणाली का हिस्सा हैं और संक्रमण के खिलाफ शरीर की रक्षा करती हैं।"},
+      "subject": "science"
+    },
+    {
+      "question": {
+        "en": "Which of these is a conductor of electricity?",
+        "hi": "इनमें से कौन विद्युत का चालक है?"
+      },
+      "options": {
+        "en": ["Wood", "Plastic", "Copper", "Rubber"],
+        "hi": ["लकड़ी", "प्लास्टिक", "तांबा", "रबर"]
+      },
+      "answer": {"en": "Copper", "hi": "तांबा"},
+      "explanation": {"en": "Copper is a good conductor of electricity due to its free electrons.", "hi": "तांबा अपने मुक्त इलेक्ट्रॉनों के कारण विद्युत का एक अच्छा चालक है।"},
+      "subject": "science"
+    },
+    {
+      "question": {
+        "en": "What is the boiling point of water at sea level?",
+        "hi": "समुद्र तल पर पानी का क्वथनांक क्या है?"
+      },
+      "options": {
+        "en": ["90°C", "100°C", "110°C", "120°C"],
+        "hi": ["90°C", "100°C", "110°C", "120°C"]
+      },
+      "answer": {"en": "100°C", "hi": "100°C"},
+      "explanation": {"en": "Water boils at 100°C at standard atmospheric pressure (sea level).", "hi": "मानक वायुमंडलीय दबाव (समुद्र तल) पर पानी 100°C पर उबलता है।"},
+      "subject": "science"
+    },
+    {
+      "question": {
+        "en": "Which of the following is an example of a chemical change?",
+        "hi": "निम्नलिखित में से कौन सा रासायनिक परिवर्तन का उदाहरण है?"
+      },
+      "options": {
+        "en": ["Melting ice", "Burning wood", "Boiling water", "Cutting paper"],
+        "hi": ["बर्फ पिघलना", "लकड़ी जलना", "पानी उबलना", "कागज काटना"]
+      },
+      "answer": {"en": "Burning wood", "hi": "लकड़ी जलना"},
+      "explanation": {"en": "Burning wood is a chemical change because it produces new substances like ash and smoke.", "hi": "लकड़ी जलना एक रासायनिक परिवर्तन है क्योंकि यह राख और धुएँ जैसे नए पदार्थ उत्पन्न करता है।"},
+      "subject": "science"
+    },
+    {
+      "question": {
+        "en": "What is the primary source of energy for the Earth?",
+        "hi": "पृथ्वी के लिए ऊर्जा का प्राथमिक स्रोत क्या है?"
+      },
+      "options": {
+        "en": ["Moon", "Sun", "Wind", "Water"],
+        "hi": ["चंद्रमा", "सूर्य", "हवा", "जल"]
+      },
+      "answer": {"en": "Sun", "hi": "सूर्य"},
+      "explanation": {"en": "The Sun is the primary source of energy for Earth, driving weather, photosynthesis, and climate.", "hi": "सूर्य पृथ्वी के लिए ऊर्जा का प्राथमिक स्रोत है, जो मौसम, प्रकाश संश्लेषण और जलवायु को संचालित करता है।"},
+      "subject": "science"
+    },
+    {
+      "question": {
+        "en": "Which of these is a biodegradable waste?",
+        "hi": "इनमें से कौन जैव-निम्नीकरण योग्य अपशिष्ट है?"
+      },
+      "options": {
+        "en": ["Plastic", "Glass", "Vegetable peels", "Metal cans"],
+        "hi": ["प्लास्टिक", "कांच", "सब्जी के छिलके", "धातु के डिब्बे"]
+      },
+      "answer": {"en": "Vegetable peels", "hi": "सब्जी के छिलके"},
+      "explanation": {"en": "Vegetable peels decompose naturally, making them biodegradable.", "hi": "सब्जी के छिलके प्राकृतिक रूप से विघटित हो जाते हैं, जिससे वे जैव-निम्नीकरण योग्य होते हैं।"},
+      "subject": "science"
+    },
+    {
+      "question": {
+        "en": "What is the chemical formula of ozone?",
+        "hi": "ओज़ोन का रासायनिक सूत्र क्या है?"
+      },
+      "options": {
+        "en": ["O2", "O3", "CO2", "H2O"],
+        "hi": ["O2", "O3", "CO2", "H2O"]
+      },
+      "answer": {"en": "O3", "hi": "O3"},
+      "explanation": {"en": "Ozone is a molecule made of three oxygen atoms (O₃).", "hi": "ओज़ोन तीन ऑक्सीजन परमाणुओं (O₃) से बना एक अणु है।"},
+      "subject": "science"
+    },
+    {
+      "question": {
+        "en": "Which part of the human eye controls the amount of light entering it?",
+        "hi": "मानव नेत्र का कौन सा भाग इसमें प्रवेश करने वाले प्रकाश की मात्रा को नियंत्रित करता है?"
+      },
+      "options": {
+        "en": ["Cornea", "Iris", "Lens", "Retina"],
+        "hi": ["कॉर्निया", "आइरिस", "लेंस", "रेटिना"]
+      },
+      "answer": {"en": "Iris", "hi": "आइरिस"},
+      "explanation": {"en": "The iris controls the size of the pupil and thus the amount of light entering the eye.", "hi": "आइरिस पुतली के आकार को नियंत्रित करता है और इस प्रकार नेत्र में प्रवेश करने वाले प्रकाश की मात्रा को नियंत्रित करता है।"},
+      "subject": "science"
+    },
+    {
+      "question": {
+        "en": "What is the smallest unit of an element?",
+        "hi": "तत्व की सबसे छोटी इकाई क्या है?"
+      },
+      "options": {
+        "en": ["Molecule", "Atom", "Cell", "Electron"],
+        "hi": ["अणु", "परमाणु", "कोशिका", "इलेक्ट्रॉन"]
+      },
+      "answer": {"en": "Atom", "hi": "परमाणु"},
+      "explanation": {"en": "An atom is the smallest unit of an element that retains its chemical properties.", "hi": "परमाणु तत्व की सबसे छोटी इकाई है जो उसके रासायनिक गुणों को बनाए रखती है।"},
+      "subject": "science"
+    },
+    {
+      "question": {
+        "en": "Which of the following is NOT a sense organ?",
+        "hi": "निम्नलिखित में से कौन सा इंद्रिय अंग नहीं है?"
+      },
+      "options": {
+        "en": ["Eyes", "Ears", "Skin", "Heart"],
+        "hi": ["आँखें", "कान", "त्वचा", "दिल"]
+      },
+      "answer": {"en": "Heart", "hi": "दिल"},
+      "explanation": {"en": "The heart is an organ, but not a sense organ. Sense organs include eyes, ears, nose, tongue, and skin.", "hi": "दिल एक अंग है, लेकिन इंद्रिय अंग नहीं। इंद्रिय अंगों में आँखें, कान, नाक, जीभ और त्वचा शामिल हैं।"},
+      "subject": "science"
+    },
+    {
+      "question": {
+        "en": "What is the main gas produced during photosynthesis?",
+        "hi": "प्रकाश संश्लेषण के दौरान मुख्य गैस कौन सी उत्पन्न होती है?"
+      },
+      "options": {
+        "en": ["Carbon Dioxide", "Oxygen", "Nitrogen", "Hydrogen"],
+        "hi": ["कार्बन डाइऑक्साइड", "ऑक्सीजन", "नाइट्रोजन", "हाइड्रोजन"]
+      },
+      "answer": {"en": "Oxygen", "hi": "ऑक्सीजन"},
+      "explanation": {"en": "Plants release oxygen as a byproduct of photosynthesis.", "hi": "पौधे प्रकाश संश्लेषण के उप-उत्पाद के रूप में ऑक्सीजन छोड़ते हैं।"},
+      "subject": "science"
+    },
+    {
+      "question": {
+        "en": "Which of these is a vector quantity?",
+        "hi": "इनमें से कौन एक सदिश राशि है?"
+      },
+      "options": {
+        "en": ["Speed", "Mass", "Time", "Velocity"],
+        "hi": ["गति", "द्रव्यमान", "समय", "वेग"]
+      },
+      "answer": {"en": "Velocity", "hi": "वेग"},
+      "explanation": {"en": "Velocity has both magnitude and direction, making it a vector quantity.", "hi": "वेग में परिमाण और दिशा दोनों होते हैं, जिससे यह एक सदिश राशि बनता है।"},
+      "subject": "science"
+    },
+    {
+      "question": {
+        "en": "What is the process of conversion of solid directly to vapor called?",
+        "hi": "ठोस के सीधे वाष्प में परिवर्तन की प्रक्रिया क्या कहलाती है?"
+      },
+      "options": {
+        "en": ["Evaporation", "Condensation", "Sublimation", "Freezing"],
+        "hi": ["वाष्पीकरण", "संघनन", "उर्ध्वपातन", "हिमीकरण"]
+      },
+      "answer": {"en": "Sublimation", "hi": "उर्ध्वपातन"},
+      "explanation": {"en": "Sublimation is the direct change from solid to gas without becoming liquid, as seen in dry ice.", "hi": "उर्ध्वपातन ठोस से सीधे गैस में परिवर्तन है बिना द्रव बने, जैसा कि ड्राई आइस में देखा जाता है।"},
+      "subject": "science"
+    },
+    {
+      "question": {
+        "en": "Which of the following is a good insulator of heat?",
+        "hi": "निम्नलिखित में से कौन ऊष्मा का अच्छा कुचालक है?"
+      },
+      "options": {
+        "en": ["Copper", "Aluminum", "Wood", "Iron"],
+        "hi": ["तांबा", "एल्यूमीनियम", "लकड़ी", "लोहा"]
+      },
+      "answer": {"en": "Wood", "hi": "लकड़ी"},
+      "explanation": {"en": "Wood is a poor conductor of heat, making it a good insulator.", "hi": "लकड़ी ऊष्मा की खराब चालक है, जिससे यह एक अच्छा कुचालक बनती है।"},
+      "subject": "science"
+    },
+    {
+      "question": {
+        "en": "What is the SI unit of electric charge?",
+        "hi": "विद्युत आवेश की SI इकाई क्या है?"
+      },
+      "options": {
+        "en": ["Ampere", "Volt", "Coulomb", "Ohm"],
+        "hi": ["एम्पियर", "वोल्ट", "कूलम्ब", "ओम"]
+      },
+      "answer": {"en": "Coulomb", "hi": "कूलम्ब"},
+      "explanation": {"en": "The SI unit of electric charge is the coulomb (C).", "hi": "विद्युत आवेश की SI इकाई कूलम्ब (C) है।"},
+      "subject": "science"
+    },
+    {
+      "question": {
+        "en": "Which of the following is used to measure atmospheric pressure?",
+        "hi": "निम्नलिखित में से किसका उपयोग वायुमंडलीय दबाव मापने के लिए किया जाता है?"
+      },
+      "options": {
+        "en": ["Thermometer", "Barometer", "Hygrometer", "Anemometer"],
+        "hi": ["थर्मामीटर", "बैरोमीटर", "हाइग्रोमीटर", "एनीमोमीटर"]
+      },
+      "answer": {"en": "Barometer", "hi": "बैरोमीटर"},
+      "explanation": {"en": "A barometer is used to measure atmospheric pressure.", "hi": "बैरोमीटर का उपयोग वायुमंडलीय दबाव मापने के लिए किया जाता है।"},
+      "subject": "science"
+    },
+    {
+      "question": {
+        "en": "What is the chemical symbol for gold?",
+        "hi": "सोने का रासायनिक प्रतीक क्या है?"
+      },
+      "options": {
+        "en": ["Ag", "Au", "Fe", "Pb"],
+        "hi": ["Ag", "Au", "Fe", "Pb"]
+      },
+      "answer": {"en": "Au", "hi": "Au"},
+      "explanation": {"en": "The chemical symbol for gold is Au (from Latin 'aurum').", "hi": "सोने का रासायनिक प्रतीक Au है (लैटिन 'aurum' से)।"},
+      "subject": "science"
+    },
+    {
+      "question": {
+        "en": "Which of the following is a magnetic material?",
+        "hi": "निम्नलिखित में से कौन चुंबकीय पदार्थ है?"
+      },
+      "options": {
+        "en": ["Copper", "Aluminum", "Iron", "Wood"],
+        "hi": ["तांबा", "एल्यूमीनियम", "लोहा", "लकड़ी"]
+      },
+      "answer": {"en": "Iron", "hi": "लोहा"},
+      "explanation": {"en": "Iron is magnetic and is attracted to magnets.", "hi": "लोहा चुंबकीय होता है और चुंबक की ओर आकर्षित होता है।"},
+      "subject": "science"
+    }
+  ]
+}

@@ -8,3 +8,9 @@ if (langSelect) {
     location.reload();
   });
 }
+
+async function loadReasoning() {
+  const res = await fetch("./data/reasoning.json");
+  const data = await res.json();
+  return data.questions;
+}

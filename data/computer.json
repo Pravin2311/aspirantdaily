@@ -1,0 +1,500 @@
+{
+  "subject": "computer",
+  "last_updated": "2025-12-20",
+  "questions": [
+    {
+      "question": {
+        "en": "What does CPU stand for?",
+        "hi": "CPU का पूरा नाम क्या है?"
+      },
+      "options": {
+        "en": ["Central Processing Unit", "Computer Personal Unit", "Central Program Unit", "Computer Processing Unit"],
+        "hi": ["केंद्रीय प्रसंस्करण इकाई", "कंप्यूटर व्यक्तिगत इकाई", "केंद्रीय प्रोग्राम इकाई", "कंप्यूटर प्रसंस्करण इकाई"]
+      },
+      "answer": {"en": "Central Processing Unit", "hi": "केंद्रीय प्रसंस्करण इकाई"},
+      "explanation": {"en": "CPU stands for Central Processing Unit, which is the primary component of a computer that performs most of the processing inside the computer.", "hi": "CPU का मतलब केंद्रीय प्रसंस्करण इकाई है, जो कंप्यूटर का प्राथमिक घटक है जो कंप्यूटर के अंदर अधिकांश प्रसंस्करण करता है।"},
+      "subject": "computer"
+    },
+    {
+      "question": {
+        "en": "Which of the following is an input device?",
+        "hi": "निम्नलिखित में से कौन सा एक इनपुट डिवाइस है?"
+      },
+      "options": {
+        "en": ["Keyboard", "Monitor", "Printer", "Speaker"],
+        "hi": ["कीबोर्ड", "मॉनिटर", "प्रिंटर", "स्पीकर"]
+      },
+      "answer": {"en": "Keyboard", "hi": "कीबोर्ड"},
+      "explanation": {"en": "A keyboard is an input device used to enter data into a computer.", "hi": "कीबोर्ड एक इनपुट डिवाइस है जिसका उपयोग कंप्यूटर में डेटा दर्ज करने के लिए किया जाता है।"},
+      "subject": "computer"
+    },
+    {
+      "question": {
+        "en": "What is the main function of the operating system?",
+        "hi": "ऑपरेटिंग सिस्टम का मुख्य कार्य क्या है?"
+      },
+      "options": {
+        "en": ["Manage hardware and software resources", "Run applications", "Store data", "Connect to the internet"],
+        "hi": ["हार्डवेयर और सॉफ़्टवेयर संसाधनों का प्रबंधन करना", "ऐप्लिकेशन चलाना", "डेटा संग्रहीत करना", "इंटरनेट से कनेक्ट करना"]
+      },
+      "answer": {"en": "Manage hardware and software resources", "hi": "हार्डवेयर और सॉफ़्टवेयर संसाधनों का प्रबंधन करना"},
+      "explanation": {"en": "The main function of the operating system is to manage the hardware and software resources of the computer.", "hi": "ऑपरेटिंग सिस्टम का मुख्य कार्य कंप्यूटर के हार्डवेयर और सॉफ़्टवेयर संसाधनों का प्रबंधन करना है।"},
+      "subject": "computer"
+    },
+    {
+      "question": {
+        "en": "Which language is used for web development?",
+        "hi": "वेब विकास के लिए कौन सी भाषा का उपयोग किया जाता है?"
+      },
+      "options": {
+        "en": ["HTML", "C++", "Java", "Python"],
+        "hi": ["HTML", "C++", "जावा", "पायथन"]
+      },
+      "answer": {"en": "HTML", "hi": "HTML"},
+      "explanation": {"en": "HTML (HyperText Markup Language) is the standard markup language used for creating web pages.", "hi": "HTML (हाइपरटेक्स्ट मार्कअप भाषा) वेब पृष्ठ बनाने के लिए उपयोग की जाने वाली मानक मार्कअप भाषा है।"},
+      "subject": "computer"
+    },
+    {
+      "question": {
+        "en": "What does RAM stand for?",
+        "hi": "RAM का पूरा नाम क्या है?"
+      },
+      "options": {
+        "en": ["Random Access Memory", "Read Access Memory", "Rapid Access Memory", "Run Access Memory"],
+        "hi": ["रैंडम एक्सेस मेमोरी", "रीड एक्सेस मेमोरी", "रैपिड एक्सेस मेमोरी", "रन एक्सेस मेमोरी"]
+      },
+      "answer": {"en": "Random Access Memory", "hi": "रैंडम एक्सेस मेमोरी"},
+      "explanation": {"en": "RAM stands for Random Access Memory, which is used by the computer to store data temporarily while it is being processed.", "hi": "RAM का मतलब रैंडम एक्सेस मेमोरी है, जिसका उपयोग कंप्यूटर द्वारा डेटा को अस्थायी रूप से संग्रहीत करने के लिए किया जाता है जब इसे संसाधित किया जा रहा होता है।"},
+      "subject": "computer"
+    },
+    {
+      "question": {
+        "en": "Which of the following is a programming language?",
+        "hi": "निम्नलिखित में से कौन सी एक प्रोग्रामिंग भाषा है?"
+      },
+      "options": {
+        "en": ["Python", "HTML", "CSS", "XML"],
+        "hi": ["पायथन", "HTML", "CSS", "XML"]
+      },
+      "answer": {"en": "Python", "hi": "पायथन"},
+      "explanation": {"en": "Python is a high-level programming language used for various types of software development.", "hi": "पायथन एक उच्च-स्तरीय प्रोग्रामिंग भाषा है जिसका उपयोग विभिन्न प्रकार के सॉफ़्टवेयर विकास के लिए किया जाता है।"},
+      "subject": "computer"
+    },
+    {
+      "question": {
+        "en": "What is the purpose of a firewall?",
+        "hi": "फायरवॉल का उद्देश्य क्या है?"
+      },
+      "options": {
+        "en": ["To protect a network from unauthorized access", "To speed up internet connection", "To store data", "To create backups"],
+        "hi": ["अनधिकृत पहुंच से नेटवर्क की रक्षा करना", "इंटरनेट कनेक्शन की गति बढ़ाना", "डेटा संग्रहीत करना", "बैकअप बनाना"]
+      },
+      "answer": {"en": "To protect a network from unauthorized access", "hi": "अनधिकृत पहुंच से नेटवर्क की रक्षा करना"},
+      "explanation": {"en": "A firewall is a network security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules.", "hi": "फायरवॉल एक नेटवर्क सुरक्षा प्रणाली है जो पूर्व निर्धारित सुरक्षा नियमों के आधार पर आने वाले और जाने वाले नेटवर्क ट्रैफ़िक की निगरानी और नियंत्रण करती है।"},
+      "subject": "computer"
+    },
+    {
+      "question": {
+        "en": "What is the main function of the CPU?",
+        "hi": "CPU का मुख्य कार्य क्या है?"
+      },
+      "options": {
+        "en": ["Process data", "Store data", "Display data", "Transmit data"],
+        "hi": ["डेटा प्रोसेस करना", "डेटा स्टोर करना", "डेटा प्रदर्शित करना", "डेटा ट्रांसमिट करना"]
+      },
+      "answer": {"en": "Process data", "hi": "डेटा प्रोसेस करना"},
+      "explanation": {"en": "The CPU processes data and executes instructions.", "hi": "CPU डेटा प्रोसेस करता है और निर्देशों को निष्पादित करता है।"},
+      "subject": "computer"
+    },
+    {
+      "question": {
+        "en": "Which of the following is a type of software?",
+        "hi": "निम्नलिखित में से कौन सा सॉफ़्टवेयर का प्रकार है?"
+      },
+      "options": {
+        "en": ["Operating System", "Hardware", "Network", "Database"],
+        "hi": ["ऑपरेटिंग सिस्टम", "हार्डवेयर", "नेटवर्क", "डेटाबेस"]
+      },
+      "answer": {"en": "Operating System", "hi": "ऑपरेटिंग सिस्टम"},
+      "explanation": {"en": "An Operating System is a type of software that manages computer hardware and software resources.", "hi": "ऑपरेटिंग सिस्टम एक प्रकार का सॉफ़्टवेयर है जो कंप्यूटर हार्डवेयर और सॉफ़्टवेयर संसाधनों का प्रबंधन करता है।"},
+      "subject": "computer"
+    },
+    {
+      "question": {
+        "en": "Which software is used to browse the internet?",
+        "hi": "इंटरनेट ब्राउज़ करने के लिए कौन सा सॉफ़्टवेयर उपयोग किया जाता है?"
+      },
+      "options": {
+        "en": ["Word Processor", "Spreadsheet", "Web Browser", "Database"],
+        "hi": ["वर्ड प्रोसेसर", "स्प्रेडशीट", "वेब ब्राउज़र", "डेटाबेस"]
+      },
+      "answer": {"en": "Web Browser", "hi": "वेब ब्राउज़र"},
+      "explanation": {"en": "A web browser is software that allows users to access and navigate the internet.", "hi": "वेब ब्राउज़र एक सॉफ़्टवेयर है जो उपयोगकर्ताओं को इंटरनेट तक पहुँचने और नेविगेट करने की अनुमति देता है।"},
+      "subject": "computer"
+    },
+    {
+      "question": {
+        "en": "Which of the following is an operating system?",
+        "hi": "निम्नलिखित में से कौन सा एक ऑपरेटिंग सिस्टम है?"
+      },
+      "options": {
+        "en": ["Windows", "Microsoft Word", "Google Chrome", "Adobe Photoshop"],
+        "hi": ["Windows", "Microsoft Word", "Google Chrome", "Adobe Photoshop"]
+      },
+      "answer": {"en": "Windows", "hi": "Windows"},
+      "explanation": {"en": "Windows is an operating system that manages computer hardware and software.", "hi": "Windows एक ऑपरेटिंग सिस्टम है जो कंप्यूटर हार्डवेयर और सॉफ़्टवेयर का प्रबंधन करता है।"},
+      "subject": "computer"
+    },
+    {
+      "question": {
+        "en": "What is the purpose of an antivirus program?",
+        "hi": "एंटीवायरस प्रोग्राम का उद्देश्य क्या है?"
+      },
+      "options": {
+        "en": ["Protect against malware", "Enhance graphics", "Increase speed", "Manage files"],
+        "hi": ["मैलवेयर से सुरक्षा", "ग्राफिक्स को बढ़ाना", "गति बढ़ाना", "फाइलों का प्रबंधन करना"]
+      },
+      "answer": {"en": "Protect against malware", "hi": "मैलवेयर से सुरक्षा"},
+      "explanation": {"en": "An antivirus program is designed to protect a computer from malware and viruses.", "hi": "एंटीवायरस प्रोग्राम का उद्देश्य कंप्यूटर को मैलवेयर और वायरस से सुरक्षा प्रदान करना है।"},
+      "subject": "computer"
+    },
+    {
+      "question": {
+        "en": "Which programming language is known for web development?",
+        "hi": "कौन सी प्रोग्रामिंग भाषा वेब विकास के लिए जानी जाती है?"
+      },
+      "options": {
+        "en": ["JavaScript", "C++", "Java", "Python"],
+        "hi": ["जावास्क्रिप्ट", "C++", "जावा", "पायथन"]
+      },
+      "answer": {"en": "JavaScript", "hi": "जावास्क्रिप्ट"},
+      "explanation": {"en": "JavaScript is widely used for web development to create interactive effects within web browsers.", "hi": "जावास्क्रिप्ट का उपयोग वेब विकास के लिए किया जाता है ताकि वेब ब्राउज़र के भीतर इंटरैक्टिव प्रभाव बनाए जा सकें।"},
+      "subject": "computer"
+    },
+    {
+      "question": {
+        "en": "What is the function of an operating system?",
+        "hi": "ऑपरेटिंग सिस्टम का कार्य क्या है?"
+      },
+      "options": {
+        "en": ["Manage hardware and software resources", "Create documents", "Browse the internet", "Play games"],
+        "hi": ["हार्डवेयर और सॉफ़्टवेयर संसाधनों का प्रबंधन करना", "दस्तावेज़ बनाना", "इंटरनेट ब्राउज़ करना", "गेम खेलना"]
+      },
+      "answer": {"en": "Manage hardware and software resources", "hi": "हार्डवेयर और सॉफ़्टवेयर संसाधनों का प्रबंधन करना"},
+      "explanation": {"en": "An operating system manages the computer's hardware and software resources.", "hi": "ऑपरेटिंग सिस्टम कंप्यूटर के हार्डवेयर और सॉफ़्टवेयर संसाधनों का प्रबंधन करता है।"},
+      "subject": "computer"
+    },
+    {
+      "question": {
+        "en": "What is the primary storage device in a computer?",
+        "hi": "कंप्यूटर में प्राथमिक भंडारण उपकरण क्या है?"
+      },
+      "options": {
+        "en": ["Hard Disk Drive", "RAM", "CPU", "Monitor"],
+        "hi": ["हार्ड डिस्क ड्राइव", "RAM", "CPU", "मॉनिटर"]
+      },
+      "answer": {"en": "Hard Disk Drive", "hi": "हार्ड डिस्क ड्राइव"},
+      "explanation": {"en": "HDD is used for long-term storage of data, while RAM is temporary.", "hi": "HDD का उपयोग डेटा के दीर्घकालिक भंडारण के लिए किया जाता है, जबकि RAM अस्थायी होता है।"},
+      "subject": "computer"
+    },
+    {
+      "question": {
+        "en": "Which protocol is used for secure communication over the internet?",
+        "hi": "इंटरनेट पर सुरक्षित संचार के लिए कौन सा प्रोटोकॉल उपयोग किया जाता है?"
+      },
+      "options": {
+        "en": ["HTTPS", "HTTP", "FTP", "SMTP"],
+        "hi": ["HTTPS", "HTTP", "FTP", "SMTP"]
+      },
+      "answer": {"en": "HTTPS", "hi": "HTTPS"},
+      "explanation": {"en": "HTTPS (HyperText Transfer Protocol Secure) encrypts data for secure communication.", "hi": "HTTPS (हाइपरटेक्स्ट ट्रांसफर प्रोटोकॉल सिक्योर) सुरक्षित संचार के लिए डेटा को एन्क्रिप्ट करता है।"},
+      "subject": "computer"
+    },
+    {
+      "question": {
+        "en": "What is the full form of URL?",
+        "hi": "URL का पूरा नाम क्या है?"
+      },
+      "options": {
+        "en": ["Uniform Resource Locator", "Universal Resource Link", "Uniform Retrieval Link", "Universal Retrieval Locator"],
+        "hi": ["यूनिफॉर्म रिसोर्स लोकेटर", "यूनिवर्सल रिसोर्स लिंक", "यूनिफॉर्म रिट्रीवल लिंक", "यूनिवर्सल रिट्रीवल लोकेटर"]
+      },
+      "answer": {"en": "Uniform Resource Locator", "hi": "यूनिफॉर्म रिसोर्स लोकेटर"},
+      "explanation": {"en": "URL is the address used to access resources on the internet.", "hi": "URL इंटरनेट पर संसाधनों तक पहुंचने के लिए उपयोग किया जाने वाला पता है।"},
+      "subject": "computer"
+    },
+    {
+      "question": {
+        "en": "Which key is used to delete characters to the left of the cursor?",
+        "hi": "कर्सर के बाईं ओर के वर्णों को हटाने के लिए किस कुंजी का उपयोग किया जाता है?"
+      },
+      "options": {
+        "en": ["Backspace", "Delete", "Enter", "Space"],
+        "hi": ["बैकस्पेस", "डिलीट", "एंटर", "स्पेस"]
+      },
+      "answer": {"en": "Backspace", "hi": "बैकस्पेस"},
+      "explanation": {"en": "The Backspace key deletes the character to the left of the cursor.", "hi": "बैकस्पेस कुंजी कर्सर के बाईं ओर के वर्ण को हटा देती है।"},
+      "subject": "computer"
+    },
+    {
+      "question": {
+        "en": "What is the smallest unit of data in a computer?",
+        "hi": "कंप्यूटर में डेटा की सबसे छोटी इकाई क्या है?"
+      },
+      "options": {
+        "en": ["Bit", "Byte", "Nibble", "Kilobyte"],
+        "hi": ["बिट", "बाइट", "निबल", "किलोबाइट"]
+      },
+      "answer": {"en": "Bit", "hi": "बिट"},
+      "explanation": {"en": "A bit is the smallest unit, representing 0 or 1.", "hi": "एक बिट सबसे छोटी इकाई है, जो 0 या 1 का प्रतिनिधित्व करती है।"},
+      "subject": "computer"
+    },
+    {
+      "question": {
+        "en": "Which device is both an input and output device?",
+        "hi": "कौन सा उपकरण इनपुट और आउटपुट दोनों है?"
+      },
+      "options": {
+        "en": ["Touchscreen", "Keyboard", "Mouse", "Printer"],
+        "hi": ["टचस्क्रीन", "कीबोर्ड", "माउस", "प्रिंटर"]
+      },
+      "answer": {"en": "Touchscreen", "hi": "टचस्क्रीन"},
+      "explanation": {"en": "A touchscreen accepts input (touch) and displays output.", "hi": "टचस्क्रीन इनपुट (स्पर्श) स्वीकार करती है और आउटपुट प्रदर्शित करती है।"},
+      "subject": "computer"
+    },
+    {
+      "question": {
+        "en": "What does HTTP stand for?",
+        "hi": "HTTP का पूरा नाम क्या है?"
+      },
+      "options": {
+        "en": ["HyperText Transfer Protocol", "HyperText Transmission Protocol", "HighText Transfer Protocol", "HyperText Transfer Process"],
+        "hi": ["हाइपरटेक्स्ट ट्रांसफर प्रोटोकॉल", "हाइपरटेक्स्ट ट्रांसमिशन प्रोटोकॉल", "हाईटेक्स्ट ट्रांसफर प्रोटोकॉल", "हाइपरटेक्स्ट ट्रांसफर प्रोसेस"]
+      },
+      "answer": {"en": "HyperText Transfer Protocol", "hi": "हाइपरटेक्स्ट ट्रांसफर प्रोटोकॉल"},
+      "explanation": {"en": "HTTP is the foundation of data communication on the web.", "hi": "HTTP वेब पर डेटा संचार की नींव है।"},
+      "subject": "computer"
+    },
+    {
+      "question": {
+        "en": "Which is a volatile memory?",
+        "hi": "कौन सी अस्थिर मेमोरी है?"
+      },
+      "options": {
+        "en": ["RAM", "ROM", "Hard Disk", "USB Drive"],
+        "hi": ["RAM", "ROM", "हार्ड डिस्क", "USB ड्राइव"]
+      },
+      "answer": {"en": "RAM", "hi": "RAM"},
+      "explanation": {"en": "RAM loses data when power is turned off.", "hi": "RAM बिजली बंद होने पर डेटा खो देती है।"},
+      "subject": "computer"
+    },
+    {
+      "question": {
+        "en": "What is the purpose of an IP address?",
+        "hi": "IP एड्रेस का उद्देश्य क्या है?"
+      },
+      "options": {
+        "en": ["Identify devices on a network", "Store files", "Increase speed", "Encrypt data"],
+        "hi": ["नेटवर्क पर डिवाइस की पहचान करना", "फाइलें स्टोर करना", "गति बढ़ाना", "डेटा एन्क्रिप्ट करना"]
+      },
+      "answer": {"en": "Identify devices on a network", "hi": "नेटवर्क पर डिवाइस की पहचान करना"},
+      "explanation": {"en": "An IP address uniquely identifies a device on a network.", "hi": "IP एड्रेस नेटवर्क पर एक डिवाइस की विशिष्ट पहचान करता है।"},
+      "subject": "computer"
+    },
+    {
+      "question": {
+        "en": "Which of the following is a search engine?",
+        "hi": "निम्नलिखित में से कौन सा एक सर्च इंजन है?"
+      },
+      "options": {
+        "en": ["Google", "Windows", "Linux", "Photoshop"],
+        "hi": ["गूगल", "विंडोज़", "लिनक्स", "फोटोशॉप"]
+      },
+      "answer": {"en": "Google", "hi": "गूगल"},
+      "explanation": {"en": "Google is a search engine used to find information on the internet.", "hi": "गूगल इंटरनेट पर जानकारी खोजने के लिए उपयोग किया जाने वाला एक सर्च इंजन है।"},
+      "subject": "computer"
+    },
+    {
+      "question": {
+        "en": "What is phishing?",
+        "hi": "फिशिंग क्या है?"
+      },
+      "options": {
+        "en": ["Fraudulent attempt to obtain sensitive data", "Downloading music", "Playing online games", "Creating backups"],
+        "hi": ["संवेदनशील डेटा प्राप्त करने का धोखाधड़ी वाला प्रयास", "संगीत डाउनलोड करना", "ऑनलाइन गेम खेलना", "बैकअप बनाना"]
+      },
+      "answer": {"en": "Fraudulent attempt to obtain sensitive data", "hi": "संवेदनशील डेटा प्राप्त करने का धोखाधड़ी वाला प्रयास"},
+      "explanation": {"en": "Phishing involves tricking users into revealing passwords or financial details.", "hi": "फिशिंग उपयोगकर्ताओं को पासवर्ड या वित्तीय विवरण देने के लिए धोखा देने की कोशिश करती है।"},
+      "subject": "computer"
+    },
+    {
+      "question": {
+        "en": "Which software is used for creating presentations?",
+        "hi": "प्रस्तुति बनाने के लिए किस सॉफ़्टवेयर का उपयोग किया जाता है?"
+      },
+      "options": {
+        "en": ["PowerPoint", "Photoshop", "Notepad", "Excel"],
+        "hi": ["पावरपॉइंट", "फोटोशॉप", "नोटपैड", "एक्सेल"]
+      },
+      "answer": {"en": "PowerPoint", "hi": "पावरपॉइंट"},
+      "explanation": {"en": "Microsoft PowerPoint is used to create slide presentations.", "hi": "माइक्रोसॉफ्ट पावरपॉइंट का उपयोग स्लाइड प्रस्तुति बनाने के लिए किया जाता है।"},
+      "subject": "computer"
+    },
+    {
+      "question": {
+        "en": "What is the full form of PDF?",
+        "hi": "PDF का पूरा नाम क्या है?"
+      },
+      "options": {
+        "en": ["Portable Document Format", "Personal Document File", "Printed Document Format", "Public Document File"],
+        "hi": ["पोर्टेबल डॉक्यूमेंट फॉर्मेट", "पर्सनल डॉक्यूमेंट फाइल", "प्रिंटेड डॉक्यूमेंट फॉर्मेट", "पब्लिक डॉक्यूमेंट फाइल"]
+      },
+      "answer": {"en": "Portable Document Format", "hi": "पोर्टेबल डॉक्यूमेंट फॉर्मेट"},
+      "explanation": {"en": "PDF is a file format used to present documents consistently.", "hi": "PDF एक फाइल प्रारूप है जिसका उपयोग दस्तावेजों को सुसंगत रूप से प्रस्तुत करने के लिए किया जाता है।"},
+      "subject": "computer"
+    },
+    {
+      "question": {
+        "en": "Which component is known as the brain of the computer?",
+        "hi": "कंप्यूटर का दिमाग किस घटक को कहा जाता है?"
+      },
+      "options": {
+        "en": ["CPU", "RAM", "Hard Drive", "Motherboard"],
+        "hi": ["CPU", "RAM", "हार्ड ड्राइव", "मदरबोर्ड"]
+      },
+      "answer": {"en": "CPU", "hi": "CPU"},
+      "explanation": {"en": "The CPU (Central Processing Unit) is the brain of the computer.", "hi": "CPU (केंद्रीय प्रसंस्करण इकाई) कंप्यूटर का दिमाग है।"},
+      "subject": "computer"
+    },
+    {
+      "question": {
+        "en": "What does 'www' stand for?",
+        "hi": "'www' का पूरा नाम क्या है?"
+      },
+      "options": {
+        "en": ["World Wide Web", "Wide World Web", "Web Wide World", "World Web Wide"],
+        "hi": ["वर्ल्ड वाइड वेब", "वाइड वर्ल्ड वेब", "वेब वाइड वर्ल्ड", "वर्ल्ड वेब वाइड"]
+      },
+      "answer": {"en": "World Wide Web", "hi": "वर्ल्ड वाइड वेब"},
+      "explanation": {"en": "'www' refers to the system of interlinked hypertext documents on the internet.", "hi": "'www' इंटरनेट पर हाइपरटेक्स्ट दस्तावेजों की प्रणाली को दर्शाता है।"},
+      "subject": "computer"
+    },
+    {
+      "question": {
+        "en": "Which key combination is used to copy text?",
+        "hi": "टेक्स्ट कॉपी करने के लिए किस कुंजी संयोजन का उपयोग किया जाता है?"
+      },
+      "options": {
+        "en": ["Ctrl + C", "Ctrl + X", "Ctrl + V", "Ctrl + Z"],
+        "hi": ["Ctrl + C", "Ctrl + X", "Ctrl + V", "Ctrl + Z"]
+      },
+      "answer": {"en": "Ctrl + C", "hi": "Ctrl + C"},
+      "explanation": {"en": "Ctrl+C copies selected text to the clipboard.", "hi": "Ctrl+C चयनित पाठ को क्लिपबोर्ड पर कॉपी करता है।"},
+      "subject": "computer"
+    },
+    {
+      "question": {
+        "en": "What is cloud computing?",
+        "hi": "क्लाउड कंप्यूटिंग क्या है?"
+      },
+      "options": {
+        "en": ["Using remote servers to store and manage data", "Working on a desktop PC", "Using USB drives", "Playing video games"],
+        "hi": ["डेटा को स्टोर और प्रबंधित करने के लिए रिमोट सर्वर का उपयोग करना", "डेस्कटॉप पीसी पर काम करना", "USB ड्राइव का उपयोग करना", "वीडियो गेम खेलना"]
+      },
+      "answer": {"en": "Using remote servers to store and manage data", "hi": "डेटा को स्टोर और प्रबंधित करने के लिए रिमोट सर्वर का उपयोग करना"},
+      "explanation": {"en": "Cloud computing delivers computing services over the internet.", "hi": "क्लाउड कंप्यूटिंग इंटरनेट के माध्यम से कंप्यूटिंग सेवाएं प्रदान करती है।"},
+      "subject": "computer"
+    },
+    {
+      "question": {
+        "en": "Which protocol is used to send emails?",
+        "hi": "ईमेल भेजने के लिए किस प्रोटोकॉल का उपयोग किया जाता है?"
+      },
+      "options": {
+        "en": ["SMTP", "POP3", "IMAP", "HTTP"],
+        "hi": ["SMTP", "POP3", "IMAP", "HTTP"]
+      },
+      "answer": {"en": "SMTP", "hi": "SMTP"},
+      "explanation": {"en": "SMTP (Simple Mail Transfer Protocol) is used for sending emails.", "hi": "SMTP (सिंपल मेल ट्रांसफर प्रोटोकॉल) ईमेल भेजने के लिए उपयोग किया जाता है।"},
+      "subject": "computer"
+    },
+    {
+      "question": {
+        "en": "What is the primary purpose of a spreadsheet?",
+        "hi": "स्प्रेडशीट का प्राथमिक उद्देश्य क्या है?"
+      },
+      "options": {
+        "en": ["Perform calculations and data analysis", "Create documents", "Edit images", "Browse the web"],
+        "hi": ["गणना और डेटा विश्लेषण करना", "दस्तावेज़ बनाना", "छवियों को संपादित करना", "वेब ब्राउज़ करना"]
+      },
+      "answer": {"en": "Perform calculations and data analysis", "hi": "गणना और डेटा विश्लेषण करना"},
+      "explanation": {"en": "Spreadsheets like Excel are used for numerical data and formulas.", "hi": "एक्सेल जैसी स्प्रेडशीट का उपयोग संख्यात्मक डेटा और सूत्रों के लिए किया जाता है।"},
+      "subject": "computer"
+    },
+    {
+      "question": {
+        "en": "Which of these is NOT an output device?",
+        "hi": "इनमें से कौन आउटपुट डिवाइस नहीं है?"
+      },
+      "options": {
+        "en": ["Keyboard", "Monitor", "Printer", "Speaker"],
+        "hi": ["कीबोर्ड", "मॉनिटर", "प्रिंटर", "स्पीकर"]
+      },
+      "answer": {"en": "Keyboard", "hi": "कीबोर्ड"},
+      "explanation": {"en": "A keyboard is an input device, not output.", "hi": "कीबोर्ड एक इनपुट डिवाइस है, आउटपुट नहीं।"},
+      "subject": "computer"
+    },
+    {
+      "question": {
+        "en": "What is the function of a compiler?",
+        "hi": "कंपाइलर का कार्य क्या है?"
+      },
+      "options": {
+        "en": ["Convert high-level code to machine code", "Write code", "Debug programs", "Design interfaces"],
+        "hi": ["उच्च-स्तरीय कोड को मशीन कोड में परिवर्तित करना", "कोड लिखना", "प्रोग्राम डीबग करना", "इंटरफ़ेस डिज़ाइन करना"]
+      },
+      "answer": {"en": "Convert high-level code to machine code", "hi": "उच्च-स्तरीय कोड को मशीन कोड में परिवर्तित करना"},
+      "explanation": {"en": "A compiler translates source code into executable machine code.", "hi": "कंपाइलर स्रोत कोड को निष्पादन योग्य मशीन कोड में अनुवाद करता है।"},
+      "subject": "computer"
+    },
+    {
+      "question": {
+        "en": "Which is a mobile operating system?",
+        "hi": "कौन सा मोबाइल ऑपरेटिंग सिस्टम है?"
+      },
+      "options": {
+        "en": ["Android", "Windows", "Linux", "macOS"],
+        "hi": ["एंड्रॉइड", "विंडोज़", "लिनक्स", "macOS"]
+      },
+      "answer": {"en": "Android", "hi": "एंड्रॉइड"},
+      "explanation": {"en": "Android is a mobile OS developed by Google for smartphones.", "hi": "एंड्रॉइड गूगल द्वारा स्मार्टफोन के लिए विकसित मोबाइल ऑपरेटिंग सिस्टम है।"},
+      "subject": "computer"
+    },
+    {
+      "question": {
+        "en": "What does 'GUI' stand for?",
+        "hi": "'GUI' का पूरा नाम क्या है?"
+      },
+      "options": {
+        "en": ["Graphical User Interface", "General User Interaction", "Global User Interface", "Graphical Utility Interface"],
+        "hi": ["ग्राफिकल यूजर इंटरफेस", "जनरल यूजर इंटरैक्शन", "ग्लोबल यूजर इंटरफेस", "ग्राफिकल यूटिलिटी इंटरफेस"]
+      },
+      "answer": {"en": "Graphical User Interface", "hi": "ग्राफिकल यूजर इंटरफेस"},
+      "explanation": {"en": "GUI allows users to interact with electronic devices using icons and visual indicators.", "hi": "GUI उपयोगकर्ताओं को आइकन और विजुअल संकेतकों का उपयोग करके इलेक्ट्रॉनिक उपकरणों के साथ परस्पर क्रिया करने की अनुमति देता है।"},
+      "subject": "computer"
+    },
+    {
+      "question": {
+        "en": "Which file extension is for a plain text file?",
+        "hi": "सादे पाठ फ़ाइल के लिए कौन सा फ़ाइल एक्सटेंशन है?"
+      },
+      "options": {
+        "en": [".txt", ".docx", ".pdf", ".jpg"],
+        "hi": [".txt", ".docx", ".pdf", ".jpg"]
+      },
+      "answer": {"en": ".txt", "hi": ".txt"},
+      "explanation": {"en": ".txt files contain unformatted text.", "hi": ".txt फ़ाइलें स्वरूपित नहीं किए गए पाठ को शामिल करती हैं।"},
+      "subject": "computer"
+    }
+  ]
+}

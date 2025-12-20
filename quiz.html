@@ -16,9 +16,6 @@
   <meta property="og:description" content="Free daily MCQs for Indian competitive exams.">
   <meta property="og:image" content="https://aspirantdaily.com/og-image.jpg">
 
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-
   <!-- Canonical -->
   <link rel="canonical" href="https://aspirantdaily.com/">
 
@@ -56,7 +53,7 @@
 
   <!-- HEADER -->
   <header class="quiz-header">
-    <button class="back-btn" onclick="openExitModal()">← Back</button>
+    <button class="back-btn" type="button" onclick="openExitModal()">← Back</button>
 
     <div class="quiz-title">
       <h1 id="quizTitle">Daily Quiz</h1>
@@ -71,13 +68,25 @@
     <div id="quizBox" class="quiz-card hidden">
       <p id="questionNumber" class="question-count"></p>
       <h2 id="questionText" class="question-text"></h2>
+
       <div id="optionsContainer" class="options-list"></div>
 
+      <!-- 🔒 NAVIGATION (FIXED) -->
       <div class="quiz-nav">
-        <button id="prevBtn" class="btn secondary" onclick="prevQuestion()">
+        <button
+          id="prevBtn"
+          class="btn secondary"
+          type="button"
+          onclick="prevQuestion()">
           Previous
         </button>
-        <button id="nextBtn" class="btn primary" onclick="nextQuestion()">
+
+        <!-- ✅ type="button" prevents form-submit bugs -->
+        <button
+          id="nextBtn"
+          class="btn primary"
+          type="button"
+          onclick="nextQuestion()">
           Next
         </button>
       </div>
@@ -102,17 +111,19 @@
       <h3>Leave Quiz?</h3>
       <p>If you go back now, your progress will be lost.</p>
       <div class="modal-actions">
-        <button class="btn secondary" onclick="closeExitModal()">Stay</button>
-        <button class="btn danger" onclick="exitQuiz()">Leave</button>
+        <button class="btn secondary" type="button" onclick="closeExitModal()">Stay</button>
+        <button class="btn danger" type="button" onclick="exitQuiz()">Leave</button>
       </div>
     </div>
   </div>
 
+  <!-- GLOBAL -->
   <script src="script.js"></script>
 
-  <!-- ✅ CRITICAL FIX -->
+  <!-- ✅ QUIZ LOGIC (MODULE) -->
   <script type="module" src="js/quiz.js"></script>
 
+  <!-- MODAL HELPERS -->
   <script>
     function openExitModal() {
       document.getElementById("exitModal").classList.remove("hidden");

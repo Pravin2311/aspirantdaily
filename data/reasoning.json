@@ -1,0 +1,1573 @@
+{
+  "subject": "reasoning",
+  "last_updated": "2025-12-20",
+  "total_unique_questions": 54,
+  "questions": [
+    {
+      "question": {
+        "en": "If A is the brother of B and B is the sister of C, how is A related to C?",
+        "hi": "यदि A, B का भाई है और B, C की बहन है, तो A का C से क्या संबंध है?"
+      },
+      "options": {
+        "en": [
+          "Brother",
+          "Sister",
+          "Cousin",
+          "Father"
+        ],
+        "hi": [
+          "भाई",
+          "बहन",
+          "चचेरा भाई",
+          "पिता"
+        ]
+      },
+      "answer": {
+        "en": "Brother",
+        "hi": "भाई"
+      },
+      "explanation": {
+        "en": "A and C are siblings and A is male, so A is the brother of C.",
+        "hi": "A और C सहोदर हैं और A पुरुष है, इसलिए A, C का भाई है।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "Find the next number in the series: 2, 4, 8, 16, ?",
+        "hi": "श्रृंखला में अगली संख्या ज्ञात करें: 2, 4, 8, 16, ?"
+      },
+      "options": {
+        "en": [
+          "18",
+          "24",
+          "32",
+          "34"
+        ],
+        "hi": [
+          "18",
+          "24",
+          "32",
+          "34"
+        ]
+      },
+      "answer": {
+        "en": "32",
+        "hi": "32"
+      },
+      "explanation": {
+        "en": "Each number is multiplied by 2.",
+        "hi": "प्रत्येक संख्या को 2 से गुणा किया गया है।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "Which one is the odd one out?",
+        "hi": "निम्नलिखित में से विषम को चुनिए।"
+      },
+      "options": {
+        "en": [
+          "Pen",
+          "Pencil",
+          "Eraser",
+          "Book"
+        ],
+        "hi": [
+          "पेन",
+          "पेंसिल",
+          "रबर",
+          "किताब"
+        ]
+      },
+      "answer": {
+        "en": "Book",
+        "hi": "किताब"
+      },
+      "explanation": {
+        "en": "Pen, pencil and eraser are writing tools; book is for reading.",
+        "hi": "पेन, पेंसिल और रबर लिखने के साधन हैं; किताब पढ़ने के लिए होती है।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "If CAT is written as DBU, how will DOG be written?",
+        "hi": "यदि CAT को DBU लिखा जाता है, तो DOG को कैसे लिखा जाएगा?"
+      },
+      "options": {
+        "en": [
+          "EPH",
+          "EOH",
+          "FPH",
+          "DPH"
+        ],
+        "hi": [
+          "EPH",
+          "EOH",
+          "FPH",
+          "DPH"
+        ]
+      },
+      "answer": {
+        "en": "EPH",
+        "hi": "EPH"
+      },
+      "explanation": {
+        "en": "Each letter is shifted one position forward.",
+        "hi": "प्रत्येक अक्षर एक स्थान आगे बढ़ाया गया है।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "Pointing to a man, a woman said, 'He is my son's father.' Who is the man?",
+        "hi": "एक महिला ने कहा, 'वह मेरे बेटे का पिता है।' वह पुरुष कौन है?"
+      },
+      "options": {
+        "en": [
+          "Brother",
+          "Husband",
+          "Uncle",
+          "Father"
+        ],
+        "hi": [
+          "भाई",
+          "पति",
+          "चाचा",
+          "पिता"
+        ]
+      },
+      "answer": {
+        "en": "Husband",
+        "hi": "पति"
+      },
+      "explanation": {
+        "en": "Son’s father is the husband.",
+        "hi": "बेटे का पिता पति होता है।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "Find the missing letter: A, C, E, G, ?",
+        "hi": "रिक्त अक्षर भरें: A, C, E, G, ?"
+      },
+      "options": {
+        "en": [
+          "H",
+          "I",
+          "J",
+          "K"
+        ],
+        "hi": [
+          "H",
+          "I",
+          "J",
+          "K"
+        ]
+      },
+      "answer": {
+        "en": "I",
+        "hi": "I"
+      },
+      "explanation": {
+        "en": "Letters are skipping one alphabet each time.",
+        "hi": "हर बार एक अक्षर छोड़ा गया है।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "Which direction is opposite to South-East?",
+        "hi": "दक्षिण-पूर्व के विपरीत दिशा कौन सी है?"
+      },
+      "options": {
+        "en": [
+          "North-East",
+          "North-West",
+          "South-West",
+          "East"
+        ],
+        "hi": [
+          "उत्तर-पूर्व",
+          "उत्तर-पश्चिम",
+          "दक्षिण-पश्चिम",
+          "पूर्व"
+        ]
+      },
+      "answer": {
+        "en": "North-West",
+        "hi": "उत्तर-पश्चिम"
+      },
+      "explanation": {
+        "en": "Opposite of South-East is North-West.",
+        "hi": "दक्षिण-पूर्व की विपरीत दिशा उत्तर-पश्चिम है।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "Find the next number: 1, 4, 9, 16, ?",
+        "hi": "अगली संख्या ज्ञात करें: 1, 4, 9, 16, ?"
+      },
+      "options": {
+        "en": [
+          "20",
+          "25",
+          "30",
+          "36"
+        ],
+        "hi": [
+          "20",
+          "25",
+          "30",
+          "36"
+        ]
+      },
+      "answer": {
+        "en": "25",
+        "hi": "25"
+      },
+      "explanation": {
+        "en": "These are squares of natural numbers.",
+        "hi": "ये प्राकृतिक संख्याओं के वर्ग हैं।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "Which one does not belong to the group?",
+        "hi": "समूह से अलग कौन है?"
+      },
+      "options": {
+        "en": [
+          "Lion",
+          "Tiger",
+          "Cow",
+          "Leopard"
+        ],
+        "hi": [
+          "शेर",
+          "बाघ",
+          "गाय",
+          "तेंदुआ"
+        ]
+      },
+      "answer": {
+        "en": "Cow",
+        "hi": "गाय"
+      },
+      "explanation": {
+        "en": "Cow is herbivore, others are carnivores.",
+        "hi": "गाय शाकाहारी है, बाकी मांसाहारी हैं।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "If today is Monday, what day will it be after 14 days?",
+        "hi": "यदि आज सोमवार है, तो 14 दिन बाद कौन सा दिन होगा?"
+      },
+      "options": {
+        "en": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Sunday"
+        ],
+        "hi": [
+          "सोमवार",
+          "मंगलवार",
+          "बुधवार",
+          "रविवार"
+        ]
+      },
+      "answer": {
+        "en": "Monday",
+        "hi": "सोमवार"
+      },
+      "explanation": {
+        "en": "14 days make exactly two weeks.",
+        "hi": "14 दिन = 2 सप्ताह।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "Find the odd one out.",
+        "hi": "विषम को चुनिए।"
+      },
+      "options": {
+        "en": [
+          "January",
+          "February",
+          "March",
+          "Sunday"
+        ],
+        "hi": [
+          "जनवरी",
+          "फरवरी",
+          "मार्च",
+          "रविवार"
+        ]
+      },
+      "answer": {
+        "en": "Sunday",
+        "hi": "रविवार"
+      },
+      "explanation": {
+        "en": "First three are months, Sunday is a day.",
+        "hi": "पहली तीन महीने हैं, रविवार एक दिन है।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "Find the next number: 5, 10, 20, 40, ?",
+        "hi": "अगली संख्या ज्ञात करें: 5, 10, 20, 40, ?"
+      },
+      "options": {
+        "en": [
+          "60",
+          "70",
+          "80",
+          "90"
+        ],
+        "hi": [
+          "60",
+          "70",
+          "80",
+          "90"
+        ]
+      },
+      "answer": {
+        "en": "80",
+        "hi": "80"
+      },
+      "explanation": {
+        "en": "Each number is multiplied by 2.",
+        "hi": "हर संख्या को 2 से गुणा किया गया है।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "Pointing to a girl, Ramesh said, 'She is the daughter of my father's only son.' Who is the girl?",
+        "hi": "एक लड़की की ओर इशारा करते हुए रमेश ने कहा, 'वह मेरे पिता के इकलौते बेटे की बेटी है।' लड़की कौन है?"
+      },
+      "options": {
+        "en": [
+          "Sister",
+          "Niece",
+          "Daughter",
+          "Cousin"
+        ],
+        "hi": [
+          "बहन",
+          "भतीजी",
+          "बेटी",
+          "चचेरी बहन"
+        ]
+      },
+      "answer": {
+        "en": "Daughter",
+        "hi": "बेटी"
+      },
+      "explanation": {
+        "en": "Father's only son is Ramesh himself, so the girl is his daughter.",
+        "hi": "पिता का इकलौता बेटा स्वयं रमेश है, इसलिए लड़की उसकी बेटी है।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "Find the next number: 3, 9, 27, ?",
+        "hi": "अगली संख्या ज्ञात करें: 3, 9, 27, ?"
+      },
+      "options": {
+        "en": [
+          "54",
+          "81",
+          "72",
+          "90"
+        ],
+        "hi": [
+          "54",
+          "81",
+          "72",
+          "90"
+        ]
+      },
+      "answer": {
+        "en": "81",
+        "hi": "81"
+      },
+      "explanation": {
+        "en": "Each number is multiplied by 3.",
+        "hi": "हर संख्या को 3 से गुणा किया गया है।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "Which letter comes next: Z, X, V, T, ?",
+        "hi": "अगला अक्षर कौन सा होगा: Z, X, V, T, ?"
+      },
+      "options": {
+        "en": [
+          "R",
+          "S",
+          "P",
+          "Q"
+        ],
+        "hi": [
+          "R",
+          "S",
+          "P",
+          "Q"
+        ]
+      },
+      "answer": {
+        "en": "R",
+        "hi": "R"
+      },
+      "explanation": {
+        "en": "Letters are moving backward skipping one letter each time.",
+        "hi": "अक्षर पीछे की ओर एक अक्षर छोड़ते हुए बढ़ रहे हैं।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "If all roses are flowers and some flowers are red, then which is correct?",
+        "hi": "यदि सभी गुलाब फूल हैं और कुछ फूल लाल हैं, तो कौन सा सही है?"
+      },
+      "options": {
+        "en": [
+          "All roses are red",
+          "Some roses may be red",
+          "No rose is red",
+          "All flowers are roses"
+        ],
+        "hi": [
+          "सभी गुलाब लाल हैं",
+          "कुछ गुलाब लाल हो सकते हैं",
+          "कोई गुलाब लाल नहीं है",
+          "सभी फूल गुलाब हैं"
+        ]
+      },
+      "answer": {
+        "en": "Some roses may be red",
+        "hi": "कुछ गुलाब लाल हो सकते हैं"
+      },
+      "explanation": {
+        "en": "Some flowers are red and roses are flowers, so some roses may be red.",
+        "hi": "कुछ फूल लाल हैं और गुलाब फूल हैं, इसलिए कुछ गुलाब लाल हो सकते हैं।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "Find the next number: 100, 90, 80, 70, ?",
+        "hi": "अगली संख्या ज्ञात करें: 100, 90, 80, 70, ?"
+      },
+      "options": {
+        "en": [
+          "65",
+          "60",
+          "55",
+          "50"
+        ],
+        "hi": [
+          "65",
+          "60",
+          "55",
+          "50"
+        ]
+      },
+      "answer": {
+        "en": "60",
+        "hi": "60"
+      },
+      "explanation": {
+        "en": "Each number decreases by 10.",
+        "hi": "हर संख्या 10 से घट रही है।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "Which pair is different?",
+        "hi": "कौन सा युग्म अलग है?"
+      },
+      "options": {
+        "en": [
+          "Eye : See",
+          "Ear : Hear",
+          "Nose : Smell",
+          "Hand : Eat"
+        ],
+        "hi": [
+          "आँख : देखना",
+          "कान : सुनना",
+          "नाक : सूंघना",
+          "हाथ : खाना"
+        ]
+      },
+      "answer": {
+        "en": "Hand : Eat",
+        "hi": "हाथ : खाना"
+      },
+      "explanation": {
+        "en": "Hand is not used for eating.",
+        "hi": "हाथ खाने का कार्य नहीं करता।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "Find the missing number: 1, 3, 6, 10, ?",
+        "hi": "रिक्त संख्या ज्ञात करें: 1, 3, 6, 10, ?"
+      },
+      "options": {
+        "en": [
+          "13",
+          "14",
+          "15",
+          "16"
+        ],
+        "hi": [
+          "13",
+          "14",
+          "15",
+          "16"
+        ]
+      },
+      "answer": {
+        "en": "15",
+        "hi": "15"
+      },
+      "explanation": {
+        "en": "Difference increases by 1: +2, +3, +4, +5.",
+        "hi": "अंतर 1 से बढ़ रहा है: +2, +3, +4, +5।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "If A is taller than B and B is taller than C, who is the tallest?",
+        "hi": "यदि A, B से लंबा है और B, C से लंबा है, तो सबसे लंबा कौन है?"
+      },
+      "options": {
+        "en": [
+          "A",
+          "B",
+          "C",
+          "Cannot be determined"
+        ],
+        "hi": [
+          "A",
+          "B",
+          "C",
+          "निर्धारित नहीं किया जा सकता"
+        ]
+      },
+      "answer": {
+        "en": "A",
+        "hi": "A"
+      },
+      "explanation": {
+        "en": "A is taller than both B and C.",
+        "hi": "A, B और C दोनों से लंबा है।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "Which letter comes next: B, E, H, K, ?",
+        "hi": "अगला अक्षर कौन सा होगा: B, E, H, K, ?"
+      },
+      "options": {
+        "en": [
+          "L",
+          "M",
+          "N",
+          "O"
+        ],
+        "hi": [
+          "L",
+          "M",
+          "N",
+          "O"
+        ]
+      },
+      "answer": {
+        "en": "N",
+        "hi": "N"
+      },
+      "explanation": {
+        "en": "Each letter is +3 positions ahead.",
+        "hi": "हर बार 3 अक्षर आगे बढ़ रहे हैं।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "If today is Wednesday, what day will it be after 9 days?",
+        "hi": "यदि आज बुधवार है, तो 9 दिन बाद कौन सा दिन होगा?"
+      },
+      "options": {
+        "en": [
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "hi": [
+          "गुरुवार",
+          "शुक्रवार",
+          "शनिवार",
+          "रविवार"
+        ]
+      },
+      "answer": {
+        "en": "Friday",
+        "hi": "शुक्रवार"
+      },
+      "explanation": {
+        "en": "9 ÷ 7 gives remainder 2, so Friday.",
+        "hi": "9 ÷ 7 का शेष 2 है, इसलिए शुक्रवार।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "Find the next number: 7, 14, 28, 56, ?",
+        "hi": "अगली संख्या ज्ञात करें: 7, 14, 28, 56, ?"
+      },
+      "options": {
+        "en": [
+          "84",
+          "98",
+          "112",
+          "120"
+        ],
+        "hi": [
+          "84",
+          "98",
+          "112",
+          "120"
+        ]
+      },
+      "answer": {
+        "en": "112",
+        "hi": "112"
+      },
+      "explanation": {
+        "en": "Each number is multiplied by 2.",
+        "hi": "हर संख्या को 2 से गुणा किया गया है।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "If P is the brother of Q and Q is the mother of R, how is P related to R?",
+        "hi": "यदि P, Q का भाई है और Q, R की माँ है, तो P का R से क्या संबंध है?"
+      },
+      "options": {
+        "en": [
+          "Father",
+          "Uncle",
+          "Brother",
+          "Grandfather"
+        ],
+        "hi": [
+          "पिता",
+          "मामा",
+          "भाई",
+          "दादा"
+        ]
+      },
+      "answer": {
+        "en": "Uncle",
+        "hi": "मामा"
+      },
+      "explanation": {
+        "en": "Mother’s brother is uncle.",
+        "hi": "माँ का भाई मामा होता है।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "Which number is different?",
+        "hi": "कौन सी संख्या अलग है?"
+      },
+      "options": {
+        "en": [
+          "121",
+          "144",
+          "169",
+          "196"
+        ],
+        "hi": [
+          "121",
+          "144",
+          "169",
+          "196"
+        ]
+      },
+      "answer": {
+        "en": "121",
+        "hi": "121"
+      },
+      "explanation": {
+        "en": "121 is not divisible by 4.",
+        "hi": "121, 4 से विभाज्य नहीं है।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "Find the next number: 2, 5, 10, 17, ?",
+        "hi": "अगली संख्या ज्ञात करें: 2, 5, 10, 17, ?"
+      },
+      "options": {
+        "en": [
+          "24",
+          "26",
+          "28",
+          "30"
+        ],
+        "hi": [
+          "24",
+          "26",
+          "28",
+          "30"
+        ]
+      },
+      "answer": {
+        "en": "26",
+        "hi": "26"
+      },
+      "explanation": {
+        "en": "Pattern: +3, +5, +7, +9.",
+        "hi": "पैटर्न: +3, +5, +7, +9।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "If 8 : 64 :: 6 : ?",
+        "hi": "यदि 8 : 64 :: 6 : ?"
+      },
+      "options": {
+        "en": [
+          "24",
+          "30",
+          "36",
+          "48"
+        ],
+        "hi": [
+          "24",
+          "30",
+          "36",
+          "48"
+        ]
+      },
+      "answer": {
+        "en": "36",
+        "hi": "36"
+      },
+      "explanation": {
+        "en": "8² = 64, so 6² = 36.",
+        "hi": "8² = 64, इसी प्रकार 6² = 36।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "Pointing to a photograph, a man said, 'She is the sister of my father.' Who is the woman?",
+        "hi": "एक तस्वीर की ओर इशारा करते हुए एक व्यक्ति ने कहा, 'वह मेरे पिता की बहन है।' वह महिला कौन है?"
+      },
+      "options": {
+        "en": [
+          "Mother",
+          "Aunt",
+          "Grandmother",
+          "Cousin"
+        ],
+        "hi": [
+          "माँ",
+          "बुआ",
+          "दादी",
+          "चचेरी बहन"
+        ]
+      },
+      "answer": {
+        "en": "Aunt",
+        "hi": "बुआ"
+      },
+      "explanation": {
+        "en": "Father’s sister is aunt.",
+        "hi": "पिता की बहन बुआ होती है।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "Find the next number: 1, 1, 2, 3, 5, ?",
+        "hi": "अगली संख्या ज्ञात करें: 1, 1, 2, 3, 5, ?"
+      },
+      "options": {
+        "en": [
+          "6",
+          "7",
+          "8",
+          "9"
+        ],
+        "hi": [
+          "6",
+          "7",
+          "8",
+          "9"
+        ]
+      },
+      "answer": {
+        "en": "8",
+        "hi": "8"
+      },
+      "explanation": {
+        "en": "This is the Fibonacci series.",
+        "hi": "यह फिबोनाची श्रेणी है।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "Which word is different?",
+        "hi": "कौन सा शब्द अलग है?"
+      },
+      "options": {
+        "en": [
+          "Chair",
+          "Table",
+          "Bed",
+          "Door"
+        ],
+        "hi": [
+          "कुर्सी",
+          "मेज़",
+          "बिस्तर",
+          "दरवाज़ा"
+        ]
+      },
+      "answer": {
+        "en": "Door",
+        "hi": "दरवाज़ा"
+      },
+      "explanation": {
+        "en": "Door is not furniture used for sitting or sleeping.",
+        "hi": "दरवाज़ा बैठने या सोने का फर्नीचर नहीं है।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "If South is called North and East is called West, then what is North-East called?",
+        "hi": "यदि दक्षिण को उत्तर और पूर्व को पश्चिम कहा जाए, तो उत्तर-पूर्व क्या कहलाएगा?"
+      },
+      "options": {
+        "en": [
+          "South-West",
+          "North-West",
+          "South-East",
+          "East"
+        ],
+        "hi": [
+          "दक्षिण-पश्चिम",
+          "उत्तर-पश्चिम",
+          "दक्षिण-पूर्व",
+          "पूर्व"
+        ]
+      },
+      "answer": {
+        "en": "South-West",
+        "hi": "दक्षिण-पश्चिम"
+      },
+      "explanation": {
+        "en": "Both directions are reversed.",
+        "hi": "दोनों दिशाएँ उलट दी गई हैं।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "Find the next number: 9, 18, 27, 36, ?",
+        "hi": "अगली संख्या ज्ञात करें: 9, 18, 27, 36, ?"
+      },
+      "options": {
+        "en": [
+          "40",
+          "45",
+          "48",
+          "54"
+        ],
+        "hi": [
+          "40",
+          "45",
+          "48",
+          "54"
+        ]
+      },
+      "answer": {
+        "en": "45",
+        "hi": "45"
+      },
+      "explanation": {
+        "en": "Each number increases by 9.",
+        "hi": "हर संख्या 9 से बढ़ रही है।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "Which pair is incorrect?",
+        "hi": "कौन सा युग्म गलत है?"
+      },
+      "options": {
+        "en": [
+          "Sun : Day",
+          "Moon : Night",
+          "Stars : Sky",
+          "Fish : Land"
+        ],
+        "hi": [
+          "सूर्य : दिन",
+          "चंद्रमा : रात",
+          "तारे : आकाश",
+          "मछली : ज़मीन"
+        ]
+      },
+      "answer": {
+        "en": "Fish : Land",
+        "hi": "मछली : ज़मीन"
+      },
+      "explanation": {
+        "en": "Fish lives in water, not on land.",
+        "hi": "मछली पानी में रहती है, ज़मीन पर नहीं।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "If today is Friday, what day will it be after 21 days?",
+        "hi": "यदि आज शुक्रवार है, तो 21 दिन बाद कौन सा दिन होगा?"
+      },
+      "options": {
+        "en": [
+          "Friday",
+          "Monday",
+          "Sunday",
+          "Wednesday"
+        ],
+        "hi": [
+          "शुक्रवार",
+          "सोमवार",
+          "रविवार",
+          "बुधवार"
+        ]
+      },
+      "answer": {
+        "en": "Friday",
+        "hi": "शुक्रवार"
+      },
+      "explanation": {
+        "en": "21 days make exactly 3 weeks.",
+        "hi": "21 दिन = 3 सप्ताह।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "Which number does not fit the pattern?",
+        "hi": "कौन सी संख्या पैटर्न में नहीं है?"
+      },
+      "options": {
+        "en": [
+          "4",
+          "9",
+          "16",
+          "20"
+        ],
+        "hi": [
+          "4",
+          "9",
+          "16",
+          "20"
+        ]
+      },
+      "answer": {
+        "en": "20",
+        "hi": "20"
+      },
+      "explanation": {
+        "en": "Others are perfect squares.",
+        "hi": "अन्य सभी पूर्ण वर्ग हैं।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "Which direction is to the right of West?",
+        "hi": "पश्चिम की दाईं ओर कौन सी दिशा होती है?"
+      },
+      "options": {
+        "en": [
+          "North",
+          "South",
+          "East",
+          "North-West"
+        ],
+        "hi": [
+          "उत्तर",
+          "दक्षिण",
+          "पूर्व",
+          "उत्तर-पश्चिम"
+        ]
+      },
+      "answer": {
+        "en": "North",
+        "hi": "उत्तर"
+      },
+      "explanation": {
+        "en": "Facing West, the right direction is North.",
+        "hi": "पश्चिम की ओर मुख करने पर दाईं दिशा उत्तर होती है।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "Find the next number: 2, 6, 12, 20, ?",
+        "hi": "अगली संख्या ज्ञात करें: 2, 6, 12, 20, ?"
+      },
+      "options": {
+        "en": [
+          "28",
+          "30",
+          "32",
+          "36"
+        ],
+        "hi": [
+          "28",
+          "30",
+          "32",
+          "36"
+        ]
+      },
+      "answer": {
+        "en": "30",
+        "hi": "30"
+      },
+      "explanation": {
+        "en": "Pattern: n² + n.",
+        "hi": "पैटर्न: n² + n।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "Which one is different?",
+        "hi": "कौन सा अलग है?"
+      },
+      "options": {
+        "en": [
+          "Car",
+          "Bus",
+          "Train",
+          "Bicycle"
+        ],
+        "hi": [
+          "कार",
+          "बस",
+          "ट्रेन",
+          "साइकिल"
+        ]
+      },
+      "answer": {
+        "en": "Bicycle",
+        "hi": "साइकिल"
+      },
+      "explanation": {
+        "en": "Bicycle does not use fuel.",
+        "hi": "साइकिल में ईंधन नहीं लगता।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "If MANGO is written as NZOHP, how is APPLE written?",
+        "hi": "यदि MANGO को NZOHP लिखा जाता है, तो APPLE कैसे लिखा जाएगा?"
+      },
+      "options": {
+        "en": [
+          "BQQMF",
+          "BPPMF",
+          "AQPMF",
+          "BQQMD"
+        ],
+        "hi": [
+          "BQQMF",
+          "BPPMF",
+          "AQPMF",
+          "BQQMD"
+        ]
+      },
+      "answer": {
+        "en": "BQQMF",
+        "hi": "BQQMF"
+      },
+      "explanation": {
+        "en": "Each letter is shifted one position forward.",
+        "hi": "प्रत्येक अक्षर एक स्थान आगे बढ़ाया गया है।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "Which number is the odd one out?",
+        "hi": "कौन सी संख्या विषम है?"
+      },
+      "options": {
+        "en": [
+          "6",
+          "10",
+          "15",
+          "21"
+        ],
+        "hi": [
+          "6",
+          "10",
+          "15",
+          "21"
+        ]
+      },
+      "answer": {
+        "en": "6",
+        "hi": "6"
+      },
+      "explanation": {
+        "en": "6 is the only even number.",
+        "hi": "6 एकमात्र सम संख्या है।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "If x + y means x is the mother of y, then A + B means?",
+        "hi": "यदि x + y का अर्थ है x, y की माँ है, तो A + B का अर्थ क्या है?"
+      },
+      "options": {
+        "en": [
+          "A is mother of B",
+          "B is mother of A",
+          "A is sister of B",
+          "A is daughter of B"
+        ],
+        "hi": [
+          "A, B की माँ है",
+          "B, A की माँ है",
+          "A, B की बहन है",
+          "A, B की बेटी है"
+        ]
+      },
+      "answer": {
+        "en": "A is mother of B",
+        "hi": "A, B की माँ है"
+      },
+      "explanation": {
+        "en": "Symbol meaning remains same.",
+        "hi": "चिह्न का अर्थ वही रहेगा।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "Find the next letter: D, H, L, P, ?",
+        "hi": "अगला अक्षर कौन सा होगा: D, H, L, P, ?"
+      },
+      "options": {
+        "en": [
+          "R",
+          "S",
+          "T",
+          "U"
+        ],
+        "hi": [
+          "R",
+          "S",
+          "T",
+          "U"
+        ]
+      },
+      "answer": {
+        "en": "T",
+        "hi": "T"
+      },
+      "explanation": {
+        "en": "Each letter is +4.",
+        "hi": "हर बार 4 अक्षर आगे।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "Find the next number: 11, 22, 33, 44, ?",
+        "hi": "अगली संख्या ज्ञात करें: 11, 22, 33, 44, ?"
+      },
+      "options": {
+        "en": [
+          "50",
+          "55",
+          "66",
+          "77"
+        ],
+        "hi": [
+          "50",
+          "55",
+          "66",
+          "77"
+        ]
+      },
+      "answer": {
+        "en": "55",
+        "hi": "55"
+      },
+      "explanation": {
+        "en": "Each number increases by 11.",
+        "hi": "हर संख्या 11 से बढ़ रही है।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "If today is Sunday, what day will it be after 10 days?",
+        "hi": "यदि आज रविवार है, तो 10 दिन बाद कौन सा दिन होगा?"
+      },
+      "options": {
+        "en": [
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "hi": [
+          "मंगलवार",
+          "बुधवार",
+          "गुरुवार",
+          "शुक्रवार"
+        ]
+      },
+      "answer": {
+        "en": "Wednesday",
+        "hi": "बुधवार"
+      },
+      "explanation": {
+        "en": "10 ÷ 7 = remainder 3 → Wednesday.",
+        "hi": "10 ÷ 7 = शेष 3 → बुधवार।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "If 15 is coded as 225 and 12 is coded as 144, how is 9 coded?",
+        "hi": "यदि 15 को 225 और 12 को 144 लिखा जाता है, तो 9 को कैसे लिखा जाएगा?"
+      },
+      "options": {
+        "en": [
+          "18",
+          "72",
+          "81",
+          "99"
+        ],
+        "hi": [
+          "18",
+          "72",
+          "81",
+          "99"
+        ]
+      },
+      "answer": {
+        "en": "81",
+        "hi": "81"
+      },
+      "explanation": {
+        "en": "Number is squared: 9 × 9 = 81.",
+        "hi": "संख्या का वर्ग किया गया है: 9 × 9 = 81।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "Which word will come at the end if the words are arranged alphabetically?",
+        "hi": "यदि शब्दों को वर्णानुक्रम में सजाया जाए तो अंत में कौन सा शब्द आएगा?"
+      },
+      "options": {
+        "en": [
+          "Apple",
+          "Banana",
+          "Grapes",
+          "Orange"
+        ],
+        "hi": [
+          "सेब",
+          "केला",
+          "अंगूर",
+          "संतरा"
+        ]
+      },
+      "answer": {
+        "en": "Orange",
+        "hi": "संतरा"
+      },
+      "explanation": {
+        "en": "Alphabetically, Orange comes last.",
+        "hi": "वर्णानुक्रम में संतरा अंत में आता है।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "If CLOCK is written as KCOLC, how is WATCH written?",
+        "hi": "यदि CLOCK को KCOLC लिखा जाता है, तो WATCH को कैसे लिखा जाएगा?"
+      },
+      "options": {
+        "en": [
+          "HCTAW",
+          "HCTWA",
+          "WTAHC",
+          "CTAWH"
+        ],
+        "hi": [
+          "HCTAW",
+          "HCTWA",
+          "WTAHC",
+          "CTAWH"
+        ]
+      },
+      "answer": {
+        "en": "HCTAW",
+        "hi": "HCTAW"
+      },
+      "explanation": {
+        "en": "The word is written in reverse order.",
+        "hi": "शब्द को उल्टे क्रम में लिखा गया है।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "Find the missing number: 4, 12, 36, ?, 324",
+        "hi": "रिक्त संख्या ज्ञात करें: 4, 12, 36, ?, 324"
+      },
+      "options": {
+        "en": [
+          "72",
+          "96",
+          "108",
+          "144"
+        ],
+        "hi": [
+          "72",
+          "96",
+          "108",
+          "144"
+        ]
+      },
+      "answer": {
+        "en": "144",
+        "hi": "144"
+      },
+      "explanation": {
+        "en": "Each number is multiplied by 3.",
+        "hi": "हर संख्या को 3 से गुणा किया गया है।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "If A + B means A is the sister of B, then how is A + C related?",
+        "hi": "यदि A + B का अर्थ है A, B की बहन है, तो A + C का अर्थ क्या होगा?"
+      },
+      "options": {
+        "en": [
+          "A is sister of C",
+          "C is sister of A",
+          "A is mother of C",
+          "A is daughter of C"
+        ],
+        "hi": [
+          "A, C की बहन है",
+          "C, A की बहन है",
+          "A, C की माँ है",
+          "A, C की बेटी है"
+        ]
+      },
+      "answer": {
+        "en": "A is sister of C",
+        "hi": "A, C की बहन है"
+      },
+      "explanation": {
+        "en": "The symbol meaning remains unchanged.",
+        "hi": "चिह्न का अर्थ वही रहता है।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "Find the next letter: A, E, I, M, ?",
+        "hi": "अगला अक्षर कौन सा होगा: A, E, I, M, ?"
+      },
+      "options": {
+        "en": [
+          "N",
+          "O",
+          "Q",
+          "R"
+        ],
+        "hi": [
+          "N",
+          "O",
+          "Q",
+          "R"
+        ]
+      },
+      "answer": {
+        "en": "Q",
+        "hi": "Q"
+      },
+      "explanation": {
+        "en": "Each letter jumps +4 positions.",
+        "hi": "हर अक्षर 4 स्थान आगे बढ़ रहा है।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "If 3 pens cost 27 rupees, what is the cost of 7 pens?",
+        "hi": "यदि 3 पेन की कीमत 27 रुपये है, तो 7 पेन की कीमत क्या होगी?"
+      },
+      "options": {
+        "en": [
+          "54",
+          "63",
+          "72",
+          "81"
+        ],
+        "hi": [
+          "54",
+          "63",
+          "72",
+          "81"
+        ]
+      },
+      "answer": {
+        "en": "63",
+        "hi": "63"
+      },
+      "explanation": {
+        "en": "Cost of one pen is 9, so 7 pens cost 63.",
+        "hi": "एक पेन की कीमत 9 है, इसलिए 7 पेन की कीमत 63 है।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "Which number is the smallest?",
+        "hi": "सबसे छोटी संख्या कौन सी है?"
+      },
+      "options": {
+        "en": [
+          "0.5",
+          "1/3",
+          "0.25",
+          "2/5"
+        ],
+        "hi": [
+          "0.5",
+          "1/3",
+          "0.25",
+          "2/5"
+        ]
+      },
+      "answer": {
+        "en": "0.25",
+        "hi": "0.25"
+      },
+      "explanation": {
+        "en": "0.25 is smaller than all other values.",
+        "hi": "0.25 सभी मानों से छोटा है।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "Which shape has no sides?",
+        "hi": "किस आकृति की कोई भुजा नहीं होती?"
+      },
+      "options": {
+        "en": [
+          "Circle",
+          "Triangle",
+          "Square",
+          "Rectangle"
+        ],
+        "hi": [
+          "वृत्त",
+          "त्रिभुज",
+          "वर्ग",
+          "आयत"
+        ]
+      },
+      "answer": {
+        "en": "Circle",
+        "hi": "वृत्त"
+      },
+      "explanation": {
+        "en": "A circle has no sides.",
+        "hi": "वृत्त की कोई भुजा नहीं होती।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "If North-East becomes South-West, then East will become?",
+        "hi": "यदि उत्तर-पूर्व दक्षिण-पश्चिम बन जाए, तो पूर्व क्या बनेगा?"
+      },
+      "options": {
+        "en": [
+          "West",
+          "North",
+          "South",
+          "North-West"
+        ],
+        "hi": [
+          "पश्चिम",
+          "उत्तर",
+          "दक्षिण",
+          "उत्तर-पश्चिम"
+        ]
+      },
+      "answer": {
+        "en": "West",
+        "hi": "पश्चिम"
+      },
+      "explanation": {
+        "en": "Opposite directions are applied.",
+        "hi": "विपरीत दिशाओं का प्रयोग किया गया है।"
+      },
+      "subject": "reasoning"
+    }
+  ]
+}

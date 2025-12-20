@@ -1,5 +1,5 @@
 // ===============================
-// quiz.js – FINAL VERSION
+// quiz.js – FINAL LOCKED VERSION
 // SUBJECT-WISE + LOCAL EXAM COMPOSER
 // ===============================
 
@@ -31,20 +31,14 @@ const subjectLabels = {
   computer: "Computer Awareness",
   science: "General Science",
   "static-gk": "Static GK",
-
-  // NEW
   english: "English (Grammar & Verbal)",
   economics: "Economics",
-  geography: "Geography",
+  geography: "Geography"
 };
 
-if (isSubjectMode) {
-  document.getElementById("examLabel").innerText =
-    `${subjectLabels[subject] || "Practice"} • Quiz ${quizIndex + 1}`;
-} else {
-  document.getElementById("examLabel").innerText =
-    `${(exam || "mixed").toUpperCase()} • Daily Practice`;
-}
+document.getElementById("examLabel").innerText = isSubjectMode
+  ? `${subjectLabels[subject] || "Practice"} • Quiz ${quizIndex + 1}`
+  : `${(exam || "mixed").toUpperCase()} • Daily Practice`;
 
 // ===============================
 // STATE
@@ -52,6 +46,7 @@ if (isSubjectMode) {
 let questions = [];
 let currentIndex = 0;
 let userAnswers = [];
+let isSubmitting = false; // 🔒 prevent double submit
 
 // ===============================
 // LOAD QUESTIONS
@@ -61,23 +56,25 @@ loadQuestions();
 async function loadQuestions() {
   try {
     // ===============================
-    // SUBJECT MODE → BACKEND
+    // SUBJECT MODE
     // ===============================
     if (isSubjectMode) {
-      const res = await fetch(
-        `https://exam-prep-generator.mydomain2311.workers.dev/?subject=${subject}`,
-        { cache: "no-store" }
-      );
-      const data = await res.json();
 
-      if (!data?.questions || !Array.isArray(data.questions)) {
-        alert("Questions not available.");
-        return;
+      // 🔥 CURRENT AFFAIRS → WORKER → KV
+      if (subject === "current-affairs") {
+        const res = await fetch(
+          "https://exam-prep-generator.mydomain2311.workers.dev/currentaffairs",
+          { cache: "no-store" }
+        );
+        const data = await res.json();
+        questions = data.questions.slice(0, 25);
       }
 
-      if (subject === "current-affairs") {
-        questions = data.questions.slice(0, 25);
-      } else {
+      // 📦 STATIC SUBJECTS → LOCAL JSON
+      else {
+        const res = await fetch(`./data/${subject}.json`);
+        const data = await res.json();
+
         const start = quizIndex * 25;
         questions = data.questions.slice(start, start + 25);
       }
@@ -91,9 +88,6 @@ async function loadQuestions() {
       questions = await buildExam(exam || "mixed");
     }
 
-    // ===============================
-    // FINAL SAFETY
-    // ===============================
     if (!questions || questions.length === 0) {
       alert("Questions not available. Please try again later.");
       return;
@@ -105,6 +99,7 @@ async function loadQuestions() {
     document.getElementById("quizBox").classList.remove("hidden");
 
     loadQuestion();
+
   } catch (e) {
     console.error(e);
     alert("Failed to load quiz. Please refresh.");
@@ -144,7 +139,10 @@ function loadQuestion() {
     container.appendChild(div);
   });
 
+  // 🔥 Button state sync
   document.getElementById("prevBtn").disabled = currentIndex === 0;
+  document.getElementById("nextBtn").innerText =
+    currentIndex === questions.length - 1 ? "Submit" : "Next";
 }
 
 // ===============================
@@ -163,7 +161,8 @@ function selectOption(opt, el) {
 // ===============================
 function nextQuestion() {
   if (currentIndex === questions.length - 1) {
-    return submitQuiz();
+    submitQuiz();
+    return;
   }
   currentIndex++;
   loadQuestion();
@@ -177,9 +176,12 @@ function prevQuestion() {
 }
 
 // ===============================
-// SUBMIT
+// SUBMIT (BULLETPROOF)
 // ===============================
 function submitQuiz() {
+  if (isSubmitting) return;
+  isSubmitting = true;
+
   localStorage.setItem(
     "examData",
     JSON.stringify({
@@ -192,11 +194,15 @@ function submitQuiz() {
   );
 
   localStorage.setItem("userAnswers", JSON.stringify(userAnswers));
-  window.location.href = "result.html";
+
+  // 🔒 Ensure storage flush before redirect
+  setTimeout(() => {
+    window.location.href = "result.html";
+  }, 50);
 }
 
 // ===============================
-// FIX: expose navigation to HTML
+// EXPOSE NAVIGATION
 // ===============================
 window.nextQuestion = nextQuestion;
 window.prevQuestion = prevQuestion;

@@ -1,0 +1,643 @@
+{
+  "subject": "geography",
+  "last_updated": "2025-12-20",
+  "questions": [
+    {
+      "question": {
+        "en": "What is the capital city of France?",
+        "hi": "फ्रांस की राजधानी शहर क्या है?"
+      },
+      "options": {
+        "en": ["Paris", "London", "Berlin", "Madrid"],
+        "hi": ["पेरिस", "लंदन", "बर्लिन", "मैड्रिड"]
+      },
+      "answer": {"en": "Paris", "hi": "पेरिस"},
+      "explanation": {"en": "Paris is the capital and most populous city of France.", "hi": "पेरिस फ्रांस की राजधानी और सबसे अधिक जनसंख्या वाला शहर है।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "Which continent is known as the 'Dark Continent'?",
+        "hi": "कौन सा महाद्वीप 'अंधेरा महाद्वीप' के नाम से जाना जाता है?"
+      },
+      "options": {
+        "en": ["Africa", "Asia", "Europe", "Australia"],
+        "hi": ["अफ्रीका", "एशिया", "यूरोप", "ऑस्ट्रेलिया"]
+      },
+      "answer": {"en": "Africa", "hi": "अफ्रीका"},
+      "explanation": {"en": "Africa is often referred to as the 'Dark Continent' due to its unexplored regions.", "hi": "अफ्रीका को अक्सर 'अंधेरा महाद्वीप' कहा जाता है क्योंकि इसके अन्वेषित क्षेत्र हैं।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "What is the largest desert in the world?",
+        "hi": "दुनिया का सबसे बड़ा रेगिस्तान कौन सा है?"
+      },
+      "options": {
+        "en": ["Sahara", "Arabian", "Gobi", "Antarctic"],
+        "hi": ["सहारा", "अरब", "गोबी", "अंटार्कटिक"]
+      },
+      "answer": {"en": "Antarctic", "hi": "अंटार्कटिक"},
+      "explanation": {"en": "The Antarctic Desert is the largest desert in the world by area.", "hi": "अंटार्कटिक रेगिस्तान क्षेत्रफल के हिसाब से दुनिया का सबसे बड़ा रेगिस्तान है।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "Which country has the most natural lakes?",
+        "hi": "कौन सा देश सबसे अधिक प्राकृतिक झीलों वाला है?"
+      },
+      "options": {
+        "en": ["Canada", "Russia", "USA", "India"],
+        "hi": ["कनाडा", "रूस", "अमेरिका", "भारत"]
+      },
+      "answer": {"en": "Canada", "hi": "कनाडा"},
+      "explanation": {"en": "Canada has more lakes than any other country in the world.", "hi": "कनाडा के पास दुनिया के किसी भी अन्य देश की तुलना में अधिक झीलें हैं।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "What is the longest river in the world?",
+        "hi": "दुनिया की सबसे लंबी नदी कौन सी है?"
+      },
+      "options": {
+        "en": ["Nile", "Amazon", "Yangtze", "Mississippi"],
+        "hi": ["नील", "अमेज़न", "यांग्त्ज़े", "मिसिसिपी"]
+      },
+      "answer": {"en": "Nile", "hi": "नील"},
+      "explanation": {"en": "The Nile River is traditionally considered the longest river in the world, flowing through northeastern Africa.", "hi": "नील नदी को पारंपरिक रूप से दुनिया की सबसे लंबी नदी माना जाता है, जो पूर्वोत्तर अफ्रीका से बहती है।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "Which country has the largest land area?",
+        "hi": "कौन सा देश सबसे बड़े भूभाग का मालिक है?"
+      },
+      "options": {
+        "en": ["Canada", "Russia", "China", "United States"],
+        "hi": ["कनाडा", "रूस", "चीन", "संयुक्त राज्य अमेरिका"]
+      },
+      "answer": {"en": "Russia", "hi": "रूस"},
+      "explanation": {"en": "Russia is the largest country in the world by land area, covering over 17 million square kilometers.", "hi": "रूस दुनिया का सबसे बड़ा देश है, जिसका भूभाग 17 मिलियन वर्ग किलोमीटर से अधिक है।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "What is the capital city of Australia?",
+        "hi": "ऑस्ट्रेलिया की राजधानी शहर कौन सा है?"
+      },
+      "options": {
+        "en": ["Sydney", "Melbourne", "Canberra", "Brisbane"],
+        "hi": ["सिडनी", "मेलबर्न", "कैनबरा", "ब्रिस्बेन"]
+      },
+      "answer": {"en": "Canberra", "hi": "कैनबरा"},
+      "explanation": {"en": "Canberra is the capital city of Australia, chosen as a compromise between Sydney and Melbourne.", "hi": "कैनबरा ऑस्ट्रेलिया की राजधानी है, जिसे सिडनी और मेलबर्न के बीच समझौते के रूप में चुना गया था।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "Which ocean is the largest?",
+        "hi": "कौन सा महासागर सबसे बड़ा है?"
+      },
+      "options": {
+        "en": ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
+        "hi": ["अटलांटिक महासागर", "भारतीय महासागर", "आर्कटिक महासागर", "प्रशांत महासागर"]
+      },
+      "answer": {"en": "Pacific Ocean", "hi": "प्रशांत महासागर"},
+      "explanation": {"en": "The Pacific Ocean is the largest and deepest ocean, covering more than 63 million square miles.", "hi": "प्रशांत महासागर सबसे बड़ा और गहरा महासागर है, जो 63 मिलियन वर्ग मील से अधिक क्षेत्र को कवर करता है।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "Which mountain range separates Europe and Asia?",
+        "hi": "कौन सा पर्वत श्रृंखला यूरोप और एशिया को अलग करती है?"
+      },
+      "options": {
+        "en": ["Himalayas", "Alps", "Ural", "Andes"],
+        "hi": ["हिमालय", "आल्प्स", "उरल", "एंडीज"]
+      },
+      "answer": {"en": "Ural", "hi": "उरल"},
+      "explanation": {"en": "The Ural Mountains are traditionally considered the natural boundary between Europe and Asia.", "hi": "उरल पर्वत श्रृंखला को पारंपरिक रूप से यूरोप और एशिया के बीच की प्राकृतिक सीमा माना जाता है।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "What is the primary language spoken in Brazil?",
+        "hi": "ब्राज़ील में बोली जाने वाली मुख्य भाषा कौन सी है?"
+      },
+      "options": {
+        "en": ["Portuguese", "Spanish", "French", "English"],
+        "hi": ["पुर्तगाली", "स्पेनिश", "फ्रेंच", "अंग्रेजी"]
+      },
+      "answer": {"en": "Portuguese", "hi": "पुर्तगाली"},
+      "explanation": {"en": "Portuguese is the official language of Brazil, a result of its colonial history.", "hi": "पुर्तगाली ब्राज़ील की आधिकारिक भाषा है, जो इसके उपनिवेशी इतिहास का परिणाम है।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "What is the capital city of Japan?",
+        "hi": "जापान की राजधानी शहर कौन सा है?"
+      },
+      "options": {
+        "en": ["Tokyo", "Seoul", "Beijing", "Bangkok"],
+        "hi": ["टोक्यो", "सियोल", "बीजिंग", "बैंकॉक"]
+      },
+      "answer": {"en": "Tokyo", "hi": "टोक्यो"},
+      "explanation": {"en": "Tokyo is the capital city of Japan and one of the most populous cities in the world.", "hi": "टोक्यो जापान की राजधानी है और यह दुनिया के सबसे अधिक जनसंख्या वाले शहरों में से एक है।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "Which country has the largest population?",
+        "hi": "कौन सा देश सबसे बड़ी जनसंख्या वाला है?"
+      },
+      "options": {
+        "en": ["China", "India", "USA", "Indonesia"],
+        "hi": ["चीन", "भारत", "अमेरिका", "इंडोनेशिया"]
+      },
+      "answer": {"en": "China", "hi": "चीन"},
+      "explanation": {"en": "China has the largest population in the world, followed closely by India.", "hi": "चीन की दुनिया में सबसे बड़ी जनसंख्या है, इसके बाद भारत का स्थान है।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "What is the smallest country in the world?",
+        "hi": "दुनिया का सबसे छोटा देश कौन सा है?"
+      },
+      "options": {
+        "en": ["Vatican City", "Monaco", "Nauru", "Tuvalu"],
+        "hi": ["वेटिकन सिटी", "मोनाको", "नौरू", "तुवालु"]
+      },
+      "answer": {"en": "Vatican City", "hi": "वेटिकन सिटी"},
+      "explanation": {"en": "Vatican City is the smallest independent state in the world.", "hi": "वेटिकन सिटी दुनिया का सबसे छोटा स्वतंत्र राज्य है।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "Which river is known as the 'Sorrow of China'?",
+        "hi": "'चीन का शोक' किस नदी के लिए जाना जाता है?"
+      },
+      "options": {
+        "en": ["Yangtze", "Yellow River", "Mekong", "Ganges"],
+        "hi": ["यांग्त्ज़े", "पीली नदी", "मेकांग", "गंगा"]
+      },
+      "answer": {"en": "Yellow River", "hi": "पीली नदी"},
+      "explanation": {"en": "The Yellow River (Huang He) is called the 'Sorrow of China' due to its frequent devastating floods.", "hi": "पीली नदी (हुआंग हे) को अपने बार-बार होने वाले विनाशकारी बाढ़ के कारण 'चीन का शोक' कहा जाता है।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "What is the highest mountain in the world?",
+        "hi": "दुनिया का सबसे ऊँचा पर्वत कौन सा है?"
+      },
+      "options": {
+        "en": ["K2", "Kangchenjunga", "Mount Everest", "Lhotse"],
+        "hi": ["K2", "कंगचेनजुङ्घा", "माउंट एवरेस्ट", "ल्होत्से"]
+      },
+      "answer": {"en": "Mount Everest", "hi": "माउंट एवरेस्ट"},
+      "explanation": {"en": "Mount Everest, located in the Himalayas, is the highest peak above sea level at 8,848 meters.", "hi": "हिमालय में स्थित माउंट एवरेस्ट समुद्र तल से 8,848 मीटर की ऊँचाई पर सबसे ऊँची चोटी है।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "Which city is known as the 'City of Seven Hills'?",
+        "hi": "'सात पहाड़ियों वाला शहर' किसे कहा जाता है?"
+      },
+      "options": {
+        "en": ["Rome", "Athens", "Lisbon", "San Francisco"],
+        "hi": ["रोम", "एथेंस", "लिस्बन", "सैन फ्रांसिस्को"]
+      },
+      "answer": {"en": "Rome", "hi": "रोम"},
+      "explanation": {"en": "Rome was built on seven hills, giving it this historical nickname.", "hi": "रोम सात पहाड़ियों पर बसा था, जिसके कारण इसे यह ऐतिहासिक उपनाम मिला।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "Which of these countries is landlocked?",
+        "hi": "इनमें से कौन सा देश स्थल आवेषित (लैंडलॉक्ड) है?"
+      },
+      "options": {
+        "en": ["Nepal", "Bangladesh", "Sri Lanka", "Maldives"],
+        "hi": ["नेपाल", "बांग्लादेश", "श्रीलंका", "मालदीव"]
+      },
+      "answer": {"en": "Nepal", "hi": "नेपाल"},
+      "explanation": {"en": "Nepal is landlocked between India and China, with no direct access to the sea.", "hi": "नेपाल भारत और चीन के बीच स्थल आवेषित है, समुद्र तक सीधी पहुँच नहीं है।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "What is the largest island in the world?",
+        "hi": "दुनिया का सबसे बड़ा द्वीप कौन सा है?"
+      },
+      "options": {
+        "en": ["Greenland", "New Guinea", "Borneo", "Madagascar"],
+        "hi": ["ग्रीनलैंड", "न्यू गिनी", "बोर्नियो", "मेडागास्कर"]
+      },
+      "answer": {"en": "Greenland", "hi": "ग्रीनलैंड"},
+      "explanation": {"en": "Greenland is the world's largest island, though it is an autonomous territory of Denmark.", "hi": "ग्रीनलैंड दुनिया का सबसे बड़ा द्वीप है, हालाँकि यह डेनमार्क का एक स्वायत्त क्षेत्र है।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "Which canal connects the Mediterranean Sea to the Red Sea?",
+        "hi": "कौन सा नहर भूमध्य सागर को लाल सागर से जोड़ती है?"
+      },
+      "options": {
+        "en": ["Panama Canal", "Suez Canal", "Kiel Canal", "Corinth Canal"],
+        "hi": ["पनामा नहर", "सुएज़ नहर", "कील नहर", "कॉरिंथ नहर"]
+      },
+      "answer": {"en": "Suez Canal", "hi": "सुएज़ नहर"},
+      "explanation": {"en": "The Suez Canal in Egypt allows ships to travel between Europe and Asia without circumnavigating Africa.", "hi": "मिस्र में सुएज़ नहर जहाजों को अफ्रीका की परिक्रमा किए बिना यूरोप और एशिया के बीच यात्रा करने की अनुमति देती है।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "What is the national river of India?",
+        "hi": "भारत की राष्ट्रीय नदी कौन सी है?"
+      },
+      "options": {
+        "en": ["Yamuna", "Godavari", "Ganges", "Brahmaputra"],
+        "hi": ["यमुना", "गोदावरी", "गंगा", "ब्रह्मपुत्र"]
+      },
+      "answer": {"en": "Ganges", "hi": "गंगा"},
+      "explanation": {"en": "The Ganges (Ganga) is the national river of India, considered sacred in Hinduism.", "hi": "गंगा (गंगा) भारत की राष्ट्रीय नदी है, जिसे हिंदू धर्म में पवित्र माना जाता है।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "Which country is both in Europe and Asia?",
+        "hi": "कौन सा देश यूरोप और एशिया दोनों में है?"
+      },
+      "options": {
+        "en": ["Egypt", "Turkey", "Russia", "Both Turkey and Russia"],
+        "hi": ["मिस्र", "तुर्की", "रूस", "तुर्की और रूस दोनों"]
+      },
+      "answer": {"en": "Both Turkey and Russia", "hi": "तुर्की और रूस दोनों"},
+      "explanation": {"en": "Both Turkey and Russia span two continents – Europe and Asia.", "hi": "तुर्की और रूस दोनों दो महाद्वीपों – यूरोप और एशिया में फैले हुए हैं।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "Which strait separates Asia from North America?",
+        "hi": "कौन सा जलडमरूमध्य एशिया को उत्तरी अमेरिका से अलग करता है?"
+      },
+      "options": {
+        "en": ["Bering Strait", "Strait of Gibraltar", "Strait of Malacca", "Palk Strait"],
+        "hi": ["बेरिंग जलडमरूमध्य", "जिब्राल्टर जलडमरूमध्य", "मलक्का जलडमरूमध्य", "पाक जलडमरूमध्य"]
+      },
+      "answer": {"en": "Bering Strait", "hi": "बेरिंग जलडमरूमध्य"},
+      "explanation": {"en": "The Bering Strait separates Russia and Alaska, connecting the Arctic and Pacific Oceans.", "hi": "बेरिंग जलडमरूमध्य रूस और अलास्का को अलग करता है, जो आर्कटिक और प्रशांत महासागर को जोड़ता है।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "What is the deepest point in the Earth's oceans?",
+        "hi": "पृथ्वी के महासागरों का सबसे गहरा बिंदु क्या है?"
+      },
+      "options": {
+        "en": ["Mariana Trench", "Java Trench", "Puerto Rico Trench", "Tonga Trench"],
+        "hi": ["मारियाना खाई", "जावा खाई", "प्यूर्टो रिको खाई", "टोंगा खाई"]
+      },
+      "answer": {"en": "Mariana Trench", "hi": "मारियाना खाई"},
+      "explanation": {"en": "The Mariana Trench in the Pacific Ocean is the deepest known oceanic trench, reaching about 11,034 meters.", "hi": "प्रशांत महासागर में मारियाना खाई सबसे गहरी ज्ञात महासागरीय खाई है, जो लगभग 11,034 मीटर गहरी है।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "Which desert is located in India?",
+        "hi": "भारत में कौन सा रेगिस्तान स्थित है?"
+      },
+      "options": {
+        "en": ["Thar Desert", "Sahara Desert", "Gobi Desert", "Kalahari Desert"],
+        "hi": ["थार मरुस्थल", "सहारा मरुस्थल", "गोबी मरुस्थल", "कालाहारी मरुस्थल"]
+      },
+      "answer": {"en": "Thar Desert", "hi": "थार मरुस्थल"},
+      "explanation": {"en": "The Thar Desert, also known as the Great Indian Desert, covers parts of Rajasthan and extends into Pakistan.", "hi": "थार मरुस्थल, जिसे ग्रेट इंडियन डेजर्ट भी कहा जाता है, राजस्थान के कुछ हिस्सों को कवर करता है और पाकिस्तान में फैला हुआ है।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "What is the capital of Canada?",
+        "hi": "कनाडा की राजधानी क्या है?"
+      },
+      "options": {
+        "en": ["Toronto", "Vancouver", "Ottawa", "Montreal"],
+        "hi": ["टोरंटो", "वैंकूवर", "ओटावा", "मॉन्ट्रियल"]
+      },
+      "answer": {"en": "Ottawa", "hi": "ओटावा"},
+      "explanation": {"en": "Ottawa is the capital city of Canada, located in the province of Ontario.", "hi": "ओटावा कनाडा की राजधानी है, जो ओंटारियो प्रांत में स्थित है।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "Which is the largest freshwater lake in the world by volume?",
+        "hi": "आयतन के अनुसार दुनिया की सबसे बड़ी मीठे पानी की झील कौन सी है?"
+      },
+      "options": {
+        "en": ["Lake Superior", "Lake Victoria", "Lake Baikal", "Lake Michigan"],
+        "hi": ["सुपीरियर झील", "विक्टोरिया झील", "बैकाल झील", "मिशिगन झील"]
+      },
+      "answer": {"en": "Lake Baikal", "hi": "बैकाल झील"},
+      "explanation": {"en": "Lake Baikal in Siberia contains about 20% of the world's unfrozen freshwater.", "hi": "साइबेरिया की बैकाल झील में दुनिया के लगभग 20% अनफ्रोजन मीठे पानी का भंडार है।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "Which country is known as the 'Land of the Rising Sun'?",
+        "hi": "'उगते सूर्य की भूमि' के नाम से कौन सा देश जाना जाता है?"
+      },
+      "options": {
+        "en": ["China", "Japan", "South Korea", "Thailand"],
+        "hi": ["चीन", "जापान", "दक्षिण कोरिया", "थाईलैंड"]
+      },
+      "answer": {"en": "Japan", "hi": "जापान"},
+      "explanation": {"en": "Japan is called the 'Land of the Rising Sun' because it lies to the east of the Asian mainland.", "hi": "जापान को 'उगते सूर्य की भूमि' कहा जाता है क्योंकि यह एशियाई मुख्य भूमि के पूर्व में स्थित है।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "What is the southernmost country in Africa?",
+        "hi": "अफ्रीका का सबसे दक्षिणी देश कौन सा है?"
+      },
+      "options": {
+        "en": ["South Africa", "Namibia", "Botswana", "Zimbabwe"],
+        "hi": ["दक्षिण अफ्रीका", "नामीबिया", "बोत्सवाना", "जिम्बाब्वे"]
+      },
+      "answer": {"en": "South Africa", "hi": "दक्षिण अफ्रीका"},
+      "explanation": {"en": "South Africa is the southernmost country on the African continent.", "hi": "दक्षिण अफ्रीका अफ्रीकी महाद्वीप का सबसे दक्षिणी देश है।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "Which river flows through the Grand Canyon?",
+        "hi": "ग्रांड कैन्यन से कौन सी नदी बहती है?"
+      },
+      "options": {
+        "en": ["Mississippi River", "Colorado River", "Rio Grande", "Yukon River"],
+        "hi": ["मिसिसिपी नदी", "कोलोराडो नदी", "रियो ग्रांडे", "यूकॉन नदी"]
+      },
+      "answer": {"en": "Colorado River", "hi": "कोलोराडो नदी"},
+      "explanation": {"en": "The Colorado River carved the Grand Canyon over millions of years.", "hi": "कोलोराडो नदी ने लाखों वर्षों में ग्रांड कैन्यन का निर्माण किया।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "Which is the largest country in South America by area?",
+        "hi": "क्षेत्रफल के अनुसार दक्षिण अमेरिका का सबसे बड़ा देश कौन सा है?"
+      },
+      "options": {
+        "en": ["Argentina", "Colombia", "Brazil", "Peru"],
+        "hi": ["अर्जेंटीना", "कोलंबिया", "ब्राज़ील", "पेरू"]
+      },
+      "answer": {"en": "Brazil", "hi": "ब्राज़ील"},
+      "explanation": {"en": "Brazil is the largest country in South America, covering nearly half of the continent's land area.", "hi": "ब्राज़ील दक्षिण अमेरिका का सबसे बड़ा देश है, जो महाद्वीप के लगभग आधे भूभाग को कवर करता है।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "What is the capital of Egypt?",
+        "hi": "मिस्र की राजधानी क्या है?"
+      },
+      "options": {
+        "en": ["Alexandria", "Cairo", "Giza", "Luxor"],
+        "hi": ["अलेक्जेंड्रिया", "काहिरा", "गीज़ा", "लक्सर"]
+      },
+      "answer": {"en": "Cairo", "hi": "काहिरा"},
+      "explanation": {"en": "Cairo is the capital and largest city of Egypt, located near the Nile Delta.", "hi": "काहिरा मिस्र की राजधानी और सबसे बड़ा शहर है, जो नील डेल्टा के पास स्थित है।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "Which is the largest archipelago in the world?",
+        "hi": "दुनिया का सबसे बड़ा द्वीपसमूह कौन सा है?"
+      },
+      "options": {
+        "en": ["Philippines", "Indonesia", "Japan", "Maldives"],
+        "hi": ["फिलीपींस", "इंडोनेशिया", "जापान", "मालदीव"]
+      },
+      "answer": {"en": "Indonesia", "hi": "इंडोनेशिया"},
+      "explanation": {"en": "Indonesia consists of over 17,000 islands, making it the world's largest archipelago.", "hi": "इंडोनेशिया में 17,000 से अधिक द्वीप हैं, जो इसे दुनिया का सबसे बड़ा द्वीपसमूह बनाता है।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "What is the imaginary line that divides Earth into Northern and Southern Hemispheres?",
+        "hi": "वह काल्पनिक रेखा कौन सी है जो पृथ्वी को उत्तरी और दक्षिणी गोलार्ध में विभाजित करती है?"
+      },
+      "options": {
+        "en": ["Tropic of Cancer", "Equator", "Tropic of Capricorn", "Prime Meridian"],
+        "hi": ["कर्क रेखा", "भूमध्य रेखा", "मकर रेखा", "प्राइम मेरिडियन"]
+      },
+      "answer": {"en": "Equator", "hi": "भूमध्य रेखा"},
+      "explanation": {"en": "The Equator is at 0° latitude and divides the Earth into two equal halves.", "hi": "भूमध्य रेखा 0° अक्षांश पर है और पृथ्वी को दो बराबर भागों में विभाजित करती है।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "Which mountain is known as the 'Roof of the World'?",
+        "hi": "'दुनिया की छत' के नाम से किस पर्वत को जाना जाता है?"
+      },
+      "options": {
+        "en": ["Mount Everest", "K2", "Pamir Mountains", "Hindu Kush"],
+        "hi": ["माउंट एवरेस्ट", "K2", "पामिर पर्वत", "हिन्दूकुश"]
+      },
+      "answer": {"en": "Pamir Mountains", "hi": "पामिर पर्वत"},
+      "explanation": {"en": "The Pamir Mountains in Central Asia are known as the 'Roof of the World'.", "hi": "मध्य एशिया के पामिर पर्वत को 'दुनिया की छत' के नाम से जाना जाता है।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "Which country has the most time zones?",
+        "hi": "किस देश में सबसे अधिक समय क्षेत्र हैं?"
+      },
+      "options": {
+        "en": ["USA", "Russia", "China", "France"],
+        "hi": ["अमेरिका", "रूस", "चीन", "फ्रांस"]
+      },
+      "answer": {"en": "France", "hi": "फ्रांस"},
+      "explanation": {"en": "France has 12 time zones due to its overseas territories like French Guiana and French Polynesia.", "hi": "फ्रांस के पास फ्रेंच गुयाना और फ्रेंच पॉलिनेशिया जैसे विदेशी क्षेत्रों के कारण 12 समय क्षेत्र हैं।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "What is the capital of South Africa?",
+        "hi": "दक्षिण अफ्रीका की राजधानी क्या है?"
+      },
+      "options": {
+        "en": ["Cape Town", "Pretoria", "Johannesburg", "Three capitals: Pretoria, Cape Town, Bloemfontein"],
+        "hi": ["केप टाउन", "प्रिटोरिया", "जोहान्सबर्ग", "तीन राजधानियाँ: प्रिटोरिया, केप टाउन, ब्लूमफ़ोन्टेन"]
+      },
+      "answer": {"en": "Three capitals: Pretoria, Cape Town, Bloemfontein", "hi": "तीन राजधानियाँ: प्रिटोरिया, केप टाउन, ब्लूमफ़ोन्टेन"},
+      "explanation": {"en": "South Africa has three capital cities: Pretoria (executive), Cape Town (legislative), and Bloemfontein (judicial).", "hi": "दक्षिण अफ्रीका की तीन राजधानियाँ हैं: प्रिटोरिया (कार्यपालिका), केप टाउन (विधायिका), और ब्लूमफ़ोन्टेन (न्यायिक)।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "Which sea is the saltiest in the world?",
+        "hi": "दुनिया का सबसे नमकीन सागर कौन सा है?"
+      },
+      "options": {
+        "en": ["Dead Sea", "Red Sea", "Mediterranean Sea", "Arabian Sea"],
+        "hi": ["मृत सागर", "लाल सागर", "भूमध्य सागर", "अरब सागर"]
+      },
+      "answer": {"en": "Dead Sea", "hi": "मृत सागर"},
+      "explanation": {"en": "The Dead Sea has a salinity of about 34%, making it one of the saltiest bodies of water.", "hi": "मृत सागर की लवणता लगभग 34% है, जो इसे पानी के सबसे नमकीन निकायों में से एक बनाती है।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "What is the capital of Germany?",
+        "hi": "जर्मनी की राजधानी क्या है?"
+      },
+      "options": {
+        "en": ["Munich", "Frankfurt", "Berlin", "Hamburg"],
+        "hi": ["म्यूनिख", "फ्रैंकफर्ट", "बर्लिन", "हैम्बर्ग"]
+      },
+      "answer": {"en": "Berlin", "hi": "बर्लिन"},
+      "explanation": {"en": "Berlin is the capital and largest city of Germany.", "hi": "बर्लिन जर्मनी की राजधानी और सबसे बड़ा शहर है।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "Which country is the largest producer of coffee?",
+        "hi": "कौन सा देश कॉफी का सबसे बड़ा उत्पादक है?"
+      },
+      "options": {
+        "en": ["Colombia", "Vietnam", "Brazil", "Ethiopia"],
+        "hi": ["कोलंबिया", "वियतनाम", "ब्राज़ील", "इथोपिया"]
+      },
+      "answer": {"en": "Brazil", "hi": "ब्राज़ील"},
+      "explanation": {"en": "Brazil has been the world's largest coffee producer for over 150 years.", "hi": "ब्राज़ील 150 से अधिक वर्षों से दुनिया का सबसे बड़ा कॉफी उत्पादक रहा है।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "What is the longest mountain range in the world?",
+        "hi": "दुनिया की सबसे लंबी पर्वत श्रृंखला कौन सी है?"
+      },
+      "options": {
+        "en": ["Himalayas", "Rockies", "Andes", "Alps"],
+        "hi": ["हिमालय", "रॉकी", "एंडीज", "आल्प्स"]
+      },
+      "answer": {"en": "Andes", "hi": "एंडीज"},
+      "explanation": {"en": "The Andes stretch over 7,000 km along the western edge of South America.", "hi": "एंडीज दक्षिण अमेरिका के पश्चिमी किनारे के साथ 7,000 किमी से अधिक फैला हुआ है।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "Which city is known as the 'Venice of the East'?",
+        "hi": "'पूर्व की वेनिस' के नाम से किस शहर को जाना जाता है?"
+      },
+      "options": {
+        "en": ["Kochi", "Srinagar", "Alleppey", "Udaipur"],
+        "hi": ["कोच्चि", "श्रीनगर", "अल्लेप्पे", "उदयपुर"]
+      },
+      "answer": {"en": "Alleppey", "hi": "अल्लेप्पे"},
+      "explanation": {"en": "Alleppey (Alappuzha) in Kerala is famous for its backwaters and houseboats, earning it the nickname 'Venice of the East'.", "hi": "केरल के अल्लेप्पे (अलप्पुझा) को इसके बैकवाटर्स और हाउसबोट्स के लिए जाना जाता है, जिससे इसे 'पूर्व की वेनिस' उपनाम मिला।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "What is the capital of New Zealand?",
+        "hi": "न्यूजीलैंड की राजधानी क्या है?"
+      },
+      "options": {
+        "en": ["Auckland", "Christchurch", "Wellington", "Hamilton"],
+        "hi": ["ऑकलैंड", "क्राइस्टचर्च", "वेलिंगटन", "हैमिल्टन"]
+      },
+      "answer": {"en": "Wellington", "hi": "वेलिंगटन"},
+      "explanation": {"en": "Wellington is the capital city of New Zealand, known for its windy climate and vibrant culture.", "hi": "वेलिंगटन न्यूजीलैंड की राजधानी है, जो अपने हवादार जलवायु और जीवंत संस्कृति के लिए जाना जाता है।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "Which Indian state has the longest coastline?",
+        "hi": "किस भारतीय राज्य की सबसे लंबी तटरेखा है?"
+      },
+      "options": {
+        "en": ["Tamil Nadu", "Karnataka", "Gujarat", "Maharashtra"],
+        "hi": ["तमिलनाडु", "कर्नाटक", "गुजरात", "महाराष्ट्र"]
+      },
+      "answer": {"en": "Gujarat", "hi": "गुजरात"},
+      "explanation": {"en": "Gujarat has the longest coastline in India, stretching over 1,600 km.", "hi": "गुजरात की भारत में सबसे लंबी तटरेखा है, जो 1,600 किमी से अधिक लंबी है।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "What is the largest delta in the world?",
+        "hi": "दुनिया का सबसे बड़ा डेल्टा कौन सा है?"
+      },
+      "options": {
+        "en": ["Nile Delta", "Mississippi Delta", "Ganges-Brahmaputra Delta", "Mekong Delta"],
+        "hi": ["नील डेल्टा", "मिसिसिपी डेल्टा", "गंगा-ब्रह्मपुत्र डेल्टा", "मेकांग डेल्टा"]
+      },
+      "answer": {"en": "Ganges-Brahmaputra Delta", "hi": "गंगा-ब्रह्मपुत्र डेल्टा"},
+      "explanation": {"en": "The Ganges-Brahmaputra Delta in Bangladesh and India is the world's largest river delta.", "hi": "बांग्लादेश और भारत में गंगा-ब्रह्मपुत्र डेल्टा दुनिया का सबसे बड़ा नदी डेल्टा है।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "Which is the largest peninsula in the world?",
+        "hi": "दुनिया का सबसे बड़ा प्रायद्वीप कौन सा है?"
+      },
+      "options": {
+        "en": ["Arabian Peninsula", "Indian Peninsula", "Iberian Peninsula", "Scandinavian Peninsula"],
+        "hi": ["अरब प्रायद्वीप", "भारतीय प्रायद्वीप", "इबेरियन प्रायद्वीप", "स्कैंडिनेवियन प्रायद्वीप"]
+      },
+      "answer": {"en": "Arabian Peninsula", "hi": "अरब प्रायद्वीप"},
+      "explanation": {"en": "The Arabian Peninsula covers about 3.2 million sq km and includes countries like Saudi Arabia and Yemen.", "hi": "अरब प्रायद्वीप लगभग 3.2 मिलियन वर्ग किमी का क्षेत्र है और इसमें सऊदी अरब और यमन जैसे देश शामिल हैं।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "What is the capital of Norway?",
+        "hi": "नॉर्वे की राजधानी क्या है?"
+      },
+      "options": {
+        "en": ["Stockholm", "Copenhagen", "Oslo", "Helsinki"],
+        "hi": ["स्टॉकहोम", "कोपेनहेगन", "ओस्लो", "हेलसिंकी"]
+      },
+      "answer": {"en": "Oslo", "hi": "ओस्लो"},
+      "explanation": {"en": "Oslo is the capital and most populous city of Norway.", "hi": "ओस्लो नॉर्वे की राजधानी और सबसे अधिक जनसंख्या वाला शहर है।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "Which river is called the 'Lifeline of India'?",
+        "hi": "किस नदी को 'भारत की जीवनरेखा' कहा जाता है?"
+      },
+      "options": {
+        "en": ["Yamuna", "Godavari", "Ganges", "Indus"],
+        "hi": ["यमुना", "गोदावरी", "गंगा", "सिंधु"]
+      },
+      "answer": {"en": "Ganges", "hi": "गंगा"},
+      "explanation": {"en": "The Ganges supports millions of people through agriculture, industry, and religious practices.", "hi": "गंगा कृषि, उद्योग और धार्मिक प्रथाओं के माध्यम से लाखों लोगों का समर्थन करती है।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "What is the capital of Argentina?",
+        "hi": "अर्जेंटीना की राजधानी क्या है?"
+      },
+      "options": {
+        "en": ["Santiago", "Lima", "Buenos Aires", "Montevideo"],
+        "hi": ["सैंटियागो", "लीमा", "ब्यूनस आयर्स", "मॉन्टेवीडियो"]
+      },
+      "answer": {"en": "Buenos Aires", "hi": "ब्यूनस आयर्स"},
+      "explanation": {"en": "Buenos Aires is the capital and largest city of Argentina.", "hi": "ब्यूनस आयर्स अर्जेंटीना की राजधानी और सबसे बड़ा शहर है।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "Which country is known as the 'Land of a Thousand Lakes'?",
+        "hi": "'हजार झीलों वाली भूमि' के नाम से कौन सा देश जाना जाता है?"
+      },
+      "options": {
+        "en": ["Sweden", "Norway", "Finland", "Canada"],
+        "hi": ["स्वीडन", "नॉर्वे", "फिनलैंड", "कनाडा"]
+      },
+      "answer": {"en": "Finland", "hi": "फिनलैंड"},
+      "explanation": {"en": "Finland has over 180,000 lakes, earning it the nickname 'Land of a Thousand Lakes'.", "hi": "फिनलैंड में 180,000 से अधिक झीलें हैं, जिससे इसे 'हजार झीलों वाली भूमि' उपनाम मिला है।"},
+      "subject": "geography"
+    }
+  ]
+}
