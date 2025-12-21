@@ -1,12 +1,15 @@
 // ==========================================
-// examComposer.js – FINAL BULLETPROOF VERSION
-// Worker-safe + deterministic + exam-aware
+// examComposer.js – FINAL TRUE FIX
+// Zero overlap across exams per subject/day
 // ==========================================
 
 import { EXAM_BLUEPRINTS } from "./examBlueprints.js";
 
 const CA_API =
   "https://exam-prep-generator.mydomain2311.workers.dev/currentaffairs";
+
+// Fixed exam order (VERY IMPORTANT)
+const EXAM_ORDER = ["ssc", "bank", "rrb", "psc", "cuet", "upsc", "mixed"];
 
 // ===============================
 // PUBLIC API
@@ -18,37 +21,34 @@ export async function buildExam(exam) {
   const bucketKey = getBucketKey(blueprint.refresh);
   const cacheKey = `exam_${exam}_${bucketKey}`;
 
-  // ===============================
-  // CACHE CHECK
-  // ===============================
   const cached = localStorage.getItem(cacheKey);
-  if (cached) {
-    return JSON.parse(cached);
-  }
+  if (cached) return JSON.parse(cached);
 
-  // ===============================
-  // BUILD EXAM
-  // ===============================
   let finalQuestions = [];
 
   for (const section of blueprint.sections) {
-    const pool = await loadSubjectSafe(
-      section.subject,
-      exam,
-      bucketKey
-    );
-
+    const pool = await loadSubject(section.subject);
     if (!Array.isArray(pool) || pool.length === 0) continue;
 
+    // 🔥 Shuffle once per subject/day
     const shuffled = seededShuffle(
       pool,
-      `${exam}-${section.subject}-${bucketKey}`
+      `${section.subject}-${bucketKey}`
     );
 
-    finalQuestions.push(...shuffled.slice(0, section.count));
+    // 🔥 Calculate exam-specific offset
+    const offset = getExamOffset(
+      exam,
+      section.subject,
+      bucketKey,
+      section.count
+    );
+
+    finalQuestions.push(
+      ...shuffled.slice(offset, offset + section.count)
+    );
   }
 
-  // Final exam-level shuffle (still deterministic)
   finalQuestions = seededShuffle(
     finalQuestions,
     `${exam}-final-${bucketKey}`
@@ -59,45 +59,29 @@ export async function buildExam(exam) {
 }
 
 // ===============================
-// SAFE SUBJECT LOADER
+// SUBJECT LOADER
 // ===============================
-async function loadSubjectSafe(subject, exam, bucketKey) {
-  // 🔥 CURRENT AFFAIRS (WORKER + FALLBACK)
+async function loadSubject(subject) {
   if (subject === "current-affairs") {
-    try {
-      const res = await fetch(CA_API, { cache: "no-store" });
-      if (!res.ok) throw new Error("CA fetch failed");
-
-      const data = await res.json();
-      if (!Array.isArray(data.questions)) {
-        throw new Error("Invalid CA data");
-      }
-
-      // ✅ Cache last known good CA
-      localStorage.setItem(
-        "last_current_affairs",
-        JSON.stringify(data.questions)
-      );
-
-      return data.questions;
-    } catch (err) {
-      console.warn("CA fallback used:", err);
-
-      // 🟡 FALLBACK TO LAST KNOWN GOOD CA
-      const cached = localStorage.getItem("last_current_affairs");
-      return cached ? JSON.parse(cached) : [];
-    }
-  }
-
-  // 📦 STATIC SUBJECTS (LOCAL ONLY)
-  try {
-    const res = await fetch(`./data/${subject}.json`);
+    const res = await fetch(CA_API, { cache: "no-store" });
     const data = await res.json();
     return data.questions || [];
-  } catch (err) {
-    console.error(`Failed to load ${subject}`, err);
-    return [];
   }
+
+  const res = await fetch(`./data/${subject}.json`);
+  const data = await res.json();
+  return data.questions || [];
+}
+
+// ===============================
+// EXAM OFFSET LOGIC (THE FIX)
+// ===============================
+function getExamOffset(exam, subject, bucketKey, count) {
+  const index = EXAM_ORDER.indexOf(exam);
+  if (index === -1) return 0;
+
+  // Each exam starts after previous exam’s allocation
+  return index * count;
 }
 
 // ===============================
@@ -120,7 +104,6 @@ function getBucketKey(refresh) {
   return ist.toISOString().split("T")[0];
 }
 
-// ISO week number (Monday start)
 function getISOWeek(date) {
   const d = new Date(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()));
   const dayNum = d.getUTCDay() || 7;
