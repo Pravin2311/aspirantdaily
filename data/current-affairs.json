@@ -1,4 +1,6 @@
 {
+  "subject": "current-affairs",
+  "last_updated": "2025-12-21",
   "questions": [
     {
       "question": {
@@ -14,14 +16,14 @@
         "hi": "B. उपेंद्र द्विवेदी"
       },
       "explanation": {
-        "en": "General Upendra Dwivedi, previously the Military Secretary, became the 31st COAS on June 30, 2025, succeeding General Manoj Pande.",
-        "hi": "जनरल उपेंद्र द्विवेदी, जो पहले मिलिट्री सेक्रेटरी थे, 30 जून 2025 को 31वें थलसेनाध्यक्ष बने, जनरल मनोज पांडे का स्थान लेते हुए।"
+        "en": "General Upendra Dwivedi, previously the Military Secretary, became the 31st COAS on June 30, 2025.",
+        "hi": "जनरल उपेंद्र द्विवेदी, जो पहले मिलिट्री सेक्रेटरी थे, 30 जून 2025 को 31वें थलसेनाध्यक्ष बने।"
       }
     },
     {
       "question": {
         "en": "According to the Ministry of Statistics, what was India’s GDP growth rate in Q2 (July–September) of FY 2025–26?",
-        "hi": "सांख्यिकी मंत्रालय के अनुसार, वित्त वर्ष 2025–26 की दूसरी तिमाही (जुलाई–सितंबर) में भारत की सकल घरेलू उत्पाद (GDP) वृद्धि दर क्या थी?"
+        "hi": "सांख्यिकी मंत्रालय के अनुसार, वित्त वर्ष 2025–26 की दूसरी तिमाही (जुलाई–सितंबर) में भारत की GDP वृद्धि दर क्या थी?"
       },
       "options": {
         "en": ["A. 6.8%", "B. 7.2%", "C. 7.6%", "D. 6.5%"],
@@ -57,7 +59,7 @@
     {
       "question": {
         "en": "In November 2025, which city was confirmed as the host of COP30?",
-        "hi": "नवंबर 2025 में, COP30 की मेजबानी के लिए किस शहर की पुष्टि की गई?"
+        "hi": "नवंबर 2 2025 को, COP30 की मेजबानी के लिए किस शहर की पुष्टि की गई?"
       },
       "options": {
         "en": ["A. São Paulo", "B. Belém", "C. Rio de Janeiro", "D. Brasília"],
@@ -448,6 +450,402 @@
       "explanation": {
         "en": "The Centre for Development of Advanced Computing (C-DAC) launched 'ARKA' with 10 exaFLOPS capacity for AI workloads.",
         "hi": "उन्नत कंप्यूटिंग विकास केंद्र (सी-डैक) ने एआई वर्कलोड के लिए 10 एक्साफ्लॉप्स क्षमता वाला 'अर्क' लॉन्च किया।"
+      }
+    },
+    {
+      "question": {
+        "en": "Which Indian state announced a 'One Family, One Job' scheme in September 2024?",
+        "hi": "सितंबर 2024 में किस भारतीय राज्य ने 'एक परिवार, एक नौकरी' योजना की घोषणा की?"
+      },
+      "options": {
+        "en": ["A. Uttar Pradesh", "B. Karnataka", "C. Sikkim", "D. Punjab"],
+        "hi": ["A. उत्तर प्रदेश", "B. कर्नाटक", "C. सिक्किम", "D. पंजाब"]
+      },
+      "answer": {
+        "en": "C. Sikkim",
+        "hi": "C. सिक्किम"
+      },
+      "explanation": {
+        "en": "Sikkim CM Prem Singh Tamang announced this scheme to ensure at least one government job per family.",
+        "hi": "सिक्किम के मुख्यमंत्री प्रेम सिंह तमांग ने प्रत्येक परिवार में कम से कम एक सरकारी नौकरी सुनिश्चित करने के लिए यह योजना घोषित की।"
+      }
+    },
+    {
+      "question": {
+        "en": "What is the name of India’s first green hydrogen-powered train, flagged off in October 2024?",
+        "hi": "अक्टूबर 2024 में शुरू की गई भारत की पहली ग्रीन हाइड्रोजन-संचालित ट्रेन का नाम क्या है?"
+      },
+      "options": {
+        "en": ["A. Vande Bharat H2", "B. Hydro Express", "C. Vande Metro", "D. No such train yet"],
+        "hi": ["A. वंदे भारत एच2", "B. हाइड्रो एक्सप्रेस", "C. वंदे मेट्रो", "D. अभी तक कोई ऐसी ट्रेन नहीं"]
+      },
+      "answer": {
+        "en": "D. No such train yet",
+        "hi": "D. अभी तक कोई ऐसी ट्रेन नहीं"
+      },
+      "explanation": {
+        "en": "As of December 2025, India has not launched a green hydrogen train. The first is expected in 2026.",
+        "hi": "दिसंबर 2025 तक, भारत ने ग्रीन हाइड्रोजन ट्रेन शुरू नहीं की है। पहली ट्रेन 2026 में उम्मीद की जाती है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Which Indian city was designated as the 'Creative City of Gastronomy' by UNESCO in November 2024?",
+        "hi": "नवंबर 2024 में यूनेस्को द्वारा किस भारतीय शहर को 'गैस्ट्रोनॉमी का रचनात्मक शहर' नामित किया गया?"
+      },
+      "options": {
+        "en": ["A. Mumbai", "B. Kolkata", "C. Varanasi", "D. Hyderabad"],
+        "hi": ["A. मुंबई", "B. कोलकाता", "C. वाराणसी", "D. हैदराबाद"]
+      },
+      "answer": {
+        "en": "D. Hyderabad",
+        "hi": "D. हैदराबाद"
+      },
+      "explanation": {
+        "en": "Hyderabad joined UNESCO’s Creative Cities Network for its rich culinary heritage, especially Hyderabadi biryani.",
+        "hi": "हैदराबाद अपनी समृद्ध व्यंजन विरासत, विशेषकर हैदराबादी बिरयानी के लिए यूनेस्को के रचनात्मक शहरों नेटवर्क में शामिल हुआ।"
+      }
+    },
+    {
+      "question": {
+        "en": "What is the name of India’s first semiconductor plant, inaugurated in Gujarat in October 2024?",
+        "hi": "अक्टूबर 2024 में गुजरात में शुरू के गए भारत के पहले सेमीकंडक्टर संयंत्र का नाम क्या है?"
+      },
+      "options": {
+        "en": ["A. Micron India", "B. Tata Semiconductors", "C. ISRO Chips", "D. Bharat Semiconductor"],
+        "hi": ["A. माइक्रॉन इंडिया", "B. टाटा सेमीकंडक्टर्स", "C. इसरो चिप्स", "D. भारत सेमीकंडक्टर"]
+      },
+      "answer": {
+        "en": "A. Micron India",
+        "hi": "A. माइक्रॉन इंडिया"
+      },
+      "explanation": {
+        "en": "US-based Micron Technology inaugurated India’s first semiconductor assembly and test facility in Sanand, Gujarat.",
+        "hi": "अमेरिकी कंपनी माइक्रॉन टेक्नोलॉजी ने गुजरात के सानंद में भारत की पहली सेमीकंडक्टर असेंबली और परीक्षण सुविधा का उद्घाटन किया।"
+      }
+    },
+    {
+      "question": {
+        "en": "Which Indian state launched the 'Mukhyamantri Yuva Nestham' scheme in March 2024?",
+        "hi": "मार्च 2024 में किस भारतीय राज्य ने 'मुख्यमंत्री युवा नेस्थम' योजना शुरू की?"
+      },
+      "options": {
+        "en": ["A. Andhra Pradesh", "B. Telangana", "C. Tamil Nadu", "D. Karnataka"],
+        "hi": ["A. आंध्र प्रदेश", "B. तेलंगाना", "C. तमिलनाडु", "D. कर्नाटक"]
+      },
+      "answer": {
+        "en": "A. Andhra Pradesh",
+        "hi": "A. आंध्र प्रदेश"
+      },
+      "explanation": {
+        "en": "Andhra Pradesh re-launched the scheme in March 2024, providing ₹2,000 monthly to unemployed youth aged 20–30.",
+        "hi": "आंध्र प्रदेश ने मार्च 2024 में योजना को पुनः लॉन्च किया, जिसके तहत 20–30 वर्ष के बेरोजगार युवाओं को प्रतिमाह ₹2,000 प्रदान किए जाते हैं।"
+      }
+    },
+    {
+      "question": {
+        "en": "Who was appointed as the 51st Chief Justice of India in November 2024?",
+        "hi": "नवंबर 2024 में भारत के 51वें मुख्य न्यायाधीश के रूप में किसे नियुक्त किया गया?"
+      },
+      "options": {
+        "en": ["A. D.Y. Chandrachud", "B. Sanjiv Khanna", "C. B.R. Gavai", "D. Surya Kant"],
+        "hi": ["A. डी.वाई. चंद्रचूड़", "B. संजीव खन्ना", "C. बी.आर. गवई", "D. सूर्या कांत"]
+      },
+      "answer": {
+        "en": "B. Sanjiv Khanna",
+        "hi": "B. संजीव खन्ना"
+      },
+      "explanation": {
+        "en": "Justice Sanjiv Khanna assumed office as CJI on November 11, 2024, succeeding Justice D.Y. Chandrachud.",
+        "hi": "न्यायमूर्ति संजीव खन्ना ने 11 नवंबर 2024 को न्यायमूर्ति डी.वाई. चंद्रचूड़ के बाद मुख्य न्यायाधीश का पदभार संभाला।"
+      }
+    },
+    {
+      "question": {
+        "en": "Which Indian state became the first to implement a 'Right to Health' law in March 2024?",
+        "hi": "मार्च 2024 में कौन सा भारतीय राज्य स्वास्थ्य के अधिकार कानून लागू करने वाला पहला राज्य बना?"
+      },
+      "options": {
+        "en": ["A. Kerala", "B. Rajasthan", "C. Delhi", "D. Odisha"],
+        "hi": ["A. केरल", "B. राजस्थान", "C. दिल्ली", "D. ओडिशा"]
+      },
+      "answer": {
+        "en": "B. Rajasthan",
+        "hi": "B. राजस्थान"
+      },
+      "explanation": {
+        "en": "Rajasthan enacted the Right to Health Act in March 2024, guaranteeing free emergency care in public and private hospitals.",
+        "hi": "राजस्थान ने मार्च 2024 में स्वास्थ्य के अधिकार अधिनियम लागू किया, जो सार्वजनिक और निजी अस्पतालों में निःशुल्क आपातकालीन देखभाल की गारंटी देता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "What was India’s rank in the Global Innovation Index 2024?",
+        "hi": "वैश्विक नवाचार सूचकांक 2024 में भारत का रैंक क्या था?"
+      },
+      "options": {
+        "en": ["A. 39th", "B. 42nd", "C. 36th", "D. 45th"],
+        "hi": ["A. 39वां", "B. 42वां", "C. 36वां", "D. 45वां"]
+      },
+      "answer": {
+        "en": "C. 36th",
+        "hi": "C. 36वां"
+      },
+      "explanation": {
+        "en": "India ranked 36th in the Global Innovation Index 2024, improving from 40th in 2023.",
+        "hi": "भारत ने वैश्विक नवाचार सूचकांक 2024 में 36वां स्थान हासिल किया, जो 2023 में 40वें स्थान से सुधार है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Which Indian state launched the 'Ladli Behna' scheme in March 2023, expanded in 2024?",
+        "hi": "मार्च 2023 में किस भारतीय राज्य ने 'लाडली बहना' योजना शुरू की, जिसे 2024 में विस्तारित किया गया?"
+      },
+      "options": {
+        "en": ["A. Uttar Pradesh", "B. Madhya Pradesh", "C. Bihar", "D. Jharkhand"],
+        "hi": ["A. उत्तर प्रदेश", "B. मध्य प्रदेश", "C. बिहार", "D. झारखंड"]
+      },
+      "answer": {
+        "en": "B. Madhya Pradesh",
+        "hi": "B. मध्य प्रदेश"
+      },
+      "explanation": {
+        "en": "MP’s Ladli Behna scheme provides ₹1,000 monthly to women, expanded to 1.5 crore beneficiaries in 2024.",
+        "hi": "मध्य प्रदेश की लाडली बहना योजना महिलाओं को प्रतिमाह ₹1,000 प्रदान करती है, जिसे 2024 में 1.5 करोड़ लाभार्थियों तक विस्तारित किया गया।"
+      }
+    },
+    {
+      "question": {
+        "en": "Which Indian company became the first to join the 'AI Safety Consortium' in August 2024?",
+        "hi": "अगस्त 2024 में कौन सी भारतीय कंपनी 'एआई सेफ्टी कॉन्सोर्टियम' में शामिल होने वाली पहली कंपनी बनी?"
+      },
+      "options": {
+        "en": ["A. Tata Group", "B. Infosys", "C. Reliance", "D. Wipro"],
+        "hi": ["A. टाटा ग्रुप", "B. इंफोसिस", "C. रिलायंस", "D. विप्रो"]
+      },
+      "answer": {
+        "en": "A. Tata Group",
+        "hi": "A. टाटा ग्रुप"
+      },
+      "explanation": {
+        "en": "Tata Group joined the global AI Safety Consortium led by the UK government to promote responsible AI development.",
+        "hi": "टाटा ग्रुप यूके सरकार के नेतृत्व वाले वैश्विक एआई सेफ्टी कॉन्सोर्टियम में शामिल हुआ, जो जिम्मेदार एआई विकास को बढ़ावा देता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Where was the 2024 BRICS Summit held?",
+        "hi": "2024 ब्रिक्स शिखर सम्मेलन कहाँ आयोजित किया गया?"
+      },
+      "options": {
+        "en": ["A. Moscow", "B. Kazan", "C. St. Petersburg", "D. Sochi"],
+        "hi": ["A. मॉस्को", "B. काज़ान", "C. सेंट पीटर्सबर्ग", "D. सोची"]
+      },
+      "answer": {
+        "en": "B. Kazan",
+        "hi": "B. काज़ान"
+      },
+      "explanation": {
+        "en": "The 2024 BRICS Summit was held in Kazan, Russia, in October 2024 under Russia’s presidency.",
+        "hi": "2024 ब्रिक्स शिखर सम्मेलन अक्टूबर 2024 में रूस की अध्यक्षता में रूस के काज़ान में आयोजित किया गया।"
+      }
+    },
+    {
+      "question": {
+        "en": "Which Indian state launched the 'Chief Minister’s Breakfast Scheme' for school students in 2024?",
+        "hi": "2024 में किस भारतीय राज्य ने स्कूली छात्रों के लिए 'मुख्यमंत्री नाश्ता योजना' शुरू की?"
+      },
+      "options": {
+        "en": ["A. Tamil Nadu", "B. Kerala", "C. Andhra Pradesh", "D. Karnataka"],
+        "hi": ["A. तमिलनाडु", "B. केरल", "C. आंध्र प्रदेश", "D. कर्नाटक"]
+      },
+      "answer": {
+        "en": "A. Tamil Nadu",
+        "hi": "A. तमिलनाडु"
+      },
+      "explanation": {
+        "en": "Tamil Nadu launched the scheme in January 2024, providing free nutritious breakfast to 1.14 crore students in Classes 1–5.",
+        "hi": "तमिलनाडु ने जनवरी 2024 में योजना शुरू की, जिसके तहत कक्षा 1–5 के 1.14 करोड़ छात्रों को मुफ्त पौष्टिक नाश्ता प्रदान किया जाता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "What is the name of India’s first privately built rocket launched in 2024?",
+        "hi": "2024 में लॉन्च किए गए भारत के पहले निजी तौर पर निर्मित रॉकेट का नाम क्या है?"
+      },
+      "options": {
+        "en": ["A. Agnibaan", "B. Vikram-I", "C. Skyroot", "D. Dhawan-1"],
+        "hi": ["A. अग्निबाण", "B. विक्रम-I", "C. स्काईरूट", "D. धवन-1"]
+      },
+      "answer": {
+        "en": "A. Agnibaan",
+        "hi": "A. अग्निबाण"
+      },
+      "explanation": {
+        "en": "Agnibaan, developed by Agnikul Cosmos, was successfully launched from Sriharikota in May 2024.",
+        "hi": "अग्निकुल कॉस्मोस द्वारा विकसित अग्निबाण को मई 2024 में श्रीहरिकोटा से सफलतापूर्वक लॉन्च किया गया।"
+      }
+    },
+    {
+      "question": {
+        "en": "Which ministry launched the 'Namo Bharat Train' (Regional Rapid Transit) in October 2024?",
+        "hi": "अक्टूबर 2024 में 'नमो भारत ट्रेन' (क्षेत्रीय त्वरित परिवहन) किस मंत्रालय ने शुरू किया?"
+      },
+      "options": {
+        "en": ["A. Ministry of Railways", "B. NCRTC", "C. Ministry of Urban Development", "D. DMRC"],
+        "hi": ["A. रेल मंत्रालय", "B. एनसीआरटीसी", "C. शहरी विकास मंत्रालय", "D. दिल्ली मेट्रो रेल निगम"]
+      },
+      "answer": {
+        "en": "B. NCRTC",
+        "hi": "B. एनसीआरटीसी"
+      },
+      "explanation": {
+        "en": "The National Capital Region Transport Corporation (NCRTC) launched Namo Bharat trains for RRTS corridors in the Delhi-NCR region.",
+        "hi": "राष्ट्रीय राजधानी क्षेत्र परिवहन निगम (एनसीआरटीसी) ने दिल्ली-एनसीआर क्षेत्र में आरआरटीएस कॉरिडोर के लिए नमो भारत ट्रेन शुरू की।"
+      }
+    },
+    {
+      "question": {
+        "en": "Which Indian state topped the NITI Aayog’s 'India Innovation Index 2024'?",
+        "hi": "एनआईटीआई आयोग के 'भारत नवाचार सूचकांक 2024' में कौन सा भारतीय राज्य शीर्ष पर रहा?"
+      },
+      "options": {
+        "en": ["A. Karnataka", "B. Tamil Nadu", "C. Maharashtra", "D. Telangana"],
+        "hi": ["A. कर्नाटक", "B. तमिलनाडु", "C. महाराष्ट्र", "D. तेलंगाना"]
+      },
+      "answer": {
+        "en": "A. Karnataka",
+        "hi": "A. कर्नाटक"
+      },
+      "explanation": {
+        "en": "Karnataka retained the top rank in the Major States category due to its strong startup and R&D ecosystem.",
+        "hi": "कर्नाटक ने अपने मजबूत स्टार्टअप और अनुसंधान एवं विकास पारिस्थितिकी तंत्र के कारण प्रमुख राज्य श्रेणी में शीर्ष स्थान बनाए रखा।"
+      }
+    },
+    {
+      "question": {
+        "en": "Which Indian city hosted the 2025 Pravasi Bharatiya Divas (PBD)?",
+        "hi": "2025 प्रवासी भारतीय दिवस (PBD) की मेजबानी किस भारतीय शहर ने की?"
+      },
+      "options": {
+        "en": ["A. Varanasi", "B. Bhubaneswar", "C. Indore", "D. Ahmedabad"],
+        "hi": ["A. वाराणसी", "B. भुवनेश्वर", "C. इंदौर", "D. अहमदाबाद"]
+      },
+      "answer": {
+        "en": "A. Varanasi",
+        "hi": "A. वाराणसी"
+      },
+      "explanation": {
+        "en": "The 18th Pravasi Bharatiya Divas was held in Varanasi in January 2025, themed 'Diaspora Engagement for a New India'.",
+        "hi": "18वां प्रवासी भारतीय दिवस जनवरी 2025 में वाराणसी में 'एक नए भारत के लिए प्रवासी संलग्नता' थीम पर आयोजित किया गया।"
+      }
+    },
+    {
+      "question": {
+        "en": "What is the target year for India to achieve 'Net Zero' emissions as per the updated NDC?",
+        "hi": "अद्यतन राष्ट्रीय स्वयं निर्धारित योगदान (NDC) के अनुसार, भारत द्वारा 'शुद्ध शून्य' उत्सर्जन प्राप्त करने का लक्ष्य वर्ष क्या है?"
+      },
+      "options": {
+        "en": ["A. 2050", "B. 2060", "C. 2070", "D. 2047"],
+        "hi": ["A. 2050", "B. 2060", "C. 2070", "D. 2047"]
+      },
+      "answer": {
+        "en": "C. 2070",
+        "hi": "C. 2070"
+      },
+      "explanation": {
+        "en": "India reaffirmed its commitment to achieve net zero emissions by 2070 at COP28 and COP29.",
+        "hi": "भारत ने COP28 और COP29 में 2070 तक शुद्ध शून्य उत्सर्जन प्राप्त करने की प्रतिबद्धता को दोहराया।"
+      }
+    },
+    {
+      "question": {
+        "en": "Which Indian state launched the 'Mukhyamantri Majhi Ladki Bahin Yojana' in April 2024?",
+        "hi": "अप्रैल 2024 में किस भारतीय राज्य ने 'मुख्यमंत्री माझी लाडकी बहीन योजना' शुरू की?"
+      },
+      "options": {
+        "en": ["A. Maharashtra", "B. Madhya Pradesh", "C. Chhattisgarh", "D. Rajasthan"],
+        "hi": ["A. महाराष्ट्र", "B. मध्य प्रदेश", "C. छत्तीसगढ़", "D. राजस्थान"]
+      },
+      "answer": {
+        "en": "A. Maharashtra",
+        "hi": "A. महाराष्ट्र"
+      },
+      "explanation": {
+        "en": "Maharashtra launched this scheme to provide ₹1,500 monthly to women aged 21–65 from economically weaker sections.",
+        "hi": "महाराष्ट्र ने आर्थिक रूप से कमजोर वर्ग की 21–65 वर्ष की महिलाओं को प्रतिमाह ₹1,500 प्रदान करने के लिए यह योजना शुरू की।"
+      }
+    },
+    {
+      "question": {
+        "en": "Who won the Nobel Peace Prize 2024?",
+        "hi": "2024 का शांति के लिए नोबेल पुरस्कार किसे मिला?"
+      },
+      "options": {
+        "en": ["A. Volodymyr Zelenskyy", "B. Nihon Hidankyo", "C. Maria Ressa", "D. Not awarded"],
+        "hi": ["A. वलोडिमिर ज़ेलेंस्की", "B. निहॉन हिडांक्यो", "C. मारिया रेसा", "D. प्रदान नहीं किया गया"]
+      },
+      "answer": {
+        "en": "B. Nihon Hidankyo",
+        "hi": "B. निहॉन हिडांक्यो"
+      },
+      "explanation": {
+        "en": "The 2024 Nobel Peace Prize was awarded to Nihon Hidankyo, a Japanese organization of atomic bomb survivors.",
+        "hi": "2024 का शांति के लिए नोबेल पुरस्कार निहॉन हिडांक्यो को दिया गया, जो परमाणु बम बचे लोगों का एक जापानी संगठन है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Which Indian state launched the 'Chief Minister’s Residential Land Rights Scheme' in January 2024?",
+        "hi": "जनवरी 2024 में किस भारतीय राज्य ने 'मुख्यमंत्री आवासीय भूमि अधिकार योजना' शुरू की?"
+      },
+      "options": {
+        "en": ["A. Jharkhand", "B. Odisha", "C. Chhattisgarh", "D. Bihar"],
+        "hi": ["A. झारखंड", "B. ओडिशा", "C. छत्तीसगढ़", "D. बिहार"]
+      },
+      "answer": {
+        "en": "C. Chhattisgarh",
+        "hi": "C. छत्तीसगढ़"
+      },
+      "explanation": {
+        "en": "Chhattisgarh launched this scheme to provide free residential plots to homeless SC/ST families.",
+        "hi": "छत्तीसगढ़ ने बेघर एससी/एसटी परिवारों को मुफ्त आवासीय प्लॉट प्रदान करने के लिए यह योजना शुरू की।"
+      }
+    },
+    {
+      "question": {
+        "en": "Which organization released the 'World Economic Outlook' in October 2024?",
+        "hi": "अक्टूबर 2024 में 'विश्व आर्थिक आउटलुक' किस संगठन ने जारी किया?"
+      },
+      "options": {
+        "en": ["A. World Bank", "B. IMF", "C. WTO", "D. UNDP"],
+        "hi": ["A. विश्व बैंक", "B. आईएमएफ", "C. डब्ल्यूटीओ", "D. यूएनडीपी"]
+      },
+      "answer": {
+        "en": "B. IMF",
+        "hi": "B. आईएमएफ"
+      },
+      "explanation": {
+        "en": "The International Monetary Fund (IMF) releases the World Economic Outlook biannually (April & October).",
+        "hi": "अंतर्राष्ट्रीय मुद्रा कोष (आईएमएफ) विश्व आर्थिक आउटलुक को वर्ष में दो बार (अप्रैल और अक्टूबर) जारी करता है।"
+      }
+    },
+    {
+      "question": {
+        "en": "What is the name of India’s first indigenously developed mRNA vaccine, approved in 2024?",
+        "hi": "2024 में मंजूरी प्राप्त भारत के पहले स्वदेशी रूप से विकसित एमआरएनए वैक्सीन का नाम क्या है?"
+      },
+      "options": {
+        "en": ["A. Covaxin", "B. ZyCoV-D", "C. HGCO19", "D. Corbevax"],
+        "hi": ["A. कोवैक्सीन", "B. जाईकोव-डी", "C. एचजीसीओ19", "D. कॉर्बेवैक्स"]
+      },
+      "answer": {
+        "en": "C. HGCO19",
+        "hi": "C. एचजीसीओ19"
+      },
+      "explanation": {
+        "en": "Developed by Genova Biopharmaceuticals, HGCO19 became India’s first mRNA vaccine approved for emergency use in 2024.",
+        "hi": "जिनोवा बायोफार्मास्यूटिकल्स द्वारा विकसित एचजीसीओ19 भारत का पहला एमआरएनए वैक्सीन बना, जिसे 2024 में आपातकालीन उपयोग के लिए मंजूरी दी गई।"
       }
     }
   ]
