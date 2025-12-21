@@ -69,7 +69,7 @@ loadQuestions(subject).then(qs => {
 // =======================================================
 
 const KV_SUBJECTS = ["currentaffairs"];
-const WORKER_BASE_URL = "https://exam-prep-generator.mydomain2311.workers.dev"; 
+const WORKER_BASE_URL = "https://exam-prep-generator.mydomain2311.workers.dev/currentaffairs"; 
 // 🔁 change to your Worker URL
 
 async function loadQuestions(subject) {
