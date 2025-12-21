@@ -1,5 +1,5 @@
 // ==========================================
-// result.js – FINAL BULLETPROOF VERSION
+// result.js – FINAL LOCAL-FIRST VERSION
 // Exam + Subject aware
 // Bilingual-safe + legacy-safe
 // ==========================================
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
-  if (!examData.questions || !Array.isArray(examData.questions)) {
+  if (!Array.isArray(examData.questions)) {
     showError();
     return;
   }
@@ -38,14 +38,38 @@ document.addEventListener("DOMContentLoaded", () => {
   const questions = examData.questions;
 
   // ===============================
-  // OPTIONAL TITLE UPDATE (SAFE)
+  // LABEL MAP (MATCH quiz.js)
+  // ===============================
+  const subjectLabels = {
+    "current-affairs": "Current Affairs",
+    reasoning: "Reasoning",
+    quant: "Quantitative Aptitude",
+    computer: "Computer Awareness",
+    science: "General Science",
+    "static-gk": "Static GK",
+    english: "English",
+    economy: "Economy",
+    geography: "Geography",
+    ssc: "SSC",
+    bank: "Bank",
+    rrb: "RRB",
+    psc: "PSC",
+    cuet: "CUET",
+    upsc: "UPSC",
+    mixed: "Mixed"
+  };
+
+  // ===============================
+  // TITLE UPDATE
   // ===============================
   const titleEl = document.getElementById("resultTitle");
   if (titleEl) {
     if (mode === "subject") {
-      titleEl.innerText = `Result • ${subjectMode?.replace("-", " ") || "Practice"}`;
+      titleEl.innerText =
+        `Result • ${subjectLabels[subjectMode] || "Practice"}`;
     } else {
-      titleEl.innerText = `Result • ${(exam || "Exam").toUpperCase()}`;
+      titleEl.innerText =
+        `Result • ${(subjectLabels[exam] || exam || "Exam").toUpperCase()}`;
     }
   }
 
@@ -55,7 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const subjectStats = {};
 
   const answersContainer = document.getElementById("answersContainer");
-  answersContainer.innerHTML = "";
+  if (answersContainer) answersContainer.innerHTML = "";
 
   // ===============================
   // PROCESS QUESTIONS
@@ -86,21 +110,24 @@ document.addEventListener("DOMContentLoaded", () => {
     if (isCorrect) correct++;
 
     // ===============================
-    // SUBJECT STATS (FIXED)
+    // SUBJECT STATS (NORMALIZED)
     // ===============================
-    const subject =
-      q.subject ||
-      subjectMode ||
-      exam ||
-      "General";
+    const rawSubject =
+      q.subject || subjectMode || exam || "general";
 
-    subjectStats[subject] ??= { correct: 0, total: 0 };
-    subjectStats[subject].total++;
-    if (isCorrect) subjectStats[subject].correct++;
+    const subjectKey = rawSubject.toLowerCase();
+    const subjectLabel =
+      subjectLabels[subjectKey] || "General";
+
+    subjectStats[subjectLabel] ??= { correct: 0, total: 0 };
+    subjectStats[subjectLabel].total++;
+    if (isCorrect) subjectStats[subjectLabel].correct++;
 
     // ===============================
     // UI
     // ===============================
+    if (!answersContainer) return;
+
     const questionText =
       q.question?.[lang] || q.question?.en || "Question unavailable";
 
@@ -127,21 +154,27 @@ document.addEventListener("DOMContentLoaded", () => {
   // ===============================
   // SUMMARY
   // ===============================
-  document.getElementById("scoreText").innerText =
-    `Score: ${correct} / ${total}`;
+  const scoreText = document.getElementById("scoreText");
+  if (scoreText) {
+    scoreText.innerText = `Score: ${correct} / ${total}`;
+  }
 
-  document.getElementById("statsText").innerText =
-    `Attempted ${attempted} out of ${total} questions`;
+  const statsText = document.getElementById("statsText");
+  if (statsText) {
+    statsText.innerText =
+      `Attempted ${attempted} out of ${total} questions`;
+  }
 
   const subjectList = document.getElementById("subjectList");
-  subjectList.innerHTML = "";
-
-  Object.entries(subjectStats).forEach(([s, v]) => {
-    const row = document.createElement("div");
-    row.className = "subject-row";
-    row.innerHTML = `<span>${s}</span><span>${v.correct}/${v.total}</span>`;
-    subjectList.appendChild(row);
-  });
+  if (subjectList) {
+    subjectList.innerHTML = "";
+    Object.entries(subjectStats).forEach(([s, v]) => {
+      const row = document.createElement("div");
+      row.className = "subject-row";
+      row.innerHTML = `<span>${s}</span><span>${v.correct}/${v.total}</span>`;
+      subjectList.appendChild(row);
+    });
+  }
 });
 
 // ===============================

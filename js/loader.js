@@ -1,6 +1,6 @@
 // ===============================
-// loader.js – FINAL HYBRID VERSION
-// Navigation + Data Loader
+// loader.js – FINAL LOCAL-FIRST VERSION
+// Navigation + Local Data Loader
 // ===============================
 
 (function () {
@@ -57,36 +57,45 @@ const subject = context.subject || "reasoning";
 
 loadQuestions(subject).then(qs => {
   questions = qs;
-  if (!questions.length) {
-    alert("No questions available");
+
+  if (!Array.isArray(questions) || questions.length === 0) {
+    alert("No questions available for this subject.");
     return;
   }
+
   showQuestion();
 });
 
 // =======================================================
-// HYBRID DATA LOADER
+// LOCAL DATA LOADER (NO KV, NO WORKER)
 // =======================================================
-
-const KV_SUBJECTS = ["currentaffairs"];
-const WORKER_BASE_URL = "https://exam-prep-generator.mydomain2311.workers.dev/currentaffairs"; 
-// 🔁 change to your Worker URL
 
 async function loadQuestions(subject) {
   try {
-    // 🔥 Current Affairs → KV
-    if (KV_SUBJECTS.includes(subject)) {
-      const res = await fetch(`${WORKER_BASE_URL}/${subject}`);
-      if (!res.ok) throw new Error("KV fetch failed");
-      const data = await res.json();
-      return data.questions;
+    // Map subject → file name
+    const fileMap = {
+      "reasoning": "reasoning.json",
+      "quant": "quant.json",
+      "english": "english.json",
+      "science": "science.json",
+      "current-affairs": "current-affairs.json",
+      "static-gk": "static-gk.json",
+      "computer": "computer.json",
+      "economy": "economy.json",
+      "geography": "geography.json"
+    };
+
+    const file = fileMap[subject];
+    if (!file) {
+      console.error("Unknown subject:", subject);
+      return [];
     }
 
-    // 📦 Static subjects → local data folder
-    const res = await fetch(`./data/${subject}.json`);
-    if (!res.ok) throw new Error("Local JSON fetch failed");
+    const res = await fetch(`./data/${file}`, { cache: "no-store" });
+    if (!res.ok) throw new Error("Failed to fetch local JSON");
+
     const data = await res.json();
-    return data.questions;
+    return Array.isArray(data.questions) ? data.questions : [];
 
   } catch (err) {
     console.error(`Failed to load ${subject}:`, err);
@@ -95,14 +104,14 @@ async function loadQuestions(subject) {
 }
 
 // =======================================================
-// QUIZ UI LOGIC (UNCHANGED)
+// QUIZ UI LOGIC (UNCHANGED FOR NOW)
 // =======================================================
 
 function showQuestion() {
   const q = questions[current];
 
-  document.getElementById("q-en").innerText = q.question.en;
-  document.getElementById("q-hi").innerText = q.question.hi;
+  document.getElementById("q-en").innerText = q.question.en || "";
+  document.getElementById("q-hi").innerText = q.question.hi || "";
 
   q.options.en.forEach((opt, i) => {
     const btn = document.getElementById("opt" + i);

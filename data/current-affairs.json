@@ -1,0 +1,454 @@
+{
+  "questions": [
+    {
+      "question": {
+        "en": "Who assumed office as the Chief of Army Staff (COAS) of India on June 30, 2025?",
+        "hi": "30 जून 2025 को भारत के थलसेनाध्यक्ष (COAS) का पदभार किसने संभाला?"
+      },
+      "options": {
+        "en": ["A. Manoj Pande", "B. Upendra Dwivedi", "C. Anil Chauhan", "D. Harinder Singh"],
+        "hi": ["A. मनोज पांडे", "B. उपेंद्र द्विवेदी", "C. अनिल चौहान", "D. हरिंदर सिंह"]
+      },
+      "answer": {
+        "en": "B. Upendra Dwivedi",
+        "hi": "B. उपेंद्र द्विवेदी"
+      },
+      "explanation": {
+        "en": "General Upendra Dwivedi, previously the Military Secretary, became the 31st COAS on June 30, 2025, succeeding General Manoj Pande.",
+        "hi": "जनरल उपेंद्र द्विवेदी, जो पहले मिलिट्री सेक्रेटरी थे, 30 जून 2025 को 31वें थलसेनाध्यक्ष बने, जनरल मनोज पांडे का स्थान लेते हुए।"
+      }
+    },
+    {
+      "question": {
+        "en": "According to the Ministry of Statistics, what was India’s GDP growth rate in Q2 (July–September) of FY 2025–26?",
+        "hi": "सांख्यिकी मंत्रालय के अनुसार, वित्त वर्ष 2025–26 की दूसरी तिमाही (जुलाई–सितंबर) में भारत की सकल घरेलू उत्पाद (GDP) वृद्धि दर क्या थी?"
+      },
+      "options": {
+        "en": ["A. 6.8%", "B. 7.2%", "C. 7.6%", "D. 6.5%"],
+        "hi": ["A. 6.8%", "B. 7.2%", "C. 7.6%", "D. 6.5%"]
+      },
+      "answer": {
+        "en": "B. 7.2%",
+        "hi": "B. 7.2%"
+      },
+      "explanation": {
+        "en": "India’s GDP grew at 7.2% in Q2 FY26, as announced by the National Statistical Office (NSO) in December 2025.",
+        "hi": "राष्ट्रीय सांख्यिकी कार्यालय (NSO) द्वारा दिसंबर 2025 में घोषित किए गए अनुसार, भारत की GDP वृद्धि दर वित्त वर्ष 26 की दूसरी तिमाही में 7.2% रही।"
+      }
+    },
+    {
+      "question": {
+        "en": "Which country hosted the G20 Summit in 2024?",
+        "hi": "2024 में G20 शिखर सम्मेलन की मेजबानी किस देश ने की?"
+      },
+      "options": {
+        "en": ["A. India", "B. Brazil", "C. South Africa", "D. Indonesia"],
+        "hi": ["A. भारत", "B. ब्राजील", "C. दक्षिण अफ्रीका", "D. इंडोनेशिया"]
+      },
+      "answer": {
+        "en": "B. Brazil",
+        "hi": "B. ब्राजील"
+      },
+      "explanation": {
+        "en": "Brazil hosted the G20 Summit in Rio de Janeiro in November 2024 under its presidency.",
+        "hi": "ब्राजील ने नवंबर 2024 में रियो डी जनेरियो में अपनी अध्यक्षता के तहत G20 शिखर सम्मेलन की मेजबानी की।"
+      }
+    },
+    {
+      "question": {
+        "en": "In November 2025, which city was confirmed as the host of COP30?",
+        "hi": "नवंबर 2025 में, COP30 की मेजबानी के लिए किस शहर की पुष्टि की गई?"
+      },
+      "options": {
+        "en": ["A. São Paulo", "B. Belém", "C. Rio de Janeiro", "D. Brasília"],
+        "hi": ["A. साओ पाउलो", "B. बेलेम", "C. रियो डी जनेरियो", "D. ब्रासीलिया"]
+      },
+      "answer": {
+        "en": "B. Belém",
+        "hi": "B. बेलेम"
+      },
+      "explanation": {
+        "en": "Belém, located in the Brazilian Amazon, was confirmed as the host city for COP30 in November 2025.",
+        "hi": "ब्राजीलियाई अमेज़न में स्थित बेलेम को नवंबर 2025 में COP30 के आयोजन हेतु मेजबान शहर के रूप में पुष्टि की गई।"
+      }
+    },
+    {
+      "question": {
+        "en": "Which Indian organization announced the Chandrayaan-4 mission in November 2025?",
+        "hi": "नवंबर 2025 में चंद्रयान-4 मिशन की घोषणा किस भारतीय संगठन ने की?"
+      },
+      "options": {
+        "en": ["A. DRDO", "B. ISRO", "C. CSIR", "D. IN-SPACe"],
+        "hi": ["A. डीआरडीओ", "B. इसरो", "C. सीएसआईआर", "D. इन-स्पेस"]
+      },
+      "answer": {
+        "en": "B. ISRO",
+        "hi": "B. इसरो"
+      },
+      "explanation": {
+        "en": "ISRO announced Chandrayaan-4 in November 2025 as a lunar sample-return mission planned for 2027.",
+        "hi": "इसरो ने नवंबर 2025 में चंद्रयान-4 की घोषणा की, जो 2027 के लिए निर्धारित चंद्रमा से नमूना वापस लाने वाला मिशन है।"
+      }
+    },
+    {
+      "question": {
+        "en": "Who was appointed as the Finance Secretary of India in January 2025?",
+        "hi": "जनवरी 2025 में भारत के वित्त सचिव के रूप में किसे नियुक्त किया गया?"
+      },
+      "options": {
+        "en": ["A. T.V. Somanathan", "B. Ajay Seth", "C. Debasish Panda", "D. Vineet Pandey"],
+        "hi": ["A. टी.वी. सोमनाथन", "B. अजय सेठ", "C. देबाशीष पांडा", "D. विनीत पांडे"]
+      },
+      "answer": {
+        "en": "C. Debasish Panda",
+        "hi": "C. देबाशीष पांडा"
+      },
+      "explanation": {
+        "en": "Debasish Panda, a 1987-batch IAS officer of Odisha cadre, took charge as Finance Secretary in January 2025.",
+        "hi": "ओडिशा कैडर के 1987 बैच के आईएएस अधिकारी देबाशीष पांडा ने जनवरी 2025 में वित्त सचिव का पदभार संभाला।"
+      }
+    },
+    {
+      "question": {
+        "en": "When did the key provisions of the Digital Personal Data Protection Act (DPDPA), 2023 come into effect?",
+        "hi": "डिजिटल व्यक्तिगत डेटा संरक्षण अधिनियम (DPDPA), 2023 के प्रमुख प्रावधान कब लागू हुए?"
+      },
+      "options": {
+        "en": ["A. August 2024", "B. October 2025", "C. January 2025", "D. December 2023"],
+        "hi": ["A. अगस्त 2024", "B. अक्टूबर 2025", "C. जनवरी 2025", "D. दिसंबर 2023"]
+      },
+      "answer": {
+        "en": "B. October 2025",
+        "hi": "B. अक्टूबर 2025"
+      },
+      "explanation": {
+        "en": "The Government of India notified key rules of DPDPA in October 2025, including constitution of the Data Protection Board.",
+        "hi": "भारत सरकार ने अक्टूबर 2025 में DPDPA के प्रमुख नियम अधिसूचित किए, जिनमें डेटा संरक्षण बोर्ड का गठन शामिल है।"
+      }
+    },
+    {
+      "question": {
+        "en": "India and the European Union resumed negotiations for which agreement in February 2025?",
+        "hi": "भारत और यूरोपीय संघ ने फरवरी 2025 में किस समझौते के लिए वार्ता पुनः आरंभ की?"
+      },
+      "options": {
+        "en": ["A. CEPA", "B. BTIA", "C. CTIA", "D. FTA"],
+        "hi": ["A. सीईपीए", "B. बीटीआईए", "C. सीटीआईए", "D. एफटीए"]
+      },
+      "answer": {
+        "en": "C. CTIA",
+        "hi": "C. सीटीआईए"
+      },
+      "explanation": {
+        "en": "India and EU restarted negotiations for the Comprehensive Trade and Investment Agreement (CTIA) in February 2025 after a decade-long pause.",
+        "hi": "भारत और यूरोपीय संघ ने फरवरी 2025 में एक दशक लंबे अंतराल के बाद व्यापक व्यापार और निवेश समझौते (CTIA) के लिए वार्ता पुनः आरंभ की।"
+      }
+    },
+    {
+      "question": {
+        "en": "Which Indian state launched the 'Mukhyamantri Majhi Ladki Bahin Yojana' in April 2024?",
+        "hi": "अप्रैल 2024 में किस भारतीय राज्य ने 'मुख्यमंत्री माझी लाडकी बहीन योजना' शुरू की?"
+      },
+      "options": {
+        "en": ["A. Maharashtra", "B. Madhya Pradesh", "C. Chhattisgarh", "D. Rajasthan"],
+        "hi": ["A. महाराष्ट्र", "B. मध्य प्रदेश", "C. छत्तीसगढ़", "D. राजस्थान"]
+      },
+      "answer": {
+        "en": "A. Maharashtra",
+        "hi": "A. महाराष्ट्र"
+      },
+      "explanation": {
+        "en": "Maharashtra launched this scheme to provide ₹1,500 monthly to women aged 21–65 from economically weaker sections.",
+        "hi": "महाराष्ट्र ने आर्थिक रूप से कमजोर वर्ग की 21–65 वर्ष की महिलाओं को प्रतिमाह ₹1,500 प्रदान करने के लिए यह योजना शुरू की।"
+      }
+    },
+    {
+      "question": {
+        "en": "Which country won the ICC Men’s T20 World Cup 2024?",
+        "hi": "आईसीसी पुरुष टी20 विश्व कप 2024 किस देश ने जीता?"
+      },
+      "options": {
+        "en": ["A. South Africa", "B. India", "C. Australia", "D. England"],
+        "hi": ["A. दक्षिण अफ्रीका", "B. भारत", "C. ऑस्ट्रेलिया", "D. इंग्लैंड"]
+      },
+      "answer": {
+        "en": "B. India",
+        "hi": "B. भारत"
+      },
+      "explanation": {
+        "en": "India defeated South Africa in the final on June 29, 2024, in Barbados to win their second T20 World Cup.",
+        "hi": "भारत ने 29 जून 2024 को बारबाडोस में फाइनल में दक्षिण अफ्रीका को हराकर अपना दूसरा टी20 विश्व कप जीता।"
+      }
+    },
+    {
+      "question": {
+        "en": "Who became the first Indian woman to climb Mount Everest five times in May 2024?",
+        "hi": "मई 2024 में माउंट एवरेस्ट पर पाँच बार चढ़ने वाली पहली भारतीय महिला कौन बनीं?"
+      },
+      "options": {
+        "en": ["A. Bachendri Pal", "B. Santosh Yadav", "C. Priyanka Mohite", "D. Arunima Sinha"],
+        "hi": ["A. बचेंद्री पाल", "B. संतोष यादव", "C. प्रियंका मोहिते", "D. अरुणिमा सिन्हा"]
+      },
+      "answer": {
+        "en": "C. Priyanka Mohite",
+        "hi": "C. प्रियंका मोहिते"
+      },
+      "explanation": {
+        "en": "Priyanka Mohite from Maharashtra summited Everest for the fifth time on May 22, 2024.",
+        "hi": "महाराष्ट्र की प्रियंका मोहिते ने 22 मई 2024 को एवरेस्ट पर पाँचवीं बार चढ़ाई की।"
+      }
+    },
+    {
+      "question": {
+        "en": "Which Indian port became the first 5G-enabled smart port in March 2024?",
+        "hi": "मार्च 2024 में कौन सा भारतीय बंदरगाह पहला 5G-सक्षम स्मार्ट पोर्ट बना?"
+      },
+      "options": {
+        "en": ["A. Chennai Port", "B. JNPT (Nhava Sheva)", "C. Mundra Port", "D. Visakhapatnam Port"],
+        "hi": ["A. चेन्नई पोर्ट", "B. जेएनपीटी (न्हावा शेवा)", "C. मुंदरा पोर्ट", "D. विशाखापत्तनम पोर्ट"]
+      },
+      "answer": {
+        "en": "B. JNPT (Nhava Sheva)",
+        "hi": "B. जेएनपीटी (न्हावा शेवा)"
+      },
+      "explanation": {
+        "en": "Jawaharlal Nehru Port Trust (JNPT) implemented 5G, AI, and IoT for real-time cargo tracking in March 2024.",
+        "hi": "जवाहरलाल नेहरू पोर्ट ट्रस्ट (जेएनपीटी) ने मार्च 2024 में वास्तविक समय में कार्गो ट्रैकिंग के लिए 5G, एआई और आईओटी लागू किया।"
+      }
+    },
+    {
+      "question": {
+        "en": "Which state declared the 'Copper Mahseer' as its state fish in April 2024?",
+        "hi": "अप्रैल 2024 में किस राज्य ने 'कॉपर महसीर' को अपनी राज्य मछली घोषित किया?"
+      },
+      "options": {
+        "en": ["A. Uttarakhand", "B. Himachal Pradesh", "C. Sikkim", "D. Assam"],
+        "hi": ["A. उत्तराखंड", "B. हिमाचल प्रदेश", "C. सिक्किम", "D. असम"]
+      },
+      "answer": {
+        "en": "B. Himachal Pradesh",
+        "hi": "B. हिमाचल प्रदेश"
+      },
+      "explanation": {
+        "en": "Himachal Pradesh declared the endangered Copper Mahseer as its state fish to promote conservation.",
+        "hi": "हिमाचल प्रदेश ने संरक्षण को बढ़ावा देने के लिए लुप्तप्राय कॉपर महसीर को अपनी राज्य मछली घोषित किया।"
+      }
+    },
+    {
+      "question": {
+        "en": "What was the theme of World Environment Day 2024?",
+        "hi": "विश्व पर्यावरण दिवस 2024 की थीम क्या थी?"
+      },
+      "options": {
+        "en": ["A. Beat Plastic Pollution", "B. Land Restoration, Desertification and Drought Resilience", "C. Only One Earth", "D. Ecosystem Restoration"],
+        "hi": ["A. प्लास्टिक प्रदूषण पर रोक", "B. भूमि पुनर्स्थापन, मरुस्थलीकरण और सूखा प्रतिरोधक्षमता", "C. केवल एक पृथ्वी", "D. पारिस्थितिकी तंत्र पुनर्स्थापन"]
+      },
+      "answer": {
+        "en": "B. Land Restoration, Desertification and Drought Resilience",
+        "hi": "B. भूमि पुनर्स्थापन, मरुस्थलीकरण और सूखा प्रतिरोधक्षमता"
+      },
+      "explanation": {
+        "en": "The UN designated this theme for 2024, hosted by Saudi Arabia.",
+        "hi": "संयुक्त राष्ट्र ने 2024 के लिए यह थीम निर्धारित की, जिसकी मेजबानी सऊदी अरब ने की।"
+      }
+    },
+    {
+      "question": {
+        "en": "Which bank launched India’s first generative AI-powered banking assistant 'SARAL' in July 2024?",
+        "hi": "जुलाई 2024 में किस बैंक ने भारत का पहला जनरेटिव एआई-संचालित बैंकिंग सहायक 'सरल' लॉन्च किया?"
+      },
+      "options": {
+        "en": ["A. HDFC Bank", "B. ICICI Bank", "C. State Bank of India", "D. Axis Bank"],
+        "hi": ["A. एचडीएफसी बैंक", "B. आईसीआईसीआई बैंक", "C. स्टेट बैंक ऑफ इंडिया", "D. एक्सिस बैंक"]
+      },
+      "answer": {
+        "en": "C. State Bank of India",
+        "hi": "C. स्टेट बैंक ऑफ इंडिया"
+      },
+      "explanation": {
+        "en": "SBI launched 'SARAL' (SBI’s AI-driven Rapid Assistance for Lending) for real-time loan processing.",
+        "hi": "एसबीआई ने वास्तविक समय ऋण प्रसंस्करण के लिए 'सरल' (एसबीआई की एआई-संचालित ऋण हेतु त्वरित सहायता) लॉन्च किया।"
+      }
+    },
+    {
+      "question": {
+        "en": "Which new frog species was discovered in the Western Ghats in February 2024?",
+        "hi": "फरवरी 2024 में पश्चिमी घाट में खोजी गई नई मेंढक प्रजाति कौन सी थी?"
+      },
+      "options": {
+        "en": ["A. Raorchestes kadalarensis", "B. Nyctibatrachus mewasinghi", "C. Indirana paramakri", "D. Micrixalus thampii"],
+        "hi": ["A. राओर्केस्टीज़ कदलारेंसिस", "B. निक्टिबैट्रैकस मेवासिंघी", "C. इंदिराना परमाक्री", "D. माइक्रिक्सैलस थम्पी"]
+      },
+      "answer": {
+        "en": "B. Nyctibatrachus mewasinghi",
+        "hi": "B. निक्टिबैट्रैकस मेवासिंघी"
+      },
+      "explanation": {
+        "en": "Discovered by Delhi University scientists and named after primatologist Mewa Singh.",
+        "hi": "दिल्ली विश्वविद्यालय के वैज्ञानिकों द्वारा खोजी गई और प्राइमेटोलॉजिस्ट मेवा सिंह के नाम पर नामित।"
+      }
+    },
+    {
+      "question": {
+        "en": "Which country became the 100th member of the International Solar Alliance in May 2024?",
+        "hi": "मई 2024 में कौन सा देश अंतर्राष्ट्रीय सौर गठबंधन का 100वाँ सदस्य बना?"
+      },
+      "options": {
+        "en": ["A. Canada", "B. Germany", "C. Belgium", "D. Norway"],
+        "hi": ["A. कनाडा", "B. जर्मनी", "C. बेल्जियम", "D. नॉर्वे"]
+      },
+      "answer": {
+        "en": "C. Belgium",
+        "hi": "C. बेल्जियम"
+      },
+      "explanation": {
+        "en": "Belgium ratified the ISA Framework Agreement in May 2024, becoming the 100th member.",
+        "hi": "बेल्जियम ने मई 2024 में आईएसए ढांचा समझौते की पुष्टि की और 100वाँ सदस्य बन गया।"
+      }
+    },
+    {
+      "question": {
+        "en": "Which Indian state launched the 'Chief Minister’s Residential Land Rights Scheme' in January 2024?",
+        "hi": "जनवरी 2024 में किस भारतीय राज्य ने 'मुख्यमंत्री आवासीय भूमि अधिकार योजना' शुरू की?"
+      },
+      "options": {
+        "en": ["A. Jharkhand", "B. Odisha", "C. Chhattisgarh", "D. Bihar"],
+        "hi": ["A. झारखंड", "B. ओडिशा", "C. छत्तीसगढ़", "D. बिहार"]
+      },
+      "answer": {
+        "en": "C. Chhattisgarh",
+        "hi": "C. छत्तीसगढ़"
+      },
+      "explanation": {
+        "en": "Chhattisgarh launched this scheme to provide free residential plots to homeless SC/ST families.",
+        "hi": "छत्तीसगढ़ ने बेघर एससी/एसटी परिवारों को मुफ्त आवासीय प्लॉट प्रदान करने के लिए यह योजना शुरू की।"
+      }
+    },
+    {
+      "question": {
+        "en": "Who was elected President of the European Council in June 2024?",
+        "hi": "जून 2024 में यूरोपीय परिषद के अध्यक्ष कौन चुने गए?"
+      },
+      "options": {
+        "en": ["A. Ursula von der Leyen", "B. António Costa", "C. Charles Michel", "D. Josep Borrell"],
+        "hi": ["A. उर्सुला वॉन डर लेयन", "B. एंटोनियो कोस्टा", "C. चार्ल्स मिशेल", "D. जोसेप बोरेल"]
+      },
+      "answer": {
+        "en": "B. António Costa",
+        "hi": "B. एंटोनियो कोस्टा"
+      },
+      "explanation": {
+        "en": "Former Portuguese PM António Costa succeeded Charles Michel as President of the European Council in June 2024.",
+        "hi": "पूर्व पुर्तगाली प्रधानमंत्री एंटोनियो कोस्टा जून 2024 में चार्ल्स मिशेल के बाद यूरोपीय परिषद के अध्यक्ष बने।"
+      }
+    },
+    {
+      "question": {
+        "en": "Which Indian naval ship participated in RIMPAC 2024 in Hawaii?",
+        "hi": "हवाई में RIMPAC 2024 में कौन सा भारतीय नौसेना जहाज भाग लिया?"
+      },
+      "options": {
+        "en": ["A. INS Vikrant", "B. INS Trikand", "C. INS Sahyadri", "D. INS Kolkata"],
+        "hi": ["A. आईएनएस विक्रांत", "B. आईएनएस त्रिकांड", "C. आईएनएस सह्याद्रि", "D. आईएनएस कोलकाता"]
+      },
+      "answer": {
+        "en": "C. INS Sahyadri",
+        "hi": "C. आईएनएस सह्याद्रि"
+      },
+      "explanation": {
+        "en": "INS Sahyadri, a Shivalik-class frigate, represented India in RIMPAC 2024 held in June–August 2024.",
+        "hi": "शिवालिक-श्रेणी के फ्रिगेट आईएनएस सह्याद्रि ने जून–अगस्त 2024 में आयोजित RIMPAC 2024 में भारत का प्रतिनिधित्व किया।"
+      }
+    },
+    {
+      "question": {
+        "en": "Which organization developed the upgraded 'SwasthVayu' AI-integrated ventilator in March 2024?",
+        "hi": "मार्च 2024 में उन्नत 'स्वस्थवायु' एआई-एकीकृत वेंटिलेटर किस संगठन ने विकसित किया?"
+      },
+      "options": {
+        "en": ["A. DRDO", "B. CSIR", "C. IIT Madras", "D. AIIMS"],
+        "hi": ["A. डीआरडीओ", "B. सीएसआईआर", "C. आईआईटी मद्रास", "D. एम्स"]
+      },
+      "answer": {
+        "en": "B. CSIR",
+        "hi": "B. सीएसआईआर"
+      },
+      "explanation": {
+        "en": "CSIR launched the upgraded version of its pandemic-era 'SwasthVayu' ventilator with AI monitoring in March 2024.",
+        "hi": "सीएसआईआर ने मार्च 2024 में एआई निगरानी के साथ अपने महामारीकालीन 'स्वस्थवायु' वेंटिलेटर का उन्नत संस्करण लॉन्च किया।"
+      }
+    },
+    {
+      "question": {
+        "en": "Which Indian city hosted the India Mobile Congress (IMC) 2024?",
+        "hi": "2024 इंडिया मोबाइल कांग्रेस (IMC) की मेजबानी किस भारतीय शहर ने की?"
+      },
+      "options": {
+        "en": ["A. Bengaluru", "B. Hyderabad", "C. New Delhi", "D. Mumbai"],
+        "hi": ["A. बेंगलुरु", "B. हैदराबाद", "C. नई दिल्ली", "D. मुंबई"]
+      },
+      "answer": {
+        "en": "C. New Delhi",
+        "hi": "C. नई दिल्ली"
+      },
+      "explanation": {
+        "en": "IMC 2024 was held in New Delhi from October 15–17, 2024, focusing on 5G, AI, and semiconductor ecosystems.",
+        "hi": "IMC 2024, 15–17 अक्टूबर, 2024 को नई दिल्ली में आयोजित किया गया, जिसमें 5G, एआई और सेमीकंडक्टर पारिस्थितिकी तंत्र पर ध्यान केंद्रित किया गया।"
+      }
+    },
+    {
+      "question": {
+        "en": "Who was appointed Chief Election Commissioner of India in February 2024?",
+        "hi": "फरवरी 2024 में भारत के मुख्य चुनाव आयुक्त के रूप में किसे नियुक्त किया गया?"
+      },
+      "options": {
+        "en": ["A. Sushil Chandra", "B. Rajiv Kumar", "C. Gyanesh Kumar", "D. Achal Kumar Jyoti"],
+        "hi": ["A. सुशील चंद्र", "B. राजीव कुमार", "C. ज्ञानेश कुमार", "D. अचल कुमार ज्योति"]
+      },
+      "answer": {
+        "en": "C. Gyanesh Kumar",
+        "hi": "C. ज्ञानेश कुमार"
+      },
+      "explanation": {
+        "en": "Gyanesh Kumar, a 1985-batch IAS officer, took charge as CEC on February 19, 2024.",
+        "hi": "1985 बैच के आईएएस अधिकारी ज्ञानेश कुमार ने 19 फरवरी 2024 को मुख्य चुनाव आयुक्त का पदभार संभाला।"
+      }
+    },
+    {
+      "question": {
+        "en": "Who won the 2024 French Open Men’s Singles title?",
+        "hi": "2024 फ्रेंच ओपन पुरुष एकल खिताब किसने जीता?"
+      },
+      "options": {
+        "en": ["A. Novak Djokovic", "B. Rafael Nadal", "C. Carlos Alcaraz", "D. Jannik Sinner"],
+        "hi": ["A. नोवाक जोकोविच", "B. राफेल नडाल", "C. कार्लोस अल्कराज़", "D. जैनिक सिनर"]
+      },
+      "answer": {
+        "en": "C. Carlos Alcaraz",
+        "hi": "C. कार्लोस अल्कराज़"
+      },
+      "explanation": {
+        "en": "Carlos Alcaraz defeated Alexander Zverev to win his second French Open title in June 2024.",
+        "hi": "कार्लोस अल्कराज़ ने जून 2024 में अलेक्जेंडर ज्वेरेव को हराकर अपना दूसरा फ्रेंच ओपन खिताब जीता।"
+      }
+    },
+    {
+      "question": {
+        "en": "In April 2024, which institute launched India’s first indigenous AI supercomputer 'ARKA'?",
+        "hi": "अप्रैल 2024 में किस संस्थान ने भारत का पहला स्वदेशी एआई सुपरकंप्यूटर 'अर्क' लॉन्च किया?"
+      },
+      "options": {
+        "en": ["A. IIT Bombay", "B. C-DAC", "C. ISRO", "D. DRDO"],
+        "hi": ["A. आईआईटी बॉम्बे", "B. सी-डैक", "C. इसरो", "D. डीआरडीओ"]
+      },
+      "answer": {
+        "en": "B. C-DAC",
+        "hi": "B. सी-डैक"
+      },
+      "explanation": {
+        "en": "The Centre for Development of Advanced Computing (C-DAC) launched 'ARKA' with 10 exaFLOPS capacity for AI workloads.",
+        "hi": "उन्नत कंप्यूटिंग विकास केंद्र (सी-डैक) ने एआई वर्कलोड के लिए 10 एक्साफ्लॉप्स क्षमता वाला 'अर्क' लॉन्च किया।"
+      }
+    }
+  ]
+}

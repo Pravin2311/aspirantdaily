@@ -1,6 +1,6 @@
 // ===============================
-// quiz.js – FINAL LOCKED VERSION
-// SUBJECT-WISE + LOCAL EXAM COMPOSER
+// quiz.js – FINAL LOCAL DATA VERSION
+// SUBJECT MODE + EXAM MODE SAFE
 // ===============================
 
 const lang = localStorage.getItem("lang") || "en";
@@ -31,8 +31,8 @@ const subjectLabels = {
   computer: "Computer Awareness",
   science: "General Science",
   "static-gk": "Static GK",
-  english: "English (Grammar & Verbal)",
-  economics: "Economics",
+  english: "English",
+  economy: "Economy",
   geography: "Geography"
 };
 
@@ -46,7 +46,7 @@ document.getElementById("examLabel").innerText = isSubjectMode
 let questions = [];
 let currentIndex = 0;
 let userAnswers = [];
-let isSubmitting = false; // 🔒 prevent double submit
+let isSubmitting = false;
 
 // ===============================
 // LOAD QUESTIONS
@@ -56,28 +56,19 @@ loadQuestions();
 async function loadQuestions() {
   try {
     // ===============================
-    // SUBJECT MODE
+    // SUBJECT MODE → LOCAL JSON ONLY
     // ===============================
     if (isSubjectMode) {
+      const res = await fetch(`./data/${subject}.json`, {
+        cache: "no-store"
+      });
 
-      // 🔥 CURRENT AFFAIRS → WORKER → KV
-      if (subject === "current-affairs") {
-        const res = await fetch(
-          "https://exam-prep-generator.mydomain2311.workers.dev/currentaffairs",
-          { cache: "no-store" }
-        );
-        const data = await res.json();
-        questions = data.questions.slice(0, 25);
-      }
+      if (!res.ok) throw new Error("Failed to load local subject JSON");
 
-      // 📦 STATIC SUBJECTS → LOCAL JSON
-      else {
-        const res = await fetch(`./data/${subject}.json`);
-        const data = await res.json();
+      const data = await res.json();
 
-        const start = quizIndex * 25;
-        questions = data.questions.slice(start, start + 25);
-      }
+      const start = quizIndex * 25;
+      questions = data.questions.slice(start, start + 25);
     }
 
     // ===============================
@@ -88,7 +79,7 @@ async function loadQuestions() {
       questions = await buildExam(exam || "mixed");
     }
 
-    if (!questions || questions.length === 0) {
+    if (!Array.isArray(questions) || questions.length === 0) {
       alert("Questions not available. Please try again later.");
       return;
     }
@@ -139,7 +130,7 @@ function loadQuestion() {
     container.appendChild(div);
   });
 
-  // 🔥 Button state sync
+  // Button state
   document.getElementById("prevBtn").disabled = currentIndex === 0;
   document.getElementById("nextBtn").innerText =
     currentIndex === questions.length - 1 ? "Submit" : "Next";
@@ -176,7 +167,7 @@ function prevQuestion() {
 }
 
 // ===============================
-// SUBMIT (BULLETPROOF)
+// SUBMIT
 // ===============================
 function submitQuiz() {
   if (isSubmitting) return;
@@ -195,7 +186,6 @@ function submitQuiz() {
 
   localStorage.setItem("userAnswers", JSON.stringify(userAnswers));
 
-  // 🔒 Ensure storage flush before redirect
   setTimeout(() => {
     window.location.href = "result.html";
   }, 50);

@@ -1,12 +1,9 @@
 // ==========================================
-// examComposer.js – FINAL TRUE FIX
+// examComposer.js – FINAL LOCAL-FIRST VERSION
 // Zero overlap across exams per subject/day
 // ==========================================
 
 import { EXAM_BLUEPRINTS } from "./examBlueprints.js";
-
-const CA_API =
-  "https://exam-prep-generator.mydomain2311.workers.dev/currentaffairs";
 
 // Fixed exam order (VERY IMPORTANT)
 const EXAM_ORDER = ["ssc", "bank", "rrb", "psc", "cuet", "upsc", "mixed"];
@@ -36,12 +33,13 @@ export async function buildExam(exam) {
       `${section.subject}-${bucketKey}`
     );
 
-    // 🔥 Calculate exam-specific offset
+    // 🔥 Exam-specific offset (zero overlap)
     const offset = getExamOffset(
       exam,
       section.subject,
       bucketKey,
-      section.count
+      section.count,
+      shuffled.length
     );
 
     finalQuestions.push(
@@ -49,6 +47,7 @@ export async function buildExam(exam) {
     );
   }
 
+  // Final deterministic shuffle
   finalQuestions = seededShuffle(
     finalQuestions,
     `${exam}-final-${bucketKey}`
@@ -59,29 +58,43 @@ export async function buildExam(exam) {
 }
 
 // ===============================
-// SUBJECT LOADER
+// SUBJECT LOADER (LOCAL ONLY)
 // ===============================
 async function loadSubject(subject) {
-  if (subject === "current-affairs") {
-    const res = await fetch(CA_API, { cache: "no-store" });
-    const data = await res.json();
-    return data.questions || [];
-  }
+  try {
+    const res = await fetch(`./data/${subject}.json`, {
+      cache: "no-store"
+    });
 
-  const res = await fetch(`./data/${subject}.json`);
-  const data = await res.json();
-  return data.questions || [];
+    if (!res.ok) {
+      console.error(`❌ Missing data file for ${subject}`);
+      return [];
+    }
+
+    const data = await res.json();
+    return Array.isArray(data.questions) ? data.questions : [];
+
+  } catch (err) {
+    console.error(`❌ Failed to load subject ${subject}`, err);
+    return [];
+  }
 }
 
 // ===============================
-// EXAM OFFSET LOGIC (THE FIX)
+// EXAM OFFSET LOGIC (SAFE VERSION)
 // ===============================
-function getExamOffset(exam, subject, bucketKey, count) {
+function getExamOffset(exam, subject, bucketKey, count, poolSize) {
   const index = EXAM_ORDER.indexOf(exam);
-  if (index === -1) return 0;
+  if (index === -1 || poolSize === 0) return 0;
 
-  // Each exam starts after previous exam’s allocation
-  return index * count;
+  const rawOffset = index * count;
+
+  // 🔒 Wrap safely if pool is smaller
+  if (rawOffset >= poolSize) {
+    return rawOffset % poolSize;
+  }
+
+  return rawOffset;
 }
 
 // ===============================
