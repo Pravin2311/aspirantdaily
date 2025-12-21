@@ -1,11 +1,12 @@
 // ==========================================
-// examComposer.js
-// Local exam composer with refresh buckets
+// examComposer.js – FINAL LOCKED VERSION
+// Exam-aware, deterministic, hybrid loader
 // ==========================================
 
 import { EXAM_BLUEPRINTS } from "./examBlueprints.js";
 
-const API = "https://exam-prep-generator.mydomain2311.workers.dev";
+const CA_API =
+  "https://exam-prep-generator.mydomain2311.workers.dev/currentaffairs";
 
 // ===============================
 // PUBLIC API
@@ -14,7 +15,7 @@ export async function buildExam(exam) {
   const blueprint = EXAM_BLUEPRINTS[exam];
   if (!blueprint) throw new Error("Invalid exam");
 
-  const bucketKey = getBucketKey(exam, blueprint.refresh);
+  const bucketKey = getBucketKey(blueprint.refresh);
   const cacheKey = `exam_${exam}_${bucketKey}`;
 
   // ===============================
@@ -28,26 +29,53 @@ export async function buildExam(exam) {
   // ===============================
   // BUILD EXAM
   // ===============================
-  let questions = [];
+  let finalQuestions = [];
 
   for (const section of blueprint.sections) {
-    const data = await fetchSubject(section.subject);
-    questions.push(...pick(data.questions, section.count));
+    const pool = await loadSubject(section.subject);
+
+    if (!Array.isArray(pool) || pool.length === 0) continue;
+
+    const shuffled = seededShuffle(
+      pool,
+      `${exam}-${section.subject}-${bucketKey}`
+    );
+
+    finalQuestions.push(...shuffled.slice(0, section.count));
   }
 
-  questions = shuffle(questions);
+  // Final exam-level shuffle (still deterministic)
+  finalQuestions = seededShuffle(
+    finalQuestions,
+    `${exam}-final-${bucketKey}`
+  );
 
-  localStorage.setItem(cacheKey, JSON.stringify(questions));
-  return questions;
+  localStorage.setItem(cacheKey, JSON.stringify(finalQuestions));
+  return finalQuestions;
 }
 
 // ===============================
-// BUCKET LOGIC
+// SUBJECT LOADER
 // ===============================
-function getBucketKey(exam, refresh) {
-  const now = new Date();
+async function loadSubject(subject) {
+  // 🔥 Current Affairs → Worker / KV
+  if (subject === "current-affairs") {
+    const res = await fetch(CA_API, { cache: "no-store" });
+    const data = await res.json();
+    return data.questions || [];
+  }
 
-  // Force IST
+  // 📦 Static subjects → local JSON
+  const res = await fetch(`./data/${subject}.json`);
+  const data = await res.json();
+  return data.questions || [];
+}
+
+// ===============================
+// BUCKET LOGIC (IST SAFE)
+// ===============================
+function getBucketKey(refresh) {
+  const now = new Date();
   const ist = new Date(
     now.toLocaleString("en-US", { timeZone: "Asia/Kolkata" })
   );
@@ -60,7 +88,6 @@ function getBucketKey(exam, refresh) {
     return getISOWeek(ist); // YYYY-W##
   }
 
-  // fallback
   return ist.toISOString().split("T")[0];
 }
 
@@ -75,20 +102,21 @@ function getISOWeek(date) {
 }
 
 // ===============================
-// HELPERS
+// DETERMINISTIC SHUFFLE (NO RANDOM)
 // ===============================
-async function fetchSubject(subject) {
-  const res = await fetch(`${API}/?subject=${subject}`, {
-    cache: "no-store"
-  });
-  const data = await res.json();
-  return data;
-}
+function seededShuffle(array, seed) {
+  let hash = 0;
+  for (let i = 0; i < seed.length; i++) {
+    hash = (hash << 5) - hash + seed.charCodeAt(i);
+    hash |= 0;
+  }
 
-function pick(pool, count) {
-  return shuffle([...pool]).slice(0, count);
-}
+  const result = [...array];
 
-function shuffle(arr) {
-  return arr.sort(() => Math.random() - 0.5);
+  for (let i = result.length - 1; i > 0; i--) {
+    const j = Math.abs(hash + i) % (i + 1);
+    [result[i], result[j]] = [result[j], result[i]];
+  }
+
+  return result;
 }
