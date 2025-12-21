@@ -1,6 +1,6 @@
 // ==========================================
-// examComposer.js – FINAL LOCKED VERSION
-// Exam-aware, deterministic, hybrid loader
+// examComposer.js – FINAL BULLETPROOF VERSION
+// Worker-safe + deterministic + exam-aware
 // ==========================================
 
 import { EXAM_BLUEPRINTS } from "./examBlueprints.js";
@@ -32,7 +32,11 @@ export async function buildExam(exam) {
   let finalQuestions = [];
 
   for (const section of blueprint.sections) {
-    const pool = await loadSubject(section.subject);
+    const pool = await loadSubjectSafe(
+      section.subject,
+      exam,
+      bucketKey
+    );
 
     if (!Array.isArray(pool) || pool.length === 0) continue;
 
@@ -55,20 +59,45 @@ export async function buildExam(exam) {
 }
 
 // ===============================
-// SUBJECT LOADER
+// SAFE SUBJECT LOADER
 // ===============================
-async function loadSubject(subject) {
-  // 🔥 Current Affairs → Worker / KV
+async function loadSubjectSafe(subject, exam, bucketKey) {
+  // 🔥 CURRENT AFFAIRS (WORKER + FALLBACK)
   if (subject === "current-affairs") {
-    const res = await fetch(CA_API, { cache: "no-store" });
-    const data = await res.json();
-    return data.questions || [];
+    try {
+      const res = await fetch(CA_API, { cache: "no-store" });
+      if (!res.ok) throw new Error("CA fetch failed");
+
+      const data = await res.json();
+      if (!Array.isArray(data.questions)) {
+        throw new Error("Invalid CA data");
+      }
+
+      // ✅ Cache last known good CA
+      localStorage.setItem(
+        "last_current_affairs",
+        JSON.stringify(data.questions)
+      );
+
+      return data.questions;
+    } catch (err) {
+      console.warn("CA fallback used:", err);
+
+      // 🟡 FALLBACK TO LAST KNOWN GOOD CA
+      const cached = localStorage.getItem("last_current_affairs");
+      return cached ? JSON.parse(cached) : [];
+    }
   }
 
-  // 📦 Static subjects → local JSON
-  const res = await fetch(`./data/${subject}.json`);
-  const data = await res.json();
-  return data.questions || [];
+  // 📦 STATIC SUBJECTS (LOCAL ONLY)
+  try {
+    const res = await fetch(`./data/${subject}.json`);
+    const data = await res.json();
+    return data.questions || [];
+  } catch (err) {
+    console.error(`Failed to load ${subject}`, err);
+    return [];
+  }
 }
 
 // ===============================
@@ -81,11 +110,11 @@ function getBucketKey(refresh) {
   );
 
   if (refresh === "daily") {
-    return ist.toISOString().split("T")[0]; // YYYY-MM-DD
+    return ist.toISOString().split("T")[0];
   }
 
   if (refresh === "weekly") {
-    return getISOWeek(ist); // YYYY-W##
+    return getISOWeek(ist);
   }
 
   return ist.toISOString().split("T")[0];
@@ -102,7 +131,7 @@ function getISOWeek(date) {
 }
 
 // ===============================
-// DETERMINISTIC SHUFFLE (NO RANDOM)
+// DETERMINISTIC SHUFFLE
 // ===============================
 function seededShuffle(array, seed) {
   let hash = 0;
