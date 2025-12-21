@@ -1,6 +1,7 @@
 // ===============================
 // quiz.js – FINAL LOCAL DATA VERSION
-// SUBJECT MODE + EXAM MODE SAFE
+// CA: shuffle 50 → pick 25
+// Others: quiz-selector logic unchanged
 // ===============================
 
 const lang = localStorage.getItem("lang") || "en";
@@ -37,7 +38,7 @@ const subjectLabels = {
 };
 
 document.getElementById("examLabel").innerText = isSubjectMode
-  ? `${subjectLabels[subject] || "Practice"} • Quiz ${quizIndex + 1}`
+  ? `${subjectLabels[subject] || "Practice"}`
   : `${(exam || "mixed").toUpperCase()} • Daily Practice`;
 
 // ===============================
@@ -56,7 +57,7 @@ loadQuestions();
 async function loadQuestions() {
   try {
     // ===============================
-    // SUBJECT MODE → LOCAL JSON ONLY
+    // SUBJECT MODE → LOCAL JSON
     // ===============================
     if (isSubjectMode) {
       const res = await fetch(`./data/${subject}.json`, {
@@ -66,9 +67,18 @@ async function loadQuestions() {
       if (!res.ok) throw new Error("Failed to load local subject JSON");
 
       const data = await res.json();
+      let pool = Array.isArray(data.questions) ? [...data.questions] : [];
 
-      const start = quizIndex * 25;
-      questions = data.questions.slice(start, start + 25);
+      // 🔥 CURRENT AFFAIRS → SHUFFLE FULL POOL, PICK 25
+      if (subject === "current-affairs") {
+        pool.sort(() => Math.random() - 0.5);
+        questions = pool.slice(0, 25);
+      }
+      // 📦 OTHER SUBJECTS → QUIZ SELECTOR (UNCHANGED)
+      else {
+        const start = quizIndex * 25;
+        questions = pool.slice(start, start + 25);
+      }
     }
 
     // ===============================

@@ -319,7 +319,7 @@ body {
 
 .quiz-title p {
   font-size: 0.9rem;
-  color: #6b7280;
+  color: #d81610;
 }
 
 .back-btn {
@@ -697,4 +697,557 @@ body {
   max-width: 720px;
   margin: 40px auto;
   padding: 0 16px;
+}
+/* ==========================================
+   AspirantDaily – Result Page Styles
+   Clean • Responsive • Exam-Focused
+   ========================================== */
+
+:root {
+  --primary: #2563eb;       /* Vibrant blue (trust, clarity) */
+  --primary-dark: #1d4ed8;
+  --success: #10b981;       /* Green for correct */
+  --error: #ef4444;         /* Red for incorrect */
+  --bg: #ffffff;
+  --bg-light: #f8fafc;
+  --text: #1e293b;
+  --text-light: #64748b;
+  --border: #e2e8f0;
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --radius: 12px;
+  --font-sans: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-light);
+  color: var(--text);
+  line-height: 1.6;
+  padding-bottom: 2rem;
+}
+
+/* ————— HEADER ————— */
+.site-header {
+  background: var(--bg);
+  padding: 1.25rem 1rem;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.site-header h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+/* ————— LAYOUT ————— */
+.container {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.wide {
+  max-width: 720px;
+}
+
+/* ————— CARDS ————— */
+.result-card {
+  background: var(--bg);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  box-shadow: var(--shadow);
+}
+
+/* ————— SCORE CARD ————— */
+.score-card {
+  text-align: center;
+  background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+  border: 2px dashed var(--primary);
+}
+
+.score-text {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  color: var(--primary-dark);
+}
+
+.score-stats {
+  color: var(--text-light);
+  margin-bottom: 1.25rem;
+  font-size: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.btn.success {
+  background-color: var(--success);
+  color: white;
+}
+
+.btn.success:hover {
+  background-color: #0ca678;
+  transform: translateY(-2px);
+}
+
+/* ————— SECTION TITLE ————— */
+.section-title {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: var(--text);
+  font-weight: 700;
+}
+
+/* ————— SUBJECT BREAKDOWN ————— */
+.subject-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+}
+
+.subject-item {
+  background: #f1f5f9;
+  padding: 0.75rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.subject-name {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin-bottom: 0.25rem;
+}
+
+.subject-score {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--primary);
+}
+
+/* ————— ANSWER REVIEW ————— */
+.answers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.question-item {
+  padding: 1rem;
+  border-radius: 8px;
+  background: #f8fafc;
+  border-left: 4px solid var(--primary);
+}
+
+.question-item.correct {
+  border-left-color: var(--success);
+  background-color: #f0fdf4;
+}
+
+.question-item.incorrect {
+  border-left-color: var(--error);
+  background-color: #fef2f2;
+}
+
+.question-text {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.answer-feedback {
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+}
+
+.correct-answer {
+  color: var(--success);
+  font-weight: 600;
+}
+
+.your-answer {
+  color: var(--error);
+  font-weight: 600;
+}
+
+/* ————— CTA ————— */
+.cta-center {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.btn.primary {
+  background-color: var(--primary);
+  color: white;
+  padding: 0.85rem 2rem;
+  font-size: 1.1rem;
+}
+
+.btn.primary:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+.btn.large {
+  border-radius: 50px;
+}
+
+/* ————— FOOTER ————— */
+.site-footer {
+  text-align: center;
+  color: var(--text-light);
+  font-size: 0.875rem;
+  margin-top: 2.5rem;
+  padding: 0 1rem;
+}
+
+/* ————— RESPONSIVE ————— */
+@media (max-width: 600px) {
+  .score-text {
+    font-size: 1.75rem;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 0.85rem;
+  }
+
+  .btn.large {
+    border-radius: 8px;
+  }
+
+  .subject-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ————— PRINT FRIENDLY ————— */
+@media print {
+  .btn, .cta-center, .site-header, .site-footer {
+    display: none;
+  }
+  body {
+    background: white;
+    padding: 0;
+  }
+  .result-card {
+    box-shadow: none;
+    margin: 1rem 0;
+  }
+}
+/* ==========================================
+   AspirantDaily – Quiz Page Styles
+   Optimized for touch • Clean • Focused
+   ========================================== */
+
+:root {
+  --primary: #2563eb;
+  --primary-dark: #1d4ed8;
+  --bg: #ffffff;
+  --bg-light: #f8fafc;
+  --text: #1e293b;
+  --text-light: #64748b;
+  --border: #e2e8f0;
+  --shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  --radius: 12px;
+  --font-sans: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-light);
+  color: var(--text);
+  line-height: 1.5;
+  padding-bottom: 24px;
+}
+
+/* ————— HEADER ————— */
+.quiz-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: var(--bg);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  color: var(--primary);
+  cursor: pointer;
+  padding: 0.25rem;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background 0.2s;
+}
+
+.back-btn:hover {
+  background: #eff6ff;
+}
+
+.quiz-title {
+  flex: 1;
+}
+
+.quiz-title h1 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.quiz-title p {
+  font-size: 0.875rem;
+  color: var(--text-light);
+}
+
+/* ————— LAYOUT ————— */
+.container {
+  max-width: 680px;
+  margin: 1.5rem auto 0;
+  padding: 0 1rem;
+}
+
+/* ————— QUIZ CARD ————— */
+.quiz-card {
+  background: var(--bg);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.question-count {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.question-text {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+}
+
+/* ————— OPTIONS ————— */
+.options-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.75rem;
+}
+
+.option-btn {
+  background: #f1f5f9;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: left;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.option-btn:hover {
+  background: #e2e8f0;
+}
+
+.option-btn.selected {
+  border-color: var(--primary);
+  background: #eff6ff;
+  color: var(--primary-dark);
+  font-weight: 600;
+}
+
+.option-btn.correct {
+  border-color: #10b981;
+  background: #f0fdf4;
+  color: #065f46;
+}
+
+.option-btn.incorrect {
+  border-color: #ef4444;
+  background: #fef2f2;
+  color: #b91c1c;
+}
+
+/* ————— NAVIGATION ————— */
+.quiz-nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  flex: 1;
+  padding: 0.85rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.btn.secondary {
+  background: #f1f5f9;
+  color: var(--text);
+}
+
+.btn.secondary:hover {
+  background: #e2e8f0;
+}
+
+.btn.primary {
+  background: var(--primary);
+  color: white;
+}
+
+.btn.primary:hover {
+  background: var(--primary-dark);
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ————— LOADING ————— */
+.loading-box {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: var(--text-light);
+  font-size: 1.1rem;
+  background: var(--bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+/* ————— FOOTER ————— */
+.site-footer {
+  text-align: center;
+  color: var(--text-light);
+  font-size: 0.875rem;
+  margin-top: 2rem;
+  padding: 0 1rem;
+}
+
+/* ————— MODAL ————— */
+.modal {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  padding: 1rem;
+}
+
+.modal-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.modal-box {
+  background: white;
+  border-radius: 14px;
+  padding: 1.5rem;
+  width: 90%;
+  max-width: 400px;
+  z-index: 101;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.modal-box h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  color: var(--text);
+}
+
+.modal-box p {
+  color: var(--text-light);
+  margin-bottom: 1.25rem;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.modal-actions .btn {
+  flex: 1;
+  padding: 0.7rem;
+  font-size: 0.95rem;
+}
+
+.btn.danger {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.btn.danger:hover {
+  background: #fecaca;
+}
+
+/* ————— HIDDEN UTILITY ————— */
+.hidden {
+  display: none !important;
+}
+
+/* ————— RESPONSIVE ————— */
+@media (max-width: 600px) {
+  .quiz-nav {
+    flex-direction: column;
+  }
+
+  .btn {
+    padding: 1rem;
+  }
+
+  .question-text {
+    font-size: 1.15rem;
+  }
 }
