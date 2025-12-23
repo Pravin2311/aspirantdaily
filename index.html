@@ -20,6 +20,55 @@
 
   <!-- Styles -->
   <link rel="stylesheet" href="./styles.css">
+  <style>
+    /* Home Blog Section */
+.home-blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.home-blog-card {
+  background: #ffffff;
+  padding: 1rem 1.1rem;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.home-blog-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.1);
+}
+
+.home-blog-card h3 {
+  font-size: 1rem;
+  margin: 0 0 0.35rem;
+  color: #2563eb;
+  line-height: 1.35;
+}
+
+.home-blog-card p {
+  font-size: 0.88rem;
+  color: #6b7280;
+  margin-bottom: 0.6rem;
+  line-height: 1.4;
+}
+
+.home-blog-tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+  </style>
 
   <!-- PWA -->
   <link rel="manifest" href="/manifest.webmanifest">
@@ -159,6 +208,42 @@
       
     </div>
   </main>
+  <section class="container" style="margin-top:3rem;">
+  <h2 class="section-title">📰 Latest Exam Updates & Study Tips</h2>
+  <p class="section-desc">
+    Handpicked articles to strengthen your daily preparation.
+  </p>
+
+  <div class="home-blog-grid">
+
+    <a href="/blog/current-affairs-dec-2025-summary.html" class="home-blog-card">
+      <h3>🗓️ Current Affairs – December 2025</h3>
+      <p>Key events with exam-oriented MCQs for UPSC, SSC & Bank.</p>
+      <span class="home-blog-tag">Current Affairs</span>
+    </a>
+
+    <a href="/blog/ssc-cgl-syllabus-2025.html" class="home-blog-card">
+      <h3>📘 SSC CGL 2025 Syllabus</h3>
+      <p>Latest changes, weightage & smart preparation tips.</p>
+      <span class="home-blog-tag">SSC</span>
+    </a>
+
+    <a href="/blog/upsc-prelims-syllabus-2025.html" class="home-blog-card">
+      <h3>🇮🇳 UPSC Prelims Syllabus 2025</h3>
+      <p>Topic-wise breakdown for GS Paper I & CSAT.</p>
+      <span class="home-blog-tag">UPSC</span>
+    </a>
+
+  </div>
+
+  <div style="text-align:center; margin-top:1.5rem;">
+    <a href="/blog/index.html" class="btn primary">
+      View All Articles →
+    </a>
+  </div>
+</section>
+
+
 <!-- STUDY MATERIALS -->
 <section class="container materials-section">
   <h2 class="section-title">📚 Download Free Study Materials</h2>
