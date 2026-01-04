@@ -1,162 +1,219 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
+This XML file does not appear to have any style information associated with it. The document tree is shown below.
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
 <url>
-  <loc>https://www.aspirantdaily.com/</loc>
-  <lastmod>2025-12-23T14:42:57+00:00</lastmod>
-  <priority>1.00</priority>
+<loc>https://www.aspirantdaily.com/</loc>
+<lastmod>2026-01-04T13:52:16+00:00</lastmod>
+<priority>1.00</priority>
 </url>
 <url>
-  <loc>https://www.aspirantdaily.com/quiz.html?exam=mixed</loc>
-  <lastmod>2025-12-23T14:42:57+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.aspirantdaily.com/exam-calendar.html</loc>
+<lastmod>2026-01-04T13:52:17+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.aspirantdaily.com/quiz.html?exam=ssc</loc>
-  <lastmod>2025-12-23T14:42:57+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.aspirantdaily.com/quiz.html?exam=mixed</loc>
+<lastmod>2026-01-04T13:52:17+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.aspirantdaily.com/quiz.html?exam=bank</loc>
-  <lastmod>2025-12-23T14:42:57+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.aspirantdaily.com/quiz.html?exam=ssc</loc>
+<lastmod>2026-01-04T13:52:17+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.aspirantdaily.com/quiz.html?exam=upsc</loc>
-  <lastmod>2025-12-23T14:42:57+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.aspirantdaily.com/quiz.html?exam=bank</loc>
+<lastmod>2026-01-04T13:52:17+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.aspirantdaily.com/quiz.html?exam=psc</loc>
-  <lastmod>2025-12-23T14:42:57+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.aspirantdaily.com/quiz.html?exam=upsc</loc>
+<lastmod>2026-01-04T13:52:17+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.aspirantdaily.com/quiz.html?exam=rrb</loc>
-  <lastmod>2025-12-23T14:42:57+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.aspirantdaily.com/quiz.html?exam=psc</loc>
+<lastmod>2026-01-04T13:52:17+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.aspirantdaily.com/quiz.html?exam=cuet</loc>
-  <lastmod>2025-12-23T14:42:57+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.aspirantdaily.com/quiz.html?exam=rrb</loc>
+<lastmod>2026-01-04T13:52:17+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.aspirantdaily.com/blog/current-affairs-dec-2025-summary.html</loc>
-  <lastmod>2025-12-23T14:42:58+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.aspirantdaily.com/quiz.html?exam=cuet</loc>
+<lastmod>2026-01-04T13:52:17+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.aspirantdaily.com/blog/ssc-cgl-syllabus-2025.html</loc>
-  <lastmod>2025-12-23T14:42:58+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.aspirantdaily.com/blog/current-affairs-dec-2025-summary.html</loc>
+<lastmod>2026-01-04T13:52:17+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.aspirantdaily.com/blog/upsc-prelims-syllabus-2025.html</loc>
-  <lastmod>2025-12-23T14:42:58+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.aspirantdaily.com/blog/ssc-cgl-syllabus-2025.html</loc>
+<lastmod>2026-01-04T13:52:17+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.aspirantdaily.com/blog/index.html</loc>
-  <lastmod>2025-12-23T14:42:58+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.aspirantdaily.com/blog/upsc-prelims-syllabus-2025.html</loc>
+<lastmod>2026-01-04T13:52:18+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.aspirantdaily.com/pdfs/upsc-syllabus.pdf</loc>
-  <lastmod>2025-12-23T14:42:59+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.aspirantdaily.com/blog/index.html</loc>
+<lastmod>2026-01-04T13:52:18+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.aspirantdaily.com/pdfs/bank-formulas.pdf</loc>
-  <lastmod>2025-12-23T14:42:59+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.aspirantdaily.com/repeated-questions/polity-cheat-code.html</loc>
+<lastmod>2026-01-04T13:52:18+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.aspirantdaily.com/pdfs/ssc-gk-2025.pdf</loc>
-  <lastmod>2025-12-23T14:42:59+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.aspirantdaily.com/repeated-questions/geography-cheat-code.html</loc>
+<lastmod>2026-01-04T13:52:18+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.aspirantdaily.com/pdfs/all-exams-calendar.pdf</loc>
-  <lastmod>2025-12-23T14:42:59+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.aspirantdaily.com/repeated-questions/economy-cheat-code.html</loc>
+<lastmod>2026-01-04T13:52:18+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.aspirantdaily.com/index.html</loc>
-  <lastmod>2025-12-23T14:43:00+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://www.aspirantdaily.com/repeated-questions/index.html</loc>
+<lastmod>2026-01-04T13:52:18+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.aspirantdaily.com/blog/bank-exam-syllabus-2025.html</loc>
-  <lastmod>2025-12-23T14:43:00+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://www.aspirantdaily.com/pdfs/upsc-syllabus.pdf</loc>
+<lastmod>2026-01-04T13:52:19+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.aspirantdaily.com/blog/rrb-syllabus-2025.html</loc>
-  <lastmod>2025-12-23T14:43:00+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://www.aspirantdaily.com/pdfs/bank-formulas.pdf</loc>
+<lastmod>2026-01-04T13:52:19+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.aspirantdaily.com/blog/psc-syllabus-2025.html</loc>
-  <lastmod>2025-12-23T14:43:00+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://www.aspirantdaily.com/pdfs/ssc-gk-2025.pdf</loc>
+<lastmod>2026-01-04T13:52:19+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.aspirantdaily.com/blog/how-to-score-180-ssc-cgl-tier1.html</loc>
-  <lastmod>2025-12-23T14:43:00+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://www.aspirantdaily.com/pdfs/all-exams-calendar.pdf</loc>
+<lastmod>2026-01-04T13:52:19+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.aspirantdaily.com/blog/upsc-prelims-attempt-90-questions.html</loc>
-  <lastmod>2025-12-23T14:43:00+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://www.aspirantdaily.com/index.html</loc>
+<lastmod>2026-01-04T13:52:19+00:00</lastmod>
+<priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.aspirantdaily.com/blog/bank-exam-puzzles-5-types.html</loc>
-  <lastmod>2025-12-23T14:43:00+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://www.aspirantdaily.com/blog/top-25-current-affairs-mcqs-december-2025.html</loc>
+<lastmod>2026-01-04T13:52:19+00:00</lastmod>
+<priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.aspirantdaily.com/blog/how-to-revise-current-affairs-daily-in-20-minutes.html</loc>
-  <lastmod>2025-12-23T14:43:01+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://www.aspirantdaily.com/blog/bank-exam-syllabus-2025.html</loc>
+<lastmod>2026-01-04T13:52:20+00:00</lastmod>
+<priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.aspirantdaily.com/blog/10-most-repeated-upsc-polity-questions-2020-2025.html</loc>
-  <lastmod>2025-12-23T14:43:01+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://www.aspirantdaily.com/blog/rrb-syllabus-2025.html</loc>
+<lastmod>2026-01-04T13:52:20+00:00</lastmod>
+<priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.aspirantdaily.com/blog/top-15-banking-terms-ibps-sbi-exams.html</loc>
-  <lastmod>2025-12-23T14:43:01+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://www.aspirantdaily.com/blog/psc-syllabus-2025.html</loc>
+<lastmod>2026-01-04T13:52:20+00:00</lastmod>
+<priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.aspirantdaily.com/blog/25-must-know-geography-facts-state-psc-exams.html</loc>
-  <lastmod>2025-12-23T14:43:01+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://www.aspirantdaily.com/blog/how-to-score-180-ssc-cgl-tier1.html</loc>
+<lastmod>2026-01-04T13:52:20+00:00</lastmod>
+<priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.aspirantdaily.com/blog/ssc-cgl-vs-chsl-which-to-prepare.html</loc>
-  <lastmod>2025-12-23T14:43:01+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://www.aspirantdaily.com/blog/upsc-prelims-attempt-90-questions.html</loc>
+<lastmod>2026-01-04T13:52:20+00:00</lastmod>
+<priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.aspirantdaily.com/blog/ibps-po-vs-sbi-po-salary-syllabus-career.html</loc>
-  <lastmod>2025-12-23T14:43:01+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://www.aspirantdaily.com/blog/bank-exam-puzzles-5-types.html</loc>
+<lastmod>2026-01-04T13:52:20+00:00</lastmod>
+<priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.aspirantdaily.com/blog/upsc-vs-state-psc-which-is-easier.html</loc>
-  <lastmod>2025-12-23T14:43:01+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://www.aspirantdaily.com/blog/how-to-revise-current-affairs-daily-in-20-minutes.html</loc>
+<lastmod>2026-01-04T13:52:20+00:00</lastmod>
+<priority>0.64</priority>
 </url>
-
-
+<url>
+<loc>https://www.aspirantdaily.com/blog/10-most-repeated-upsc-polity-questions-2020-2025.html</loc>
+<lastmod>2026-01-04T13:52:21+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://www.aspirantdaily.com/blog/top-15-banking-terms-ibps-sbi-exams.html</loc>
+<lastmod>2026-01-04T13:52:21+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://www.aspirantdaily.com/blog/25-must-know-geography-facts-state-psc-exams.html</loc>
+<lastmod>2026-01-04T13:52:21+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://www.aspirantdaily.com/blog/ssc-cgl-vs-chsl-which-to-prepare.html</loc>
+<lastmod>2026-01-04T13:52:21+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://www.aspirantdaily.com/blog/ibps-po-vs-sbi-po-salary-syllabus-career.html</loc>
+<lastmod>2026-01-04T13:52:21+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://www.aspirantdaily.com/blog/upsc-vs-state-psc-which-is-easier.html</loc>
+<lastmod>2026-01-04T13:52:21+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://www.aspirantdaily.com/repeated-questions/environment-cheat-code.html</loc>
+<lastmod>2026-01-04T13:52:21+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://www.aspirantdaily.com/repeated-questions/science-tech-cheat-code.html</loc>
+<lastmod>2026-01-04T13:52:22+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://www.aspirantdaily.com/repeated-questions/computer-awareness-cheat-code.html</loc>
+<lastmod>2026-01-04T13:52:22+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://www.aspirantdaily.com/repeated-questions/static-gk-cheat-code.html</loc>
+<lastmod>2026-01-04T13:52:22+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://www.aspirantdaily.com/repeated-questions/banking-awareness-cheat-code.html</loc>
+<lastmod>2026-01-04T13:52:22+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://www.aspirantdaily.com/repeated-questions/english-cheat-code.html</loc>
+<lastmod>2026-01-04T13:52:22+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://www.aspirantdaily.com/repeated-questions/quant-cheat-code.html</loc>
+<lastmod>2026-01-04T13:52:22+00:00</lastmod>
+<priority>0.64</priority>
+</url>
 </urlset>
