@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CA-03: G20 Summit Outcomes | UPSC Study Notes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #64748b;
+            --success-color: #10b981;
+            --warning-color: #f59e0b;
+            --danger-color: #ef4444;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --border-color: #e2e8f0;
+            --shadow: 0 1px 3px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg-color); color: var(--text-primary); line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        /* Study Nav */
+        .study-nav { background: var(--card-bg); border-bottom: 1px solid var(--border-color); padding: 1rem 0; position: sticky; top: 0; z-index: 100; box-shadow: var(--shadow); }
+        .study-nav .container { display: flex; justify-content: space-between; align-items: center; }
+        .back-link { color: var(--primary-color); text-decoration: none; font-weight: 500; }
+        .nav-controls { display: flex; gap: 1rem; }
+        .btn-primary, .btn-secondary { padding: 0.5rem 1rem; border: none; border-radius: 6px; font-weight: 500; cursor: pointer; transition: all 0.2s; }
+        .btn-primary { background: var(--primary-color); color: white; }
+        .btn-primary:hover { background: #1d4ed8; }
+        .btn-secondary { background: var(--bg-color); color: var(--text-primary); border: 1px solid var(--border-color); }
+        .btn-secondary:hover { background: var(--border-color); }
+        
+        /* Page Header */
+        .page-header { background: linear-gradient(135deg, #a78bfa 0%, #8b5cf6 100%); color: white; padding: 2rem 0; border-bottom: 1px solid var(--border-color); }
+        .breadcrumb { color: rgba(255,255,255,0.9); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .breadcrumb a { color: white; text-decoration: none; }
+        .page-header h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+        .page-subtitle { color: rgba(255,255,255,0.95); font-size: 1.125rem; margin-bottom: 1rem; }
+        .page-meta { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+        .badge { padding: 0.375rem 0.875rem; border-radius: 20px; font-size: 0.875rem; font-weight: 500; }
+        .badge-primary { background: rgba(255,255,255,0.2); color: white; }
+        .badge-secondary { background: rgba(255,255,255,0.15); color: white; }
+        .badge-warning { background: #fef3c7; color: #92400e; }
+        
+        /* Keywords Box */
+        .keywords-box { background: #fef3c7; border-left: 4px solid var(--warning-color); padding: 1rem; margin: 2rem 0; border-radius: 0 8px 8px 0; font-size: 0.9rem; }
+        
+        /* Study Sections */
+        .study-section { background: var(--card-bg); border-radius: 12px; margin: 1.5rem 0; box-shadow: var(--shadow); overflow: hidden; }
+        .section-header { width: 100%; padding: 1.25rem 1.5rem; background: var(--card-bg); border: none; display: flex; align-items: center; gap: 1rem; cursor: pointer; font-size: 1.125rem; font-weight: 600; color: var(--text-primary); transition: all 0.2s; }
+        .section-header:hover { background: var(--bg-color); }
+        .section-number { font-size: 1.5rem; }
+        .toggle-icon { margin-left: auto; transition: transform 0.3s; }
+        .section-header.collapsed .toggle-icon { transform: rotate(-90deg); }
+        .section-content { max-height: 2000px; overflow: hidden; transition: max-height 0.3s ease; }
+        .section-content.collapsed { max-height: 0; }
+        .content-box { padding: 1.5rem; }
+        
+        /* Lists */
+        .simple-list, .bullet-list, .numbered-list { margin: 1rem 0; padding-left: 1.5rem; }
+        .simple-list li, .bullet-list li { margin: 0.75rem 0; line-height: 1.7; }
+        .bullet-list li { list-style: disc; }
+        .numbered-list li { list-style: decimal; margin: 1rem 0; }
+        
+        /* Prelims Box */
+        .prelims-box { background: #eff6ff; border-radius: 8px; padding: 1.5rem; }
+        .fact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+        .fact-item { background: white; padding: 1rem; border-radius: 8px; text-align: center; }
+        .fact-label { display: block; color: var(--text-secondary); font-size: 0.875rem; margin-bottom: 0.25rem; }
+        .fact-value { display: block; font-weight: 700; color: var(--primary-color); font-size: 1.125rem; }
+        .highlight-box { background: #fef3c7; border-left: 4px solid var(--warning-color); padding: 1rem; margin-top: 1rem; border-radius: 0 8px 8px 0; }
+        
+        /* Mains Box */
+        .mains-box { background: #f8fafc; }
+        .mains-subsection { margin: 1.5rem 0; padding: 1.25rem; background: white; border-radius: 8px; }
+        .mains-subsection h4 { color: var(--primary-color); margin-bottom: 0.75rem; font-size: 1rem; }
+        
+        /* Case Studies */
+        .case-study { background: #f0fdf4; border: 1px solid #86efac; border-radius: 8px; padding: 1.25rem; margin: 1rem 0; }
+        .case-study h4 { color: #166534; margin-bottom: 0.75rem; }
+        
+        /* MCQ Section */
+        .mcq-box { background: #fefce8; }
+        .mcq-item { background: white; padding: 1.5rem; border-radius: 8px; margin: 1rem 0; }
+        .mcq-question { margin-bottom: 1rem; line-height: 1.7; }
+        .mcq-options { display: flex; flex-direction: column; gap: 0.5rem; margin: 1rem 0; }
+        .mcq-options label { display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem; border-radius: 6px; cursor: pointer; transition: background 0.2s; }
+        .mcq-options label:hover { background: var(--bg-color); }
+        .mcq-answer { display: none; background: #f0fdf4; border-left: 4px solid var(--success-color); padding: 1rem; margin: 1rem 0; border-radius: 0 8px 8px 0; }
+        .mcq-answer.show { display: block; }
+        .btn-show-answer { background: var(--primary-color); color: white; border: none; padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: 500; margin-top: 0.5rem; }
+        .btn-show-answer:hover { background: #1d4ed8; }
+        
+        /* Revision Box */
+        .revision-box { background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); border-radius: 8px; padding: 1.5rem; }
+        .revision-list { list-style: none; padding: 0; }
+        .revision-list li { padding: 0.5rem 0; border-bottom: 1px solid rgba(0,0,0,0.1); }
+        .revision-list li:last-child { border-bottom: none; }
+        .mnemonic-box { background: white; padding: 1rem; border-radius: 8px; margin: 1rem 0; font-family: 'Courier New', monospace; }
+        .warning-list { list-style: none; padding: 0; }
+        .warning-list li { padding: 0.5rem; background: #fee2e2; margin: 0.5rem 0; border-radius: 6px; color: #991b1b; }
+        
+        /* Page Navigation */
+        .page-navigation { display: flex; justify-content: space-between; gap: 1rem; margin: 2rem 0; flex-wrap: wrap; }
+        .nav-btn { flex: 1; min-width: 150px; padding: 1rem; text-align: center; background: var(--card-bg); border: 2px solid var(--border-color); border-radius: 8px; text-decoration: none; color: var(--text-primary); font-weight: 500; cursor: pointer; transition: all 0.2s; }
+        .nav-btn:hover { border-color: var(--primary-color); color: var(--primary-color); }
+        .btn-success { background: var(--success-color); color: white; border-color: var(--success-color); }
+        .btn-success:hover { background: #059669; color: white; }
+        .btn-disabled { opacity: 0.5; cursor: not-allowed; }
+        
+        /* Footer */
+        .page-footer { background: var(--bg-color); color: var(--text-secondary); border-top: 1px solid var(--border-color); padding: 2rem 0; text-align: center; margin-top: 3rem; }
+        .intro-box { background: #f0f9ff; border-left: 4px solid var(--primary-color); padding: 1.5rem; border-radius: 0 8px 8px 0; }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .page-header h1 { font-size: 1.5rem; }
+            .section-header { font-size: 1rem; padding: 1rem; }
+            .fact-grid { grid-template-columns: 1fr; }
+            .page-navigation { flex-direction: column; }
+        }
+        @media print {
+            .study-nav, .page-navigation, .btn-show-answer { display: none !important; }
+            .section-content { max-height: none !important; }
+            .toggle-icon { display: none; }
+            body { background: white; }
+            .study-section { break-inside: avoid; box-shadow: none; border: 1px solid #ddd; }
+        }
+    </style>
+</head>
+<body class="study-page">
+    <nav class="study-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Current Affairs Index</a>
+            <div class="nav-controls">
+                <button onclick="toggleAllSections()" class="btn-secondary">Expand/Collapse All</button>
+                <button onclick="window.print()" class="btn-primary">📄 Print/Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../index.html">Home</a> / 
+                <a href="index.html">Current Affairs</a> / 
+                <span>CA-03</span>
+            </div>
+            <h1>🌍 G20 Summit Outcomes</h1>
+            <p class="page-subtitle">India's Presidency 2023 • Delhi Declaration • Global South Leadership</p>
+            <div class="page-meta">
+                <span class="badge badge-primary">High Yield</span>
+                <span class="badge badge-secondary">IR + Economy + Environment</span>
+                <span class="badge badge-warning">⚡ Multilateral Diplomacy</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="keywords-box">
+            <strong>🔍 Quick Search:</strong> 
+            What is G20?, UPSC notes on G20 Delhi Declaration, MCQs on G20 outcomes, G20 explained simply
+        </section>
+
+        <!-- Section 1: Introduction -->
+        <section class="study-section collapsible" data-section="1">
+            <button class="section-header" onclick="toggleSection(1)">
+                <span class="section-number">1️⃣</span>
+                <span class="section-title">Introduction (Simple)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-1">
+                <div class="content-box intro-box">
+                    <ul class="simple-list">
+                        <li><strong>What is G20?</strong> → Forum of 20 major economies (19 countries + EU) representing ~85% of global GDP, 75% of trade, 2/3 of world population.</li>
+                        <li><strong>India's Presidency:</strong> December 2022 – November 2023; Theme: <strong>"Vasudhaiva Kutumbakam"</strong> (One Earth, One Family, One Future).</li>
+                        <li><strong>18th Summit:</strong> September 9-10, 2023 | Venue: <strong>Bharat Mandapam, New Delhi</strong>.</li>
+                        <li><strong>Key Outcome:</strong> <strong>Delhi Declaration</strong> adopted by consensus despite geopolitical tensions (Ukraine, climate finance, Global South representation).</li>
+                        <li><strong>Why important for UPSC?</strong> → Tests understanding of multilateral diplomacy, India's foreign policy, global governance, climate-economy nexus, Global South leadership.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Key Concepts -->
+        <section class="study-section collapsible" data-section="2">
+            <button class="section-header" onclick="toggleSection(2)">
+                <span class="section-number">2️⃣</span>
+                <span class="section-title">Key Concepts (Bullet Points)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-2">
+                <div class="content-box">
+                    <h3>📌 G20 Structure</h3>
+                    <ul class="bullet-list">
+                        <li><strong>Members:</strong> Argentina, Australia, Brazil, Canada, China, France, Germany, India, Indonesia, Italy, Japan, Mexico, Russia, Saudi Arabia, South Africa, South Korea, Turkey, UK, USA + EU + AU (from 2023)</li>
+                        <li><strong>Working Groups:</strong> Finance Track (Sherpas), Engagement Groups (B20, C20, L20, T20, W20, Y20, S20, U20)</li>
+                        <li><strong>Decision-Making:</strong> Consensus-based; no binding treaties but strong political commitment</li>
+                    </ul>
+
+                    <h3>📌 Delhi Declaration: Key Outcomes</h3>
+                    <ul class="bullet-list">
+                        <li><strong>African Union Membership:</strong> AU admitted as permanent G20 member → Historic expansion of Global South representation</li>
+                        <li><strong>Climate Finance:</strong> Commitment to operationalize Loss & Damage Fund; triple renewable capacity by 2030; accelerate just energy transitions</li>
+                        <li><strong>Digital Public Infrastructure (DPI):</strong> Global framework for inclusive digital systems (UPI, Aadhaar model); G20 DPI Repository launched</li>
+                        <li><strong>SDG Acceleration:</strong> Call for $4 trillion/year investment in SDGs; debt relief for vulnerable nations; food security initiatives</li>
+                        <li><strong>Ukraine Conflict:</strong> Balanced language: "All states must refrain from threat or use of force"; humanitarian concerns emphasized; no explicit condemnation of Russia</li>
+                        <li><strong>Green Development Pact:</strong> Sustainable lifestyle (LiFE), circular economy, biodiversity conservation, plastic pollution treaty support</li>
+                    </ul>
+
+                    <h3>📌 India's Leadership Highlights</h3>
+                    <ul class="bullet-list">
+                        <li><strong>Inclusive Agenda:</strong> First G20 meeting in Kashmir (Srinagar); focus on Global South, women-led development, digital inclusion</li>
+                        <li><strong>Consensus Building:</strong> Navigated US-China-Russia tensions; secured declaration adoption after 12-hour negotiations</li>
+                        <li><strong>Legacy Initiatives:</strong> Global Biofuels Alliance, One Sun One World One Grid (OSOWOG), Disaster Resilient Infrastructure Coalition</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Important Facts for Prelims -->
+        <section class="study-section collapsible" data-section="3">
+            <button class="section-header" onclick="toggleSection(3)">
+                <span class="section-number">3️⃣</span>
+                <span class="section-title">Important Facts for Prelims</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-3">
+                <div class="content-box prelims-box">
+                    <div class="fact-grid">
+                        <div class="fact-item">
+                            <span class="fact-label">G20 Founded</span>
+                            <span class="fact-value">1999</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-label">India's Presidency</span>
+                            <span class="fact-value">Dec 2022-Nov 2023</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-label">18th Summit</span>
+                            <span class="fact-value">Sep 9-10, 2023</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-label">New Member</span>
+                            <span class="fact-value">African Union</span>
+                        </div>
+                    </div>
+                    
+                    <h3>✅ Quick Facts</h3>
+                    <ul class="bullet-list">
+                        <li><strong>Theme:</strong> "Vasudhaiva Kutumbakam" (One Earth, One Family, One Future)</li>
+                        <li><strong>Venue:</strong> Bharat Mandapam, Pragati Maidan, New Delhi</li>
+                        <li><strong>Logo:</strong> Earth with lotus + India's colors + G20 in Devanagari</li>
+                        <li><strong>Mascot:</strong> "Tara" the turtle + "Gullu" the squirrel (biodiversity symbols)</li>
+                        <li><strong>Firsts:</strong> First G20 meeting in Kashmir; first with AU as member; first with explicit DPI focus</li>
+                    </ul>
+
+                    <h3>✅ Key Numbers</h3>
+                    <ul class="bullet-list">
+                        <li>G20 represents: ~85% global GDP, ~75% global trade, ~2/3 world population</li>
+                        <li>Loss & Damage Fund: Initial pledges >$700 million (UAE, Germany, UK, etc.)</li>
+                        <li>Renewable Target: Triple global capacity to 11,000 GW by 2030</li>
+                        <li>SDG Financing Gap: $4 trillion/year needed in developing countries</li>
+                    </ul>
+
+                    <div class="highlight-box">
+                        <strong>💡 Prelims Trap:</strong> G20 has <strong>no permanent secretariat</strong> — presidency rotates annually; decisions are <strong>non-binding</strong> but politically significant.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Detailed Explanation for Mains -->
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">Detailed Explanation for Mains</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
+                <div class="content-box mains-box">
+                    <h3>🎯 G20 Delhi Declaration: Multi-Dimensional Analysis</h3>
+                    
+                    <div class="mains-subsection">
+                        <h4>🔹 Diplomatic Achievement: Consensus Amid Fragmentation</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Geopolitical Context:</strong> Ukraine war, US-China rivalry, North-South divide made consensus difficult; India's neutral stance and shuttle diplomacy bridged gaps.</li>
+                            <li><strong>Language Compromise:</strong> Ukraine paragraph avoided naming Russia; focused on humanitarian law, food/energy security — acceptable to all members.</li>
+                            <li><strong>Global South Voice:</strong> AU membership, debt relief focus, climate justice language reflected India's "Voice of Global South" initiative.</li>
+                        </ul>
+                    </div>
+
+                    <div class="mains-subsection">
+                        <h4>🔹 Climate & Development: Balancing Ambition & Equity</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Loss & Damage Fund:</strong> Operationalization agreed; but <strong>no binding contribution formula</strong> — developed nations' historical responsibility remains contested.</li>
+                            <li><strong>Renewable Energy:</strong> Triple capacity target ambitious but lacks <strong>finance/technology transfer mechanism</strong> for developing nations.</li>
+                            <li><strong>Just Transition:</strong> Acknowledges "differentiated responsibilities"; protects India's right to use coal for development while committing to net-zero by 2070.</li>
+                        </ul>
+                    </div>
+
+                    <div class="mains-subsection">
+                        <h4>🔹 Digital Public Infrastructure: India's Soft Power Export</h4>
+                        <ul class="bullet-list">
+                            <li><strong>DPI Framework:</strong> G20 endorsed principles for inclusive, interoperable digital systems (identity, payments, data governance).</li>
+                            <li><strong>UPI Globalization:</strong> Partnerships with France, Singapore, UAE; potential for cross-border payments, financial inclusion in Global South.</li>
+                            <li><strong>Challenges:</strong> Data sovereignty concerns, digital divide, need for capacity building in least developed countries.</li>
+                        </ul>
+                    </div>
+
+                    <div class="mains-subsection">
+                        <h4>🔹 Critical Challenges & Way Forward</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Implementation Gap:</strong> G20 declarations lack enforcement; depends on national political will and domestic capacity.</li>
+                            <li><strong>Finance Shortfall:</strong> Climate/SDG commitments require $4T/year; current pledges <10% of need; reform of multilateral development banks essential.</li>
+                            <li><strong>Geopolitical Risks:</strong> Future presidencies (Brazil 2024, South Africa 2025) may face similar consensus challenges amid great power competition.</li>
+                        </ul>
+                        <h4 style="margin-top: 1rem; color: var(--primary-color);">🔹 Mains Answer Framework</h4>
+                        <ol class="numbered-list">
+                            <li><strong>Contextualize:</strong> G20's role in global governance; India's strategic objectives as president.</li>
+                            <li><strong>Analyze Outcomes:</strong> AU membership (representation), DPI (innovation), climate finance (equity), Ukraine (diplomacy).</li>
+                            <li><strong>Critically Evaluate:</strong> Implementation challenges, finance gaps, geopolitical constraints.</li>
+                            <li><strong>Way Forward:</strong> Strengthen MDBs, operationalize DPI repository, build coalitions for climate action, leverage G20 for SDG acceleration.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Examples / Case Studies -->
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)">
+                <span class="section-number">5️⃣</span>
+                <span class="section-title">Examples / Case Studies</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-5">
+                <div class="content-box">
+                    <div class="case-study">
+                        <h4>📌 Case 1: African Union Membership – Symbolic & Strategic</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Context:</strong> Africa (54 nations, 1.4B people) had no permanent G20 seat despite climate vulnerability, resource wealth.</li>
+                            <li><strong>Outcome:</strong> AU admitted as 21st member → Enhances Global South voice in economic governance.</li>
+                            <li><strong>UPSC Link:</strong> Multilateral reform + India's Global South leadership + Africa-India partnership (capacity building, trade, diaspora).</li>
+                        </ul>
+                    </div>
+
+                    <div class="case-study">
+                        <h4>📌 Case 2: Digital Public Infrastructure – UPI as Diplomatic Tool</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Context:</strong> India's UPI processes 11B+ monthly transactions; low-cost, interoperable, inclusive.</li>
+                            <li><strong>Outcome:</strong> G20 DPI Repository launched; France, Singapore, UAE integrating UPI; World Bank supporting DPI adoption in Africa.</li>
+                            <li><strong>UPSC Link:</strong> Technology diplomacy + Financial inclusion + Soft power export + Data governance models.</li>
+                        </ul>
+                    </div>
+
+                    <div class="case-study">
+                        <h4>📌 Case 3: Climate Finance – Loss & Damage Fund Operationalization</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Context:</strong> COP27 (2022) agreed to establish fund; G20 Delhi Declaration accelerated operational details.</li>
+                            <li><strong>Outcome:</strong> Interim secretariat at World Bank; initial pledges >$700M; focus on vulnerable nations (SIDS, LDCs).</li>
+                            <li><strong>UPSC Link:</strong> Climate justice + North-South equity + India's climate diplomacy (LiFE, net-zero 2070) + SDG 13.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: MCQs -->
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)">
+                <span class="section-number">6️⃣</span>
+                <span class="section-title">5 MCQs with Answers</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-6">
+                <div class="content-box mcq-box">
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q1.</strong> With reference to the G20, consider the following statements:<br>
+                        1. The G20 was formed in response to the 2008 global financial crisis.<br>
+                        2. The G20 has a permanent secretariat based in Geneva.<br>
+                        3. The African Union was admitted as a permanent member during India's presidency.<br><br>
+                        Which of the statements given above are correct?</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q1" value="a"> (a) 1 and 2 only</label>
+                            <label><input type="radio" name="q1" value="b"> (b) 2 and 3 only</label>
+                            <label><input type="radio" name="q1" value="c"> (c) 3 only</label>
+                            <label><input type="radio" name="q1" value="d"> (d) 1, 2 and 3</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q1">
+                            <p><strong>✅ Answer:</strong> (c) 3 only</p>
+                            <p><strong>💡 Explanation:</strong> G20 was founded in <strong>1999</strong> (not 2008) after Asian financial crisis. It has <strong>no permanent secretariat</strong> — presidency rotates. AU was indeed admitted during India's 2023 presidency. ✓</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q1')">Show Answer</button>
+                    </div>
+
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q2.</strong> The theme of India's G20 Presidency (2023) was:</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q2" value="a"> (a) Building a Sustainable Future</label>
+                            <label><input type="radio" name="q2" value="b"> (b) Vasudhaiva Kutumbakam: One Earth, One Family, One Future</label>
+                            <label><input type="radio" name="q2" value="c"> (c) Inclusive Growth for All</label>
+                            <label><input type="radio" name="q2" value="d"> (d) Climate Action and Digital Transformation</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q2">
+                            <p><strong>✅ Answer:</strong> (b) Vasudhaiva Kutumbakam: One Earth, One Family, One Future</p>
+                            <p><strong>💡 Explanation:</strong> India's G20 theme drew from ancient Indian philosophy emphasizing global unity and shared responsibility.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q2')">Show Answer</button>
+                    </div>
+
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q3.</strong> Which of the following was NOT a key outcome of the G20 Delhi Declaration (2023)?</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q3" value="a"> (a) Admission of African Union as permanent member</label>
+                            <label><input type="radio" name="q3" value="b"> (b) Launch of Global Biofuels Alliance</label>
+                            <label><input type="radio" name="q3" value="c"> (c) Binding commitment to phase out coal by 2030</label>
+                            <label><input type="radio" name="q3" value="d"> (d) Endorsement of Digital Public Infrastructure framework</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q3">
+                            <p><strong>✅ Answer:</strong> (c) Binding commitment to phase out coal by 2030</p>
+                            <p><strong>💡 Explanation:</strong> The Declaration supported "accelerating efforts towards phasing down unabated coal" but with <strong>no binding timeline</strong>; recognized "differentiated responsibilities" and development needs of emerging economies.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q3')">Show Answer</button>
+                    </div>
+
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q4.</strong> Consider the following pairs:<br>
+                        Initiative | G20 Outcome<br>
+                        1. Loss & Damage Fund | Operationalization agreed with interim World Bank hosting<br>
+                        2. Triple Renewable Capacity | Target of 11,000 GW by 2030 endorsed<br>
+                        3. Digital Public Infrastructure | G20 DPI Repository launched for knowledge sharing<br><br>
+                        How many pairs are correctly matched?</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q4" value="a"> (a) Only one</label>
+                            <label><input type="radio" name="q4" value="b"> (b) Only two</label>
+                            <label><input type="radio" name="q4" value="c"> (c) All three</label>
+                            <label><input type="radio" name="q4" value="d"> (d) None</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q4">
+                            <p><strong>✅ Answer:</strong> (c) All three</p>
+                            <p><strong>💡 Explanation:</strong> All three initiatives were explicitly endorsed in the Delhi Declaration with concrete implementation steps.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q4')">Show Answer</button>
+                    </div>
+
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q5.</strong> The G20 represents approximately what share of global GDP and world population?</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q5" value="a"> (a) 70% GDP, 50% population</label>
+                            <label><input type="radio" name="q5" value="b"> (b) 85% GDP, 66% population</label>
+                            <label><input type="radio" name="q5" value="c"> (c) 90% GDP, 75% population</label>
+                            <label><input type="radio" name="q5" value="d"> (d) 80% GDP, 60% population</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q5">
+                            <p><strong>✅ Answer:</strong> (b) 85% GDP, 66% population</p>
+                            <p><strong>💡 Explanation:</strong> G20 members account for ~85% of global GDP, ~75% of global trade, and ~2/3 (66%) of world population — making it the premier forum for international economic cooperation.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q5')">Show Answer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: Quick Revision Notes -->
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)">
+                <span class="section-number">7️⃣</span>
+                <span class="section-title">Quick Revision Notes</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-7">
+                <div class="content-box revision-box">
+                    <h3>🔁 G20 Summit in 10 Seconds</h3>
+                    <ul class="revision-list">
+                        <li><strong>Founded:</strong> 1999 | <strong>India Presidency:</strong> Dec 2022-Nov 2023</li>
+                        <li><strong>Theme:</strong> "Vasudhaiva Kutumbakam" (One Earth, One Family, One Future)</li>
+                        <li><strong>Summit:</strong> 18th | Sep 9-10, 2023 | New Delhi (Bharat Mandapam)</li>
+                        <li><strong>Big Win:</strong> African Union admitted as permanent member</li>
+                        <li><strong>Climate:</strong> Loss & Damage Fund operationalized; triple renewables by 2030</li>
+                        <li><strong>Tech:</strong> Digital Public Infrastructure (DPI) framework + Repository launched</li>
+                        <li><strong>SDGs:</strong> $4T/year financing gap highlighted; debt relief for vulnerable nations</li>
+                        <li><strong>Ukraine:</strong> Balanced language: "Refrain from force"; humanitarian focus</li>
+                    </ul>
+
+                    <h3>🧠 Mnemonic: "G20 INDIA DELHI"</h3>
+                    <div class="mnemonic-box">
+                        <p><strong>G</strong> → Global South representation (AU membership)</p>
+                        <p><strong>2</strong> → 2 tracks: Finance + Sherpa; 20 members + AU</p>
+                        <p><strong>0</strong> → Zero binding treaties, but strong political commitment</p>
+                        <br>
+                        <p><strong>I</strong> → Inclusive agenda: Women-led development, DPI, LiFE</p>
+                        <p><strong>N</strong> → Net-zero by 2070 (India's climate pledge)</p>
+                        <p><strong>D</strong> → Delhi Declaration: Consensus amid fragmentation</p>
+                        <p><strong>I</strong> → Implementation gap: Finance shortfall, enforcement challenge</p>
+                        <p><strong>A</strong> → AU admission: Historic expansion of Global South voice</p>
+                        <br>
+                        <p><strong>D</strong> → DPI: Digital Public Infrastructure as soft power</p>
+                        <p><strong>E</strong> → Equity: Climate justice, differentiated responsibilities</p>
+                        <p><strong>L</strong> → Loss & Damage Fund: Operationalized with World Bank</p>
+                        <p><strong>H</strong> → Humanitarian focus on Ukraine, food/energy security</p>
+                        <p><strong>I</strong> → India's leadership: Bridge-builder, consensus architect</p>
+                    </div>
+
+                    <h3>📌 Prelims Traps to Avoid</h3>
+                    <ul class="warning-list">
+                        <li>✘ G20 founded in <strong>1999</strong> (not 2008)</li>
+                        <li>✘ G20 has <strong>no permanent secretariat</strong> (presidency rotates)</li>
+                        <li>✘ Decisions are <strong>non-binding</strong> (political commitment only)</li>
+                        <li>✘ AU admitted in <strong>2023</strong> (not earlier)</li>
+                        <li>✘ "Phasing down" coal ≠ "Phasing out" (nuanced language)</li>
+                    </ul>
+
+                    <h3>🎯 Mains One-Liners</h3>
+                    <ul class="bullet-list">
+                        <li>"G20 Delhi Declaration = Diplomatic consensus + Developmental equity + Digital innovation"</li>
+                        <li>"AU membership = Symbolic inclusion + Strategic rebalancing of global governance"</li>
+                        <li>"DPI framework = India's soft power export + Inclusive digital globalization"</li>
+                        <li>"Climate finance gap = $4T need vs <$1T pledge = Implementation challenge"</li>
+                        <li>"India's presidency = Bridge-building amid fragmentation + Global South amplification"</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation Footer -->
+        <div class="page-navigation">
+            <a href="index.html" class="nav-btn">← Back to Current Affairs Index</a>
+            <button onclick="markAsComplete('CA-03')" class="nav-btn btn-success">✓ Mark as Complete</button>
+            <a href="brics-expansion.html" class="nav-btn">Next: CA-04 →</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>📄 Page Code: <strong>CA-03</strong> | Subject: Current Affairs + IR + Economy + Environment</p>
+            <p>🔗 Link to Syllabus: GS-2 (IR, Multilateralism), GS-3 (Climate, Digital Economy), Essay</p>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle Section
+        function toggleSection(sectionNum) {
+            const section = document.querySelector(`[data-section="${sectionNum}"]`);
+            const content = document.getElementById(`section-${sectionNum}`);
+            const header = section.querySelector('.section-header');
+            if (content.classList.contains('collapsed')) {
+                content.classList.remove('collapsed');
+                header.classList.remove('collapsed');
+            } else {
+                content.classList.add('collapsed');
+                header.classList.add('collapsed');
+            }
+        }
+        // Toggle All Sections
+        function toggleAllSections() {
+            const sections = document.querySelectorAll('.study-section');
+            const allCollapsed = Array.from(sections).every(s => s.querySelector('.section-content').classList.contains('collapsed'));
+            sections.forEach(section => {
+                const content = section.querySelector('.section-content');
+                const header = section.querySelector('.section-header');
+                if (allCollapsed) { content.classList.remove('collapsed'); header.classList.remove('collapsed'); }
+                else { content.classList.add('collapsed'); header.classList.add('collapsed'); }
+            });
+        }
+        // Show MCQ Answer
+        function showAnswer(questionId) {
+            const answerDiv = document.getElementById(`answer-${questionId}`);
+            const btn = event.target;
+            if (answerDiv.classList.contains('show')) { answerDiv.classList.remove('show'); btn.textContent = 'Show Answer'; }
+            else { answerDiv.classList.add('show'); btn.textContent = 'Hide Answer'; }
+        }
+        // Mark as Complete
+        function markAsComplete(pageCode) {
+            let completed = JSON.parse(localStorage.getItem('completedPages') || '[]');
+            if (!completed.includes(pageCode)) {
+                completed.push(pageCode);
+                localStorage.setItem('completedPages', JSON.stringify(completed));
+                const btn = event.target;
+                btn.textContent = '✓ Completed!';
+                btn.style.background = '#059669';
+                if (window.opener) { try { window.opener.updateMainProgress?.(); } catch(e) {} }
+            }
+        }
+        // Auto-expand first section
+        document.addEventListener('DOMContentLoaded', function() {
+            const first = document.querySelector('[data-section="1"]');
+            if (first) setTimeout(() => toggleSection(1), 300);
+        });
+        // Keyboard shortcuts
+        document.addEventListener('keydown', function(e) {
+            if ((e.ctrlKey || e.metaKey) && e.key === 'p') { e.preventDefault(); window.print(); }
+            if (e.key === ' ' && e.target === document.body) { e.preventDefault(); const f = document.querySelector('[data-section="1"]'); if (f) toggleSection(1); }
+        });
+    </script>
+</body>
+</html>

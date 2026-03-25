@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Affairs | UPSC Study Portal - 100 Topics</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* ===== CSS Variables ===== */
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #64748b;
+            --success-color: #10b981;
+            --warning-color: #f59e0b;
+            --danger-color: #ef4444;
+            --info-color: #06b6d4;
+            --purple-color: #8b5cf6;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --border-color: #e2e8f0;
+            --shadow: 0 1px 3px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1);
+        }
+
+        /* ===== Base Styles ===== */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        a { text-decoration: none; color: inherit; }
+
+        /* ===== Topic Hero ===== */
+        .topic-hero {
+            background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+            color: white;
+            padding: 3rem 0 2.5rem;
+        }
+        .breadcrumb-nav {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+            font-size: 0.875rem;
+        }
+        .breadcrumb-nav a { color: rgba(255, 255, 255, 0.9); }
+        .breadcrumb-nav a:hover { text-decoration: underline; }
+        .breadcrumb-nav .separator { color: rgba(255, 255, 255, 0.5); }
+        .breadcrumb-nav .current { color: white; font-weight: 600; }
+        .topic-hero-content { max-width: 800px; }
+        .topic-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        .topic-title { font-size: 2.5rem; font-weight: 800; margin: 0 0 1rem; }
+        .topic-description { font-size: 1.125rem; opacity: 0.95; margin: 0 0 2rem; line-height: 1.7; }
+        .topic-stats-bar { display: flex; gap: 2rem; flex-wrap: wrap; }
+        .topic-stats-bar .stat-item { text-align: center; }
+        .topic-stats-bar .stat-value { display: block; font-size: 1.75rem; font-weight: 800; }
+        .topic-stats-bar .stat-label { font-size: 0.875rem; opacity: 0.9; }
+
+        /* ===== Search & Filter ===== */
+        .search-filter-bar {
+            background: white;
+            border-bottom: 1px solid var(--border-color);
+            padding: 1.5rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 99;
+            box-shadow: var(--shadow);
+        }
+        .search-wrapper { position: relative; margin-bottom: 1rem; }
+        .search-icon {
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-secondary);
+        }
+        #topic-search {
+            width: 100%;
+            padding: 1rem 1rem 1rem 3.5rem;
+            border: 2px solid var(--border-color);
+            border-radius: 12px;
+            font-size: 1rem;
+            transition: all 0.2s;
+        }
+        #topic-search:focus { outline: none; border-color: var(--primary-color); }
+        .filter-tabs { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+        .filter-tab {
+            padding: 0.625rem 1.25rem;
+            background: var(--bg-color);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.2s;
+            color: var(--text-primary);
+        }
+        .filter-tab:hover { background: white; border-color: var(--primary-color); }
+        .filter-tab.active { background: var(--primary-color); color: white; border-color: var(--primary-color); }
+
+        /* ===== Blog Index ===== */
+        .blog-index { margin: 3rem 0; }
+        .blog-section { margin-bottom: 3rem; }
+        .section-label {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 2px solid var(--border-color);
+        }
+        .label-icon { font-size: 1.5rem; }
+        .section-label h2 { font-size: 1.25rem; font-weight: 700; color: var(--text-primary); margin: 0; }
+        .label-count {
+            background: var(--bg-color);
+            color: var(--text-secondary);
+            padding: 0.25rem 0.75rem;
+            border-radius: 50px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-left: auto;
+        }
+
+        /* ===== Blog Card ===== */
+        .blog-card {
+            background: white;
+            border: 2px solid var(--border-color);
+            border-radius: 16px;
+            margin-bottom: 1.5rem;
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+        .blog-card:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+            border-color: color-mix(in srgb, var(--card-color, var(--primary-color)) 50%, var(--border-color));
+        }
+        .blog-card.completed { border-left: 4px solid var(--success-color); }
+        .blog-card.priority { border-left: 4px solid var(--warning-color); }
+        .blog-card.recent { border-left: 4px solid var(--info-color); }
+        .blog-card.monthly { border-left: 4px solid var(--purple-color); }
+        .blog-card-content { padding: 1.5rem; }
+        .blog-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .blog-meta { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+        .blog-code {
+            background: var(--primary-color);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 0.875rem;
+        }
+        .blog-date { color: var(--text-secondary); font-size: 0.875rem; }
+        .blog-badge { padding: 0.25rem 0.75rem; border-radius: 50px; font-size: 0.75rem; font-weight: 600; }
+        .badge-success { background: #d1fae5; color: #065f46; }
+        .badge-warning { background: #fef3c7; color: #92400e; }
+        .badge-info { background: #dbeafe; color: #1e40af; }
+        .badge-primary { background: #3b82f6; color: white; }
+        .badge-secondary { background: #6b7280; color: white; }
+        .badge-purple { background: #a78bfa; color: #4c1d95; }
+        .blog-tags { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+        .blog-tags .tag {
+            background: var(--bg-color);
+            color: var(--text-secondary);
+            padding: 0.25rem 0.75rem;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+        .blog-title { font-size: 1.25rem; font-weight: 700; margin: 0 0 0.5rem; }
+        .blog-title a { color: var(--text-primary); transition: color 0.2s; }
+        .blog-title a:hover { color: var(--primary-color); }
+        .blog-excerpt { color: var(--text-secondary); line-height: 1.6; margin: 0 0 1.5rem; font-size: 0.9rem; }
+        .blog-card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border-color);
+        }
+        .blog-stats { display: flex; gap: 1.5rem; color: var(--text-secondary); font-size: 0.8rem; }
+        .read-more {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary-color);
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.2s;
+        }
+        .read-more:hover { gap: 0.75rem; }
+
+        /* ===== Footer ===== */
+        .page-footer {
+            background: white;
+            border-top: 1px solid var(--border-color);
+            padding: 2rem 0;
+            margin-top: 4rem;
+            text-align: center;
+            color: var(--text-secondary);
+        }
+
+        /* ===== Back Link ===== */
+        .back-link {
+            display: inline-block;
+            color: var(--primary-color);
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+        .back-link:hover { text-decoration: underline; }
+
+        /* ===== Responsive ===== */
+        @media (max-width: 768px) {
+            .topic-title { font-size: 1.75rem; }
+            .topic-stats-bar { gap: 1rem; }
+            .blog-card-header { flex-direction: column; align-items: flex-start; }
+            .blog-card-footer { flex-direction: column; align-items: flex-start; }
+            .filter-tabs { overflow-x: auto; padding-bottom: 0.5rem; }
+        }
+
+        /* ===== Section Colors for Cards ===== */
+        .card-economy { --card-color: #ef4444; }
+        .card-env { --card-color: #10b981; }
+        .card-ir { --card-color: #8b5cf6; }
+        .card-polity { --card-color: #f59e0b; }
+        .card-tech { --card-color: #06b6d4; }
+        .card-social { --card-color: #ec4899; }
+    </style>
+</head>
+<body class="topic-index-page">
+    <header class="topic-hero">
+        <div class="container">
+            <div class="breadcrumb-nav">
+                <a href="../index.html">🏠 Home</a>
+                <span class="separator">/</span>
+                <span class="current">Current Affairs</span>
+            </div>
+            <div class="topic-hero-content">
+                <div class="topic-badge">📰 100 High-Yield Topics</div>
+                <h1 class="topic-title">Current Affairs</h1>
+                <p class="topic-description">
+                    Comprehensive coverage of dynamic topics with direct links to static syllabus. 
+                    Updated monthly with Prelims facts, Mains analysis, and MCQs.
+                </p>
+                <div class="topic-stats-bar">
+                    <div class="stat-item">
+                        <span class="stat-value">100</span>
+                        <span class="stat-label">Total Topics</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">2</span>
+                        <span class="stat-label">Completed</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">2%</span>
+                        <span class="stat-label">Progress</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="search-filter-bar">
+        <div class="container">
+            <div class="search-wrapper">
+                <svg class="search-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M17.5 17.5L13.875 13.875M15.8333 9.58333C15.8333 13.6334 12.5501 16.9167 8.5 16.9167C4.44991 16.9167 1.16667 13.6334 1.16667 9.58333C1.16667 5.53325 4.44991 2.25 8.5 2.25C12.5501 2.25 15.8333 5.53325 15.8333 9.58333Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <input type="text" id="topic-search" placeholder="🔍 Search 100 topics (e.g., 'G20', 'DPDP', 'Green Hydrogen')...">
+            </div>
+            <div class="filter-tabs">
+                <button class="filter-tab active" data-filter="all">All (100)</button>
+                <button class="filter-tab" data-filter="completed">✓ Completed (2)</button>
+                <button class="filter-tab" data-filter="priority">🔥 High Priority (15)</button>
+                <button class="filter-tab" data-filter="economy">💰 Economy</button>
+                <button class="filter-tab" data-filter="env">🌿 Environment</button>
+                <button class="filter-tab" data-filter="ir">🌏 IR</button>
+                <button class="filter-tab" data-filter="polity">⚖️ Polity</button>
+                <button class="filter-tab" data-filter="tech">🔬 S&T</button>
+            </div>
+        </div>
+    </div>
+
+    <main class="container">
+        <div class="blog-index">
+            
+            <!-- ✅ Completed -->
+            <section class="blog-section">
+                <div class="section-label">
+                    <span class="label-icon">✅</span>
+                    <h2>Completed Topics</h2>
+                    <span class="label-count">2 topics</span>
+                </div>
+                
+                <article class="blog-card completed card-economy" data-category="completed" data-filter="economy ir" data-tags="trade uae economy ir fta">
+                    <div class="blog-card-content">
+                        <div class="blog-card-header">
+                            <div class="blog-meta">
+                                <span class="blog-code">CA-01</span>
+                                <span class="blog-date">📅 Feb 2022</span>
+                                <span class="blog-badge badge-success">✓ Completed</span>
+                            </div>
+                            <div class="blog-tags">
+                                <span class="tag">Trade</span>
+                                <span class="tag">High Yield</span>
+                            </div>
+                        </div>
+                        <h3 class="blog-title"><a href="india-uae-cepa.html">India–UAE Trade Agreement</a></h3>
+                        <p class="blog-excerpt">CEPA: 97.4% UAE tariff lines duty-free, 110+ services sectors, $100B non-oil trade target by 2030. UPI integration, Rules of Origin, MSME framework.</p>
+                        <div class="blog-card-footer">
+                            <div class="blog-stats"><span>⏱️ 30 min</span><span>📝 5 MCQs</span></div>
+                            <a href="india-uae-cepa.html" class="read-more">Review →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card completed card-economy" data-category="completed" data-filter="economy ir" data-tags="trade eu economy ir fta btia">
+                    <div class="blog-card-content">
+                        <div class="blog-card-header">
+                            <div class="blog-meta">
+                                <span class="blog-code">CA-02</span>
+                                <span class="blog-date">📅 Ongoing</span>
+                                <span class="blog-badge badge-success">✓ Completed</span>
+                            </div>
+                            <div class="blog-tags">
+                                <span class="tag">Trade</span>
+                                <span class="tag">BTIA</span>
+                            </div>
+                        </div>
+                        <h3 class="blog-title"><a href="india-eu-free-trade-talks.html">India–EU Free Trade Talks</a></h3>
+                        <p class="blog-excerpt">BTIA negotiations resumed 2022: tariff elimination, services access, investment protection. Key issues: data localization, GIs, SPS standards. Target: €300B trade by 2030.</p>
+                        <div class="blog-card-footer">
+                            <div class="blog-stats"><span>⏱️ 35 min</span><span>📝 5 MCQs</span></div>
+                            <a href="india-eu-free-trade-talks.html" class="read-more">Review →</a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <!-- 🔥 High Priority -->
+            <section class="blog-section">
+                <div class="section-label">
+                    <span class="label-icon">🔥</span>
+                    <h2>High Priority Topics</h2>
+                    <span class="label-count">15 topics</span>
+                </div>
+                
+                <article class="blog-card priority card-ir" data-category="priority" data-filter="ir" data-tags="g20 multilateral summit diplomacy">
+                    <div class="blog-card-content">
+                        <div class="blog-card-header">
+                            <div class="blog-meta">
+                                <span class="blog-code">CA-03</span>
+                                <span class="blog-date">📅 Sep 2023</span>
+                                <span class="blog-badge badge-warning">⚡ High Priority</span>
+                            </div>
+                            <div class="blog-tags"><span class="tag">Multilateral</span><span class="tag">IR</span></div>
+                        </div>
+                        <h3 class="blog-title"><a href="g20-summit.html">G20 Summit Outcomes</a></h3>
+                        <p class="blog-excerpt">Delhi Declaration: African Union permanent membership, climate finance, digital public infrastructure, SDG acceleration, food security, Ukraine conflict mention.</p>
+                        <div class="blog-card-footer">
+                            <div class="blog-stats"><span>⏱️ 25 min</span><span>📝 5 MCQs</span></div>
+                            <a href="g20-summit.html" class="read-more">Start Reading →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card priority card-ir" data-category="priority" data-filter="ir" data-tags="brics expansion global south multipolar">
+                    <div class="blog-card-content">
+                        <div class="blog-card-header">
+                            <div class="blog-meta">
+                                <span class="blog-code">CA-04</span>
+                                <span class="blog-date">📅 Jan 2024</span>
+                                <span class="blog-badge badge-warning">⚡ High Priority</span>
+                            </div>
+                            <div class="blog-tags"><span class="tag">BRICS</span><span class="tag">IR</span></div>
+                        </div>
+                        <h3 class="blog-title"><a href="brics-expansion.html">BRICS Expansion</a></h3>
+                        <p class="blog-excerpt">New members: Egypt, Ethiopia, Iran, UAE (2024). De-dollarization debate, New Development Bank, Global South representation, challenges of cohesion.</p>
+                        <div class="blog-card-footer">
+                            <div class="blog-stats"><span>⏱️ 20 min</span><span>📝 5 MCQs</span></div>
+                            <a href="brics-expansion.html" class="read-more">Start Reading →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card priority card-ir" data-category="priority" data-filter="ir" data-tags="china border ladakh galwan diplomacy">
+                    <div class="blog-card-content">
+                        <div class="blog-card-header">
+                            <div class="blog-meta">
+                                <span class="blog-code">CA-05</span>
+                                <span class="blog-date">📅 Ongoing</span>
+                                <span class="blog-badge badge-warning">⚡ High Priority</span>
+                            </div>
+                            <div class="blog-tags"><span class="tag">Security</span><span class="tag">IR</span></div>
+                        </div>
+                        <h3 class="blog-title"><a href="india-china-border-updates.html">India–China Border Issue Update</a></h3>
+                        <p class="blog-excerpt">LAC disengagement progress, 21 rounds of corps commander talks, infrastructure development, strategic implications, Quad synergy, economic decoupling trends.</p>
+                        <div class="blog-card-footer">
+                            <div class="blog-stats"><span>⏱️ 30 min</span><span>📝 5 MCQs</span></div>
+                            <a href="india-china-border-updates.html" class="read-more">Start Reading →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card priority card-ir" data-category="priority" data-filter="ir" data-tags="us strategic partnership quad i2u2">
+                    <div class="blog-card-content">
+                        <div class="blog-card-header">
+                            <div class="blog-meta">
+                                <span class="blog-code">CA-06</span>
+                                <span class="blog-date">📅 2023-24</span>
+                                <span class="blog-badge badge-warning">⚡ High Priority</span>
+                            </div>
+                            <div class="blog-tags"><span class="tag">Strategic</span><span class="tag">IR</span></div>
+                        </div>
+                        <h3 class="blog-title"><a href="india-usa-partnership.html">India–US Strategic Partnership</a></h3>
+                        <p class="blog-excerpt">iCET initiative, defence tech cooperation, semiconductor alliance, clean energy partnership, diaspora engagement, balancing strategic autonomy.</p>
+                        <div class="blog-card-footer">
+                            <div class="blog-stats"><span>⏱️ 25 min</span><span>📝 5 MCQs</span></div>
+                            <a href="india-usa-partnership.html" class="read-more">Start Reading →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card priority card-tech" data-category="priority" data-filter="tech economy" data-tags="semiconductor pli chips make in india">
+                    <div class="blog-card-content">
+                        <div class="blog-card-header">
+                            <div class="blog-meta">
+                                <span class="blog-code">CA-07</span>
+                                <span class="blog-date">📅 2023-24</span>
+                                <span class="blog-badge badge-warning">⚡ High Priority</span>
+                            </div>
+                            <div class="blog-tags"><span class="tag">S&T</span><span class="tag">Economy</span></div>
+                        </div>
+                        <h3 class="blog-title"><a href="semiconductor-mission-india.html">Semiconductor Mission India</a></h3>
+                        <p class="blog-excerpt">₹76,000 Cr incentive scheme, fab investments (Tata-PSMC, ISMC), ATMP units, design-linked incentives, supply chain resilience, skill development.</p>
+                        <div class="blog-card-footer">
+                            <div class="blog-stats"><span>⏱️ 20 min</span><span>📝 5 MCQs</span></div>
+                            <a href="semiconductor-mission-india.html" class="read-more">Start Reading →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card priority card-env" data-category="priority" data-filter="env economy" data-tags="green hydrogen renewable energy climate">
+                    <div class="blog-card-content">
+                        <div class="blog-card-header">
+                            <div class="blog-meta">
+                                <span class="blog-code">CA-08</span>
+                                <span class="blog-date">📅 Jan 2023</span>
+                                <span class="blog-badge badge-warning">⚡ High Priority</span>
+                            </div>
+                            <div class="blog-tags"><span class="tag">Environment</span><span class="tag">Energy</span></div>
+                        </div>
+                        <h3 class="blog-title"><a href="national-green-hydrogen-mission-india.html">National Green Hydrogen Mission</a></h3>
+                        <p class="blog-excerpt">₹19,744 Cr outlay, 5 MMT production target by 2030, SIGHT programme, green hydrogen hubs, export potential, decarbonization of industry/transport.</p>
+                        <div class="blog-card-footer">
+                            <div class="blog-stats"><span>⏱️ 25 min</span><span>📝 5 MCQs</span></div>
+                            <a href="national-green-hydrogen-mission-india.html" class="read-more">Start Reading →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card priority card-polity" data-category="priority" data-filter="polity tech" data-tags="dpdp data privacy digital rights">
+                    <div class="blog-card-content">
+                        <div class="blog-card-header">
+                            <div class="blog-meta">
+                                <span class="blog-code">CA-09</span>
+                                <span class="blog-date">📅 Aug 2023</span>
+                                <span class="blog-badge badge-warning">⚡ High Priority</span>
+                            </div>
+                            <div class="blog-tags"><span class="tag">Polity</span><span class="tag">Digital</span></div>
+                        </div>
+                        <h3 class="blog-title"><a href="digital-personal-data-protection-act.html">Digital Personal Data Protection Act</a></h3>
+                        <p class="blog-excerpt">Data principal rights, fiduciary obligations, Data Protection Board, cross-border transfers, penalties, exemptions for state, comparisons with GDPR.</p>
+                        <div class="blog-card-footer">
+                            <div class="blog-stats"><span>⏱️ 30 min</span><span>📝 5 MCQs</span></div>
+                            <a href="digital-personal-data-protection-act.html" class="read-more">Start Reading →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card priority card-polity" data-category="priority" data-filter="polity" data-tags="ucc constitution uniform civil code">
+                    <div class="blog-card-content">
+                        <div class="blog-card-header">
+                            <div class="blog-meta">
+                                <span class="blog-code">CA-10</span>
+                                <span class="blog-date">📅 Ongoing</span>
+                                <span class="blog-badge badge-warning">⚡ High Priority</span>
+                            </div>
+                            <div class="blog-tags"><span class="tag">Polity</span><span class="tag">Social</span></div>
+                        </div>
+                        <h3 class="blog-title"><a href="uniform-civil-code-debate.html">Uniform Civil Code Debate</a></h3>
+                        <p class="blog-excerpt">Article 44 DPSP, Law Commission consultations, gender justice vs religious freedom, Goa model, federalism concerns, political dimensions.</p>
+                        <div class="blog-card-footer">
+                            <div class="blog-stats"><span>⏱️ 25 min</span><span>📝 5 MCQs</span></div>
+                            <a href="uniform-civil-code-debate.html" class="read-more">Start Reading →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card priority card-polity" data-category="priority" data-filter="polity" data-tags="one nation one election simultaneity constitution">
+                    <div class="blog-card-content">
+                        <div class="blog-card-header">
+                            <div class="blog-meta">
+                                <span class="blog-code">CA-11</span>
+                                <span class="blog-date">📅 2024</span>
+                                <span class="blog-badge badge-warning">⚡ High Priority</span>
+                            </div>
+                            <div class="blog-tags"><span class="tag">Polity</span><span class="tag">Reform</span></div>
+                        </div>
+                        <h3 class="blog-title"><a href="one-nation-one-election.html">One Nation One Election</a></h3>
+                        <p class="blog-excerpt">High-Level Committee report, constitutional amendments needed, pros (cost, governance) vs cons (federalism, accountability), implementation roadmap.</p>
+                        <div class="blog-card-footer">
+                            <div class="blog-stats"><span>⏱️ 30 min</span><span>📝 5 MCQs</span></div>
+                            <a href="one-nation-one-election.html" class="read-more">Start Reading →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card priority card-tech" data-category="priority" data-filter="tech" data-tags="space policy isro private sector">
+                    <div class="blog-card-content">
+                        <div class="blog-card-header">
+                            <div class="blog-meta">
+                                <span class="blog-code">CA-12</span>
+                                <span class="blog-date">📅 2023</span>
+                                <span class="blog-badge badge-warning">⚡ High Priority</span>
+                            </div>
+                            <div class="blog-tags"><span class="tag">S&T</span><span class="tag">Policy</span></div>
+                        </div>
+                        <h3 class="blog-title"><a href="indian-space-policy.html">India's Space Policy 2023</a></h3>
+                        <p class="blog-excerpt">Private sector participation, IN-SPACe role, technology transfer, commercialization, security dimensions, global competitiveness.</p>
+                        <div class="blog-card-footer">
+                            <div class="blog-stats"><span>⏱️ 20 min</span><span>📝 5 MCQs</span></div>
+                            <a href="indian-space-policy.html" class="read-more">Start Reading →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card priority card-tech" data-category="priority" data-filter="tech" data-tags="chandrayaan isro moon south pole">
+                    <div class="blog-card-content">
+                        <div class="blog-card-header">
+                            <div class="blog-meta">
+                                <span class="blog-code">CA-13</span>
+                                <span class="blog-date">📅 Aug 2023</span>
+                                <span class="blog-badge badge-warning">⚡ High Priority</span>
+                            </div>
+                            <div class="blog-tags"><span class="tag">Space</span><span class="tag">S&T</span></div>
+                        </div>
+                        <h3 class="blog-title"><a href="chandrayan-updates.html">Chandrayaan-3 Updates</a></h3>
+                        <p class="blog-excerpt">First landing near lunar south pole, Pragyan rover findings, water ice confirmation, technology demonstrations, international collaborations.</p>
+                        <div class="blog-card-footer">
+                            <div class="blog-stats"><span>⏱️ 20 min</span><span>📝 5 MCQs</span></div>
+                            <a href="chandrayan-updates.html" class="read-more">Start Reading →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card priority card-tech" data-category="priority" data-filter="tech env" data-tags="aditya l1 solar mission isro">
+                    <div class="blog-card-content">
+                        <div class="blog-card-header">
+                            <div class="blog-meta">
+                                <span class="blog-code">CA-14</span>
+                                <span class="blog-date">📅 Sep 2023</span>
+                                <span class="blog-badge badge-warning">⚡ High Priority</span>
+                            </div>
+                            <div class="blog-tags"><span class="tag">Space</span><span class="tag">Science</span></div>
+                        </div>
+                        <h3 class="blog-title"><a href="ca-14-aditya-l1.html">Aditya L1 Mission</a></h3>
+                        <p class="blog-excerpt">India's first solar observatory at L1 point, 7 payloads, coronal studies, space weather forecasting, climate linkages, international significance.</p>
+                        <div class="blog-card-footer">
+                            <div class="blog-stats"><span>⏱️ 20 min</span><span>📝 5 MCQs</span></div>
+                            <a href="ca-14-aditya-l1.html" class="read-more">Start Reading →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card priority card-polity" data-category="priority" data-filter="polity" data-tags="nep education reform 2020">
+                    <div class="blog-card-content">
+                        <div class="blog-card-header">
+                            <div class="blog-meta">
+                                <span class="blog-code">CA-15</span>
+                                <span class="blog-date">📅 2020-24</span>
+                                <span class="blog-badge badge-warning">⚡ High Priority</span>
+                            </div>
+                            <div class="blog-tags"><span class="tag">Polity</span><span class="tag">Social</span></div>
+                        </div>
+                        <h3 class="blog-title"><a href="ca-15-nep-implementation.html">New Education Policy Implementation</a></h3>
+                        <p class="blog-excerpt">5+3+3+4 structure, NEP 2020 reforms, multidisciplinary education, vocational integration, technology in education, challenges in federal implementation.</p>
+                        <div class="blog-card-footer">
+                            <div class="blog-stats"><span>⏱️ 25 min</span><span>📝 5 MCQs</span></div>
+                            <a href="ca-15-nep-implementation.html" class="read-more">Start Reading →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card priority card-economy" data-category="priority" data-filter="economy" data-tags="logistics policy infrastructure gati shakti">
+                    <div class="blog-card-content">
+                        <div class="blog-card-header">
+                            <div class="blog-meta">
+                                <span class="blog-code">CA-16</span>
+                                <span class="blog-date">📅 Sep 2022</span>
+                                <span class="blog-badge badge-warning">⚡ High Priority</span>
+                            </div>
+                            <div class="blog-tags"><span class="tag">Economy</span><span class="tag">Infrastructure</span></div>
+                        </div>
+                        <h3 class="blog-title"><a href="ca-16-logistics-policy.html">National Logistics Policy</a></h3>
+                        <p class="blog-excerpt">ULIP platform, logistics cost reduction target (13%→8%), multimodal integration, warehousing standards, ease of doing business impact.</p>
+                        <div class="blog-card-footer">
+                            <div class="blog-stats"><span>⏱️ 20 min</span><span>📝 5 MCQs</span></div>
+                            <a href="ca-16-logistics-policy.html" class="read-more">Start Reading →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card priority card-economy" data-category="priority" data-filter="economy" data-tags="gati shakti infrastructure pm">
+                    <div class="blog-card-content">
+                        <div class="blog-card-header">
+                            <div class="blog-meta">
+                                <span class="blog-code">CA-17</span>
+                                <span class="blog-date">📅 Oct 2021</span>
+                                <span class="blog-badge badge-warning">⚡ High Priority</span>
+                            </div>
+                            <div class="blog-tags"><span class="tag">Economy</span><span class="tag">Infrastructure</span></div>
+                        </div>
+                        <h3 class="blog-title"><a href="ca-17-pm-gati-shakti.html">PM Gati Shakti</a></h3>
+                        <p class="blog-excerpt">₹100 lakh Cr infrastructure push, digital platform for planning, 7 engines (roads, railways, ports, etc.), last-mile connectivity, job creation.</p>
+                        <div class="blog-card-footer">
+                            <div class="blog-stats"><span>⏱️ 20 min</span><span>📝 5 MCQs</span></div>
+                            <a href="ca-17-pm-gati-shakti.html" class="read-more">Start Reading →</a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <!-- 🆕 Recent Additions (Sample of 20) -->
+            <section class="blog-section">
+                <div class="section-label">
+                    <span class="label-icon">🆕</span>
+                    <h2>Recent Additions</h2>
+                    <span class="label-count">20 topics</span>
+                </div>
+                
+                <!-- Economy & Policy -->
+                <article class="blog-card recent card-economy" data-category="recent" data-filter="economy" data-tags="startup india entrepreneurship">
+                    <div class="blog-card-content">
+                        <div class="blog-card-header">
+                            <div class="blog-meta"><span class="blog-code">CA-18</span><span class="blog-date">📅 2024</span><span class="blog-badge badge-info">New</span></div>
+                            <div class="blog-tags"><span class="tag">Economy</span><span class="tag">Startup</span></div>
+                        </div>
+                        <h3 class="blog-title"><a href="ca-18-startup-india.html">Startup India Updates</a></h3>
+                        <p class="blog-excerpt">100+ unicorns, fund of funds, tax benefits, regulatory sandbox, challenges: profitability, global competition, exit mechanisms.</p>
+                        <div class="blog-card-footer">
+                            <div class="blog-stats"><span>⏱️ 15 min</span><span>📝 5 MCQs</span></div>
+                            <a href="ca-18-startup-india.html" class="read-more">Read →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card recent card-tech" data-category="recent" data-filter="tech" data-tags="india ai mission artificial intelligence">
+                    <div class="blog-card-content">
+                        <div class="blog-card-header">
+                            <div class="blog-meta"><span class="blog-code">CA-19</span><span class="blog-date">📅 2024</span><span class="blog-badge badge-info">New</span></div>
+                            <div class="blog-tags"><span class="tag">S&T</span><span class="tag">AI</span></div>
+                        </div>
+                        <h3 class="blog-title"><a href="ca-19-india-ai-mission.html">India AI Mission</a></h3>
+                        <p class="blog-excerpt">₹10,000 Cr outlay, compute infrastructure, datasets, skilling, startup support, ethical AI framework, global positioning.</p>
+                        <div class="blog-card-footer">
+                            <div class="blog-stats"><span>⏱️ 20 min</span><span>📝 5 MCQs</span></div>
+                            <a href="ca-19-india-ai-mission.html" class="read-more">Read →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card recent card-tech" data-category="recent" data-filter="tech polity" data-tags="deepfake regulation ai ethics">
+                    <div class="blog-card-content">
+                        <div class="blog-card-header">
+                            <div class="blog-meta"><span class="blog-code">CA-20</span><span class="blog-date">📅 2024</span><span class="blog-badge badge-info">New</span></div>
+                            <div class="blog-tags"><span class="tag">S&T</span><span class="tag">Regulation</span></div>
+                        </div>
+                        <h3 class="blog-title"><a href="ca-20-deepfake-regulation.html">Deepfake Regulation in India</a></h3>
+                        <p class="blog-excerpt">IT Rules amendments, watermarking requirements, platform liability, criminal provisions, balance with innovation, global approaches.</p>
+                        <div class="blog-card-footer">
+                            <div class="blog-stats"><span>⏱️ 15 min</span><span>📝 5 MCQs</span></div>
+                            <a href="ca-20-deepfake-regulation.html" class="read-more">Read →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card recent card-tech" data-category="recent" data-filter="tech" data-tags="cybersecurity cert-in data protection">
+                    <div class="blog-card-content">
+                        <div class="blog-card-header">
+                            <div class="blog-meta"><span class="blog-code">CA-21</span><span class="blog-date">📅 2024</span><span class="blog-badge badge-info">New</span></div>
+                            <div class="blog-tags"><span class="tag">S&T</span><span class="tag">Security</span></div>
+                        </div>
+                        <h3 class="blog-title"><a href="ca-21-cybersecurity-policy.html">Cybersecurity Policy India</a></h3>
+                        <p class="blog-excerpt">CERT-In directives, critical infrastructure protection, cyber crisis management, public-private partnership, skill development.</p>
+                        <div class="blog-card-footer">
+                            <div class="blog-stats"><span>⏱️ 20 min</span><span>📝 5 MCQs</span></div>
+                            <a href="ca-21-cybersecurity-policy.html" class="read-more">Read →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card recent card-tech" data-category="recent" data-filter="tech" data-tags="quantum mission science technology">
+                    <div class="blog-card-content">
+                        <div class="blog-card-header">
+                            <div class="blog-meta"><span class="blog-code">CA-22</span><span class="blog-date">📅 2023</span><span class="blog-badge badge-info">New</span></div>
+                            <div class="blog-tags"><span class="tag">S&T</span><span class="tag">Research</span></div>
+                        </div>
+                        <h3 class="blog-title"><a href="ca-22-quantum-mission.html">National Quantum Mission</a></h3>
+                        <p class="blog-excerpt">₹6,000 Cr, quantum computing, communication, sensing, materials, ecosystem development, strategic applications.</p>
+                        <div class="blog-card-footer">
+                            <div class="blog-stats"><span>⏱️ 20 min</span><span>📝 5 MCQs</span></div>
+                            <a href="ca-22-quantum-mission.html" class="read-more">Read →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Environment & Climate -->
+                <article class="blog-card recent card-env" data-category="recent" data-filter="env" data-tags="electric vehicle policy ev">
+                    <div class="blog-card-content">
+                        <div class="blog-card-header">
+                            <div class="blog-meta"><span class="blog-code">CA-23</span><span class="blog-date">📅 2024</span><span class="blog-badge badge-info">New</span></div>
+                            <div class="blog-tags"><span class="tag">Environment</span><span class="tag">Transport</span></div>
+                        </div>
+                        <h3 class="blog-title"><a href="ca-23-ev-policy.html">Electric Vehicle Policy India</a></h3>
+                        <p class="blog-excerpt">FAME-II extensions, PLI for ACC batteries, charging infrastructure, state policies, challenges: cost, range, grid readiness.</p>
+                        <div class="blog-card-footer">
+                            <div class="blog-stats"><span>⏱️ 20 min</span><span>📝 5 MCQs</span></div>
+                            <a href="ca-23-ev-policy.html" class="read-more">Read →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card recent card-economy" data-category="recent" data-filter="economy env" data-tags="lithium discovery jammu kashmir">
+                    <div class="blog-card-content">
+                        <div class="blog-card-header">
+                            <div class="blog-meta"><span class="blog-code">CA-24</span><span class="blog-date">📅 Feb 2023</span><span class="blog-badge badge-info">New</span></div>
+                            <div class="blog-tags"><span class="tag">Economy</span><span class="tag">Resources</span></div>
+                        </div>
+                        <h3 class="blog-title"><a href="ca-24-lithium-discovery.html">Lithium Discoveries in India</a></h3>
+                        <p class="blog-excerpt">Reasi (J&K) reserves, strategic importance for EVs, extraction challenges, environmental concerns, import dependence reduction.</p>
+                        <div class="blog-card-footer">
+                            <div class="blog-stats"><span>⏱️ 15 min</span><span>📝 5 MCQs</span></div>
+                            <a href="ca-24-lithium-discovery.html" class="read-more">Read →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card recent card-env" data-category="recent" data-filter="env" data-tags="green energy corridor renewable">
+                    <div class="blog-card-content">
+                        <div class="blog-card-header">
+                            <div class="blog-meta"><span class="blog-code">CA-25</span><span class="blog-date">📅 2023</span><span class="blog-badge badge-info">New</span></div>
+                            <div class="blog-tags"><span class="tag">Environment</span><span class="tag">Energy</span></div>
+                        </div>
+                        <h3 class="blog-title"><a href="ca-25-green-energy-corridor.html">Green Energy Corridor</a></h3>
+                        <p class="blog-excerpt">Transmission infrastructure for renewable integration, interstate connectivity, grid stability, investment requirements, phasing.</p>
+                        <div class="blog-card-footer">
+                            <div class="blog-stats"><span>⏱️ 15 min</span><span>📝 5 MCQs</span></div>
+                            <a href="ca-25-green-energy-corridor.html" class="read-more">Read →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card recent card-env" data-category="recent" data-filter="env economy" data-tags="carbon credit trading scheme">
+                    <div class="blog-card-content">
+                        <div class="blog-card-header">
+                            <div class="blog-meta"><span class="blog-code">CA-26</span><span class="blog-date">📅 2023</span><span class="blog-badge badge-info">New</span></div>
+                            <div class="blog-tags"><span class="tag">Environment</span><span class="tag">Market</span></div>
+                        </div>
+                        <h3 class="blog-title"><a href="ca-26-carbon-credit.html">Carbon Credit Trading Scheme</a></h3>
+                        <p class="blog-excerpt">Domestic carbon market framework, compliance/voluntary segments, registry, verification, linkage with global markets, industry impact.</p>
+                        <div class="blog-card-footer">
+                            <div class="blog-stats"><span>⏱️ 20 min</span><span>📝 5 MCQs</span></div>
+                            <a href="ca-26-carbon-credit.html" class="read-more">Read →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card recent card-env" data-category="recent" data-filter="env ir" data-tags="cop climate summit unfcc">
+                    <div class="blog-card-content">
+                        <div class="blog-card-header">
+                            <div class="blog-meta"><span class="blog-code">CA-27</span><span class="blog-date">📅 Annual</span><span class="blog-badge badge-info">New</span></div>
+                            <div class="blog-tags"><span class="tag">Environment</span><span class="tag">IR</span></div>
+                        </div>
+                        <h3 class="blog-title"><a href="ca-27-cop-summit.html">COP Climate Summit Outcomes</a></h3>
+                        <p class="blog-excerpt">Latest COP decisions: loss & damage fund, mitigation ambition, climate finance, adaptation, India's position, implementation challenges.</p>
+                        <div class="blog-card-footer">
+                            <div class="blog-stats"><span>⏱️ 25 min</span><span>📝 5 MCQs</span></div>
+                            <a href="ca-27-cop-summit.html" class="read-more">Read →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- International Relations -->
+                <article class="blog-card recent card-ir" data-category="recent" data-filter="ir" data-tags="net zero target climate pledge">
+                    <div class="blog-card-content">
+                        <div class="blog-card-header">
+                            <div class="blog-meta"><span class="blog-code">CA-28</span><span class="blog-date">📅 2021</span><span class="blog-badge badge-info">New</span></div>
+                            <div class="blog-tags"><span class="tag">Environment</span><span class="tag">IR</span></div>
+                        </div>
+                        <h3 class="blog-title"><a href="ca-28-india-net-zero.html">India's Net Zero Target</a></h3>
+                        <p class="blog-excerpt">2070 target, Panchamrit strategy, renewable capacity, green hydrogen, carbon sinks, equity principles, finance needs.</p>
+                        <div class="blog-card-footer">
+                            <div class="blog-stats"><span>⏱️ 20 min</span><span>📝 5 MCQs</span></div>
+                            <a href="ca-28-india-net-zero.html" class="read-more">Read →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card recent card-ir" data-category="recent" data-filter="ir" data-tags="unsc reform security council">
+                    <div class="blog-card-content">
+                        <div class="blog-card-header">
+                            <div class="blog-meta"><span class="blog-code">CA-45</span><span class="blog-date">📅 Ongoing</span><span class="blog-badge badge-info">New</span></div>
+                            <div class="blog-tags"><span class="tag">IR</span><span class="tag">UN</span></div>
+                        </div>
+                        <h3 class="blog-title"><a href="ca-45-unsc-reform.html">UN Security Council Reform</a></h3>
+                        <p class="blog-excerpt">India's candidacy, G4 coalition, veto power debate, representation of Global South, procedural hurdles, geopolitical dynamics.</p>
+                        <div class="blog-card-footer">
+                            <div class="blog-stats"><span>⏱️ 20 min</span><span>📝 5 MCQs</span></div>
+                            <a href="ca-45-unsc-reform.html" class="read-more">Read →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card recent card-ir" data-category="recent" data-filter="ir" data-tags="india africa relations diplomacy">
+                    <div class="blog-card-content">
+                        <div class="blog-card-header">
+                            <div class="blog-meta"><span class="blog-code">CA-46</span><span class="blog-date">📅 2024</span><span class="blog-badge badge-info">New</span></div>
+                            <div class="blog-tags"><span class="tag">IR</span><span class="tag">Africa</span></div>
+                        </div>
+                        <h3 class="blog-title"><a href="ca-46-india-africa.html">India–Africa Relations</a></h3>
+                        <p class="blog-excerpt">Summit outcomes, development partnership, trade/investment, capacity building, diaspora, counter to China's influence.</p>
+                        <div class="blog-card-footer">
+                            <div class="blog-stats"><span>⏱️ 20 min</span><span>📝 5 MCQs</span></div>
+                            <a href="ca-46-india-africa.html" class="read-more">Read →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card recent card-ir" data-category="recent" data-filter="ir" data-tags="imec india middle east europe corridor">
+                    <div class="blog-card-content">
+                        <div class="blog-card-header">
+                            <div class="blog-meta"><span class="blog-code">CA-47</span><span class="blog-date">📅 Sep 2023</span><span class="blog-badge badge-info">New</span></div>
+                            <div class="blog-tags"><span class="tag">IR</span><span class="tag">Infrastructure</span></div>
+                        </div>
+                        <h3 class="blog-title"><a href="ca-47-imec-corridor.html">India–Middle East Corridor</a></h3>
+                        <p class="blog-excerpt">IMEC: route, participants, economic/strategic significance, challenges, China's BRI counter, multi-modal integration.</p>
+                        <div class="blog-card-footer">
+                            <div class="blog-stats"><span>⏱️ 25 min</span><span>📝 5 MCQs</span></div>
+                            <a href="ca-47-imec-corridor.html" class="read-more">Read →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card recent card-ir" data-category="recent" data-filter="ir" data-tags="quad quadrilateral security dialogue">
+                    <div class="blog-card-content">
+                        <div class="blog-card-header">
+                            <div class="blog-meta"><span class="blog-code">CA-49</span><span class="blog-date">📅 2024</span><span class="blog-badge badge-info">New</span></div>
+                            <div class="blog-tags"><span class="tag">IR</span><span class="tag">Security</span></div>
+                        </div>
+                        <h3 class="blog-title"><a href="ca-49-quad-developments.html">Quad Group Developments</a></h3>
+                        <p class="blog-excerpt">Summit outcomes, critical tech, climate, health security, infrastructure, Indo-Pacific strategy, balancing act with strategic autonomy.</p>
+                        <div class="blog-card-footer">
+                            <div class="blog-stats"><span>⏱️ 20 min</span><span>📝 5 MCQs</span></div>
+                            <a href="ca-49-quad-developments.html" class="read-more">Read →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Polity & Governance -->
+                <article class="blog-card recent card-polity" data-category="recent" data-filter="polity" data-tags="women reservation bill constitution">
+                    <div class="blog-card-content">
+                        <div class="blog-card-header">
+                            <div class="blog-meta"><span class="blog-code">CA-65</span><span class="blog-date">📅 Sep 2023</span><span class="blog-badge badge-info">New</span></div>
+                            <div class="blog-tags"><span class="tag">Polity</span><span class="tag">Gender</span></div>
+                        </div>
+                        <h3 class="blog-title"><a href="ca-65-women-reservation.html">Women Reservation Bill</a></h3>
+                        <p class="blog-excerpt">128th Constitutional Amendment, 33% reservation in Lok Sabha/Assemblies, implementation timeline, sub-reservation debate, political consensus.</p>
+                        <div class="blog-card-footer">
+                            <div class="blog-stats"><span>⏱️ 20 min</span><span>📝 5 MCQs</span></div>
+                            <a href="ca-65-women-reservation.html" class="read-more">Read →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card recent card-polity" data-category="recent" data-filter="polity" data-tags="labour codes employment reform">
+                    <div class="blog-card-content">
+                        <div class="blog-card-header">
+                            <div class="blog-meta"><span class="blog-code">CA-67</span><span class="blog-date">📅 2020-24</span><span class="blog-badge badge-info">New</span></div>
+                            <div class="blog-tags"><span class="tag">Polity</span><span class="tag">Labour</span></div>
+                        </div>
+                        <h3 class="blog-title"><a href="ca-67-labour-codes.html">Labour Codes India</a></h3>
+                        <p class="blog-excerpt">4 codes consolidating 29 laws, social security expansion, gig worker recognition, ease of compliance, state ratification status.</p>
+                        <div class="blog-card-footer">
+                            <div class="blog-stats"><span>⏱️ 25 min</span><span>📝 5 MCQs</span></div>
+                            <a href="ca-67-labour-codes.html" class="read-more">Read →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Environment & Geography -->
+                <article class="blog-card recent card-env" data-category="recent" data-filter="env" data-tags="heatwaves climate change india">
+                    <div class="blog-card-content">
+                        <div class="blog-card-header">
+                            <div class="blog-meta"><span class="blog-code">CA-72</span><span class="blog-date">📅 2024</span><span class="blog-badge badge-info">New</span></div>
+                            <div class="blog-tags"><span class="tag">Environment</span><span class="tag">Climate</span></div>
+                        </div>
+                        <h3 class="blog-title"><a href="ca-72-heatwaves-india.html">Heatwaves in India</a></h3>
+                        <p class="blog-excerpt">Increasing frequency/intensity, health impacts, vulnerable sections, early warning systems, adaptation measures, urban planning.</p>
+                        <div class="blog-card-footer">
+                            <div class="blog-stats"><span>⏱️ 15 min</span><span>📝 5 MCQs</span></div>
+                            <a href="ca-72-heatwaves-india.html" class="read-more">Read →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card recent card-env" data-category="recent" data-filter="env" data-tags="air pollution delhi ncap">
+                    <div class="blog-card-content">
+                        <div class="blog-card-header">
+                            <div class="blog-meta"><span class="blog-code">CA-73</span><span class="blog-date">📅 Annual</span><span class="blog-badge badge-info">New</span></div>
+                            <div class="blog-tags"><span class="tag">Environment</span><span class="tag">Urban</span></div>
+                        </div>
+                        <h3 class="blog-title"><a href="ca-73-air-pollution-delhi.html">Air Pollution Crisis Delhi</a></h3>
+                        <p class="blog-excerpt">AQI trends, GRAP implementation, stubble burning, vehicular/industrial emissions, judicial interventions, long-term solutions.</p>
+                        <div class="blog-card-footer">
+                            <div class="blog-stats"><span>⏱️ 20 min</span><span>📝 5 MCQs</span></div>
+                            <a href="ca-73-air-pollution-delhi.html" class="read-more">Read →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card recent card-env" data-category="recent" data-filter="env" data-tags="river linking interlinking water">
+                    <div class="blog-card-content">
+                        <div class="blog-card-header">
+                            <div class="blog-meta"><span class="blog-code">CA-74</span><span class="blog-date">📅 Ongoing</span><span class="blog-badge badge-info">New</span></div>
+                            <div class="blog-tags"><span class="tag">Geography</span><span class="tag">Water</span></div>
+                        </div>
+                        <h3 class="blog-title"><a href="ca-74-river-linking.html">River Linking Project</a></h3>
+                        <p class="blog-excerpt">National Perspective Plan, Himalayan/Peninsular components, benefits (irrigation, flood control), challenges (ecological, federal, cost).</p>
+                        <div class="blog-card-footer">
+                            <div class="blog-stats"><span>⏱️ 25 min</span><span>📝 5 MCQs</span></div>
+                            <a href="ca-74-river-linking.html" class="read-more">Read →</a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <!-- 🗓️ Monthly Compilations -->
+            <section class="blog-section">
+                <div class="section-label">
+                    <span class="label-icon">🗓️</span>
+                    <h2>Monthly Compilations</h2>
+                    <span class="label-count">12 compilations</span>
+                </div>
+                
+                <article class="blog-card monthly" data-category="monthly" data-filter="all" data-tags="march 2026 compilation monthly">
+                    <div class="blog-card-content">
+                        <div class="blog-card-header">
+                            <div class="blog-meta">
+                                <span class="blog-code">CA-MAR26</span>
+                                <span class="blog-date">📅 March 2026</span>
+                                <span class="blog-badge badge-purple">Latest</span>
+                            </div>
+                            <div class="blog-tags"><span class="tag">Compilation</span><span class="tag">30 Stories</span></div>
+                        </div>
+                        <h3 class="blog-title"><a href="ca-monthly-mar-2026.html">March 2026 Compilation</a></h3>
+                        <p class="blog-excerpt">Top 30 stories across Polity, Economy, IR, S&T, Environment. Includes Prelims facts, Mains pointers, MCQs, and syllabus linkages.</p>
+                        <div class="blog-card-footer">
+                            <div class="blog-stats"><span>⏱️ 60 min</span><span>📝 20 MCQs</span></div>
+                            <a href="ca-monthly-mar-2026.html" class="read-more">View Compilation →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card monthly" data-category="monthly" data-filter="all" data-tags="february 2026 compilation monthly">
+                    <div class="blog-card-content">
+                        <div class="blog-card-header">
+                            <div class="blog-meta">
+                                <span class="blog-code">CA-FEB26</span>
+                                <span class="blog-date">📅 February 2026</span>
+                                <span class="blog-badge badge-secondary">Archive</span>
+                            </div>
+                            <div class="blog-tags"><span class="tag">Compilation</span><span class="tag">30 Stories</span></div>
+                        </div>
+                        <h3 class="blog-title"><a href="ca-monthly-feb-2026.html">February 2026 Compilation</a></h3>
+                        <p class="blog-excerpt">Budget 2026 highlights, Economic Survey, important judgments, international events, science developments with exam focus.</p>
+                        <div class="blog-card-footer">
+                            <div class="blog-stats"><span>⏱️ 60 min</span><span>📝 20 MCQs</span></div>
+                            <a href="ca-monthly-feb-2026.html" class="read-more">View Compilation →</a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <!-- 📚 Thematic Index (Remaining Topics Preview) -->
+            <section class="blog-section">
+                <div class="section-label">
+                    <span class="label-icon">📚</span>
+                    <h2>Complete Topic List (100)</h2>
+                    <span class="label-count">All categories</span>
+                </div>
+                
+                <div style="background: white; border-radius: 12px; padding: 1.5rem; border: 1px solid var(--border-color);">
+                    <p style="margin-bottom: 1rem; color: var(--text-secondary);">
+                        <strong>💡 Tip:</strong> Use the search bar above to find any of the 100 topics instantly. 
+                        Topics are tagged by category for easy filtering.
+                    </p>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 0.75rem; font-size: 0.85rem;">
+                        <!-- Economy (25 topics) -->
+                        <div><strong>💰 Economy:</strong> CA-01,02,07,16,17,18,24,26,29-38</div>
+                        <div><strong>🌿 Environment:</strong> CA-08,23,25-28,72-85</div>
+                        <div><strong>🌏 IR:</strong> CA-03-06,27-28,45-55</div>
+                        <div><strong>⚖️ Polity:</strong> CA-09-11,15,60-71</div>
+                        <div><strong>🔬 S&T:</strong> CA-12-14,19-22,86-95</div>
+                        <div><strong>👥 Social:</strong> CA-40-44,56-59,96-100</div>
+                    </div>
+                    
+                    <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border-color);">
+                        <p style="font-size: 0.9rem; color: var(--text-secondary);">
+                            <strong>📋 Full Topic Codes:</strong><br>
+                            CA-01 to CA-100 covering: Trade Agreements, Multilateral Forums, Border Issues, Strategic Partnerships, 
+                            Tech Missions, Climate Policies, Data Laws, Constitutional Debates, Social Reforms, Global Crises, 
+                            Regional Relations, Economic Reforms, Environmental Challenges, and more.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>📁 Current Affairs Index | 100 Topics Target</p>
+            <p>💡 Tip: Link every news item to static syllabus (Polity/Economy/IR/Environment)</p>
+            <p style="margin-top: 0.5rem; font-size: 0.85rem;">Last Updated: March 2026 | Next Update: April 2026</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchInput = document.getElementById('topic-search');
+            const filterTabs = document.querySelectorAll('.filter-tab');
+            const blogCards = document.querySelectorAll('.blog-card');
+            
+            // Search functionality
+            searchInput?.addEventListener('input', function(e) {
+                const query = e.target.value.toLowerCase();
+                
+                blogCards.forEach(card => {
+                    const title = card.querySelector('.blog-title')?.textContent.toLowerCase() || '';
+                    const excerpt = card.querySelector('.blog-excerpt')?.textContent.toLowerCase() || '';
+                    const tags = card.dataset.tags || '';
+                    const code = card.querySelector('.blog-code')?.textContent.toLowerCase() || '';
+                    
+                    if (title.includes(query) || excerpt.includes(query) || tags.includes(query) || code.includes(query)) {
+                        card.style.display = '';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+            
+            // Filter tabs functionality
+            filterTabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    // Update active tab
+                    filterTabs.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    const filter = this.dataset.filter;
+                    
+                    blogCards.forEach(card => {
+                        if (filter === 'all') {
+                            card.style.display = '';
+                        } else if (filter === 'completed' && card.classList.contains('completed')) {
+                            card.style.display = '';
+                        } else if (filter === 'priority' && card.classList.contains('priority')) {
+                            card.style.display = '';
+                        } else if (filter === 'recent' && card.classList.contains('recent')) {
+                            card.style.display = '';
+                        } else if (filter === 'monthly' && card.classList.contains('monthly')) {
+                            card.style.display = '';
+                        } else if (card.dataset.filter?.includes(filter)) {
+                            // Category filter (economy, env, ir, polity, tech)
+                            card.style.display = '';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // Update stats dynamically (optional)
+            function updateStats() {
+                const completed = document.querySelectorAll('.blog-card.completed').length;
+                const total = 100;
+                const percentage = ((completed / total) * 100).toFixed(1);
+                
+                document.querySelector('.stat-value:nth-child(2)')?.textContent = completed;
+                document.querySelector('.stat-value:nth-child(3)')?.textContent = percentage + '%';
+            }
+            
+            // Initialize
+            updateStats();
+        });
+    </script>
+</body>
+</html>

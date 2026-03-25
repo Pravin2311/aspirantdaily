@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CA-07: India-EU FTA Talks | UPSC Study Notes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* ===== CSS Variables ===== */
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #64748b;
+            --success-color: #10b981;
+            --warning-color: #f59e0b;
+            --danger-color: #ef4444;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --border-color: #e2e8f0;
+            --shadow: 0 1px 3px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1);
+        }
+        /* ===== Base Styles ===== */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg-color); color: var(--text-primary); line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        /* ===== Study Nav ===== */
+        .study-nav { background: var(--card-bg); border-bottom: 1px solid var(--border-color); padding: 1rem 0; position: sticky; top: 0; z-index: 100; box-shadow: var(--shadow); }
+        .study-nav .container { display: flex; justify-content: space-between; align-items: center; }
+        .back-link { color: var(--primary-color); text-decoration: none; font-weight: 500; }
+        .nav-controls { display: flex; gap: 1rem; }
+        .btn-primary, .btn-secondary { padding: 0.5rem 1rem; border: none; border-radius: 6px; font-weight: 500; cursor: pointer; transition: all 0.2s; }
+        .btn-primary { background: var(--primary-color); color: white; }
+        .btn-primary:hover { background: #1d4ed8; }
+        .btn-secondary { background: var(--bg-color); color: var(--text-primary); border: 1px solid var(--border-color); }
+        .btn-secondary:hover { background: var(--border-color); }
+        
+        /* ===== Page Header ===== */
+        .page-header { background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%); padding: 2rem 0; border-bottom: 1px solid var(--border-color); }
+        .breadcrumb { color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .breadcrumb a { color: var(--primary-color); text-decoration: none; }
+        .page-header h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+        .page-subtitle { color: var(--text-secondary); font-size: 1.125rem; margin-bottom: 1rem; }
+        .page-meta { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+        .badge { padding: 0.375rem 0.875rem; border-radius: 20px; font-size: 0.875rem; font-weight: 500; }
+        .badge-primary { background: #dbeafe; color: #1e40af; }
+        .badge-secondary { background: #f1f5f9; color: #475569; }
+        .badge-success { background: #d1fae5; color: #065f46; }
+        
+        /* ===== Keywords Box ===== */
+        .keywords-box { background: #fef3c7; border-left: 4px solid var(--warning-color); padding: 1rem; margin: 2rem 0; border-radius: 0 8px 8px 0; font-size: 0.9rem; }
+        
+        /* ===== Study Sections ===== */
+        .study-section { background: var(--card-bg); border-radius: 12px; margin: 1.5rem 0; box-shadow: var(--shadow); overflow: hidden; }
+        .section-header { width: 100%; padding: 1.25rem 1.5rem; background: var(--card-bg); border: none; display: flex; align-items: center; gap: 1rem; cursor: pointer; font-size: 1.125rem; font-weight: 600; color: var(--text-primary); transition: all 0.2s; }
+        .section-header:hover { background: var(--bg-color); }
+        .section-number { font-size: 1.5rem; }
+        .toggle-icon { margin-left: auto; transition: transform 0.3s; }
+        .section-header.collapsed .toggle-icon { transform: rotate(-90deg); }
+        .section-content { max-height: 2000px; overflow: hidden; transition: max-height 0.3s ease; }
+        .section-content.collapsed { max-height: 0; }
+        .content-box { padding: 1.5rem; }
+        
+        /* ===== Lists ===== */
+        .simple-list, .bullet-list, .numbered-list { margin: 1rem 0; padding-left: 1.5rem; }
+        .simple-list li, .bullet-list li { margin: 0.75rem 0; line-height: 1.7; }
+        .bullet-list li { list-style: disc; }
+        .numbered-list li { list-style: decimal; margin: 1rem 0; }
+        
+        /* ===== Prelims Box ===== */
+        .prelims-box { background: #eff6ff; border-radius: 8px; padding: 1.5rem; }
+        .fact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+        .fact-item { background: white; padding: 1rem; border-radius: 8px; text-align: center; }
+        .fact-label { display: block; color: var(--text-secondary); font-size: 0.875rem; margin-bottom: 0.25rem; }
+        .fact-value { display: block; font-weight: 700; color: var(--primary-color); font-size: 1.125rem; }
+        .highlight-box { background: #fef3c7; border-left: 4px solid var(--warning-color); padding: 1rem; margin-top: 1rem; border-radius: 0 8px 8px 0; }
+        
+        /* ===== Mains Box ===== */
+        .mains-box { background: #f8fafc; }
+        .mains-subsection { margin: 1.5rem 0; padding: 1.25rem; background: white; border-radius: 8px; }
+        .mains-subsection h4 { color: var(--primary-color); margin-bottom: 0.75rem; font-size: 1rem; }
+        
+        /* ===== Case Studies ===== */
+        .case-study { background: #f0fdf4; border: 1px solid #86efac; border-radius: 8px; padding: 1.25rem; margin: 1rem 0; }
+        .case-study h4 { color: #166534; margin-bottom: 0.75rem; }
+        
+        /* ===== MCQ Section ===== */
+        .mcq-box { background: #fefce8; }
+        .mcq-item { background: white; padding: 1.5rem; border-radius: 8px; margin: 1rem 0; }
+        .mcq-question { margin-bottom: 1rem; line-height: 1.7; }
+        .mcq-options { display: flex; flex-direction: column; gap: 0.5rem; margin: 1rem 0; }
+        .mcq-options label { display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem; border-radius: 6px; cursor: pointer; transition: background 0.2s; }
+        .mcq-options label:hover { background: var(--bg-color); }
+        .mcq-answer { display: none; background: #f0fdf4; border-left: 4px solid var(--success-color); padding: 1rem; margin: 1rem 0; border-radius: 0 8px 8px 0; }
+        .mcq-answer.show { display: block; }
+        .btn-show-answer { background: var(--primary-color); color: white; border: none; padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: 500; margin-top: 0.5rem; }
+        .btn-show-answer:hover { background: #1d4ed8; }
+        
+        /* ===== Revision Box ===== */
+        .revision-box { background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); border-radius: 8px; padding: 1.5rem; }
+        .revision-list { list-style: none; padding: 0; }
+        .revision-list li { padding: 0.5rem 0; border-bottom: 1px solid rgba(0,0,0,0.1); }
+        .revision-list li:last-child { border-bottom: none; }
+        .mnemonic-box { background: white; padding: 1rem; border-radius: 8px; margin: 1rem 0; font-family: 'Courier New', monospace; }
+        .warning-list { list-style: none; padding: 0; }
+        .warning-list li { padding: 0.5rem; background: #fee2e2; margin: 0.5rem 0; border-radius: 6px; color: #991b1b; }
+        
+        /* ===== Page Navigation ===== */
+        .page-navigation { display: flex; justify-content: space-between; gap: 1rem; margin: 2rem 0; flex-wrap: wrap; }
+        .nav-btn { flex: 1; min-width: 150px; padding: 1rem; text-align: center; background: var(--card-bg); border: 2px solid var(--border-color); border-radius: 8px; text-decoration: none; color: var(--text-primary); font-weight: 500; cursor: pointer; transition: all 0.2s; }
+        .nav-btn:hover { border-color: var(--primary-color); color: var(--primary-color); }
+        .btn-success { background: var(--success-color); color: white; border-color: var(--success-color); }
+        .btn-success:hover { background: #059669; color: white; }
+        .btn-disabled { opacity: 0.5; cursor: not-allowed; }
+        
+        /* ===== Footer ===== */
+        .page-footer { background: var(--bg-color); color: var(--text-secondary); border-top: 1px solid var(--border-color); padding: 2rem 0; text-align: center; margin-top: 3rem; }
+        
+        /* ===== Intro Box ===== */
+        .intro-box { background: #f0f9ff; border-left: 4px solid var(--primary-color); padding: 1.5rem; border-radius: 0 8px 8px 0; }
+        
+        /* ===== Responsive ===== */
+        @media (max-width: 768px) {
+            .page-header h1 { font-size: 1.5rem; }
+            .section-header { font-size: 1rem; padding: 1rem; }
+            .fact-grid { grid-template-columns: 1fr; }
+            .page-navigation { flex-direction: column; }
+        }
+        
+        /* ===== Print Styles ===== */
+        @media print {
+            .study-nav, .page-navigation, .btn-show-answer { display: none !important; }
+            .section-content { max-height: none !important; }
+            .toggle-icon { display: none; }
+            body { background: white; }
+            .study-section { break-inside: avoid; box-shadow: none; border: 1px solid #ddd; }
+        }
+    </style>
+</head>
+<body class="study-page">
+    <nav class="study-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Current Affairs Index</a>
+            <div class="nav-controls">
+                <button onclick="toggleAllSections()" class="btn-secondary">Expand/Collapse All</button>
+                <button onclick="window.print()" class="btn-primary">📄 Print/Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../index.html">Home</a> / 
+                <a href="index.html">Current Affairs</a> / 
+                <span>CA-07</span>
+            </div>
+            <h1>🇮🇳🇪🇺 India–EU Free Trade Talks</h1>
+            <p class="page-subtitle">Broad-based Trade and Investment Agreement (BTIA)</p>
+            <div class="page-meta">
+                <span class="badge badge-primary">High Yield</span>
+                <span class="badge badge-secondary">Economy + IR</span>
+                <span class="badge badge-warning">⚡ Ongoing</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="keywords-box">
+            <strong>🔍 Quick Search:</strong> 
+            What is India-EU FTA?, UPSC notes on BTIA, MCQs on India-EU trade, India-EU FTA explained simply
+        </section>
+
+        <!-- Section 1: Introduction -->
+        <section class="study-section collapsible" data-section="1">
+            <button class="section-header" onclick="toggleSection(1)">
+                <span class="section-number">1️⃣</span>
+                <span class="section-title">Introduction (Simple)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-1">
+                <div class="content-box intro-box">
+                    <ul class="simple-list">
+                        <li><strong>What is India-EU FTA?</strong> → A proposed comprehensive trade agreement (BTIA) between India and the European Union to boost trade, investment, and economic cooperation.</li>
+                        <li><strong>Timeline:</strong> Negotiations started 2007 → Paused 2013 → <strong>Resumed June 2022</strong></li>
+                        <li><strong>Goal:</strong> Eliminate tariffs, ease services trade, protect investments, and align standards to boost bilateral trade to €300 billion by 2030.</li>
+                        <li><strong>Why important for UPSC?</strong> → EU is India's 3rd largest trading partner; links Economy + IR + Current Affairs; tests understanding of trade negotiations, geopolitical strategy.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Key Concepts -->
+        <section class="study-section collapsible" data-section="2">
+            <button class="section-header" onclick="toggleSection(2)">
+                <span class="section-number">2️⃣</span>
+                <span class="section-title">Key Concepts (Bullet Points)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-2">
+                <div class="content-box">
+                    <h3>📌 Agreement Type</h3>
+                    <ul class="bullet-list">
+                        <li><strong>Broad-based Trade and Investment Agreement (BTIA)</strong> = FTA + Services + Investment + IPR + Sustainable Development + Customs cooperation</li>
+                        <li>Also covers: Government procurement, competition policy, digital trade, labour & environment standards</li>
+                    </ul>
+
+                    <h3>📌 Coverage Areas</h3>
+                    <ul class="bullet-list">
+                        <li><strong>Goods:</strong> Tariff elimination on ~90% of lines over 7-10 years; sensitive items (dairy, automobiles) may have longer phase-out</li>
+                        <li><strong>Services:</strong> Market access for IT, healthcare, finance, education, tourism; mutual recognition of professional qualifications</li>
+                        <li><strong>Investment:</strong> Protection clauses, dispute settlement mechanism, transparency in regulations</li>
+                        <li><strong>Rules of Origin:</strong> Prevents "third-country routing"; ensures only India/EU-origin goods get benefits</li>
+                        <li><strong>Sustainable Development:</strong> Commitments on climate action, labour rights, environmental protection</li>
+                    </ul>
+
+                    <h3>📌 Current Status (2026)</h3>
+                    <ul class="bullet-list">
+                        <li><strong>15+ rounds of negotiations</strong> completed since resumption in 2022</li>
+                        <li><strong>Key sticking points:</strong> Data localization, Geographical Indications (GIs), tariff peaks, procurement access</li>
+                        <li><strong>Parallel talks:</strong> Investment Protection Agreement (IPA) and Geographical Indications (GI) agreement being negotiated separately</li>
+                        <li><strong>Target:</strong> Conclude talks by end of 2026 (ambitious but challenging)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Important Facts for Prelims -->
+        <section class="study-section collapsible" data-section="3">
+            <button class="section-header" onclick="toggleSection(3)">
+                <span class="section-number">3️⃣</span>
+                <span class="section-title">Important Facts for Prelims</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-3">
+                <div class="content-box prelims-box">
+                    <div class="fact-grid">
+                        <div class="fact-item">
+                            <span class="fact-label">Negotiations Started</span>
+                            <span class="fact-value">2007</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-label">Resumed</span>
+                            <span class="fact-value">June 2022</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-label">EU Rank for India</span>
+                            <span class="fact-value">3rd Largest Partner</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-label">Trade Target</span>
+                            <span class="fact-value">€300B by 2030</span>
+                        </div>
+                    </div>
+                    
+                    <h3>✅ Key Export Items (India → EU)</h3>
+                    <ul class="bullet-list">
+                        <li>Pharmaceuticals, Textiles & Apparel, IT/ITES services, Engineering goods, Chemicals, Gems & Jewellery</li>
+                        <li><strong>Emerging:</strong> Renewable energy equipment, Electric vehicles, Digital services</li>
+                    </ul>
+
+                    <h3>✅ Key Import Items (EU → India)</h3>
+                    <ul class="bullet-list">
+                        <li>Machinery, Electronics, Chemicals, Pearls & Precious stones, Medical instruments, Automotive parts</li>
+                        <li><strong>Strategic:</strong> Green tech, Defence equipment, Aerospace components</li>
+                    </ul>
+
+                    <div class="highlight-box">
+                        <strong>💡 Key Issue - Data Localization:</strong> EU wants free data flows; India insists on data sovereignty for privacy/security. Critical for digital trade chapter.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Detailed Explanation for Mains -->
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">Detailed Explanation for Mains</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
+                <div class="content-box mains-box">
+                    <h3>🎯 Why India-EU FTA Matters: Multi-Dimensional Analysis</h3>
+                    
+                    <div class="mains-subsection">
+                        <h4>🔹 Economic Dimension</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Market Diversification:</strong> Reduces India's over-dependence on US/China; EU offers high-income, stable market with strong rule of law.</li>
+                            <li><strong>Value Chain Integration:</strong> Access to EU's advanced manufacturing, green tech, and R&D ecosystems; boosts "Make in India" for global exports.</li>
+                            <li><strong>Services Boost:</strong> EU is largest source of FDI in India; FTA can unlock IT, healthcare, education exports; mutual recognition of qualifications aids professional mobility.</li>
+                            <li><strong>MSME Opportunities:</strong> Simplified customs, reduced compliance costs help small exporters access EU market.</li>
+                        </ul>
+                    </div>
+
+                    <div class="mains-subsection">
+                        <h4>🔹 Strategic & Geopolitical Dimension</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Counterbalance China:</strong> Strengthens India-EU partnership amid rising China-EU trade tensions; aligns with EU's "de-risking" strategy.</li>
+                            <li><strong>Technology & Climate Alliance:</strong> FTA can facilitate transfer of green tech, hydrogen, circular economy solutions; supports India's net-zero goals.</li>
+                            <li><strong>Multipolar World Order:</strong> India-EU convergence on multilateralism, rule-based trade, democratic values; strengthens Global South voice.</li>
+                            <li><strong>Connectivity Corridors:</strong> Synergy with India-Middle East-Europe Corridor (IMEC); EU support for infrastructure projects in India's neighborhood.</li>
+                        </ul>
+                    </div>
+
+                    <div class="mains-subsection">
+                        <h4>🔹 Challenges & Critical Analysis</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Tariff Sensitivities:</strong> EU demands deep cuts on Indian auto, dairy, wine; India seeks protection for agriculture, textiles. Balancing domestic interests is complex.</li>
+                            <li><strong>Non-Tariff Barriers:</strong> EU's strict SPS (Sanitary-Phytosanitary) standards, REACH chemical regulations pose compliance challenges for Indian exporters.</li>
+                            <li><strong>Data & Digital Divide:</strong> EU's GDPR vs India's DPDP Act; differing approaches to data localization, AI regulation, platform governance.</li>
+                            <li><strong>Geographical Indications (GIs):</strong> EU wants strong GI protection (e.g., "Basmati", "Darjeeling"); India seeks reciprocity for its GIs in EU market.</li>
+                            <li><strong>Domestic Politics:</strong> EU's farm lobby, India's industry associations can influence negotiations; public scrutiny on labour/environment standards.</li>
+                        </ul>
+                    </div>
+
+                    <div class="mains-subsection">
+                        <h4>🔹 Way Forward (Mains Answer Framework)</h4>
+                        <ol class="numbered-list">
+                            <li><strong>Phased Implementation:</strong> Start with "early harvest" agreement on goods; gradually add services, investment, digital chapters.</li>
+                            <li><strong>Capacity Building:</strong> Support Indian MSMEs, farmers to meet EU standards via technology transfer, training, certification support.</li>
+                            <li><strong>Strategic Concessions:</strong> India can offer tariff cuts on non-sensitive items; EU can ease SPS procedures for Indian agri-exports.</li>
+                            <li><strong>Parallel Agreements:</strong> Conclude IPA and GI pact first to build trust; use them as foundation for comprehensive BTIA.</li>
+                            <li><strong>Stakeholder Consultation:</strong> Regular dialogue with industry, farmers, civil society to address concerns; ensure inclusive benefits.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Examples / Case Studies -->
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)">
+                <span class="section-number">5️⃣</span>
+                <span class="section-title">Examples / Case Studies</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-5">
+                <div class="content-box">
+                    <div class="case-study">
+                        <h4>📌 Case 1: Pharmaceutical Exports & Regulatory Alignment</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Context:</strong> India supplies ~20% of EU's generic medicines; but faces delays due to differing regulatory standards.</li>
+                            <li><strong>FTA Opportunity:</strong> Mutual recognition of Good Manufacturing Practices (GMP), faster approval pathways, joint inspections.</li>
+                            <li><strong>UPSC Link:</strong> Health security + Trade facilitation + Regulatory cooperation = Model for South-South partnerships.</li>
+                        </ul>
+                    </div>
+
+                    <div class="case-study">
+                        <h4>📌 Case 2: Green Hydrogen & Climate Tech Transfer</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Context:</strong> EU's REPowerEU plan needs green hydrogen; India's National Green Hydrogen Mission aims for 5 MMT production by 2030.</li>
+                            <li><strong>FTA Opportunity:</strong> Joint R&D, technology transfer, investment in electrolyser manufacturing, carbon border adjustment mechanism (CBAM) exemptions.</li>
+                            <li><strong>UPSC Link:</strong> Climate diplomacy + Energy transition + Industrial policy = Trilateral benefit (India-EU-Africa).</li>
+                        </ul>
+                    </div>
+
+                    <div class="case-study">
+                        <h4>📌 Case 3: Digital Trade & Data Governance</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Context:</strong> EU's Digital Markets Act vs India's Digital India; differing approaches to platform regulation, data flows.</li>
+                            <li><strong>FTA Opportunity:</strong> "Data free flow with trust" framework; interoperability between GDPR and DPDP Act; cooperation on AI ethics, cybersecurity.</li>
+                            <li><strong>UPSC Link:</strong> Digital sovereignty + Global tech governance + Innovation ecosystem = 21st century trade architecture.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: MCQs -->
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)">
+                <span class="section-number">6️⃣</span>
+                <span class="section-title">5 MCQs with Answers</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-6">
+                <div class="content-box mcq-box">
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q1.</strong> With reference to India-EU trade negotiations, consider the following statements:<br>
+                        1. The Broad-based Trade and Investment Agreement (BTIA) negotiations were first launched in 2007.<br>
+                        2. The European Union is India's largest trading partner.<br>
+                        3. Data localization is one of the key sticking points in the ongoing talks.<br><br>
+                        Which of the statements given above are correct?</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q1" value="a"> (a) 1 and 2 only</label>
+                            <label><input type="radio" name="q1" value="b"> (b) 1 and 3 only</label>
+                            <label><input type="radio" name="q1" value="c"> (c) 2 and 3 only</label>
+                            <label><input type="radio" name="q1" value="d"> (d) 1, 2 and 3</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q1">
+                            <p><strong>✅ Answer:</strong> (b) 1 and 3 only</p>
+                            <p><strong>💡 Explanation:</strong> BTIA talks started in 2007 (✓). EU is India's <strong>3rd</strong> largest trading partner after USA and China (✗). Data localization is indeed a major issue (✓).</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q1')">Show Answer</button>
+                    </div>
+
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q2.</strong> The India-EU Free Trade Agreement negotiations were resumed in:</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q2" value="a"> (a) January 2020</label>
+                            <label><input type="radio" name="q2" value="b"> (b) June 2022</label>
+                            <label><input type="radio" name="q2" value="c"> (c) March 2023</label>
+                            <label><input type="radio" name="q2" value="d"> (d) September 2021</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q2">
+                            <p><strong>✅ Answer:</strong> (b) June 2022</p>
+                            <p><strong>💡 Explanation:</strong> After a 9-year pause (2013-2022), India-EU leaders agreed to resume FTA, IPA, and GI talks at the 16th India-EU Summit in Brussels, May 2022; formal negotiations began June 2022.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q2')">Show Answer</button>
+                    </div>
+
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q3.</strong> Which of the following is NOT typically a component of a comprehensive FTA like the proposed India-EU BTIA?</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q3" value="a"> (a) Tariff elimination on goods</label>
+                            <label><input type="radio" name="q3" value="b"> (b) Mutual recognition of professional qualifications</label>
+                            <label><input type="radio" name="q3" value="c"> (c) Common currency adoption</label>
+                            <label><input type="radio" name="q3" value="d"> (d) Sustainable development commitments</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q3">
+                            <p><strong>✅ Answer:</strong> (c) Common currency adoption</p>
+                            <p><strong>💡 Explanation:</strong> FTAs cover trade in goods/services, investment, IPR, standards, sustainability. <strong>Common currency</strong> is a feature of monetary unions (e.g., Eurozone), not FTAs.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q3')">Show Answer</button>
+                    </div>
+
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q4.</strong> Consider the following pairs:<br>
+                        Issue | India's Position<br>
+                        1. Data Localization | Supports sovereignty, wants control over citizen data<br>
+                        2. Geographical Indications | Seeks protection for Basmati, Darjeeling in EU<br>
+                        3. Agricultural Tariffs | Wants to protect domestic farmers from EU subsidies<br><br>
+                        How many pairs are correctly matched?</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q4" value="a"> (a) Only one</label>
+                            <label><input type="radio" name="q4" value="b"> (b) Only two</label>
+                            <label><input type="radio" name="q4" value="c"> (c) All three</label>
+                            <label><input type="radio" name="q4" value="d"> (d) None</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q4">
+                            <p><strong>✅ Answer:</strong> (c) All three</p>
+                            <p><strong>💡 Explanation:</strong> All three accurately reflect India's negotiating stance: data sovereignty (DPDP Act), GI protection for Indian products, and safeguarding agriculture from heavily subsidized EU farm exports.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q4')">Show Answer</button>
+                    </div>
+
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q5.</strong> The target for India-EU bilateral trade under the proposed FTA is:</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q5" value="a"> (a) €150 billion by 2027</label>
+                            <label><input type="radio" name="q5" value="b"> (b) €200 billion by 2028</label>
+                            <label><input type="radio" name="q5" value="c"> (c) €300 billion by 2030</label>
+                            <label><input type="radio" name="q5" value="d"> (d) €500 billion by 2035</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q5">
+                            <p><strong>✅ Answer:</strong> (c) €300 billion by 2030</p>
+                            <p><strong>💡 Explanation:</strong> India and EU have jointly announced the ambition to double bilateral trade to €300 billion by 2030, up from ~€117 billion in 2022-23.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q5')">Show Answer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: Quick Revision Notes -->
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)">
+                <span class="section-number">7️⃣</span>
+                <span class="section-title">Quick Revision Notes</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-7">
+                <div class="content-box revision-box">
+                    <h3>🔁 India-EU FTA in 10 Seconds</h3>
+                    <ul class="revision-list">
+                        <li><strong>Started:</strong> 2007 | <strong>Paused:</strong> 2013 | <strong>Resumed:</strong> June 2022</li>
+                        <li><strong>Also called:</strong> BTIA (Broad-based Trade and Investment Agreement)</li>
+                        <li><strong>EU Rank:</strong> India's 3rd largest trading partner (after USA, China)</li>
+                        <li><strong>Current Trade:</strong> ~€117 billion (2022-23) | <strong>Target:</strong> €300B by 2030</li>
+                        <li><strong>Key Issues:</strong> Tariffs, Data localization, GIs, SPS standards, Procurement</li>
+                        <li><strong>Parallel Talks:</strong> Investment Protection Agreement (IPA) + GI Agreement</li>
+                    </ul>
+
+                    <h3>🧠 Mnemonic: "EU INDIA FTA"</h3>
+                    <div class="mnemonic-box">
+                        <p><strong>E</strong> → Economic diversification (reduce China dependence)</p>
+                        <p><strong>U</strong> → EU = 3rd largest partner, high-income market</p>
+                        <br>
+                        <p><strong>I</strong> → Investment protection (IPA parallel talk)</p>
+                        <p><strong>N</strong> → Non-tariff barriers: SPS, REACH, standards</p>
+                        <p><strong>D</strong> → Data localization vs free flow debate</p>
+                        <p><strong>I</strong> → GIs: Basmati, Darjeeling protection sought</p>
+                        <p><strong>A</strong> → Ambitious target: €300B by 2030</p>
+                        <br>
+                        <p><strong>F</strong> → FTA covers Goods + Services + Investment + IPR</p>
+                        <p><strong>T</strong> → Tariff phase-out: 7-10 years for sensitive items</p>
+                        <p><strong>A</strong> → Alliance on climate, tech, multipolar world order</p>
+                    </div>
+
+                    <h3>📌 Prelims Traps to Avoid</h3>
+                    <ul class="warning-list">
+                        <li>✘ EU is NOT India's largest trading partner (USA is #1)</li>
+                        <li>✘ BTIA ≠ Only goods; it's comprehensive (services, investment, IPR, sustainability)</li>
+                        <li>✘ Negotiations resumed in <strong>2022</strong>, not 2020 or 2023</li>
+                        <li>✘ Data localization is a <strong>sticking point</strong>, not an agreed clause</li>
+                    </ul>
+
+                    <h3>🎯 Mains One-Liners</h3>
+                    <ul class="bullet-list">
+                        <li>"India-EU FTA = Economic diversification + Strategic de-risking from China"</li>
+                        <li>"Data sovereignty vs free flow = 21st century trade dilemma"</li>
+                        <li>"Green tech transfer via FTA = Climate action + Industrial growth synergy"</li>
+                        <li>"Phased implementation + early harvest = Pragmatic path to comprehensive deal"</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation Footer -->
+        <div class="page-navigation">
+            <a href="index.html" class="nav-btn">← Back to Current Affairs Index</a>
+            <button onclick="markAsComplete('CA-07')" class="nav-btn btn-success">✓ Mark as Complete</button>
+            <a href="national-green-hydrogen-mission-india.html" class="nav-btn">Next: CA-08 →</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>📄 Page Code: <strong>CA-07</strong> | Subject: Current Affairs + Economy + IR</p>
+            <p>🔗 Link to Syllabus: GS-2 (IR, FTAs), GS-3 (Trade, Investment, Environment), Essay</p>
+        </div>
+    </footer>
+
+    <script>
+        // ===== Toggle Section =====
+        function toggleSection(sectionNum) {
+            const section = document.querySelector(`[data-section="${sectionNum}"]`);
+            const content = document.getElementById(`section-${sectionNum}`);
+            const header = section.querySelector('.section-header');
+            
+            if (content.classList.contains('collapsed')) {
+                content.classList.remove('collapsed');
+                header.classList.remove('collapsed');
+            } else {
+                content.classList.add('collapsed');
+                header.classList.add('collapsed');
+            }
+        }
+
+        // ===== Toggle All Sections =====
+        function toggleAllSections() {
+            const sections = document.querySelectorAll('.study-section');
+            const allCollapsed = Array.from(sections).every(section => 
+                section.querySelector('.section-content').classList.contains('collapsed')
+            );
+            
+            sections.forEach(section => {
+                const content = section.querySelector('.section-content');
+                const header = section.querySelector('.section-header');
+                
+                if (allCollapsed) {
+                    content.classList.remove('collapsed');
+                    header.classList.remove('collapsed');
+                } else {
+                    content.classList.add('collapsed');
+                    header.classList.add('collapsed');
+                }
+            });
+        }
+
+        // ===== Show MCQ Answer =====
+        function showAnswer(questionId) {
+            const answerDiv = document.getElementById(`answer-${questionId}`);
+            const btn = event.target;
+            
+            if (answerDiv.classList.contains('show')) {
+                answerDiv.classList.remove('show');
+                btn.textContent = 'Show Answer';
+            } else {
+                answerDiv.classList.add('show');
+                btn.textContent = 'Hide Answer';
+            }
+        }
+
+        // ===== Mark Page as Complete =====
+        function markAsComplete(pageCode) {
+            let completedPages = localStorage.getItem('completedPages');
+            completedPages = completedPages ? JSON.parse(completedPages) : [];
+            
+            if (!completedPages.includes(pageCode)) {
+                completedPages.push(pageCode);
+                localStorage.setItem('completedPages', JSON.stringify(completedPages));
+                
+                // Visual feedback
+                const btn = event.target;
+                btn.textContent = '✓ Completed!';
+                btn.style.background = '#059669';
+                
+                // Update index page progress if possible
+                if (window.opener) {
+                    try {
+                        window.opener.updateMainProgress?.();
+                    } catch(e) {}
+                }
+            }
+        }
+
+        // ===== Auto-expand first section on load =====
+        document.addEventListener('DOMContentLoaded', function() {
+            const firstSection = document.querySelector('[data-section="1"]');
+            if (firstSection) {
+                setTimeout(() => {
+                    toggleSection(1);
+                }, 300);
+            }
+        });
+
+        // ===== Keyboard Shortcuts =====
+        document.addEventListener('keydown', function(e) {
+            // Ctrl/Cmd + P for print
+            if ((e.ctrlKey || e.metaKey) && e.key === 'p') {
+                e.preventDefault();
+                window.print();
+            }
+            // Space to toggle first section
+            if (e.key === ' ' && e.target === document.body) {
+                e.preventDefault();
+                const firstSection = document.querySelector('[data-section="1"]');
+                if (firstSection) toggleSection(1);
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CA-04: BRICS Expansion | UPSC Study Notes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #64748b;
+            --success-color: #10b981;
+            --warning-color: #f59e0b;
+            --danger-color: #ef4444;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --border-color: #e2e8f0;
+            --shadow: 0 1px 3px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg-color); color: var(--text-primary); line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        /* Study Nav */
+        .study-nav { background: var(--card-bg); border-bottom: 1px solid var(--border-color); padding: 1rem 0; position: sticky; top: 0; z-index: 100; box-shadow: var(--shadow); }
+        .study-nav .container { display: flex; justify-content: space-between; align-items: center; }
+        .back-link { color: var(--primary-color); text-decoration: none; font-weight: 500; }
+        .nav-controls { display: flex; gap: 1rem; }
+        .btn-primary, .btn-secondary { padding: 0.5rem 1rem; border: none; border-radius: 6px; font-weight: 500; cursor: pointer; transition: all 0.2s; }
+        .btn-primary { background: var(--primary-color); color: white; }
+        .btn-primary:hover { background: #1d4ed8; }
+        .btn-secondary { background: var(--bg-color); color: var(--text-primary); border: 1px solid var(--border-color); }
+        .btn-secondary:hover { background: var(--border-color); }
+        
+        /* Page Header */
+        .page-header { background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%); color: white; padding: 2rem 0; border-bottom: 1px solid var(--border-color); }
+        .breadcrumb { color: rgba(255,255,255,0.9); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .breadcrumb a { color: white; text-decoration: none; }
+        .page-header h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+        .page-subtitle { color: rgba(255,255,255,0.95); font-size: 1.125rem; margin-bottom: 1rem; }
+        .page-meta { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+        .badge { padding: 0.375rem 0.875rem; border-radius: 20px; font-size: 0.875rem; font-weight: 500; }
+        .badge-primary { background: rgba(255,255,255,0.2); color: white; }
+        .badge-secondary { background: rgba(255,255,255,0.15); color: white; }
+        .badge-warning { background: #fef3c7; color: #92400e; }
+        
+        /* Keywords Box */
+        .keywords-box { background: #fef3c7; border-left: 4px solid var(--warning-color); padding: 1rem; margin: 2rem 0; border-radius: 0 8px 8px 0; font-size: 0.9rem; }
+        
+        /* Study Sections */
+        .study-section { background: var(--card-bg); border-radius: 12px; margin: 1.5rem 0; box-shadow: var(--shadow); overflow: hidden; }
+        .section-header { width: 100%; padding: 1.25rem 1.5rem; background: var(--card-bg); border: none; display: flex; align-items: center; gap: 1rem; cursor: pointer; font-size: 1.125rem; font-weight: 600; color: var(--text-primary); transition: all 0.2s; }
+        .section-header:hover { background: var(--bg-color); }
+        .section-number { font-size: 1.5rem; }
+        .toggle-icon { margin-left: auto; transition: transform 0.3s; }
+        .section-header.collapsed .toggle-icon { transform: rotate(-90deg); }
+        .section-content { max-height: 2000px; overflow: hidden; transition: max-height 0.3s ease; }
+        .section-content.collapsed { max-height: 0; }
+        .content-box { padding: 1.5rem; }
+        
+        /* Lists */
+        .simple-list, .bullet-list, .numbered-list { margin: 1rem 0; padding-left: 1.5rem; }
+        .simple-list li, .bullet-list li { margin: 0.75rem 0; line-height: 1.7; }
+        .bullet-list li { list-style: disc; }
+        .numbered-list li { list-style: decimal; margin: 1rem 0; }
+        
+        /* Prelims Box */
+        .prelims-box { background: #eff6ff; border-radius: 8px; padding: 1.5rem; }
+        .fact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+        .fact-item { background: white; padding: 1rem; border-radius: 8px; text-align: center; }
+        .fact-label { display: block; color: var(--text-secondary); font-size: 0.875rem; margin-bottom: 0.25rem; }
+        .fact-value { display: block; font-weight: 700; color: var(--primary-color); font-size: 1.125rem; }
+        .highlight-box { background: #fef3c7; border-left: 4px solid var(--warning-color); padding: 1rem; margin-top: 1rem; border-radius: 0 8px 8px 0; }
+        
+        /* Mains Box */
+        .mains-box { background: #f8fafc; }
+        .mains-subsection { margin: 1.5rem 0; padding: 1.25rem; background: white; border-radius: 8px; }
+        .mains-subsection h4 { color: var(--primary-color); margin-bottom: 0.75rem; font-size: 1rem; }
+        
+        /* Case Studies */
+        .case-study { background: #f0fdf4; border: 1px solid #86efac; border-radius: 8px; padding: 1.25rem; margin: 1rem 0; }
+        .case-study h4 { color: #166534; margin-bottom: 0.75rem; }
+        
+        /* MCQ Section */
+        .mcq-box { background: #fefce8; }
+        .mcq-item { background: white; padding: 1.5rem; border-radius: 8px; margin: 1rem 0; }
+        .mcq-question { margin-bottom: 1rem; line-height: 1.7; }
+        .mcq-options { display: flex; flex-direction: column; gap: 0.5rem; margin: 1rem 0; }
+        .mcq-options label { display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem; border-radius: 6px; cursor: pointer; transition: background 0.2s; }
+        .mcq-options label:hover { background: var(--bg-color); }
+        .mcq-answer { display: none; background: #f0fdf4; border-left: 4px solid var(--success-color); padding: 1rem; margin: 1rem 0; border-radius: 0 8px 8px 0; }
+        .mcq-answer.show { display: block; }
+        .btn-show-answer { background: var(--primary-color); color: white; border: none; padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: 500; margin-top: 0.5rem; }
+        .btn-show-answer:hover { background: #1d4ed8; }
+        
+        /* Revision Box */
+        .revision-box { background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); border-radius: 8px; padding: 1.5rem; }
+        .revision-list { list-style: none; padding: 0; }
+        .revision-list li { padding: 0.5rem 0; border-bottom: 1px solid rgba(0,0,0,0.1); }
+        .revision-list li:last-child { border-bottom: none; }
+        .mnemonic-box { background: white; padding: 1rem; border-radius: 8px; margin: 1rem 0; font-family: 'Courier New', monospace; }
+        .warning-list { list-style: none; padding: 0; }
+        .warning-list li { padding: 0.5rem; background: #fee2e2; margin: 0.5rem 0; border-radius: 6px; color: #991b1b; }
+        
+        /* Page Navigation */
+        .page-navigation { display: flex; justify-content: space-between; gap: 1rem; margin: 2rem 0; flex-wrap: wrap; }
+        .nav-btn { flex: 1; min-width: 150px; padding: 1rem; text-align: center; background: var(--card-bg); border: 2px solid var(--border-color); border-radius: 8px; text-decoration: none; color: var(--text-primary); font-weight: 500; cursor: pointer; transition: all 0.2s; }
+        .nav-btn:hover { border-color: var(--primary-color); color: var(--primary-color); }
+        .btn-success { background: var(--success-color); color: white; border-color: var(--success-color); }
+        .btn-success:hover { background: #059669; color: white; }
+        .btn-disabled { opacity: 0.5; cursor: not-allowed; }
+        
+        /* Footer */
+        .page-footer { background: var(--bg-color); color: var(--text-secondary); border-top: 1px solid var(--border-color); padding: 2rem 0; text-align: center; margin-top: 3rem; }
+        .intro-box { background: #f0f9ff; border-left: 4px solid var(--primary-color); padding: 1.5rem; border-radius: 0 8px 8px 0; }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .page-header h1 { font-size: 1.5rem; }
+            .section-header { font-size: 1rem; padding: 1rem; }
+            .fact-grid { grid-template-columns: 1fr; }
+            .page-navigation { flex-direction: column; }
+        }
+        @media print {
+            .study-nav, .page-navigation, .btn-show-answer { display: none !important; }
+            .section-content { max-height: none !important; }
+            .toggle-icon { display: none; }
+            body { background: white; }
+            .study-section { break-inside: avoid; box-shadow: none; border: 1px solid #ddd; }
+        }
+    </style>
+</head>
+<body class="study-page">
+    <nav class="study-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Current Affairs Index</a>
+            <div class="nav-controls">
+                <button onclick="toggleAllSections()" class="btn-secondary">Expand/Collapse All</button>
+                <button onclick="window.print()" class="btn-primary">📄 Print/Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../index.html">Home</a> / 
+                <a href="index.html">Current Affairs</a> / 
+                <span>CA-04</span>
+            </div>
+            <h1>🧱 BRICS Expansion</h1>
+            <p class="page-subtitle">New Members 2024 • De-dollarization • Global South Leadership</p>
+            <div class="page-meta">
+                <span class="badge badge-primary">High Yield</span>
+                <span class="badge badge-secondary">IR + Economy</span>
+                <span class="badge badge-warning">⚡ Multipolar World Order</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="keywords-box">
+            <strong>🔍 Quick Search:</strong> 
+            What is BRICS?, UPSC notes on BRICS expansion, MCQs on New Development Bank, BRICS de-dollarization explained simply
+        </section>
+
+        <!-- Section 1: Introduction -->
+        <section class="study-section collapsible" data-section="1">
+            <button class="section-header" onclick="toggleSection(1)">
+                <span class="section-number">1️⃣</span>
+                <span class="section-title">Introduction (Simple)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-1">
+                <div class="content-box intro-box">
+                    <ul class="simple-list">
+                        <li><strong>What is BRICS?</strong> → Association of 5 major emerging economies: <strong>B</strong>razil, <strong>R</strong>ussia, <strong>I</strong>ndia, <strong>C</strong>hina, <strong>S</strong>outh Africa.</li>
+                        <li><strong>Founded:</strong> 2006 (as BRIC); South Africa joined 2010 → BRICS.</li>
+                        <li><strong>2024 Expansion:</strong> Egypt, Ethiopia, Iran, UAE joined on Jan 1, 2024 → BRICS+ (9 members).</li>
+                        <li><strong>Key Institutions:</strong> New Development Bank (NDB), Contingent Reserve Arrangement (CRA), BRICS Pay (proposed).</li>
+                        <li><strong>Why important for UPSC?</strong> → Tests understanding of multipolar world order, de-dollarization, Global South representation, India's strategic autonomy, economic diplomacy.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Key Concepts -->
+        <section class="study-section collapsible" data-section="2">
+            <button class="section-header" onclick="toggleSection(2)">
+                <span class="section-number">2️⃣</span>
+                <span class="section-title">Key Concepts (Bullet Points)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-2">
+                <div class="content-box">
+                    <h3>📌 BRICS Structure & Evolution</h3>
+                    <ul class="bullet-list">
+                        <li><strong>Original 5 (2010):</strong> Brazil, Russia, India, China, South Africa</li>
+                        <li><strong>New Members (2024):</strong> Egypt, Ethiopia, Iran, UAE (Saudi Arabia invited, pending formal accession)</li>
+                        <li><strong>Combined Stats:</strong> ~45% world population, ~37% global GDP (PPP), ~25% global trade</li>
+                        <li><strong>Decision-Making:</strong> Consensus-based; annual summits; no permanent secretariat</li>
+                    </ul>
+
+                    <h3>📌 Key Institutions</h3>
+                    <ul class="bullet-list">
+                        <li><strong>New Development Bank (NDB):</strong> Founded 2014, HQ Shanghai; $100B capital; funds infrastructure/sustainable projects in member nations</li>
+                        <li><strong>Contingent Reserve Arrangement (CRA):</strong> $100B pool for balance of payments support; India's contribution: $18B</li>
+                        <li><strong>BRICS Pay (Proposed):</strong> Alternative payment system to reduce SWIFT/USD dependence; still in conceptual stage</li>
+                        <li><strong>Local Currency Settlement:</strong> Promoting trade in national currencies (e.g., INR-RUB, CNY-BRL) to bypass USD</li>
+                    </ul>
+
+                    <h3>📌 Strategic Objectives of Expansion</h3>
+                    <ul class="bullet-list">
+                        <li><strong>Geographic Diversification:</strong> From Eurasia-focused to pan-Global South representation (Africa, Middle East, Latin America)</li>
+                        <li><strong>Economic Weight:</strong> Enhance collective bargaining in WTO, IMF, World Bank reforms</li>
+                        <li><strong>Energy Security:</strong> UAE, Iran, Russia = major oil/gas producers; Egypt, Ethiopia = strategic corridors</li>
+                        <li><strong>De-dollarization:</strong> Reduce vulnerability to US sanctions, monetary policy spillovers</li>
+                        <li><strong>Counterbalance:</strong> Provide alternative to Western-dominated institutions (G7, IMF conditionality)</li>
+                    </ul>
+
+                    <h3>📌 India's Stance on BRICS Expansion</h3>
+                    <ul class="bullet-list">
+                        <li><strong>Supportive but Cautious:</strong> Backs expansion in principle; emphasizes consensus, institutional capacity, strategic coherence</li>
+                        <li><strong>Strategic Autonomy:</strong> Uses BRICS for economic diplomacy while maintaining Quad, G20, bilateral ties with West</li>
+                        <li><strong>Concerns:</strong> China's dominance in NDB; Iran's inclusion complicates West Asia diplomacy; cohesion challenges with diverse members</li>
+                        <li><strong>Opportunities:</strong> Market access for Indian goods/services; NDB funding for infrastructure; voice for Global South</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Important Facts for Prelims -->
+        <section class="study-section collapsible" data-section="3">
+            <button class="section-header" onclick="toggleSection(3)">
+                <span class="section-number">3️⃣</span>
+                <span class="section-title">Important Facts for Prelims</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-3">
+                <div class="content-box prelims-box">
+                    <div class="fact-grid">
+                        <div class="fact-item">
+                            <span class="fact-label">BRICS Founded</span>
+                            <span class="fact-value">2006 (BRIC)</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-label">SA Joined</span>
+                            <span class="fact-value">2010</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-label">Expansion Effective</span>
+                            <span class="fact-value">Jan 1, 2024</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-label">NDB HQ</span>
+                            <span class="fact-value">Shanghai</span>
+                        </div>
+                    </div>
+                    
+                    <h3>✅ Quick Facts</h3>
+                    <ul class="bullet-list">
+                        <li><strong>Term Coined:</strong> Jim O'Neill (Goldman Sachs, 2001) for investment thesis</li>
+                        <li><strong>First Summit:</strong> Yekaterinburg, Russia (2009)</li>
+                        <li><strong>15th Summit:</strong> Johannesburg, South Africa (Aug 2023) — approved expansion</li>
+                        <li><strong>16th Summit:</strong> Kazan, Russia (Oct 2024) — first with new members</li>
+                        <li><strong>NDB President:</strong> Dilma Rousseff (Brazil, former President) since 2023</li>
+                    </ul>
+
+                    <h3>✅ Key Numbers</h3>
+                    <ul class="bullet-list">
+                        <li>BRICS+ (9 members): ~45% world population, ~37% global GDP (PPP)</li>
+                        <li>NDB Approved Projects: >$32 billion across 90+ projects (as of 2024)</li>
+                        <li>India's NDB Share: 18% voting power (equal to Brazil, Russia, China)</li>
+                        <li>CRA Size: $100 billion; India's commitment: $18 billion</li>
+                    </ul>
+
+                    <div class="highlight-box">
+                        <strong>💡 Prelims Trap:</strong> BRICS has <strong>no treaty/charter</strong> — it's an informal grouping; decisions are <strong>non-binding</strong>; expansion requires <strong>unanimous consent</strong> of all members.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Detailed Explanation for Mains -->
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">Detailed Explanation for Mains</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
+                <div class="content-box mains-box">
+                    <h3>🎯 BRICS Expansion: Multi-Dimensional Analysis</h3>
+                    
+                    <div class="mains-subsection">
+                        <h4>🔹 Geopolitical Significance: Towards Multipolarity</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Counter-Narrative:</strong> BRICS+ challenges Western-dominated global governance (G7, Bretton Woods); advocates for reformed UN, IMF quota changes.</li>
+                            <li><strong>Strategic Autonomy:</strong> Enables members to pursue independent foreign policies; India balances BRICS with Quad, US ties.</li>
+                            <li><strong>Regional Dynamics:</strong> Iran-UAE inclusion brings Gulf rivals together; Egypt-Ethiopia adds Nile Basin voices; potential for internal friction.</li>
+                        </ul>
+                    </div>
+
+                    <div class="mains-subsection">
+                        <h4>🔹 Economic Dimensions: De-dollarization & Development Finance</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Local Currency Trade:</strong> India-Russia rupee-ruble mechanism; China-Brazil yuan-real swaps; reduces USD transaction costs, sanction risks.</li>
+                            <li><strong>NDB's Role:</strong> Alternative to World Bank/IMF; focuses on infrastructure, sustainability; but faces challenges: capital adequacy, project pipeline, governance.</li>
+                            <li><strong>Limitations:</strong> BRICS currencies lack convertibility, depth; USD still dominates reserves (88% of forex transactions); BRICS Pay remains conceptual.</li>
+                        </ul>
+                    </div>
+
+                    <div class="mains-subsection">
+                        <h4>🔹 Challenges to Cohesion & Effectiveness</h4>
+                        <ul class="bullet-list">
+                            <li><strong>India-China Rivalry:</strong> Border tensions, trade imbalance ($136B deficit for India), strategic competition in Indian Ocean limit deeper integration.</li>
+                            <li><strong>Diverse Interests:</strong> Democratic (India, Brazil) vs authoritarian (China, Russia, Iran); oil exporters vs importers; varying China-dependence.</li>
+                            <li><strong>Institutional Capacity:</strong> No permanent secretariat, limited staff, consensus rule → slow decision-making; NDB lending <5% of World Bank's.</li>
+                            <li><strong>External Pressures:</strong> US sanctions on Russia/Iran complicate financial cooperation; Western criticism of "anti-Western" narrative.</li>
+                        </ul>
+                    </div>
+
+                    <div class="mains-subsection">
+                        <h4>🔹 India's Strategic Calculus & Way Forward</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Opportunities:</strong> NDB funding for green infrastructure; market access for IT/pharma; platform for Global South advocacy (climate justice, SDGs).</li>
+                            <li><strong>Risks:</strong> Over-dependence on China-led initiatives; dilution of strategic autonomy; reputational risks from Iran/Russia association.</li>
+                        </ul>
+                        <h4 style="margin-top: 1rem; color: var(--primary-color);">🔹 Mains Answer Framework</h4>
+                        <ol class="numbered-list">
+                            <li><strong>Contextualize:</strong> BRICS as instrument of multipolarity; India's multi-alignment strategy.</li>
+                            <li><strong>Analyze Expansion:</strong> Geographic/economic rationale; institutional implications (NDB, CRA); de-dollarization prospects.</li>
+                            <li><strong>Critically Evaluate:</strong> Cohesion challenges (India-China, diverse regimes); implementation gaps; external constraints.</li>
+                            <li><strong>Way Forward:</strong> Strengthen NDB governance; promote local currency mechanisms pragmatically; leverage BRICS for Global South agenda while safeguarding strategic autonomy.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Examples / Case Studies -->
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)">
+                <span class="section-number">5️⃣</span>
+                <span class="section-title">Examples / Case Studies</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-5">
+                <div class="content-box">
+                    <div class="case-study">
+                        <h4>📌 Case 1: India-Russia Trade in Local Currencies</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Context:</strong> Post-2022 sanctions disrupted USD/EUR trade; India needed Russian oil, Russia needed Indian goods.</li>
+                            <li><strong>Mechanism:</strong> Rupee-ruble accounts via UPI-SPFS linkage; Vostro accounts for Russian banks in India.</li>
+                            <li><strong>Outcome:</strong> India-Russia trade surged to $65B (2023) from $13B (2021); but rupee accumulation issue persists (Russia prefers yuan/gold).</li>
+                            <li><strong>UPSC Link:</strong> De-dollarization in practice + Strategic autonomy + Balance of payments management.</li>
+                        </ul>
+                    </div>
+
+                    <div class="case-study">
+                        <h4>📌 Case 2: NDB Funding for Renewable Energy in India</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Context:</strong> India's 500 GW renewable target by 2030 requires massive financing.</li>
+                            <li><strong>NDB Support:</strong> $500M loan for green hydrogen projects; $1B for solar-wind hybrid parks; technical assistance for grid integration.</li>
+                            <li><strong>Advantage:</strong> Faster appraisal than World Bank; focus on country systems; local currency lending options.</li>
+                            <li><strong>UPSC Link:</strong> Climate finance + Multilateral development banks + Energy transition + India's net-zero pathway.</li>
+                        </ul>
+                    </div>
+
+                    <div class="case-study">
+                        <h4>📌 Case 3: BRICS+ and the Global South Voice at COP28</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Context:</strong> Climate negotiations often reflect North-South divide on finance, responsibility.</li>
+                            <li><strong>BRICS Coordination:</strong> Joint statement at COP28 (Dubai) demanding operationalization of Loss & Damage Fund, technology transfer, equitable carbon budgets.</li>
+                            <li><strong>Impact:</strong> Amplified pressure on developed nations; contributed to UAE Consensus language on "transitioning away from fossil fuels".</li>
+                            <li><strong>UPSC Link:</strong> Climate diplomacy + Global South solidarity + Multilateral negotiation tactics + SDG 13.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: MCQs -->
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)">
+                <span class="section-number">6️⃣</span>
+                <span class="section-title">5 MCQs with Answers</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-6">
+                <div class="content-box mcq-box">
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q1.</strong> With reference to BRICS, consider the following statements:<br>
+                        1. The term 'BRIC' was coined by Goldman Sachs economist Jim O'Neill in 2001.<br>
+                        2. The New Development Bank (NDB) is headquartered in New Delhi.<br>
+                        3. BRICS expansion in 2024 added Egypt, Ethiopia, Iran, and UAE as members.<br><br>
+                        Which of the statements given above are correct?</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q1" value="a"> (a) 1 and 2 only</label>
+                            <label><input type="radio" name="q1" value="b"> (b) 1 and 3 only</label>
+                            <label><input type="radio" name="q1" value="c"> (c) 2 and 3 only</label>
+                            <label><input type="radio" name="q1" value="d"> (d) 1, 2 and 3</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q1">
+                            <p><strong>✅ Answer:</strong> (b) 1 and 3 only</p>
+                            <p><strong>💡 Explanation:</strong> Jim O'Neill coined 'BRIC' in 2001 (✓). NDB HQ is in <strong>Shanghai</strong>, not New Delhi (✗). Egypt, Ethiopia, Iran, UAE joined in 2024 (✓).</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q1')">Show Answer</button>
+                    </div>
+
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q2.</strong> The Contingent Reserve Arrangement (CRA) of BRICS is primarily designed to:</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q2" value="a"> (a) Fund infrastructure projects in member countries</label>
+                            <label><input type="radio" name="q2" value="b"> (b) Provide balance of payments support during crises</label>
+                            <label><input type="radio" name="q2" value="c"> (c) Promote local currency trade settlements</label>
+                            <label><input type="radio" name="q2" value="d"> (d) Coordinate monetary policy among members</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q2">
+                            <p><strong>✅ Answer:</strong> (b) Provide balance of payments support during crises</p>
+                            <p><strong>💡 Explanation:</strong> CRA is a $100B pool for short-term liquidity support during balance of payments pressures, similar to IMF's role but regional.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q2')">Show Answer</button>
+                    </div>
+
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q3.</strong> Which of the following countries was NOT among the new BRICS members that joined in January 2024?</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q3" value="a"> (a) Egypt</label>
+                            <label><input type="radio" name="q3" value="b"> (b) Saudi Arabia</label>
+                            <label><input type="radio" name="q3" value="c"> (c) Ethiopia</label>
+                            <label><input type="radio" name="q3" value="d"> (d) United Arab Emirates</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q3">
+                            <p><strong>✅ Answer:</strong> (b) Saudi Arabia</p>
+                            <p><strong>💡 Explanation:</strong> Saudi Arabia was <strong>invited</strong> to join in 2023 but has not formally acceded yet (as of early 2026). Egypt, Ethiopia, Iran, UAE joined on Jan 1, 2024.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q3')">Show Answer</button>
+                    </div>
+
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q4.</strong> Consider the following pairs:<br>
+                        BRICS Institution | Primary Function<br>
+                        1. New Development Bank | Infrastructure and sustainable development financing<br>
+                        2. Contingent Reserve Arrangement | Balance of payments crisis support<br>
+                        3. BRICS Pay | Operational cross-border payment system<br><br>
+                        How many pairs are correctly matched?</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q4" value="a"> (a) Only one</label>
+                            <label><input type="radio" name="q4" value="b"> (b) Only two</label>
+                            <label><input type="radio" name="q4" value="c"> (c) All three</label>
+                            <label><input type="radio" name="q4" value="d"> (d) None</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q4">
+                            <p><strong>✅ Answer:</strong> (b) Only two</p>
+                            <p><strong>💡 Explanation:</strong> NDB (✓) and CRA (✓) are correctly matched. <strong>BRICS Pay</strong> is still <strong>proposed/conceptual</strong> — not yet an operational payment system (✗).</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q4')">Show Answer</button>
+                    </div>
+
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q5.</strong> India's share of voting power in the New Development Bank (NDB) is approximately:</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q5" value="a"> (a) 10%</label>
+                            <label><input type="radio" name="q5" value="b"> (b) 18%</label>
+                            <label><input type="radio" name="q5" value="c"> (c) 25%</label>
+                            <label><input type="radio" name="q5" value="d"> (d) 33%</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q5">
+                            <p><strong>✅ Answer:</strong> (b) 18%</p>
+                            <p><strong>💡 Explanation:</strong> The 5 founding BRICS members (Brazil, Russia, India, China, South Africa) each hold <strong>equal voting shares of 18%</strong> in NDB, ensuring no single member dominates.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q5')">Show Answer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: Quick Revision Notes -->
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)">
+                <span class="section-number">7️⃣</span>
+                <span class="section-title">Quick Revision Notes</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-7">
+                <div class="content-box revision-box">
+                    <h3>🔁 BRICS Expansion in 10 Seconds</h3>
+                    <ul class="revision-list">
+                        <li><strong>Founded:</strong> 2006 (BRIC) | <strong>SA Joined:</strong> 2010 | <strong>Expansion:</strong> Jan 1, 2024</li>
+                        <li><strong>New Members:</strong> Egypt, Ethiopia, Iran, UAE (Saudi invited, pending)</li>
+                        <li><strong>BRICS+ Stats:</strong> ~45% world population, ~37% global GDP (PPP)</li>
+                        <li><strong>NDB:</strong> HQ Shanghai, $100B capital, Dilma Rousseff (President)</li>
+                        <li><strong>CRA:</strong> $100B pool; India's contribution: $18B</li>
+                        <li><strong>Key Goal:</strong> De-dollarization, Global South voice, multipolar governance</li>
+                        <li><strong>India's Stance:</strong> Supportive but cautious; balances with Quad, strategic autonomy</li>
+                    </ul>
+
+                    <h3>🧠 Mnemonic: "BRICS EXPAND"</h3>
+                    <div class="mnemonic-box">
+                        <p><strong>B</strong> → Brazil, Russia, India, China, South Africa (original 5)</p>
+                        <p><strong>R</strong> → Russia-India local currency trade mechanism</p>
+                        <p><strong>I</strong> → India's 18% NDB voting share (equal to founders)</p>
+                        <p><strong>C</strong> → China's dominance concern; $136B trade deficit for India</p>
+                        <p><strong>S</strong> → South Africa hosted 2023 summit that approved expansion</p>
+                        <br>
+                        <p><strong>E</strong> → Egypt, Ethiopia, Iran, UAE joined Jan 2024</p>
+                        <p><strong>X</strong> → X-factor: De-dollarization vs USD reality (88% forex)</p>
+                        <p><strong>P</strong> → Pay system (BRICS Pay) still conceptual, not operational</p>
+                        <p><strong>A</strong> → Autonomy: India balances BRICS with Quad, US ties</p>
+                        <p><strong>N</strong> → NDB: $32B+ approved projects; focus on green infrastructure</p>
+                        <p><strong>D</strong> → Diverse interests: Democracies + authoritarian regimes; cohesion challenge</p>
+                    </div>
+
+                    <h3>📌 Prelims Traps to Avoid</h3>
+                    <ul class="warning-list">
+                        <li>✘ BRICS founded in <strong>2006</strong> (not 2001; 2001 was term coined)</li>
+                        <li>✘ NDB HQ is <strong>Shanghai</strong> (not New Delhi or Moscow)</li>
+                        <li>✘ Saudi Arabia is <strong>invited but not yet member</strong> (as of 2026)</li>
+                        <li>✘ BRICS Pay is <strong>proposed, not operational</strong></li>
+                        <li>✘ BRICS has <strong>no treaty/charter</strong> — informal, consensus-based</li>
+                    </ul>
+
+                    <h3>🎯 Mains One-Liners</h3>
+                    <ul class="bullet-list">
+                        <li>"BRICS+ = Geographic diversification + Economic weight + Strategic ambiguity"</li>
+                        <li>"De-dollarization = Aspiration (local currency trade) vs Reality (USD dominance)"</li>
+                        <li>"India's BRICS calculus = Economic opportunities + Strategic autonomy + China risk management"</li>
+                        <li>"NDB vs World Bank = Faster appraisal + Country systems + But smaller scale, capacity gaps"</li>
+                        <li>"BRICS cohesion challenge = India-China rivalry + Regime diversity + External pressures"</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation Footer -->
+        <div class="page-navigation">
+            <a href="index.html" class="nav-btn">← Back to Current Affairs Index</a>
+            <button onclick="markAsComplete('CA-04')" class="nav-btn btn-success">✓ Mark as Complete</button>
+            <a href="india-china-border.html" class="nav-btn">Next: CA-05 →</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>📄 Page Code: <strong>CA-04</strong> | Subject: Current Affairs + IR + Economy</p>
+            <p>🔗 Link to Syllabus: GS-2 (IR, Multilateralism), GS-3 (International Economy), Essay</p>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle Section
+        function toggleSection(sectionNum) {
+            const section = document.querySelector(`[data-section="${sectionNum}"]`);
+            const content = document.getElementById(`section-${sectionNum}`);
+            const header = section.querySelector('.section-header');
+            if (content.classList.contains('collapsed')) {
+                content.classList.remove('collapsed');
+                header.classList.remove('collapsed');
+            } else {
+                content.classList.add('collapsed');
+                header.classList.add('collapsed');
+            }
+        }
+        // Toggle All Sections
+        function toggleAllSections() {
+            const sections = document.querySelectorAll('.study-section');
+            const allCollapsed = Array.from(sections).every(s => s.querySelector('.section-content').classList.contains('collapsed'));
+            sections.forEach(section => {
+                const content = section.querySelector('.section-content');
+                const header = section.querySelector('.section-header');
+                if (allCollapsed) { content.classList.remove('collapsed'); header.classList.remove('collapsed'); }
+                else { content.classList.add('collapsed'); header.classList.add('collapsed'); }
+            });
+        }
+        // Show MCQ Answer
+        function showAnswer(questionId) {
+            const answerDiv = document.getElementById(`answer-${questionId}`);
+            const btn = event.target;
+            if (answerDiv.classList.contains('show')) { answerDiv.classList.remove('show'); btn.textContent = 'Show Answer'; }
+            else { answerDiv.classList.add('show'); btn.textContent = 'Hide Answer'; }
+        }
+        // Mark as Complete
+        function markAsComplete(pageCode) {
+            let completed = JSON.parse(localStorage.getItem('completedPages') || '[]');
+            if (!completed.includes(pageCode)) {
+                completed.push(pageCode);
+                localStorage.setItem('completedPages', JSON.stringify(completed));
+                const btn = event.target;
+                btn.textContent = '✓ Completed!';
+                btn.style.background = '#059669';
+                if (window.opener) { try { window.opener.updateMainProgress?.(); } catch(e) {} }
+            }
+        }
+        // Auto-expand first section
+        document.addEventListener('DOMContentLoaded', function() {
+            const first = document.querySelector('[data-section="1"]');
+            if (first) setTimeout(() => toggleSection(1), 300);
+        });
+        // Keyboard shortcuts
+        document.addEventListener('keydown', function(e) {
+            if ((e.ctrlKey || e.metaKey) && e.key === 'p') { e.preventDefault(); window.print(); }
+            if (e.key === ' ' && e.target === document.body) { e.preventDefault(); const f = document.querySelector('[data-section="1"]'); if (f) toggleSection(1); }
+        });
+    </script>
+</body>
+</html>

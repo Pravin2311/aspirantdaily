@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CA-05: India-China Border Issue | UPSC Study Notes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #64748b;
+            --success-color: #10b981;
+            --warning-color: #f59e0b;
+            --danger-color: #ef4444;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --border-color: #e2e8f0;
+            --shadow: 0 1px 3px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg-color); color: var(--text-primary); line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        /* Study Nav */
+        .study-nav { background: var(--card-bg); border-bottom: 1px solid var(--border-color); padding: 1rem 0; position: sticky; top: 0; z-index: 100; box-shadow: var(--shadow); }
+        .study-nav .container { display: flex; justify-content: space-between; align-items: center; }
+        .back-link { color: var(--primary-color); text-decoration: none; font-weight: 500; }
+        .nav-controls { display: flex; gap: 1rem; }
+        .btn-primary, .btn-secondary { padding: 0.5rem 1rem; border: none; border-radius: 6px; font-weight: 500; cursor: pointer; transition: all 0.2s; }
+        .btn-primary { background: var(--primary-color); color: white; }
+        .btn-primary:hover { background: #1d4ed8; }
+        .btn-secondary { background: var(--bg-color); color: var(--text-primary); border: 1px solid var(--border-color); }
+        .btn-secondary:hover { background: var(--border-color); }
+        
+        /* Page Header */
+        .page-header { background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%); color: white; padding: 2rem 0; border-bottom: 1px solid var(--border-color); }
+        .breadcrumb { color: rgba(255,255,255,0.9); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .breadcrumb a { color: white; text-decoration: none; }
+        .page-header h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+        .page-subtitle { color: rgba(255,255,255,0.95); font-size: 1.125rem; margin-bottom: 1rem; }
+        .page-meta { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+        .badge { padding: 0.375rem 0.875rem; border-radius: 20px; font-size: 0.875rem; font-weight: 500; }
+        .badge-primary { background: rgba(255,255,255,0.2); color: white; }
+        .badge-secondary { background: rgba(255,255,255,0.15); color: white; }
+        .badge-warning { background: #fef3c7; color: #92400e; }
+        
+        /* Keywords Box */
+        .keywords-box { background: #fef3c7; border-left: 4px solid var(--warning-color); padding: 1rem; margin: 2rem 0; border-radius: 0 8px 8px 0; font-size: 0.9rem; }
+        
+        /* Study Sections */
+        .study-section { background: var(--card-bg); border-radius: 12px; margin: 1.5rem 0; box-shadow: var(--shadow); overflow: hidden; }
+        .section-header { width: 100%; padding: 1.25rem 1.5rem; background: var(--card-bg); border: none; display: flex; align-items: center; gap: 1rem; cursor: pointer; font-size: 1.125rem; font-weight: 600; color: var(--text-primary); transition: all 0.2s; }
+        .section-header:hover { background: var(--bg-color); }
+        .section-number { font-size: 1.5rem; }
+        .toggle-icon { margin-left: auto; transition: transform 0.3s; }
+        .section-header.collapsed .toggle-icon { transform: rotate(-90deg); }
+        .section-content { max-height: 2000px; overflow: hidden; transition: max-height 0.3s ease; }
+        .section-content.collapsed { max-height: 0; }
+        .content-box { padding: 1.5rem; }
+        
+        /* Lists */
+        .simple-list, .bullet-list, .numbered-list { margin: 1rem 0; padding-left: 1.5rem; }
+        .simple-list li, .bullet-list li { margin: 0.75rem 0; line-height: 1.7; }
+        .bullet-list li { list-style: disc; }
+        .numbered-list li { list-style: decimal; margin: 1rem 0; }
+        
+        /* Prelims Box */
+        .prelims-box { background: #eff6ff; border-radius: 8px; padding: 1.5rem; }
+        .fact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+        .fact-item { background: white; padding: 1rem; border-radius: 8px; text-align: center; }
+        .fact-label { display: block; color: var(--text-secondary); font-size: 0.875rem; margin-bottom: 0.25rem; }
+        .fact-value { display: block; font-weight: 700; color: var(--primary-color); font-size: 1.125rem; }
+        .highlight-box { background: #fef3c7; border-left: 4px solid var(--warning-color); padding: 1rem; margin-top: 1rem; border-radius: 0 8px 8px 0; }
+        
+        /* Mains Box */
+        .mains-box { background: #f8fafc; }
+        .mains-subsection { margin: 1.5rem 0; padding: 1.25rem; background: white; border-radius: 8px; }
+        .mains-subsection h4 { color: var(--primary-color); margin-bottom: 0.75rem; font-size: 1rem; }
+        
+        /* Case Studies */
+        .case-study { background: #f0fdf4; border: 1px solid #86efac; border-radius: 8px; padding: 1.25rem; margin: 1rem 0; }
+        .case-study h4 { color: #166534; margin-bottom: 0.75rem; }
+        
+        /* MCQ Section */
+        .mcq-box { background: #fefce8; }
+        .mcq-item { background: white; padding: 1.5rem; border-radius: 8px; margin: 1rem 0; }
+        .mcq-question { margin-bottom: 1rem; line-height: 1.7; }
+        .mcq-options { display: flex; flex-direction: column; gap: 0.5rem; margin: 1rem 0; }
+        .mcq-options label { display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem; border-radius: 6px; cursor: pointer; transition: background 0.2s; }
+        .mcq-options label:hover { background: var(--bg-color); }
+        .mcq-answer { display: none; background: #f0fdf4; border-left: 4px solid var(--success-color); padding: 1rem; margin: 1rem 0; border-radius: 0 8px 8px 0; }
+        .mcq-answer.show { display: block; }
+        .btn-show-answer { background: var(--primary-color); color: white; border: none; padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: 500; margin-top: 0.5rem; }
+        .btn-show-answer:hover { background: #1d4ed8; }
+        
+        /* Revision Box */
+        .revision-box { background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); border-radius: 8px; padding: 1.5rem; }
+        .revision-list { list-style: none; padding: 0; }
+        .revision-list li { padding: 0.5rem 0; border-bottom: 1px solid rgba(0,0,0,0.1); }
+        .revision-list li:last-child { border-bottom: none; }
+        .mnemonic-box { background: white; padding: 1rem; border-radius: 8px; margin: 1rem 0; font-family: 'Courier New', monospace; }
+        .warning-list { list-style: none; padding: 0; }
+        .warning-list li { padding: 0.5rem; background: #fee2e2; margin: 0.5rem 0; border-radius: 6px; color: #991b1b; }
+        
+        /* Page Navigation */
+        .page-navigation { display: flex; justify-content: space-between; gap: 1rem; margin: 2rem 0; flex-wrap: wrap; }
+        .nav-btn { flex: 1; min-width: 150px; padding: 1rem; text-align: center; background: var(--card-bg); border: 2px solid var(--border-color); border-radius: 8px; text-decoration: none; color: var(--text-primary); font-weight: 500; cursor: pointer; transition: all 0.2s; }
+        .nav-btn:hover { border-color: var(--primary-color); color: var(--primary-color); }
+        .btn-success { background: var(--success-color); color: white; border-color: var(--success-color); }
+        .btn-success:hover { background: #059669; color: white; }
+        .btn-disabled { opacity: 0.5; cursor: not-allowed; }
+        
+        /* Footer */
+        .page-footer { background: var(--bg-color); color: var(--text-secondary); border-top: 1px solid var(--border-color); padding: 2rem 0; text-align: center; margin-top: 3rem; }
+        .intro-box { background: #f0f9ff; border-left: 4px solid var(--primary-color); padding: 1.5rem; border-radius: 0 8px 8px 0; }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .page-header h1 { font-size: 1.5rem; }
+            .section-header { font-size: 1rem; padding: 1rem; }
+            .fact-grid { grid-template-columns: 1fr; }
+            .page-navigation { flex-direction: column; }
+        }
+        @media print {
+            .study-nav, .page-navigation, .btn-show-answer { display: none !important; }
+            .section-content { max-height: none !important; }
+            .toggle-icon { display: none; }
+            body { background: white; }
+            .study-section { break-inside: avoid; box-shadow: none; border: 1px solid #ddd; }
+        }
+    </style>
+</head>
+<body class="study-page">
+    <nav class="study-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Current Affairs Index</a>
+            <div class="nav-controls">
+                <button onclick="toggleAllSections()" class="btn-secondary">Expand/Collapse All</button>
+                <button onclick="window.print()" class="btn-primary">📄 Print/Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../index.html">Home</a> / 
+                <a href="index.html">Current Affairs</a> / 
+                <span>CA-05</span>
+            </div>
+            <h1>🗻 India–China Border Issue Update</h1>
+            <p class="page-subtitle">LAC Dispute • Galwan Aftermath • Disengagement Progress • Strategic Implications</p>
+            <div class="page-meta">
+                <span class="badge badge-primary">High Yield</span>
+                <span class="badge badge-secondary">IR + Security</span>
+                <span class="badge badge-warning">⚡ Ongoing Tensions</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="keywords-box">
+            <strong>🔍 Quick Search:</strong> 
+            What is LAC?, UPSC notes on India-China border, MCQs on Galwan clash, disengagement process explained simply
+        </section>
+
+        <!-- Section 1: Introduction -->
+        <section class="study-section collapsible" data-section="1">
+            <button class="section-header" onclick="toggleSection(1)">
+                <span class="section-number">1️⃣</span>
+                <span class="section-title">Introduction (Simple)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-1">
+                <div class="content-box intro-box">
+                    <ul class="simple-list">
+                        <li><strong>What is the issue?</strong> → Dispute over the <strong>Line of Actual Control (LAC)</strong>, a 3,488 km de facto border that is not mutually agreed or demarcated.</li>
+                        <li><strong>Key Flashpoints:</strong> Ladakh (Western Sector), Sikkim (Central), Arunachal Pradesh (Eastern Sector).</li>
+                        <li><strong>Galwan Clash:</strong> June 15, 2020 — deadliest confrontation since 1975; 20 Indian soldiers martyred.</li>
+                        <li><strong>Current Status (2026):</strong> 21+ rounds of Corps Commander talks; partial disengagement at Pangong Tso, Gogra, Hot Springs; Patrolling Points 10-13, 15, 17A still disputed.</li>
+                        <li><strong>Why important for UPSC?</strong> → Tests understanding of border diplomacy, military strategy, India-China relations, Quad synergy, strategic autonomy, national security.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Key Concepts -->
+        <section class="study-section collapsible" data-section="2">
+            <button class="section-header" onclick="toggleSection(2)">
+                <span class="section-number">2️⃣</span>
+                <span class="section-title">Key Concepts (Bullet Points)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-2">
+                <div class="content-box">
+                    <h3>📌 Understanding the LAC</h3>
+                    <ul class="bullet-list">
+                        <li><strong>Not a Legal Boundary:</strong> LAC is a "line of actual control" from 1959/1962, not a mutually agreed international border.</li>
+                        <li><strong>Three Sectors:</strong> 
+                            <ul>
+                                <li><strong>Western (Ladakh):</strong> Most contentious; Aksai Chin under Chinese control; India claims it as part of Ladakh.</li>
+                                <li><strong>Central (Sikkim):</strong> Relatively stable; Doklam stand-off (2017) was exception.</li>
+                                <li><strong>Eastern (Arunachal):</strong> China claims "South Tibet"; India administers as Arunachal Pradesh.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Perception Gap:</strong> India and China have different interpretations of LAC alignment → frequent face-offs.</li>
+                    </ul>
+
+                    <h3>📌 Diplomatic & Military Mechanisms</h3>
+                    <ul class="bullet-list">
+                        <li><strong>WMCC:</strong> Working Mechanism for Consultation and Coordination (est. 2012) — diplomatic channel for border management.</li>
+                        <li><strong>Corps Commander Talks:</strong> Military-level negotiations at Chushul-Moldo; 21+ rounds since 2020.</li>
+                        <li><strong>Agreements:</strong> 1993, 1996, 2005, 2013 — maintain peace along LAC; but no agreement on LAC alignment itself.</li>
+                        <li><strong>Hotlines:</strong> Military commander hotlines for crisis communication; often non-functional during tensions.</li>
+                    </ul>
+
+                    <h3>📌 Disengagement Process (2020-2026)</h3>
+                    <ul class="bullet-list">
+                        <li><strong>Phase 1 (2020-21):</strong> Disengagement at Galwan Valley post-clash; buffer zones created.</li>
+                        <li><strong>Phase 2 (2021):</strong> Pangong Tso north/south banks; both sides pulled back ~1-2 km.</li>
+                        <li><strong>Phase 3 (2022):</strong> Gogra (PP-17A) and Hot Springs (PP-15); limited disengagement, patrols restricted.</li>
+                        <li><strong>Current Stalemate:</strong> Depsang Plains, Demchok (PP-10, 11, 12, 13) remain unresolved; China seeks "status quo" favorable to them.</li>
+                        <li><strong>India's Position:</strong> "Disengagement → De-escalation → Resolution"; no normalization until LAC status quo restored to pre-April 2020.</li>
+                    </ul>
+
+                    <h3>📌 Strategic Dimensions</h3>
+                    <ul class="bullet-list">
+                        <li><strong>Infrastructure Race:</strong> India: DSDBO Road, Atal Tunnel, Darbuk-Shyok-Daulat Beg Oldie; China: G219 highway, airbases in Tibet.</li>
+                        <li><strong>Quad Synergy:</strong> Border tensions accelerated India's strategic convergence with US, Japan, Australia.</li>
+                        <li><strong>Economic Decoupling:</strong> Ban on 300+ Chinese apps; scrutiny of Chinese FDI; "Atmanirbhar Bharat" push.</li>
+                        <li><strong>Multi-Alignment:</strong> India balances border firmness with engagement on climate, BRICS, Global South issues.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Important Facts for Prelims -->
+        <section class="study-section collapsible" data-section="3">
+            <button class="section-header" onclick="toggleSection(3)">
+                <span class="section-number">3️⃣</span>
+                <span class="section-title">Important Facts for Prelims</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-3">
+                <div class="content-box prelims-box">
+                    <div class="fact-grid">
+                        <div class="fact-item">
+                            <span class="fact-label">LAC Length</span>
+                            <span class="fact-value">3,488 km</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-label">Galwan Clash</span>
+                            <span class="fact-value">June 15, 2020</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-label">Corps Commander Rounds</span>
+                            <span class="fact-value">21+ (as of 2026)</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-label">WMCC Est.</span>
+                            <span class="fact-value">2012</span>
+                        </div>
+                    </div>
+                    
+                    <h3>✅ Quick Facts</h3>
+                    <ul class="bullet-list">
+                        <li><strong>1962 War:</strong> Oct-Nov 1962; China captured Aksai Chin; unilateral ceasefire.</li>
+                        <li><strong>McMahon Line:</strong> 1914 Simla Convention; basis for India's claim in Eastern Sector; China rejects it.</li>
+                        <li><strong>Johnson Line:</strong> British proposal for Western Sector; forms basis of India's Aksai Chin claim.</li>
+                        <li><strong>Patrolling Points (PPs):</strong> 65 identified along LAC; PP-10 to 17A are current flashpoints.</li>
+                        <li><strong>Buffer Zones:</strong> Created post-disengagement; no patrolling by either side in these areas.</li>
+                    </ul>
+
+                    <h3>✅ Key Numbers</h3>
+                    <ul class="bullet-list">
+                        <li>India-China Trade (2023): ~$136 billion; India's deficit: ~$100 billion</li>
+                        <li>Chinese Apps Banned: 300+ since 2020 (TikTok, UC Browser, etc.)</li>
+                        <li>Border Infrastructure: India spending ₹50,000+ crore on roads, tunnels, airfields since 2020</li>
+                        <li>Troop Deployment: ~50,000-60,000 soldiers on each side along LAC (estimated)</li>
+                    </ul>
+
+                    <div class="highlight-box">
+                        <strong>💡 Prelims Trap:</strong> LAC is <strong>not</strong> the same as the "Line of Control (LoC)" with Pakistan. LoC is a ceasefire line with some demarcation; LAC is an undefined de facto border with major perception gaps.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Detailed Explanation for Mains -->
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">Detailed Explanation for Mains</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
+                <div class="content-box mains-box">
+                    <h3>🎯 India-China Border Issue: Multi-Dimensional Analysis</h3>
+                    
+                    <div class="mains-subsection">
+                        <h4>🔹 Historical Roots of the Dispute</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Colonial Legacy:</strong> British-era maps (Johnson Line, McMahon Line) created ambiguous boundaries; China never accepted them.</li>
+                            <li><strong>1950s-62:</strong> China's occupation of Tibet (1950), construction of Aksai Chin road (1956), 1959 Dalai Lama asylum → rising tensions.</li>
+                            <li><strong>1962 War:</strong> China's "preemptive strike"; India's military unpreparedness; unilateral ceasefire left status quo unfavorable to India.</li>
+                            <li><strong>Post-1962:</strong> Series of agreements (1993, 1996, 2005, 2013) to maintain peace but no resolution on LAC alignment.</li>
+                        </ul>
+                    </div>
+
+                    <div class="mains-subsection">
+                        <h4>🔹 Galwan Clash (2020): Trigger & Aftermath</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Immediate Trigger:</strong> China's infrastructure build-up near Galwan Valley; India's counter-patrolling to assert claims.</li>
+                            <li><strong>Escalation:</strong> Hand-to-hand combat with clubs, stones (no firearms per 1996 agreement); 20 Indian soldiers martyred, 43+ Chinese casualties (estimated).</li>
+                            <li><strong>Strategic Shift:</strong> End of "strategic ambiguity"; India accelerated border infrastructure, deepened Quad ties, restricted Chinese economic presence.</li>
+                            <li><strong>Diplomatic Response:</strong> External Affairs Minister, NSA-level talks; but military talks remained primary channel.</li>
+                        </ul>
+                    </div>
+
+                    <div class="mains-subsection">
+                        <h4>🔹 Disengagement: Progress & Challenges</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Successes:</strong> Pangong Tso, Gogra, Hot Springs disengagement reduced immediate flashpoints; buffer zones created.</li>
+                            <li><strong>Stalemates:</strong> Depsang Plains (PP-10, 11, 12, 13) and Demchok remain unresolved; China seeks to retain tactical advantages.</li>
+                            <li><strong>Trust Deficit:</strong> Repeated violations of agreements; China's "salami slicing" tactics; India's firm "no normalization without resolution" stance.</li>
+                            <li><strong>Domestic Politics:</strong> Border issue influences public opinion, electoral politics in border states; government's firm posture has broad support.</li>
+                        </ul>
+                    </div>
+
+                    <div class="mains-subsection">
+                        <h4>🔹 Broader Strategic Implications</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Quad Convergence:</strong> Border tensions accelerated India's strategic alignment with US, Japan, Australia; joint exercises, technology sharing.</li>
+                            <li><strong>Economic Statecraft:</strong> App bans, FDI scrutiny, supply chain diversification ("China+1") as tools of coercive diplomacy.</li>
+                            <li><strong>Multi-Alignment Test:</strong> India engages China on climate, BRICS, Global South while confronting on border — delicate balancing act.</li>
+                            <li><strong>Regional Impact:</strong> Nepal, Bhutan, Sri Lanka watch India-China dynamics; China's infrastructure diplomacy in neighborhood continues.</li>
+                        </ul>
+                    </div>
+
+                    <div class="mains-subsection">
+                        <h4>🔹 Way Forward (Mains Answer Framework)</h4>
+                        <ol class="numbered-list">
+                            <li><strong>Short-term:</strong> Sustain military-diplomatic dialogue; prevent accidental escalation; maintain robust border infrastructure.</li>
+                            <li><strong>Medium-term:</strong> Clarify LAC alignment through joint surveys; establish credible verification mechanisms for agreements.</li>
+                            <li><strong>Long-term:</strong> Comprehensive boundary settlement (politically challenging); build economic interdependence with safeguards; strengthen multilateral engagement to manage rivalry.</li>
+                            <li><strong>Strategic Posture:</strong> Continue multi-alignment: firm on sovereignty, open to cooperation on global issues; leverage Quad for deterrence without provoking conflict.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Examples / Case Studies -->
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)">
+                <span class="section-number">5️⃣</span>
+                <span class="section-title">Examples / Case Studies</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-5">
+                <div class="content-box">
+                    <div class="case-study">
+                        <h4>📌 Case 1: Pangong Tso Disengagement (2021)</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Context:</strong> China occupied Finger 4-8 on north bank in May 2020; India controlled Finger 1-3; standoff at Finger 4.</li>
+                            <li><strong>Process:</strong> 9 rounds of Corps Commander talks; both sides pulled back ~1-2 km; created buffer zone; India regained access to Finger 1-3.</li>
+                            <li><strong>Outcome:</strong> Reduced immediate confrontation risk; but China retains control of Finger 4-8; patrolling restrictions remain.</li>
+                            <li><strong>UPSC Link:</strong> Diplomacy-military coordination + Buffer zone concept + Limitations of disengagement without resolution.</li>
+                        </ul>
+                    </div>
+
+                    <div class="case-study">
+                        <h4>📌 Case 2: Infrastructure Race — DSDBO Road vs G219</h4>
+                        <ul class="bullet-list">
+                            <li><strong>India's DSDBO Road:</strong> Darbuk-Shyok-Daulat Beg Oldie; 255 km all-weather road to world's highest airstrip; cuts travel time from 2 days to 6 hours.</li>
+                            <li><strong>China's G219:</strong> Upgraded highway along Tibet-Xinjiang border; connects Aksai Chin to western China; supports rapid troop mobilization.</li>
+                            <li><strong>Strategic Impact:</strong> Improved logistics enhance deterrence; but also raise risk of rapid escalation; infrastructure as tool of territorial assertion.</li>
+                            <li><strong>UPSC Link:</strong> Border infrastructure + Deterrence theory + Civil-military synergy + Atmanirbhar Bharat in defense.</li>
+                        </ul>
+                    </div>
+
+                    <div class="case-study">
+                        <h4>📌 Case 3: Economic Decoupling — App Bans & FDI Scrutiny</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Context:</strong> Post-Galwan, India banned 300+ Chinese apps (TikTok, UC Browser, etc.) citing data security, sovereignty.</li>
+                            <li><strong>FDI Policy:</strong> Press Note 3 (2020): Prior approval required for investments from countries sharing land border with India (targeting China).</li>
+                            <li><strong>Impact:</strong> Reduced Chinese digital footprint; slowed Chinese FDI; but trade deficit remains high ($100B); supply chain dependencies persist.</li>
+                            <li><strong>UPSC Link:</strong> Economic statecraft + Digital sovereignty + Strategic autonomy + Balancing security with development needs.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: MCQs -->
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)">
+                <span class="section-number">6️⃣</span>
+                <span class="section-title">5 MCQs with Answers</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-6">
+                <div class="content-box mcq-box">
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q1.</strong> With reference to the India-China border, consider the following statements:<br>
+                        1. The Line of Actual Control (LAC) is a mutually agreed and demarcated international boundary.<br>
+                        2. The Galwan Valley clash occurred in the Eastern Sector of the LAC.<br>
+                        3. The Working Mechanism for Consultation and Coordination (WMCC) was established in 2012.<br><br>
+                        Which of the statements given above is/are correct?</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q1" value="a"> (a) 1 and 2 only</label>
+                            <label><input type="radio" name="q1" value="b"> (b) 2 and 3 only</label>
+                            <label><input type="radio" name="q1" value="c"> (c) 3 only</label>
+                            <label><input type="radio" name="q1" value="d"> (d) 1, 2 and 3</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q1">
+                            <p><strong>✅ Answer:</strong> (c) 3 only</p>
+                            <p><strong>💡 Explanation:</strong> LAC is <strong>not</strong> mutually agreed or demarcated (✗). Galwan Valley is in the <strong>Western Sector</strong> (Ladakh), not Eastern (✗). WMCC was indeed established in 2012 (✓).</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q1')">Show Answer</button>
+                    </div>
+
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q2.</strong> The McMahon Line, which forms the basis of India's claim in the Eastern Sector, was proposed in:</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q2" value="a"> (a) 1914 Simla Convention</label>
+                            <label><input type="radio" name="q2" value="b"> (b) 1947 Independence</label>
+                            <label><input type="radio" name="q2" value="c"> (c) 1962 War</label>
+                            <label><input type="radio" name="q2" value="d"> (d) 1993 Border Peace Agreement</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q2">
+                            <p><strong>✅ Answer:</strong> (a) 1914 Simla Convention</p>
+                            <p><strong>💡 Explanation:</strong> The McMahon Line was drawn during the 1914 Simla Convention between British India, Tibet, and China. China has never accepted it, but India administers Arunachal Pradesh based on this line.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q2')">Show Answer</button>
+                    </div>
+
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q3.</strong> Which of the following Patrolling Points (PPs) along the LAC remains a major point of contention as of 2026?</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q3" value="a"> (a) PP-14 (Galwan Valley)</label>
+                            <label><input type="radio" name="q3" value="b"> (b) PP-17A (Gogra)</label>
+                            <label><input type="radio" name="q3" value="c"> (c) PP-10 to PP-13 (Depsang Plains)</label>
+                            <label><input type="radio" name="q3" value="d"> (d) PP-15 (Hot Springs)</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q3">
+                            <p><strong>✅ Answer:</strong> (c) PP-10 to PP-13 (Depsang Plains)</p>
+                            <p><strong>💡 Explanation:</strong> While disengagement occurred at Galwan (PP-14), Gogra (PP-17A), and Hot Springs (PP-15), the Depsang Plains area (PP-10, 11, 12, 13) remains unresolved as of 2026, with China restricting Indian patrolling.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q3')">Show Answer</button>
+                    </div>
+
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q4.</strong> Consider the following pairs:<br>
+                        Agreement/ Mechanism | Year of Establishment<br>
+                        1. Agreement on Maintenance of Peace and Tranquillity | 1993<br>
+                        2. Working Mechanism for Consultation and Coordination (WMCC) | 2012<br>
+                        3. Border Defence Cooperation Agreement | 2013<br><br>
+                        How many pairs are correctly matched?</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q4" value="a"> (a) Only one</label>
+                            <label><input type="radio" name="q4" value="b"> (b) Only two</label>
+                            <label><input type="radio" name="q4" value="c"> (c) All three</label>
+                            <label><input type="radio" name="q4" value="d"> (d) None</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q4">
+                            <p><strong>✅ Answer:</strong> (c) All three</p>
+                            <p><strong>💡 Explanation:</strong> All three pairs are correctly matched: 1993 Agreement on Peace and Tranquillity, 2012 WMCC establishment, and 2013 Border Defence Cooperation Agreement.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q4')">Show Answer</button>
+                    </div>
+
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q5.</strong> India's trade deficit with China in 2023 was approximately:</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q5" value="a"> (a) $50 billion</label>
+                            <label><input type="radio" name="q5" value="b"> (b) $75 billion</label>
+                            <label><input type="radio" name="q5" value="c"> (c) $100 billion</label>
+                            <label><input type="radio" name="q5" value="d"> (d) $136 billion</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q5">
+                            <p><strong>✅ Answer:</strong> (c) $100 billion</p>
+                            <p><strong>💡 Explanation:</strong> Total India-China trade was ~$136 billion in 2023, with India's imports from China (~$118B) far exceeding exports (~$18B), resulting in a deficit of approximately $100 billion.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q5')">Show Answer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: Quick Revision Notes -->
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)">
+                <span class="section-number">7️⃣</span>
+                <span class="section-title">Quick Revision Notes</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-7">
+                <div class="content-box revision-box">
+                    <h3>🔁 India-China Border in 10 Seconds</h3>
+                    <ul class="revision-list">
+                        <li><strong>LAC:</strong> 3,488 km undefined de facto border; 3 sectors: Western (Ladakh), Central (Sikkim), Eastern (Arunachal)</li>
+                        <li><strong>Galwan:</strong> June 15, 2020 clash; 20 Indian martyrs; deadliest since 1975</li>
+                        <li><strong>Disengagement:</strong> Partial at Pangong Tso, Gogra, Hot Springs; stalemate at Depsang (PP-10-13), Demchok</li>
+                        <li><strong>Mechanisms:</strong> WMCC (2012), Corps Commander Talks (21+ rounds), 1993/96/2005/2013 agreements</li>
+                        <li><strong>Infrastructure:</strong> India: DSDBO Road, Atal Tunnel; China: G219 highway, Tibet airbases</li>
+                        <li><strong>Strategic Shift:</strong> Quad convergence, economic decoupling (app bans, FDI scrutiny), multi-alignment</li>
+                        <li><strong>India's Stance:</strong> "Disengagement → De-escalation → Resolution"; no normalization until pre-April 2020 status quo</li>
+                    </ul>
+
+                    <h3>🧠 Mnemonic: "LAC INDIA CHINA"</h3>
+                    <div class="mnemonic-box">
+                        <p><strong>L</strong> → Line of Actual Control: Undefined, perception gap, 3,488 km</p>
+                        <p><strong>A</strong> → Aksai Chin: Under Chinese control; India claims as part of Ladakh</p>
+                        <p><strong>C</strong> → Corps Commander Talks: 21+ rounds since 2020; primary military channel</p>
+                        <br>
+                        <p><strong>I</strong> → Infrastructure Race: DSDBO Road (India) vs G219 (China)</p>
+                        <p><strong>N</strong> → No firearms rule: 1996 agreement; Galwan fought with clubs, stones</p>
+                        <p><strong>D</strong> → Depsang Plains: PP-10 to 13 remain unresolved; key sticking point</p>
+                        <p><strong>I</strong> → India's Position: Firm on sovereignty; multi-alignment strategy</p>
+                        <p><strong>A</strong> → Agreements: 1993, 1996, 2005, 2013 — maintain peace but no boundary settlement</p>
+                        <br>
+                        <p><strong>C</strong> → China's Tactics: Salami slicing, infrastructure build-up, status quo favor</p>
+                        <p><strong>H</strong> → Hotlines: Military commander links; often non-functional during crises</p>
+                        <p><strong>I</strong> → India-China Trade: $136B (2023); $100B deficit for India; economic decoupling efforts</p>
+                        <p><strong>N</strong> → Normalization Condition: Restore pre-April 2020 LAC status quo first</p>
+                        <p><strong>A</strong> → Arunachal Pradesh: "South Tibet" claim by China; McMahon Line basis</p>
+                    </div>
+
+                    <h3>📌 Prelims Traps to Avoid</h3>
+                    <ul class="warning-list">
+                        <li>✘ LAC is <strong>not</strong> mutually agreed or demarcated (unlike LoC with Pakistan)</li>
+                        <li>✘ Galwan Valley is in <strong>Western Sector</strong> (Ladakh), not Eastern</li>
+                        <li>✘ McMahon Line (1914) is for <strong>Eastern Sector</strong>; Johnson Line for Western</li>
+                        <li>✘ WMCC est. <strong>2012</strong>, not 1993 or 2005</li>
+                        <li>✘ Disengagement ≠ Resolution; buffer zones created but patrolling restrictions remain</li>
+                    </ul>
+
+                    <h3>🎯 Mains One-Liners</h3>
+                    <ul class="bullet-list">
+                        <li>"LAC dispute = Colonial legacy + Power asymmetry + Trust deficit + Strategic competition"</li>
+                        <li>"Galwan 2020 = End of strategic ambiguity; accelerated Quad convergence, economic decoupling"</li>
+                        <li>"Disengagement progress = Diplomatic success; but resolution elusive without LAC alignment agreement"</li>
+                        <li>"Infrastructure race = Deterrence enhancement + Escalation risk; civil-military synergy critical"</li>
+                        <li>"India's multi-alignment = Firm on border, open to cooperation on climate, Global South issues"</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation Footer -->
+        <div class="page-navigation">
+            <a href="index.html" class="nav-btn">← Back to Current Affairs Index</a>
+            <button onclick="markAsComplete('CA-05')" class="nav-btn btn-success">✓ Mark as Complete</button>
+            <a href="india-usa-partnership.html" class="nav-btn">Next: CA-06 →</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>📄 Page Code: <strong>CA-05</strong> | Subject: Current Affairs + IR + Security</p>
+            <p>🔗 Link to Syllabus: GS-2 (IR, Border Management), GS-3 (Security, Infrastructure), Essay</p>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle Section
+        function toggleSection(sectionNum) {
+            const section = document.querySelector(`[data-section="${sectionNum}"]`);
+            const content = document.getElementById(`section-${sectionNum}`);
+            const header = section.querySelector('.section-header');
+            if (content.classList.contains('collapsed')) {
+                content.classList.remove('collapsed');
+                header.classList.remove('collapsed');
+            } else {
+                content.classList.add('collapsed');
+                header.classList.add('collapsed');
+            }
+        }
+        // Toggle All Sections
+        function toggleAllSections() {
+            const sections = document.querySelectorAll('.study-section');
+            const allCollapsed = Array.from(sections).every(s => s.querySelector('.section-content').classList.contains('collapsed'));
+            sections.forEach(section => {
+                const content = section.querySelector('.section-content');
+                const header = section.querySelector('.section-header');
+                if (allCollapsed) { content.classList.remove('collapsed'); header.classList.remove('collapsed'); }
+                else { content.classList.add('collapsed'); header.classList.add('collapsed'); }
+            });
+        }
+        // Show MCQ Answer
+        function showAnswer(questionId) {
+            const answerDiv = document.getElementById(`answer-${questionId}`);
+            const btn = event.target;
+            if (answerDiv.classList.contains('show')) { answerDiv.classList.remove('show'); btn.textContent = 'Show Answer'; }
+            else { answerDiv.classList.add('show'); btn.textContent = 'Hide Answer'; }
+        }
+        // Mark as Complete
+        function markAsComplete(pageCode) {
+            let completed = JSON.parse(localStorage.getItem('completedPages') || '[]');
+            if (!completed.includes(pageCode)) {
+                completed.push(pageCode);
+                localStorage.setItem('completedPages', JSON.stringify(completed));
+                const btn = event.target;
+                btn.textContent = '✓ Completed!';
+                btn.style.background = '#059669';
+                if (window.opener) { try { window.opener.updateMainProgress?.(); } catch(e) {} }
+            }
+        }
+        // Auto-expand first section
+        document.addEventListener('DOMContentLoaded', function() {
+            const first = document.querySelector('[data-section="1"]');
+            if (first) setTimeout(() => toggleSection(1), 300);
+        });
+        // Keyboard shortcuts
+        document.addEventListener('keydown', function(e) {
+            if ((e.ctrlKey || e.metaKey) && e.key === 'p') { e.preventDefault(); window.print(); }
+            if (e.key === ' ' && e.target === document.body) { e.preventDefault(); const f = document.querySelector('[data-section="1"]'); if (f) toggleSection(1); }
+        });
+    </script>
+</body>
+</html>

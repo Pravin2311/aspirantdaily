@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPSC 500-Page Master Study Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* ===== CSS Variables ===== */
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #64748b;
+            --success-color: #10b981;
+            --warning-color: #f59e0b;
+            --danger-color: #ef4444;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --border-color: #e2e8f0;
+            --shadow: 0 1px 3px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1);
+        }
+
+        /* ===== Base Styles ===== */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+        /* ===== Hero Section ===== */
+        .hero-header {
+            position: relative;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 4rem 0 3rem;
+            overflow: hidden;
+        }
+        .hero-bg {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.3;
+        }
+        .hero-content { position: relative; z-index: 1; text-align: center; }
+        .hero-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin: 0 0 1rem;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+        }
+        .hero-title .highlight {
+            background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero-subtitle { font-size: 1.25rem; opacity: 0.9; margin-bottom: 3rem; font-weight: 400; }
+        .hero-stats { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; }
+        .stat-card {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            padding: 1.5rem 2.5rem;
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            text-align: center;
+            min-width: 150px;
+        }
+        .stat-number { font-size: 2.5rem; font-weight: 800; display: block; margin-bottom: 0.25rem; }
+        .stat-label { font-size: 0.875rem; opacity: 0.9; }
+
+        /* ===== Main Navigation ===== */
+        .main-nav {
+            background: white;
+            border-bottom: 1px solid var(--border-color);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .main-nav .container { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+        .nav-pill {
+            padding: 0.625rem 1.25rem;
+            background: var(--bg-color);
+            border-radius: 50px;
+            text-decoration: none;
+            color: var(--text-primary);
+            font-weight: 500;
+            font-size: 0.875rem;
+            transition: all 0.2s;
+            border: 1px solid transparent;
+        }
+        .nav-pill:hover {
+            background: white;
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+            transform: translateY(-1px);
+        }
+
+        /* ===== Progress Overview ===== */
+        .progress-overview { margin: 3rem 0; }
+        .section-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; }
+        .section-header h2 { font-size: 1.5rem; font-weight: 700; color: var(--text-primary); }
+        .btn-text { background: none; border: none; color: var(--text-secondary); cursor: pointer; font-size: 0.875rem; text-decoration: underline; }
+        .btn-text:hover { color: var(--danger-color); }
+        .progress-card {
+            background: white;
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: var(--shadow);
+        }
+        .progress-info { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
+        .progress-label { font-size: 1rem; font-weight: 600; color: var(--text-primary); }
+        .progress-value { font-size: 1.5rem; font-weight: 800; color: var(--primary-color); }
+        .progress-bar-container { margin: 1.5rem 0; }
+        .progress-bar { background: var(--border-color); height: 12px; border-radius: 50px; overflow: hidden; }
+        .progress-fill {
+            background: linear-gradient(90deg, #10b981 0%, #34d399 100%);
+            height: 100%;
+            border-radius: 50px;
+            transition: width 0.5s ease;
+        }
+        .progress-details { display: flex; gap: 1rem; align-items: center; color: var(--text-secondary); font-size: 0.875rem; }
+        .separator { color: var(--border-color); }
+
+        /* ===== Subject Cards Grid ===== */
+        .subjects-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 2rem; margin: 3rem 0; }
+        .subject-card {
+            background: white;
+            border: 2px solid var(--border-color);
+            border-radius: 20px;
+            overflow: hidden;
+            transition: all 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+        .subject-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+            border-color: var(--card-color);
+        }
+        .card-header {
+            background: linear-gradient(135deg, var(--card-color) 0%, color-mix(in srgb, var(--card-color) 80%, black) 100%);
+            color: white;
+            padding: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .card-icon {
+            font-size: 2.5rem;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 12px;
+        }
+        .card-meta h3 { font-size: 1.25rem; font-weight: 700; margin: 0 0 0.25rem; }
+        .card-count { font-size: 0.875rem; opacity: 0.9; }
+        .card-body { padding: 1.5rem; flex: 1; }
+        .card-body p { color: var(--text-secondary); margin: 0 0 1rem; line-height: 1.6; }
+        .card-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem; }
+        .tag {
+            background: var(--bg-color);
+            color: var(--text-secondary);
+            padding: 0.25rem 0.75rem;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+        .card-progress { margin-top: auto; }
+        .progress-mini { background: var(--border-color); height: 6px; border-radius: 50px; overflow: hidden; margin-bottom: 0.5rem; }
+        .progress-mini-fill { background: var(--card-color); height: 100%; border-radius: 50px; transition: width 0.3s; }
+        .progress-text { font-size: 0.75rem; color: var(--text-secondary); }
+        .card-cta {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 1.5rem;
+            background: var(--bg-color);
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 600;
+            border-top: 1px solid var(--border-color);
+            transition: all 0.2s;
+        }
+        .subject-card:hover .card-cta { background: var(--card-color); color: white; }
+
+        /* ===== Footer ===== */
+        .main-footer {
+            background: var(--text-primary);
+            color: white;
+            padding: 3rem 0 2rem;
+            margin-top: 4rem;
+        }
+        .footer-content { display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; flex-wrap: wrap; gap: 2rem; }
+        .footer-brand h3 { margin: 0 0 0.5rem; font-size: 1.25rem; }
+        .footer-brand p { margin: 0; opacity: 0.8; }
+        .footer-info { text-align: right; }
+        .footer-info p { margin: 0.25rem 0; opacity: 0.9; }
+        .footer-bottom { text-align: center; padding-top: 2rem; border-top: 1px solid rgba(255, 255, 255, 0.1); opacity: 0.8; }
+
+        /* ===== Responsive ===== */
+        @media (max-width: 768px) {
+            .hero-title { font-size: 2rem; }
+            .hero-stats { gap: 1rem; }
+            .stat-card { padding: 1rem 1.5rem; min-width: 120px; }
+            .stat-number { font-size: 1.75rem; }
+            .subjects-grid { grid-template-columns: 1fr; }
+            .footer-content { flex-direction: column; text-align: center; }
+            .footer-info { text-align: center; }
+        }
+    </style>
+</head>
+<body class="main-index-page">
+    <!-- Hero Section -->
+    <header class="hero-header">
+        <div class="hero-bg"></div>
+        <div class="container hero-content">
+            <a href="#index.html" class="hero-badge">Back to HOME</a>
+            <div class="hero-badge">🎯 Your UPSC Journey Starts Here</div>
+            <h1 class="hero-title">UPSC<br><span class="highlight">Master Study Portal</span></h1>
+            <p class="hero-subtitle">Simple • Exam-Oriented • Memory-Friendly • Zero Fluff</p>
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <div class="stat-number" id="total-pages">500</div>
+                    <div class="stat-label">Total Pages</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="completed-pages">1</div>
+                    <div class="stat-label">Completed</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="progress-percent">0.2%</div>
+                    <div class="stat-label">Progress</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Navigation -->
+    <nav class="main-nav">
+        <div class="container">
+            <a href="#current-affairs" class="nav-pill">📰 Current Affairs</a>
+            <a href="#polity" class="nav-pill">⚖️ Polity</a>
+            <a href="#history" class="nav-pill">📜 History</a>
+            <a href="#geography" class="nav-pill">🗺️ Geography</a>
+            <a href="#economy" class="nav-pill">💰 Economy</a>
+            <a href="#environment" class="nav-pill">🌿 Environment</a>
+            <a href="#science-tech" class="nav-pill">🔬 Science & Tech</a>
+            <a href="#ir" class="nav-pill">🌏 IR</a>
+            <a href="#schemes" class="nav-pill">🎯 Schemes</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- Progress Overview -->
+        <section class="progress-overview">
+            <div class="section-header">
+                <h2>📊 Your Learning Progress</h2>
+                <button onclick="resetProgress()" class="btn-text">Reset Progress</button>
+            </div>
+            <div class="progress-card">
+                <div class="progress-info">
+                    <div class="progress-label">Overall Completion</div>
+                    <div class="progress-value" id="overall-progress">0.2%</div>
+                </div>
+                <div class="progress-bar-container">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-fill" style="width: 0.2%"></div>
+                    </div>
+                </div>
+                <div class="progress-details">
+                    <span>1 of 500 pages completed</span>
+                    <span class="separator">•</span>
+                    <span>Keep going! 🚀</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Subject Cards Grid -->
+        <section class="subjects-grid">
+            <!-- Current Affairs Card -->
+            <div class="subject-card" id="current-affairs" style="--card-color: #3b82f6">
+                <div class="card-header">
+                    <div class="card-icon">📰</div>
+                    <div class="card-meta">
+                        <h3>Current Affairs</h3>
+                        <span class="card-count">80 Pages</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p>Dynamic topics updated monthly with links to static syllabus</p>
+                    <div class="card-tags">
+                        <span class="tag">Monthly Compilations</span>
+                        <span class="tag">High Yield</span>
+                        <span class="tag">Trending</span>
+                    </div>
+                    <div class="card-progress">
+                        <div class="progress-mini">
+                            <div class="progress-mini-fill" style="width: 1.25%"></div>
+                        </div>
+                        <span class="progress-text">1/80 completed</span>
+                    </div>
+                </div>
+                <a href="current-affairs/index.html" class="card-cta">
+                    Explore Topics
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Polity Card -->
+            <div class="subject-card" id="polity" style="--card-color: #8b5cf6">
+                <div class="card-header">
+                    <div class="card-icon">⚖️</div>
+                    <div class="card-meta">
+                        <h3>Polity</h3>
+                        <span class="card-count">60 Pages</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p>Constitution, Fundamental Rights, Parliament, Judiciary & more</p>
+                    <div class="card-tags">
+                        <span class="tag">Most Important</span>
+                        <span class="tag">High Weightage</span>
+                    </div>
+                    <div class="card-progress">
+                        <div class="progress-mini">
+                            <div class="progress-mini-fill" style="width: 0%"></div>
+                        </div>
+                        <span class="progress-text">0/60 completed</span>
+                    </div>
+                </div>
+                <a href="polity/index.html" class="card-cta">
+                    Explore Topics
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Economy Card -->
+            <div class="subject-card" id="economy" style="--card-color: #ef4444">
+                <div class="card-header">
+                    <div class="card-icon">💰</div>
+                    <div class="card-meta">
+                        <h3>Economy</h3>
+                        <span class="card-count">60 Pages</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p>Basic concepts, Budget, Banking, Agriculture, Trade</p>
+                    <div class="card-tags">
+                        <span class="tag">Conceptual</span>
+                        <span class="tag">Current</span>
+                    </div>
+                    <div class="card-progress">
+                        <div class="progress-mini">
+                            <div class="progress-mini-fill" style="width: 0%"></div>
+                        </div>
+                        <span class="progress-text">0/60 completed</span>
+                    </div>
+                </div>
+                <a href="economy/index.html" class="card-cta">
+                    Explore Topics
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>📚 UPSC 500-Page Master Set</h3>
+                    <p>Built for Aspirants, by Aspirants</p>
+                </div>
+                <div class="footer-info">
+                    <p>Last Updated: <span id="last-updated">March 2026</span></p>
+                    <p>Total Pages: <strong>500</strong></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Stay Consistent • Stay Focused • Crack UPSC 💪</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Update progress on load
+        document.addEventListener('DOMContentLoaded', function() {
+            updateMainProgress();
+        });
+
+        function updateMainProgress() {
+            const completedPages = localStorage.getItem('completedPages');
+            const completed = completedPages ? JSON.parse(completedPages).length : 0;
+            const total = 500;
+            const percentage = ((completed / total) * 100).toFixed(1);
+            
+            document.getElementById('completed-pages').textContent = completed;
+            document.getElementById('progress-percent').textContent = percentage + '%';
+            document.getElementById('overall-progress').textContent = percentage + '%';
+            document.getElementById('progress-fill').style.width = percentage + '%';
+        }
+
+        function resetProgress() {
+            if(confirm('Are you sure you want to reset all progress?')) {
+                localStorage.removeItem('completedPages');
+                location.reload();
+            }
+        }
+    </script>
+</body>
+</html>
