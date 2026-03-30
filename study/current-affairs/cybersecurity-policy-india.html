@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CA-21: Cybersecurity Policy in India | UPSC Study Notes</title>
+    <meta name="description" content="Comprehensive UPSC notes on India's Cybersecurity Policy: Legal framework, CERT-In, NCIIPC, National Cyber Security Strategy, challenges, and analysis for Prelims & Mains.">
+    <meta name="keywords" content="Cybersecurity Policy India, IT Act 2000, CERT-In, NCIIPC, DPDP Act, Cyber Threats, UPSC Notes, Digital Governance, National Security">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #4f46e5;
+            --secondary-color: #64748b;
+            --success-color: #10b981;
+            --warning-color: #f59e0b;
+            --danger-color: #ef4444;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --border-color: #e2e8f0;
+            --shadow: 0 1px 3px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg-color); color: var(--text-primary); line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        /* Study Nav */
+        .study-nav { background: var(--card-bg); border-bottom: 1px solid var(--border-color); padding: 1rem 0; position: sticky; top: 0; z-index: 100; box-shadow: var(--shadow); }
+        .study-nav .container { display: flex; justify-content: space-between; align-items: center; }
+        .back-link { color: var(--primary-color); text-decoration: none; font-weight: 500; }
+        .nav-controls { display: flex; gap: 1rem; }
+        .btn-primary, .btn-secondary { padding: 0.5rem 1rem; border: none; border-radius: 6px; font-weight: 500; cursor: pointer; transition: all 0.2s; }
+        .btn-primary { background: var(--primary-color); color: white; }
+        .btn-primary:hover { background: #4338ca; }
+        .btn-secondary { background: var(--bg-color); color: var(--text-primary); border: 1px solid var(--border-color); }
+        .btn-secondary:hover { background: var(--border-color); }
+        
+        /* Page Header */
+        .page-header { background: linear-gradient(135deg, #4f46e5 0%, #4338ca 100%); color: white; padding: 2rem 0; border-bottom: 1px solid var(--border-color); }
+        .breadcrumb { color: rgba(255,255,255,0.9); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .breadcrumb a { color: white; text-decoration: none; }
+        .page-header h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+        .page-subtitle { color: rgba(255,255,255,0.95); font-size: 1.125rem; margin-bottom: 1rem; }
+        .page-meta { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+        .badge { padding: 0.375rem 0.875rem; border-radius: 20px; font-size: 0.875rem; font-weight: 500; }
+        .badge-primary { background: rgba(255,255,255,0.2); color: white; }
+        .badge-secondary { background: rgba(255,255,255,0.15); color: white; }
+        .badge-warning { background: #fef3c7; color: #92400e; }
+        
+        /* Keywords Box */
+        .keywords-box { background: #eef2ff; border-left: 4px solid var(--primary-color); padding: 1rem; margin: 2rem 0; border-radius: 0 8px 8px 0; font-size: 0.9rem; }
+        
+        /* Study Sections */
+        .study-section { background: var(--card-bg); border-radius: 12px; margin: 1.5rem 0; box-shadow: var(--shadow); overflow: hidden; }
+        .section-header { width: 100%; padding: 1.25rem 1.5rem; background: var(--card-bg); border: none; display: flex; align-items: center; gap: 1rem; cursor: pointer; font-size: 1.125rem; font-weight: 600; color: var(--text-primary); transition: all 0.2s; }
+        .section-header:hover { background: var(--bg-color); }
+        .section-number { font-size: 1.5rem; }
+        .toggle-icon { margin-left: auto; transition: transform 0.3s; }
+        .section-header.collapsed .toggle-icon { transform: rotate(-90deg); }
+        .section-content { max-height: 2000px; overflow: hidden; transition: max-height 0.3s ease; }
+        .section-content.collapsed { max-height: 0; }
+        .content-box { padding: 1.5rem; }
+        
+        /* Lists */
+        .simple-list, .bullet-list, .numbered-list { margin: 1rem 0; padding-left: 1.5rem; }
+        .simple-list li, .bullet-list li { margin: 0.75rem 0; line-height: 1.7; }
+        .bullet-list li { list-style: disc; }
+        .numbered-list li { list-style: decimal; margin: 1rem 0; }
+        
+        /* Prelims Box */
+        .prelims-box { background: #eef2ff; border-radius: 8px; padding: 1.5rem; }
+        .fact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+        .fact-item { background: white; padding: 1rem; border-radius: 8px; text-align: center; }
+        .fact-label { display: block; color: var(--text-secondary); font-size: 0.875rem; margin-bottom: 0.25rem; }
+        .fact-value { display: block; font-weight: 700; color: var(--primary-color); font-size: 1.125rem; }
+        .highlight-box { background: #fffbeb; border-left: 4px solid var(--warning-color); padding: 1rem; margin-top: 1rem; border-radius: 0 8px 8px 0; }
+        
+        /* Mains Box */
+        .mains-box { background: #f8fafc; }
+        .mains-subsection { margin: 1.5rem 0; padding: 1.25rem; background: white; border-radius: 8px; }
+        .mains-subsection h4 { color: var(--primary-color); margin-bottom: 0.75rem; font-size: 1rem; }
+        
+        /* Case Studies */
+        .case-study { background: #f0fdf4; border: 1px solid #86efac; border-radius: 8px; padding: 1.25rem; margin: 1rem 0; }
+        .case-study h4 { color: #166534; margin-bottom: 0.75rem; }
+        
+        /* MCQ Section */
+        .mcq-box { background: #fefce8; }
+        .mcq-item { background: white; padding: 1.5rem; border-radius: 8px; margin: 1rem 0; }
+        .mcq-question { margin-bottom: 1rem; line-height: 1.7; }
+        .mcq-options { display: flex; flex-direction: column; gap: 0.5rem; margin: 1rem 0; }
+        .mcq-options label { display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem; border-radius: 6px; cursor: pointer; transition: background 0.2s; }
+        .mcq-options label:hover { background: var(--bg-color); }
+        .mcq-answer { display: none; background: #f0fdf4; border-left: 4px solid var(--success-color); padding: 1rem; margin: 1rem 0; border-radius: 0 8px 8px 0; }
+        .mcq-answer.show { display: block; }
+        .btn-show-answer { background: var(--primary-color); color: white; border: none; padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: 500; margin-top: 0.5rem; }
+        .btn-show-answer:hover { background: #4338ca; }
+        
+        /* Revision Box */
+        .revision-box { background: linear-gradient(135deg, #eef2ff 0%, #c7d2fe 100%); border-radius: 8px; padding: 1.5rem; }
+        .revision-list { list-style: none; padding: 0; }
+        .revision-list li { padding: 0.5rem 0; border-bottom: 1px solid rgba(0,0,0,0.1); }
+        .revision-list li:last-child { border-bottom: none; }
+        .mnemonic-box { background: white; padding: 1rem; border-radius: 8px; margin: 1rem 0; font-family: 'Courier New', monospace; }
+        .warning-list { list-style: none; padding: 0; }
+        .warning-list li { padding: 0.5rem; background: #fee2e2; margin: 0.5rem 0; border-radius: 6px; color: #991b1b; }
+        
+        /* Page Navigation */
+        .page-navigation { display: flex; justify-content: space-between; gap: 1rem; margin: 2rem 0; flex-wrap: wrap; }
+        .nav-btn { flex: 1; min-width: 150px; padding: 1rem; text-align: center; background: var(--card-bg); border: 2px solid var(--border-color); border-radius: 8px; text-decoration: none; color: var(--text-primary); font-weight: 500; cursor: pointer; transition: all 0.2s; }
+        .nav-btn:hover { border-color: var(--primary-color); color: var(--primary-color); }
+        .btn-success { background: var(--success-color); color: white; border-color: var(--success-color); }
+        .btn-success:hover { background: #059669; color: white; }
+        .btn-disabled { opacity: 0.5; cursor: not-allowed; }
+        
+        /* Footer */
+        .page-footer { background: var(--bg-color); color: var(--text-secondary); border-top: 1px solid var(--border-color); padding: 2rem 0; text-align: center; margin-top: 3rem; }
+        .intro-box { background: #eef2ff; border-left: 4px solid var(--primary-color); padding: 1.5rem; border-radius: 0 8px 8px 0; }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .page-header h1 { font-size: 1.5rem; }
+            .section-header { font-size: 1rem; padding: 1rem; }
+            .fact-grid { grid-template-columns: 1fr; }
+            .page-navigation { flex-direction: column; }
+        }
+        @media print {
+            .study-nav, .page-navigation, .btn-show-answer { display: none !important; }
+            .section-content { max-height: none !important; }
+            .toggle-icon { display: none; }
+            body { background: white; }
+            .study-section { break-inside: avoid; box-shadow: none; border: 1px solid #ddd; }
+        }
+    </style>
+    <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-51XLJE4TVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-51XLJE4TVH');
+  </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327"
+     crossorigin="anonymous"></script>
+</head>
+<body class="study-page">
+    <nav class="study-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Current Affairs Index</a>
+            <div class="nav-controls">
+                <button onclick="toggleAllSections()" class="btn-secondary">Expand/Collapse All</button>
+                <button onclick="window.print()" class="btn-primary">📄 Print/Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../index.html">Home</a> / 
+                <a href="index.html">Current Affairs</a> / 
+                <span>CA-21: Cybersecurity + Governance</span>
+            </div>
+            <h1>🔐 Cybersecurity Policy in India</h1>
+            <p class="page-subtitle">Legal Framework • CERT-In • NCIIPC • National Cyber Security Strategy • Critical Infrastructure Protection</p>
+            <div class="page-meta">
+                <span class="badge badge-primary">High Yield</span>
+                <span class="badge badge-secondary">GS-3 + Internal Security</span>
+                <span class="badge badge-warning">⚡ Digital Governance + National Security</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="keywords-box">
+            <strong>🔍 Quick Search:</strong> 
+            National Cyber Security Policy 2013, IT Act Section 66F, CERT-In directions 2022, NCIIPC critical infrastructure, UPSC notes on cybersecurity
+        </section>
+
+        <!-- Section 1: Introduction -->
+        <section class="study-section collapsible" data-section="1">
+            <button class="section-header" onclick="toggleSection(1)">
+                <span class="section-number">1️⃣</span>
+                <span class="section-title">Introduction (Simple)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-1">
+                <div class="content-box intro-box">
+                    <ul class="simple-list">
+                        <li><strong>What is Cybersecurity?</strong> → Practice of protecting systems, networks, programs, and data from digital attacks, damage, or unauthorized access.</li>
+                        <li><strong>India's Cyber Threat Landscape:</strong> 13.9 lakh cyber incidents reported to CERT-In in 2023; ransomware, phishing, data breaches, critical infrastructure targeting rising.</li>
+                        <li><strong>Policy Framework:</strong> National Cyber Security Policy (NCSP) 2013 is the cornerstone; draft National Cyber Security Strategy (2020) pending cabinet approval.</li>
+                        <li><strong>Key Institutions:</strong> CERT-In (nodal agency), NCIIPC (critical infrastructure), MeitY (policy), NTRO (intelligence), Defence Cyber Agency.</li>
+                        <li><strong>UPSC Angle:</strong> Tests understanding of digital governance, critical infrastructure protection, legal frameworks, and India's strategic autonomy in cyberspace.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Key Concepts -->
+        <section class="study-section collapsible" data-section="2">
+            <button class="section-header" onclick="toggleSection(2)">
+                <span class="section-number">2️⃣</span>
+                <span class="section-title">Key Concepts (Bullet Points)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-2">
+                <div class="content-box">
+                    <h3>📌 Legal Framework for Cybersecurity in India</h3>
+                    <ul class="bullet-list">
+                        <li><strong>Information Technology Act, 2000 (Amended 2008):</strong>
+                            <ul>
+                                <li>Section 43: Penalty for damage to computer/computer system — compensation up to ₹1 crore.</li>
+                                <li>Section 66: Computer-related offences (hacking, data theft) — up to 3 years + ₹5 lakh fine.</li>
+                                <li><strong>Section 66F:</strong> Cyber terrorism — unauthorized access to critical infrastructure with intent to threaten unity, integrity, security, or sovereignty — life imprisonment.</li>
+                                <li>Section 70: Protected systems — government can declare any computer resource as "protected"; unauthorized access punishable.</li>
+                                <li>Section 70B: Established CERT-In as national nodal agency for incident response.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Digital Personal Data Protection (DPDP) Act, 2023:</strong>
+                            <ul>
+                                <li>Mandates data fiduciaries to implement security safeguards to prevent breaches.</li>
+                                <li>Requires breach notification to Data Protection Board and affected individuals.</li>
+                                <li>Penalties up to ₹250 crore for significant data fiduciaries failing security obligations.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Indian Penal Code (IPC), 1860:</strong>
+                            <ul>
+                                <li>Section 405/406: Criminal breach of trust (applicable to data misuse by insiders).</li>
+                                <li>Section 420: Cheating (cyber fraud, phishing scams).</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <h3>📌 Key Institutions & Their Roles</h3>
+                    <ul class="bullet-list">
+                        <li><strong>CERT-In (Indian Computer Emergency Response Team):</strong>
+                            <ul>
+                                <li>Nodal agency under MeitY for cybersecurity incident response.</li>
+                                <li>Functions: Incident monitoring, vulnerability analysis, emergency response, capacity building.</li>
+                                <li><strong>April 2022 Directions:</strong> Mandated VPN providers, cloud services, data centers to retain logs for 5 years; report incidents within 6 hours.</li>
+                            </ul>
+                        </li>
+                        <li><strong>NCIIPC (National Critical Information Infrastructure Protection Centre):</strong>
+                            <ul>
+                                <li>Established under IT Act Section 70A; operates under NTRO.</li>
+                                <li>Identifies and protects Critical Information Infrastructure (CII): power, banking, telecom, transport, government networks.</li>
+                                <li>Issues guidelines for CII operators; conducts audits and vulnerability assessments.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Defence Cyber Agency (DCA):</strong>
+                            <ul>
+                                <li>Tri-service command under Ministry of Defence for military cyber operations.</li>
+                                <li>Focus: Offensive/defensive cyber capabilities, protecting defence networks, counter-terrorism in cyberspace.</li>
+                            </ul>
+                        </li>
+                        <li><strong>National Security Council Secretariat (NSCS):</strong>
+                            <ul>
+                                <li>Coordinates national cybersecurity policy; chaired by National Security Advisor.</li>
+                                <li>Oversees implementation of National Cyber Security Strategy (when approved).</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <h3>📌 National Cyber Security Policy (NCSP) 2013: Key Objectives</h3>
+                    <ul class="bullet-list">
+                        <li>Create secure cyber ecosystem for citizens, businesses, and government.</li>
+                        <li>Strengthen regulatory framework for cybersecurity (led to IT Act amendments).</li>
+                        <li>Enhance visibility and resilience of critical information infrastructure.</li>
+                        <li>Develop indigenous security technologies and reduce import dependence.</li>
+                        <li>Build human capacity: Target of 5 lakh skilled cybersecurity professionals by 2020 (revised).</li>
+                        <li>Establish mechanisms for public-private partnership and international cooperation.</li>
+                    </ul>
+
+                    <h3>📌 Draft National Cyber Security Strategy (2020): Proposed Enhancements</h3>
+                    <ul class="bullet-list">
+                        <li><strong>Institutional Architecture:</strong> Proposes National Cyber Coordinator (NCC) at PMO level for strategic oversight.</li>
+                        <li><strong>Supply Chain Security:</strong> Trusted sources framework for hardware/software in critical sectors; "Make in India" for cybersecurity products.</li>
+                        <li><strong>Offensive Capabilities:</strong> Explicit mandate for proactive cyber operations (deterrence, attribution, counter-strikes).</li>
+                        <li><strong>Public-Private Fusion:</strong> Mandated information sharing between government and private sector; liability protections for good-faith reporting.</li>
+                        <li><strong>International Engagement:</strong> Active participation in UN GGE, OSCE, bilateral cyber dialogues; norms development for responsible state behavior.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Important Facts for Prelims -->
+        <section class="study-section collapsible" data-section="3">
+            <button class="section-header" onclick="toggleSection(3)">
+                <span class="section-number">3️⃣</span>
+                <span class="section-title">Important Facts for Prelims</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-3">
+                <div class="content-box prelims-box">
+                    <div class="fact-grid">
+                        <div class="fact-item">
+                            <span class="fact-label">NCSP Launched</span>
+                            <span class="fact-value">2013</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-label">CERT-In Established</span>
+                            <span class="fact-value">2004 (under IT Act)</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-label">NCIIPC Operational</span>
+                            <span class="fact-value">2014</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-label">Cyber Terrorism Section</span>
+                            <span class="fact-value">IT Act S.66F</span>
+                        </div>
+                    </div>
+                    
+                    <h3>✅ Quick Facts</h3>
+                    <ul class="bullet-list">
+                        <li><strong>Critical Information Infrastructure (CII):</strong> Defined under IT Act S.70 as computer resource whose incapacitation/destruction would have debilitating impact on national security, economy, public health, or safety.</li>
+                        <li><strong>CERT-In Directions (2022):</strong> Applied to VPN providers, cloud services, data centers; 5-year log retention; 6-hour incident reporting — challenged in courts on privacy grounds.</li>
+                        <li><strong>Cyber Swachhta Kendra:</strong> Botnet/malware cleaning initiative by CERT-In; free tools for citizens and SMEs to detect/remove infections.</li>
+                        <li><strong>Indian Cyber Crime Coordination Centre (I4C):</strong> Under MHA; integrates law enforcement response to cybercrime; includes National Cybercrime Reporting Portal.</li>
+                    </ul>
+
+                    <h3>✅ Recent Developments (2023-24)</h3>
+                    <ul class="bullet-list">
+                        <li><strong>National Cyber Security Coordinator (NCSC):</strong> Appointed at PMO level (2023) to coordinate policy implementation across ministries — interim step pending full Strategy approval.</li>
+                        <li><strong>Trusted Telecom Portal:</strong> Mandatory certification for telecom equipment suppliers in critical networks; part of supply chain security measures.</li>
+                        <li><strong>Cyber Surakshit Bharat:</strong> Awareness program for government officials; trained 1.5 lakh+ officers on secure digital practices.</li>
+                        <li><strong>India-US Critical and Emerging Technology (iCET):</strong> Includes cybersecurity cooperation: threat intelligence sharing, joint exercises, supply chain resilience.</li>
+                    </ul>
+
+                    <div class="highlight-box">
+                        <strong>💡 Prelims Trap:</strong> CERT-In is under <strong>MeitY</strong> (civilian), while NCIIPC is under <strong>NTRO</strong> (intelligence). Also, "cyber terrorism" (S.66F) requires <strong>intent to threaten sovereignty/security</strong> — not all hacking qualifies.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Detailed Explanation for Mains -->
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">Detailed Explanation for Mains</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
+                <div class="content-box mains-box">
+                    <h3>🎯 Cybersecurity Policy: Multi-Dimensional Analysis</h3>
+                    
+                    <div class="mains-subsection">
+                        <h4>🔹 Strategic Imperatives: Sovereignty & Resilience</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Digital Sovereignty:</strong> Protecting critical data and infrastructure from foreign surveillance, coercion, or disruption; reducing dependence on imported hardware/software.</li>
+                            <li><strong>Economic Security:</strong> Cyberattacks on banking, UPI, stock exchanges can trigger financial instability; cybersecurity is prerequisite for digital economy growth.</li>
+                            <li><strong>National Security Nexus:</strong> Hybrid warfare includes cyber operations; protecting defence networks, command-control systems, and strategic sectors is vital for deterrence.</li>
+                        </ul>
+                    </div>
+
+                    <div class="mains-subsection">
+                        <h4>🔹 Governance Challenges: Coordination & Capacity</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Institutional Fragmentation:</strong> Multiple agencies (CERT-In, NCIIPC, DCA, I4C, state police cyber cells) with overlapping mandates; need for unified command structure.</li>
+                            <li><strong>Public-Private Gap:</strong> 90% of critical infrastructure is privately owned; mandatory reporting and information sharing face resistance due to liability fears and competitive concerns.</li>
+                            <li><strong>Capacity Deficit:</strong> Shortage of skilled professionals (target 5 lakh vs. actual ~1.2 lakh); training infrastructure concentrated in metros; rural-urban digital divide exacerbates vulnerability.</li>
+                        </ul>
+                    </div>
+
+                    <div class="mains-subsection">
+                        <h4>🔹 Rights & Liberties: Balancing Security and Freedom</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Privacy Concerns:</strong> CERT-In's 2022 directions (log retention, user identification) challenged as disproportionate under Puttaswamy proportionality test.</li>
+                            <li><strong>Freedom of Expression:</strong> Overbroad interpretation of "cyber terrorism" or "unauthorized access" may chill legitimate security research, whistleblowing, or journalistic investigation.</li>
+                            <li><strong>Due Process:</strong> Emergency takedown powers, encryption restrictions need judicial oversight to prevent executive overreach.</li>
+                        </ul>
+                    </div>
+
+                    <div class="mains-subsection">
+                        <h4>🔹 Critical Challenges & Way Forward</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Supply Chain Vulnerabilities:</strong> Hardware backdoors, software dependencies on foreign vendors; need for indigenous R&D, trusted sourcing frameworks, and diversification.</li>
+                            <li><strong>Ransomware & Critical Infrastructure:</strong> Healthcare, power grids increasingly targeted; requires sector-specific resilience standards, backup systems, and incident response protocols.</li>
+                            <li><strong>International Norms:</strong> Cyberspace lacks binding treaties; India should advocate for UN-based norms that respect sovereignty while enabling cooperation against non-state threats.</li>
+                            <li><strong>Emerging Tech Risks:</strong> AI-powered attacks, quantum computing breaking encryption, IoT botnets; policy must be adaptive and anticipatory.</li>
+                        </ul>
+                        <h4 style="margin-top: 1rem; color: var(--primary-color);">🔹 Mains Answer Framework</h4>
+                        <ol class="numbered-list">
+                            <li><strong>Contextualize:</strong> Link cybersecurity to digital India ambitions, critical infrastructure protection, and India's strategic autonomy in an era of great power cyber competition.</li>
+                            <li><strong>Analyze Framework:</strong> Legal (IT Act, DPDP Act), institutional (CERT-In, NCIIPC, DCA), policy (NCSP 2013, draft Strategy), and operational (incident response, capacity building) dimensions.</li>
+                            <li><strong>Critically Evaluate:</strong> Implementation gaps (coordination, capacity), rights tensions (privacy vs. security), and strategic challenges (supply chain, emerging tech).</li>
+                            <li><strong>Way Forward:</strong> Approve and implement National Cyber Security Strategy with clear institutional architecture; invest in indigenous R&D and skills; strengthen public-private fusion; lead Global South in cyber norm-setting.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Examples / Case Studies -->
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)">
+                <span class="section-number">5️⃣</span>
+                <span class="section-title">Examples / Case Studies</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-5">
+                <div class="content-box">
+                    <div class="case-study">
+                        <h4>📌 Case 1: AIIMS Ransomware Attack (2022)</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Event:</strong> All India Institute of Medical Sciences, Delhi hit by ransomware; patient records, appointment systems offline for weeks.</li>
+                            <li><strong>Response:</strong> CERT-In deployed incident response team; MHA coordinated with international partners for attribution; manual processes restored critical services.</li>
+                            <li><strong>Lessons:</strong> Critical infrastructure (healthcare) lacked adequate segmentation, backups, and incident response plans; highlighted need for sector-specific cybersecurity standards.</li>
+                            <li><strong>UPSC Link:</strong> Critical infrastructure protection + Public health security + Incident response coordination + Public-private partnership gaps.</li>
+                        </ul>
+                    </div>
+
+                    <div class="case-study">
+                        <h4>📌 Case 2: CERT-In Directions 2022 – Privacy vs. Security Debate</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Policy:</strong> April 2022 directions mandated VPN providers, cloud services to retain user logs for 5 years; report incidents within 6 hours; verify customer identities.</li>
+                            <li><strong>Controversy:</strong> Privacy advocates challenged directions as disproportionate; some VPN providers exited Indian market citing compliance burden.</li>
+                            <li><strong>Outcome:</strong> Delhi High Court sought government response; directions remain in force but implementation selectively enforced pending judicial review.</li>
+                            <li><strong>UPSC Link:</strong> Proportionality test (Puttaswamy) + Regulatory overreach concerns + Balancing national security and fundamental rights.</li>
+                        </ul>
+                    </div>
+
+                    <div class="case-study">
+                        <h4>📌 Case 3: India-US iCET Cybersecurity Cooperation</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Initiative:</strong> Under India-US Critical and Emerging Technology (iCET) dialogue (2023), cybersecurity pillar includes threat intelligence sharing, joint exercises, supply chain resilience.</li>
+                            <li><strong>Components:</strong> (a) CERT-In and CISA (US) establish real-time threat data exchange; (b) Joint R&D on AI-powered threat detection; (c) Trusted telecom equipment supply chain framework.</li>
+                            <li><strong>Strategic Significance:</strong> Strengthens India's cyber deterrence against state and non-state actors; aligns with "friends-shoring" of critical technology supply chains.</li>
+                            <li><strong>UPSC Link:</strong> Strategic partnerships + Technology diplomacy + Supply chain security + Balancing autonomy and cooperation.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: MCQs -->
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)">
+                <span class="section-number">6️⃣</span>
+                <span class="section-title">5 MCQs with Answers</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-6">
+                <div class="content-box mcq-box">
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q1.</strong> With reference to cybersecurity policy in India, consider the following statements:<br>
+                        1. Section 66F of the IT Act, 2000 defines and penalizes cyber terrorism.<br>
+                        2. CERT-In functions under the Ministry of Home Affairs.<br>
+                        3. NCIIPC is responsible for protecting Critical Information Infrastructure in India.<br><br>
+                        Which of the statements given above are correct?</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q1" value="a"> (a) 1 and 2 only</label>
+                            <label><input type="radio" name="q1" value="b"> (b) 1 and 3 only</label>
+                            <label><input type="radio" name="q1" value="c"> (c) 2 and 3 only</label>
+                            <label><input type="radio" name="q1" value="d"> (d) 1, 2 and 3</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q1">
+                            <p><strong>✅ Answer:</strong> (b) 1 and 3 only</p>
+                            <p><strong>💡 Explanation:</strong> Statement 2 is incorrect: CERT-In functions under <strong>MeitY</strong> (Ministry of Electronics & IT), not Ministry of Home Affairs. Statements 1 & 3 are correct.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q1')">Show Answer</button>
+                    </div>
+
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q2.</strong> The National Critical Information Infrastructure Protection Centre (NCIIPC) operates under the administrative control of:</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q2" value="a"> (a) Ministry of Electronics & Information Technology (MeitY)</label>
+                            <label><input type="radio" name="q2" value="b"> (b) National Technical Research Organisation (NTRO)</label>
+                            <label><input type="radio" name="q2" value="c"> (c) Ministry of Home Affairs (MHA)</label>
+                            <label><input type="radio" name="q2" value="d"> (d) National Security Council Secretariat (NSCS)</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q2">
+                            <p><strong>✅ Answer:</strong> (b) National Technical Research Organisation (NTRO)</p>
+                            <p><strong>💡 Explanation:</strong> NCIIPC was established under IT Act Section 70A and operates under NTRO, which is India's premier technical intelligence agency.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q2')">Show Answer</button>
+                    </div>
+
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q3.</strong> Consider the following pairs:<br>
+                        Provision/Initiative | Purpose<br>
+                        1. IT Act Section 70 | Declaration of "protected systems" with enhanced penalties for unauthorized access<br>
+                        2. Cyber Swachhta Kendra | Free botnet/malware cleaning tools for citizens and SMEs<br>
+                        3. Trusted Telecom Portal | Certification framework for telecom equipment in critical networks<br><br>
+                        How many pairs are correctly matched?</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q3" value="a"> (a) Only one</label>
+                            <label><input type="radio" name="q3" value="b"> (b) Only two</label>
+                            <label><input type="radio" name="q3" value="c"> (c) All three</label>
+                            <label><input type="radio" name="q3" value="d"> (d) None</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q3">
+                            <p><strong>✅ Answer:</strong> (c) All three</p>
+                            <p><strong>💡 Explanation:</strong> All three pairs are correctly matched. Section 70 enables protected system designation, Cyber Swachhta Kendra provides cleanup tools, and Trusted Telecom Portal addresses supply chain security.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q3')">Show Answer</button>
+                    </div>
+
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q4.</strong> CERT-In's April 2022 directions mandated intermediaries to report cybersecurity incidents within:</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q4" value="a"> (a) 1 hour</label>
+                            <label><input type="radio" name="q4" value="b"> (b) 6 hours</label>
+                            <label><input type="radio" name="q4" value="c"> (c) 24 hours</label>
+                            <label><input type="radio" name="q4" value="d"> (d) 72 hours</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q4">
+                            <p><strong>✅ Answer:</strong> (b) 6 hours</p>
+                            <p><strong>💡 Explanation:</strong> CERT-In's directions require service providers, intermediaries, and data centers to report cybersecurity incidents within <strong>6 hours</strong> of noticing them — significantly faster than previous norms.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q4')">Show Answer</button>
+                    </div>
+
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q5.</strong> Which of the following is NOT a stated objective of the National Cyber Security Policy (NCSP) 2013?</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q5" value="a"> (a) Create a secure cyber ecosystem for citizens and businesses</label>
+                            <label><input type="radio" name="q5" value="b"> (b) Develop indigenous security technologies and reduce import dependence</label>
+                            <label><input type="radio" name="q5" value="c"> (c) Establish mandatory encryption backdoors for law enforcement access</label>
+                            <label><input type="radio" name="q5" value="d"> (d) Build human capacity with target of 5 lakh skilled professionals</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q5">
+                            <p><strong>✅ Answer:</strong> (c) Establish mandatory encryption backdoors for law enforcement access</p>
+                            <p><strong>💡 Explanation:</strong> NCSP 2013 does not mandate encryption backdoors; this remains a contested policy issue. The policy focuses on ecosystem security, indigenous development, and capacity building.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q5')">Show Answer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: Quick Revision Notes -->
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)">
+                <span class="section-number">7️⃣</span>
+                <span class="section-title">Quick Revision Notes</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-7">
+                <div class="content-box revision-box">
+                    <h3>🔁 Cybersecurity Policy in 10 Seconds</h3>
+                    <ul class="revision-list">
+                        <li><strong>NCSP 2013:</strong> Foundational policy; objectives: secure ecosystem, regulatory framework, CII protection, indigenous tech, capacity building</li>
+                        <li><strong>Legal Framework:</strong> IT Act (S.43/66/66F/70/70B), DPDP Act 2023, IPC provisions</li>
+                        <li><strong>CERT-In:</strong> Nodal agency under MeitY; incident response, vulnerability analysis, 2022 directions (6-hr reporting, 5-yr logs)</li>
+                        <li><strong>NCIIPC:</strong> Under NTRO; protects Critical Information Infrastructure (power, banking, telecom, transport)</li>
+                        <li><strong>Draft Strategy (2020):</strong> Proposes National Cyber Coordinator, supply chain security, offensive capabilities, public-private fusion</li>
+                        <li><strong>Key Challenge:</strong> Balancing security imperatives with privacy rights, federal coordination, capacity deficits</li>
+                        <li><strong>Way Forward:</strong> Approve Strategy, invest in R&D/skills, strengthen public-private fusion, lead Global South cyber norm-setting</li>
+                    </ul>
+
+                    <h3>🧠 Mnemonic: "CYBER INDIA SECURE"</h3>
+                    <div class="mnemonic-box">
+                        <p><strong>C</strong> → CERT-In: Nodal agency under MeitY for incident response</p>
+                        <p><strong>Y</strong> → Year of NCSP: 2013 (still operative; Strategy draft pending)</p>
+                        <p><strong>B</strong> → Backdoors debate: Encryption access remains contested policy issue</p>
+                        <p><strong>E</strong> → Ecosystem approach: Legal + Institutional + Technical + Human capacity</p>
+                        <p><strong>R</strong> → Rights balance: Proportionality test (Puttaswamy) for security measures</p>
+                        <br>
+                        <p><strong>I</strong> → IT Act Sections: 43 (damage), 66 (offences), 66F (cyber terrorism), 70/70B (protected systems/CERT-In)</p>
+                        <p><strong>N</strong> → NCIIPC: Under NTRO; protects Critical Information Infrastructure</p>
+                        <p><strong>D</strong> → Draft Strategy (2020): Proposes National Cyber Coordinator, supply chain security</p>
+                        <p><strong>I</strong> → Indigenous focus: "Make in India" for cybersecurity products and R&D</p>
+                        <p><strong>A</strong> → Attribution challenge: Technical/political difficulty in identifying attackers</p>
+                    </div>
+
+                    <h3>📌 Prelims Traps to Avoid</h3>
+                    <ul class="warning-list">
+                        <li>✘ CERT-In is under <strong>MeitY</strong>, not Ministry of Home Affairs</li>
+                        <li>✘ NCIIPC is under <strong>NTRO</strong>, not CERT-In or MeitY</li>
+                        <li>✘ "Cyber terrorism" (S.66F) requires <strong>intent to threaten sovereignty/security</strong> — not all hacking qualifies</li>
+                        <li>✘ NCSP 2013 is <strong>still operative</strong>; draft Strategy (2020) not yet approved by Cabinet</li>
+                        <li>✘ CERT-In 2022 directions mandate <strong>6-hour reporting</strong> (not 24/72 hours) and <strong>5-year log retention</strong></li>
+                    </ul>
+
+                    <h3>🎯 Mains One-Liners</h3>
+                    <ul class="bullet-list">
+                        <li>"Cybersecurity policy = Legal framework + Institutional architecture + Technical capacity + Human capital"</li>
+                        <li>"Critical infrastructure protection requires sector-specific standards, public-private fusion, and resilient system design"</li>
+                        <li>"Proportionality test ensures security measures respect privacy and free speech under constitutional framework"</li>
+                        <li>"Supply chain security and indigenous R&D are strategic imperatives for technological sovereignty"</li>
+                        <li>"Way Forward: Approve Strategy, invest in skills/R&D, strengthen coordination, lead Global South cyber governance"</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation Footer -->
+        <div class="page-navigation">
+            <a href="index.html" class="nav-btn">← Back to Current Affairs Index</a>
+            <button onclick="markAsComplete('CA-21')" class="nav-btn btn-success">✓ Mark as Complete</button>
+            <a href="national-quantum-mission-india.html" class="nav-btn">Next: CA-22 →</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>📄 Page Code: <strong>CA-21</strong> | Subject: Cybersecurity + Internal Security + Governance</p>
+            <p>🔗 Link to Syllabus: GS-3 (Internal Security, Cyber Security, S&T), GS-2 (Governance), GS-4 (Ethics), Essay</p>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle Section
+        function toggleSection(sectionNum) {
+            const section = document.querySelector(`[data-section="${sectionNum}"]`);
+            const content = document.getElementById(`section-${sectionNum}`);
+            const header = section.querySelector('.section-header');
+            if (content.classList.contains('collapsed')) {
+                content.classList.remove('collapsed');
+                header.classList.remove('collapsed');
+            } else {
+                content.classList.add('collapsed');
+                header.classList.add('collapsed');
+            }
+        }
+        // Toggle All Sections
+        function toggleAllSections() {
+            const sections = document.querySelectorAll('.study-section');
+            const allCollapsed = Array.from(sections).every(s => s.querySelector('.section-content').classList.contains('collapsed'));
+            sections.forEach(section => {
+                const content = section.querySelector('.section-content');
+                const header = section.querySelector('.section-header');
+                if (allCollapsed) { content.classList.remove('collapsed'); header.classList.remove('collapsed'); }
+                else { content.classList.add('collapsed'); header.classList.add('collapsed'); }
+            });
+        }
+        // Show MCQ Answer
+        function showAnswer(questionId) {
+            const answerDiv = document.getElementById(`answer-${questionId}`);
+            const btn = event.target;
+            if (answerDiv.classList.contains('show')) { answerDiv.classList.remove('show'); btn.textContent = 'Show Answer'; }
+            else { answerDiv.classList.add('show'); btn.textContent = 'Hide Answer'; }
+        }
+        // Mark as Complete
+        function markAsComplete(pageCode) {
+            let completed = JSON.parse(localStorage.getItem('completedPages') || '[]');
+            if (!completed.includes(pageCode)) {
+                completed.push(pageCode);
+                localStorage.setItem('completedPages', JSON.stringify(completed));
+                const btn = event.target;
+                btn.textContent = '✓ Completed!';
+                btn.style.background = '#059669';
+                if (window.opener) { try { window.opener.updateMainProgress?.(); } catch(e) {} }
+            }
+        }
+        // Auto-expand first section
+        document.addEventListener('DOMContentLoaded', function() {
+            const first = document.querySelector('[data-section="1"]');
+            if (first) setTimeout(() => toggleSection(1), 300);
+        });
+        // Keyboard shortcuts
+        document.addEventListener('keydown', function(e) {
+            if ((e.ctrlKey || e.metaKey) && e.key === 'p') { e.preventDefault(); window.print(); }
+            if (e.key === ' ' && e.target === document.body) { e.preventDefault(); const f = document.querySelector('[data-section="1"]'); if (f) toggleSection(1); }
+        });
+    </script>
+</body>
+</html>

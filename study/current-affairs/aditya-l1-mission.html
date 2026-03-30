@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CA-14: Aditya-L1 Mission | ISRO's First Solar Observatory Study Notes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #64748b;
+            --success-color: #10b981;
+            --warning-color: #f59e0b;
+            --danger-color: #ef4444;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --border-color: #e2e8f0;
+            --shadow: 0 1px 3px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg-color); color: var(--text-primary); line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        /* Study Nav */
+        .study-nav { background: var(--card-bg); border-bottom: 1px solid var(--border-color); padding: 1rem 0; position: sticky; top: 0; z-index: 100; box-shadow: var(--shadow); }
+        .study-nav .container { display: flex; justify-content: space-between; align-items: center; }
+        .back-link { color: var(--primary-color); text-decoration: none; font-weight: 500; }
+        .nav-controls { display: flex; gap: 1rem; }
+        .btn-primary, .btn-secondary { padding: 0.5rem 1rem; border: none; border-radius: 6px; font-weight: 500; cursor: pointer; transition: all 0.2s; }
+        .btn-primary { background: var(--primary-color); color: white; }
+        .btn-primary:hover { background: #1d4ed8; }
+        .btn-secondary { background: var(--bg-color); color: var(--text-primary); border: 1px solid var(--border-color); }
+        .btn-secondary:hover { background: var(--border-color); }
+        
+        /* Page Header */
+        .page-header { background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%); color: white; padding: 2rem 0; border-bottom: 1px solid var(--border-color); }
+        .breadcrumb { color: rgba(255,255,255,0.9); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .breadcrumb a { color: white; text-decoration: none; }
+        .page-header h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+        .page-subtitle { color: rgba(255,255,255,0.95); font-size: 1.125rem; margin-bottom: 1rem; }
+        .page-meta { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+        .badge { padding: 0.375rem 0.875rem; border-radius: 20px; font-size: 0.875rem; font-weight: 500; }
+        .badge-primary { background: rgba(255,255,255,0.2); color: white; }
+        .badge-secondary { background: rgba(255,255,255,0.15); color: white; }
+        .badge-warning { background: #fef3c7; color: #92400e; }
+        
+        /* Keywords Box */
+        .keywords-box { background: #eff6ff; border-left: 4px solid var(--primary-color); padding: 1rem; margin: 2rem 0; border-radius: 0 8px 8px 0; font-size: 0.9rem; }
+        
+        /* Study Sections */
+        .study-section { background: var(--card-bg); border-radius: 12px; margin: 1.5rem 0; box-shadow: var(--shadow); overflow: hidden; }
+        .section-header { width: 100%; padding: 1.25rem 1.5rem; background: var(--card-bg); border: none; display: flex; align-items: center; gap: 1rem; cursor: pointer; font-size: 1.125rem; font-weight: 600; color: var(--text-primary); transition: all 0.2s; }
+        .section-header:hover { background: var(--bg-color); }
+        .section-number { font-size: 1.5rem; }
+        .toggle-icon { margin-left: auto; transition: transform 0.3s; }
+        .section-header.collapsed .toggle-icon { transform: rotate(-90deg); }
+        .section-content { max-height: 2000px; overflow: hidden; transition: max-height 0.3s ease; }
+        .section-content.collapsed { max-height: 0; }
+        .content-box { padding: 1.5rem; }
+        
+        /* Lists */
+        .simple-list, .bullet-list, .numbered-list { margin: 1rem 0; padding-left: 1.5rem; }
+        .simple-list li, .bullet-list li { margin: 0.75rem 0; line-height: 1.7; }
+        .bullet-list li { list-style: disc; }
+        .numbered-list li { list-style: decimal; margin: 1rem 0; }
+        
+        /* Prelims Box */
+        .prelims-box { background: #eff6ff; border-radius: 8px; padding: 1.5rem; }
+        .fact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+        .fact-item { background: white; padding: 1rem; border-radius: 8px; text-align: center; }
+        .fact-label { display: block; color: var(--text-secondary); font-size: 0.875rem; margin-bottom: 0.25rem; }
+        .fact-value { display: block; font-weight: 700; color: var(--primary-color); font-size: 1.125rem; }
+        .highlight-box { background: #fffbeb; border-left: 4px solid var(--warning-color); padding: 1rem; margin-top: 1rem; border-radius: 0 8px 8px 0; }
+        
+        /* Mains Box */
+        .mains-box { background: #f8fafc; }
+        .mains-subsection { margin: 1.5rem 0; padding: 1.25rem; background: white; border-radius: 8px; }
+        .mains-subsection h4 { color: var(--primary-color); margin-bottom: 0.75rem; font-size: 1rem; }
+        
+        /* Case Studies */
+        .case-study { background: #f0fdf4; border: 1px solid #86efac; border-radius: 8px; padding: 1.25rem; margin: 1rem 0; }
+        .case-study h4 { color: #166534; margin-bottom: 0.75rem; }
+        
+        /* MCQ Section */
+        .mcq-box { background: #fefce8; }
+        .mcq-item { background: white; padding: 1.5rem; border-radius: 8px; margin: 1rem 0; }
+        .mcq-question { margin-bottom: 1rem; line-height: 1.7; }
+        .mcq-options { display: flex; flex-direction: column; gap: 0.5rem; margin: 1rem 0; }
+        .mcq-options label { display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem; border-radius: 6px; cursor: pointer; transition: background 0.2s; }
+        .mcq-options label:hover { background: var(--bg-color); }
+        .mcq-answer { display: none; background: #f0fdf4; border-left: 4px solid var(--success-color); padding: 1rem; margin: 1rem 0; border-radius: 0 8px 8px 0; }
+        .mcq-answer.show { display: block; }
+        .btn-show-answer { background: var(--primary-color); color: white; border: none; padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: 500; margin-top: 0.5rem; }
+        .btn-show-answer:hover { background: #1d4ed8; }
+        
+        /* Revision Box */
+        .revision-box { background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); border-radius: 8px; padding: 1.5rem; }
+        .revision-list { list-style: none; padding: 0; }
+        .revision-list li { padding: 0.5rem 0; border-bottom: 1px solid rgba(0,0,0,0.1); }
+        .revision-list li:last-child { border-bottom: none; }
+        .mnemonic-box { background: white; padding: 1rem; border-radius: 8px; margin: 1rem 0; font-family: 'Courier New', monospace; }
+        .warning-list { list-style: none; padding: 0; }
+        .warning-list li { padding: 0.5rem; background: #fee2e2; margin: 0.5rem 0; border-radius: 6px; color: #991b1b; }
+        
+        /* Page Navigation */
+        .page-navigation { display: flex; justify-content: space-between; gap: 1rem; margin: 2rem 0; flex-wrap: wrap; }
+        .nav-btn { flex: 1; min-width: 150px; padding: 1rem; text-align: center; background: var(--card-bg); border: 2px solid var(--border-color); border-radius: 8px; text-decoration: none; color: var(--text-primary); font-weight: 500; cursor: pointer; transition: all 0.2s; }
+        .nav-btn:hover { border-color: var(--primary-color); color: var(--primary-color); }
+        .btn-success { background: var(--success-color); color: white; border-color: var(--success-color); }
+        .btn-success:hover { background: #059669; color: white; }
+        .btn-disabled { opacity: 0.5; cursor: not-allowed; }
+        
+        /* Footer */
+        .page-footer { background: var(--bg-color); color: var(--text-secondary); border-top: 1px solid var(--border-color); padding: 2rem 0; text-align: center; margin-top: 3rem; }
+        .intro-box { background: #eff6ff; border-left: 4px solid var(--primary-color); padding: 1.5rem; border-radius: 0 8px 8px 0; }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .page-header h1 { font-size: 1.5rem; }
+            .section-header { font-size: 1rem; padding: 1rem; }
+            .fact-grid { grid-template-columns: 1fr; }
+            .page-navigation { flex-direction: column; }
+        }
+        @media print {
+            .study-nav, .page-navigation, .btn-show-answer { display: none !important; }
+            .section-content { max-height: none !important; }
+            .toggle-icon { display: none; }
+            body { background: white; }
+            .study-section { break-inside: avoid; box-shadow: none; border: 1px solid #ddd; }
+        }
+    </style>
+    <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-51XLJE4TVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-51XLJE4TVH');
+  </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327"
+     crossorigin="anonymous"></script>
+</head>
+<body class="study-page">
+    <nav class="study-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Current Affairs Index</a>
+            <div class="nav-controls">
+                <button onclick="toggleAllSections()" class="btn-secondary">Expand/Collapse All</button>
+                <button onclick="window.print()" class="btn-primary">📄 Print/Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../index.html">Home</a> / 
+                <a href="index.html">Current Affairs</a> / 
+                <span>CA-14: Science & Tech</span>
+            </div>
+            <h1>🚀 Aditya-L1 Mission</h1>
+            <p class="page-subtitle">India's First Solar Observatory • Lagrange Point 1 • Space Weather</p>
+            <div class="page-meta">
+                <span class="badge badge-primary">High Yield</span>
+                <span class="badge badge-secondary">S&T + Environment</span>
+                <span class="badge badge-warning">⚡ Space Physics</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="keywords-box">
+            <strong>🔍 Quick Search:</strong> 
+            What is Aditya-L1?, ISRO solar mission details, L1 point meaning, UPSC notes on Aditya-L1, payloads list
+        </section>
+
+        <!-- Section 1: Introduction -->
+        <section class="study-section collapsible" data-section="1">
+            <button class="section-header" onclick="toggleSection(1)">
+                <span class="section-number">1️⃣</span>
+                <span class="section-title">Introduction (Simple)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-1">
+                <div class="content-box intro-box">
+                    <ul class="simple-list">
+                        <li><strong>What is Aditya-L1?</strong> → India's first dedicated solar observatory mission by ISRO. "Aditya" means Sun.</li>
+                        <li><strong>Launch:</strong> September 2, 2023 | Vehicle: <strong>PSLV-C57</strong> (from SDSC SHAR, Sriharikota).</li>
+                        <li><strong>Destination:</strong> <strong>Lagrange Point 1 (L1)</strong> of the Sun-Earth system (~1.5 million km from Earth).</li>
+                        <li><strong>Objective:</strong> Continuous observation of the Sun (photosphere, chromosphere, corona) without occultation/eclipses.</li>
+                        <li><strong>Why Important?</strong> Helps predict "Space Weather," solar flares, and Coronal Mass Ejections (CMEs) which affect satellites/power grids.</li>
+                        <li><strong>UPSC Angle:</strong> Tests knowledge of Space Technology (PSLV, GSLV), Orbit Mechanics, and applications of Space Science for National Security.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Key Concepts -->
+        <section class="study-section collapsible" data-section="2">
+            <button class="section-header" onclick="toggleSection(2)">
+                <span class="section-number">2️⃣</span>
+                <span class="section-title">Key Concepts (Bullet Points)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-2">
+                <div class="content-box">
+                    <h3>📌 Lagrange Point 1 (L1) Explained</h3>
+                    <ul class="bullet-list">
+                        <li><strong>Definition:</strong> A stable gravitational equilibrium point between the Sun and Earth where the forces from both bodies cancel out.</li>
+                        <li><strong>Position:</strong> On the straight line connecting Earth and Sun (~1% of distance between them). Closer to Earth than Sun.</li>
+                        <li><strong>Advantage:</strong> At L1, satellite can view the Sun continuously (no eclipse) → Perfect for real-time monitoring of solar eruptions before they hit Earth.</li>
+                        <li><strong>Orbit Type:</strong> Halo Orbit around L1 (not stationary) to maintain communication with Earth.</li>
+                    </ul>
+
+                    <h3>📌 Scientific Payloads on Board (Total 7 Instruments)</h3>
+                    <ul class="bullet-list">
+                        <li><strong>SUITE (Solar Ultraviolet Imaging Telescope):</strong> Images the solar photosphere and chromosphere in Near UV. Studies coronal heating.</li>
+                        <li><strong>SoLEXS (Solar Low Energy X-ray Spectrometer):</strong> Monitors low-energy X-rays during solar flare events. Tracks coronal temperature changes.</li>
+                        <li><strong>HEL1OS (High Energy L1 Orbiting X-ray Spectrometer):</strong> Measures high-energy X-rays. Tracks dynamic events in solar atmosphere.</li>
+                        <li><strong>ASPEX (Aditya Solar wind Particle Experiment):</strong> In-situ measurement of charged particles (solar wind flux & distribution).</li>
+                        <li><strong>MAG (Magnetometer):</strong> Measures interplanetary magnetic field properties near L1. Tracks space environment changes.</li>
+                    </ul>
+
+                    <h3>📌 Collaboration</h3>
+                    <ul class="bullet-list">
+                        <li><strong>Lead Agency:</strong> ISRO (Space Application Centre).</li>
+                        <li><strong>Institutions Involved:</strong> Raman Research Institute (RRI), Indian Institute of Astrophysics (IIA), NCRA-TIFR, Udaipur Solar Observatory.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Important Facts for Prelims -->
+        <section class="study-section collapsible" data-section="3">
+            <button class="section-header" onclick="toggleSection(3)">
+                <span class="section-number">3️⃣</span>
+                <span class="section-title">Important Facts for Prelims</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-3">
+                <div class="content-box prelims-box">
+                    <div class="fact-grid">
+                        <div class="fact-item">
+                            <span class="fact-label">Launch Year</span>
+                            <span class="fact-value">2023</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-label">Launch Vehicle</span>
+                            <span class="fact-value">PSLV-C57</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-label">Distance from Earth</span>
+                            <span class="fact-value">~1.5 Million km</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-label">Mission Type</span>
+                            <span class="fact-value">Heliophysics</span>
+                        </div>
+                    </div>
+                    
+                    <h3>✅ Quick Facts</h3>
+                    <ul class="bullet-list">
+                        <li><strong>Payload Name Meanings:</strong> SoLEXS (Low Energy X-ray), HEL1OS (High Energy X-ray), SUVE (UV Imaging).</li>
+                        <li><strong>No Eclipse:</strong> Unlike earth-orbiting satellites, Aditya-L1 sees the Sun 24/7 at L1.</li>
+                        <li><strong>Corona Mystery:</strong> Solves why corona is hotter (1 million K) than surface (6,000 K) - "Coronal Heating Problem."</li>
+                        <li><strong>Space Weather:</strong> CMEs arriving at Earth cause geomagnetic storms disrupting power grids/comms.</li>
+                    </ul>
+
+                    <h3>✅ Previous Solar Missions</h3>
+                    <ul class="bullet-list">
+                        <li><strong>SUNSAT (1988):</strong> India's first experimental satellite.</li>
+                        <li><strong>SOHO (ESA/NASA):</strong> Long-standing collaboration.</li>
+                        <li><strong>STEREO (NASA):</strong> Stereo vision of Sun.</li>
+                        <li><strong>Parker Solar Probe (NASA):</strong> Closest approach to Sun (touches Corona).</li>
+                    </ul>
+
+                    <div class="highlight-box">
+                        <strong>💡 Prelims Trap:</strong> Don't confuse L1 (Sun-Earth) with L2 (Opposite side of Earth). JWST is at L2. Aditya-L1 is at L1.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Detailed Explanation for Mains -->
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">Detailed Explanation for Mains</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
+                <div class="content-box mains-box">
+                    <h3>🎯 Significance of Aditya-L1</h3>
+                    
+                    <div class="mains-subsection">
+                        <h4>🔹 Strategic Implications</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Disaster Management:</strong> Early warning for Geomagnetic Storms protects GPS, telecom, and electrical infrastructure from solar radiation damage.</li>
+                            <li><strong>Aerospace Defense:</strong> Understanding solar wind helps in planning future manned missions (Moon/Mars) away from dangerous solar radiation zones.</li>
+                            <li><strong>Tech Sovereignty:</strong> Reduces dependence on NASA/ESA for solar data; establishes India as key player in Heliophysics.</li>
+                        </ul>
+                    </div>
+
+                    <div class="mains-subsection">
+                        <h4>🔹 Scientific Contribution</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Coronal Heating Mechanism:</strong> Investigates magnetic reconnection and wave dissipation causing high temperatures.</li>
+                            <li><strong>CME Prediction:</strong> Tracks evolution of plasma clouds ejected from Sun to model their trajectory accurately.</li>
+                            <li><strong>Particle Acceleration:</strong> Studies how solar flares accelerate protons/electrons to relativistic speeds.</li>
+                        </ul>
+                    </div>
+
+                    <div class="mains-subsection">
+                        <h4>🔹 Comparison with Global Competitors</h4>
+                        <ul class="bullet-list">
+                            <li><strong>vs. SOHO:</strong> Similar goals, but Aditya-L1 focuses on indigenous instrumentation for LEO/Halo orbits.</li>
+                            <li><strong>vs. Parker Probe:</strong> Parker dives INTO the sun; Aditya looks FROM OUTSIDE (but closer to Earth).</li>
+                        </ul>
+                        <h4 style="margin-top: 1rem; color: var(--primary-color);">🔹 Mains Answer Framework</h4>
+                        <ol class="numbered-list">
+                            <li><strong>Contextualize:</strong> Mention rising solar activity cycles and vulnerability of modern tech.</li>
+                            <li><strong>Explain L1:</strong> Why this location was chosen for uninterrupted view.</li>
+                            <li><strong>Analyze Payloads:</strong> Briefly mention what SUITE or MAG measures.</li>
+                            <li><strong>Critically Evaluate:</strong> Challenges include radiation shielding and communication delay.</li>
+                            <li><strong>Way Forward:</strong> Build international consortiums for multi-point solar surveillance (like NASA's heliophysics fleet).</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Examples / Case Studies -->
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)">
+                <span class="section-number">5️⃣</span>
+                <span class="section-title">Examples / Case Studies</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-5">
+                <div class="content-box">
+                    <div class="case-study">
+                        <h4>📌 Case 1: Carrington Event (1859)</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Event:</strong> Massive solar storm that caused telegraph failures globally and Northern Lights seen in Caribbean.</li>
+                            <li><strong>Modern Parallel:</strong> If similar event occurred today, estimates suggest trillions in damages to power grids/satellites. Aditya-L1 aims to give 24-48 hours advance warning.</li>
+                            <li><strong>UPSC Link:</strong> Disaster management, infrastructure resilience, historical examples of technology disruption.</li>
+                        </ul>
+                    </div>
+
+                    <div class="case-study">
+                        <h4>📌 Case 2: 2012 'Superstorm'</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Event:</strong> Massive CME missed Earth by 9 days. Had it hit, potential blackout across continents.</li>
+                            <li><strong>Role of Science:</strong> Data from STEREO/A and SOHO helped track it. India's own data would complement global models.</li>
+                            <li><strong>UPSC Link:</strong> Climate change context vs Space weather; early warning systems importance.</li>
+                        </ul>
+                    </div>
+
+                    <div class="case-study">
+                        <h4>📌 Case 3: Auroras (Northern Lights)</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Mechanism:</strong> Solar wind interacts with magnetosphere → charged particles hit O2/N2 molecules → light emission.</li>
+                            <li><strong>Variability:</strong> During solar maximum (more frequent flares), auroras expand southward (visible in US/Europe more often).</li>
+                            <li><strong>UPSC Link:</strong> Geography (Physical), Magnetosphere, Atmosphere layers.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: MCQs -->
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)">
+                <span class="section-number">6️⃣</span>
+                <span class="section-title">5 MCQs with Answers</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-6">
+                <div class="content-box mcq-box">
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q1.</strong> With reference to the Aditya-L1 mission, consider the following statements:<br>
+                        1. It is India's first dedicated solar observatory.<br>
+                        2. It will be placed in a geostationary orbit around Earth.<br>
+                        3. It carries scientific payloads like SUVE and MAG.<br><br>
+                        Which of the statements given above are correct?</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q1" value="a"> (a) 1 and 2 only</label>
+                            <label><input type="radio" name="q1" value="b"> (b) 1 and 3 only</label>
+                            <label><input type="radio" name="q1" value="c"> (c) 3 only</label>
+                            <label><input type="radio" name="q1" value="d"> (d) 1, 2 and 3</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q1">
+                            <p><strong>✅ Answer:</strong> (b) 1 and 3 only</p>
+                            <p><strong>💡 Explanation:</strong> Statement 2 is incorrect; Aditya-L1 orbits the <strong>Lagrange Point 1 (L1)</strong>, NOT geostationary orbit around Earth. Statements 1 & 3 are correct (It is the first solar mission and carries SUVE/MAG).</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q1')">Show Answer</button>
+                    </div>
+
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q2.</strong> The Lagrange Point 1 (L1) lies:</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q2" value="a"> (a) Behind the Earth relative to the Sun</label>
+                            <label><input type="radio" name="q2" value="b"> (b) Between the Earth and the Sun</label>
+                            <label><input type="radio" name="q2" value="c"> (c) Above the North Pole of Earth</label>
+                            <label><input type="radio" name="q2" value="d"> (d) Outside the solar system</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q2">
+                            <p><strong>✅ Answer:</strong> (b) Between the Earth and the Sun</p>
+                            <p><strong>💡 Explanation:</strong> L1 is located roughly 1.5 million km from Earth on the Sun-Earth line. L2 is behind the Earth.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q2')">Show Answer</button>
+                    </div>
+
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q3.</strong> Consider the following pairs of Payloads and their Functions:<br>
+                        1. SUITE → Imaging in Near UV<br>
+                        2. HEL1OS → High Energy X-ray Spectrometry<br>
+                        3. MAG → Measurement of Magnetic Fields<br><br>
+                        How many pairs are correctly matched?</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q3" value="a"> (a) Only one</label>
+                            <label><input type="radio" name="q3" value="b"> (b) Only two</label>
+                            <label><input type="radio" name="q3" value="c"> (c) All three</label>
+                            <label><input type="radio" name="q3" value="d"> (d) None</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q3">
+                            <p><strong>✅ Answer:</strong> (c) All three</p>
+                            <p><strong>💡 Explanation:</strong> All three pairs are correctly matched. SUITE does UV imaging, HEL1OS handles High Energy X-rays, and MAG is the magnetometer.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q3')">Show Answer</button>
+                    </div>
+
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q4.</strong> Which launch vehicle was used for the Aditya-L1 mission?</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q4" value="a"> (a) GSLV Mk II</label>
+                            <label><input type="radio" name="q4" value="b"> (b) PSLV-C57</label>
+                            <label><input type="radio" name="q4" value="c"> (c) SSLV-D1</label>
+                            <label><input type="radio" name="q4" value="d"> (d) LVM3</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q4">
+                            <p><strong>✅ Answer:</strong> (b) PSLV-C57</p>
+                            <p><strong>💡 Explanation:</strong> Aditya-L1 was launched by the <strong>PSLV-C57</strong> configuration (XL variant).</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q4')">Show Answer</button>
+                    </div>
+
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q5.</strong> Which instrument on Aditya-L1 is responsible for measuring charged particles from the solar wind?</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q5" value="a"> (a) MAG</label>
+                            <label><input type="radio" name="q5" value="b"> (b) ASPEX</label>
+                            <label><input type="radio" name="q5" value="c"> (c) SoLEXS</label>
+                            <label><input type="radio" name="q5" value="d"> (d) SUITE</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q5">
+                            <p><strong>✅ Answer:</strong> (b) ASPEX</p>
+                            <p><strong>💡 Explanation:</strong> <strong>ASPEX</strong> (Aditya Solar wind Particle Experiment) measures particle properties. MAG measures magnetic fields.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q5')">Show Answer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: Quick Revision Notes -->
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)">
+                <span class="section-number">7️⃣</span>
+                <span class="section-title">Quick Revision Notes</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-7">
+                <div class="content-box revision-box">
+                    <h3>🔁 Aditya-L1 in 10 Seconds</h3>
+                    <ul class="revision-list">
+                        <li><strong>Launched:</strong> Sep 2, 2023 (PSLV-C57)</li>
+                        <li><strong>Destination:</strong> Lagrange Point 1 (L1) | Distance: ~1.5M km</li>
+                        <li><strong>Type:</strong> Halo Orbit around L1 (Continuous Sun View)</li>
+                        <li><strong>Objective:</strong> Coronagraphy, Coronal Heating, CME Prediction</li>
+                        <li><strong>Payloads:</strong> 5 instruments (SUVE, SoLEXS, HEL1OS, ASPEX, MAG)</li>
+                        <li><strong>Benefit:</strong> Space Weather Warning System for Earth</li>
+                    </ul>
+
+                    <h3>🧠 Mnemonic: "SPACE SUN"</h3>
+                    <div class="mnemonic-box">
+                        <p><strong>S</strong> → Solar Observatory (First in India)</p>
+                        <p><strong>P</strong> → PSVLC57 Launch Vehicle</p>
+                        <p><strong>A</strong> → Astronomical Unit ~1.5M km</p>
+                        <p><strong>C</strong> → Corona Heating Mystery</p>
+                        <p><strong>E</strong> → Equipment: SUVE, MAG, etc.</p>
+                        <br>
+                        <p><strong>S</strong> → Space Weather Protection</p>
+                        <p><strong>U</strong> → Uninterrupted Observation (No Eclipse)</p>
+                        <p><strong>N</strong> → Nodal Line Alignment</p>
+                    </div>
+
+                    <h3>📌 Prelims Traps to Avoid</h3>
+                    <ul class="warning-list">
+                        <li>✘ Aditya-L1 is NOT a Mars mission (like Mangalyaan)</li>
+                        <li>✘ L1 is NOT an orbit around Earth (it's Sun-Earth balance)</li>
+                        <li>✘ L2 (James Webb Space Telescope) is different from L1 (Aditya-L1)</li>
+                        <li>✘ Payload count: Total 5 (not 7 total instruments - sometimes confused with Chandra)</li>
+                    </ul>
+
+                    <h3>🎯 Mains One-Liners</h3>
+                    <ul class="bullet-list">
+                        <li>"Aditya-L1 enables India to monitor solar flares with zero latency."</li>
+                        <li>"The mission tackles the century-old mystery of coronal heating paradox."</li>
+                        <li>"L1 placement ensures a continuous 'eye' on the Sun for disaster prevention."</li>
+                        <li>"Strategic asset for protecting our critical digital infrastructure from solar storms."</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation Footer -->
+        <div class="page-navigation">
+            <a href="index.html" class="nav-btn">← Back to Current Affairs Index</a>
+            <button onclick="markAsComplete('CA-14')" class="nav-btn btn-success">✓ Mark as Complete</button>
+            <a href="new-education-policy-india.html" class="nav-btn">Next: CA-15 →</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>📄 Page Code: <strong>CA-14</strong> | Subject: Science & Tech + Environment + IR</p>
+            <p>🔗 Link to Syllabus: GS-3 (Science & Tech, Disaster Management), Essay, CSAT</p>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle Section
+        function toggleSection(sectionNum) {
+            const section = document.querySelector(`[data-section="${sectionNum}"]`);
+            const content = document.getElementById(`section-${sectionNum}`);
+            const header = section.querySelector('.section-header');
+            if (content.classList.contains('collapsed')) {
+                content.classList.remove('collapsed');
+                header.classList.remove('collapsed');
+            } else {
+                content.classList.add('collapsed');
+                header.classList.add('collapsed');
+            }
+        }
+        // Toggle All Sections
+        function toggleAllSections() {
+            const sections = document.querySelectorAll('.study-section');
+            const allCollapsed = Array.from(sections).every(s => s.querySelector('.section-content').classList.contains('collapsed'));
+            sections.forEach(section => {
+                const content = section.querySelector('.section-content');
+                const header = section.querySelector('.section-header');
+                if (allCollapsed) { content.classList.remove('collapsed'); header.classList.remove('collapsed'); }
+                else { content.classList.add('collapsed'); header.classList.add('collapsed'); }
+            });
+        }
+        // Show MCQ Answer
+        function showAnswer(questionId) {
+            const answerDiv = document.getElementById(`answer-${questionId}`);
+            const btn = event.target;
+            if (answerDiv.classList.contains('show')) { answerDiv.classList.remove('show'); btn.textContent = 'Show Answer'; }
+            else { answerDiv.classList.add('show'); btn.textContent = 'Hide Answer'; }
+        }
+        // Mark as Complete
+        function markAsComplete(pageCode) {
+            let completed = JSON.parse(localStorage.getItem('completedPages') || '[]');
+            if (!completed.includes(pageCode)) {
+                completed.push(pageCode);
+                localStorage.setItem('completedPages', JSON.stringify(completed));
+                const btn = event.target;
+                btn.textContent = '✓ Completed!';
+                btn.style.background = '#059669';
+                if (window.opener) { try { window.opener.updateMainProgress?.(); } catch(e) {} }
+            }
+        }
+        // Auto-expand first section
+        document.addEventListener('DOMContentLoaded', function() {
+            const first = document.querySelector('[data-section="1"]');
+            if (first) setTimeout(() => toggleSection(1), 300);
+        });
+        // Keyboard shortcuts
+        document.addEventListener('keydown', function(e) {
+            if ((e.ctrlKey || e.metaKey) && e.key === 'p') { e.preventDefault(); window.print(); }
+            if (e.key === ' ' && e.target === document.body) { e.preventDefault(); const f = document.querySelector('[data-section="1"]'); if (f) toggleSection(1); }
+        });
+    </script>
+</body>
+</html>

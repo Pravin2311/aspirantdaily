@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CA-17: Startup India Updates | UPSC Study Notes</title>
+    <meta name="description" content="Comprehensive UPSC notes on Startup India: Key schemes, DPIIT recognition, funding ecosystem, challenges, and analysis for Prelims & Mains.">
+    <meta name="keywords" content="Startup India, DPIIT Recognition, Startup Fund, Innovation, Entrepreneurship, UPSC Notes, Economy, MSME">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #7c3aed;
+            --secondary-color: #64748b;
+            --success-color: #10b981;
+            --warning-color: #f59e0b;
+            --danger-color: #ef4444;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --border-color: #e2e8f0;
+            --shadow: 0 1px 3px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg-color); color: var(--text-primary); line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        /* Study Nav */
+        .study-nav { background: var(--card-bg); border-bottom: 1px solid var(--border-color); padding: 1rem 0; position: sticky; top: 0; z-index: 100; box-shadow: var(--shadow); }
+        .study-nav .container { display: flex; justify-content: space-between; align-items: center; }
+        .back-link { color: var(--primary-color); text-decoration: none; font-weight: 500; }
+        .nav-controls { display: flex; gap: 1rem; }
+        .btn-primary, .btn-secondary { padding: 0.5rem 1rem; border: none; border-radius: 6px; font-weight: 500; cursor: pointer; transition: all 0.2s; }
+        .btn-primary { background: var(--primary-color); color: white; }
+        .btn-primary:hover { background: #6d28d9; }
+        .btn-secondary { background: var(--bg-color); color: var(--text-primary); border: 1px solid var(--border-color); }
+        .btn-secondary:hover { background: var(--border-color); }
+        
+        /* Page Header */
+        .page-header { background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%); color: white; padding: 2rem 0; border-bottom: 1px solid var(--border-color); }
+        .breadcrumb { color: rgba(255,255,255,0.9); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .breadcrumb a { color: white; text-decoration: none; }
+        .page-header h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+        .page-subtitle { color: rgba(255,255,255,0.95); font-size: 1.125rem; margin-bottom: 1rem; }
+        .page-meta { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+        .badge { padding: 0.375rem 0.875rem; border-radius: 20px; font-size: 0.875rem; font-weight: 500; }
+        .badge-primary { background: rgba(255,255,255,0.2); color: white; }
+        .badge-secondary { background: rgba(255,255,255,0.15); color: white; }
+        .badge-warning { background: #fef3c7; color: #92400e; }
+        
+        /* Keywords Box */
+        .keywords-box { background: #f5f3ff; border-left: 4px solid var(--primary-color); padding: 1rem; margin: 2rem 0; border-radius: 0 8px 8px 0; font-size: 0.9rem; }
+        
+        /* Study Sections */
+        .study-section { background: var(--card-bg); border-radius: 12px; margin: 1.5rem 0; box-shadow: var(--shadow); overflow: hidden; }
+        .section-header { width: 100%; padding: 1.25rem 1.5rem; background: var(--card-bg); border: none; display: flex; align-items: center; gap: 1rem; cursor: pointer; font-size: 1.125rem; font-weight: 600; color: var(--text-primary); transition: all 0.2s; }
+        .section-header:hover { background: var(--bg-color); }
+        .section-number { font-size: 1.5rem; }
+        .toggle-icon { margin-left: auto; transition: transform 0.3s; }
+        .section-header.collapsed .toggle-icon { transform: rotate(-90deg); }
+        .section-content { max-height: 2000px; overflow: hidden; transition: max-height 0.3s ease; }
+        .section-content.collapsed { max-height: 0; }
+        .content-box { padding: 1.5rem; }
+        
+        /* Lists */
+        .simple-list, .bullet-list, .numbered-list { margin: 1rem 0; padding-left: 1.5rem; }
+        .simple-list li, .bullet-list li { margin: 0.75rem 0; line-height: 1.7; }
+        .bullet-list li { list-style: disc; }
+        .numbered-list li { list-style: decimal; margin: 1rem 0; }
+        
+        /* Prelims Box */
+        .prelims-box { background: #f5f3ff; border-radius: 8px; padding: 1.5rem; }
+        .fact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+        .fact-item { background: white; padding: 1rem; border-radius: 8px; text-align: center; }
+        .fact-label { display: block; color: var(--text-secondary); font-size: 0.875rem; margin-bottom: 0.25rem; }
+        .fact-value { display: block; font-weight: 700; color: var(--primary-color); font-size: 1.125rem; }
+        .highlight-box { background: #fffbeb; border-left: 4px solid var(--warning-color); padding: 1rem; margin-top: 1rem; border-radius: 0 8px 8px 0; }
+        
+        /* Mains Box */
+        .mains-box { background: #f8fafc; }
+        .mains-subsection { margin: 1.5rem 0; padding: 1.25rem; background: white; border-radius: 8px; }
+        .mains-subsection h4 { color: var(--primary-color); margin-bottom: 0.75rem; font-size: 1rem; }
+        
+        /* Case Studies */
+        .case-study { background: #f0fdf4; border: 1px solid #86efac; border-radius: 8px; padding: 1.25rem; margin: 1rem 0; }
+        .case-study h4 { color: #166534; margin-bottom: 0.75rem; }
+        
+        /* MCQ Section */
+        .mcq-box { background: #fefce8; }
+        .mcq-item { background: white; padding: 1.5rem; border-radius: 8px; margin: 1rem 0; }
+        .mcq-question { margin-bottom: 1rem; line-height: 1.7; }
+        .mcq-options { display: flex; flex-direction: column; gap: 0.5rem; margin: 1rem 0; }
+        .mcq-options label { display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem; border-radius: 6px; cursor: pointer; transition: background 0.2s; }
+        .mcq-options label:hover { background: var(--bg-color); }
+        .mcq-answer { display: none; background: #f0fdf4; border-left: 4px solid var(--success-color); padding: 1rem; margin: 1rem 0; border-radius: 0 8px 8px 0; }
+        .mcq-answer.show { display: block; }
+        .btn-show-answer { background: var(--primary-color); color: white; border: none; padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: 500; margin-top: 0.5rem; }
+        .btn-show-answer:hover { background: #6d28d9; }
+        
+        /* Revision Box */
+        .revision-box { background: linear-gradient(135deg, #f5f3ff 0%, #ede9fe 100%); border-radius: 8px; padding: 1.5rem; }
+        .revision-list { list-style: none; padding: 0; }
+        .revision-list li { padding: 0.5rem 0; border-bottom: 1px solid rgba(0,0,0,0.1); }
+        .revision-list li:last-child { border-bottom: none; }
+        .mnemonic-box { background: white; padding: 1rem; border-radius: 8px; margin: 1rem 0; font-family: 'Courier New', monospace; }
+        .warning-list { list-style: none; padding: 0; }
+        .warning-list li { padding: 0.5rem; background: #fee2e2; margin: 0.5rem 0; border-radius: 6px; color: #991b1b; }
+        
+        /* Page Navigation */
+        .page-navigation { display: flex; justify-content: space-between; gap: 1rem; margin: 2rem 0; flex-wrap: wrap; }
+        .nav-btn { flex: 1; min-width: 150px; padding: 1rem; text-align: center; background: var(--card-bg); border: 2px solid var(--border-color); border-radius: 8px; text-decoration: none; color: var(--text-primary); font-weight: 500; cursor: pointer; transition: all 0.2s; }
+        .nav-btn:hover { border-color: var(--primary-color); color: var(--primary-color); }
+        .btn-success { background: var(--success-color); color: white; border-color: var(--success-color); }
+        .btn-success:hover { background: #059669; color: white; }
+        .btn-disabled { opacity: 0.5; cursor: not-allowed; }
+        
+        /* Footer */
+        .page-footer { background: var(--bg-color); color: var(--text-secondary); border-top: 1px solid var(--border-color); padding: 2rem 0; text-align: center; margin-top: 3rem; }
+        .intro-box { background: #f5f3ff; border-left: 4px solid var(--primary-color); padding: 1.5rem; border-radius: 0 8px 8px 0; }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .page-header h1 { font-size: 1.5rem; }
+            .section-header { font-size: 1rem; padding: 1rem; }
+            .fact-grid { grid-template-columns: 1fr; }
+            .page-navigation { flex-direction: column; }
+        }
+        @media print {
+            .study-nav, .page-navigation, .btn-show-answer { display: none !important; }
+            .section-content { max-height: none !important; }
+            .toggle-icon { display: none; }
+            body { background: white; }
+            .study-section { break-inside: avoid; box-shadow: none; border: 1px solid #ddd; }
+        }
+    </style>
+    <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-51XLJE4TVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-51XLJE4TVH');
+  </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327"
+     crossorigin="anonymous"></script>
+</head>
+<body class="study-page">
+    <nav class="study-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Current Affairs Index</a>
+            <div class="nav-controls">
+                <button onclick="toggleAllSections()" class="btn-secondary">Expand/Collapse All</button>
+                <button onclick="window.print()" class="btn-primary">📄 Print/Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../index.html">Home</a> / 
+                <a href="index.html">Current Affairs</a> / 
+                <span>CA-17: Economy + Entrepreneurship</span>
+            </div>
+            <h1>🚀 Startup India Updates</h1>
+            <p class="page-subtitle">DPIIT Recognition • Funding Schemes • Innovation Ecosystem • Challenges</p>
+            <div class="page-meta">
+                <span class="badge badge-primary">High Yield</span>
+                <span class="badge badge-secondary">GS-3 + Economy</span>
+                <span class="badge badge-warning">⚡ Innovation + Employment</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="keywords-box">
+            <strong>🔍 Quick Search:</strong> 
+            Startup India scheme details, DPIIT recognition process, Startup Fund, tax benefits, UPSC notes on entrepreneurship
+        </section>
+
+        <!-- Section 1: Introduction -->
+        <section class="study-section collapsible" data-section="1">
+            <button class="section-header" onclick="toggleSection(1)">
+                <span class="section-number">1️⃣</span>
+                <span class="section-title">Introduction (Simple)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-1">
+                <div class="content-box intro-box">
+                    <ul class="simple-list">
+                        <li><strong>What is Startup India?</strong> → Flagship initiative launched on January 16, 2016, to build a strong ecosystem for nurturing innovation and startups.</li>
+                        <li><strong>Nodal Agency:</strong> Department for Promotion of Industry and Internal Trade (DPIIT), Ministry of Commerce & Industry.</li>
+                        <li><strong>Core Vision:</strong> "To transform India into a nation of job creators instead of job seekers" through innovation-driven entrepreneurship.</li>
+                        <li><strong>Key Milestone (2024):</strong> India has 1.17+ lakh DPIIT-recognized startups; 113+ unicorns created since 2016.</li>
+                        <li><strong>UPSC Angle:</strong> Tests understanding of innovation economy, ease of doing business, employment generation, and regulatory reforms for MSMEs.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Key Concepts -->
+        <section class="study-section collapsible" data-section="2">
+            <button class="section-header" onclick="toggleSection(2)">
+                <span class="section-number">2️⃣</span>
+                <span class="section-title">Key Concepts (Bullet Points)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-2">
+                <div class="content-box">
+                    <h3>📌 Eligibility for DPIIT Recognition</h3>
+                    <ul class="bullet-list">
+                        <li><strong>Entity Type:</strong> Private Limited Company, Registered Partnership Firm, or Limited Liability Partnership.</li>
+                        <li><strong>Age:</strong> Incorporated/registered not more than 10 years ago.</li>
+                        <li><strong>Turnover:</strong> Annual turnover not exceeding ₹100 crore in any financial year.</li>
+                        <li><strong>Innovation:</strong> Working towards innovation/development of new products/services or scalable business model with high potential for employment/wealth creation.</li>
+                    </ul>
+
+                    <h3>📌 Key Benefits for Recognized Startups</h3>
+                    <ul class="bullet-list">
+                        <li><strong>Tax Exemptions:</strong> Section 80-IAC: 100% tax holiday for 3 consecutive years out of first 10 years; Angel Tax exemption under Section 56(2)(viib).</li>
+                        <li><strong>Fast-Track IP:</strong> 80% rebate on patent filing fees; expedited examination of patents/trademarks.</li>
+                        <li><strong>Easy Compliance:</strong> Self-certification under 9 labour & 3 environmental laws; simplified winding-up process (90 days).</li>
+                        <li><strong>Public Procurement:</strong> Exemption from prior experience/turnover criteria in government tenders (up to ₹20 crore).</li>
+                        <li><strong>Funding Support:</strong> Access to Fund of Funds (₹10,000 cr), Startup India Seed Fund Scheme (₹2,000 cr).</li>
+                    </ul>
+
+                    <h3>📌 Major Funding Schemes</h3>
+                    <ul class="bullet-list">
+                        <li><strong>Fund of Funds for Startups (FFS):</strong> ₹10,000 cr corpus managed by SIDBI; invests in SEBI-registered AIFs which then fund startups.</li>
+                        <li><strong>Startup India Seed Fund Scheme (SISFS):</strong> ₹2,000 cr for proof-of-concept, prototype development, product trials, market entry, commercialization.</li>
+                        <li><strong>Credit Guarantee Scheme:</strong> Guarantees for loans up to ₹10 crore from scheduled commercial banks/NBFCs.</li>
+                        <li><strong>State Startup Policies:</strong> 30+ states have dedicated policies with additional incentives (stamp duty waiver, capital subsidy, etc.).</li>
+                    </ul>
+
+                    <h3>📌 Recent Updates (2023-24)</h3>
+                    <ul class="bullet-list">
+                        <li><strong>Startup India Innovation Week:</strong> Annual event showcasing innovations; launched "Deep Tech" focus areas (AI, Space, Quantum, BioTech).</li>
+                        <li><strong>Regulatory Sandboxes:</strong> RBI (Fintech), IRDAI (InsurTech), SEBI (WealthTech) allow live testing of innovations in controlled environment.</li>
+                        <li><strong>Women-Led Startups:</strong> Dedicated fast-track recognition; 20% of SISFS allocations reserved for women entrepreneurs.</li>
+                        <li><strong>International Expansion:</strong> "Startup India Global Venture" program supports cross-border scaling; MoUs with Singapore, UAE, France.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Important Facts for Prelims -->
+        <section class="study-section collapsible" data-section="3">
+            <button class="section-header" onclick="toggleSection(3)">
+                <span class="section-number">3️⃣</span>
+                <span class="section-title">Important Facts for Prelims</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-3">
+                <div class="content-box prelims-box">
+                    <div class="fact-grid">
+                        <div class="fact-item">
+                            <span class="fact-label">Launch Date</span>
+                            <span class="fact-value">Jan 16, 2016</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-label">Nodal Ministry</span>
+                            <span class="fact-value">Commerce & Industry (DPIIT)</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-label">Recognized Startups</span>
+                            <span class="fact-value">1.17+ Lakh (2024)</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-label">Unicorns Created</span>
+                            <span class="fact-value">113+ (since 2016)</span>
+                        </div>
+                    </div>
+                    
+                    <h3>✅ Quick Facts</h3>
+                    <ul class="bullet-list">
+                        <li><strong>Angel Tax Exemption:</strong> Recognized startups exempt from tax on investments above fair market value (Section 56(2)(viib)).</li>
+                        <li><strong>Fast-Track Winding Up:</strong> Startups can close operations within 90 days under Insolvency & Bankruptcy Code (IBC) provisions.</li>
+                        <li><strong>IPR Support:</strong> 80% rebate on patent filing; facilitators provided for drafting/filing applications.</li>
+                        <li><strong>Atal Innovation Mission:</strong> Complementary initiative; establishes Atal Tinkering Labs (ATLs) in schools to foster innovation mindset.</li>
+                    </ul>
+
+                    <h3>✅ Key Institutions & Platforms</h3>
+                    <ul class="bullet-list">
+                        <li><strong>SIDBI:</strong> Manages Fund of Funds; provides venture debt and credit guarantee support.</li>
+                        <li><strong>Startup India Hub:</strong> Single-point contact for all queries; online portal for recognition, schemes, networking.</li>
+                        <li><strong>Incubators/Accelerators:</strong> 1,000+ recognized incubators (IITs, IIMs, private) provide mentorship, infrastructure, seed funding.</li>
+                        <li><strong>GeM Startup Runway:</strong> Dedicated portal on Government e-Marketplace for startups to sell products/services to government.</li>
+                    </ul>
+
+                    <div class="highlight-box">
+                        <strong>💡 Prelims Trap:</strong> DPIIT recognition is <strong>not automatic</strong> — startups must apply via portal and meet eligibility criteria. Also, "Unicorn" = startup valued at ≥$1 billion (not ₹100 crore turnover limit).
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Detailed Explanation for Mains -->
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">Detailed Explanation for Mains</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
+                <div class="content-box mains-box">
+                    <h3>🎯 Startup India: Multi-Dimensional Analysis</h3>
+                    
+                    <div class="mains-subsection">
+                        <h4>🔹 Economic Impact: Job Creation & Innovation</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Employment Generation:</strong> Startups created 13+ lakh direct jobs (2024); indirect employment in supply chains, services significantly higher.</li>
+                            <li><strong>Innovation Index:</strong> India's Global Innovation Index rank improved from 81st (2015) to 40th (2023); startup ecosystem is key driver.</li>
+                            <li><strong>Export Potential:</strong> SaaS, fintech, healthtech startups serving global markets; "India Stack" exports (UPI, Aadhaar architecture).</li>
+                        </ul>
+                    </div>
+
+                    <div class="mains-subsection">
+                        <h4>🔹 Regulatory Reforms: Ease of Doing Business</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Self-Certification:</strong> Reduced compliance burden under labour/environment laws; but monitoring mechanisms need strengthening to prevent misuse.</li>
+                            <li><strong>Angel Tax Debate:</strong> Exemption helps fundraising, but valuation disputes persist; need for clearer guidelines and independent valuers.</li>
+                            <li><strong>State-Level Variation:</strong> 30+ state policies create fragmentation; need for harmonization while allowing local customization.</li>
+                        </ul>
+                    </div>
+
+                    <div class="mains-subsection">
+                        <h4>🔹 Inclusion & Regional Balance</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Tier-2/3 Growth:</strong> 52% of new startups now from non-metro cities; but funding still concentrated in Bengaluru, Delhi-NCR, Mumbai.</li>
+                            <li><strong>Women & SC/ST Entrepreneurs:</strong> Dedicated schemes improve access, but representation remains low (<15% women-led startups).</li>
+                            <li><strong>Deep Tech Gap:</strong> Most startups in consumer internet; need more support for hardware, biotech, cleantech requiring patient capital.</li>
+                        </ul>
+                    </div>
+
+                    <div class="mains-subsection">
+                        <h4>🔹 Critical Challenges & Way Forward</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Funding Winter (2022-24):</strong> Global VC slowdown impacted Indian startups; need for domestic institutional capital (pension funds, insurance).</li>
+                            <li><strong>Exit Mechanisms:</strong> Limited M&A activity; IPO route complex for early-stage companies; need for secondary markets for startup shares.</li>
+                            <li><strong>Skill Gap:</strong> Shortage of product managers, data scientists, regulatory experts; industry-academia collaboration essential.</li>
+                            <li><strong>Global Competition:</strong> Southeast Asia, Middle East offering attractive incentives; India must leverage talent pool and digital infrastructure.</li>
+                        </ul>
+                        <h4 style="margin-top: 1rem; color: var(--primary-color);">🔹 Mains Answer Framework</h4>
+                        <ol class="numbered-list">
+                            <li><strong>Contextualize:</strong> Link Startup India to demographic dividend, Atmanirbhar Bharat, and SDG-8 (Decent Work & Economic Growth).</li>
+                            <li><strong>Analyze Enablers:</strong> Regulatory reforms (tax, compliance), funding ecosystem (FFS, SISFS), innovation infrastructure (incubators, IP support).</li>
+                            <li><strong>Critically Evaluate:</strong> Implementation gaps (regional imbalance, deep tech funding), sustainability concerns (burn rate, unit economics), global positioning.</li>
+                            <li><strong>Way Forward:</strong> Strengthen patient capital (sovereign funds), harmonize state policies, deepen R&D-industry links, promote startup exports via trade agreements.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Examples / Case Studies -->
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)">
+                <span class="section-number">5️⃣</span>
+                <span class="section-title">Examples / Case Studies</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-5">
+                <div class="content-box">
+                    <div class="case-study">
+                        <h4>📌 Case 1: Zoho – Bootstrapped Success Story</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Context:</strong> Founded in 1996 (pre-Startup India); chose bootstrapping over VC funding; focused on profitability from Day 1.</li>
+                            <li><strong>Relevance:</strong> Demonstrates alternative growth model; now $1B+ revenue, 12,000+ employees, serving 100M+ users globally.</li>
+                            <li><strong>UPSC Link:</strong> Sustainable entrepreneurship + Rural employment (offices in Tenkasi, Chennai) + "Make in India" for software.</li>
+                        </ul>
+                    </div>
+
+                    <div class="case-study">
+                        <h4>📌 Case 2: AgriTech Startups – Solving Farm-to-Fork</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Context:</strong> Startups like DeHaat, Ninjacart use tech for supply chain efficiency, price discovery, credit access for small farmers.</li>
+                            <li><strong>Policy Support:</strong> SISFS funding, Agri-Infra Fund linkage, state-level incubators (e.g., RKVY-RAFTAAR).</li>
+                            <li><strong>Impact:</strong> Reduced post-harvest losses, better price realization for farmers; but scalability challenges in last-mile delivery.</li>
+                            <li><strong>UPSC Link:</strong> Doubling farmers' income + Digital agriculture + Inclusive growth + FPO integration.</li>
+                        </ul>
+                    </div>
+
+                    <div class="case-study">
+                        <h4>📌 Case 3: Regulatory Sandbox – RBI Fintech Framework</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Context:</strong> RBI sandbox allows live testing of new fintech products (e.g., account aggregators, offline digital payments) with relaxed regulations.</li>
+                            <li><strong>Outcome:</strong> Successful pilots led to policy changes (e.g., UPI Lite, e-mandate framework); balanced innovation with consumer protection.</li>
+                            <li><strong>UPSC Link:</strong> Adaptive regulation + Financial inclusion + Risk-based supervision + Global best practices adoption.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: MCQs -->
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)">
+                <span class="section-number">6️⃣</span>
+                <span class="section-title">5 MCQs with Answers</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-6">
+                <div class="content-box mcq-box">
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q1.</strong> With reference to the Startup India initiative, consider the following statements:<br>
+                        1. A startup can be recognized by DPIIT if its annual turnover has not exceeded ₹100 crore in any financial year.<br>
+                        2. Recognized startups are eligible for 100% tax holiday under Section 80-IAC for 5 consecutive years.<br>
+                        3. The Fund of Funds for Startups is managed by the Reserve Bank of India.<br><br>
+                        Which of the statements given above are correct?</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q1" value="a"> (a) 1 only</label>
+                            <label><input type="radio" name="q1" value="b"> (b) 1 and 2 only</label>
+                            <label><input type="radio" name="q1" value="c"> (c) 2 and 3 only</label>
+                            <label><input type="radio" name="q1" value="d"> (d) 1, 2 and 3</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q1">
+                            <p><strong>✅ Answer:</strong> (a) 1 only</p>
+                            <p><strong>💡 Explanation:</strong> Statement 2 is incorrect: Tax holiday under Section 80-IAC is for <strong>3 consecutive years</strong> out of first 10, not 5 years. Statement 3 is incorrect: Fund of Funds is managed by <strong>SIDBI</strong>, not RBI. Statement 1 is correct.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q1')">Show Answer</button>
+                    </div>
+
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q2.</strong> The 'Startup India Seed Fund Scheme' (SISFS) primarily provides financial assistance for:</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q2" value="a"> (a) Land acquisition for manufacturing units</label>
+                            <label><input type="radio" name="q2" value="b"> (b) Proof-of-concept, prototype development, and market entry</label>
+                            <label><input type="radio" name="q2" value="c"> (c) Export promotion through subsidies</label>
+                            <label><input type="radio" name="q2" value="d"> (d) Employee salary support for 5 years</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q2">
+                            <p><strong>✅ Answer:</strong> (b) Proof-of-concept, prototype development, and market entry</p>
+                            <p><strong>💡 Explanation:</strong> SISFS (₹2,000 cr) supports early-stage startups for validation, prototyping, trials, and initial commercialization — not land, exports, or long-term salaries.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q2')">Show Answer</button>
+                    </div>
+
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q3.</strong> Consider the following pairs:<br>
+                        Scheme/Initiative | Purpose<br>
+                        1. Fund of Funds | Invests in SEBI-registered AIFs that fund startups<br>
+                        2. Angel Tax Exemption | Exempts startups from tax on investments above FMV<br>
+                        3. GeM Startup Runway | Enables startups to sell to government buyers<br><br>
+                        How many pairs are correctly matched?</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q3" value="a"> (a) Only one</label>
+                            <label><input type="radio" name="q3" value="b"> (b) Only two</label>
+                            <label><input type="radio" name="q3" value="c"> (c) All three</label>
+                            <label><input type="radio" name="q3" value="d"> (d) None</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q3">
+                            <p><strong>✅ Answer:</strong> (c) All three</p>
+                            <p><strong>💡 Explanation:</strong> All three pairs are correctly matched. FFS invests via AIFs, Angel Tax exemption protects fundraising, and GeM Runway facilitates government procurement from startups.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q3')">Show Answer</button>
+                    </div>
+
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q4.</strong> Which of the following is NOT an eligibility criterion for DPIIT recognition under Startup India?</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q4" value="a"> (a) Entity should be not more than 10 years old</label>
+                            <label><input type="radio" name="q4" value="b"> (b) Annual turnover should not exceed ₹500 crore</label>
+                            <label><input type="radio" name="q4" value="c"> (c) Should be working towards innovation or scalable business model</label>
+                            <label><input type="radio" name="q4" value="d"> (d) Should be a Private Ltd, Partnership, or LLP</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q4">
+                            <p><strong>✅ Answer:</strong> (b) Annual turnover should not exceed ₹500 crore</p>
+                            <p><strong>💡 Explanation:</strong> The turnover limit for DPIIT recognition is <strong>₹100 crore</strong>, not ₹500 crore. Other options are correct eligibility criteria.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q4')">Show Answer</button>
+                    </div>
+
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q5.</strong> The term 'Unicorn' in the startup ecosystem refers to a startup with:</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q5" value="a"> (a) Annual revenue exceeding ₹1,000 crore</label>
+                            <label><input type="radio" name="q5" value="b"> (b) Valuation of $1 billion or more</label>
+                            <label><input type="radio" name="q5" value="c"> (c) More than 1,000 employees</label>
+                            <label><input type="radio" name="q5" value="d"> (d) Operations in at least 10 countries</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q5">
+                            <p><strong>✅ Answer:</strong> (b) Valuation of $1 billion or more</p>
+                            <p><strong>💡 Explanation:</strong> "Unicorn" is a global term for a privately held startup valued at ≥$1 billion. It is not based on revenue, headcount, or geographic spread.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q5')">Show Answer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: Quick Revision Notes -->
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)">
+                <span class="section-number">7️⃣</span>
+                <span class="section-title">Quick Revision Notes</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-7">
+                <div class="content-box revision-box">
+                    <h3>🔁 Startup India in 10 Seconds</h3>
+                    <ul class="revision-list">
+                        <li><strong>Launched:</strong> January 16, 2016 | Nodal: DPIIT (Commerce Ministry)</li>
+                        <li><strong>Eligibility:</strong> ≤10 yrs old, ≤₹100 cr turnover, innovation-driven</li>
+                        <li><strong>Key Benefits:</strong> Tax holiday (3/10 yrs), Angel Tax exemption, Fast IP, Self-certification</li>
+                        <li><strong>Funding:</strong> FFS (₹10,000 cr via SIDBI), SISFS (₹2,000 cr for early-stage)</li>
+                        <li><strong>Impact:</strong> 1.17L+ recognized startups, 113+ unicorns, 13L+ jobs created</li>
+                        <li><strong>Focus Areas:</strong> Deep Tech, Women-led, Tier-2/3, Global Expansion</li>
+                    </ul>
+
+                    <h3>🧠 Mnemonic: "STARTUP INDIA"</h3>
+                    <div class="mnemonic-box">
+                        <p><strong>S</strong> → Self-certification under labour/environment laws</p>
+                        <p><strong>T</strong> → Tax benefits: Section 80-IAC (3-year holiday)</p>
+                        <p><strong>A</strong> → Angel Tax exemption (Section 56(2)(viib))</p>
+                        <p><strong>R</strong> → Recognition via DPIIT portal (not automatic)</p>
+                        <p><strong>T</strong> → Turnover limit: ₹100 crore for eligibility</p>
+                        <p><strong>U</strong> → Unicorns: 113+ created since 2016</p>
+                        <p><strong>P</strong> → Public procurement: Exemption from experience criteria</p>
+                        <br>
+                        <p><strong>I</strong> → Incubators: 1,000+ recognized for mentorship</p>
+                        <p><strong>N</strong> → Nodal agency: DPIIT, not Ministry of Finance</p>
+                        <p><strong>D</strong> → Deep Tech focus: AI, Space, Quantum, BioTech</p>
+                        <p><strong>I</strong> → International expansion: MoUs with Singapore, UAE</p>
+                        <p><strong>A</strong> → Angel investors: Protected via valuation guidelines</p>
+                    </div>
+
+                    <h3>📌 Prelims Traps to Avoid</h3>
+                    <ul class="warning-list">
+                        <li>✘ Turnover limit is <strong>₹100 crore</strong> (not ₹500 crore) for DPIIT recognition</li>
+                        <li>✘ Tax holiday is <strong>3 years</strong> out of first 10 (not 5 years)</li>
+                        <li>✘ Fund of Funds managed by <strong>SIDBI</strong> (not RBI or NITI Aayog)</li>
+                        <li>✘ "Unicorn" = <strong>$1 billion valuation</strong> (not revenue or employee count)</li>
+                        <li>✘ DPIIT recognition is <strong>application-based</strong>, not automatic upon incorporation</li>
+                    </ul>
+
+                    <h3>🎯 Mains One-Liners</h3>
+                    <ul class="bullet-list">
+                        <li>"Startup India = Regulatory ease + Funding access + Innovation infrastructure"</li>
+                        <li>"Angel Tax exemption balances investor protection with startup fundraising needs"</li>
+                        <li>"Tier-2/3 startup growth signals decentralized innovation, but funding concentration persists"</li>
+                        <li>"Deep Tech gap requires patient capital, R&D-industry links, and global collaboration"</li>
+                        <li>"Way Forward: Harmonize state policies, strengthen exit mechanisms, promote startup exports"</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation Footer -->
+        <div class="page-navigation">
+            <a href="index.html" class="nav-btn">← Back to Current Affairs Index</a>
+            <button onclick="markAsComplete('CA-17')" class="nav-btn btn-success">✓ Mark as Complete</button>
+            <a href="indian-ai-mission.html" class="nav-btn">Next: CA-18 →</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>📄 Page Code: <strong>CA-17</strong> | Subject: Economy + Entrepreneurship + Innovation</p>
+            <p>🔗 Link to Syllabus: GS-3 (Economy, Innovation, Employment), GS-2 (Governance, Ease of Doing Business), Essay</p>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle Section
+        function toggleSection(sectionNum) {
+            const section = document.querySelector(`[data-section="${sectionNum}"]`);
+            const content = document.getElementById(`section-${sectionNum}`);
+            const header = section.querySelector('.section-header');
+            if (content.classList.contains('collapsed')) {
+                content.classList.remove('collapsed');
+                header.classList.remove('collapsed');
+            } else {
+                content.classList.add('collapsed');
+                header.classList.add('collapsed');
+            }
+        }
+        // Toggle All Sections
+        function toggleAllSections() {
+            const sections = document.querySelectorAll('.study-section');
+            const allCollapsed = Array.from(sections).every(s => s.querySelector('.section-content').classList.contains('collapsed'));
+            sections.forEach(section => {
+                const content = section.querySelector('.section-content');
+                const header = section.querySelector('.section-header');
+                if (allCollapsed) { content.classList.remove('collapsed'); header.classList.remove('collapsed'); }
+                else { content.classList.add('collapsed'); header.classList.add('collapsed'); }
+            });
+        }
+        // Show MCQ Answer
+        function showAnswer(questionId) {
+            const answerDiv = document.getElementById(`answer-${questionId}`);
+            const btn = event.target;
+            if (answerDiv.classList.contains('show')) { answerDiv.classList.remove('show'); btn.textContent = 'Show Answer'; }
+            else { answerDiv.classList.add('show'); btn.textContent = 'Hide Answer'; }
+        }
+        // Mark as Complete
+        function markAsComplete(pageCode) {
+            let completed = JSON.parse(localStorage.getItem('completedPages') || '[]');
+            if (!completed.includes(pageCode)) {
+                completed.push(pageCode);
+                localStorage.setItem('completedPages', JSON.stringify(completed));
+                const btn = event.target;
+                btn.textContent = '✓ Completed!';
+                btn.style.background = '#059669';
+                if (window.opener) { try { window.opener.updateMainProgress?.(); } catch(e) {} }
+            }
+        }
+        // Auto-expand first section
+        document.addEventListener('DOMContentLoaded', function() {
+            const first = document.querySelector('[data-section="1"]');
+            if (first) setTimeout(() => toggleSection(1), 300);
+        });
+        // Keyboard shortcuts
+        document.addEventListener('keydown', function(e) {
+            if ((e.ctrlKey || e.metaKey) && e.key === 'p') { e.preventDefault(); window.print(); }
+            if (e.key === ' ' && e.target === document.body) { e.preventDefault(); const f = document.querySelector('[data-section="1"]'); if (f) toggleSection(1); }
+        });
+    </script>
+</body>
+</html>

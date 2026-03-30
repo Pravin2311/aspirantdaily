@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CA-25: Green Energy Corridor | Grid Modernization + Renewable Integration | UPSC Study Notes</title>
+    <meta name="description" content="Comprehensive UPSC notes on Green Energy Corridor: Phase I & II, grid modernization, renewable energy integration, charging infrastructure, and analysis for Prelims & Mains.">
+    <meta name="keywords" content="Green Energy Corridor, GEC Phase 1, GEC Phase 2, Solar Power Transmission, Wind Power Grid, UPSC Notes, Renewable Energy, Power Infrastructure">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #0d9488;
+            --secondary-color: #64748b;
+            --success-color: #10b981;
+            --warning-color: #f59e0b;
+            --danger-color: #ef4444;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --border-color: #e2e8f0;
+            --shadow: 0 1px 3px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg-color); color: var(--text-primary); line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        /* Study Nav */
+        .study-nav { background: var(--card-bg); border-bottom: 1px solid var(--border-color); padding: 1rem 0; position: sticky; top: 0; z-index: 100; box-shadow: var(--shadow); }
+        .study-nav .container { display: flex; justify-content: space-between; align-items: center; }
+        .back-link { color: var(--primary-color); text-decoration: none; font-weight: 500; }
+        .nav-controls { display: flex; gap: 1rem; }
+        .btn-primary, .btn-secondary { padding: 0.5rem 1rem; border: none; border-radius: 6px; font-weight: 500; cursor: pointer; transition: all 0.2s; }
+        .btn-primary { background: var(--primary-color); color: white; }
+        .btn-primary:hover { background: #0f766e; }
+        .btn-secondary { background: var(--bg-color); color: var(--text-primary); border: 1px solid var(--border-color); }
+        .btn-secondary:hover { background: var(--border-color); }
+        
+        /* Page Header */
+        .page-header { background: linear-gradient(135deg, #0d9488 0%, #0f766e 100%); color: white; padding: 2rem 0; border-bottom: 1px solid var(--border-color); }
+        .breadcrumb { color: rgba(255,255,255,0.9); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .breadcrumb a { color: white; text-decoration: none; }
+        .page-header h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+        .page-subtitle { color: rgba(255,255,255,0.95); font-size: 1.125rem; margin-bottom: 1rem; }
+        .page-meta { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+        .badge { padding: 0.375rem 0.875rem; border-radius: 20px; font-size: 0.875rem; font-weight: 500; }
+        .badge-primary { background: rgba(255,255,255,0.2); color: white; }
+        .badge-secondary { background: rgba(255,255,255,0.15); color: white; }
+        .badge-warning { background: #fef3c7; color: #92400e; }
+        
+        /* Keywords Box */
+        .keywords-box { background: #ccfbf1; border-left: 4px solid var(--primary-color); padding: 1rem; margin: 2rem 0; border-radius: 0 8px 8px 0; font-size: 0.9rem; }
+        
+        /* Study Sections */
+        .study-section { background: var(--card-bg); border-radius: 12px; margin: 1.5rem 0; box-shadow: var(--shadow); overflow: hidden; }
+        .section-header { width: 100%; padding: 1.25rem 1.5rem; background: var(--card-bg); border: none; display: flex; align-items: center; gap: 1rem; cursor: pointer; font-size: 1.125rem; font-weight: 600; color: var(--text-primary); transition: all 0.2s; }
+        .section-header:hover { background: var(--bg-color); }
+        .section-number { font-size: 1.5rem; }
+        .toggle-icon { margin-left: auto; transition: transform 0.3s; }
+        .section-header.collapsed .toggle-icon { transform: rotate(-90deg); }
+        .section-content { max-height: 2000px; overflow: hidden; transition: max-height 0.3s ease; }
+        .section-content.collapsed { max-height: 0; }
+        .content-box { padding: 1.5rem; }
+        
+        /* Lists */
+        .simple-list, .bullet-list, .numbered-list { margin: 1rem 0; padding-left: 1.5rem; }
+        .simple-list li, .bullet-list li { margin: 0.75rem 0; line-height: 1.7; }
+        .bullet-list li { list-style: disc; }
+        .numbered-list li { list-style: decimal; margin: 1rem 0; }
+        
+        /* Prelims Box */
+        .prelims-box { background: #ccfbf1; border-radius: 8px; padding: 1.5rem; }
+        .fact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+        .fact-item { background: white; padding: 1rem; border-radius: 8px; text-align: center; }
+        .fact-label { display: block; color: var(--text-secondary); font-size: 0.875rem; margin-bottom: 0.25rem; }
+        .fact-value { display: block; font-weight: 700; color: var(--primary-color); font-size: 1.125rem; }
+        .highlight-box { background: #fffbeb; border-left: 4px solid var(--warning-color); padding: 1rem; margin-top: 1rem; border-radius: 0 8px 8px 0; }
+        
+        /* Mains Box */
+        .mains-box { background: #f8fafc; }
+        .mains-subsection { margin: 1.5rem 0; padding: 1.25rem; background: white; border-radius: 8px; }
+        .mains-subsection h4 { color: var(--primary-color); margin-bottom: 0.75rem; font-size: 1rem; }
+        
+        /* Case Studies */
+        .case-study { background: #f0fdf4; border: 1px solid #86efac; border-radius: 8px; padding: 1.25rem; margin: 1rem 0; }
+        .case-study h4 { color: #166534; margin-bottom: 0.75rem; }
+        
+        /* MCQ Section */
+        .mcq-box { background: #fefce8; }
+        .mcq-item { background: white; padding: 1.5rem; border-radius: 8px; margin: 1rem 0; }
+        .mcq-question { margin-bottom: 1rem; line-height: 1.7; }
+        .mcq-options { display: flex; flex-direction: column; gap: 0.5rem; margin: 1rem 0; }
+        .mcq-options label { display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem; border-radius: 6px; cursor: pointer; transition: background 0.2s; }
+        .mcq-options label:hover { background: var(--bg-color); }
+        .mcq-answer { display: none; background: #f0fdf4; border-left: 4px solid var(--success-color); padding: 1rem; margin: 1rem 0; border-radius: 0 8px 8px 0; }
+        .mcq-answer.show { display: block; }
+        .btn-show-answer { background: var(--primary-color); color: white; border: none; padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: 500; margin-top: 0.5rem; }
+        .btn-show-answer:hover { background: #0f766e; }
+        
+        /* Revision Box */
+        .revision-box { background: linear-gradient(135deg, #ccfbf1 0%, #99f6e4 100%); border-radius: 8px; padding: 1.5rem; }
+        .revision-list { list-style: none; padding: 0; }
+        .revision-list li { padding: 0.5rem 0; border-bottom: 1px solid rgba(0,0,0,0.1); }
+        .revision-list li:last-child { border-bottom: none; }
+        .mnemonic-box { background: white; padding: 1rem; border-radius: 8px; margin: 1rem 0; font-family: 'Courier New', monospace; }
+        .warning-list { list-style: none; padding: 0; }
+        .warning-list li { padding: 0.5rem; background: #fee2e2; margin: 0.5rem 0; border-radius: 6px; color: #991b1b; }
+        
+        /* Page Navigation */
+        .page-navigation { display: flex; justify-content: space-between; gap: 1rem; margin: 2rem 0; flex-wrap: wrap; }
+        .nav-btn { flex: 1; min-width: 150px; padding: 1rem; text-align: center; background: var(--card-bg); border: 2px solid var(--border-color); border-radius: 8px; text-decoration: none; color: var(--text-primary); font-weight: 500; cursor: pointer; transition: all 0.2s; }
+        .nav-btn:hover { border-color: var(--primary-color); color: var(--primary-color); }
+        .btn-success { background: var(--success-color); color: white; border-color: var(--success-color); }
+        .btn-success:hover { background: #059669; color: white; }
+        .btn-disabled { opacity: 0.5; cursor: not-allowed; }
+        
+        /* Footer */
+        .page-footer { background: var(--bg-color); color: var(--text-secondary); border-top: 1px solid var(--border-color); padding: 2rem 0; text-align: center; margin-top: 3rem; }
+        .intro-box { background: #ccfbf1; border-left: 4px solid var(--primary-color); padding: 1.5rem; border-radius: 0 8px 8px 0; }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .page-header h1 { font-size: 1.5rem; }
+            .section-header { font-size: 1rem; padding: 1rem; }
+            .fact-grid { grid-template-columns: 1fr; }
+            .page-navigation { flex-direction: column; }
+        }
+        @media print {
+            .study-nav, .page-navigation, .btn-show-answer { display: none !important; }
+            .section-content { max-height: none !important; }
+            .toggle-icon { display: none; }
+            body { background: white; }
+            .study-section { break-inside: avoid; box-shadow: none; border: 1px solid #ddd; }
+        }
+    </style>
+    <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-51XLJE4TVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-51XLJE4TVH');
+  </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327"
+     crossorigin="anonymous"></script>
+</head>
+<body class="study-page">
+    <nav class="study-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Current Affairs Index</a>
+            <div class="nav-controls">
+                <button onclick="toggleAllSections()" class="btn-secondary">Expand/Collapse All</button>
+                <button onclick="window.print()" class="btn-primary">📄 Print/Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../index.html">Home</a> / 
+                <a href="index.html">Current Affairs</a> / 
+                <span>CA-25: Energy + Infrastructure</span>
+            </div>
+            <h1>🔌 Green Energy Corridor</h1>
+            <p class="page-subtitle">Grid Modernization • Renewable Energy Integration • Transmission Infrastructure • EV Charging Networks</p>
+            <div class="page-meta">
+                <span class="badge badge-primary">High Yield</span>
+                <span class="badge badge-secondary">GS-3 + Environment</span>
+                <span class="badge badge-warning">⚡ Energy Security + Climate</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="keywords-box">
+            <strong>🔍 Quick Search:</strong> 
+            GEC Phase 1 details, GEC Phase 2 objectives, renewable power transmission, UPSC notes on electricity grid, solar power evacuation
+        </section>
+
+        <!-- Section 1: Introduction -->
+        <section class="study-section collapsible" data-section="1">
+            <button class="section-header" onclick="toggleSection(1)">
+                <span class="section-number">1️⃣</span>
+                <span class="section-title">Introduction (Simple)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-1">
+                <div class="content-box intro-box">
+                    <ul class="simple-list">
+                        <li><strong>What is Green Energy Corridor (GEC)?</strong> → Central sector scheme for strengthening electricity transmission infrastructure to evacuate renewable power (solar, wind, small hydro) from generation sites to demand centers.</li>
+                        <li><strong>GEC Phase I:</strong> Approved 2016, ₹43,666 crore outlay; completed by March 2022; focus on interstate and intra-state transmission networks.</li>
+                        <li><strong>GEC Phase II:</strong> Approved July 2023, ₹47,854 crore outlay; aims to further integrate renewable sources, add smart grid features, enable cross-border power exchange.</li>
+                        <li><strong>Why Needed?</strong> India targets 500 GW non-fossil capacity by 2030; existing grid cannot handle high variable renewable generation; congestion in major solar states (Rajasthan, Gujarat).</li>
+                        <li><strong>UPSC Angle:</strong> Tests understanding of energy infrastructure, climate policy implementation, federal coordination in power sector, and renewable integration challenges.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Key Concepts -->
+        <section class="study-section collapsible" data-section="2">
+            <button class="section-header" onclick="toggleSection(2)">
+                <span class="section-number">2️⃣</span>
+                <span class="section-title">Key Concepts (Bullet Points)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-2">
+                <div class="content-box">
+                    <h3>📌 GEC Phase I: Objectives & Outcomes</h3>
+                    <ul class="bullet-list">
+                        <li><strong>Primary Goal:</strong> Evacuate 25 GW of renewable energy annually from identified states;</li>
+                        <li><strong>Focus Areas:</strong> Construction of 42,000 circuit km of transmission lines, 81 new substations with 73,000 MVA capacity upgrade;</li>
+                        <li><strong>States Covered:</strong> 11 major renewable states: Rajasthan, Gujarat, Karnataka, Tamil Nadu, Maharashtra, Madhya Pradesh, Andhra Pradesh, Telangana, Uttar Pradesh, Bihar, Jharkhand;</li>
+                        <li><strong>Completion Status:</strong> Work completed by March 2022; 35 GW additional renewable evacuation capacity achieved;</li>
+                        <li><strong>Key Achievement:</strong> Reduced curtailment (energy waste due to grid limitations) from 8% to 3% in major solar zones.</li>
+                    </ul>
+
+                    <h3>📌 GEC Phase II: Enhanced Scope & Features</h3>
+                    <ul class="bullet-list">
+                        <li><strong>New Objective:</strong> Facilitate integration of 175 GW renewable target plus add flexibility for storage (battery pumped hydro);</li>
+                        <li><strong>Smart Grid Technology:</strong> Installation of Advanced Metering Infrastructure (AMI), phasor measurement units (PMU) for real-time monitoring, load forecasting;</li>
+                        <li><strong>Interconnection Upgrades:</strong> Cross-state transmission lines to enable surplus sharing between regions (North-South interconnection completes by 2027);</li>
+                        <li><strong>Renewable Energy Park Linkages:</strong> Dedicated evacuation infrastructure for Ultra Mega Solar Parks (UMSPs) like Charanka (Gujarat), Pavagada (Karnataka);</li>
+                        <li><strong>EV Charging Integration:</strong> Power feeds for fast-charging stations at highway corridors, railway stations, urban hubs connected via dedicated renewable circuits;</li>
+                    </ul>
+
+                    <h3>📌 Technical Specifications & Technologies</h3>
+                    <ul class="bullet-list">
+                        <li><strong>Voltage Levels:</strong> 400 kV AC for main trunk lines, 765 kV for ultra-high capacity corridors, HVDC back-to-back stations for asynchronous interconnections;</li>
+                        <li><strong>FACTS Devices:</strong> Flexible AC Transmission Systems (STATCOMs, SVCs) installed for voltage stability during variable renewable output fluctuations;</li>
+                        <li><strong>Energy Storage:</strong> 14,000 MWh battery energy storage systems planned across grid nodes to absorb excess midday solar generation for evening peak;</li>
+                        <li><strong>Digital Control Centers:</strong> Regional Load Despatch Centers (RLDCs) upgraded with AI-based predictive algorithms for weather-dependent generation forecasting;</li>
+                    </ul>
+
+                    <h3>📌 Financial Structure & Implementation Agency</h3>
+                    <ul class="bullet-list">
+                        <li><strong>Funding Pattern:</strong> 100% central funding (no state share required); implemented through Central Public Sector Utilities (CPCUs) — Power Grid Corporation of India, NTPC, PFC;</li>
+                        <li><strong>GEC Phase I Budget Utilization:</strong> ₹38,000 crore spent (out of ₹43,666 Cr allocated); ₹5,666 Cr unspent transferred to Phase II;</li>
+                        <li><strong>GEC Phase II Timeline:</strong> April 2023-March 2028 (5-year period); phased disbursement linked to project milestones;</li>
+                        <li><strong>Tenders & Contracts:</strong> Competitive bidding process for EPC contractors; domestic manufacturing requirement (PLI-linked) for transformers, conductors, insulators;</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Important Facts for Prelims -->
+        <section class="study-section collapsible" data-section="3">
+            <button class="section-header" onclick="toggleSection(3)">
+                <span class="section-number">3️⃣</span>
+                <span class="section-title">Important Facts for Prelims</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-3">
+                <div class="content-box prelims-box">
+                    <div class="fact-grid">
+                        <div class="fact-item">
+                            <span class="fact-label">GEC Phase I Approval</span>
+                            <span class="fact-value">2016</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-label">GEC Phase I Budget</span>
+                            <span class="fact-value">₹43,666 Cr</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-label">GEC Phase II Budget</span>
+                            <span class="fact-value">₹47,854 Cr</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-label">Implementation Agency</span>
+                            <span class="fact-value">Power Grid Corp. of India</span>
+                        </div>
+                    </div>
+                    
+                    <h3>✅ Quick Facts</h3>
+                    <ul class="bullet-list">
+                        <li><strong>Rural Electrification:</strong> GEC complements Deendayal Upadhyaya Gram Jyoti Yojana (DDUGJY) by ensuring rural areas get stable renewable supply;</li>
+                        <li><strong>International Connectivity:</strong> Nepal-Bhutan-India power exchanges facilitated via upgraded transmission corridors in eastern region;</li>
+                        <li><strong>National Solar Mission Linkage:</strong> GEC provides backbone transmission for MNRE's 100 GW solar target;</li>
+                        <li><strong>Curtailment Reduction:</strong> Solar power wastage reduced significantly after GEC-I completion in Rajasthan-Gujarat corridor;</li>
+                    </ul>
+
+                    <h3>✅ States & Capacity Allocations</h3>
+                    <ul class="bullet-list">
+                        <li><strong>Rajasthan:</strong> 8 GW transmission upgrades for Maru/Surya Bhagirata parks;</li>
+                        <li><strong>Gujarat:</strong> 7.5 GW connections for Charanka, Dholera, Viramgam projects;</li>
+                        <li><strong>Karnataka:</strong> 6 GW evacuation facilities from Pavagada, Tumkur, Chitradurga solar plants;</li>
+                        <li><strong>Tamil Nadu:</strong> 5.5 GW wind-solar hybrid corridor connectivity;</li>
+                    </ul>
+
+                    <div class="highlight-box">
+                        <strong>💡 Prelims Trap:</strong> GEC is a <strong>transmission-side</strong> intervention, not generation subsidy; does not provide direct capital support to solar/wind developers but ensures their power reaches consumers efficiently.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Detailed Explanation for Mains -->
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">Detailed Explanation for Mains</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
+                <div class="content-box mains-box">
+                    <h3>🎯 Green Energy Corridor: Multi-Dimensional Analysis</h3>
+                    
+                    <div class="mains-subsection">
+                        <h4>🔹 Grid Stability & Renewable Integration Challenge</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Intermittency Issue:</strong> Solar/wind generation fluctuates hourly based on weather; conventional thermal plants designed for steady load struggle to adjust quickly;</li>
+                            <li><strong>Inertia Deficit:</strong> Rotating mass in coal plants provides frequency stability; inverter-based renewables don't contribute inertia naturally—requires synchronous condensers or virtual inertia control;</li>
+                            <li><strong>Solution via GEC-II:</strong> Smart inverters, PMU installations, automatic generation control (AGC) systems enable rapid response to frequency deviations (within milliseconds);</li>
+                        </ul>
+                    </div>
+
+                    <div class="mains-subsection">
+                        <h4>🔹 Economic Benefits: Cost Savings & Efficiency</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Curtailment Elimination:</strong> Pre-GEC-I, 8% of generated solar wasted; post-completion 3% reduction saves ₹8,000+ Cr annually;</li>
+                            <li><strong>Lower LCOE:</strong> Efficient evacuation reduces levelized cost of energy per kWh, making renewables more competitive against thermal coal-fired power;</li>
+                            <li><strong>Investment Leverage:</strong> Every ₹1 invested in transmission unlocks ₹4-6 in private renewable investment (multiplier effect from assured market access);</li>
+                        </ul>
+                    </div>
+
+                    <div class="mains-subsection">
+                        <h4>🔹 Federal Coordination: Centre-State Dynamics</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Concurrent List Issue:</strong> Electricity in Concurrent List; transmission planning requires Union nodality (Central Electricity Authority approves interstate plans), state-level permissions for land acquisition;</li>
+                            <li><strong>Lands Acquisition:</strong> Transmission lines pass through 1000+ villages; GEC-II emphasizes community engagement, fair compensation, faster rehabilitation;</li>
+                            <li><strong>Tariff Disputes:</strong> Inter-state open access charges sometimes deter renewable buyers; GEC-II includes regulatory framework reforms to rationalize tariffs;</li>
+                        </ul>
+                    </div>
+
+                    <div class="mains-subsection">
+                        <h4>🔹 Critical Challenges & Way Forward</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Land Availability:</strong> Long-distance transmission needs right-of-way corridors; forest clearance delays push back timelines by 2-3 years;</li>
+                            <li><strong>DISCOM Financial Health:</strong> Distribution companies often unable to pay transmission wheeling charges; viability gap funding mechanism proposed for weak DISCOMs;</li>
+                            <li><strong>Technological Obsolescence:</strong> Equipment installed today may become outdated within 15-20 years due to faster tech evolution; design for flexibility and upgrades essential;</li>
+                            <li><strong>Environmental Concerns:</strong> High-voltage lines impact biodiversity; underground cables expensive (3x overhead cost); eco-sensitive zone exemptions critical for feasibility;</li>
+                        </ul>
+                        <h4 style="margin-top: 1rem; color: var(--primary-color);">🔹 Mains Answer Framework</h4>
+                        <ol class="numbered-list">
+                            <li><strong>Contextualize:</strong> Link GEC to national climate commitments (COP26 net-zero goal), 500 GW non-fossil capacity ambition, and energy security imperatives.</li>
+                            <li><strong>Analyze Interventions:</strong> Transmission infrastructure expansion, smart grid features, storage integration, cross-border linkages under GEC-I & II.</li>
+                            <li><strong>Critically Evaluate:</strong> Implementation gaps (land acquisition, financial sustainability of DISCOMs), technological readiness, environmental trade-offs.</li>
+                            <li><strong>Way Forward:</strong> Accelerate GEC-II execution, strengthen R&D in HVDC supergrid technology, incentivize distributed renewable microgrids, promote regional power markets.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Examples / Case Studies -->
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)">
+                <span class="section-number">5️⃣</span>
+                <span class="section-title">Examples / Case Studies</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-5">
+                <div class="content-box">
+                    <div class="case-study">
+                        <h4>📌 Case 1: Northern Region Solar Hub Connectivity</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Context:</strong> Massive solar park developments in Ladakh, Rajasthan, Haryana; demand centers located 1,000+ km away in Delhi-NCR, Punjab;</li>
+                            <li><strong>GEC Intervention:</strong> 765 kV ultra-high voltage corridor constructed (Chhabra-Jabalpur line); enables bulk power transfer without significant losses;</li>
+                            <li><strong>Impact:</strong> Surplus morning solar exported to northern states; evening demand met via combined cycle gas plants coordinated with battery storage discharge;</li>
+                            <li><strong>UPSC Link:</strong> Inter-regional power trading + Peak load management + Loss reduction strategies + Urban-rural electricity access equity.</li>
+                        </ul>
+                    </div>
+
+                    <div class="case-study">
+                        <h4>📌 Case 2: Western Grid Wind-Solar Hybrid Integration</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Context:</strong> Gujarat/Rajasthan experience complementary wind-solar patterns; solar peaks midday, wind generates stronger evening hours;</li>
+                            <li><strong>GEC Design:</strong> Joint evacuation system allows single substation to accept both wind and solar feeds; optimizes land-use and capital expenditure;</li>
+                            <li><strong>Technology:</strong> Adaptive control algorithms prioritize whichever resource available in real-time; prevents grid overload during cloudy windy periods;</li>
+                            <li><strong>UPSC Link:</strong> Resource complementarity + Grid optimization + Renewable mix diversification + Cost-effective infrastructure deployment.</li>
+                        </ul>
+                    </div>
+
+                    <div class="case-study">
+                        <h4>📌 Case 3: Kerala State Solar Evacuation Upgrade</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Context:</strong> Southern Kerala lacks strong north-south transmission backbone; rooftop solar surge creates localized overvoltage issues;</li>
+                            <li><strong>GEC Solution:</strong> Installed static VAR compensators (SVCs) at distribution level to maintain voltage stability; added 400 kV lines connecting western coastal belt;</li>
+                            <li><strong>Outcome:</strong> Rooftop solar capacity increased from 50 MW (2020) to 250 MW (2024) without voltage collapse incidents; enabled net metering expansion;</li>
+                            <li><strong>UPSC Link:</strong> Decentralized renewable adoption + Distribution network resilience + State-specific adaptation + Consumer participation models.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: MCQs -->
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)">
+                <span class="section-number">6️⃣</span>
+                <span class="section-title">5 MCQs with Answers</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-6">
+                <div class="content-box mcq-box">
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q1.</strong> With reference to Green Energy Corridor (GEC) schemes in India, consider the following statements:<br>
+                        1. GEC Phase I was approved in 2016 with an outlay of ₹43,666 crore.<br>
+                        2. The scheme primarily focuses on enhancing renewable energy generation capacity rather than transmission infrastructure.<br>
+                        3. GEC Phase II has been approved with ₹47,854 crore budget allocation for smart grid integration.<br><br>
+                        Which of the statements given above are correct?</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q1" value="a"> (a) 1 and 2 only</label>
+                            <label><input type="radio" name="q1" value="b"> (b) 1 and 3 only</label>
+                            <label><input type="radio" name="q1" value="c"> (c) 2 and 3 only</label>
+                            <label><input type="radio" name="q1" value="d"> (d) 1, 2 and 3</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q1">
+                            <p><strong>✅ Answer:</strong> (b) 1 and 3 only</p>
+                            <p><strong>💡 Explanation:</strong> Statement 2 is incorrect: GEC is focused on <strong>transmission infrastructure enhancement</strong>, not generation capacity subsidies. Statements 1 & 3 are correct regarding budgets and approval years.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q1')">Show Answer</button>
+                    </div>
+
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q2.</strong> Which of the following entities is the primary implementation agency for the Green Energy Corridor projects?</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q2" value="a"> (a) Central Electricity Authority (CEA)</label>
+                            <label><input type="radio" name="q2" value="b"> (b) Ministry of New and Renewable Energy (MNRE)</label>
+                            <label><input type="radio" name="q2" value="c"> (c) Power Grid Corporation of India Ltd. (PGCIL)</label>
+                            <label><input type="radio" name="q2" value="d"> (d) National Thermal Power Corporation (NTPC)</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q2">
+                            <p><strong>✅ Answer:</strong> (c) Power Grid Corporation of India Ltd. (PGCIL)</p>
+                            <p><strong>💡 Explanation:</strong> PGCIL is designated nodal agency under Ministry of Power for implementing GEC projects along with other Central PSU undertakings; CEA is regulatory/regulatory approval body, MNRE focuses on generation incentives.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q2')">Show Answer</button>
+                    </div>
+
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q3.</strong> Consider the following pairs:<br>
+                        Component | Purpose in Green Energy Corridor<br>
+                        1. FACTS Devices | Voltage stabilization during variable renewable output<br>
+                        2. Phasor Measurement Units | Real-time grid monitoring and control<br>
+                        3. Battery Energy Storage Systems | Absorb excess daytime solar for evening consumption<br><br>
+                        How many pairs are correctly matched?</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q3" value="a"> (a) Only one</label>
+                            <label><input type="radio" name="q3" value="b"> (b) Only two</label>
+                            <label><input type="radio" name="q3" value="c"> (c) All three</label>
+                            <label><input type="radio" name="q3" value="d"> (d) None</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q3">
+                            <p><strong>✅ Answer:</strong> (c) All three</p>
+                            <p><strong>💡 Explanation:</strong> All three pairs are correctly matched. FACTS stabilizes voltage, PMUs enable synchronized measurements for grid control, and BSS stores excess energy for peak shaving.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q3')">Show Answer</button>
+                    </div>
+
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q4.</strong> The primary objective of Green Energy Corridor Phase II (approved 2023) includes:</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q4" value="a"> (a) Expanding coal-based power plant capacities in central states</label>
+                            <label><input type="radio" name="q4" value="b"> (b) Enhancing renewable energy integration capacity and adding smart grid features</label>
+                            <label><input type="radio" name="q4" value="c"> (c) Constructing new nuclear reactors for baseload power supply</label>
+                            <label><input type="radio" name="q4" value="d"> (d) Privatizing all existing transmission infrastructure</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q4">
+                            <p><strong>✅ Answer:</strong> (b) Enhancing renewable energy integration capacity and adding smart grid features</p>
+                            <p><strong>💡 Explanation:</strong> GEC Phase II specifically targets renewable integration with smart grid technologies, storage systems, and enhanced flexibility—not coal/nuclear expansion or privatization initiatives.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q4')">Show Answer</button>
+                    </div>
+
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q5.</strong> What percentage of generated renewable power was being curtailed (wasted) before GEC Phase I completion in major solar states?</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q5" value="a"> (a) Approximately 2%</label>
+                            <label><input type="radio" name="q5" value="b"> (b) Approximately 5%</label>
+                            <label><input type="radio" name="q5" value="c"> (c) Approximately 8%</label>
+                            <label><input type="radio" name="q5" value="d"> (d) Approximately 15%</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q5">
+                            <p><strong>✅ Answer:</strong> (c) Approximately 8%</p>
+                            <p><strong>💡 Explanation:</strong> Prior to GEC Phase I, around 8% of generated solar power was wasted due to transmission constraints and grid congestion; this was reduced to ~3% post-completion, saving billions of rupees annually.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q5')">Show Answer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: Quick Revision Notes -->
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)">
+                <span class="section-number">7️⃣</span>
+                <span class="section-title">Quick Revision Notes</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-7">
+                <div class="content-box revision-box">
+                    <h3>🔁 Green Energy Corridor in 10 Seconds</h3>
+                    <ul class="revision-list">
+                        <li><strong>GEC Phase I:</strong> 2016 approval, ₹43,666 Cr; completed 2022; 25 GW annual evacuation capacity; reduced curtailment from 8% to 3%</li>
+                        <li><strong>GEC Phase II:</strong> July 2023 approval, ₹47,854 Cr; focus on smart grids, storage integration, cross-state connectivity</li>
+                        <li><strong>Implementer:</strong> Power Grid Corp. of India (central PSU) with PLIs for domestic manufacturing</li>
+                        <li><strong>Technology:</strong> 400/765 kV transmission lines, FACTS devices, PMUs, battery storage (14,000 MWh target)</li>
+                        <li><strong>States Covered:</strong> 11 major RE states including Rajasthan, Gujarat, Karnataka, Tamil Nadu</li>
+                        <li><strong>Significance:</strong> Enables 500 GW non-fossil capacity target, EV charging integration, international power exchanges</li>
+                        <li><strong>Challenge:</strong> Land acquisition, DISCOM financial health, environmental clearances for right-of-way</li>
+                    </ul>
+
+                    <h3>🧠 Mnemonic: "GREEN GRID"</h3>
+                    <div class="mnemonic-box">
+                        <p><strong>G</strong> → Generation-Evacuation Focus: Not generation subsidies but evacuation capacity building</p>
+                        <p><strong>R</strong> → Renewables Target: Supports 500 GW non-fossil capacity by 2030 vision</p>
+                        <p><strong>E</strong> → Evacuation Capacity: 35 GW (Phase I) + 50+ GW (Phase II enhancement)</p>
+                        <p><strong>E</strong> → East-West Connection: North-South interconnectivity completing regional power markets</p>
+                        <p><strong>N</strong> → Network Flexibility: Smart grid tech (FACTS, PMUs) for variable renewable handling</li></p>
+                        <p><strong>G</strong> → Government Funding: 100% central financing (no state share requirement)</li></p>
+                        <p><strong>R</strong> → Renewable Curtailment: Reduced from 8% to 3% after Phase I completion</li></p>
+                        <p><strong>I</strong> → Infrastructure Multiplier: ₹1 transmission investment unlocks ₹4-6 private RE investment</li></p>
+                        <p><strong>D</strong> → Distribution Support: Helps DISCOMs manage peak loads better via storage integration</li></p>
+                    </div>
+
+                    <h3>📌 Prelims Traps to Avoid</h3>
+                    <ul class="warning-list">
+                        <li>✘ GEC is <strong>transmission-focused</strong>, not generation subsidy scheme (different from Solar Park Scheme, PM Surya Ghar, etc.)</li>
+                        <li>✘ Implementing agency is <strong>Power Grid Corporation</strong>, not MNRE or Central Electricity Authority alone</li>
+                        <li>✘ Funding pattern is <strong>100% central</strong>, no state contribution required</li>
+                        <li>✘ Curtailment rate <strong>before GEC</strong> was ~8%, not 15% or 2% (common distractors in MCQs)</li>
+                        <li>✘ Phase II <strong>not just expansion</strong> but adds smart grid features, storage, cross-border capabilities</li>
+                    </ul>
+
+                    <h3>🎯 Mains One-Liners</h3>
+                    <ul class="bullet-list">
+                        <li>"Green Energy Corridor = Backbone for India's renewable revolution; transforms isolated solar islands into unified clean power grid"</li>
+                        <li>"Transmission infrastructure development must precede or accompany generation capacity to realize full potential of renewable investments"</li>
+                        <li>"Smart grid technologies (FACTS, PMUs, AI forecasting) are critical for managing intermittent renewable resources without compromising grid stability"</li>
+                        <li>"Federal coordination essential: Centre designs transmission plan, States facilitate land acquisition, communities accept infrastructure presence"</li>
+                        <li>"Way Forward: Accelerate GEC-II execution, invest in HVDC supergrid research, develop regional power exchanges, incentivize distributed microgrids"</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation Footer -->
+        <div class="page-navigation">
+            <a href="index.html" class="nav-btn">← Back to Current Affairs Index</a>
+            <button onclick="markAsComplete('CA-25')" class="nav-btn btn-success">✓ Mark as Complete</button>
+            <a href="ca-26-battery-recycling-policy.html" class="nav-btn">Next: CA-26 →</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>📄 Page Code: <strong>CA-25</strong> | Subject: Energy + Infrastructure + Environment</p>
+            <p>🔗 Link to Syllabus: GS-3 (Energy, Environment, Economy, Internal Security), GS-1 (Development Issues), Essay</p>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle Section
+        function toggleSection(sectionNum) {
+            const section = document.querySelector(`[data-section="${sectionNum}"]`);
+            const content = document.getElementById(`section-${sectionNum}`);
+            const header = section.querySelector('.section-header');
+            if (content.classList.contains('collapsed')) {
+                content.classList.remove('collapsed');
+                header.classList.remove('collapsed');
+            } else {
+                content.classList.add('collapsed');
+                header.classList.add('collapsed');
+            }
+        }
+        // Toggle All Sections
+        function toggleAllSections() {
+            const sections = document.querySelectorAll('.study-section');
+            const allCollapsed = Array.from(sections).every(s => s.querySelector('.section-content').classList.contains('collapsed'));
+            sections.forEach(section => {
+                const content = section.querySelector('.section-content');
+                const header = section.querySelector('.section-header');
+                if (allCollapsed) { content.classList.remove('collapsed'); header.classList.remove('collapsed'); }
+                else { content.classList.add('collapsed'); header.classList.add('collapsed'); }
+            });
+        }
+        // Show MCQ Answer
+        function showAnswer(questionId) {
+            const answerDiv = document.getElementById(`answer-${questionId}`);
+            const btn = event.target;
+            if (answerDiv.classList.contains('show')) { answerDiv.classList.remove('show'); btn.textContent = 'Show Answer'; }
+            else { answerDiv.classList.add('show'); btn.textContent = 'Hide Answer'; }
+        }
+        // Mark as Complete
+        function markAsComplete(pageCode) {
+            let completed = JSON.parse(localStorage.getItem('completedPages') || '[]');
+            if (!completed.includes(pageCode)) {
+                completed.push(pageCode);
+                localStorage.setItem('completedPages', JSON.stringify(completed));
+                const btn = event.target;
+                btn.textContent = '✓ Completed!';
+                btn.style.background = '#059669';
+                if (window.opener) { try { window.opener.updateMainProgress?.(); } catch(e) {} }
+            }
+        }
+        // Auto-expand first section
+        document.addEventListener('DOMContentLoaded', function() {
+            const first = document.querySelector('[data-section="1"]');
+            if (first) setTimeout(() => toggleSection(1), 300);
+        });
+        // Keyboard shortcuts
+        document.addEventListener('keydown', function(e) {
+            if ((e.ctrlKey || e.metaKey) && e.key === 'p') { e.preventDefault(); window.print(); }
+            if (e.key === ' ' && e.target === document.body) { e.preventDefault(); const f = document.querySelector('[data-section="1"]'); if (f) toggleSection(1); }
+        });
+    </script>
+</body>
+</html>

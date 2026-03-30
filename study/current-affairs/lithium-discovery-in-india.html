@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CA-24: Lithium Discoveries in India | Critical Minerals + Energy Security | UPSC Study Notes</title>
+    <meta name="description" content="Comprehensive UPSC notes on India's Lithium Discoveries: Geological locations, strategic importance, critical minerals policy, challenges, and analysis for Prelims & Mains.">
+    <meta name="keywords" content="Lithium Discovery India, J&K Lithium Reserve, Hard Rock Lithium, Critical Minerals, PLI Schemes, Battery Manufacturing, UPSC Notes, Energy Security">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #8b5cf6;
+            --secondary-color: #64748b;
+            --success-color: #10b981;
+            --warning-color: #f59e0b;
+            --danger-color: #ef4444;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --border-color: #e2e8f0;
+            --shadow: 0 1px 3px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg-color); color: var(--text-primary); line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        /* Study Nav */
+        .study-nav { background: var(--card-bg); border-bottom: 1px solid var(--border-color); padding: 1rem 0; position: sticky; top: 0; z-index: 100; box-shadow: var(--shadow); }
+        .study-nav .container { display: flex; justify-content: space-between; align-items: center; }
+        .back-link { color: var(--primary-color); text-decoration: none; font-weight: 500; }
+        .nav-controls { display: flex; gap: 1rem; }
+        .btn-primary, .btn-secondary { padding: 0.5rem 1rem; border: none; border-radius: 6px; font-weight: 500; cursor: pointer; transition: all 0.2s; }
+        .btn-primary { background: var(--primary-color); color: white; }
+        .btn-primary:hover { background: #7c3aed; }
+        .btn-secondary { background: var(--bg-color); color: var(--text-primary); border: 1px solid var(--border-color); }
+        .btn-secondary:hover { background: var(--border-color); }
+        
+        /* Page Header */
+        .page-header { background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%); color: white; padding: 2rem 0; border-bottom: 1px solid var(--border-color); }
+        .breadcrumb { color: rgba(255,255,255,0.9); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .breadcrumb a { color: white; text-decoration: none; }
+        .page-header h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+        .page-subtitle { color: rgba(255,255,255,0.95); font-size: 1.125rem; margin-bottom: 1rem; }
+        .page-meta { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+        .badge { padding: 0.375rem 0.875rem; border-radius: 20px; font-size: 0.875rem; font-weight: 500; }
+        .badge-primary { background: rgba(255,255,255,0.2); color: white; }
+        .badge-secondary { background: rgba(255,255,255,0.15); color: white; }
+        .badge-warning { background: #fef3c7; color: #92400e; }
+        
+        /* Keywords Box */
+        .keywords-box { background: #faf5ff; border-left: 4px solid var(--primary-color); padding: 1rem; margin: 2rem 0; border-radius: 0 8px 8px 0; font-size: 0.9rem; }
+        
+        /* Study Sections */
+        .study-section { background: var(--card-bg); border-radius: 12px; margin: 1.5rem 0; box-shadow: var(--shadow); overflow: hidden; }
+        .section-header { width: 100%; padding: 1.25rem 1.5rem; background: var(--card-bg); border: none; display: flex; align-items: center; gap: 1rem; cursor: pointer; font-size: 1.125rem; font-weight: 600; color: var(--text-primary); transition: all 0.2s; }
+        .section-header:hover { background: var(--bg-color); }
+        .section-number { font-size: 1.5rem; }
+        .toggle-icon { margin-left: auto; transition: transform 0.3s; }
+        .section-header.collapsed .toggle-icon { transform: rotate(-90deg); }
+        .section-content { max-height: 2000px; overflow: hidden; transition: max-height 0.3s ease; }
+        .section-content.collapsed { max-height: 0; }
+        .content-box { padding: 1.5rem; }
+        
+        /* Lists */
+        .simple-list, .bullet-list, .numbered-list { margin: 1rem 0; padding-left: 1.5rem; }
+        .simple-list li, .bullet-list li { margin: 0.75rem 0; line-height: 1.7; }
+        .bullet-list li { list-style: disc; }
+        .numbered-list li { list-style: decimal; margin: 1rem 0; }
+        
+        /* Prelims Box */
+        .prelims-box { background: #faf5ff; border-radius: 8px; padding: 1.5rem; }
+        .fact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+        .fact-item { background: white; padding: 1rem; border-radius: 8px; text-align: center; }
+        .fact-label { display: block; color: var(--text-secondary); font-size: 0.875rem; margin-bottom: 0.25rem; }
+        .fact-value { display: block; font-weight: 700; color: var(--primary-color); font-size: 1.125rem; }
+        .highlight-box { background: #fffbeb; border-left: 4px solid var(--warning-color); padding: 1rem; margin-top: 1rem; border-radius: 0 8px 8px 0; }
+        
+        /* Mains Box */
+        .mains-box { background: #f8fafc; }
+        .mains-subsection { margin: 1.5rem 0; padding: 1.25rem; background: white; border-radius: 8px; }
+        .mains-subsection h4 { color: var(--primary-color); margin-bottom: 0.75rem; font-size: 1rem; }
+        
+        /* Case Studies */
+        .case-study { background: #f0fdf4; border: 1px solid #86efac; border-radius: 8px; padding: 1.25rem; margin: 1rem 0; }
+        .case-study h4 { color: #166534; margin-bottom: 0.75rem; }
+        
+        /* MCQ Section */
+        .mcq-box { background: #fefce8; }
+        .mcq-item { background: white; padding: 1.5rem; border-radius: 8px; margin: 1rem 0; }
+        .mcq-question { margin-bottom: 1rem; line-height: 1.7; }
+        .mcq-options { display: flex; flex-direction: column; gap: 0.5rem; margin: 1rem 0; }
+        .mcq-options label { display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem; border-radius: 6px; cursor: pointer; transition: background 0.2s; }
+        .mcq-options label:hover { background: var(--bg-color); }
+        .mcq-answer { display: none; background: #f0fdf4; border-left: 4px solid var(--success-color); padding: 1rem; margin: 1rem 0; border-radius: 0 8px 8px 0; }
+        .mcq-answer.show { display: block; }
+        .btn-show-answer { background: var(--primary-color); color: white; border: none; padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: 500; margin-top: 0.5rem; }
+        .btn-show-answer:hover { background: #7c3aed; }
+        
+        /* Revision Box */
+        .revision-box { background: linear-gradient(135deg, #faf5ff 0%, #ede9fe 100%); border-radius: 8px; padding: 1.5rem; }
+        .revision-list { list-style: none; padding: 0; }
+        .revision-list li { padding: 0.5rem 0; border-bottom: 1px solid rgba(0,0,0,0.1); }
+        .revision-list li:last-child { border-bottom: none; }
+        .mnemonic-box { background: white; padding: 1rem; border-radius: 8px; margin: 1rem 0; font-family: 'Courier New', monospace; }
+        .warning-list { list-style: none; padding: 0; }
+        .warning-list li { padding: 0.5rem; background: #fee2e2; margin: 0.5rem 0; border-radius: 6px; color: #991b1b; }
+        
+        /* Page Navigation */
+        .page-navigation { display: flex; justify-content: space-between; gap: 1rem; margin: 2rem 0; flex-wrap: wrap; }
+        .nav-btn { flex: 1; min-width: 150px; padding: 1rem; text-align: center; background: var(--card-bg); border: 2px solid var(--border-color); border-radius: 8px; text-decoration: none; color: var(--text-primary); font-weight: 500; cursor: pointer; transition: all 0.2s; }
+        .nav-btn:hover { border-color: var(--primary-color); color: var(--primary-color); }
+        .btn-success { background: var(--success-color); color: white; border-color: var(--success-color); }
+        .btn-success:hover { background: #059669; color: white; }
+        .btn-disabled { opacity: 0.5; cursor: not-allowed; }
+        
+        /* Footer */
+        .page-footer { background: var(--bg-color); color: var(--text-secondary); border-top: 1px solid var(--border-color); padding: 2rem 0; text-align: center; margin-top: 3rem; }
+        .intro-box { background: #faf5ff; border-left: 4px solid var(--primary-color); padding: 1.5rem; border-radius: 0 8px 8px 0; }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .page-header h1 { font-size: 1.5rem; }
+            .section-header { font-size: 1rem; padding: 1rem; }
+            .fact-grid { grid-template-columns: 1fr; }
+            .page-navigation { flex-direction: column; }
+        }
+        @media print {
+            .study-nav, .page-navigation, .btn-show-answer { display: none !important; }
+            .section-content { max-height: none !important; }
+            .toggle-icon { display: none; }
+            body { background: white; }
+            .study-section { break-inside: avoid; box-shadow: none; border: 1px solid #ddd; }
+        }
+    </style>
+    <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-51XLJE4TVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-51XLJE4TVH');
+  </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327"
+     crossorigin="anonymous"></script>
+</head>
+<body class="study-page">
+    <nav class="study-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Current Affairs Index</a>
+            <div class="nav-controls">
+                <button onclick="toggleAllSections()" class="btn-secondary">Expand/Collapse All</button>
+                <button onclick="window.print()" class="btn-primary">📄 Print/Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../index.html">Home</a> / 
+                <a href="index.html">Current Affairs</a> / 
+                <span>CA-24: Environment + Energy + Resources</span>
+            </div>
+            <h1>⚡ Lithium Discoveries in India</h1>
+            <p class="page-subtitle">Strategic Minerals • Energy Security • Critical Minerals Mission • Domestic Manufacturing</p>
+            <div class="page-meta">
+                <span class="badge badge-primary">High Yield</span>
+                <span class="badge badge-secondary">GS-3 + GS-1 + Essay</span>
+                <span class="badge badge-warning">⚡ Critical Minerals + Economy</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="keywords-box">
+            <strong>🔍 Quick Search:</strong> 
+            Lithium discovery locations J&K, Hard Rock Lithium India, Critical Minerals List, UREELA project, UPSC notes on mineral resources
+        </section>
+
+        <!-- Section 1: Introduction -->
+        <section class="study-section collapsible" data-section="1">
+            <button class="section-header" onclick="toggleSection(1)">
+                <span class="section-number">1️⃣</span>
+                <span class="section-title">Introduction (Simple)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-1">
+                <div class="content-box intro-box">
+                    <ul class="simple-list">
+                        <li><strong>What is Lithium?</strong> → Lightest metal element (atomic number 3), essential component in rechargeable batteries for EVs, electronics, renewable energy storage.</li>
+                        <li><strong>India's Discovery:</strong> October 2023 — Geological Survey of India (GSI) confirmed first domestic hard-rock lithium reserve in Reasi district, Jammu & Kashmir (~5.9 million tonnes).</li>
+                        <li><strong>Strategic Importance:</strong> Enables India to reduce import dependence (currently 100%), supports EV ecosystem, battery manufacturing ambitions under PLI schemes.</li>
+                        <li><strong>New Reserves Found:</strong> After J&K find, GSI also identified lithium in Rajasthan, Karnataka, Meghalaya, Telangana, Odisha—total potential 15+ million tonnes.</li>
+                        <li><strong>UPSC Angle:</strong> Tests understanding of resource security, economic strategy, federalism (subsurface rights), environmental clearance issues, and global critical minerals diplomacy.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Key Concepts -->
+        <section class="study-section collapsible" data-section="2">
+            <button class="section-header" onclick="toggleSection(2)">
+                <span class="section-number">2️⃣</span>
+                <span class="section-title">Key Concepts (Bullet Points)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-2">
+                <div class="content-box">
+                    <h3>📌 Lithium Discovery Locations in India</h3>
+                    <ul class="bullet-list">
+                        <li><strong>J&K (Reasi District):</strong>
+                            <ul>
+                                <li>First major discovery announced by GSI in Oct 2023; estimated 5.9 million tonnes inferred resource.</li>
+                                <li>Type: Hard rock spodumene deposit at 1,580 metres depth.</li>
+                                <li>Significance: First proven commercial-grade lithium in India; closest proximity to existing mining infrastructure.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Rajasthan (Bhilwara, Chittorgarh, Rajsamand):</strong>
+                            <ul>
+                                <li>Identified through satellite data and soil sampling; preliminary estimates suggest 1.8 million tonnes.</li>
+                                <li>Geological setting: Pegmatite veins within Aravalli supracrustal belts—similar to Australian/Korean deposits.</li>
+                                <li>Status: Requires further drilling and feasibility studies before commercial extraction.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Karnataka (Chikkamagaluru, Hassan, Chitradurga):</strong>
+                            <ul>
+                                <li>GSI survey in Aug 2024 confirmed lithium presence in pegmatite formations.</li>
+                                <li>Potential reserves: ~1.1 million tonnes; associated with gold-bearing quartz veins.</li>
+                                <li>Partnership: State Mining Corporation exploring joint ventures with private sector.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Meghalaya (Ri Bhoi District):</strong>
+                            <ul>
+                                <li>Lithium-bearing mica zones discovered in 2024; potential ~0.5 million tonnes.</li>
+                                <li>Challenge: Environmental concerns due to biodiversity-rich region; requires careful EIA.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Other Identified Sites:</strong> Telangana (Adilabad), Odisha (Sundargarh), Andhra Pradesh (Kurnool) — all early-stage exploration.</li>
+                    </ul>
+
+                    <h3>📌 Geological Types of Lithium Deposits</h3>
+                    <ul class="bullet-list">
+                        <li><strong>Hard Rock Spodumene:</strong> India's primary type (pegmatite-hosted). Requires crushing, grinding, flotation to concentrate; energy-intensive but environmentally manageable.</li>
+                        <li><strong>Salt Lake Brines:</strong> Bolivia, Chile models; lithium dissolved in groundwater beneath salt flats. Higher grade but requires vast water access and evaporation ponds.</li>
+                        <li><strong>Clay-Type Deposits:</strong> Emerging technology; lithium adsorbed onto clay minerals. Still experimental globally.</li>
+                        <li><strong>India's Advantage:</strong> Hard rock deposits allow phased extraction similar to coal/metal mining—less disruptive than brine operations.</li>
+                    </ul>
+
+                    <h3>📌 Critical Minerals Framework</h3>
+                    <ul class="bullet-list">
+                        <li><strong>Ministry of Mines' Critical Minerals List (2022):</strong> 30 minerals including lithium, cobalt, nickel, graphite, rare earth elements deemed strategic for national security.</li>
+                        <li><strong>Critical Minerals Business Plan:</strong> Government actively pursuing international acquisitions (Argentina, Australia, Namibia) while developing domestic sources.</li>
+                        <li><strong>Department of Atomic Energy Involvement:</strong> Uranium-mining company KHEMEX (KG Basin) collaborating on unconventional uranium-lithium co-extraction technology.</li>
+                    </ul>
+
+                    <h3>📌 International Partnerships for Lithium Acquisition</h3>
+                    <ul class="bullet-list">
+                        <li><strong>BHAVANAM Initiative:</strong> $2.4 billion budget for securing 25 critical minerals including lithium via bilateral deals.</li>
+                        <li><strong>India-Australia Mineral Security Partnership:</strong> Joint investment fund for lithium projects in Western Australia; Indian firms acquiring stakes in mines.</li>
+                        <li><strong>Argentina Agreement (2023):</strong> ONGC Videsh investing €300 million in Cauchari-Olaroz lithium brine project; expected production start 2026.</li>
+                        <li><strong>Namibia MoU (2024):</strong> Exploration rights for lithium-bearing pegmatites; technical support from Indian geological experts.</li>
+                        <li><strong>Global Context:</strong> China controls 60% refining capacity; Indonesia, Brazil emerging as competitors; India must secure multiple supply chains.</li>
+                    </ul>
+
+                    <h3>📌 Processing & Value Chain Requirements</h3>
+                    <ul class="bullet-list">
+                        <li><strong>Beneficiation:</strong> Crush ore → Grind → Froth flotation to achieve 6% Li₂O concentration required for cell-grade lithium carbonate.</li>
+                        <li><strong>Refining Technology:</strong> Currently non-existent domestically; relies on Chinese processors for converting concentrate to lithium carbonate/hydroxide.</li>
+                        <li><strong>Battery Grade Purity:</strong> Must meet 99.5%+ purity standards; requires advanced chemical plants—likely initial phase will be concentrate export to third-party refineries.</li>
+                        <li><strong>Local Integration:</strong> PLI scheme mandates domestic manufacturing; long-term goal: full chain from mine to cathode to pack.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Important Facts for Prelims -->
+        <section class="study-section collapsible" data-section="3">
+            <button class="section-header" onclick="toggleSection(3)">
+                <span class="section-number">3️⃣</span>
+                <span class="section-title">Important Facts for Prelims</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-3">
+                <div class="content-box prelims-box">
+                    <div class="fact-grid">
+                        <div class="fact-item">
+                            <span class="fact-label">GSI Discovery Year</span>
+                            <span class="fact-value">October 2023</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-label">J&K Reserve Estimate</span>
+                            <span class="fact-value">5.9 Million Tonnes</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-label">Critical Minerals List</span>
+                            <span class="fact-value">30 Minerals (2022)</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-label">BHAVANAM Budget</span>
+                            <span class="fact-value">$2.4 Billion</span>
+                        </div>
+                    </div>
+                    
+                    <h3>✅ Quick Facts</h3>
+                    <ul class="bullet-list">
+                        <li><strong>Element Properties:</strong> Lithium symbol "Li", atomic number 3, density 0.53 g/cm³ (lighter than aluminum); highly reactive, stored in oil to prevent oxidation.</li>
+                        <li><strong>Primary Use:</strong> >75% demand from lithium-ion batteries; remainder used in glass/ceramics, pharmaceuticals (lithium carbonate for bipolar disorder), nuclear industry (tritium production).</li>
+                        <li><strong>Import Dependence:</strong> India imported ₹40,000 crore worth of lithium compounds in 2023; 100% import dependency until domestic production begins (expected 2028-29).</li>
+                        <li><strong>Price Volatility:</strong> Lithium carbonate price surged to $80,000/tonne (2022) then crashed to $15,000/tonne (2024); strategic stockpiling recommended.</li>
+                    </ul>
+
+                    <h3>✅ Global Lithium Distribution (Reserves)</h3>
+                    <ul class="bullet-list">
+                        <li><strong>Australia:</strong> 3.9 million tonnes (largest producer via hard rock); exports 60% global supply.</li>
+                        <li><strong>Chile:</strong> 9.3 million tonnes (largest brine reserves); second-largest global producer.</li>
+                        <li><strong>China:</strong> 2.0 million tonnes (controls 60% refining capacity globally).</li>
+                        <li><strong>USA:</strong> 2.7 million tonnes; developing projects in Nevada, North Carolina.</li>
+                        <li><strong>India's Share:</strong> <0.5% global reserves despite 15+ million tonne estimated potential—significant untapped opportunity.</li>
+                    </ul>
+
+                    <div class="highlight-box">
+                        <strong>💡 Prelims Trap:</strong> J&K discovery was <strong>inferred resource</strong> (measured + probable categories), not yet classified as "reserves" requiring economic viability proof. Also, "spodumene" refers to the lithium-bearing mineral form in hard rock deposits.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Detailed Explanation for Mains -->
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">Detailed Explanation for Mains</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
+                <div class="content-box mains-box">
+                    <h3>🎯 Lithium Discoveries: Multi-Dimensional Analysis</h3>
+                    
+                    <div class="mains-subsection">
+                        <h4>🔹 Economic Imperatives: Import Substitution & Cost Reduction</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Import Bill Savings:</strong> Eliminating lithium imports could save $5-8 billion annually by 2030; current 100% import bill drains foreign exchange reserves.</li>
+                            <li><strong>VAT/GST Benefits:</strong> Domestic processing eliminates shipping costs, customs duties (~10-15% on imported concentrates); improves cost competitiveness of Indian EV manufacturers.</li>
+                            <li><strong>Value Capture:</strong> Moving up value chain from raw material exporter to battery manufacturer; each stage adds $1,000-5,000 per tonne value capture.</li>
+                        </ul>
+                    </div>
+
+                    <div class="mains-subsection">
+                        <h4>🔹 Energy Security & Climate Goals Linkage</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Emission Reduction:</strong> EV fleet expansion targets require stable battery supply; domestic lithium ensures supply continuity independent of geopolitical disruptions (China-Russia tensions, South American nationalism).</li>
+                            <li><strong>Renewable Energy Storage:</strong> Grid-scale batteries for solar/wind integration need lithium supply; domestic sourcing aligns with 500 GW renewable target by 2030.</li>
+                            <li><strong>Energy Independence:</strong> Reduces fossil fuel dependence (imported oil 85%) by accelerating transport electrification pathway toward net-zero by 2070.</li>
+                        </ul>
+                    </div>
+
+                    <div class="mains-subsection">
+                        <h4>🔹 Regional Development & Federal Considerations</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Subsurface Rights Constitution:</strong> Article 297 places minerals in Union domain; however, land acquisition requires state cooperation and compensation distribution mechanisms.</li>
+                            <li><strong>Local Employment:</strong> J&K mining could create 5,000 direct jobs initially; multiplier effect in transportation, housing, services sectors for 15,000 indirect workers.</li>
+                            <li><strong>Developmental Gap:</strong> Remote Himalayan regions lack infrastructure; mining could spur roads, power grids, telecommunications—benefiting local communities if planned inclusively.</li>
+                        </ul>
+                    </div>
+
+                    <div class="mains-subsection">
+                        <h4>🔹 Critical Challenges & Way Forward</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Environmental Clearances:</strong> J&K site near protected areas (Pahalgam watershed); requires rigorous EIA considering glacial fragility, water table impacts, biodiversity corridors.</li>
+                            <li><strong>Processing Capacity:</strong> No domestic lithium refining facilities exist; must build processing plants from scratch or rely on partnerships abroad (techno-economic constraints).</li>
+                            <li><strong>Tech Transfer Barriers:</strong> Lithium extraction/refining knowledge concentrated in Australia, China, USA; intellectual property restrictions limit direct technology acquisition.</li>
+                            <li><strong>Community Consent:</strong> Indigenous tribal populations in mining areas may resist displacement; Free Prior Informed Consent (FPIC) principles essential for social license to operate.</li>
+                        </ul>
+                        <h4 style="margin-top: 1rem; color: var(--primary-color);">🔹 Mains Answer Framework</h4>
+                        <ol class="numbered-list">
+                            <li><strong>Contextualize:</strong> Link lithium discoveries to energy security imperatives, EV manufacturing ambitions, and critical mineral diplomacy in multipolar world order.</li>
+                            <li><strong>Analyze Geology & Economics:</strong> Assess reserve quality, extraction costs vs. import prices, value chain development timelines, and capital expenditure requirements.</li>
+                            <li><strong>Critically Evaluate:</strong> Environmental trade-offs, federal coordination issues, technological gaps, global market volatility risks, and long-term sustainability concerns.</li>
+                            <li><strong>Way Forward:</strong> Balanced approach of domestic extraction + strategic international investments + R&D investment in alternative chemistries (sodium-ion, solid-state) for diversification.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Examples / Case Studies -->
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)">
+                <span class="section-number">5️⃣</span>
+                <span class="section-title">Examples / Case Studies</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-5">
+                <div class="content-box">
+                    <div class="case-study">
+                        <h4>📌 Case 1: ONGC Videsh Argentina Investment (2023)</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Context:</strong> Need to secure offshore lithium supplies alongside domestic development efforts.</li>
+                            <li><strong>Investment Details:</strong> ₹2,500 crore stake in Cauchari-Olaroz brine project; ownership shared with Livent, TotalEnergies, Pan American Energy.</li>
+                            <li><strong>Expected Output:</strong> 20,000 tonnes annual lithium hydroxide production starting 2026; sufficient to supply 25% of India's projected 2030 battery needs.</li>
+                            <li><strong>UPSC Link:</strong> Energy security strategy + Bilateral economic ties + Overseas asset acquisition + Critical minerals diplomacy.</li>
+                        </ul>
+                    </div>
+
+                    <div class="case-study">
+                        <h4>📌 Case 2: Reasi District Mining Planning Challenges</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Context:</strong> Site located 1,580 metres underground near tourist destination Pahalgam (World Heritage Site potential).</li>
+                            <li><strong>Concerns:</strong> Potential groundwater depletion affecting Lidder River; glacial melting acceleration; wildlife disturbance in Great Himalayan National Park vicinity.</li>
+                            <li><strong>Proposed Solutions:</strong> Underground-only mining (no open pit); zero liquid discharge treatment; community benefit-sharing agreements with 5% royalty redirected to local development fund.</li>
+                            <li><strong>UPSC Link:</strong> Sustainable mining practices + Environmental clearance reforms + Balancing development with conservation + Stakeholder consultation frameworks.</li>
+                        </ul>
+                    </div>
+
+                    <div class="case-study">
+                        <h4>📌 Case 3: Tata Motors' Battery Manufacturing Hub in Gujarat</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Context:</strong> EV production growth creates downstream demand for locally sourced lithium.</li>
+                            <li><strong>Planned Capacity:</strong> 25 GWh battery gigafactory proposed in Sanand industrial corridor; partners include CATL (China) and Japanese trading houses (Sumitomo).</li>
+                            <li><strong>Supply Strategy:</strong> Initially imports concentrate from Australia/Russia; plans to process domestic lithium once Reasi plant operational around 2028-29.</li>
+                            <li><strong>UPSC Link:</strong> Industrial cluster development + Foreign partnership management + Supply chain localization + Public-private coordination.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: MCQs -->
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)">
+                <span class="section-number">6️⃣</span>
+                <span class="section-title">5 MCQs with Answers</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-6">
+                <div class="content-box mcq-box">
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q1.</strong> With reference to India's lithium discoveries, consider the following statements:<br>
+                        1. The Geological Survey of India confirmed the first domestic hard-rock lithium reserve in Jammu & Kashmir in October 2023.<br>
+                        2. The discovered reserve in Reasi district is approximately 5.9 million tonnes.<br>
+                        3. India currently produces 40% of its annual lithium requirement from domestic sources.<br><br>
+                        Which of the statements given above are correct?</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q1" value="a"> (a) 1 and 2 only</label>
+                            <label><input type="radio" name="q1" value="b"> (b) 2 and 3 only</label>
+                            <label><input type="radio" name="q1" value="c"> (c) 1 and 3 only</label>
+                            <label><input type="radio" name="q1" value="d"> (d) 1, 2 and 3</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q1">
+                            <p><strong>✅ Answer:</strong> (a) 1 and 2 only</p>
+                            <p><strong>💡 Explanation:</strong> Statement 3 is incorrect: India currently produces <strong>zero</strong> domestic lithium; 100% import dependent. Statements 1 & 2 are correct regarding GSI discovery details.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q1')">Show Answer</button>
+                    </div>
+
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q2.</strong> The mineral "Spodumene" associated with India's lithium discovery in J&K is classified as:</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q2" value="a"> (a) Salt lake brine deposit</label>
+                            <label><input type="radio" name="q2" value="b"> (b) Hard rock pegmatite type</label>
+                            <label><input type="radio" name="q2" value="c"> (c) Clay-based adsorption type</label>
+                            <label><input type="radio" name="q2" value="d"> (d) Deep sea nodule deposit</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q2">
+                            <p><strong>✅ Answer:</strong> (b) Hard rock pegmatite type</p>
+                            <p><strong>💡 Explanation:</strong> Spodumene (LiAlSi₂O₆) is a lithium-aluminium inosilicate found in pegmatite rocks; it's the primary source of hard rock lithium deposits like those in J&K, Australia, and China.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q2')">Show Answer</button>
+                    </div>
+
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q3.</strong> Consider the following pairs:<br>
+                        Project/Initiative | Purpose<br>
+                        1. BHAVANAM Scheme | $2.4 billion fund for critical minerals acquisition<br>
+                        2. ONGC Videsh Argentina Deal | Securing overseas lithium brine project stake<br>
+                        3. GSI Reasi Discovery | First commercial-grade hard rock lithium detection<br><br>
+                        How many pairs are correctly matched?</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q3" value="a"> (a) Only one</label>
+                            <label><input type="radio" name="q3" value="b"> (b) Only two</label>
+                            <label><input type="radio" name="q3" value="c"> (c) All three</label>
+                            <label><input type="radio" name="q3" value="d"> (d) None</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q3">
+                            <p><strong>✅ Answer:</strong> (c) All three</p>
+                            <p><strong>💡 Explanation:</strong> All three pairs are correctly matched. BHAVANAM = ₹20,000 Cr ($2.4Bn) fund, ONGC Argentina deal = 2023 investment for brine lithium, GSI Reasi = first commercial hard rock discovery.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q3')">Show Answer</button>
+                    </div>
+
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q4.</strong> Which ministry administers India's Critical Minerals List that includes lithium?</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q4" value="a"> (a) Ministry of Finance</label>
+                            <label><input type="radio" name="q4" value="b"> (b) Ministry of Power</label>
+                            <label><input type="radio" name="q4" value="c"> (c) Ministry of Mines</label>
+                            <label><input type="radio" name="q4" value="d"> (d) Ministry of Commerce and Industry</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q4">
+                            <p><strong>✅ Answer:</strong> (c) Ministry of Mines</p>
+                            <p><strong>💡 Explanation:</strong> The Ministry of Mines published the first list of 30 critical minerals (including lithium) in February 2022 as part of the National Mineral Policy framework.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q4')">Show Answer</button>
+                    </div>
+
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q5.</strong> According to recent assessments, which country controls the largest share of global lithium refining capacity?</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q5" value="a"> (a) United States</label>
+                            <label><input type="radio" name="q5" value="b"> (b) Australia</label>
+                            <label><input type="radio" name="q5" value="c"> (c) China</label>
+                            <label><input type="radio" name="q5" value="d"> (d) Chile</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q5">
+                            <p><strong>✅ Answer:</strong> (c) China</p>
+                            <p><strong>💡 Explanation:</strong> While Australia is largest producer (hard rock), China controls ~60% of global lithium refining capacity, making it the most influential player in the supply chain value chain beyond just mining.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q5')">Show Answer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: Quick Revision Notes -->
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)">
+                <span class="section-number">7️⃣</span>
+                <span class="section-title">Quick Revision Notes</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-7">
+                <div class="content-box revision-box">
+                    <h3>🔁 Lithium Discoveries in 10 Seconds</h3>
+                    <ul class="revision-list">
+                        <li><strong>First Discovery:</strong> Oct 2023, GSI confirms 5.9 MT in Reasi, J&K (hard rock spodumene)</li>
+                        <li><strong>Additional Finds:</strong> Rajasthan (1.8 MT), Karnataka (1.1 MT), Meghalaya (0.5 MT), others (Telangana, Odisha, AP)</li>
+                        <li><strong>Total Potential:</strong> 15+ million tonnes across India (unrefined); currently 100% import dependent</li>
+                        <li><strong>Policy Support:</strong> Critical Minerals List (30 items), BHAVANAM ($2.4Bn fund), PLI schemes for battery manufacturing</li>
+                        <li><strong>International Deals:</strong> Argentina (ONGC stake), Australia (partnership), Namibia (exploration rights)</li>
+                        <li><strong>Challenges:</strong> No domestic refining capacity, environmental clearances, tech transfer barriers, community consent</li>
+                        <li><strong>Expected Timeline:</strong> Commercial production 2028-29 after processing plant setup</li>
+                    </ul>
+
+                    <h3>🧠 Mnemonic: "LITHIUM INDIA"</h3>
+                    <div class="mnemonic-box">
+                        <p><strong>L</strong> → Limestone-hard rock spodumene deposit type in J&K (not brine lakes)</p>
+                        <p><strong>I</strong> → Import bill: ₹40,000 Cr (2023); 100% import dependency until 2028</li></p>
+                        <p><strong>T</strong> → Three-year plan: Refining capacity needed before domestic lithium can be utilized</li></p>
+                        <p><strong>H</strong> → Himalayan location: J&K deposit at 1,580m depth; glacier protection considerations</li></p>
+                        <p><strong>I</strong> → Initiatives: BHAVANAM ($2.4Bn), Critical Minerals List (30 items), PLI for batteries</li></p>
+                        <p><strong>U</strong> → Usage: >75% demand from EVs; remaining in glass, ceramics, pharmaceuticals</li></p>
+                        <p><strong>M</strong> → Mapping: GSI survey across Rajasthan, Karnataka, Meghalaya, Telangana, Odisha, AP</li>
+                        <br>
+                        <p><strong>I</strong> → Investments: ONGC Videsh Argentina (€300 Cr); foreign partnership model</li></p>
+                        <p><strong>N</strong> → Necessity: Energy security, climate goals, cost reduction for EV adoption</li></p>
+                        <p><strong>D</strong> → Disadvantages: Processing technology absent, environmental clearances required, community resistance possible</li></p>
+                        <p><strong>I</strong> → Integration: From mine → beneficiation → refining → battery manufacturing → recycling</li></p>
+                        <p><strong>A</strong> → Alliance: India-Australia, India-Argentina, India-Namibia critical minerals partnerships</li></p>
+                    </div>
+
+                    <h3>📌 Prelims Traps to Avoid</h3>
+                    <ul class="warning-list">
+                        <li>✘ J&K discovery date is <strong>October 2023</strong>, not earlier (2022 claims were preliminary surveys)</li>
+                        <li>✘ Reserve type is <strong>hard rock spodumene</strong> (not brine/salt lake deposits common in Chile/Bolivia)</li>
+                        <li>✘ India has <strong>zero domestic production</strong>; all lithium currently imported from China, Australia, Africa</li>
+                        <li>✘ Bhavanam budget is <strong>$2.4 billion (₹20,000 Cr)</strong>, not ₹2,400 Cr or other figures</li>
+                        <li>✘ "Inferred resource" (J&K) ≠ "proved reserves"; economic viability assessment still ongoing</li>
+                    </ul>
+
+                    <h3>🎯 Mains One-Liners</h3>
+                    <ul class="bullet-list">
+                        <li>"Lithium discoveries = Opportunity for energy independence, EV cost reduction, and strategic autonomy"</li>
+                        <li>"Hard rock deposits offer sustainable extraction path compared to water-intensive brine mining"</li>
+                        <li>"Domestic mining alone insufficient; balanced strategy of extraction + overseas investments + technology partnerships required"</li>
+                        <li>"Environmental safeguards essential: J&K's Himalayan ecology requires stricter impact assessments than conventional mining regions"</li>
+                        <li>"Way Forward: Invest in refining R&D, establish recycling infrastructure, develop alternatives (sodium-ion batteries) for diversification"</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation Footer -->
+        <div class="page-navigation">
+            <a href="index.html" class="nav-btn">← Back to Current Affairs Index</a>
+            <button onclick="markAsComplete('CA-24')" class="nav-btn btn-success">✓ Mark as Complete</button>
+            <a href="green-energy-corridor.html" class="nav-btn">Next: CA-25 →</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>📄 Page Code: <strong>CA-24</strong> | Subject: Environment + Energy + Resources + Economy</p>
+            <p>🔗 Link to Syllabus: GS-3 (Environment, Energy, Internal Security, Resources), GS-1 (Geography, Development Issues), Essay</p>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle Section
+        function toggleSection(sectionNum) {
+            const section = document.querySelector(`[data-section="${sectionNum}"]`);
+            const content = document.getElementById(`section-${sectionNum}`);
+            const header = section.querySelector('.section-header');
+            if (content.classList.contains('collapsed')) {
+                content.classList.remove('collapsed');
+                header.classList.remove('collapsed');
+            } else {
+                content.classList.add('collapsed');
+                header.classList.add('collapsed');
+            }
+        }
+        // Toggle All Sections
+        function toggleAllSections() {
+            const sections = document.querySelectorAll('.study-section');
+            const allCollapsed = Array.from(sections).every(s => s.querySelector('.section-content').classList.contains('collapsed'));
+            sections.forEach(section => {
+                const content = section.querySelector('.section-content');
+                const header = section.querySelector('.section-header');
+                if (allCollapsed) { content.classList.remove('collapsed'); header.classList.remove('collapsed'); }
+                else { content.classList.add('collapsed'); header.classList.add('collapsed'); }
+            });
+        }
+        // Show MCQ Answer
+        function showAnswer(questionId) {
+            const answerDiv = document.getElementById(`answer-${questionId}`);
+            const btn = event.target;
+            if (answerDiv.classList.contains('show')) { answerDiv.classList.remove('show'); btn.textContent = 'Show Answer'; }
+            else { answerDiv.classList.add('show'); btn.textContent = 'Hide Answer'; }
+        }
+        // Mark as Complete
+        function markAsComplete(pageCode) {
+            let completed = JSON.parse(localStorage.getItem('completedPages') || '[]');
+            if (!completed.includes(pageCode)) {
+                completed.push(pageCode);
+                localStorage.setItem('completedPages', JSON.stringify(completed));
+                const btn = event.target;
+                btn.textContent = '✓ Completed!';
+                btn.style.background = '#059669';
+                if (window.opener) { try { window.opener.updateMainProgress?.(); } catch(e) {} }
+            }
+        }
+        // Auto-expand first section
+        document.addEventListener('DOMContentLoaded', function() {
+            const first = document.querySelector('[data-section="1"]');
+            if (first) setTimeout(() => toggleSection(1), 300);
+        });
+        // Keyboard shortcuts
+        document.addEventListener('keydown', function(e) {
+            if ((e.ctrlKey || e.metaKey) && e.key === 'p') { e.preventDefault(); window.print(); }
+            if (e.key === ' ' && e.target === document.body) { e.preventDefault(); const f = document.querySelector('[data-section="1"]'); if (f) toggleSection(1); }
+        });
+    </script>
+</body>
+</html>

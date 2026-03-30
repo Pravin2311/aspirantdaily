@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CA-18: IndiaAI Mission | UPSC Study Notes</title>
+    <meta name="description" content="Comprehensive UPSC notes on IndiaAI Mission: Key components, compute infrastructure, datasets, skilling, startup support, and analysis for Prelims & Mains.">
+    <meta name="keywords" content="IndiaAI Mission, Artificial Intelligence, AI Policy, Compute Infrastructure, DPIIT, UPSC Notes, Technology, Digital India">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #0ea5e9;
+            --secondary-color: #64748b;
+            --success-color: #10b981;
+            --warning-color: #f59e0b;
+            --danger-color: #ef4444;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --border-color: #e2e8f0;
+            --shadow: 0 1px 3px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg-color); color: var(--text-primary); line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        /* Study Nav */
+        .study-nav { background: var(--card-bg); border-bottom: 1px solid var(--border-color); padding: 1rem 0; position: sticky; top: 0; z-index: 100; box-shadow: var(--shadow); }
+        .study-nav .container { display: flex; justify-content: space-between; align-items: center; }
+        .back-link { color: var(--primary-color); text-decoration: none; font-weight: 500; }
+        .nav-controls { display: flex; gap: 1rem; }
+        .btn-primary, .btn-secondary { padding: 0.5rem 1rem; border: none; border-radius: 6px; font-weight: 500; cursor: pointer; transition: all 0.2s; }
+        .btn-primary { background: var(--primary-color); color: white; }
+        .btn-primary:hover { background: #0284c7; }
+        .btn-secondary { background: var(--bg-color); color: var(--text-primary); border: 1px solid var(--border-color); }
+        .btn-secondary:hover { background: var(--border-color); }
+        
+        /* Page Header */
+        .page-header { background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%); color: white; padding: 2rem 0; border-bottom: 1px solid var(--border-color); }
+        .breadcrumb { color: rgba(255,255,255,0.9); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .breadcrumb a { color: white; text-decoration: none; }
+        .page-header h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+        .page-subtitle { color: rgba(255,255,255,0.95); font-size: 1.125rem; margin-bottom: 1rem; }
+        .page-meta { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+        .badge { padding: 0.375rem 0.875rem; border-radius: 20px; font-size: 0.875rem; font-weight: 500; }
+        .badge-primary { background: rgba(255,255,255,0.2); color: white; }
+        .badge-secondary { background: rgba(255,255,255,0.15); color: white; }
+        .badge-warning { background: #fef3c7; color: #92400e; }
+        
+        /* Keywords Box */
+        .keywords-box { background: #f0f9ff; border-left: 4px solid var(--primary-color); padding: 1rem; margin: 2rem 0; border-radius: 0 8px 8px 0; font-size: 0.9rem; }
+        
+        /* Study Sections */
+        .study-section { background: var(--card-bg); border-radius: 12px; margin: 1.5rem 0; box-shadow: var(--shadow); overflow: hidden; }
+        .section-header { width: 100%; padding: 1.25rem 1.5rem; background: var(--card-bg); border: none; display: flex; align-items: center; gap: 1rem; cursor: pointer; font-size: 1.125rem; font-weight: 600; color: var(--text-primary); transition: all 0.2s; }
+        .section-header:hover { background: var(--bg-color); }
+        .section-number { font-size: 1.5rem; }
+        .toggle-icon { margin-left: auto; transition: transform 0.3s; }
+        .section-header.collapsed .toggle-icon { transform: rotate(-90deg); }
+        .section-content { max-height: 2000px; overflow: hidden; transition: max-height 0.3s ease; }
+        .section-content.collapsed { max-height: 0; }
+        .content-box { padding: 1.5rem; }
+        
+        /* Lists */
+        .simple-list, .bullet-list, .numbered-list { margin: 1rem 0; padding-left: 1.5rem; }
+        .simple-list li, .bullet-list li { margin: 0.75rem 0; line-height: 1.7; }
+        .bullet-list li { list-style: disc; }
+        .numbered-list li { list-style: decimal; margin: 1rem 0; }
+        
+        /* Prelims Box */
+        .prelims-box { background: #f0f9ff; border-radius: 8px; padding: 1.5rem; }
+        .fact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+        .fact-item { background: white; padding: 1rem; border-radius: 8px; text-align: center; }
+        .fact-label { display: block; color: var(--text-secondary); font-size: 0.875rem; margin-bottom: 0.25rem; }
+        .fact-value { display: block; font-weight: 700; color: var(--primary-color); font-size: 1.125rem; }
+        .highlight-box { background: #fffbeb; border-left: 4px solid var(--warning-color); padding: 1rem; margin-top: 1rem; border-radius: 0 8px 8px 0; }
+        
+        /* Mains Box */
+        .mains-box { background: #f8fafc; }
+        .mains-subsection { margin: 1.5rem 0; padding: 1.25rem; background: white; border-radius: 8px; }
+        .mains-subsection h4 { color: var(--primary-color); margin-bottom: 0.75rem; font-size: 1rem; }
+        
+        /* Case Studies */
+        .case-study { background: #f0fdf4; border: 1px solid #86efac; border-radius: 8px; padding: 1.25rem; margin: 1rem 0; }
+        .case-study h4 { color: #166534; margin-bottom: 0.75rem; }
+        
+        /* MCQ Section */
+        .mcq-box { background: #fefce8; }
+        .mcq-item { background: white; padding: 1.5rem; border-radius: 8px; margin: 1rem 0; }
+        .mcq-question { margin-bottom: 1rem; line-height: 1.7; }
+        .mcq-options { display: flex; flex-direction: column; gap: 0.5rem; margin: 1rem 0; }
+        .mcq-options label { display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem; border-radius: 6px; cursor: pointer; transition: background 0.2s; }
+        .mcq-options label:hover { background: var(--bg-color); }
+        .mcq-answer { display: none; background: #f0fdf4; border-left: 4px solid var(--success-color); padding: 1rem; margin: 1rem 0; border-radius: 0 8px 8px 0; }
+        .mcq-answer.show { display: block; }
+        .btn-show-answer { background: var(--primary-color); color: white; border: none; padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: 500; margin-top: 0.5rem; }
+        .btn-show-answer:hover { background: #0284c7; }
+        
+        /* Revision Box */
+        .revision-box { background: linear-gradient(135deg, #f0f9ff 0%, #bae6fd 100%); border-radius: 8px; padding: 1.5rem; }
+        .revision-list { list-style: none; padding: 0; }
+        .revision-list li { padding: 0.5rem 0; border-bottom: 1px solid rgba(0,0,0,0.1); }
+        .revision-list li:last-child { border-bottom: none; }
+        .mnemonic-box { background: white; padding: 1rem; border-radius: 8px; margin: 1rem 0; font-family: 'Courier New', monospace; }
+        .warning-list { list-style: none; padding: 0; }
+        .warning-list li { padding: 0.5rem; background: #fee2e2; margin: 0.5rem 0; border-radius: 6px; color: #991b1b; }
+        
+        /* Page Navigation */
+        .page-navigation { display: flex; justify-content: space-between; gap: 1rem; margin: 2rem 0; flex-wrap: wrap; }
+        .nav-btn { flex: 1; min-width: 150px; padding: 1rem; text-align: center; background: var(--card-bg); border: 2px solid var(--border-color); border-radius: 8px; text-decoration: none; color: var(--text-primary); font-weight: 500; cursor: pointer; transition: all 0.2s; }
+        .nav-btn:hover { border-color: var(--primary-color); color: var(--primary-color); }
+        .btn-success { background: var(--success-color); color: white; border-color: var(--success-color); }
+        .btn-success:hover { background: #059669; color: white; }
+        .btn-disabled { opacity: 0.5; cursor: not-allowed; }
+        
+        /* Footer */
+        .page-footer { background: var(--bg-color); color: var(--text-secondary); border-top: 1px solid var(--border-color); padding: 2rem 0; text-align: center; margin-top: 3rem; }
+        .intro-box { background: #f0f9ff; border-left: 4px solid var(--primary-color); padding: 1.5rem; border-radius: 0 8px 8px 0; }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .page-header h1 { font-size: 1.5rem; }
+            .section-header { font-size: 1rem; padding: 1rem; }
+            .fact-grid { grid-template-columns: 1fr; }
+            .page-navigation { flex-direction: column; }
+        }
+        @media print {
+            .study-nav, .page-navigation, .btn-show-answer { display: none !important; }
+            .section-content { max-height: none !important; }
+            .toggle-icon { display: none; }
+            body { background: white; }
+            .study-section { break-inside: avoid; box-shadow: none; border: 1px solid #ddd; }
+        }
+    </style>
+    <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-51XLJE4TVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-51XLJE4TVH');
+  </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327"
+     crossorigin="anonymous"></script>
+</head>
+<body class="study-page">
+    <nav class="study-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Current Affairs Index</a>
+            <div class="nav-controls">
+                <button onclick="toggleAllSections()" class="btn-secondary">Expand/Collapse All</button>
+                <button onclick="window.print()" class="btn-primary">📄 Print/Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../index.html">Home</a> / 
+                <a href="index.html">Current Affairs</a> / 
+                <span>CA-18: Science & Tech + Governance</span>
+            </div>
+            <h1>🤖 Indian AI Mission</h1>
+            <p class="page-subtitle">National AI Strategy • Compute Infrastructure • Responsible AI • Innovation Ecosystem</p>
+            <div class="page-meta">
+                <span class="badge badge-primary">High Yield</span>
+                <span class="badge badge-secondary">GS-3 + GS-4 + Essay</span>
+                <span class="badge badge-warning">⚡ Technology + Ethics</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="keywords-box">
+            <strong>🔍 Quick Search:</strong> 
+            IndiaAI Mission components, AI compute infrastructure, IndiaAI Dataset Platform, UPSC notes on artificial intelligence policy
+        </section>
+
+        <!-- Section 1: Introduction -->
+        <section class="study-section collapsible" data-section="1">
+            <button class="section-header" onclick="toggleSection(1)">
+                <span class="section-number">1️⃣</span>
+                <span class="section-title">Introduction (Simple)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-1">
+                <div class="content-box intro-box">
+                    <ul class="simple-list">
+                        <li><strong>What is IndiaAI Mission?</strong> → Cabinet-approved national mission (March 2024) with ₹10,372 crore outlay to establish India as a global AI hub.</li>
+                        <li><strong>Nodal Agency:</strong> Ministry of Electronics & Information Technology (MeitY) in coordination with DPIIT, NITI Aayog, and sectoral ministries.</li>
+                        <li><strong>Vision:</strong> "Democratize access to AI resources, foster innovation, and ensure responsible AI development for public good."</li>
+                        <li><strong>Timeline:</strong> 5-year mission (2024-2029) with phased implementation and outcome-based monitoring.</li>
+                        <li><strong>UPSC Angle:</strong> Tests understanding of technology governance, digital public infrastructure, innovation policy, and ethical frameworks for emerging tech.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Key Concepts -->
+        <section class="study-section collapsible" data-section="2">
+            <button class="section-header" onclick="toggleSection(2)">
+                <span class="section-number">2️⃣</span>
+                <span class="section-title">Key Concepts (Bullet Points)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-2">
+                <div class="content-box">
+                    <h3>📌 Seven Pillars of IndiaAI Mission</h3>
+                    <ul class="bullet-list">
+                        <li><strong>IndiaAI Compute Capacity:</strong> Establish >10,000 GPU cluster for training large AI models; public-private partnership model with viability gap funding.</li>
+                        <li><strong>IndiaAI Innovation Centre (IAIC):</strong> Develop indigenous Large Multimodal Models (LMMs) for Indian languages, healthcare, agriculture, governance.</li>
+                        <li><strong>IndiaAI Dataset Platform:</strong> Curate high-quality, anonymized datasets across sectors; ensure data privacy under DPDP Act 2023.</li>
+                        <li><strong>IndiaAI Application Development Initiative:</strong> Support AI solutions in critical sectors: health, education, agriculture, climate, smart cities.</li>
+                        <li><strong>IndiaAI FutureSkills:</strong> Scale AI skilling across levels: foundational (schools), technical (engineering), advanced (researchers); target 1 lakh professionals.</li>
+                        <li><strong>IndiaAI Startup Financing:</strong> Fast-track funding for deep-tech AI startups; blend of grants, equity, debt via Fund of Funds expansion.</li>
+                        <li><strong>Safe & Trusted AI:</strong> Develop India-specific AI ethics framework, testing protocols, certification standards; align with global norms (UNESCO, GPAI).</li>
+                    </ul>
+
+                    <h3>📌 Compute Infrastructure: Technical Details</h3>
+                    <ul class="bullet-list">
+                        <li><strong>Hardware:</strong> Mix of indigenous (C-DAC) and global GPUs; focus on energy-efficient designs for tropical climate.</li>
+                        <li><strong>Access Model:</strong> Tiered pricing: free for academia/research, subsidized for startups, market rate for enterprises.</li>
+                        <li><strong>Location Strategy:</strong> Distributed across 4-5 hubs (Bengaluru, Hyderabad, Delhi-NCR, Pune, Bhubaneswar) for redundancy and regional balance.</li>
+                        <li><strong>Sustainability:</strong> Target PUE <1.3; renewable energy integration; waste heat reuse for nearby facilities.</li>
+                    </ul>
+
+                    <h3>📌 IndiaAI Dataset Platform: Key Features</h3>
+                    <ul class="bullet-list">
+                        <li><strong>Data Sources:</strong> Government databases (UMANG, DigiLocker, ONDC), research institutions, anonymized private sector data (with consent).</li>
+                        <li><strong>Indian Languages:</strong> Prioritize datasets in 22 scheduled languages + dialects; speech, text, image, video modalities.</li>
+                        <li><strong>Quality Assurance:</strong> Multi-stage validation: automated checks + expert review + community feedback loops.</li>
+                        <li><strong>Access Framework:</strong> API-based access with usage tracking; differential privacy for sensitive datasets; clear licensing (CC-BY, ODC-BY).</li>
+                    </ul>
+
+                    <h3>📌 Governance & Implementation Structure</h3>
+                    <ul class="bullet-list">
+                        <li><strong>Steering Committee:</strong> Chaired by Cabinet Secretary; members from MeitY, NITI Aayog, DST, industry, academia.</li>
+                        <li><strong>Mission Implementation Unit (MIU):</strong> Dedicated team within MeitY for day-to-day coordination, monitoring, reporting.</li>
+                        <li><strong>Independent Advisory Group:</strong> Experts in AI ethics, law, social sciences to review high-risk applications and policy gaps.</li>
+                        <li><strong>State AI Missions:</strong> Encourage states to develop complementary initiatives aligned with national framework (e.g., Telangana AI, Kerala AI).</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Important Facts for Prelims -->
+        <section class="study-section collapsible" data-section="3">
+            <button class="section-header" onclick="toggleSection(3)">
+                <span class="section-number">3️⃣</span>
+                <span class="section-title">Important Facts for Prelims</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-3">
+                <div class="content-box prelims-box">
+                    <div class="fact-grid">
+                        <div class="fact-item">
+                            <span class="fact-label">Cabinet Approval</span>
+                            <span class="fact-value">March 2024</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-label">Total Outlay</span>
+                            <span class="fact-value">₹10,372 Crore</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-label">Mission Duration</span>
+                            <span class="fact-value">5 Years (2024-29)</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-label">Nodal Ministry</span>
+                            <span class="fact-value">MeitY</span>
+                        </div>
+                    </div>
+                    
+                    <h3>✅ Quick Facts</h3>
+                    <ul class="bullet-list">
+                        <li><strong>Compute Target:</strong> >10,000 GPUs initially; scalable to 50,000+ based on demand and technology evolution.</li>
+                        <li><strong>Skilling Target:</strong> Train 1 lakh AI professionals; 10 lakh students via online modules; 1,000 faculty via train-the-trainer.</li>
+                        <li><strong>Startup Support:</strong> ₹500 crore dedicated fund for deep-tech AI startups; fast-track DPIIT recognition for AI ventures.</li>
+                        <li><strong>International Collaboration:</strong> Active participation in GPAI (Global Partnership on AI), bilateral MoUs with France, Singapore, UAE.</li>
+                    </ul>
+
+                    <h3>✅ Complementary Initiatives</h3>
+                    <ul class="bullet-list">
+                        <li><strong>Responsible AI for All (RAI):</strong> NITI Aayog's framework for ethical AI principles: safety, equity, inclusivity, transparency.</li>
+                        <li><strong>National Strategy for Artificial Intelligence (#AIforAll):</strong> 2018 document identifying 5 focus sectors: healthcare, agriculture, education, smart cities, mobility.</li>
+                        <li><strong>AI Research Centres:</strong> 25+ Centres of Excellence (IITs, IISc, IIITs) receiving DST/MeitY grants for fundamental AI research.</li>
+                        <li><strong>Digital Public Infrastructure (DPI):</strong> India Stack (Aadhaar, UPI, DigiLocker) as foundation for AI applications in governance.</li>
+                    </ul>
+
+                    <div class="highlight-box">
+                        <strong>💡 Prelims Trap:</strong> IndiaAI Mission is a <strong>Cabinet-approved mission</strong> with dedicated budget, not just a policy document. Also, compute infrastructure uses <strong>PPP model</strong> — not fully government-owned.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Detailed Explanation for Mains -->
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">Detailed Explanation for Mains</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
+                <div class="content-box mains-box">
+                    <h3>🎯 IndiaAI Mission: Multi-Dimensional Analysis</h3>
+                    
+                    <div class="mains-subsection">
+                        <h4>🔹 Strategic Imperatives: Sovereignty & Competitiveness</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Technological Sovereignty:</strong> Reduce dependence on foreign AI models/compute; build indigenous capabilities in foundational models, chips, frameworks.</li>
+                            <li><strong>Global Positioning:</strong> Leverage India's talent pool (largest STEM graduates), digital public infrastructure, and democratic values to shape global AI governance.</li>
+                            <li><strong>Economic Multiplier:</strong> NITI Aayog estimates AI could add $500 Bn to India's GDP by 2025; mission aims to capture value across value chain (R&D, deployment, services).</li>
+                        </ul>
+                    </div>
+
+                    <div class="mains-subsection">
+                        <h4>🔹 Inclusion & Equity: AI for Bharat</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Language Justice:</strong> LMMs for Indian languages enable access for 90% population not comfortable with English; critical for education, health, justice delivery.</li>
+                            <li><strong>Rural Applications:</strong> AI for crop advisory (soil health, pest prediction), telemedicine diagnostics, vernacular content creation for last-mile governance.</li>
+                            <li><strong>Accessibility:</strong> AI tools for persons with disabilities: speech-to-text for hearing impaired, image description for visually impaired, predictive text for motor challenges.</li>
+                        </ul>
+                    </div>
+
+                    <div class="mains-subsection">
+                        <h4>🔹 Ethics & Governance: Responsible Innovation</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Bias Mitigation:</strong> Indian datasets must represent diversity (caste, gender, region, language) to avoid algorithmic discrimination; independent audits mandatory for public sector AI.</li>
+                            <li><strong>DPDP Act Alignment:</strong> Data processing for AI training must comply with consent, purpose limitation, data minimization principles; anonymization standards critical.</li>
+                            <li><strong>Human Oversight:</strong> High-stakes domains (healthcare, criminal justice, welfare) require human-in-the-loop; clear accountability frameworks for AI-assisted decisions.</li>
+                        </ul>
+                    </div>
+
+                    <div class="mains-subsection">
+                        <h4>🔹 Critical Challenges & Way Forward</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Talent Retention:</strong> Brain drain to global tech giants; need competitive research careers, IP ownership incentives, startup equity culture.</li>
+                            <li><strong>Compute Access Equity:</strong> Risk of concentration in elite institutions; tiered pricing and regional hubs must ensure MSMEs, state universities benefit.</li>
+                            <li><strong>Regulatory Agility:</strong> Fast-evolving tech requires adaptive regulation; sandbox approaches, outcome-based standards, multi-stakeholder consultation essential.</li>
+                            <li><strong>Global Coordination:</strong> AI governance fragmented (EU AI Act, US Executive Order, China regulations); India must advocate for inclusive, development-oriented global norms.</li>
+                        </ul>
+                        <h4 style="margin-top: 1rem; color: var(--primary-color);">🔹 Mains Answer Framework</h4>
+                        <ol class="numbered-list">
+                            <li><strong>Contextualize:</strong> Link IndiaAI to Digital India, Atmanirbhar Bharat, SDG-9 (Innovation), and India's G20 AI priorities.</li>
+                            <li><strong>Analyze Pillars:</strong> Compute (infrastructure), Data (datasets), Talent (skilling), Innovation (startups), Ethics (governance).</li>
+                            <li><strong>Critically Evaluate:</strong> Implementation risks (bureaucratic delays, talent gaps), equity concerns (digital divide), global positioning (sovereignty vs. collaboration).</li>
+                            <li><strong>Way Forward:</strong> Strengthen mission governance with industry-academia representation, invest in fundamental research, promote AI literacy across society, lead Global South AI cooperation.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Examples / Case Studies -->
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)">
+                <span class="section-number">5️⃣</span>
+                <span class="section-title">Examples / Case Studies</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-5">
+                <div class="content-box">
+                    <div class="case-study">
+                        <h4>📌 Case 1: AI for Agriculture – Crop Advisory Pilot</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Context:</strong> Smallholder farmers lack access to real-time agronomic advice; climate variability increases uncertainty.</li>
+                            <li><strong>Intervention:</strong> AI model trained on IMD weather data, soil health cards, satellite imagery; delivers vernacular SMS/voice advisories via IVRS.</li>
+                            <li><strong>Outcome:</strong> Pilot in Maharashtra showed 15% yield improvement, 20% reduction in input costs; scalable via Kisan Call Centres, Common Service Centres.</li>
+                            <li><strong>UPSC Link:</strong> Doubling farmers' income + Climate resilience + Digital inclusion + Extension services reform.</li>
+                        </ul>
+                    </div>
+
+                    <div class="case-study">
+                        <h4>📌 Case 2: BharatGen – Indigenous LMM for Indian Languages</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Context:</strong> Global LLMs perform poorly on Indian languages, cultural contexts, low-resource dialects.</li>
+                            <li><strong>Intervention:</strong> IAIC-led consortium (IITs, IIITs, startups) developing multimodal model trained on curated Indian datasets; open weights for research, commercial licensing for enterprises.</li>
+                            <li><strong>Outcome:</strong> Early benchmarks show 30% better accuracy on Hindi, Tamil, Bengali tasks vs. global models; potential for government chatbots, education content, legal aid.</li>
+                            <li><strong>UPSC Link:</strong> Technological sovereignty + Language preservation + Public goods in digital era + IP policy for public research.</li>
+                        </ul>
+                    </div>
+
+                    <div class="case-study">
+                        <h4>📌 Case 3: AI Ethics Review – Healthcare Diagnostic Tool</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Context:</strong> AI tool for diabetic retinopathy screening showed high accuracy in trials but raised concerns about rural deployment.</li>
+                            <li><strong>Review Process:</strong> Independent Advisory Group assessed: data representativeness (urban hospital bias), clinician oversight protocol, patient consent workflow, redress mechanism for errors.</li>
+                            <li><strong>Outcome:</strong> Conditional approval with mandatory: (a) retraining on rural clinic data, (b) human confirmation for positive cases, (c) multilingual consent forms, (d) quarterly bias audits.</li>
+                            <li><strong>UPSC Link:</strong> Ethics in technology (GS-4) + Right to health + Regulatory innovation + Precautionary principle in public policy.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: MCQs -->
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)">
+                <span class="section-number">6️⃣</span>
+                <span class="section-title">5 MCQs with Answers</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-6">
+                <div class="content-box mcq-box">
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q1.</strong> With reference to the IndiaAI Mission, consider the following statements:<br>
+                        1. It has a total budgetary outlay of ₹10,372 crore for a 5-year period.<br>
+                        2. The mission aims to establish a compute capacity of over 10,000 GPUs.<br>
+                        3. The nodal ministry for implementation is the Ministry of Science and Technology.<br><br>
+                        Which of the statements given above are correct?</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q1" value="a"> (a) 1 and 2 only</label>
+                            <label><input type="radio" name="q1" value="b"> (b) 2 and 3 only</label>
+                            <label><input type="radio" name="q1" value="c"> (c) 1 and 3 only</label>
+                            <label><input type="radio" name="q1" value="d"> (d) 1, 2 and 3</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q1">
+                            <p><strong>✅ Answer:</strong> (a) 1 and 2 only</p>
+                            <p><strong>💡 Explanation:</strong> Statement 3 is incorrect. The nodal ministry is <strong>MeitY (Ministry of Electronics & IT)</strong>, not Ministry of Science and Technology. Statements 1 & 2 are correct.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q1')">Show Answer</button>
+                    </div>
+
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q2.</strong> The 'IndiaAI Dataset Platform' primarily aims to:</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q2" value="a"> (a) Regulate data collection by private companies</label>
+                            <label><input type="radio" name="q2" value="b"> (b) Curate high-quality, anonymized datasets for AI training across sectors</label>
+                            <label><input type="radio" name="q2" value="c"> (c) Replace the Data Protection Board under DPDP Act</label>
+                            <label><input type="radio" name="q2" value="d"> (d) Mandate data localization for all AI applications</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q2">
+                            <p><strong>✅ Answer:</strong> (b) Curate high-quality, anonymized datasets for AI training across sectors</p>
+                            <p><strong>💡 Explanation:</strong> The Dataset Platform focuses on creating accessible, privacy-compliant datasets (especially for Indian languages) to fuel AI innovation, not regulation or localization mandates.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q2')">Show Answer</button>
+                    </div>
+
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q3.</strong> Consider the following pairs:<br>
+                        Component | Objective under IndiaAI Mission<br>
+                        1. IndiaAI FutureSkills | Train 1 lakh AI professionals across levels<br>
+                        2. Safe & Trusted AI | Develop India-specific ethics framework & certification<br>
+                        3. IndiaAI Startup Financing | Fast-track funding for deep-tech AI ventures<br><br>
+                        How many pairs are correctly matched?</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q3" value="a"> (a) Only one</label>
+                            <label><input type="radio" name="q3" value="b"> (b) Only two</label>
+                            <label><input type="radio" name="q3" value="c"> (c) All three</label>
+                            <label><input type="radio" name="q3" value="d"> (d) None</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q3">
+                            <p><strong>✅ Answer:</strong> (c) All three</p>
+                            <p><strong>💡 Explanation:</strong> All three pairs are correctly matched. FutureSkills focuses on capacity building, Safe & Trusted AI on governance, and Startup Financing on innovation support.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q3')">Show Answer</button>
+                    </div>
+
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q4.</strong> Which of the following is NOT one of the seven pillars of the IndiaAI Mission?</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q4" value="a"> (a) IndiaAI Compute Capacity</label>
+                            <label><input type="radio" name="q4" value="b"> (b) IndiaAI International Diplomacy Cell</label>
+                            <label><input type="radio" name="q4" value="c"> (c) IndiaAI Dataset Platform</label>
+                            <label><input type="radio" name="q4" value="d"> (d) IndiaAI Innovation Centre</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q4">
+                            <p><strong>✅ Answer:</strong> (b) IndiaAI International Diplomacy Cell</p>
+                            <p><strong>💡 Explanation:</strong> While international collaboration is encouraged, "International Diplomacy Cell" is not one of the seven official pillars. The pillars focus on domestic capacity building: Compute, Innovation, Data, Applications, Skills, Startups, and Ethics.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q4')">Show Answer</button>
+                    </div>
+
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q5.</strong> The IndiaAI Mission's approach to compute infrastructure is based on:</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q5" value="a"> (a) Fully government-owned and operated data centres</label>
+                            <label><input type="radio" name="q5" value="b"> (b) Public-Private Partnership (PPP) model with viability gap funding</label>
+                            <label><input type="radio" name="q5" value="c"> (c) Mandatory use of only indigenous hardware</label>
+                            <label><input type="radio" name="q5" value="d"> (d) Exclusive access for government research institutions</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q5">
+                            <p><strong>✅ Answer:</strong> (b) Public-Private Partnership (PPP) model with viability gap funding</p>
+                            <p><strong>💡 Explanation:</strong> The compute pillar uses a PPP model to leverage private sector efficiency while ensuring public access; viability gap funding supports commercial viability. Access is tiered, not exclusive to government.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q5')">Show Answer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: Quick Revision Notes -->
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)">
+                <span class="section-number">7️⃣</span>
+                <span class="section-title">Quick Revision Notes</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-7">
+                <div class="content-box revision-box">
+                    <h3>🔁 IndiaAI Mission in 10 Seconds</h3>
+                    <ul class="revision-list">
+                        <li><strong>Approved:</strong> March 2024 | Outlay: ₹10,372 Cr | Duration: 5 Years</li>
+                        <li><strong>Nodal:</strong> MeitY (with DPIIT, NITI Aayog, sectoral ministries)</li>
+                        <li><strong>7 Pillars:</strong> Compute, Innovation Centre, Dataset Platform, Applications, FutureSkills, Startup Financing, Safe & Trusted AI</li>
+                        <li><strong>Compute:</strong> >10,000 GPUs via PPP; tiered access for academia/startups/enterprise</li>
+                        <li><strong>Data:</strong> Curated datasets for Indian languages; DPDP Act compliant</li>
+                        <li><strong>Skilling:</strong> 1 lakh professionals, 10 lakh students, 1,000 faculty</li>
+                        <li><strong>Ethics:</strong> India-specific framework aligned with UNESCO/GPAI norms</li>
+                    </ul>
+
+                    <h3>🧠 Mnemonic: "INDIA AI"</h3>
+                    <div class="mnemonic-box">
+                        <p><strong>I</strong> → Indigenous LMMs for Indian languages (BharatGen)</p>
+                        <p><strong>N</strong> → Nodal Ministry: MeitY (not DST or NITI alone)</p>
+                        <p><strong>D</strong> → Dataset Platform: High-quality, anonymized, multilingual</p>
+                        <p><strong>I</strong> → Innovation Centre (IAIC): Develop foundational models</p>
+                        <p><strong>A</strong> → Applications: Health, Agri, Education, Climate, Governance</p>
+                        <br>
+                        <p><strong>A</strong> → Access Model: Tiered pricing (free/subsidized/market)</p>
+                        <p><strong>I</strong> → Inclusion: Rural, women, persons with disabilities focus</p>
+                    </div>
+
+                    <h3>📌 Prelims Traps to Avoid</h3>
+                    <ul class="warning-list">
+                        <li>✘ IndiaAI Mission is a <strong>Cabinet-approved mission with budget</strong>, not just a policy document</li>
+                        <li>✘ Nodal ministry is <strong>MeitY</strong>, not Ministry of Science & Technology or NITI Aayog</li>
+                        <li>✘ Compute infrastructure uses <strong>PPP model</strong>, not fully government-owned</li>
+                        <li>✘ "Safe & Trusted AI" pillar focuses on <strong>ethics framework & certification</strong>, not banning AI applications</li>
+                        <li>✘ Dataset Platform ensures <strong>DPDP Act compliance</strong>; does not override data protection law</li>
+                    </ul>
+
+                    <h3>🎯 Mains One-Liners</h3>
+                    <ul class="bullet-list">
+                        <li>"IndiaAI Mission = Compute sovereignty + Data democratization + Ethical innovation"</li>
+                        <li>"Indigenous LMMs for Indian languages = Digital inclusion + Cultural preservation + Market opportunity"</li>
+                        <li>"PPP model for compute = Leveraging private efficiency while ensuring public access and affordability"</li>
+                        <li>"Ethics-by-design approach = Building trust, preventing harm, aligning with constitutional values"</li>
+                        <li>"Way Forward: Talent retention, regulatory agility, Global South leadership in AI governance"</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation Footer -->
+        <div class="page-navigation">
+            <a href="index.html" class="nav-btn">← Back to Current Affairs Index</a>
+            <button onclick="markAsComplete('CA-18')" class="nav-btn btn-success">✓ Mark as Complete</button>
+            <a href="deepfake-regulation-in-india.html" class="nav-btn">Next: CA-19 →</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>📄 Page Code: <strong>CA-18</strong> | Subject: Science & Tech + Governance + Ethics</p>
+            <p>🔗 Link to Syllabus: GS-3 (S&T, Innovation, Digital India), GS-4 (Ethics in Technology), Essay, GS-2 (Governance)</p>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle Section
+        function toggleSection(sectionNum) {
+            const section = document.querySelector(`[data-section="${sectionNum}"]`);
+            const content = document.getElementById(`section-${sectionNum}`);
+            const header = section.querySelector('.section-header');
+            if (content.classList.contains('collapsed')) {
+                content.classList.remove('collapsed');
+                header.classList.remove('collapsed');
+            } else {
+                content.classList.add('collapsed');
+                header.classList.add('collapsed');
+            }
+        }
+        // Toggle All Sections
+        function toggleAllSections() {
+            const sections = document.querySelectorAll('.study-section');
+            const allCollapsed = Array.from(sections).every(s => s.querySelector('.section-content').classList.contains('collapsed'));
+            sections.forEach(section => {
+                const content = section.querySelector('.section-content');
+                const header = section.querySelector('.section-header');
+                if (allCollapsed) { content.classList.remove('collapsed'); header.classList.remove('collapsed'); }
+                else { content.classList.add('collapsed'); header.classList.add('collapsed'); }
+            });
+        }
+        // Show MCQ Answer
+        function showAnswer(questionId) {
+            const answerDiv = document.getElementById(`answer-${questionId}`);
+            const btn = event.target;
+            if (answerDiv.classList.contains('show')) { answerDiv.classList.remove('show'); btn.textContent = 'Show Answer'; }
+            else { answerDiv.classList.add('show'); btn.textContent = 'Hide Answer'; }
+        }
+        // Mark as Complete
+        function markAsComplete(pageCode) {
+            let completed = JSON.parse(localStorage.getItem('completedPages') || '[]');
+            if (!completed.includes(pageCode)) {
+                completed.push(pageCode);
+                localStorage.setItem('completedPages', JSON.stringify(completed));
+                const btn = event.target;
+                btn.textContent = '✓ Completed!';
+                btn.style.background = '#059669';
+                if (window.opener) { try { window.opener.updateMainProgress?.(); } catch(e) {} }
+            }
+        }
+        // Auto-expand first section
+        document.addEventListener('DOMContentLoaded', function() {
+            const first = document.querySelector('[data-section="1"]');
+            if (first) setTimeout(() => toggleSection(1), 300);
+        });
+        // Keyboard shortcuts
+        document.addEventListener('keydown', function(e) {
+            if ((e.ctrlKey || e.metaKey) && e.key === 'p') { e.preventDefault(); window.print(); }
+            if (e.key === ' ' && e.target === document.body) { e.preventDefault(); const f = document.querySelector('[data-section="1"]'); if (f) toggleSection(1); }
+        });
+    </script>
+</body>
+</html>

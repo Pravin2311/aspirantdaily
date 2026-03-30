@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CA-15: New Education Policy 2020 Implementation | UPSC Study Notes</title>
+    <meta name="description" content="Comprehensive UPSC notes on NEP 2020 implementation: Key reforms, structural changes, challenges, and analysis for Prelims & Mains.">
+    <meta name="keywords" content="NEP 2020, New Education Policy, Education Reform, UPSC Notes, School Education, Higher Education, Skill Development">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #64748b;
+            --success-color: #10b981;
+            --warning-color: #f59e0b;
+            --danger-color: #ef4444;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --border-color: #e2e8f0;
+            --shadow: 0 1px 3px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg-color); color: var(--text-primary); line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        /* Study Nav */
+        .study-nav { background: var(--card-bg); border-bottom: 1px solid var(--border-color); padding: 1rem 0; position: sticky; top: 0; z-index: 100; box-shadow: var(--shadow); }
+        .study-nav .container { display: flex; justify-content: space-between; align-items: center; }
+        .back-link { color: var(--primary-color); text-decoration: none; font-weight: 500; }
+        .nav-controls { display: flex; gap: 1rem; }
+        .btn-primary, .btn-secondary { padding: 0.5rem 1rem; border: none; border-radius: 6px; font-weight: 500; cursor: pointer; transition: all 0.2s; }
+        .btn-primary { background: var(--primary-color); color: white; }
+        .btn-primary:hover { background: #1d4ed8; }
+        .btn-secondary { background: var(--bg-color); color: var(--text-primary); border: 1px solid var(--border-color); }
+        .btn-secondary:hover { background: var(--border-color); }
+        
+        /* Page Header */
+        .page-header { background: linear-gradient(135deg, #059669 0%, #047857 100%); color: white; padding: 2rem 0; border-bottom: 1px solid var(--border-color); }
+        .breadcrumb { color: rgba(255,255,255,0.9); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .breadcrumb a { color: white; text-decoration: none; }
+        .page-header h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+        .page-subtitle { color: rgba(255,255,255,0.95); font-size: 1.125rem; margin-bottom: 1rem; }
+        .page-meta { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+        .badge { padding: 0.375rem 0.875rem; border-radius: 20px; font-size: 0.875rem; font-weight: 500; }
+        .badge-primary { background: rgba(255,255,255,0.2); color: white; }
+        .badge-secondary { background: rgba(255,255,255,0.15); color: white; }
+        .badge-warning { background: #fef3c7; color: #92400e; }
+        
+        /* Keywords Box */
+        .keywords-box { background: #ecfdf5; border-left: 4px solid var(--success-color); padding: 1rem; margin: 2rem 0; border-radius: 0 8px 8px 0; font-size: 0.9rem; }
+        
+        /* Study Sections */
+        .study-section { background: var(--card-bg); border-radius: 12px; margin: 1.5rem 0; box-shadow: var(--shadow); overflow: hidden; }
+        .section-header { width: 100%; padding: 1.25rem 1.5rem; background: var(--card-bg); border: none; display: flex; align-items: center; gap: 1rem; cursor: pointer; font-size: 1.125rem; font-weight: 600; color: var(--text-primary); transition: all 0.2s; }
+        .section-header:hover { background: var(--bg-color); }
+        .section-number { font-size: 1.5rem; }
+        .toggle-icon { margin-left: auto; transition: transform 0.3s; }
+        .section-header.collapsed .toggle-icon { transform: rotate(-90deg); }
+        .section-content { max-height: 2000px; overflow: hidden; transition: max-height 0.3s ease; }
+        .section-content.collapsed { max-height: 0; }
+        .content-box { padding: 1.5rem; }
+        
+        /* Lists */
+        .simple-list, .bullet-list, .numbered-list { margin: 1rem 0; padding-left: 1.5rem; }
+        .simple-list li, .bullet-list li { margin: 0.75rem 0; line-height: 1.7; }
+        .bullet-list li { list-style: disc; }
+        .numbered-list li { list-style: decimal; margin: 1rem 0; }
+        
+        /* Prelims Box */
+        .prelims-box { background: #ecfdf5; border-radius: 8px; padding: 1.5rem; }
+        .fact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+        .fact-item { background: white; padding: 1rem; border-radius: 8px; text-align: center; }
+        .fact-label { display: block; color: var(--text-secondary); font-size: 0.875rem; margin-bottom: 0.25rem; }
+        .fact-value { display: block; font-weight: 700; color: var(--primary-color); font-size: 1.125rem; }
+        .highlight-box { background: #fffbeb; border-left: 4px solid var(--warning-color); padding: 1rem; margin-top: 1rem; border-radius: 0 8px 8px 0; }
+        
+        /* Mains Box */
+        .mains-box { background: #f8fafc; }
+        .mains-subsection { margin: 1.5rem 0; padding: 1.25rem; background: white; border-radius: 8px; }
+        .mains-subsection h4 { color: var(--primary-color); margin-bottom: 0.75rem; font-size: 1rem; }
+        
+        /* Case Studies */
+        .case-study { background: #f0fdf4; border: 1px solid #86efac; border-radius: 8px; padding: 1.25rem; margin: 1rem 0; }
+        .case-study h4 { color: #166534; margin-bottom: 0.75rem; }
+        
+        /* MCQ Section */
+        .mcq-box { background: #fefce8; }
+        .mcq-item { background: white; padding: 1.5rem; border-radius: 8px; margin: 1rem 0; }
+        .mcq-question { margin-bottom: 1rem; line-height: 1.7; }
+        .mcq-options { display: flex; flex-direction: column; gap: 0.5rem; margin: 1rem 0; }
+        .mcq-options label { display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem; border-radius: 6px; cursor: pointer; transition: background 0.2s; }
+        .mcq-options label:hover { background: var(--bg-color); }
+        .mcq-answer { display: none; background: #f0fdf4; border-left: 4px solid var(--success-color); padding: 1rem; margin: 1rem 0; border-radius: 0 8px 8px 0; }
+        .mcq-answer.show { display: block; }
+        .btn-show-answer { background: var(--primary-color); color: white; border: none; padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: 500; margin-top: 0.5rem; }
+        .btn-show-answer:hover { background: #1d4ed8; }
+        
+        /* Revision Box */
+        .revision-box { background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%); border-radius: 8px; padding: 1.5rem; }
+        .revision-list { list-style: none; padding: 0; }
+        .revision-list li { padding: 0.5rem 0; border-bottom: 1px solid rgba(0,0,0,0.1); }
+        .revision-list li:last-child { border-bottom: none; }
+        .mnemonic-box { background: white; padding: 1rem; border-radius: 8px; margin: 1rem 0; font-family: 'Courier New', monospace; }
+        .warning-list { list-style: none; padding: 0; }
+        .warning-list li { padding: 0.5rem; background: #fee2e2; margin: 0.5rem 0; border-radius: 6px; color: #991b1b; }
+        
+        /* Page Navigation */
+        .page-navigation { display: flex; justify-content: space-between; gap: 1rem; margin: 2rem 0; flex-wrap: wrap; }
+        .nav-btn { flex: 1; min-width: 150px; padding: 1rem; text-align: center; background: var(--card-bg); border: 2px solid var(--border-color); border-radius: 8px; text-decoration: none; color: var(--text-primary); font-weight: 500; cursor: pointer; transition: all 0.2s; }
+        .nav-btn:hover { border-color: var(--primary-color); color: var(--primary-color); }
+        .btn-success { background: var(--success-color); color: white; border-color: var(--success-color); }
+        .btn-success:hover { background: #059669; color: white; }
+        .btn-disabled { opacity: 0.5; cursor: not-allowed; }
+        
+        /* Footer */
+        .page-footer { background: var(--bg-color); color: var(--text-secondary); border-top: 1px solid var(--border-color); padding: 2rem 0; text-align: center; margin-top: 3rem; }
+        .intro-box { background: #ecfdf5; border-left: 4px solid var(--success-color); padding: 1.5rem; border-radius: 0 8px 8px 0; }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .page-header h1 { font-size: 1.5rem; }
+            .section-header { font-size: 1rem; padding: 1rem; }
+            .fact-grid { grid-template-columns: 1fr; }
+            .page-navigation { flex-direction: column; }
+        }
+        @media print {
+            .study-nav, .page-navigation, .btn-show-answer { display: none !important; }
+            .section-content { max-height: none !important; }
+            .toggle-icon { display: none; }
+            body { background: white; }
+            .study-section { break-inside: avoid; box-shadow: none; border: 1px solid #ddd; }
+        }
+    </style>
+    <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-51XLJE4TVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-51XLJE4TVH');
+  </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327"
+     crossorigin="anonymous"></script>
+</head>
+<body class="study-page">
+    <nav class="study-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Current Affairs Index</a>
+            <div class="nav-controls">
+                <button onclick="toggleAllSections()" class="btn-secondary">Expand/Collapse All</button>
+                <button onclick="window.print()" class="btn-primary">📄 Print/Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../index.html">Home</a> / 
+                <a href="index.html">Current Affairs</a> / 
+                <span>CA-15: Education</span>
+            </div>
+            <h1>🎓 New Education Policy 2020</h1>
+            <p class="page-subtitle">Implementation Status • Structural Reforms • Challenges & Way Forward</p>
+            <div class="page-meta">
+                <span class="badge badge-primary">High Yield</span>
+                <span class="badge badge-secondary">GS-2 + GS-4 + Essay</span>
+                <span class="badge badge-warning">⚡ Social Justice + Governance</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="keywords-box">
+            <strong>🔍 Quick Search:</strong> 
+            NEP 2020 key features, 5+3+3+4 structure, NCF implementation, UPSC notes on education reform, multidisciplinary education
+        </section>
+
+        <!-- Section 1: Introduction -->
+        <section class="study-section collapsible" data-section="1">
+            <button class="section-header" onclick="toggleSection(1)">
+                <span class="section-number">1️⃣</span>
+                <span class="section-title">Introduction (Simple)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-1">
+                <div class="content-box intro-box">
+                    <ul class="simple-list">
+                        <li><strong>What is NEP 2020?</strong> → India's first education policy of the 21st century, replacing NEP 1986. Approved by Union Cabinet on July 29, 2020.</li>
+                        <li><strong>Vision:</strong> "An India-centric education system that contributes directly to transforming India sustainably into an equitable and vibrant knowledge society."</li>
+                        <li><strong>Core Principles:</strong> Equity & Inclusion, Quality, Affordability, Accountability, Flexibility, Multidisciplinary Learning.</li>
+                        <li><strong>Implementation Timeline:</strong> Phased rollout (2020-2040); Key milestones: NCF 2023, NCERT curriculum revision, HEI reforms.</li>
+                        <li><strong>Why Important for UPSC?</strong> → Tests understanding of education as fundamental right (Art 21A), federalism (education in Concurrent List), social justice, skill development, and governance reforms.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Key Concepts -->
+        <section class="study-section collapsible" data-section="2">
+            <button class="section-header" onclick="toggleSection(2)">
+                <span class="section-number">2️⃣</span>
+                <span class="section-title">Key Concepts (Bullet Points)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-2">
+                <div class="content-box">
+                    <h3>📌 New Pedagogical Structure: 5+3+3+4</h3>
+                    <ul class="bullet-list">
+                        <li><strong>Foundational Stage (5 yrs):</strong> Ages 3-8 | Pre-school (3 yrs) + Grades 1-2 | Focus: Play-based learning, literacy, numeracy.</li>
+                        <li><strong>Preparatory Stage (3 yrs):</strong> Grades 3-5 | Ages 8-11 | Introduction to subjects, experiential learning.</li>
+                        <li><strong>Middle Stage (3 yrs):</strong> Grades 6-8 | Ages 11-14 | Abstract concepts, vocational exposure, critical thinking.</li>
+                        <li><strong>Secondary Stage (4 yrs):</strong> Grades 9-12 | Ages 14-18 | Multidisciplinary study, flexibility in subject choice, no hard separation of streams.</li>
+                    </ul>
+
+                    <h3>📌 Higher Education Reforms</h3>
+                    <ul class="bullet-list">
+                        <li><strong>Multidisciplinary Universities:</strong> End of siloed education; integration of arts, sciences, vocational streams.</li>
+                        <li><strong>Academic Bank of Credits (ABC):</strong> Digital repository for credits; enables multiple entry-exit, credit transfer.</li>
+                        <li><strong>Multiple Entry-Exit:</strong> Certificate (1 yr), Diploma (2 yrs), Degree (3-4 yrs) with appropriate exit options.</li>
+                        <li><strong>HECI (Higher Education Commission of India):</strong> Single umbrella regulator (excluding medical & legal education).</li>
+                        <li><strong>Foreign Universities:</strong> Allowed to set up campuses in India (subject to regulations).</li>
+                    </ul>
+
+                    <h3>📌 Foundational Literacy & Numeracy (FLN)</h3>
+                    <ul class="bullet-list">
+                        <li><strong>NIPUN Bharat Mission:</strong> National initiative to ensure every child achieves FLN by Grade 3 by 2026-27.</li>
+                        <li><strong>Focus:</strong> Teacher training, learning materials, community engagement, continuous assessment.</li>
+                        <li><strong>Significance:</strong> Addresses learning poverty; foundational for all future learning.</li>
+                    </ul>
+
+                    <h3>📌 Equity & Inclusion Measures</h3>
+                    <ul class="bullet-list">
+                        <li><strong>Gender Inclusion Fund:</strong> Support for girls & transgender students.</li>
+                        <li><strong>Special Education Zones (SEZs):</strong> Targeted support for disadvantaged regions/groups.</li>
+                        <li><strong>Mother Tongue/Home Language:</strong> Medium of instruction till at least Grade 5 (preferably till Grade 8).</li>
+                        <li><strong>Disability Inclusion:</strong> Reasonable accommodations, assistive technologies, inclusive curriculum.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Important Facts for Prelims -->
+        <section class="study-section collapsible" data-section="3">
+            <button class="section-header" onclick="toggleSection(3)">
+                <span class="section-number">3️⃣</span>
+                <span class="section-title">Important Facts for Prelims</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-3">
+                <div class="content-box prelims-box">
+                    <div class="fact-grid">
+                        <div class="fact-item">
+                            <span class="fact-label">Policy Approved</span>
+                            <span class="fact-value">July 29, 2020</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-label">Committee Chair</span>
+                            <span class="fact-value">Dr. K. Kasturirangan</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-label">Previous Policy</span>
+                            <span class="fact-value">NEP 1986 (Modified 1992)</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-label">GDP Target</span>
+                            <span class="fact-value">6% for Education</span>
+                        </div>
+                    </div>
+                    
+                    <h3>✅ Quick Facts</h3>
+                    <ul class="bullet-list">
+                        <li><strong>NCF 2023:</strong> National Curriculum Framework released by NCERT; guides syllabus revision.</li>
+                        <li><strong>PARAKH:</strong> National Assessment Centre for setting standards, conducting assessments.</li>
+                        <li><strong>DIKSHA:</strong> Digital Infrastructure for Knowledge Sharing; one-stop platform for teachers/students.</li>
+                        <li><strong>SWAYAM 2.0:</strong> Expanded MOOC platform with credit-based courses.</li>
+                        <li><strong>Vocational Integration:</strong> Coding from Grade 6; internships from Grade 6; vocational courses in 75% schools by 2025.</li>
+                    </ul>
+
+                    <h3>✅ Key Bodies & Initiatives</h3>
+                    <ul class="bullet-list">
+                        <li><strong>NCERT:</strong> Revised textbooks aligned with NCF 2023 (rolled out 2023-24).</li>
+                        <li><strong>UGC Regulations 2023:</strong> Framework for multiple entry-exit, credit transfer, online/distance learning.</li>
+                        <li><strong>PM SHRI Schools:</strong> 14,500 schools upgraded as exemplars of NEP implementation.</li>
+                        <li><strong>One Nation One Student ID:</strong> APAAR ID for tracking learning outcomes across institutions.</li>
+                    </ul>
+
+                    <div class="highlight-box">
+                        <strong>💡 Prelims Trap:</strong> NEP 2020 is a <strong>policy document</strong>, not an Act of Parliament. Implementation requires state cooperation (education in Concurrent List) and rule-making by MHRD/UGC/NCERT.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Detailed Explanation for Mains -->
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">Detailed Explanation for Mains</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
+                <div class="content-box mains-box">
+                    <h3>🎯 NEP 2020: Multi-Dimensional Analysis</h3>
+                    
+                    <div class="mains-subsection">
+                        <h4>🔹 Federalism & Implementation Challenges</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Concurrent List Issue:</strong> Education is Entry 25 of Concurrent List; states can modify/adapt NEP guidelines (e.g., Tamil Nadu's resistance to 3-language formula).</li>
+                            <li><strong>Financial Federalism:</strong> 6% GDP target requires Centre-State cost-sharing; many states face fiscal constraints.</li>
+                            <li><strong>Administrative Capacity:</strong> Teacher training, infrastructure upgrades, digital access vary widely across states.</li>
+                        </ul>
+                    </div>
+
+                    <div class="mains-subsection">
+                        <h4>🔹 Equity vs. Excellence: Balancing Act</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Inclusion Measures:</strong> FLN mission, SEZs, Gender Fund address historical disadvantages.</li>
+                            <li><strong>Quality Concerns:</strong> Multidisciplinary approach, internationalization, research focus aim for global competitiveness.</li>
+                            <li><strong>Tension Point:</strong> Private sector participation (foreign universities, PPP models) vs. affordability & public education strengthening.</li>
+                        </ul>
+                    </div>
+
+                    <div class="mains-subsection">
+                        <h4>🔹 Skill Development & Employability</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Vocational Integration:</strong> From Grade 6 onwards; aims to reduce stigma, improve employability.</li>
+                            <li><strong>Industry-Academia Linkage:</strong> Internships, credit for work experience, flexible curricula.</li>
+                            <li><strong>Critical Gap:</strong> Teacher capacity for vocational training; industry readiness of curriculum; certification standardization.</li>
+                        </ul>
+                    </div>
+
+                    <div class="mains-subsection">
+                        <h4>🔹 Critical Challenges & Way Forward</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Teacher Shortage & Training:</strong> 10 lakh teacher vacancies; need for continuous professional development (CPD) as mandated by NEP.</li>
+                            <li><strong>Digital Divide:</strong> DIKSHA, SWAYAM require internet access; rural-urban, gender, caste disparities persist.</li>
+                            <li><strong>Assessment Reforms:</strong> Shift from rote to competency-based evaluation; PARAKH's role in standardizing.</li>
+                            <li><strong>Political Consensus:</strong> Long-term implementation needs bipartisan support beyond electoral cycles.</li>
+                        </ul>
+                        <h4 style="margin-top: 1rem; color: var(--primary-color);">🔹 Mains Answer Framework</h4>
+                        <ol class="numbered-list">
+                            <li><strong>Contextualize:</strong> Link NEP to SDG-4 (Quality Education), demographic dividend, knowledge economy.</li>
+                            <li><strong>Analyze Reforms:</strong> Structural (5+3+3+4), pedagogical (experiential learning), governance (HECI, ABC).</li>
+                            <li><strong>Critically Evaluate:</strong> Implementation gaps (funding, federalism, capacity), equity concerns (language, access), quality assurance.</li>
+                            <li><strong>Way Forward:</strong> Strengthen teacher education (NCTE reforms), increase public investment, foster state-centre coordination, leverage technology inclusively.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Examples / Case Studies -->
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)">
+                <span class="section-number">5️⃣</span>
+                <span class="section-title">Examples / Case Studies</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-5">
+                <div class="content-box">
+                    <div class="case-study">
+                        <h4>📌 Case 1: NIPUN Bharat – FLN Mission in Practice</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Context:</strong> ASER 2022: Only 20% Grade 3 children can read Grade 2 text; foundational learning crisis.</li>
+                            <li><strong>Implementation:</strong> State-specific FLN goals, teacher handbooks, learning outcomes framework, community mobilization (Vidya Volunteers).</li>
+                            <li><strong>UPSC Link:</strong> Right to Education Act implementation + Outcome-based governance + Federal coordination in social sector.</li>
+                        </ul>
+                    </div>
+
+                    <div class="case-study">
+                        <h4>📌 Case 2: Academic Bank of Credits – Digital Federalism</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Context:</strong> Fragmented higher education; rigid degree structures; low completion rates.</li>
+                            <li><strong>Implementation:</strong> ABC portal launched (2021); credit framework notified; pilot in 50+ HEIs; integration with APAAR ID.</li>
+                            <li><strong>UPSC Link:</strong> Digital public infrastructure + Lifelong learning + Regulatory reform (UGC vs. HECI transition).</li>
+                        </ul>
+                    </div>
+
+                    <div class="case-study">
+                        <h4>📌 Case 3: Language Policy – Balancing Unity & Diversity</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Context:</strong> NEP recommends mother tongue/home language as medium till Grade 5; 3-language formula flexible.</li>
+                            <li><strong>Implementation:</strong> Tamil Nadu's 2-language policy vs. Hindi-belt states; NCERT's multilingual textbooks; DIKSHA content in 22 languages.</li>
+                            <li><strong>UPSC Link:</strong> Linguistic federalism + Cultural rights (Art 29-30) + National integration vs. regional identity.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: MCQs -->
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)">
+                <span class="section-number">6️⃣</span>
+                <span class="section-title">5 MCQs with Answers</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-6">
+                <div class="content-box mcq-box">
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q1.</strong> With reference to the New Education Policy 2020, consider the following statements:<br>
+                        1. It replaces the National Policy on Education, 1986.<br>
+                        2. It proposes a new curricular structure of 5+3+3+4.<br>
+                        3. It mandates English as the medium of instruction till Grade 5.<br><br>
+                        Which of the statements given above are correct?</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q1" value="a"> (a) 1 and 2 only</label>
+                            <label><input type="radio" name="q1" value="b"> (b) 2 and 3 only</label>
+                            <label><input type="radio" name="q1" value="c"> (c) 1 and 3 only</label>
+                            <label><input type="radio" name="q1" value="d"> (d) 1, 2 and 3</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q1">
+                            <p><strong>✅ Answer:</strong> (a) 1 and 2 only</p>
+                            <p><strong>💡 Explanation:</strong> Statement 3 is incorrect. NEP 2020 recommends <strong>mother tongue/home language/regional language</strong> as medium of instruction till at least Grade 5, preferably till Grade 8. Statements 1 & 2 are correct.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q1')">Show Answer</button>
+                    </div>
+
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q2.</strong> The 'Academic Bank of Credits' (ABC) under NEP 2020 primarily aims to:</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q2" value="a"> (a) Provide scholarships to meritorious students</label>
+                            <label><input type="radio" name="q2" value="b"> (b) Enable multiple entry-exit and credit transfer in higher education</label>
+                            <label><input type="radio" name="q2" value="c"> (c) Standardize teacher recruitment across states</label>
+                            <label><input type="radio" name="q2" value="d"> (d) Fund research in central universities</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q2">
+                            <p><strong>✅ Answer:</strong> (b) Enable multiple entry-exit and credit transfer in higher education</p>
+                            <p><strong>💡 Explanation:</strong> ABC is a digital repository that stores academic credits earned by students, allowing flexibility in learning pathways, multiple entry-exit options, and credit transfer across institutions.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q2')">Show Answer</button>
+                    </div>
+
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q3.</strong> Consider the following pairs:<br>
+                        Initiative | Purpose under NEP 2020<br>
+                        1. NIPUN Bharat | Foundational Literacy and Numeracy for all by Grade 3<br>
+                        2. PARAKH | National assessment centre for setting standards<br>
+                        3. DIKSHA | Digital platform for school education resources<br><br>
+                        How many pairs are correctly matched?</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q3" value="a"> (a) Only one</label>
+                            <label><input type="radio" name="q3" value="b"> (b) Only two</label>
+                            <label><input type="radio" name="q3" value="c"> (c) All three</label>
+                            <label><input type="radio" name="q3" value="d"> (d) None</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q3">
+                            <p><strong>✅ Answer:</strong> (c) All three</p>
+                            <p><strong>💡 Explanation:</strong> All three pairs are correctly matched. NIPUN Bharat targets FLN, PARAKH is the national assessment body, and DIKSHA is the digital infrastructure for teachers/students.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q3')">Show Answer</button>
+                    </div>
+
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q4.</strong> Which of the following is NOT a feature of the New Education Policy 2020?</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q4" value="a"> (a) Introduction of vocational education from Grade 6</label>
+                            <label><input type="radio" name="q4" value="b"> (b) Establishment of a single regulator for all higher education including medical and legal</label>
+                            <label><input type="radio" name="q4" value="c"> (c) Multiple entry and exit options in undergraduate programs</label>
+                            <label><input type="radio" name="q4" value="d"> (d) Emphasis on critical thinking and experiential learning</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q4">
+                            <p><strong>✅ Answer:</strong> (b) Establishment of a single regulator for all higher education including medical and legal</p>
+                            <p><strong>💡 Explanation:</strong> HECI (proposed single regulator) will <strong>exclude</strong> medical and legal education, which will continue to be regulated by NMC and BCI respectively.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q4')">Show Answer</button>
+                    </div>
+
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q5.</strong> The target for public investment in education as a percentage of GDP under NEP 2020 is:</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q5" value="a"> (a) 4%</label>
+                            <label><input type="radio" name="q5" value="b"> (b) 5%</label>
+                            <label><input type="radio" name="q5" value="c"> (c) 6%</label>
+                            <label><input type="radio" name="q5" value="d"> (d) 8%</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q5">
+                            <p><strong>✅ Answer:</strong> (c) 6%</p>
+                            <p><strong>💡 Explanation:</strong> NEP 2020 reiterates the long-standing goal of investing 6% of GDP in education to achieve quality, equity, and access objectives.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q5')">Show Answer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: Quick Revision Notes -->
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)">
+                <span class="section-number">7️⃣</span>
+                <span class="section-title">Quick Revision Notes</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-7">
+                <div class="content-box revision-box">
+                    <h3>🔁 NEP 2020 in 10 Seconds</h3>
+                    <ul class="revision-list">
+                        <li><strong>Approved:</strong> July 29, 2020 | Replaces NEP 1986</li>
+                        <li><strong>Structure:</strong> 5+3+3+4 (Foundational to Secondary)</li>
+                        <li><strong>FLN:</strong> NIPUN Bharat → All children read/write by Grade 3 by 2026-27</li>
+                        <li><strong>Higher Ed:</strong> Multidisciplinary, ABC credits, Multiple Entry-Exit, HECI regulator</li>
+                        <li><strong>Equity:</strong> Gender Fund, SEZs, Mother Tongue instruction, Disability inclusion</li>
+                        <li><strong>Tech:</strong> DIKSHA, SWAYAM 2.0, APAAR ID, Digital assessments</li>
+                        <li><strong>Target:</strong> 6% GDP investment; GER 50% in HE by 2035</li>
+                    </ul>
+
+                    <h3>🧠 Mnemonic: "EDUCATE INDIA"</h3>
+                    <div class="mnemonic-box">
+                        <p><strong>E</strong> → Equity & Inclusion (Gender Fund, SEZs)</p>
+                        <p><strong>D</strong> → Digital Infrastructure (DIKSHA, ABC, APAAR)</p>
+                        <p><strong>U</strong> → Universal FLN (NIPUN Bharat mission)</p>
+                        <p><strong>C</strong> → Curricular Reform (5+3+3+4, NCF 2023)</p>
+                        <p><strong>A</strong> → Assessment Reform (PARAKH, competency-based)</p>
+                        <p><strong>T</strong> → Teacher Development (CPD, NCTE alignment)</p>
+                        <p><strong>E</strong> → Entry-Exit Flexibility (ABC, multiple degrees)</p>
+                        <br>
+                        <p><strong>I</strong> → Internationalization (Foreign universities, credit transfer)</p>
+                        <p><strong>N</strong> → Nurturing Holistic Development (Arts+Sciences+Vocational)</p>
+                        <p><strong>D</strong> → Decentralized Implementation (State flexibility, federalism)</p>
+                        <p><strong>I</strong> → Investment Target (6% of GDP)</p>
+                        <p><strong>A</strong> → Accountability (Learning outcomes, PARAKH)</p>
+                    </div>
+
+                    <h3>📌 Prelims Traps to Avoid</h3>
+                    <ul class="warning-list">
+                        <li>✘ NEP 2020 is a <strong>policy</strong>, not an Act (requires state/legislative action for full implementation)</li>
+                        <li>✘ Medium of instruction: <strong>Mother tongue</strong> (not English) till Grade 5</li>
+                        <li>✘ HECI excludes <strong>medical & legal</strong> education (NMC/BCI continue)</li>
+                        <li>✘ 3-language formula is <strong>flexible</strong>; no imposition of Hindi</li>
+                        <li>✘ Vocational education starts from <strong>Grade 6</strong> (not Grade 9)</li>
+                    </ul>
+
+                    <h3>🎯 Mains One-Liners</h3>
+                    <ul class="bullet-list">
+                        <li>"NEP 2020 = Foundational learning + Multidisciplinary flexibility + Digital enablement"</li>
+                        <li>"FLN mission addresses learning poverty; prerequisite for SDG-4 and demographic dividend"</li>
+                        <li>"ABC & multiple entry-exit = Lifelong learning ecosystem; breaks rigid degree silos"</li>
+                        <li>"Implementation challenge: Federal coordination + Teacher capacity + Digital divide"</li>
+                        <li>"Equity lens: Mother tongue, SEZs, Gender Fund = Inclusive knowledge society"</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation Footer -->
+        <div class="page-navigation">
+            <a href="index.html" class="nav-btn">← Back to Current Affairs Index</a>
+            <button onclick="markAsComplete('CA-15')" class="nav-btn btn-success">✓ Mark as Complete</button>
+            <a href="national-logistic-policy.html" class="nav-btn">Next: CA-16 →</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>📄 Page Code: <strong>CA-15</strong> | Subject: Education + Social Justice + Governance</p>
+            <p>🔗 Link to Syllabus: GS-2 (Polity, Social Justice), GS-4 (Ethics in Education), Essay, GS-3 (Skill Development)</p>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle Section
+        function toggleSection(sectionNum) {
+            const section = document.querySelector(`[data-section="${sectionNum}"]`);
+            const content = document.getElementById(`section-${sectionNum}`);
+            const header = section.querySelector('.section-header');
+            if (content.classList.contains('collapsed')) {
+                content.classList.remove('collapsed');
+                header.classList.remove('collapsed');
+            } else {
+                content.classList.add('collapsed');
+                header.classList.add('collapsed');
+            }
+        }
+        // Toggle All Sections
+        function toggleAllSections() {
+            const sections = document.querySelectorAll('.study-section');
+            const allCollapsed = Array.from(sections).every(s => s.querySelector('.section-content').classList.contains('collapsed'));
+            sections.forEach(section => {
+                const content = section.querySelector('.section-content');
+                const header = section.querySelector('.section-header');
+                if (allCollapsed) { content.classList.remove('collapsed'); header.classList.remove('collapsed'); }
+                else { content.classList.add('collapsed'); header.classList.add('collapsed'); }
+            });
+        }
+        // Show MCQ Answer
+        function showAnswer(questionId) {
+            const answerDiv = document.getElementById(`answer-${questionId}`);
+            const btn = event.target;
+            if (answerDiv.classList.contains('show')) { answerDiv.classList.remove('show'); btn.textContent = 'Show Answer'; }
+            else { answerDiv.classList.add('show'); btn.textContent = 'Hide Answer'; }
+        }
+        // Mark as Complete
+        function markAsComplete(pageCode) {
+            let completed = JSON.parse(localStorage.getItem('completedPages') || '[]');
+            if (!completed.includes(pageCode)) {
+                completed.push(pageCode);
+                localStorage.setItem('completedPages', JSON.stringify(completed));
+                const btn = event.target;
+                btn.textContent = '✓ Completed!';
+                btn.style.background = '#059669';
+                if (window.opener) { try { window.opener.updateMainProgress?.(); } catch(e) {} }
+            }
+        }
+        // Auto-expand first section
+        document.addEventListener('DOMContentLoaded', function() {
+            const first = document.querySelector('[data-section="1"]');
+            if (first) setTimeout(() => toggleSection(1), 300);
+        });
+        // Keyboard shortcuts
+        document.addEventListener('keydown', function(e) {
+            if ((e.ctrlKey || e.metaKey) && e.key === 'p') { e.preventDefault(); window.print(); }
+            if (e.key === ' ' && e.target === document.body) { e.preventDefault(); const f = document.querySelector('[data-section="1"]'); if (f) toggleSection(1); }
+        });
+    </script>
+</body>
+</html>
