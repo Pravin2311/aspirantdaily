@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CA-26: Carbon Credit Trading Scheme | Emissions Trading System + Climate Finance | UPSC Study Notes</title>
+    <meta name="description" content="Comprehensive UPSC notes on India's Carbon Credit Trading Scheme: Emission Reduction Credits (ERCs), power exchange platform, climate finance mechanisms, Paris Agreement compliance, and analysis for Prelims & Mains.">
+    <meta name="keywords" content="Carbon Credit Trading Scheme India, Emissions Trading System, ERC Credits, Climate Change Mitigation, Greenhouse Gas Reduction, UPSC Notes, Environmental Economics, Sustainable Development">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #16a34a;
+            --secondary-color: #64748b;
+            --success-color: #10b981;
+            --warning-color: #f59e0b;
+            --danger-color: #ef4444;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --border-color: #e2e8f0;
+            --shadow: 0 1px 3px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg-color); color: var(--text-primary); line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        /* Study Nav */
+        .study-nav { background: var(--card-bg); border-bottom: 1px solid var(--border-color); padding: 1rem 0; position: sticky; top: 0; z-index: 100; box-shadow: var(--shadow); }
+        .study-nav .container { display: flex; justify-content: space-between; align-items: center; }
+        .back-link { color: var(--primary-color); text-decoration: none; font-weight: 500; }
+        .nav-controls { display: flex; gap: 1rem; }
+        .btn-primary, .btn-secondary { padding: 0.5rem 1rem; border: none; border-radius: 6px; font-weight: 500; cursor: pointer; transition: all 0.2s; }
+        .btn-primary { background: var(--primary-color); color: white; }
+        .btn-primary:hover { background: #15803d; }
+        .btn-secondary { background: var(--bg-color); color: var(--text-primary); border: 1px solid var(--border-color); }
+        .btn-secondary:hover { background: var(--border-color); }
+        
+        /* Page Header */
+        .page-header { background: linear-gradient(135deg, #16a34a 0%, #15803d 100%); color: white; padding: 2rem 0; border-bottom: 1px solid var(--border-color); }
+        .breadcrumb { color: rgba(255,255,255,0.9); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .breadcrumb a { color: white; text-decoration: none; }
+        .page-header h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+        .page-subtitle { color: rgba(255,255,255,0.95); font-size: 1.125rem; margin-bottom: 1rem; }
+        .page-meta { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+        .badge { padding: 0.375rem 0.875rem; border-radius: 20px; font-size: 0.875rem; font-weight: 500; }
+        .badge-primary { background: rgba(255,255,255,0.2); color: white; }
+        .badge-secondary { background: rgba(255,255,255,0.15); color: white; }
+        .badge-warning { background: #fef3c7; color: #92400e; }
+        
+        /* Keywords Box */
+        .keywords-box { background: #ecfdf5; border-left: 4px solid var(--primary-color); padding: 1rem; margin: 2rem 0; border-radius: 0 8px 8px 0; font-size: 0.9rem; }
+        
+        /* Study Sections */
+        .study-section { background: var(--card-bg); border-radius: 12px; margin: 1.5rem 0; box-shadow: var(--shadow); overflow: hidden; }
+        .section-header { width: 100%; padding: 1.25rem 1.5rem; background: var(--card-bg); border: none; display: flex; align-items: center; gap: 1rem; cursor: pointer; font-size: 1.125rem; font-weight: 600; color: var(--text-primary); transition: all 0.2s; }
+        .section-header:hover { background: var(--bg-color); }
+        .section-number { font-size: 1.5rem; }
+        .toggle-icon { margin-left: auto; transition: transform 0.3s; }
+        .section-header.collapsed .toggle-icon { transform: rotate(-90deg); }
+        .section-content { max-height: 2000px; overflow: hidden; transition: max-height 0.3s ease; }
+        .section-content.collapsed { max-height: 0; }
+        .content-box { padding: 1.5rem; }
+        
+        /* Lists */
+        .simple-list, .bullet-list, .numbered-list { margin: 1rem 0; padding-left: 1.5rem; }
+        .simple-list li, .bullet-list li { margin: 0.75rem 0; line-height: 1.7; }
+        .bullet-list li { list-style: disc; }
+        .numbered-list li { list-style: decimal; margin: 1rem 0; }
+        
+        /* Prelims Box */
+        .prelims-box { background: #ecfdf5; border-radius: 8px; padding: 1.5rem; }
+        .fact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+        .fact-item { background: white; padding: 1rem; border-radius: 8px; text-align: center; }
+        .fact-label { display: block; color: var(--text-secondary); font-size: 0.875rem; margin-bottom: 0.25rem; }
+        .fact-value { display: block; font-weight: 700; color: var(--primary-color); font-size: 1.125rem; }
+        .highlight-box { background: #fffbeb; border-left: 4px solid var(--warning-color); padding: 1rem; margin-top: 1rem; border-radius: 0 8px 8px 0; }
+        
+        /* Mains Box */
+        .mains-box { background: #f8fafc; }
+        .mains-subsection { margin: 1.5rem 0; padding: 1.25rem; background: white; border-radius: 8px; }
+        .mains-subsection h4 { color: var(--primary-color); margin-bottom: 0.75rem; font-size: 1rem; }
+        
+        /* Case Studies */
+        .case-study { background: #f0fdf4; border: 1px solid #86efac; border-radius: 8px; padding: 1.25rem; margin: 1rem 0; }
+        .case-study h4 { color: #166534; margin-bottom: 0.75rem; }
+        
+        /* MCQ Section */
+        .mcq-box { background: #fefce8; }
+        .mcq-item { background: white; padding: 1.5rem; border-radius: 8px; margin: 1rem 0; }
+        .mcq-question { margin-bottom: 1rem; line-height: 1.7; }
+        .mcq-options { display: flex; flex-direction: column; gap: 0.5rem; margin: 1rem 0; }
+        .mcq-options label { display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem; border-radius: 6px; cursor: pointer; transition: background 0.2s; }
+        .mcq-options label:hover { background: var(--bg-color); }
+        .mcq-answer { display: none; background: #f0fdf4; border-left: 4px solid var(--success-color); padding: 1rem; margin: 1rem 0; border-radius: 0 8px 8px 0; }
+        .mcq-answer.show { display: block; }
+        .btn-show-answer { background: var(--primary-color); color: white; border: none; padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: 500; margin-top: 0.5rem; }
+        .btn-show-answer:hover { background: #15803d; }
+        
+        /* Revision Box */
+        .revision-box { background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%); border-radius: 8px; padding: 1.5rem; }
+        .revision-list { list-style: none; padding: 0; }
+        .revision-list li { padding: 0.5rem 0; border-bottom: 1px solid rgba(0,0,0,0.1); }
+        .revision-list li:last-child { border-bottom: none; }
+        .mnemonic-box { background: white; padding: 1rem; border-radius: 8px; margin: 1rem 0; font-family: 'Courier New', monospace; }
+        .warning-list { list-style: none; padding: 0; }
+        .warning-list li { padding: 0.5rem; background: #fee2e2; margin: 0.5rem 0; border-radius: 6px; color: #991b1b; }
+        
+        /* Page Navigation */
+        .page-navigation { display: flex; justify-content: space-between; gap: 1rem; margin: 2rem 0; flex-wrap: wrap; }
+        .nav-btn { flex: 1; min-width: 150px; padding: 1rem; text-align: center; background: var(--card-bg); border: 2px solid var(--border-color); border-radius: 8px; text-decoration: none; color: var(--text-primary); font-weight: 500; cursor: pointer; transition: all 0.2s; }
+        .nav-btn:hover { border-color: var(--primary-color); color: var(--primary-color); }
+        .btn-success { background: var(--success-color); color: white; border-color: var(--success-color); }
+        .btn-success:hover { background: #059669; color: white; }
+        .btn-disabled { opacity: 0.5; cursor: not-allowed; }
+        
+        /* Footer */
+        .page-footer { background: var(--bg-color); color: var(--text-secondary); border-top: 1px solid var(--border-color); padding: 2rem 0; text-align: center; margin-top: 3rem; }
+        .intro-box { background: #ecfdf5; border-left: 4px solid var(--primary-color); padding: 1.5rem; border-radius: 0 8px 8px 0; }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .page-header h1 { font-size: 1.5rem; }
+            .section-header { font-size: 1rem; padding: 1rem; }
+            .fact-grid { grid-template-columns: 1fr; }
+            .page-navigation { flex-direction: column; }
+        }
+        @media print {
+            .study-nav, .page-navigation, .btn-show-answer { display: none !important; }
+            .section-content { max-height: none !important; }
+            .toggle-icon { display: none; }
+            body { background: white; }
+            .study-section { break-inside: avoid; box-shadow: none; border: 1px solid #ddd; }
+        }
+    </style>
+    <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-51XLJE4TVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-51XLJE4TVH');
+  </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327"
+     crossorigin="anonymous"></script>
+</head>
+<body class="study-page">
+    <nav class="study-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Current Affairs Index</a>
+            <div class="nav-controls">
+                <button onclick="toggleAllSections()" class="btn-secondary">Expand/Collapse All</button>
+                <button onclick="window.print()" class="btn-primary">📄 Print/Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../index.html">Home</a> / 
+                <a href="index.html">Current Affairs</a> / 
+                <span>CA-26: Environment + Economy</span>
+            </div>
+            <h1>🌍 Carbon Credit Trading Scheme</h1>
+            <p class="page-subtitle">Emission Reduction Credits • Power Exchange Platform • Climate Finance • Paris Agreement Compliance</p>
+            <div class="page-meta">
+                <span class="badge badge-primary">High Yield</span>
+                <span class="badge badge-secondary">GS-3 + GS-1 + Essay</span>
+                <span class="badge badge-warning">⚡ Climate Action + Market Mechanisms</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="keywords-box">
+            <strong>🔍 Quick Search:</strong> 
+            Carbon Credit Trading Scheme India, Emission Reduction Credits, CDM mechanism, BIS standards, UPSC notes on carbon markets
+        </section>
+
+        <!-- Section 1: Introduction -->
+        <section class="study-section collapsible" data-section="1">
+            <button class="section-header" onclick="toggleSection(1)">
+                <span class="section-number">1️⃣</span>
+                <span class="section-title">Introduction (Simple)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-1">
+                <div class="content-box intro-box">
+                    <ul class="simple-list">
+                        <li><strong>What is Carbon Credit Trading?</strong> → Market-based mechanism where entities that reduce emissions below their assigned target can sell excess credits to those who exceed limits.</li>
+                        <li><strong>India's Launch:</strong> Carbon Credit Trading Scheme announced December 2023 under Energy Conservation Act Amendment Bill 2022; operational from October 2024 onwards.</li>
+                        <li><strong>Core Objective:</strong> Create domestic carbon market to incentivize emission reductions while supporting economic development goals (balanced climate action).</li>
+                        <li><strong>International Linkage:</strong> Part of Paris Agreement obligations (Article 6); enables cross-border carbon credit transfers and international cooperation mechanisms.</li>
+                        <li><strong>UPSC Angle:</strong> Tests understanding of climate economics, environmental policy tools, sustainable development financing, and global governance frameworks for climate change.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Key Concepts -->
+        <section class="study-section collapsible" data-section="2">
+            <button class="section-header" onclick="toggleSection(2)">
+                <span class="section-number">2️⃣</span>
+                <span class="section-title">Key Concepts (Bullet Points)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-2">
+                <div class="content-box">
+                    <h3>📌 How Carbon Credit Trading Works</h3>
+                    <ul class="bullet-list">
+                        <li><strong>Capped System:</strong> Government sets maximum allowed emissions per sector/entity annually based on historical data and reduction targets;</li>
+                        <li><strong>Allowance Allocation:</strong> Entities receive free allocation based on benchmarks OR must purchase allowances via auction;</li>
+                        <li><strong>Compliance:</strong> End-year reconciliation requires surrendering credits equal to actual emissions produced;</li>
+                        <li><strong>Credit Creation:</strong> Entities reducing emissions beyond targets earn tradable credits; credits represent verified greenhouse gas reductions (1 tonne CO₂ equivalent = 1 credit);</li>
+                        <li><strong>Trading:</strong> Credits traded on exchanges or bilateral contracts; price discovery depends on supply-demand dynamics.</li>
+                    </ul>
+
+                    <h3>📌 India's Two-Tier System Design</h3>
+                    <ul class="bullet-list">
+                        <li><strong>Compliance Market (Phase 1):</strong> Mandatory participation for large emitters (>threshold limit); regulated through Department of Economic Affairs;</li>
+                        <li><strong>Voluntary Market:</strong> Optional for smaller industries, renewable projects, afforestation schemes; governed by Ministry of Environment norms;</li>
+                        <li><strong>Price Controls:</strong> Initial phases include price bands (₹200-₹500/credit) to prevent volatility; fully market-driven prices expected by Phase 3 (2027+);</li>
+                        <li><strong>Exclusion List:</strong> Certain sectors exempted initially (agriculture, small manufacturing units, residential consumers); phased inclusion over time.</li>
+                    </ul>
+
+                    <h3>📌 Verification & Standards Framework</h3>
+                    <ul class="bullet-list">
+                        <li><strong>BIS Certification:</strong> Bureau of Indian Standards developing Indian carbon credit verification standards aligned with international best practices;</li>
+                        <li><strong>Auditors:</strong> Third-party accreditation required for project developers submitting claims for credit issuance;</li>
+                        <li><strong>Transparency:</strong> Public registry maintained centrally; all transactions visible to ensure integrity and prevent double-counting;</li>
+                        <li><strong>MRI Systems:</strong> Measurement, Reporting, Verification protocols modeled on IPCC guidelines adapted for Indian conditions.</li>
+                    </ul>
+
+                    <h3>📌 International Linkages & Global Context</h3>
+                    <ul class="bullet-list">
+                        <li><strong>Article 6 Paris Agreement:</strong> Enables countries to trade internationally transferred mitigation outcomes (ITMOs); prevents "greenwashing"; requires robust accounting systems;</li>
+                        <li><strong>CDM Legacy:</strong> Under Kyoto Protocol Clean Development Mechanism, India generated 2Bn CERs ($15 Bn revenue potential but only realized ~$4 Bn due to price crashes); new system avoids past mistakes with higher floors and better oversight;</li>
+                        <li><strong>EU CBAM Linkage:</strong> EU Carbon Border Adjustment Mechanism taxes imports based on embedded carbon emissions; Indian exporters may benefit from verified carbon credits offsetting charges if recognized by EU;</li>
+                        <li><strong>Global Exchanges:</strong> Integration planned with Singapore Exchange, London Metal Exchange for price discovery and liquidity enhancement;</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Important Facts for Prelims -->
+        <section class="study-section collapsible" data-section="3">
+            <button class="section-header" onclick="toggleSection(3)">
+                <span class="section-number">3️⃣</span>
+                <span class="section-title">Important Facts for Prelims</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-3">
+                <div class="content-box prelims-box">
+                    <div class="fact-grid">
+                        <div class="fact-item">
+                            <span class="fact-label">Scheme Announced</span>
+                            <span class="fact-value">December 2023</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-label">Operational From</span>
+                            <span class="fact-value">October 2024</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-label">Legal Basis</span>
+                            <span class="fact-value">Energy Conservation Act 2022 Amendment</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-label">Credit Price Band</span>
+                            <span class="fact-value">₹200-₹500 per credit</span>
+                        </div>
+                    </div>
+                    
+                    <h3>✅ Quick Facts</h3>
+                    <ul class="bullet-list">
+                        <li><strong>Target Sectors:</strong> Thermal power plants, steel mills, cement factories, aluminum smelters, automotive manufacturers, aviation fuel suppliers;</li>
+                        <li><strong>Threshold Limits:</strong> First phase applies to facilities with annual emissions >25,000 tonnes CO₂ equivalent (approx 500-600 major industrial units nationally);</li>
+                        <li><strong>Credit Validity:</strong> 1 credit = 1 tonne CO₂ reduction; credits remain valid for 5 years before expiry to discourage hoarding and encourage continuous abatement;</li>
+                        <li><strong>Revenue Use:</strong> Minimum 20% carbon trading proceeds earmarked for green technology fund supporting small industries adoption of cleaner processes;</li>
+                    </ul>
+
+                    <h3>✅ International Comparisons</h3>
+                    <ul class="bullet-list">
+                        <li><strong>EU ETS:</strong> World's largest carbon market covering 40% EU emissions; credit price €80-€90/tCO₂ (higher than India's floor); model being observed for future alignment;</li>
+                        <li><strong>California-QBCA:</strong> US state cap-and-trade system linking with Quebec; demonstrates subnational integration possibilities within federal structures;</li>
+                        <li><strong>China National ETS:</strong> Launched 2021 world's largest by covered emissions (power sector only initially); gradual expansion to other sectors planned;</li>
+                        <li><strong>India's Position:</strong> Designed considering developmental needs; lower initial caps allow continued economic growth while pushing incremental improvements;</li>
+                    </ul>
+
+                    <div class="highlight-box">
+                        <strong>💡 Prelims Trap:</strong> Carbon credits are <strong>NOT tax deductions</strong>; they're tradeable instruments representing emission reductions. Also, initial exemption doesn't mean permanent—phased implementation will expand coverage over time.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Detailed Explanation for Mains -->
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">Detailed Explanation for Mains</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
+                <div class="content-box mains-box">
+                    <h3>🎯 Carbon Credit Trading: Multi-Dimensional Analysis</h3>
+                    
+                    <div class="mains-subsection">
+                        <h4>🔹 Economic Rationale: Incentive-Based Approach</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Cost-Effectiveness:</strong> Allows polluters who can reduce cheaply to do so, then sell credits; others facing high abatement costs purchase rather than invest in expensive technologies immediately;</li>
+                            <li><strong>Revenue Generation:</strong> Auctioning allowances creates government revenue streams that can be reinvested into clean energy subsidies, rural electrification programs, health initiatives;</li>
+                            <li><strong>Market Innovation:</strong> Stimulates development of new low-carbon products/services, attracts green investment funds, encourages corporate sustainability reporting transparency;</li>
+                        </ul>
+                    </div>
+
+                    <div class="mains-subsection">
+                        <h4>🔹 Environmental Benefits & Effectiveness</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Total Cap Reduction:</strong> Overall economy-wide emission ceilings decline predictably each year ensuring cumulative progress toward national NDC commitments;</li>
+                            <li><strong>Technology Diffusion:</strong> Early adopters gain competitive advantage while laggards forced to catch up through purchasing or upgrading infrastructure;</li>
+                            <li><strong>Monitoring Rigor:</strong> Centralized registry prevents double counting fraud scenarios common in voluntary offset markets historically;</li>
+                            <li><strong>Additionality:</strong> Must demonstrate emission reductions would NOT have occurred without financial incentive from credit sales;</li>
+                        </ul>
+                    </div>
+
+                    <div class="mains-subsection">
+                        <h4>🔹 Equity Considerations & Social Justice</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Regressive Risk:</strong> Higher energy costs passed to consumers could disproportionately affect poor households reliant on subsidized electricity/fuels;</li>
+                            <li><strong>Regional Imbalances:</strong> Industrial concentrated states bear immediate burdens vs. agrarian states benefiting indirectly through agriculture sector exclusion initially;</li>
+                            <li><strong>Just Transition:</strong> Need worker retraining programs, social safety nets for coal-dependent communities facing displacement as coal capacity reduced systematically;</li>
+                            <li><strong>Small Industry Support:</strong> ₹5,000 crore green tech fund created specifically to help MSMEs afford efficiency upgrades without bankrupting them;</li>
+                        </ul>
+                    </div>
+
+                    <div class="mains-subsection">
+                        <h4>🔹 Critical Challenges & Way Forward</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Implementation Readiness:</strong> Verifiers shortage currently exists; need accelerated training programs for auditors before operational launch in October 2024;</li>
+                            <li><strong>Data Availability:</strong> Many companies lack reliable emissions inventories; capacity building required especially among public sector undertakings still using outdated measurement methods;</li>
+                            <li><strong>Price Volatility Risks:</strong> Extreme swings possible depending on macroeconomic conditions; hedging instruments and stabilization funds necessary for stability;</li>
+                            <li><strong>International Acceptance:</strong> Requires mutual recognition agreements with major trading partners to enable cross-border transactions; diplomatic engagement ongoing with USA, UK, Japan;</li>
+                        </ul>
+                        <h4 style="margin-top: 1rem; color: var(--primary-color);">🔹 Mains Answer Framework</h4>
+                        <ol class="numbered-list">
+                            <li><strong>Contextualize:</strong> Link carbon trading to Nationally Determined Contributions (NDCs), COP28 commitments, Make in India clean tech ambitions, and sustainable finance requirements.</li>
+                            <li><strong>Analyze Design Features:</strong> Comply/voluntary split, pricing mechanism, verification framework, sectoral coverage, revenue recycling provisions.</li>
+                            <li><strong>Critically Evaluate:</strong> Implementation feasibility, equity impacts, enforcement challenges, competitiveness concerns, global coordination needs.</li>
+                            <li><strong>Way Forward:</strong> Strengthen monitoring systems, develop futures markets, expand participation gradually, enhance international interoperability, integrate with SDGs.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Examples / Case Studies -->
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)">
+                <span class="section-number">5️⃣</span>
+                <span class="section-title">Examples / Case Studies</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-5">
+                <div class="content-box">
+                    <div class="case-study">
+                        <h4>📌 Case 1: Tata Steel Jamshedpur Retrofit Project</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Context:</strong> Tata Steel implemented blast furnace oxygen enrichment reducing coal consumption by 15% at Jamshedpur facility;</li>
+                            <li><strong>Carbon Credit Benefit:</strong> Verified reduction of 1.2 million tonnes CO₂/year qualifies for 1.2 million credits at current market rates (~₹350/tonne = ₹42 Cr annual revenue);</li>
+                            <li><strong>Reinvestment:</strong> Credits proceeds used to upgrade wastewater treatment plant, funding additional renewable solar installations at mines;</li>
+                            <li><strong>UPSC Link:</strong> Corporate sustainability leadership + Circular economy principles + Profit-environment win-win scenarios + Private sector climate action models.</li>
+                        </ul>
+                    </div>
+
+                    <div class="case-study">
+                        <h4>📌 Case 2: Andhra Pradesh Wind Farm Expansion</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Context:</strong> AP added 800 MW wind capacity through JNNSM Phase II program funded partly through carbon revenues;</li>
+                            <li><strong>Generation:** Projects earning 500k credits annually (assuming 1,000 GWh output replacing thermal mix); credits sold to obligated thermal generators requiring offsets;</li>
+                            <li><strong>Rural Impact:** Local community benefit-sharing agreements ensure 5% revenue goes to village development works (roads, schools, water supply);</li>
+                            <li><strong>UPSC Link:</strong> Renewable energy scaling + Regional development linkages + Distributed generation advantages + Community participation models.</li>
+                        </ul>
+                    </div>
+
+                    <div class="case-study">
+                        <h4>📌 Case 3: Coal Power Plant Decommissioning Strategy</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Context:</strong> Adani Power planning shutdown of 2 old supercritical units aged 25+ years exceeding performance thresholds;</li>
+                            <li><strong>Credit Opportunity:</strong> Remaining lifetime allowance shortfall calculated; company purchases retired capacity credits from newer efficient plants instead of buying fresh allowances;</li>
+                            <li><strong>Worker Transition:</strong> 500 employees reassigned to O&M roles for adjacent renewable assets plus vocational training programs coordinated with local ITIs;</li>
+                            <li><strong>UPSC Link:</strong> Phased coal exit management + Just transition policies + Workforce reskilling priorities + Economic diversification pathways for fossil-dependent regions.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: MCQs -->
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)">
+                <span class="section-number">6️⃣</span>
+                <span class="section-title">5 MCQs with Answers</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-6">
+                <div class="content-box mcq-box">
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q1.</strong> With reference to India's Carbon Credit Trading Scheme, consider the following statements:<br>
+                        1. The scheme was formally announced in December 2023 with operations starting from October 2024.<br>
+                        2. Carbon credits represent verified greenhouse gas reductions measured in tonnes of CO₂ equivalent.<br>
+                        3. Small manufacturing units below threshold limits will participate voluntarily from the first phase itself.<br><br>
+                        Which of the statements given above are correct?</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q1" value="a"> (a) 1 and 2 only</label>
+                            <label><input type="radio" name="q1" value="b"> (b) 2 and 3 only</label>
+                            <label><input type="radio" name="q1" value="c"> (c) 1 and 3 only</label>
+                            <label><input type="radio" name="q1" value="d"> (d) 1, 2 and 3</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q1">
+                            <p><strong>✅ Answer:</strong> (a) 1 and 2 only</p>
+                            <p><strong>💡 Explanation:</strong> Statement 3 is incorrect: Small manufacturing units below threshold limits are <strong>exempted in initial phase</strong>; mandatory participation starts later once system matures and smaller sectors integrated sequentially.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q1')">Show Answer</button>
+                    </div>
+
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q2.</strong> Under India's Carbon Credit Trading Scheme, one carbon credit represents:</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q2" value="a"> (a) ₹1 worth of government subsidy for green investments</label>
+                            <label><input type="radio" name="q2" value="b"> (b) Reduction of 1 tonne of CO₂ equivalent emissions</label>
+                            <label><input type="radio" name="q2" value="c"> (c) 1 kilowatt-hour of renewable energy generated</label>
+                            <label><input type="radio" name="q2" value="d"> (d) Permission to emit 1 metric tonne of pollutants</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q2">
+                            <p><strong>✅ Answer:</strong> (b) Reduction of 1 tonne of CO₂ equivalent emissions</p>
+                            <p><strong>💡 Explanation:</strong> One carbon credit equals verification that 1 tonne of CO₂ equivalent has been avoided or removed from atmosphere through legitimate emission reduction activity (not subsidy amount or energy generation directly).</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q2')">Show Answer</button>
+                    </div>
+
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q3.</strong> Consider the following pairs:<br>
+                        Term | Definition under Carbon Credit Scheme<br>
+                        1. Allowance | Permitted emission quota allocated to entity<br>
+                        2. Credit | Surplus reduction earned when going below assigned target<br>
+                        3. Obligated Party | Entity required to surrender credits equal to actual emissions<br><br>
+                        How many pairs are correctly matched?</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q3" value="a"> (a) Only one</label>
+                            <label><input type="radio" name="q3" value="b"> (b) Only two</label>
+                            <label><input type="radio" name="q3" value="c"> (c) All three</label>
+                            <label><input type="radio" name="q3" value="d"> (d) None</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q3">
+                            <p><strong>✅ Answer:</strong> (c) All three</p>
+                            <p><strong>💡 Explanation:</strong> All three pairs are correctly matched. Allowances = permission limits; Credits = surplus reductions; Obligated Parties = entities subject to surrender requirements based on measured emissions levels.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q3')">Show Answer</button>
+                    </div>
+
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q4.</strong> Which international agreement provision enables international transfer of carbon credits between countries under India's trading system?</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q4" value="a"> (a) Paris Agreement Article 6</label>
+                            <label><input type="radio" name="q4" value="b"> (b) Kyoto Protocol Annex B</label>
+                            <label><input type="radio" name="q4" value="c"> (c) Montreal Protocol Subpart C</label>
+                            <label><input type="radio" name="q4" value="d"> (d) Stockholm Convention Article 15</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q4">
+                            <p><strong>✅ Answer:</strong> (a) Paris Agreement Article 6</p>
+                            <p><strong>💡 Explanation:</strong> Article 6 of the Paris Agreement establishes framework for cooperative approaches including internationally transferred mitigation outcomes (ITMOs). Kyoto Protocol's CDM mechanism preceded it but Paris Agreement updated rules post-2020.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q4')">Show Answer</button>
+                    </div>
+
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q5.</strong> What is the initial carbon credit price band fixed for India's Carbon Credit Trading Scheme during early operational phases?</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q5" value="a"> (a) ₹50-₹100 per credit</label>
+                            <label><input type="radio" name="q5" value="b"> (b) ₹200-₹500 per credit</label>
+                            <label><input type="radio" name="q5" value="c"> (c) ₹1,000-₹1,500 per credit</label>
+                            <label><input type="radio" name="q5" value="d"> (d) No price controls; fully determined by market forces</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q5">
+                            <p><strong>✅ Answer:</strong> (b) ₹200-₹500 per credit</p>
+                            <p><strong>💡 Explanation:</strong> Initial phases employ price bands (₹200-₹500 range) to ensure stability and encourage participation; full market-driven pricing expected only after system maturity around Phase 3 (post-2027).</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q5')">Show Answer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: Quick Revision Notes -->
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)">
+                <span class="section-number">7️⃣</span>
+                <span class="section-title">Quick Revision Notes</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-7">
+                <div class="content-box revision-box">
+                    <h3>🔁 Carbon Credit Trading in 10 Seconds</h3>
+                    <ul class="revision-list">
+                        <li><strong>Launched:</strong> December 2023 | Operational: October 2024</li>
+                        <li><strong>Legal Base:</strong> Energy Conservation Act Amendment 2022</li>
+                        <li><strong>Unit:</strong> 1 credit = 1 tonne CO₂ equivalent reduction</li>
+                        <li><strong>Price Band:</strong> ₹200-₹500 (initial) → market-driven later</li>
+                        <li><strong>Target Sector:</strong> Large emitters (>25k tCO₂/yr); phased inclusion</li>
+                        <li><strong>System:</strong> Compliant + Voluntary markets; central registry for transparency</li>
+                        <li><strong>Revenue Share:</strong> 20% to green tech fund for MSME adoption support</li>
+                        <li><strong>International:</strong> Paris Agreement Art 6 compliance; linkage planned</li>
+                    </ul>
+
+                    <h3>🧠 Mnemonic: "CARBON MARKET"</h3>
+                    <div class="mnemonic-box">
+                        <p><strong>C</strong> → Cap-and-trade system setting emission limits per sector</p>
+                        <p><strong>A</strong> → Allowance allocation: Free or auctioned based on benchmarks</p>
+                        <p><strong>R</strong> → Reduction verification: MRV protocols follow IPCC standards</a></li></p>
+                        <p><strong>B</strong> → Bands: ₹200-₹500 price control initially preventing volatility</li></p>
+                        <p><strong>O</strong> → Obligated parties: Required to surrender credits matching actual outputs</li></p>
+                        <p><strong>N</strong> → November launch prep: Training verifiers before October 2024 start</li></p>
+                        <br>
+                        <p><strong>M</strong> → Market mechanisms: Buy/sell credits based on marginal abatement costs</li></p>
+                        <p><strong>A</strong> → Additionality proof: Must show reductions wouldn't happen without credit incentive</li></p>
+                        <p><strong>R</strong> → Revenue recycling: 20% to green tech fund supporting smaller industries</li></p>
+                        <p><strong>K</strong> → Kyoto legacy lessons: Avoid CER price collapse through better design controls</li></p>
+                        <p><strong>E</strong> → Export competitiveness: Potential EU CBAM offset benefits if credits accepted</li></p>
+                        <p><strong>T</strong> → Threshold exemptions: Initial focus on large emitters before expanding scope</li>
+                    </div>
+
+                    <h3>📌 Prelims Traps to Avoid</h3>
+                    <ul class="warning-list">
+                        <li>✘ Carbon credits ≠ tax deductions; they're <strong>tradeable instruments</strong> representing verified reductions</li>
+                        <li>✘ Initial coverage excludes <strong>small units below threshold</strong>; not universal from Day 1</li>
+                        <li>✘ Credit price band <strong>₹200-₹500</strong> applies early; full market pricing comes later (not immediate free-for-all)</li>
+                        <li>✘ "Additionality" means proving reductions <strong>wouldn't occur otherwise</strong>, not just any documented decrease</li>
+                        <li>✘ Scheme approved under <strong>Energy Conservation Act amendment</strong>, not Environment Protection Act alone</li>
+                    </ul>
+
+                    <h3>🎯 Mains One-Liners</h3>
+                    <ul class="bullet-list">
+                        <li>"Carbon trading = Balancing act between emission reduction goals and economic development imperatives"</li>
+                        <li>"Market mechanisms can accelerate decarbonization more effectively than command-and-control regulation alone"</li>
+                        <li>"Revenue recycling ensures fiscal neutrality while directing flows toward disadvantaged groups affected by transition costs"</li>
+                        <li>"International acceptance requires robust accounting systems meeting mutual recognition standards set by major trading blocs"</li>
+                        <li>"Way Forward: Strengthen verification capacity, integrate with regional power markets, coordinate with GST reforms for seamless implementation."</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation Footer -->
+        <div class="page-navigation">
+            <a href="index.html" class="nav-btn">← Back to Current Affairs Index</a>
+            <button onclick="markAsComplete('CA-26')" class="nav-btn btn-success">✓ Mark as Complete</button>
+            <a href="climate-summit-outcomes.html" class="nav-btn">Next: CA-27 →</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>📄 Page Code: <strong>CA-26</strong> | Subject: Environment + Economy + Sustainable Development</p>
+            <p>🔗 Link to Syllabus: GS-3 (Environment, Economy, Internal Security, S&T), GS-1 (Development Issues), Essay</p>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle Section
+        function toggleSection(sectionNum) {
+            const section = document.querySelector(`[data-section="${sectionNum}"]`);
+            const content = document.getElementById(`section-${sectionNum}`);
+            const header = section.querySelector('.section-header');
+            if (content.classList.contains('collapsed')) {
+                content.classList.remove('collapsed');
+                header.classList.remove('collapsed');
+            } else {
+                content.classList.add('collapsed');
+                header.classList.add('collapsed');
+            }
+        }
+        // Toggle All Sections
+        function toggleAllSections() {
+            const sections = document.querySelectorAll('.study-section');
+            const allCollapsed = Array.from(sections).every(s => s.querySelector('.section-content').classList.contains('collapsed'));
+            sections.forEach(section => {
+                const content = section.querySelector('.section-content');
+                const header = section.querySelector('.section-header');
+                if (allCollapsed) { content.classList.remove('collapsed'); header.classList.remove('collapsed'); }
+                else { content.classList.add('collapsed'); header.classList.add('collapsed'); }
+            });
+        }
+        // Show MCQ Answer
+        function showAnswer(questionId) {
+            const answerDiv = document.getElementById(`answer-${questionId}`);
+            const btn = event.target;
+            if (answerDiv.classList.contains('show')) { answerDiv.classList.remove('show'); btn.textContent = 'Show Answer'; }
+            else { answerDiv.classList.add('show'); btn.textContent = 'Hide Answer'; }
+        }
+        // Mark as Complete
+        function markAsComplete(pageCode) {
+            let completed = JSON.parse(localStorage.getItem('completedPages') || '[]');
+            if (!completed.includes(pageCode)) {
+                completed.push(pageCode);
+                localStorage.setItem('completedPages', JSON.stringify(completed));
+                const btn = event.target;
+                btn.textContent = '✓ Completed!';
+                btn.style.background = '#059669';
+                if (window.opener) { try { window.opener.updateMainProgress?.(); } catch(e) {} }
+            }
+        }
+        // Auto-expand first section
+        document.addEventListener('DOMContentLoaded', function() {
+            const first = document.querySelector('[data-section="1"]');
+            if (first) setTimeout(() => toggleSection(1), 300);
+        });
+        // Keyboard shortcuts
+        document.addEventListener('keydown', function(e) {
+            if ((e.ctrlKey || e.metaKey) && e.key === 'p') { e.preventDefault(); window.print(); }
+            if (e.key === ' ' && e.target === document.body) { e.preventDefault(); const f = document.querySelector('[data-section="1"]'); if (f) toggleSection(1); }
+        });
+    </script>
+</body>
+</html>
