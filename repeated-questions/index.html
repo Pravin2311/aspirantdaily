@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- SEO -->
   <title>Repeated Exam Questions & Important MCQs | AspirantDaily</title>
   <meta name="description" content="Most repeated questions and frequently asked MCQs for SSC, Bank, UPSC, RRB & PSC exams. Ace exams with high-probability questions compiled for you." />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://www.aspirantdaily.com/repeated-questions/index.html" />
+  <link rel="canonical" href="https://aspirantdaily.com/repeated-questions/index.html" />
   <meta name="keywords" content="Repeated Questions, Frequently Asked Questions, SSC repeated questions, UPSC repeated MCQ, Bank exam repeated questions, RRB important questions, PSC repeated questions, most asked exam questions India">
 
   <!-- Open Graph -->
@@ -17,67 +18,9 @@
   <meta property="og:description" content="Most repeated and high-probability questions for competitive exams. Download and practice guaranteed scoring exam questions." />
   <meta property="og:url" content="https://aspirantdaily.com/blog/" />
 
+  <link rel="stylesheet" href="../styles.css">
   <style>
-    :root {
-      --primary: #2563eb;
-      --text: #111827;
-      --text-light: #6b7280;
-      --bg: #f9fafb;
-    }
-
-    *, *::before, *::after {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-    }
-
-    .container {
-      max-width: 1100px;
-      margin: auto;
-      padding: 1rem;
-    }
-
-    .site-header {
-      text-align: center;
-      padding: 2rem 1rem 1.25rem;
-    }
-
-    .site-header h1 {
-      margin-bottom: 0.5rem;
-      font-size: 2rem;
-    }
-
-    .site-header p {
-      color: var(--text-light);
-      max-width: 720px;
-      margin: auto;
-      line-height: 1.5;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 0.7rem 1.4rem;
-      border-radius: 999px;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 0.95rem;
-    }
-
-    .btn.primary {
-      background: var(--primary);
-      color: #fff;
-    }
-
-    .btn.light {
-      background: #e5e7eb;
-      color: #111;
-    }
-
+    /* Repeated-question grid — specific to this page */
     .blog-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -86,13 +29,14 @@
     }
 
     .blog-card {
-      background: #ffffff;
+      background: var(--surface);
+      border: 1px solid var(--border);
       padding: 1.25rem;
-      border-radius: 14px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-sm);
       text-decoration: none;
       color: inherit;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
       display: flex;
       flex-direction: column;
       height: 100%;
@@ -100,27 +44,18 @@
 
     .blog-card:hover {
       transform: translateY(-4px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+      box-shadow: var(--shadow-md);
+      border-color: var(--primary-light);
     }
 
-    .blog-card h3 {
-      margin: 0 0 0.5rem;
-      font-size: 1.1rem;
-      color: var(--primary);
-    }
-
-    .blog-card p {
-      font-size: 0.95rem;
-      color: var(--text-light);
-      line-height: 1.45;
-      margin-bottom: 0.75rem;
-    }
+    .blog-card h3 { margin: 0 0 0.5rem; font-size: 1.1rem; color: var(--primary); }
+    .blog-card p { font-size: 0.95rem; color: var(--text-light); line-height: 1.45; margin-bottom: 0.75rem; }
 
     .blog-tag {
       margin-top: auto;
       display: inline-block;
-      background: #eff6ff;
-      color: var(--primary);
+      background: var(--primary-light);
+      color: var(--primary-dark);
       padding: 0.25rem 0.75rem;
       border-radius: 999px;
       font-size: 0.8rem;
@@ -128,31 +63,9 @@
       width: fit-content;
     }
 
-    .cta-center {
-      text-align: center;
-      margin: 2.5rem 0;
-    }
-
-    .site-footer {
-      text-align: center;
-      padding: 1.5rem 1rem;
-      font-size: 0.85rem;
-      color: var(--text-light);
-    }
-
     @media (max-width: 600px) {
-      .site-header h1 {
-        font-size: 1.6rem;
-      }
-
-      .blog-grid {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-      }
-
-      .blog-card {
-        padding: 1rem;
-      }
+      .blog-grid { grid-template-columns: 1fr; gap: 1rem; }
+      .blog-card { padding: 1rem; }
     }
   </style>
 
@@ -185,20 +98,33 @@
 
 <body>
 
-<header class="site-header">
-  <h1>Repeated Exam Questions</h1>
-  <p>
-    Most frequently asked and high-probability questions for SSC, Bank, UPSC, RRB & PSC exams.
-  </p>
-</header>
+  <!-- SITE HEADER / NAV -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/index.html" class="brand-link">
+        <span class="brand-logo">AD</span>
+        <span class="brand-name">Aspirant<strong>Daily</strong></span>
+      </a>
+      <nav class="site-nav">
+        <a href="/index.html">Home</a>
+        <a href="/quiz-selector.html">Practice</a>
+        <a href="/study/index.html">Study Portal</a>
+        <a href="/blog/index.html">Blog</a>
+        <a href="/repeated-questions/index.html" class="active">Repeated Qs</a>
+        <a href="/exam-calendar.html">Exam Calendar</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<main class="container">
-
-  <div style="margin-bottom:1rem;">
-    <a href="../index.html" class="btn light">← Back</a>
+  <div class="page-header">
+    <h1>Repeated Exam Questions</h1>
+    <p>Most frequently asked and high-probability questions for SSC, Bank, UPSC, RRB &amp; PSC exams.</p>
   </div>
 
-  <h3>Repeated Question Sets</h3>
+<main class="container mt-lg">
+
+  <h2 class="section-title">Repeated Question Sets</h2>
 
   <section class="blog-grid">
 
@@ -264,9 +190,30 @@
 
 </main>
 
-<footer class="site-footer">
-  © 2026 AspirantDaily.com
-</footer>
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="/index.html" class="brand-link">
+          <span class="brand-logo">AD</span>
+          <span class="brand-name">Aspirant<strong>Daily</strong></span>
+        </a>
+        <p>Free daily MCQ practice for Indian competitive exams.</p>
+      </div>
+      <nav class="footer-links">
+        <a href="/index.html">Home</a>
+        <a href="/blog/index.html">Blog</a>
+        <a href="/study/index.html">Study Portal</a>
+        <a href="/exam-calendar.html">Exam Calendar</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+      <nav class="footer-links">
+        <a href="/privacy-policy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms of Service</a>
+      </nav>
+    </div>
+    <p class="footer-copyright">© 2026 AspirantDaily.com</p>
+  </footer>
 
 </body>
 </html>

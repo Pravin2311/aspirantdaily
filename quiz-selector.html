@@ -2,92 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <title>Select Quiz – AspirantDaily</title>
+  <meta name="description" content="Pick a set of 25 practice questions for your chosen subject on AspirantDaily.">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="./styles.css">
-  <style>
-    /* ===============================
-       QUIZ SELECTOR PAGE STYLES
-       =============================== */
-
-    .selector-wrapper {
-      max-width: 900px;
-      margin: 60px auto;
-      padding: 0 20px;
-    }
-
-    .selector-card {
-      background: #ffffff;
-      border-radius: 14px;
-      padding: 32px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-    }
-
-    .selector-title {
-      font-size: 2rem;
-      font-weight: 700;
-      margin-bottom: 8px;
-      color: #111827;
-    }
-
-    .selector-subtitle {
-      font-size: 1rem;
-      color: #6b7280;
-      margin-bottom: 28px;
-    }
-
-    .quiz-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 18px;
-    }
-
-    .quiz-tile {
-      background: linear-gradient(135deg, #6366f1, #4f46e5);
-      color: #fff;
-      border-radius: 14px;
-      padding: 22px 18px;
-      cursor: pointer;
-      transition: transform 0.15s ease, box-shadow 0.15s ease;
-      text-align: center;
-    }
-
-    .quiz-tile:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 10px 20px rgba(79,70,229,0.35);
-    }
-
-    .quiz-number {
-      font-size: 1.2rem;
-      font-weight: 700;
-      margin-bottom: 6px;
-    }
-
-    .quiz-range {
-      font-size: 0.95rem;
-      opacity: 0.9;
-    }
-
-    @media (max-width: 600px) {
-      .quiz-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327"
      crossorigin="anonymous"></script>
 </head>
 <body>
 
-<div class="container">
-  <h1 id="title"></h1>
-  <div id="quizList" class="quiz-list"></div>
-</div>
 <div class="quiz-selector-container">
-  <h1 id="title"></h1>
+  <a href="index.html" class="back-btn">← Back</a>
+  <div class="page-header" style="padding-top:1rem;">
+    <h1 id="title"></h1>
+    <p>Pick a set of 25 questions to begin.</p>
+  </div>
   <div id="quizList" class="quiz-list"></div>
 </div>
-
 
 <script>
   const context = JSON.parse(localStorage.getItem("practiceContext") || "{}");

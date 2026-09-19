@@ -1,6 +1,6 @@
 /* ===== CSS Variables ===== */
 :root {
-    --primary-color: #2563eb;
+    --primary-color: #4338ca;
     --secondary-color: #64748b;
     --success-color: #10b981;
     --warning-color: #f59e0b;
@@ -77,7 +77,7 @@ body {
 }
 
 .btn-primary:hover {
-    background: #1d4ed8;
+    background: #3730a3;
 }
 
 .btn-secondary {
@@ -234,7 +234,7 @@ body {
 
 /* ===== Prelims Box ===== */
 .prelims-box {
-    background: #eff6ff;
+    background: #eef2ff;
     border-radius: 8px;
     padding: 1.5rem;
 }
@@ -370,7 +370,7 @@ body {
 }
 
 .btn-show-answer:hover {
-    background: #1d4ed8;
+    background: #3730a3;
 }
 
 /* ===== Revision Box ===== */

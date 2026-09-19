@@ -2,73 +2,49 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy Policy – AspirantDaily</title>
   <meta name="description" content="Learn how AspirantDaily uses data. We respect your privacy and use minimal tracking." />
-  <link rel="canonical" href="https://www.aspirantdaily.com/privacy-policy.html" />
+  <link rel="canonical" href="https://aspirantdaily.com/privacy-policy.html" />
+  <link rel="stylesheet" href="./styles.css">
   <style>
-    :root {
-      --primary: #2563eb;
-      --text: #111827;
-      --text-light: #6b7280;
-      --bg: #f9fafb;
-    }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-      padding-bottom: 2rem;
-    }
-    .container {
-      max-width: 720px;
-      margin: auto;
-      padding: 1.5rem;
-    }
-    header {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-    h1 {
-      font-size: 1.8rem;
-      color: var(--primary);
-      margin-bottom: 0.5rem;
-    }
-    h2 {
-      margin: 1.5rem 0 1rem;
-      color: var(--text);
-    }
-    p, ul {
-      margin-bottom: 1.25rem;
-    }
-    ul {
-      padding-left: 1.5rem;
-    }
-    li {
-      margin-bottom: 0.5rem;
-    }
-    .footer-link {
-      display: block;
-      text-align: center;
-      margin-top: 2rem;
-      color: var(--primary);
-      text-decoration: none;
-    }
-    .footer-link:hover {
-      text-decoration: underline;
-    }
+    /* Legal-page typography */
+    .legal-content h2 { margin: 1.5rem 0 1rem; color: var(--text); font-size: 1.15rem; }
+    .legal-content p, .legal-content ul { margin-bottom: 1.25rem; color: var(--text); line-height: 1.6; }
+    .legal-content ul { padding-left: 1.5rem; }
+    .legal-content li { margin-bottom: 0.5rem; }
+    .legal-content code { background: var(--primary-light); color: var(--primary-dark); padding: 0.1rem 0.4rem; border-radius: 4px; font-size: 0.9em; }
   </style>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327"
      crossorigin="anonymous"></script>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Privacy Policy</h1>
-      <p>Last updated: December 25, 2025</p>
-    </header>
 
+  <!-- SITE HEADER / NAV -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/index.html" class="brand-link">
+        <span class="brand-logo">AD</span>
+        <span class="brand-name">Aspirant<strong>Daily</strong></span>
+      </a>
+      <nav class="site-nav">
+        <a href="/index.html">Home</a>
+        <a href="/quiz-selector.html">Practice</a>
+        <a href="/study/index.html">Study Portal</a>
+        <a href="/blog/index.html">Blog</a>
+        <a href="/exam-calendar.html">Exam Calendar</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <h1>Privacy Policy</h1>
+    <p>Last updated: December 25, 2025</p>
+  </div>
+
+  <main class="container narrow mt-lg legal-content">
     <p>At AspirantDaily, we respect your privacy and are committed to protecting your personal data. This policy explains how we collect, use, and safeguard your information when you use our website.</p>
 
     <h2>1. Information We Collect</h2>
@@ -86,12 +62,11 @@
     </ul>
 
     <h2>3. Cookies</h2>
-    <p>We use only essential cookies:
-      <ul>
-        <li><strong>_ga, _gat, _gid</strong> (Google Analytics)</li>
-        <li>No third-party advertising or tracking cookies</li>
-      </ul>
-    </p>
+    <p>We use only essential cookies:</p>
+    <ul>
+      <li><strong>_ga, _gat, _gid</strong> (Google Analytics)</li>
+      <li>No third-party advertising or tracking cookies</li>
+    </ul>
 
     <h2>4. Data Security</h2>
     <p>All data stored in your browser (<code>localStorage</code>) remains on your device and is never sent to our servers. We do not store any personal information on our servers.</p>
@@ -100,11 +75,32 @@
     <p>We may update this policy occasionally. The latest version will always be posted here with an updated "Last updated" date.</p>
 
     <h2>6. Contact Us</h2>
-    <p>If you have questions about this Privacy Policy, please contact us at:  
-      <strong>support@teachings.ai</strong>
-    </p>
+    <p>If you have questions about this Privacy Policy, please contact us at: <strong>support@teachings.ai</strong></p>
+  </main>
 
-    <a href="index.html" class="footer-link">← Back to Home</a>
-  </div>
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="/index.html" class="brand-link">
+          <span class="brand-logo">AD</span>
+          <span class="brand-name">Aspirant<strong>Daily</strong></span>
+        </a>
+        <p>Free daily MCQ practice for Indian competitive exams.</p>
+      </div>
+      <nav class="footer-links">
+        <a href="/index.html">Home</a>
+        <a href="/blog/index.html">Blog</a>
+        <a href="/study/index.html">Study Portal</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+      <nav class="footer-links">
+        <a href="/privacy-policy.html" class="active">Privacy Policy</a>
+        <a href="/terms.html">Terms of Service</a>
+      </nav>
+    </div>
+    <p class="footer-copyright">© 2026 Aspirant Daily • Made for Indian Aspirants 🇮🇳</p>
+  </footer>
+
 </body>
 </html>

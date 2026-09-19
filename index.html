@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Primary Meta Tags -->
@@ -20,68 +21,10 @@
 
   <!-- Styles -->
   <link rel="stylesheet" href="./styles.css">
-  <style>
-    /* Home Blog Section */
-.home-blog-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1rem;
-  margin-top: 1.5rem;
-}
-
-.home-blog-card {
-  background: #ffffff;
-  padding: 1rem 1.1rem;
-  border-radius: 14px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-  text-decoration: none;
-  color: inherit;
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
-}
-
-.home-blog-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 24px rgba(0,0,0,0.1);
-}
-
-.home-blog-card h3 {
-  font-size: 1rem;
-  margin: 0 0 0.35rem;
-  color: #2563eb;
-  line-height: 1.35;
-}
-
-.home-blog-card p {
-  font-size: 0.88rem;
-  color: #6b7280;
-  margin-bottom: 0.6rem;
-  line-height: 1.4;
-}
-
-.home-blog-tag {
-  display: inline-block;
-  font-size: 0.72rem;
-  font-weight: 600;
-  padding: 0.2rem 0.6rem;
-  border-radius: 999px;
-  background: #eff6ff;
-  color: #2563eb;
-}
-
-.study-card {
-  background: #dd680e;
-  padding: 1rem 1.1rem;
-  border-radius: 14px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-  text-decoration: none;
-  color: inherit;
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
-}
-  </style>
 
   <!-- PWA -->
   <link rel="manifest" href="/manifest.webmanifest">
-  <meta name="theme-color" content="#6C63FF">
+  <meta name="theme-color" content="#4338CA">
   <link rel="apple-touch-icon" href="/icons/icon-192.png">
 
   <!-- Analytics -->
@@ -108,248 +51,282 @@
   </div>
   <button class="announcement-close" onclick="this.parentElement.style.display='none'">×</button>
 </div>
-  <!-- HEADER -->
+
+  <!-- SITE HEADER / NAV -->
   <header class="site-header">
-    <h1 class="brand">Aspirant Daily</h1>
-    <p class="tagline">Free Daily 25 Questions • No Login • Auto Updated</p>
-
-    <!-- INSTALL BUTTON (always visible) -->
-    <button id="installBtn" class="install-btn">
-      📲 Download App
-    </button>
-
-    <p id="installHint" class="install-hint hidden">
-      On iPhone: Tap <strong>Share</strong> → <strong>Add to Home Screen</strong>
-    </p>
-    <div style="text-align:center; margin:1.5rem 0;">
-  <a href="exam-calendar.html" class="btn primary">📅 View Exam Calendar 2025–26</a>
-</div>
+    <div class="header-inner">
+      <a href="/index.html" class="brand-link">
+        <span class="brand-logo">AD</span>
+        <span class="brand-name">Aspirant<strong>Daily</strong></span>
+      </a>
+      <nav class="site-nav">
+        <a href="/index.html" class="active">Home</a>
+        <a href="/quiz-selector.html">Practice</a>
+        <a href="/study/index.html">Study Portal</a>
+        <a href="/blog/index.html">Blog</a>
+        <a href="/repeated-questions/index.html">Repeated Qs</a>
+        <a href="/exam-calendar.html">Exam Calendar</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
-<h4>Select Language 👉 <select id="languageSelect"></h4>
-  <option value="en">English</option>
-  <option value="hi">हिंदी</option>
-</select>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <span class="hero-badge">🇮🇳 Trusted by Aspirants Across India</span>
+      <h1>Crack SSC, Bank, UPSC &amp; More<br>with Daily Free MCQs</h1>
+      <p class="hero-subtitle">25 fresh questions every day, instant results, zero login. Practice smarter, not harder.</p>
+
+      <div class="hero-actions">
+        <a href="quiz.html?exam=mixed" class="btn white large">🔥 Start Today's Quiz</a>
+        <button id="installBtn" class="btn outline-light large">📲 Install App</button>
+      </div>
+      <p id="installHint" class="install-hint hidden">
+        On iPhone: Tap <strong>Share</strong> → <strong>Add to Home Screen</strong>
+      </p>
+      <p class="hero-trust">Free Forever • No Login Required • Updated Daily</p>
+    </div>
+  </section>
+
+  <div class="lang-switcher container">
+    🌐 <label for="languageSelect">Language</label>
+    <select id="languageSelect">
+      <option value="en">English</option>
+      <option value="hi">हिंदी</option>
+    </select>
+  </div>
+
   <!-- MAIN -->
   <main class="container">
-    <section class="container" style="margin-top:3rem;">
-  <a href="/study/index.html" class="study-card">UPSC 500-Page Master Study Portal</a> 
-  </section>
-  <!-- SUBJECT-WISE PRACTICE (NEW – SAFE ADDITION) -->
-<h2 class="section-title">Practice by Subject</h2>
 
-<div class="exam-grid">
+    <section class="mt-lg">
+      <a href="/study/index.html" class="study-card">UPSC 500-Page Master Study Portal</a>
+    </section>
 
-  <a href="#" class="exam-card highlight" onclick="openSubject('current-affairs')">
-    <div>
-      <h3>Current Affairs</h3>
-      <p>Daily Updates</p>
-    </div>
-    <span>📰</span>
-  </a>
+    <!-- SUBJECT-WISE PRACTICE -->
+    <section class="mt-lg">
+      <h2 class="section-title">Practice by Subject</h2>
+      <div class="exam-grid">
 
-  <a href="#" class="exam-card" onclick="openSubject('reasoning')">
-    <div>
-      <h3>Reasoning</h3>
-      <p>50 Q • 2 Quizzes</p>
-    </div>
-    <span>🧠</span>
-  </a>
+        <a href="#" class="exam-card highlight" onclick="openSubject('current-affairs')">
+          <div>
+            <h3>Current Affairs</h3>
+            <p>Daily Updates</p>
+          </div>
+          <span>📰</span>
+        </a>
 
-  <a href="#" class="exam-card" onclick="openSubject('quant')">
-    <div>
-      <h3>Quantitative Aptitude</h3>
-      <p>100 Q • Arithmetic</p>
-    </div>
-    <span>➗</span>
-  </a>
+        <a href="#" class="exam-card" onclick="openSubject('reasoning')">
+          <div>
+            <h3>Reasoning</h3>
+            <p>50 Q • 2 Quizzes</p>
+          </div>
+          <span>🧠</span>
+        </a>
 
-  <a href="#" class="exam-card" onclick="openSubject('computer')">
-    <div>
-      <h3>Computer Awareness</h3>
-      <p>Bank & SSC</p>
-    </div>
-    <span>💻</span>
-  </a>
+        <a href="#" class="exam-card" onclick="openSubject('quant')">
+          <div>
+            <h3>Quantitative Aptitude</h3>
+            <p>100 Q • Arithmetic</p>
+          </div>
+          <span>➗</span>
+        </a>
 
-  <a href="#" class="exam-card" onclick="openSubject('science')">
-    <div>
-      <h3>General Science</h3>
-      <p>Physics • Chem • Bio</p>
-    </div>
-    <span>🔬</span>
-  </a>
+        <a href="#" class="exam-card" onclick="openSubject('computer')">
+          <div>
+            <h3>Computer Awareness</h3>
+            <p>Bank &amp; SSC</p>
+          </div>
+          <span>💻</span>
+        </a>
 
-  <a href="#" class="exam-card" onclick="openSubject('english')">
-    <div>
-      <h3>English (Grammar & Verbal)</h3>
-      <p>articles, vocab, synonyms</p>
-    </div>
-    <span>🅰️</span>
-  </a>
+        <a href="#" class="exam-card" onclick="openSubject('science')">
+          <div>
+            <h3>General Science</h3>
+            <p>Physics • Chem • Bio</p>
+          </div>
+          <span>🔬</span>
+        </a>
 
-  <a href="#" class="exam-card" onclick="openSubject('economics')">
-    <div>
-      <h3>Economics</h3>
-      <p>inflation, GDP, budget</p>
-    </div>
-    <span>💰</span>
-  </a>
+        <a href="#" class="exam-card" onclick="openSubject('english')">
+          <div>
+            <h3>English (Grammar &amp; Verbal)</h3>
+            <p>articles, vocab, synonyms</p>
+          </div>
+          <span>🅰️</span>
+        </a>
 
-  <a href="#" class="exam-card" onclick="openSubject('geography')">
-    <div>
-      <h3>Geography</h3>
-      <p>India + World</p>
-    </div>
-    <span>🗺️</span>
-  </a>
+        <a href="#" class="exam-card" onclick="openSubject('economics')">
+          <div>
+            <h3>Economics</h3>
+            <p>inflation, GDP, budget</p>
+          </div>
+          <span>💰</span>
+        </a>
 
-  <a href="#" class="exam-card" onclick="openSubject('static-gk')">
-    <div>
-      <h3>Static GK</h3>
-      <p>One-time Prep</p>
-    </div>
-    <span>🌍</span>
-  </a>
+        <a href="#" class="exam-card" onclick="openSubject('geography')">
+          <div>
+            <h3>Geography</h3>
+            <p>India + World</p>
+          </div>
+          <span>🗺️</span>
+        </a>
 
-</div>
-<br>
-    <h2 class="section-title">Choose Your Exam</h2>
-    <div class="exam-grid">
-      <a href="quiz.html?exam=mixed" class="exam-card highlight"><div><h3>Daily Mixed</h3><p>All Exams</p></div><span>🔥</span></a>
-      <a href="quiz.html?exam=ssc" class="exam-card"><div><h3>SSC</h3><p>CGL, CHSL</p></div><span>📘</span></a>
-      <a href="quiz.html?exam=bank" class="exam-card"><div><h3>Bank</h3><p>IBPS, SBI</p></div><span>🏦</span></a>
-      <a href="quiz.html?exam=upsc" class="exam-card"><div><h3>UPSC</h3><p>Prelims</p></div><span>🇮🇳</span></a>
-      <a href="quiz.html?exam=psc" class="exam-card"><div><h3>PSC</h3><p>States</p></div><span>📜</span></a>
-      <a href="quiz.html?exam=rrb" class="exam-card"><div><h3>RRB</h3><p>Railway</p></div><span>🚆</span></a>
-      <a href="quiz.html?exam=cuet" class="exam-card"><div><h3>CUET</h3><p>General</p></div><span>🎓</span></a>
-      
-    </div>
+        <a href="#" class="exam-card" onclick="openSubject('static-gk')">
+          <div>
+            <h3>Static GK</h3>
+            <p>One-time Prep</p>
+          </div>
+          <span>🌍</span>
+        </a>
+
+      </div>
+    </section>
+
+    <section class="mt-lg">
+      <h2 class="section-title">Choose Your Exam</h2>
+      <div class="exam-grid">
+        <a href="quiz.html?exam=mixed" class="exam-card highlight"><div><h3>Daily Mixed</h3><p>All Exams</p></div><span>🔥</span></a>
+        <a href="quiz.html?exam=ssc" class="exam-card"><div><h3>SSC</h3><p>CGL, CHSL</p></div><span>📘</span></a>
+        <a href="quiz.html?exam=bank" class="exam-card"><div><h3>Bank</h3><p>IBPS, SBI</p></div><span>🏦</span></a>
+        <a href="quiz.html?exam=upsc" class="exam-card"><div><h3>UPSC</h3><p>Prelims</p></div><span>🇮🇳</span></a>
+        <a href="quiz.html?exam=psc" class="exam-card"><div><h3>PSC</h3><p>States</p></div><span>📜</span></a>
+        <a href="quiz.html?exam=rrb" class="exam-card"><div><h3>RRB</h3><p>Railway</p></div><span>🚆</span></a>
+        <a href="quiz.html?exam=cuet" class="exam-card"><div><h3>CUET</h3><p>General</p></div><span>🎓</span></a>
+      </div>
+    </section>
+
+    <section class="mt-lg">
+      <h2 class="section-title">📰 Latest Exam Updates &amp; Study Tips</h2>
+      <p class="section-desc">Handpicked articles to strengthen your daily preparation.</p>
+
+      <div class="home-blog-grid">
+        <a href="/blog/current-affairs-dec-2025-summary.html" class="home-blog-card">
+          <h3>🗓️ Current Affairs – December 2025</h3>
+          <p>Key events with exam-oriented MCQs for UPSC, SSC &amp; Bank.</p>
+          <span class="home-blog-tag">Current Affairs</span>
+        </a>
+
+        <a href="/blog/ssc-cgl-syllabus-2025.html" class="home-blog-card">
+          <h3>📘 SSC CGL 2025 Syllabus</h3>
+          <p>Latest changes, weightage &amp; smart preparation tips.</p>
+          <span class="home-blog-tag">SSC</span>
+        </a>
+
+        <a href="/blog/upsc-prelims-syllabus-2025.html" class="home-blog-card">
+          <h3>🇮🇳 UPSC Prelims Syllabus 2025</h3>
+          <p>Topic-wise breakdown for GS Paper I &amp; CSAT.</p>
+          <span class="home-blog-tag">UPSC</span>
+        </a>
+      </div>
+
+      <div class="promo-strip">
+        <h3>🎓 Fun Learning for Kids!</h3>
+        <p>Games, Worksheets &amp; Activities for Ages 3–6</p>
+        <a href="https://teachings.ai" target="_blank" rel="noopener" class="btn primary">
+          Explore Teachings.ai →
+        </a>
+      </div>
+
+      <div class="cta-center">
+        <a href="/blog/index.html" class="btn primary">View All Articles →</a>
+      </div>
+    </section>
+
+    <section class="mt-lg">
+      <h2 class="section-title">📰 Repeated Questions – Must Read</h2>
+      <p class="section-desc">Repeated verified questions from 2020 to 2025.</p>
+
+      <div class="home-blog-grid">
+        <a href="/repeated-questions/polity-cheat-code.html" class="home-blog-card">
+          <h3>📚 Polity – Repeated Questions</h3>
+          <p>25 Most Repeated Polity MCQs for UPSC/SSC</p>
+          <span class="home-blog-tag">Repeated</span>
+        </a>
+
+        <a href="/repeated-questions/geography-cheat-code.html" class="home-blog-card">
+          <h3>🌏 Geography – Repeated Questions</h3>
+          <p>20 Most Asked Map-Based &amp; Concept Questions</p>
+          <span class="home-blog-tag">Repeated</span>
+        </a>
+
+        <a href="/repeated-questions/economy-cheat-code.html" class="home-blog-card">
+          <h3>📊 Economy – Repeated Questions</h3>
+          <p>15 Budget 2025 &amp; index terms for UPSC/SSC/Bank exams.</p>
+          <span class="home-blog-tag">Cheat Code</span>
+        </a>
+      </div>
+
+      <div class="cta-center">
+        <a href="/repeated-questions/index.html" class="btn primary">View All Articles →</a>
+      </div>
+    </section>
+
+    <!-- STUDY MATERIALS -->
+    <section class="materials-section">
+      <h2 class="section-title">📚 Download Free Study Materials</h2>
+      <p class="section-desc">PDFs, notes, and cheat sheets for quick revision.</p>
+
+      <div class="materials-grid">
+        <a href="/pdfs/upsc-syllabus.pdf" class="material-card" download>
+          <div class="material-icon">📄</div>
+          <div>
+            <h3>UPSC Syllabus</h3>
+            <p>Official Prelims &amp; Mains</p>
+          </div>
+        </a>
+        <a href="/pdfs/bank-formulas.pdf" class="material-card" download>
+          <div class="material-icon">🧮</div>
+          <div>
+            <h3>Bank Exam Formulas</h3>
+            <p>Quant &amp; Reasoning</p>
+          </div>
+        </a>
+        <a href="/pdfs/ssc-gk-2025.pdf" class="material-card" download>
+          <div class="material-icon">📖</div>
+          <div>
+            <h3>SSC GK 2025</h3>
+            <p>Latest Current Affairs</p>
+          </div>
+        </a>
+        <a href="/pdfs/all-exams-calendar.pdf" class="material-card" download>
+          <div class="material-icon">🗓️</div>
+          <div>
+            <h3>Exam Calendar</h3>
+            <p>2025 Schedule (All Exams)</p>
+          </div>
+        </a>
+      </div>
+
+      <p class="materials-note">🔒 All materials are free, verified, and updated monthly.</p>
+    </section>
   </main>
-  
-  <section class="container" style="margin-top:3rem;">
-  <h2 class="section-title">📰 Latest Exam Updates & Study Tips</h2>
-  <p class="section-desc">
-    Handpicked articles to strengthen your daily preparation.
-  </p>
 
-  <div class="home-blog-grid">
-
-    <a href="/blog/current-affairs-dec-2025-summary.html" class="home-blog-card">
-      <h3>🗓️ Current Affairs – December 2025</h3>
-      <p>Key events with exam-oriented MCQs for UPSC, SSC & Bank.</p>
-      <span class="home-blog-tag">Current Affairs</span>
-    </a>
-
-    <a href="/blog/ssc-cgl-syllabus-2025.html" class="home-blog-card">
-      <h3>📘 SSC CGL 2025 Syllabus</h3>
-      <p>Latest changes, weightage & smart preparation tips.</p>
-      <span class="home-blog-tag">SSC</span>
-    </a>
-
-    <a href="/blog/upsc-prelims-syllabus-2025.html" class="home-blog-card">
-      <h3>🇮🇳 UPSC Prelims Syllabus 2025</h3>
-      <p>Topic-wise breakdown for GS Paper I & CSAT.</p>
-      <span class="home-blog-tag">UPSC</span>
-    </a>
-
-  </div>
-<div style="background:#f0f8ff;padding:15px;border-radius:10px;text-align:center;margin:20px 0;">
-  <h3 style="margin:0;">🎓 Fun Learning for Kids!</h3>
-  <p style="margin:5px 0;">Games, Worksheets & Activities for Ages 3–6</p>
-  <a href="https://teachings.ai" target="_blank" 
-     style="background:#007bff;color:white;padding:8px 16px;border-radius:5px;text-decoration:none;">
-     Explore Teachings.ai →
-  </a>
-</div>
-  <div style="text-align:center; margin-top:1.5rem;">
-    <a href="/blog/index.html" class="btn primary">
-      View All Articles →
-    </a>
-  </div>
-</section>
-<section class="container" style="margin-top:3rem;">
-  <h2 class="section-title">📰 Repeated Questions - Must Read</h2>
-  <p class="section-desc">
-    Repeated Verified questions from 2020 to 2025.
-  </p>
-<div class="home-blog-grid">
-
-    <a href="/repeated-questions/polity-cheat-code.html" class="home-blog-card">
-      <h3>📚 Polity – Repeated Questions</h3>
-      <p>25 Most Repeated Polity MCQs for UPSC/SSC</p>
-      <span class="home-blog-tag">Repeated</span>
-    </a>
-
-    <a href="/repeated-questions/geography-cheat-code.html" class="home-blog-card">
-      <h3>🌏 Geography – Repeated Questions</h3>
-      <p>20 Most Asked Map-Based & Concept Questions</p>
-      <span class="home-blog-tag">Repeated</span>
-    </a>
-    <a href="/repeated-questions/economy-cheat-code.html" class="home-blog-card">
-      <h3>📊 Economy – Repeated Questions</h3>
-      <p>15 Budget 2025 & index terms for UPSC/SSC/Bank exams.</p>
-      <span class="home-blog-tag">Cheat Code</span>
-    </a>
-
-  </div>
-
-  <div style="text-align:center; margin-top:1.5rem;">
-    <a href="/repeated-questions/index.html" class="btn primary">
-      View All Articles →
-    </a>
-  </div>
-</section>
-
-
-
-<!-- STUDY MATERIALS -->
-<section class="container materials-section">
-  <h2 class="section-title">📚 Download Free Study Materials</h2>
-  <p class="section-desc">PDFs, notes, and cheat sheets for quick revision.</p>
-
-  <div class="materials-grid">
-    <a href="/pdfs/upsc-syllabus.pdf" class="material-card" download>
-      <div class="material-icon">📄</div>
-      <div>
-        <h3>UPSC Syllabus</h3>
-        <p>Official Prelims & Mains</p>
-      </div>
-    </a>
-    <a href="/pdfs/bank-formulas.pdf" class="material-card" download>
-      <div class="material-icon">🧮</div>
-      <div>
-        <h3>Bank Exam Formulas</h3>
-        <p>Quant & Reasoning</p>
-      </div>
-    </a>
-    <a href="/pdfs/ssc-gk-2025.pdf" class="material-card" download>
-      <div class="material-icon">📖</div>
-      <div>
-        <h3>SSC GK 2025</h3>
-        <p>Latest Current Affairs</p>
-      </div>
-    </a>
-    <a href="/pdfs/all-exams-calendar.pdf" class="material-card" download>
-      <div class="material-icon">🗓️</div>
-      <div>
-        <h3>Exam Calendar</h3>
-        <p>2025 Schedule (All Exams)</p>
-      </div>
-    </a>
-  </div>
-
-  <p class="materials-note">
-    🔒 All materials are free, verified, and updated monthly.
-  </p>
-</section>
   <!-- FOOTER -->
-
-
   <footer class="site-footer">
-    © 2025 Aspirant Daily • Made for Indian Aspirants 🇮🇳
-    <a href="/privacy-policy.html">Privacy Policy</a> |
-    <a href="/terms.html">Terms</a> |
-    <a href="/contact.html">Contact</a>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="/index.html" class="brand-link">
+          <span class="brand-logo">AD</span>
+          <span class="brand-name">Aspirant<strong>Daily</strong></span>
+        </a>
+        <p>Free daily MCQ practice for Indian competitive exams — SSC, Bank, UPSC, RRB, CUET &amp; PSC. No login required.</p>
+      </div>
+      <nav class="footer-links">
+        <a href="/index.html">Home</a>
+        <a href="/blog/index.html">Blog</a>
+        <a href="/study/index.html">Study Portal</a>
+        <a href="/repeated-questions/index.html">Repeated Questions</a>
+        <a href="/exam-calendar.html">Exam Calendar</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+      <nav class="footer-links">
+        <a href="/privacy-policy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms of Service</a>
+      </nav>
+    </div>
+    <p class="footer-copyright">© 2026 Aspirant Daily • Made for Indian Aspirants 🇮🇳</p>
   </footer>
 
   <!-- INSTALL SCRIPT -->
@@ -371,7 +348,7 @@
       e.preventDefault();
       deferredPrompt = e;
       // Optional: show button only when installable
-      installBtn.style.display = "block";
+      installBtn.style.display = "inline-flex";
     });
 
     installBtn.addEventListener("click", async () => {

@@ -2,87 +2,61 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Terms of Service – AspirantDaily</title>
   <meta name="description" content="Terms of use for AspirantDaily. Free exam prep platform for Indian competitive exams." />
   <link rel="canonical" href="https://aspirantdaily.com/terms.html" />
+  <link rel="stylesheet" href="./styles.css">
   <style>
-    :root {
-      --primary: #2563eb;
-      --text: #111827;
-      --text-light: #6b7280;
-      --bg: #f9fafb;
-    }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-      padding-bottom: 2rem;
-    }
-    .container {
-      max-width: 720px;
-      margin: auto;
-      padding: 1.5rem;
-    }
-    header {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-    h1 {
-      font-size: 1.8rem;
-      color: var(--primary);
-      margin-bottom: 0.5rem;
-    }
-    h2 {
-      margin: 1.5rem 0 1rem;
-      color: var(--text);
-    }
-    p, ul {
-      margin-bottom: 1.25rem;
-    }
-    ul {
-      padding-left: 1.5rem;
-    }
-    li {
-      margin-bottom: 0.5rem;
-    }
-    .footer-link {
-      display: block;
-      text-align: center;
-      margin-top: 2rem;
-      color: var(--primary);
-      text-decoration: none;
-    }
-    .footer-link:hover {
-      text-decoration: underline;
-    }
+    /* Legal-page typography */
+    .legal-content h2 { margin: 1.5rem 0 1rem; color: var(--text); font-size: 1.15rem; }
+    .legal-content p, .legal-content ul { margin-bottom: 1.25rem; color: var(--text); line-height: 1.6; }
+    .legal-content ul { padding-left: 1.5rem; }
+    .legal-content li { margin-bottom: 0.5rem; }
   </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Terms of Service</h1>
-      <p>Last updated: December 25, 2025</p>
-    </header>
 
+  <!-- SITE HEADER / NAV -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/index.html" class="brand-link">
+        <span class="brand-logo">AD</span>
+        <span class="brand-name">Aspirant<strong>Daily</strong></span>
+      </a>
+      <nav class="site-nav">
+        <a href="/index.html">Home</a>
+        <a href="/quiz-selector.html">Practice</a>
+        <a href="/study/index.html">Study Portal</a>
+        <a href="/blog/index.html">Blog</a>
+        <a href="/exam-calendar.html">Exam Calendar</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <h1>Terms of Service</h1>
+    <p>Last updated: December 25, 2025</p>
+  </div>
+
+  <main class="container narrow mt-lg legal-content">
     <p>By accessing or using AspirantDaily (aspirantdaily.com), you agree to comply with these Terms of Service.</p>
 
     <h2>1. Acceptance of Terms</h2>
     <p>AspirantDaily provides free multiple-choice question (MCQ) practice for Indian competitive exams (UPSC, SSC, Bank, RRB, PSC). By using our site, you accept these terms.</p>
 
     <h2>2. Educational Purpose Only</h2>
-    <p>All content is for educational and informational purposes only. We do not guarantee:
-      <ul>
-        <li>Accuracy of questions or answers</li>
-        <li>That our material matches official exam patterns</li>
-        <li>Success in any competitive exam</li>
-      </ul>
-    </p>
+    <p>All content is for educational and informational purposes only. We do not guarantee:</p>
+    <ul>
+      <li>Accuracy of questions or answers</li>
+      <li>That our material matches official exam patterns</li>
+      <li>Success in any competitive exam</li>
+    </ul>
 
     <h2>3. No Warranty</h2>
-    <p>AspirantDaily is provided “as is” without warranties of any kind, either express or implied. We are not liable for any damages arising from your use of the site.</p>
+    <p>AspirantDaily is provided "as is" without warranties of any kind, either express or implied. We are not liable for any damages arising from your use of the site.</p>
 
     <h2>4. Intellectual Property</h2>
     <p>All original content (questions, explanations, blog posts) is owned by AspirantDaily. You may not reproduce, distribute, or sell our content without permission.</p>
@@ -95,8 +69,31 @@
 
     <h2>7. Contact</h2>
     <p>Questions? Email us at: <strong>support@teachings.ai</strong></p>
+  </main>
 
-    <a href="index.html" class="footer-link">← Back to Home</a>
-  </div>
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="/index.html" class="brand-link">
+          <span class="brand-logo">AD</span>
+          <span class="brand-name">Aspirant<strong>Daily</strong></span>
+        </a>
+        <p>Free daily MCQ practice for Indian competitive exams.</p>
+      </div>
+      <nav class="footer-links">
+        <a href="/index.html">Home</a>
+        <a href="/blog/index.html">Blog</a>
+        <a href="/study/index.html">Study Portal</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+      <nav class="footer-links">
+        <a href="/privacy-policy.html">Privacy Policy</a>
+        <a href="/terms.html" class="active">Terms of Service</a>
+      </nav>
+    </div>
+    <p class="footer-copyright">© 2026 Aspirant Daily • Made for Indian Aspirants 🇮🇳</p>
+  </footer>
+
 </body>
 </html>

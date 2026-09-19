@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Your Results – Aspirant Daily</title>
 
@@ -53,20 +54,30 @@
 
 <body>
 
-  <!-- HEADER -->
+  <!-- SITE HEADER / NAV -->
   <header class="site-header">
-    <h1 id="resultTitle">Your Results</h1>
+    <div class="header-inner">
+      <a href="/index.html" class="brand-link">
+        <span class="brand-logo">AD</span>
+        <span class="brand-name">Aspirant<strong>Daily</strong></span>
+      </a>
+      <nav class="site-nav">
+        <a href="/index.html">Home</a>
+        <a href="/quiz-selector.html">Practice</a>
+        <a href="/study/index.html">Study Portal</a>
+        <a href="/blog/index.html">Blog</a>
+        <a href="/exam-calendar.html">Exam Calendar</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
-<div style="background:#f0f8ff;padding:15px;border-radius:10px;text-align:center;margin:20px 0;">
-  <h3 style="margin:0;">🎓 Fun Learning for Kids!</h3>
-  <p style="margin:5px 0;">Games, Worksheets & Activities for Ages 3–6</p>
-  <a href="https://teachings.ai" target="_blank" 
-     style="background:#007bff;color:white;padding:8px 16px;border-radius:5px;text-decoration:none;">
-     Explore Teachings.ai →
-  </a>
-</div>
+
+  <div class="page-header">
+    <h1 id="resultTitle">Your Results</h1>
+  </div>
+
   <!-- MAIN -->
-  <main class="container wide">
+  <main class="container narrow">
 
     <!-- SCORE SUMMARY -->
     <section class="result-card score-card">
@@ -93,7 +104,7 @@
     <!-- CTA -->
     <div class="cta-center">
       <a href="index.html" class="btn primary large">
-        Try Again → 
+        Try Again →
       </a>
     </div>
 
@@ -101,10 +112,48 @@
 
   <!-- FOOTER -->
   <footer class="site-footer">
-    © 2025 Aspirant Daily
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="/index.html" class="brand-link">
+          <span class="brand-logo">AD</span>
+          <span class="brand-name">Aspirant<strong>Daily</strong></span>
+        </a>
+        <p>Free daily MCQ practice for Indian competitive exams — SSC, Bank, UPSC, RRB, CUET &amp; PSC.</p>
+      </div>
+      <nav class="footer-links">
+        <a href="/index.html">Home</a>
+        <a href="/blog/index.html">Blog</a>
+        <a href="/study/index.html">Study Portal</a>
+        <a href="/exam-calendar.html">Exam Calendar</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+      <nav class="footer-links">
+        <a href="/privacy-policy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms of Service</a>
+      </nav>
+    </div>
+    <p class="footer-copyright">© 2026 Aspirant Daily • Made for Indian Aspirants 🇮🇳</p>
   </footer>
 
   <script src="script.js"></script>
   <script src="js/result.js"></script>
+  <script>
+    function shareScore() {
+      const text = (document.getElementById("scoreText")?.innerText || "I just took a quiz on AspirantDaily!")
+        + " — practice free daily MCQs at https://aspirantdaily.com";
+
+      if (navigator.share) {
+        navigator.share({ title: "My AspirantDaily Score", text }).catch(() => {});
+      } else if (navigator.clipboard) {
+        navigator.clipboard.writeText(text).then(() => {
+          alert("Score copied to clipboard! Paste it anywhere to share.");
+        }).catch(() => {
+          alert(text);
+        });
+      } else {
+        alert(text);
+      }
+    }
+  </script>
 </body>
 </html>

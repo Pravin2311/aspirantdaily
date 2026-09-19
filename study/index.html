@@ -2,13 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UPSC 500-Page Master Study Portal</title>
+    <meta name="description" content="Free UPSC study portal with exam-oriented notes on Current Affairs, Polity, and Economy — Prelims facts, Mains analysis, and MCQs, zero fluff.">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
     <style>
         /* ===== CSS Variables ===== */
         :root {
-            --primary-color: #2563eb;
+            --primary-color: #4338ca;
             --secondary-color: #64748b;
             --success-color: #10b981;
             --warning-color: #f59e0b;
@@ -35,7 +38,7 @@
         /* ===== Hero Section ===== */
         .hero-header {
             position: relative;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #4338ca 0%, #3730a3 100%);
             color: white;
             padding: 4rem 0 3rem;
             overflow: hidden;
@@ -243,11 +246,30 @@
      crossorigin="anonymous"></script>
 </head>
 <body class="main-index-page">
+
+    <!-- SITE HEADER / NAV -->
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="/index.html" class="brand-link">
+          <span class="brand-logo">AD</span>
+          <span class="brand-name">Aspirant<strong>Daily</strong></span>
+        </a>
+        <nav class="site-nav">
+          <a href="/index.html">Home</a>
+          <a href="/quiz-selector.html">Practice</a>
+          <a href="/study/index.html" class="active">Study Portal</a>
+          <a href="/blog/index.html">Blog</a>
+          <a href="/repeated-questions/index.html">Repeated Qs</a>
+          <a href="/exam-calendar.html">Exam Calendar</a>
+          <a href="/contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
     <!-- Hero Section -->
     <header class="hero-header">
         <div class="hero-bg"></div>
         <div class="container hero-content">
-            <a href="../index.html" class="hero-badge">Back to HOME</a>
             <div class="hero-badge">🎯 Your UPSC Journey Starts Here</div>
             <h1 class="hero-title">UPSC<br><span class="highlight">Master Study Portal</span></h1>
             <p class="hero-subtitle">Simple • Exam-Oriented • Memory-Friendly • Zero Fluff</p>
@@ -316,7 +338,7 @@
                     <div class="card-icon">📰</div>
                     <div class="card-meta">
                         <h3>Current Affairs</h3>
-                        <span class="card-count">80 Pages</span>
+                        <span class="card-count">28 Pages</span>
                     </div>
                 </div>
                 <div class="card-body">
@@ -328,9 +350,9 @@
                     </div>
                     <div class="card-progress">
                         <div class="progress-mini">
-                            <div class="progress-mini-fill" style="width: 1.25%"></div>
+                            <div class="progress-mini-fill" style="width: 3.6%"></div>
                         </div>
-                        <span class="progress-text">1/80 completed</span>
+                        <span class="progress-text">1/28 completed</span>
                     </div>
                 </div>
                 <a href="current-affairs/index.html" class="card-cta">
@@ -347,7 +369,7 @@
                     <div class="card-icon">⚖️</div>
                     <div class="card-meta">
                         <h3>Polity</h3>
-                        <span class="card-count">60 Pages</span>
+                        <span class="card-count">Coming Soon</span>
                     </div>
                 </div>
                 <div class="card-body">
@@ -357,10 +379,7 @@
                         <span class="tag">High Weightage</span>
                     </div>
                     <div class="card-progress">
-                        <div class="progress-mini">
-                            <div class="progress-mini-fill" style="width: 0%"></div>
-                        </div>
-                        <span class="progress-text">0/60 completed</span>
+                        <span class="progress-text">🚧 Notes in progress — check back soon</span>
                     </div>
                 </div>
                 <a href="polity/index.html" class="card-cta">
@@ -377,7 +396,7 @@
                     <div class="card-icon">💰</div>
                     <div class="card-meta">
                         <h3>Economy</h3>
-                        <span class="card-count">60 Pages</span>
+                        <span class="card-count">Coming Soon</span>
                     </div>
                 </div>
                 <div class="card-body">
@@ -387,10 +406,7 @@
                         <span class="tag">Current</span>
                     </div>
                     <div class="card-progress">
-                        <div class="progress-mini">
-                            <div class="progress-mini-fill" style="width: 0%"></div>
-                        </div>
-                        <span class="progress-text">0/60 completed</span>
+                        <span class="progress-text">🚧 Notes in progress — check back soon</span>
                     </div>
                 </div>
                 <a href="economy/index.html" class="card-cta">
@@ -403,22 +419,27 @@
         </section>
     </main>
 
-    <footer class="main-footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <h3>📚 UPSC 500-Page Master Set</h3>
-                    <p>Built for Aspirants, by Aspirants</p>
-                </div>
-                <div class="footer-info">
-                    <p>Last Updated: <span id="last-updated">March 2026</span></p>
-                    <p>Total Pages: <strong>500</strong></p>
-                </div>
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <a href="/index.html" class="brand-link">
+                  <span class="brand-logo">AD</span>
+                  <span class="brand-name">Aspirant<strong>Daily</strong></span>
+                </a>
+                <p>📚 UPSC 500-Page Master Set — built for aspirants, by aspirants. Last updated <span id="last-updated">March 2026</span>, total <strong>500</strong> pages.</p>
             </div>
-            <div class="footer-bottom">
-                <p>Stay Consistent • Stay Focused • Crack UPSC 💪</p>
-            </div>
+            <nav class="footer-links">
+                <a href="/index.html">Home</a>
+                <a href="/blog/index.html">Blog</a>
+                <a href="/exam-calendar.html">Exam Calendar</a>
+                <a href="/contact.html">Contact</a>
+            </nav>
+            <nav class="footer-links">
+                <a href="/privacy-policy.html">Privacy Policy</a>
+                <a href="/terms.html">Terms of Service</a>
+            </nav>
         </div>
+        <p class="footer-copyright">Stay Consistent • Stay Focused • Crack UPSC 💪</p>
     </footer>
 
     <script>

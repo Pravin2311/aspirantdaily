@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- SEO -->
   <title>Exam Tips & Current Affairs Blog | AspirantDaily</title>
   <meta name="description" content="Free exam tips, current affairs summaries, and syllabus guides for SSC, Bank, UPSC, RRB & PSC aspirants." />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://www.aspirantdaily.com/blog/index.html" />
+  <link rel="canonical" href="https://aspirantdaily.com/blog/index.html" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
@@ -16,71 +17,9 @@
   <meta property="og:description" content="Daily current affairs, exam strategies, and syllabus updates for Indian competitive exams." />
   <meta property="og:url" content="https://aspirantdaily.com/blog/" />
 
+  <link rel="stylesheet" href="../styles.css">
   <style>
-    :root {
-      --primary: #2563eb;
-      --text: #111827;
-      --text-light: #6b7280;
-      --bg: #f9fafb;
-    }
-
-    /* ✅ CRITICAL FIX – prevents overlap */
-    *, *::before, *::after {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-    }
-
-    .container {
-      max-width: 1100px;
-      margin: auto;
-      padding: 1rem;
-    }
-
-    /* Header */
-    .site-header {
-      text-align: center;
-      padding: 2rem 1rem 1.25rem;
-    }
-
-    .site-header h1 {
-      margin-bottom: 0.5rem;
-      font-size: 2rem;
-    }
-
-    .site-header p {
-      color: var(--text-light);
-      max-width: 720px;
-      margin: auto;
-      line-height: 1.5;
-    }
-
-    /* Buttons */
-    .btn {
-      display: inline-block;
-      padding: 0.7rem 1.4rem;
-      border-radius: 999px;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 0.95rem;
-    }
-
-    .btn.primary {
-      background: var(--primary);
-      color: #fff;
-    }
-
-    .btn.light {
-      background: #e5e7eb;
-      color: #111;
-    }
-
-    /* Blog Grid */
+    /* Blog listing grid — specific to this page */
     .blog-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -89,13 +28,14 @@
     }
 
     .blog-card {
-      background: #ffffff;
+      background: var(--surface);
+      border: 1px solid var(--border);
       padding: 1.25rem;
-      border-radius: 14px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-sm);
       text-decoration: none;
       color: inherit;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
       display: flex;
       flex-direction: column;
       height: 100%;
@@ -103,27 +43,18 @@
 
     .blog-card:hover {
       transform: translateY(-4px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+      box-shadow: var(--shadow-md);
+      border-color: var(--primary-light);
     }
 
-    .blog-card h3 {
-      margin: 0 0 0.5rem;
-      font-size: 1.1rem;
-      color: var(--primary);
-    }
-
-    .blog-card p {
-      font-size: 0.95rem;
-      color: var(--text-light);
-      line-height: 1.45;
-      margin-bottom: 0.75rem;
-    }
+    .blog-card h3 { margin: 0 0 0.5rem; font-size: 1.1rem; color: var(--primary); }
+    .blog-card p { font-size: 0.95rem; color: var(--text-light); line-height: 1.45; margin-bottom: 0.75rem; }
 
     .blog-tag {
       margin-top: auto;
       display: inline-block;
-      background: #eff6ff;
-      color: var(--primary);
+      background: var(--primary-light);
+      color: var(--primary-dark);
       padding: 0.25rem 0.75rem;
       border-radius: 999px;
       font-size: 0.8rem;
@@ -131,34 +62,9 @@
       width: fit-content;
     }
 
-    /* CTA */
-    .cta-center {
-      text-align: center;
-      margin: 2.5rem 0;
-    }
-
-    /* Footer */
-    .site-footer {
-      text-align: center;
-      padding: 1.5rem 1rem;
-      font-size: 0.85rem;
-      color: var(--text-light);
-    }
-
-    /* ✅ Mobile Fix */
     @media (max-width: 600px) {
-      .site-header h1 {
-        font-size: 1.6rem;
-      }
-
-      .blog-grid {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-      }
-
-      .blog-card {
-        padding: 1rem;
-      }
+      .blog-grid { grid-template-columns: 1fr; gap: 1rem; }
+      .blog-card { padding: 1rem; }
     }
   </style>
 
@@ -190,138 +96,169 @@
 
 <body>
 
-<header class="site-header">
-  <h1>AspirantDaily Blog</h1>
-  <p>
-    Free study guides, current affairs summaries, and exam tips for
-    SSC, Bank, UPSC, RRB & PSC aspirants.
-  </p>
-</header>
+  <!-- SITE HEADER / NAV -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/index.html" class="brand-link">
+        <span class="brand-logo">AD</span>
+        <span class="brand-name">Aspirant<strong>Daily</strong></span>
+      </a>
+      <nav class="site-nav">
+        <a href="/index.html">Home</a>
+        <a href="/quiz-selector.html">Practice</a>
+        <a href="/study/index.html">Study Portal</a>
+        <a href="/blog/index.html" class="active">Blog</a>
+        <a href="/repeated-questions/index.html">Repeated Qs</a>
+        <a href="/exam-calendar.html">Exam Calendar</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<main class="container">
-
-  <!-- 🔙 Back Button -->
-  <div style="margin-bottom:1rem;">
-    <a href="../index.html" class="btn light">← Back</a>
+  <div class="page-header">
+    <h1>AspirantDaily Blog</h1>
+    <p>Free study guides, current affairs summaries, and exam tips for SSC, Bank, UPSC, RRB &amp; PSC aspirants.</p>
   </div>
 
-  <!-- Blog Cards -->
-  <section class="blog-grid">
+  <main class="container mt-lg">
 
-    <a href="top-25-current-affairs-mcqs-december-2025.html" class="blog-card">
-  <h3>🗓️ Top 25 CA MCQs – December 2025</h3>
-  <p>High-yield current affairs questions with explanations for all exams.</p>
-  <span class="blog-tag">Current Affairs</span>
-</a>
+    <!-- Blog Cards -->
+    <section class="blog-grid">
 
-    <a href="current-affairs-dec-2025-summary.html" class="blog-card">
-      <h3>🗓️ Current Affairs Summary – December 2025</h3>
-      <p>Key events from Dec 1–21, 2025 with MCQs for UPSC, SSC & Bank exams.</p>
-      <span class="blog-tag">Current Affairs</span>
-    </a>
+      <a href="top-25-current-affairs-mcqs-december-2025.html" class="blog-card">
+        <h3>🗓️ Top 25 CA MCQs – December 2025</h3>
+        <p>High-yield current affairs questions with explanations for all exams.</p>
+        <span class="blog-tag">Current Affairs</span>
+      </a>
 
-    <a href="ssc-cgl-syllabus-2025.html" class="blog-card">
-      <h3>📚 SSC CGL 2025 Syllabus & Changes</h3>
-      <p>Latest syllabus updates, exam pattern, and section-wise weightage.</p>
-      <span class="blog-tag">SSC</span>
-    </a>
+      <a href="current-affairs-dec-2025-summary.html" class="blog-card">
+        <h3>🗓️ Current Affairs Summary – December 2025</h3>
+        <p>Key events from Dec 1–21, 2025 with MCQs for UPSC, SSC &amp; Bank exams.</p>
+        <span class="blog-tag">Current Affairs</span>
+      </a>
 
-    <a href="upsc-prelims-syllabus-2025.html" class="blog-card">
-      <h3>📘 UPSC Prelims Syllabus 2025</h3>
-      <p>Complete GS Paper I & CSAT syllabus with topic-wise breakdown.</p>
-      <span class="blog-tag">UPSC</span>
-    </a>
+      <a href="ssc-cgl-syllabus-2025.html" class="blog-card">
+        <h3>📚 SSC CGL 2025 Syllabus &amp; Changes</h3>
+        <p>Latest syllabus updates, exam pattern, and section-wise weightage.</p>
+        <span class="blog-tag">SSC</span>
+      </a>
 
-    <a href="bank-exam-syllabus-2025.html" class="blog-card">
-      <h3>🏦 Bank Exam Syllabus 2025</h3>
-      <p>IBPS, SBI & RBI syllabus with section-wise preparation plan.</p>
-      <span class="blog-tag">Banking</span>
-    </a>
+      <a href="upsc-prelims-syllabus-2025.html" class="blog-card">
+        <h3>📘 UPSC Prelims Syllabus 2025</h3>
+        <p>Complete GS Paper I &amp; CSAT syllabus with topic-wise breakdown.</p>
+        <span class="blog-tag">UPSC</span>
+      </a>
 
-    <a href="rrb-syllabus-2025.html" class="blog-card">
-      <h3>🚂 RRB Syllabus 2025</h3>
-      <p>NTPC, Group D & JE syllabus with latest exam pattern.</p>
-      <span class="blog-tag">Railway</span>
-    </a>
+      <a href="bank-exam-syllabus-2025.html" class="blog-card">
+        <h3>🏦 Bank Exam Syllabus 2025</h3>
+        <p>IBPS, SBI &amp; RBI syllabus with section-wise preparation plan.</p>
+        <span class="blog-tag">Banking</span>
+      </a>
 
-    <a href="psc-syllabus-2025.html" class="blog-card">
-      <h3>🏛️ PSC Syllabus 2025</h3>
-      <p>UPPSC, MPPSC, TNPSC & other state PSC syllabus explained.</p>
-      <span class="blog-tag">State PSC</span>
-    </a>
+      <a href="rrb-syllabus-2025.html" class="blog-card">
+        <h3>🚂 RRB Syllabus 2025</h3>
+        <p>NTPC, Group D &amp; JE syllabus with latest exam pattern.</p>
+        <span class="blog-tag">Railway</span>
+      </a>
 
-    <a href="how-to-score-180-ssc-cgl-tier1.html" class="blog-card">
-      <h3>🎯 How to Score 180+ in SSC CGL Tier 1</h3>
-      <p>7 proven tips to crack SSC CGL 2025 with a high score.</p>
-      <span class="blog-tag">Strategy</span>
-    </a>
+      <a href="psc-syllabus-2025.html" class="blog-card">
+        <h3>🏛️ PSC Syllabus 2025</h3>
+        <p>UPPSC, MPPSC, TNPSC &amp; other state PSC syllabus explained.</p>
+        <span class="blog-tag">State PSC</span>
+      </a>
 
-    <a href="upsc-prelims-attempt-90-questions.html" class="blog-card">
-      <h3>🎯 UPSC Prelims: Attempt 90+ Questions Safely</h3>
-      <p>How to maximize attempts without negative marking fear.</p>
-      <span class="blog-tag">UPSC Strategy</span>
-    </a>
+      <a href="how-to-score-180-ssc-cgl-tier1.html" class="blog-card">
+        <h3>🎯 How to Score 180+ in SSC CGL Tier 1</h3>
+        <p>7 proven tips to crack SSC CGL 2025 with a high score.</p>
+        <span class="blog-tag">Strategy</span>
+      </a>
 
-    <a href="bank-exam-puzzles-5-types.html" class="blog-card">
-      <h3>🧩 Bank Exam Puzzles: 5 Types Every Year</h3>
-      <p>Master the puzzles that guarantee 25+ Reasoning marks.</p>
-      <span class="blog-tag">Banking Strategy</span>
-    </a>
+      <a href="upsc-prelims-attempt-90-questions.html" class="blog-card">
+        <h3>🎯 UPSC Prelims: Attempt 90+ Questions Safely</h3>
+        <p>How to maximize attempts without negative marking fear.</p>
+        <span class="blog-tag">UPSC Strategy</span>
+      </a>
 
-    <a href="how-to-revise-current-affairs-daily-in-20-minutes.html" class="blog-card">
-      <h3>⏱️ Revise CA in 20 Minutes Daily</h3>
-      <p>A science-backed routine to master current affairs without burnout.</p>
-      <span class="blog-tag">Current Affairs Strategy</span>
-    </a>
-    <a href="10-most-repeated-upsc-polity-questions-2020-2025.html" class="blog-card">
-      <h3>📚 10 Repeated UPSC Polity Questions (2020–2025)</h3>
-      <p>Master these to guarantee 10+ free marks in Prelims.</p>
-      <span class="blog-tag">UPSC Polity</span>
-    </a>
+      <a href="bank-exam-puzzles-5-types.html" class="blog-card">
+        <h3>🧩 Bank Exam Puzzles: 5 Types Every Year</h3>
+        <p>Master the puzzles that guarantee 25+ Reasoning marks.</p>
+        <span class="blog-tag">Banking Strategy</span>
+      </a>
 
-    <a href="top-15-banking-terms-ibps-sbi-exams.html" class="blog-card">
-      <h3>🏦 Top 15 Banking Terms for IBPS/SBI Exams</h3>
-      <p>Master these to score 15+ marks in Banking Awareness.</p>
-      <span class="blog-tag">Banking Awareness</span>
-    </a>
-    <a href="25-must-know-geography-facts-state-psc-exams.html" class="blog-card">
-      <h3>🌏 25 Must-Know Geography Facts for State PSC</h3>
-      <p>India + state-specific geography for UPPSC, MPPSC, TNPSC & more.</p>
-      <span class="blog-tag">PSC Geography</span>
-    </a>
-    <a href="ssc-cgl-vs-chsl-which-to-prepare.html" class="blog-card">
-      <h3>⚖️ SSC CGL vs CHSL: Which One to Choose?</h3>
-      <p>Compare posts, salary, difficulty, and career growth.</p>
-      <span class="blog-tag">SSC Guide</span>
-    </a>
+      <a href="how-to-revise-current-affairs-daily-in-20-minutes.html" class="blog-card">
+        <h3>⏱️ Revise CA in 20 Minutes Daily</h3>
+        <p>A science-backed routine to master current affairs without burnout.</p>
+        <span class="blog-tag">Current Affairs Strategy</span>
+      </a>
 
-    <a href="ibps-po-vs-sbi-po-salary-syllabus-career.html" class="blog-card">
-      <h3>🏦 IBPS PO vs SBI PO: Salary & Career Compared</h3>
-      <p>Which banking exam offers better pay, growth, and work life?</p>
-      <span class="blog-tag">Banking Guide</span>
-    </a>
+      <a href="10-most-repeated-upsc-polity-questions-2020-2025.html" class="blog-card">
+        <h3>📚 10 Repeated UPSC Polity Questions (2020–2025)</h3>
+        <p>Master these to guarantee 10+ free marks in Prelims.</p>
+        <span class="blog-tag">UPSC Polity</span>
+      </a>
 
-    <a href="upsc-vs-state-psc-which-is-easier.html" class="blog-card">
-      <h3>🏛️ UPSC vs State PSC: Which is Easier?</h3>
-      <p>Compare success rates, syllabus, and career paths.</p>
-      <span class="blog-tag">Civil Services Guide</span>
-    </a>
-  </section>
+      <a href="top-15-banking-terms-ibps-sbi-exams.html" class="blog-card">
+        <h3>🏦 Top 15 Banking Terms for IBPS/SBI Exams</h3>
+        <p>Master these to score 15+ marks in Banking Awareness.</p>
+        <span class="blog-tag">Banking Awareness</span>
+      </a>
 
-  
-  </section>
-  <!-- CTA -->
-  <div class="cta-center">
-    <a href="../index.html" class="btn primary">
-      → Practice Daily MCQs
-    </a>
-  </div>
+      <a href="25-must-know-geography-facts-state-psc-exams.html" class="blog-card">
+        <h3>🌏 25 Must-Know Geography Facts for State PSC</h3>
+        <p>India + state-specific geography for UPPSC, MPPSC, TNPSC &amp; more.</p>
+        <span class="blog-tag">PSC Geography</span>
+      </a>
 
-</main>
+      <a href="ssc-cgl-vs-chsl-which-to-prepare.html" class="blog-card">
+        <h3>⚖️ SSC CGL vs CHSL: Which One to Choose?</h3>
+        <p>Compare posts, salary, difficulty, and career growth.</p>
+        <span class="blog-tag">SSC Guide</span>
+      </a>
 
-<footer class="site-footer">
-  © 2025 AspirantDaily.com
-</footer>
+      <a href="ibps-po-vs-sbi-po-salary-syllabus-career.html" class="blog-card">
+        <h3>🏦 IBPS PO vs SBI PO: Salary &amp; Career Compared</h3>
+        <p>Which banking exam offers better pay, growth, and work life?</p>
+        <span class="blog-tag">Banking Guide</span>
+      </a>
+
+      <a href="upsc-vs-state-psc-which-is-easier.html" class="blog-card">
+        <h3>🏛️ UPSC vs State PSC: Which is Easier?</h3>
+        <p>Compare success rates, syllabus, and career paths.</p>
+        <span class="blog-tag">Civil Services Guide</span>
+      </a>
+    </section>
+
+    <!-- CTA -->
+    <div class="cta-center">
+      <a href="../index.html" class="btn primary">→ Practice Daily MCQs</a>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="/index.html" class="brand-link">
+          <span class="brand-logo">AD</span>
+          <span class="brand-name">Aspirant<strong>Daily</strong></span>
+        </a>
+        <p>Free daily MCQ practice for Indian competitive exams.</p>
+      </div>
+      <nav class="footer-links">
+        <a href="/index.html">Home</a>
+        <a href="/study/index.html">Study Portal</a>
+        <a href="/repeated-questions/index.html">Repeated Questions</a>
+        <a href="/exam-calendar.html">Exam Calendar</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+      <nav class="footer-links">
+        <a href="/privacy-policy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms of Service</a>
+      </nav>
+    </div>
+    <p class="footer-copyright">© 2026 AspirantDaily.com</p>
+  </footer>
 
 </body>
 </html>
