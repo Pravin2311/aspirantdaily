@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CA-34: BRICS Summit 2026 — India's Presidency | UPSC Study Notes</title>
+    <meta name="description" content="UPSC notes on the 18th BRICS Summit 2026 hosted by India in New Delhi: the New Delhi Declaration, member expansion, and outcomes for global governance and trade.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #4338ca;
+            --secondary-color: #64748b;
+            --success-color: #10b981;
+            --warning-color: #f59e0b;
+            --danger-color: #ef4444;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --border-color: #e2e8f0;
+            --shadow: 0 1px 3px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg-color); color: var(--text-primary); line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+        .study-nav { background: var(--card-bg); border-bottom: 1px solid var(--border-color); padding: 1rem 0; position: sticky; top: 0; z-index: 100; box-shadow: var(--shadow); }
+        .study-nav .container { display: flex; justify-content: space-between; align-items: center; }
+        .back-link { color: var(--primary-color); text-decoration: none; font-weight: 500; }
+        .nav-controls { display: flex; gap: 1rem; }
+        .btn-primary, .btn-secondary { padding: 0.5rem 1rem; border: none; border-radius: 6px; font-weight: 500; cursor: pointer; transition: all 0.2s; }
+        .btn-primary { background: var(--primary-color); color: white; }
+        .btn-primary:hover { background: #3730a3; }
+        .btn-secondary { background: var(--bg-color); color: var(--text-primary); border: 1px solid var(--border-color); }
+        .btn-secondary:hover { background: var(--border-color); }
+
+        .page-header { background: linear-gradient(135deg, #a78bfa 0%, #8b5cf6 100%); color: white; padding: 2rem 0; border-bottom: 1px solid var(--border-color); }
+        .breadcrumb { color: rgba(255,255,255,0.9); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .breadcrumb a { color: white; text-decoration: none; }
+        .page-header h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+        .page-subtitle { color: rgba(255,255,255,0.95); font-size: 1.125rem; margin-bottom: 1rem; }
+        .page-meta { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+        .badge { padding: 0.375rem 0.875rem; border-radius: 20px; font-size: 0.875rem; font-weight: 500; }
+        .badge-primary { background: rgba(255,255,255,0.2); color: white; }
+        .badge-secondary { background: rgba(255,255,255,0.15); color: white; }
+        .badge-warning { background: #fef3c7; color: #92400e; }
+
+        .keywords-box { background: #fef3c7; border-left: 4px solid var(--warning-color); padding: 1rem; margin: 2rem 0; border-radius: 0 8px 8px 0; font-size: 0.9rem; }
+
+        .study-section { background: var(--card-bg); border-radius: 12px; margin: 1.5rem 0; box-shadow: var(--shadow); overflow: hidden; }
+        .section-header { width: 100%; padding: 1.25rem 1.5rem; background: var(--card-bg); border: none; display: flex; align-items: center; gap: 1rem; cursor: pointer; font-size: 1.125rem; font-weight: 600; color: var(--text-primary); transition: all 0.2s; }
+        .section-header:hover { background: var(--bg-color); }
+        .section-number { font-size: 1.5rem; }
+        .toggle-icon { margin-left: auto; transition: transform 0.3s; }
+        .section-header.collapsed .toggle-icon { transform: rotate(-90deg); }
+        .section-content { max-height: 4000px; overflow: hidden; transition: max-height 0.3s ease; }
+        .section-content.collapsed { max-height: 0; }
+        .content-box { padding: 1.5rem; }
+
+        .simple-list, .bullet-list, .numbered-list { margin: 1rem 0; padding-left: 1.5rem; }
+        .simple-list li, .bullet-list li { margin: 0.75rem 0; line-height: 1.7; }
+        .bullet-list li { list-style: disc; }
+        .numbered-list li { list-style: decimal; margin: 1rem 0; }
+
+        .prelims-box { background: #eef2ff; border-radius: 8px; padding: 1.5rem; }
+        .fact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+        .fact-item { background: white; padding: 1rem; border-radius: 8px; text-align: center; }
+        .fact-label { display: block; color: var(--text-secondary); font-size: 0.875rem; margin-bottom: 0.25rem; }
+        .fact-value { display: block; font-weight: 700; color: var(--primary-color); font-size: 1.125rem; }
+        .highlight-box { background: #fef3c7; border-left: 4px solid var(--warning-color); padding: 1rem; margin-top: 1rem; border-radius: 0 8px 8px 0; }
+
+        .mains-box { background: #f8fafc; }
+        .mains-subsection { margin: 1.5rem 0; padding: 1.25rem; background: white; border-radius: 8px; }
+        .mains-subsection h4 { color: var(--primary-color); margin-bottom: 0.75rem; font-size: 1rem; }
+
+        .case-study { background: #f0fdf4; border: 1px solid #86efac; border-radius: 8px; padding: 1.25rem; margin: 1rem 0; }
+        .case-study h4 { color: #166534; margin-bottom: 0.75rem; }
+
+        .mcq-box { background: #fefce8; }
+        .mcq-item { background: white; padding: 1.5rem; border-radius: 8px; margin: 1rem 0; }
+        .mcq-question { margin-bottom: 1rem; line-height: 1.7; }
+        .mcq-options { display: flex; flex-direction: column; gap: 0.5rem; margin: 1rem 0; }
+        .mcq-options label { display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem; border-radius: 6px; cursor: pointer; transition: background 0.2s; }
+        .mcq-options label:hover { background: var(--bg-color); }
+        .mcq-answer { display: none; background: #f0fdf4; border-left: 4px solid var(--success-color); padding: 1rem; margin: 1rem 0; border-radius: 0 8px 8px 0; }
+        .mcq-answer.show { display: block; }
+        .btn-show-answer { background: var(--primary-color); color: white; border: none; padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: 500; margin-top: 0.5rem; }
+        .btn-show-answer:hover { background: #3730a3; }
+
+        .revision-box { background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); border-radius: 8px; padding: 1.5rem; }
+        .revision-list { list-style: none; padding: 0; }
+        .revision-list li { padding: 0.5rem 0; border-bottom: 1px solid rgba(0,0,0,0.1); }
+        .revision-list li:last-child { border-bottom: none; }
+        .mnemonic-box { background: white; padding: 1rem; border-radius: 8px; margin: 1rem 0; font-family: 'Courier New', monospace; }
+        .warning-list { list-style: none; padding: 0; }
+        .warning-list li { padding: 0.5rem; background: #fee2e2; margin: 0.5rem 0; border-radius: 6px; color: #991b1b; }
+
+        .page-navigation { display: flex; justify-content: space-between; gap: 1rem; margin: 2rem 0; flex-wrap: wrap; }
+        .nav-btn { flex: 1; min-width: 150px; padding: 1rem; text-align: center; background: var(--card-bg); border: 2px solid var(--border-color); border-radius: 8px; text-decoration: none; color: var(--text-primary); font-weight: 500; cursor: pointer; transition: all 0.2s; }
+        .nav-btn:hover { border-color: var(--primary-color); color: var(--primary-color); }
+        .btn-success { background: var(--success-color); color: white; border-color: var(--success-color); }
+        .btn-success:hover { background: #059669; color: white; }
+
+        .page-footer { background: var(--bg-color); color: var(--text-secondary); border-top: 1px solid var(--border-color); padding: 2rem 0; text-align: center; margin-top: 3rem; }
+        .intro-box { background: #f0f9ff; border-left: 4px solid var(--primary-color); padding: 1.5rem; border-radius: 0 8px 8px 0; }
+
+        @media (max-width: 768px) {
+            .page-header h1 { font-size: 1.5rem; }
+            .section-header { font-size: 1rem; padding: 1rem; }
+            .fact-grid { grid-template-columns: 1fr; }
+            .page-navigation { flex-direction: column; }
+        }
+        @media print {
+            .study-nav, .page-navigation, .btn-show-answer { display: none !important; }
+            .section-content { max-height: none !important; }
+            .toggle-icon { display: none; }
+            body { background: white; }
+            .study-section { break-inside: avoid; box-shadow: none; border: 1px solid #ddd; }
+        }
+    </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-51XLJE4TVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-51XLJE4TVH');
+  </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327"
+     crossorigin="anonymous"></script>
+</head>
+<body class="study-page">
+    <nav class="study-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Current Affairs Index</a>
+            <div class="nav-controls">
+                <button onclick="toggleAllSections()" class="btn-secondary">Expand/Collapse All</button>
+                <button onclick="window.print()" class="btn-primary">📄 Print/Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../index.html">Home</a> /
+                <a href="index.html">Current Affairs</a> /
+                <span>CA-34</span>
+            </div>
+            <h1>🌐 BRICS Summit 2026 — India's Presidency</h1>
+            <p class="page-subtitle">18th BRICS Summit • New Delhi Declaration • 150+ Practical Outcomes</p>
+            <div class="page-meta">
+                <span class="badge badge-primary">High Yield</span>
+                <span class="badge badge-secondary">IR + Economy</span>
+                <span class="badge badge-warning">⚡ India's BRICS Chairship</span>
+                <span class="badge badge-secondary">📅 Last updated: Sep 2026</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="keywords-box">
+            <strong>🔍 Quick Search:</strong>
+            BRICS Summit 2026 UPSC, New Delhi Declaration BRICS, India BRICS presidency 2026, 18th BRICS summit outcomes
+        </section>
+
+        <section class="study-section collapsible" data-section="1">
+            <button class="section-header" onclick="toggleSection(1)">
+                <span class="section-number">1️⃣</span>
+                <span class="section-title">Introduction (Simple)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-1">
+                <div class="content-box intro-box">
+                    <ul class="simple-list">
+
+                        <li><strong>What happened?</strong> → India hosted the <strong>18th BRICS Summit</strong> at Bharat Mandapam, New Delhi, on <strong>12–13 September 2026</strong>, as BRICS chair for the year.</li>
+                        <li><strong>Members Present:</strong> All <strong>11 BRICS members</strong> — Brazil, Russia, India, China, South Africa, Egypt, Ethiopia, Indonesia, Iran, Saudi Arabia, and the UAE.</li>
+                        <li><strong>Key Outcome:</strong> Unanimous adoption of the <strong>New Delhi Declaration</strong>, a 140-paragraph consensus document, after intense overnight negotiations (talks reportedly ran until ~4 AM).</li>
+                        <li><strong>Scale of Outcomes:</strong> India's BRICS chairship produced <strong>150+ practical outcomes</strong> spanning MSMEs, startups, digital infrastructure, agriculture, health, and global governance reform.</li>
+                        <li><strong>Why important for UPSC?</strong> → A textbook GS-2 international relations/multilateralism topic — tests India's diplomatic balancing skills, the expanded BRICS bloc's cohesion challenges, and Global South representation themes.</li>
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="study-section collapsible" data-section="2">
+            <button class="section-header" onclick="toggleSection(2)">
+                <span class="section-number">2️⃣</span>
+                <span class="section-title">Key Concepts (Bullet Points)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-2">
+                <div class="content-box">
+
+                    <h3>📌 Summit Basics</h3>
+                    <ul class="bullet-list">
+                        <li><strong>Edition:</strong> 18th BRICS Summit.</li>
+                        <li><strong>Dates &amp; Venue:</strong> 12–13 September 2026, Bharat Mandapam, New Delhi.</li>
+                        <li><strong>Host:</strong> Prime Minister Narendra Modi, as India held the BRICS chairship for 2026.</li>
+                        <li><strong>Expanded Membership (11 nations):</strong> Brazil, Russia, India, China, South Africa (founding BRICS/BRICS-5) + Egypt, Ethiopia, Indonesia, Iran, Saudi Arabia, UAE (post-2024 expansion members).</li>
+                    </ul>
+
+                    <h3>📌 The New Delhi Declaration</h3>
+                    <ul class="bullet-list">
+                        <li><strong>Length &amp; Adoption:</strong> A 140-paragraph consensus document, adopted unanimously by all 11 members on 13 September 2026.</li>
+                        <li><strong>Core Commitments:</strong> Reforming global financial institutions, accelerating <strong>local-currency trade settlement</strong>, establishing democratic guardrails for artificial intelligence, and launching practical cooperation mechanisms in agriculture, health, energy, and entrepreneurship.</li>
+                        <li><strong>Language on Conflicts:</strong> Called for <strong>restraint and de-escalation</strong>, peaceful dispute resolution, and stronger multilateralism — without singling out any one party, similar in diplomatic style to the G20 Delhi Declaration's Ukraine language in 2023.</li>
+                        <li><strong>Global South Emphasis:</strong> Declaration emphasised a stronger role for the Global South in global economic decision-making, and supported India and Brazil's aspirations for a greater role in the UN system (UNSC reform).</li>
+                    </ul>
+
+                    <h3>📌 Negotiation Dynamics</h3>
+                    <ul class="bullet-list">
+                        <li><strong>Sticking Point:</strong> Language related to the conflict in West Asia proved the toughest sticking point, with Iran and the UAE — both BRICS members with opposing regional positions — eventually agreeing to compromise language.</li>
+                        <li><strong>India's Role:</strong> Indian diplomats worked through the night to build consensus, reflecting India's now-established playbook (also seen at G20 2023) of bridge-building among divergent geopolitical blocs.</li>
+                    </ul>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="study-section collapsible" data-section="3">
+            <button class="section-header" onclick="toggleSection(3)">
+                <span class="section-number">3️⃣</span>
+                <span class="section-title">Important Facts for Prelims</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-3">
+                <div class="content-box prelims-box">
+                    <div class="fact-grid">
+
+                        <div class="fact-item"><span class="fact-label">Summit Edition</span><span class="fact-value">18th BRICS</span></div>
+                        <div class="fact-item"><span class="fact-label">Dates</span><span class="fact-value">12–13 Sep 2026</span></div>
+                        <div class="fact-item"><span class="fact-label">Members</span><span class="fact-value">11 nations</span></div>
+                        <div class="fact-item"><span class="fact-label">Practical Outcomes</span><span class="fact-value">150+</span></div>
+
+                    </div>
+
+                    <h3>✅ Quick Facts</h3>
+                    <ul class="bullet-list">
+
+                        <li><strong>Venue:</strong> Bharat Mandapam, New Delhi (same venue as G20 2023)</li>
+                        <li><strong>Declaration length:</strong> 140 paragraphs</li>
+                        <li><strong>Toughest issue:</strong> West Asia conflict language (Iran–UAE compromise)</li>
+                        <li><strong>UN reform:</strong> Declaration backed India &amp; Brazil's UNSC aspirations</li>
+                        <li><strong>Host:</strong> PM Narendra Modi, as 2026 BRICS chair</li>
+
+                    </ul>
+
+                    <h3>✅ Key Numbers</h3>
+                    <ul class="bullet-list">
+
+                        <li>11 member nations adopted the Declaration unanimously</li>
+                        <li>140 paragraphs in the New Delhi Declaration</li>
+                        <li>150+ practical outcomes produced across India's chairship year</li>
+                        <li>Negotiations reportedly continued until ~4 AM to reach consensus</li>
+
+                    </ul>
+
+                    <div class="highlight-box">
+                        <strong>💡 Prelims Trap:</strong> BRICS now has <strong>11 members</strong> after the 2024 expansion (Egypt, Ethiopia, Indonesia, Iran, Saudi Arabia, UAE joined the original 5) — do not answer with the old "BRICS = 5 nations" figure, a common outdated-fact trap.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">Detailed Explanation for Mains</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
+                <div class="content-box mains-box">
+                    <h3>🎯 BRICS Summit 2026: India's Diplomatic Balancing Act</h3>
+
+                    <div class="mains-subsection">
+                        <h4>🔹 Managing an Ideologically Diverse Bloc</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Expanded Complexity:</strong> With 11 members spanning very different political systems and regional rivalries (e.g., Iran vs. UAE/Saudi Arabia on West Asia, China vs. India on border issues), consensus-building is far harder than in the original BRICS-5.</li>
+                            <li><strong>India's Bridge-Builder Role:</strong> Successfully securing unanimous adoption despite overnight negotiations reinforces India's positioning as a credible convenor across geopolitical divides — building on the G20 2023 precedent.</li>
+                        </ul>
+                    </div>
+
+                    <div class="mains-subsection">
+                        <h4>🔹 De-dollarization and Local-Currency Trade</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Commitment:</strong> The Declaration accelerates local-currency trade settlement among members, continuing a multi-year BRICS push to reduce dependence on the US dollar for intra-BRICS trade.</li>
+                            <li><strong>India's Calibrated Position:</strong> India has consistently supported local-currency settlement mechanisms while resisting more radical proposals (e.g., a common BRICS currency), balancing bloc solidarity with its own strategic ties to the West.</li>
+                        </ul>
+                    </div>
+
+                    <div class="mains-subsection">
+                        <h4>🔹 AI Governance Guardrails: A New BRICS Frontier</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Significance:</strong> Establishing "democratic guardrails" for AI in the Declaration shows BRICS extending its agenda beyond traditional economic/financial themes into emerging technology governance — paralleling India's own AI Impact Summit just months earlier in February 2026.</li>
+                            <li><strong>Strategic Continuity:</strong> Reinforces 2026 as a year in which India positioned itself as a serial convenor on both AI governance and multipolar economic reform.</li>
+                        </ul>
+                    </div>
+
+                    <div class="mains-subsection">
+                        <h4>🔹 Challenges &amp; Way Forward</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Implementation Gap:</strong> Like the G20 Delhi Declaration, this is a political consensus document, not a binding treaty — translating 150+ outcomes into measurable results requires sustained follow-through beyond India's chairship year.</li>
+                            <li><strong>Way Forward:</strong> Institutionalise the practical cooperation mechanisms (MSME, startup, digital infrastructure) launched in 2026; monitor local-currency settlement uptake; continue India's calibrated, non-aligned diplomatic posture within an increasingly assertive bloc.</li>
+                        </ul>
+                    </div>
+
+                    <div class="mains-subsection">
+                        <h4 style="color: var(--primary-color);">🔹 Mains Answer Framework</h4>
+                        <ol class="numbered-list">
+
+                            <li><strong>Contextualize:</strong> BRICS's evolution from a 5-nation economic grouping to an 11-nation bloc with growing geopolitical ambitions.</li>
+                            <li><strong>Analyze Outcomes:</strong> New Delhi Declaration's financial-institution reform, local-currency trade, AI guardrails, and 150+ practical cooperation outcomes.</li>
+                            <li><strong>Critically Evaluate:</strong> Consensus difficulty in an ideologically diverse bloc; non-binding nature; India's balancing act between BRICS solidarity and Western strategic ties.</li>
+                            <li><strong>Way Forward:</strong> Institutionalise cooperation mechanisms; sustain the bridge-builder diplomatic model beyond the chairship year.</li>
+
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)">
+                <span class="section-number">5️⃣</span>
+                <span class="section-title">Examples / Case Studies</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-5">
+                <div class="content-box">
+
+                    <div class="case-study">
+                        <h4>📌 Case 1: The Iran–UAE Compromise on West Asia Language</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Context:</strong> Iran and the UAE hold opposing regional positions on West Asia conflicts, threatening to block consensus on the Declaration's text.</li>
+                            <li><strong>Outcome:</strong> Both sides accepted carefully balanced language calling for "restraint, de-escalation, and peaceful resolution" without assigning blame.</li>
+                            <li><strong>UPSC Link:</strong> Diplomatic consensus-building + India's convenor role + comparative parallel with G20 2023's Ukraine-language compromise.</li>
+                        </ul>
+                    </div>
+
+                    <div class="case-study">
+                        <h4>📌 Case 2: Local-Currency Trade Settlement</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Context:</strong> BRICS nations have pushed for years to reduce dollar dependence in intra-bloc trade.</li>
+                            <li><strong>Outcome:</strong> The New Delhi Declaration commits to accelerating local-currency settlement mechanisms, short of a common currency.</li>
+                            <li><strong>UPSC Link:</strong> GS-3 international trade and finance + India's calibrated de-dollarization stance.</li>
+                        </ul>
+                    </div>
+
+                    <div class="case-study">
+                        <h4>📌 Case 3: From G20 2023 to AI Impact Summit 2026 to BRICS 2026 — India's Convenor Playbook</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Context:</strong> Within three years, India hosted the G20 (2023), the AI Impact Summit (Feb 2026), and the BRICS Summit (Sep 2026) — all at Bharat Mandapam.</li>
+                            <li><strong>Outcome:</strong> A consistent pattern of India bridging divergent global blocs (developed vs. developing nations; rival regional powers) toward consensus documents.</li>
+                            <li><strong>UPSC Link:</strong> India's rising multilateral diplomatic capital + comparative analysis across summits (a high-value Mains linkage question type).</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)">
+                <span class="section-number">6️⃣</span>
+                <span class="section-title">5 MCQs with Answers</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-6">
+                <div class="content-box mcq-box">
+
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q1.</strong> The 18th BRICS Summit (2026) was hosted by India at which venue?</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q1" value="a"> (a) Rashtrapati Bhavan</label>
+                            <label><input type="radio" name="q1" value="b"> (b) Bharat Mandapam</label>
+                            <label><input type="radio" name="q1" value="c"> (c) Vigyan Bhawan</label>
+                            <label><input type="radio" name="q1" value="d"> (d) Hyderabad House</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q1">
+                            <p><strong>✅ Answer:</strong> (b) Bharat Mandapam</p>
+                            <p><strong>💡 Explanation:</strong> The same New Delhi venue that hosted the G20 Summit in 2023 also hosted BRICS 2026 and the AI Impact Summit earlier that year.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q1')">Show Answer</button>
+                    </div>
+
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q2.</strong> As of the 2026 Summit, how many nations are members of BRICS?</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q2" value="a"> (a) 5</label>
+                            <label><input type="radio" name="q2" value="b"> (b) 9</label>
+                            <label><input type="radio" name="q2" value="c"> (c) 11</label>
+                            <label><input type="radio" name="q2" value="d"> (d) 15</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q2">
+                            <p><strong>✅ Answer:</strong> (c) 11</p>
+                            <p><strong>💡 Explanation:</strong> The original BRICS-5 (Brazil, Russia, India, China, South Africa) expanded in 2024 to include Egypt, Ethiopia, Indonesia, Iran, Saudi Arabia, and the UAE.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q2')">Show Answer</button>
+                    </div>
+
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q3.</strong> The consensus document adopted at the conclusion of the 2026 BRICS Summit is known as:</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q3" value="a"> (a) The Delhi Declaration</label>
+                            <label><input type="radio" name="q3" value="b"> (b) The New Delhi Declaration</label>
+                            <label><input type="radio" name="q3" value="c"> (c) The Bharat Mandapam Accord</label>
+                            <label><input type="radio" name="q3" value="d"> (d) The BRICS Consensus Charter</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q3">
+                            <p><strong>✅ Answer:</strong> (b) The New Delhi Declaration</p>
+                            <p><strong>💡 Explanation:</strong> Note the naming similarity but distinction from the "Delhi Declaration" of the G20 Summit 2023 — a common source of confusion in MCQs.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q3')">Show Answer</button>
+                    </div>
+
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q4.</strong> Which two BRICS member nations' differences over West Asia posed the toughest challenge to consensus at the 2026 Summit?</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q4" value="a"> (a) Russia and China</label>
+                            <label><input type="radio" name="q4" value="b"> (b) India and China</label>
+                            <label><input type="radio" name="q4" value="c"> (c) Iran and the UAE</label>
+                            <label><input type="radio" name="q4" value="d"> (d) Brazil and South Africa</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q4">
+                            <p><strong>✅ Answer:</strong> (c) Iran and the UAE</p>
+                            <p><strong>💡 Explanation:</strong> Their opposing regional positions required overnight negotiations before a compromise text on the West Asia conflict was accepted.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q4')">Show Answer</button>
+                    </div>
+
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q5.</strong> The New Delhi Declaration (BRICS 2026) supported the aspirations of which two nations for a greater role in the UN system?</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q5" value="a"> (a) India and Brazil</label>
+                            <label><input type="radio" name="q5" value="b"> (b) India and China</label>
+                            <label><input type="radio" name="q5" value="c"> (c) Russia and China</label>
+                            <label><input type="radio" name="q5" value="d"> (d) South Africa and Egypt</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q5">
+                            <p><strong>✅ Answer:</strong> (a) India and Brazil</p>
+                            <p><strong>💡 Explanation:</strong> Both are long-standing aspirants for permanent UN Security Council seats (alongside Germany and Japan in the wider "G4" grouping).</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q5')">Show Answer</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)">
+                <span class="section-number">7️⃣</span>
+                <span class="section-title">Quick Revision Notes</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-7">
+                <div class="content-box revision-box">
+                    <h3>🔁 BRICS Summit 2026 — India's Presidency in 10 Seconds</h3>
+                    <ul class="revision-list">
+
+                        <li><strong>Edition:</strong> 18th BRICS Summit | <strong>Dates:</strong> 12–13 Sep 2026 | <strong>Venue:</strong> Bharat Mandapam</li>
+                        <li><strong>Members:</strong> 11 nations (BRICS-5 + Egypt, Ethiopia, Indonesia, Iran, Saudi Arabia, UAE)</li>
+                        <li><strong>Declaration:</strong> New Delhi Declaration, 140 paragraphs, unanimous adoption</li>
+                        <li><strong>Toughest issue:</strong> Iran–UAE compromise on West Asia language</li>
+                        <li><strong>Key commitments:</strong> Financial institution reform, local-currency trade, AI guardrails</li>
+                        <li><strong>Scale:</strong> 150+ practical outcomes across India's chairship year</li>
+                        <li><strong>UN linkage:</strong> Backed India &amp; Brazil's UNSC aspirations</li>
+
+                    </ul>
+
+                    <h3>🧠 Mnemonic: "BRICS DELHI"</h3>
+                    <div class="mnemonic-box">
+
+                        <p><strong>B</strong> → Bharat Mandapam venue, same as G20 2023</p>
+                        <p><strong>R</strong> → Reform of global financial institutions committed to</p>
+                        <p><strong>I</strong> → Iran–UAE compromise on West Asia language</p>
+                        <p><strong>C</strong> → Currency: local-currency trade settlement accelerated</p>
+                        <p><strong>S</strong> → Sep 12–13, 2026: summit dates</p>
+                        <br>
+                        <p><strong>D</strong> → Declaration: New Delhi Declaration, 140 paragraphs</p>
+                        <p><strong>E</strong> → Eleven members (post-2024 expansion)</p>
+                        <p><strong>L</strong> → Local-currency + AI guardrails = new-age BRICS agenda</p>
+                        <p><strong>H</strong> → Host: PM Modi, India's 2026 chairship</p>
+                        <p><strong>I</strong> → India &amp; Brazil's UNSC aspirations backed</p>
+
+                    </div>
+
+                    <h3>📌 Prelims Traps to Avoid</h3>
+                    <ul class="warning-list">
+
+                        <li>✘ BRICS has <strong>11</strong> members now, not the old figure of 5</li>
+                        <li>✘ Don't confuse the <strong>"New Delhi Declaration"</strong> (BRICS 2026) with the <strong>"Delhi Declaration"</strong> (G20 2023) — similar names, different summits</li>
+                        <li>✘ The New Delhi Declaration is a <strong>political consensus document</strong>, not a binding treaty</li>
+                        <li>✘ The toughest negotiation issue was <strong>West Asia</strong> language (Iran–UAE), not Ukraine</li>
+
+                    </ul>
+
+                    <h3>🎯 Mains One-Liners</h3>
+                    <ul class="bullet-list">
+
+                        <li>"New Delhi Declaration = consensus across an ideologically diverse 11-member bloc, achieved through overnight diplomacy"</li>
+                        <li>"Local-currency trade settlement = calibrated de-dollarization, short of a common BRICS currency"</li>
+                        <li>"AI guardrails in a BRICS declaration = the bloc's agenda expanding beyond economics into technology governance"</li>
+                        <li>"From G20 2023 to AI Impact Summit 2026 to BRICS 2026 = India's consistent convenor diplomacy at Bharat Mandapam"</li>
+                        <li>"150+ outcomes test India's ability to institutionalise cooperation beyond its one-year chairship"</li>
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="page-navigation">
+            <a href="index.html" class="nav-btn">← Back to Current Affairs Index</a>
+            <button onclick="markAsComplete('CA-34')" class="nav-btn btn-success">✓ Mark as Complete</button>
+            <span class="nav-btn" style="opacity:0.5;">You're all caught up! 🎉</span>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>📄 Page Code: <strong>CA-34</strong> | Subject: Current Affairs + International Relations + Economy</p>
+            <p>🔗 Link to Syllabus: GS-2 (International Relations, Multilateral Groupings), Essay</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleSection(sectionNum) {
+            const section = document.querySelector(`[data-section="${sectionNum}"]`);
+            const content = document.getElementById(`section-${sectionNum}`);
+            const header = section.querySelector('.section-header');
+            if (content.classList.contains('collapsed')) {
+                content.classList.remove('collapsed');
+                header.classList.remove('collapsed');
+            } else {
+                content.classList.add('collapsed');
+                header.classList.add('collapsed');
+            }
+        }
+        function toggleAllSections() {
+            const sections = document.querySelectorAll('.study-section');
+            const allCollapsed = Array.from(sections).every(s => s.querySelector('.section-content').classList.contains('collapsed'));
+            sections.forEach(section => {
+                const content = section.querySelector('.section-content');
+                const header = section.querySelector('.section-header');
+                if (allCollapsed) { content.classList.remove('collapsed'); header.classList.remove('collapsed'); }
+                else { content.classList.add('collapsed'); header.classList.add('collapsed'); }
+            });
+        }
+        function showAnswer(questionId) {
+            const answerDiv = document.getElementById(`answer-${questionId}`);
+            const btn = event.target;
+            if (answerDiv.classList.contains('show')) { answerDiv.classList.remove('show'); btn.textContent = 'Show Answer'; }
+            else { answerDiv.classList.add('show'); btn.textContent = 'Hide Answer'; }
+        }
+        function markAsComplete(pageCode) {
+            let completed = JSON.parse(localStorage.getItem('completedPages') || '[]');
+            if (!completed.includes(pageCode)) {
+                completed.push(pageCode);
+                localStorage.setItem('completedPages', JSON.stringify(completed));
+                const btn = event.target;
+                btn.textContent = '✓ Completed!';
+                btn.style.background = '#059669';
+                if (window.opener) { try { window.opener.updateMainProgress?.(); } catch(e) {} }
+            }
+        }
+        document.addEventListener('DOMContentLoaded', function() {
+            const first = document.querySelector('[data-section="1"]');
+            if (first) setTimeout(() => toggleSection(1), 300);
+        });
+        document.addEventListener('keydown', function(e) {
+            if ((e.ctrlKey || e.metaKey) && e.key === 'p') { e.preventDefault(); window.print(); }
+            if (e.key === ' ' && e.target === document.body) { e.preventDefault(); const f = document.querySelector('[data-section="1"]'); if (f) toggleSection(1); }
+        });
+    </script>
+</body>
+</html>

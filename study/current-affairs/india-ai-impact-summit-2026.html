@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CA-30: India AI Impact Summit 2026 | UPSC Study Notes</title>
+    <meta name="description" content="UPSC notes on the India AI Impact Summit 2026: the New Delhi Declaration on AI, $200B+ investment pledges, and India's leadership in global AI governance.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #4338ca;
+            --secondary-color: #64748b;
+            --success-color: #10b981;
+            --warning-color: #f59e0b;
+            --danger-color: #ef4444;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --border-color: #e2e8f0;
+            --shadow: 0 1px 3px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg-color); color: var(--text-primary); line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+        .study-nav { background: var(--card-bg); border-bottom: 1px solid var(--border-color); padding: 1rem 0; position: sticky; top: 0; z-index: 100; box-shadow: var(--shadow); }
+        .study-nav .container { display: flex; justify-content: space-between; align-items: center; }
+        .back-link { color: var(--primary-color); text-decoration: none; font-weight: 500; }
+        .nav-controls { display: flex; gap: 1rem; }
+        .btn-primary, .btn-secondary { padding: 0.5rem 1rem; border: none; border-radius: 6px; font-weight: 500; cursor: pointer; transition: all 0.2s; }
+        .btn-primary { background: var(--primary-color); color: white; }
+        .btn-primary:hover { background: #3730a3; }
+        .btn-secondary { background: var(--bg-color); color: var(--text-primary); border: 1px solid var(--border-color); }
+        .btn-secondary:hover { background: var(--border-color); }
+
+        .page-header { background: linear-gradient(135deg, #0ea5e9 0%, #0369a1 100%); color: white; padding: 2rem 0; border-bottom: 1px solid var(--border-color); }
+        .breadcrumb { color: rgba(255,255,255,0.9); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .breadcrumb a { color: white; text-decoration: none; }
+        .page-header h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+        .page-subtitle { color: rgba(255,255,255,0.95); font-size: 1.125rem; margin-bottom: 1rem; }
+        .page-meta { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+        .badge { padding: 0.375rem 0.875rem; border-radius: 20px; font-size: 0.875rem; font-weight: 500; }
+        .badge-primary { background: rgba(255,255,255,0.2); color: white; }
+        .badge-secondary { background: rgba(255,255,255,0.15); color: white; }
+        .badge-warning { background: #fef3c7; color: #92400e; }
+
+        .keywords-box { background: #fef3c7; border-left: 4px solid var(--warning-color); padding: 1rem; margin: 2rem 0; border-radius: 0 8px 8px 0; font-size: 0.9rem; }
+
+        .study-section { background: var(--card-bg); border-radius: 12px; margin: 1.5rem 0; box-shadow: var(--shadow); overflow: hidden; }
+        .section-header { width: 100%; padding: 1.25rem 1.5rem; background: var(--card-bg); border: none; display: flex; align-items: center; gap: 1rem; cursor: pointer; font-size: 1.125rem; font-weight: 600; color: var(--text-primary); transition: all 0.2s; }
+        .section-header:hover { background: var(--bg-color); }
+        .section-number { font-size: 1.5rem; }
+        .toggle-icon { margin-left: auto; transition: transform 0.3s; }
+        .section-header.collapsed .toggle-icon { transform: rotate(-90deg); }
+        .section-content { max-height: 4000px; overflow: hidden; transition: max-height 0.3s ease; }
+        .section-content.collapsed { max-height: 0; }
+        .content-box { padding: 1.5rem; }
+
+        .simple-list, .bullet-list, .numbered-list { margin: 1rem 0; padding-left: 1.5rem; }
+        .simple-list li, .bullet-list li { margin: 0.75rem 0; line-height: 1.7; }
+        .bullet-list li { list-style: disc; }
+        .numbered-list li { list-style: decimal; margin: 1rem 0; }
+
+        .prelims-box { background: #eef2ff; border-radius: 8px; padding: 1.5rem; }
+        .fact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+        .fact-item { background: white; padding: 1rem; border-radius: 8px; text-align: center; }
+        .fact-label { display: block; color: var(--text-secondary); font-size: 0.875rem; margin-bottom: 0.25rem; }
+        .fact-value { display: block; font-weight: 700; color: var(--primary-color); font-size: 1.125rem; }
+        .highlight-box { background: #fef3c7; border-left: 4px solid var(--warning-color); padding: 1rem; margin-top: 1rem; border-radius: 0 8px 8px 0; }
+
+        .mains-box { background: #f8fafc; }
+        .mains-subsection { margin: 1.5rem 0; padding: 1.25rem; background: white; border-radius: 8px; }
+        .mains-subsection h4 { color: var(--primary-color); margin-bottom: 0.75rem; font-size: 1rem; }
+
+        .case-study { background: #f0fdf4; border: 1px solid #86efac; border-radius: 8px; padding: 1.25rem; margin: 1rem 0; }
+        .case-study h4 { color: #166534; margin-bottom: 0.75rem; }
+
+        .mcq-box { background: #fefce8; }
+        .mcq-item { background: white; padding: 1.5rem; border-radius: 8px; margin: 1rem 0; }
+        .mcq-question { margin-bottom: 1rem; line-height: 1.7; }
+        .mcq-options { display: flex; flex-direction: column; gap: 0.5rem; margin: 1rem 0; }
+        .mcq-options label { display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem; border-radius: 6px; cursor: pointer; transition: background 0.2s; }
+        .mcq-options label:hover { background: var(--bg-color); }
+        .mcq-answer { display: none; background: #f0fdf4; border-left: 4px solid var(--success-color); padding: 1rem; margin: 1rem 0; border-radius: 0 8px 8px 0; }
+        .mcq-answer.show { display: block; }
+        .btn-show-answer { background: var(--primary-color); color: white; border: none; padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: 500; margin-top: 0.5rem; }
+        .btn-show-answer:hover { background: #3730a3; }
+
+        .revision-box { background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); border-radius: 8px; padding: 1.5rem; }
+        .revision-list { list-style: none; padding: 0; }
+        .revision-list li { padding: 0.5rem 0; border-bottom: 1px solid rgba(0,0,0,0.1); }
+        .revision-list li:last-child { border-bottom: none; }
+        .mnemonic-box { background: white; padding: 1rem; border-radius: 8px; margin: 1rem 0; font-family: 'Courier New', monospace; }
+        .warning-list { list-style: none; padding: 0; }
+        .warning-list li { padding: 0.5rem; background: #fee2e2; margin: 0.5rem 0; border-radius: 6px; color: #991b1b; }
+
+        .page-navigation { display: flex; justify-content: space-between; gap: 1rem; margin: 2rem 0; flex-wrap: wrap; }
+        .nav-btn { flex: 1; min-width: 150px; padding: 1rem; text-align: center; background: var(--card-bg); border: 2px solid var(--border-color); border-radius: 8px; text-decoration: none; color: var(--text-primary); font-weight: 500; cursor: pointer; transition: all 0.2s; }
+        .nav-btn:hover { border-color: var(--primary-color); color: var(--primary-color); }
+        .btn-success { background: var(--success-color); color: white; border-color: var(--success-color); }
+        .btn-success:hover { background: #059669; color: white; }
+
+        .page-footer { background: var(--bg-color); color: var(--text-secondary); border-top: 1px solid var(--border-color); padding: 2rem 0; text-align: center; margin-top: 3rem; }
+        .intro-box { background: #f0f9ff; border-left: 4px solid var(--primary-color); padding: 1.5rem; border-radius: 0 8px 8px 0; }
+
+        @media (max-width: 768px) {
+            .page-header h1 { font-size: 1.5rem; }
+            .section-header { font-size: 1rem; padding: 1rem; }
+            .fact-grid { grid-template-columns: 1fr; }
+            .page-navigation { flex-direction: column; }
+        }
+        @media print {
+            .study-nav, .page-navigation, .btn-show-answer { display: none !important; }
+            .section-content { max-height: none !important; }
+            .toggle-icon { display: none; }
+            body { background: white; }
+            .study-section { break-inside: avoid; box-shadow: none; border: 1px solid #ddd; }
+        }
+    </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-51XLJE4TVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-51XLJE4TVH');
+  </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327"
+     crossorigin="anonymous"></script>
+</head>
+<body class="study-page">
+    <nav class="study-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Current Affairs Index</a>
+            <div class="nav-controls">
+                <button onclick="toggleAllSections()" class="btn-secondary">Expand/Collapse All</button>
+                <button onclick="window.print()" class="btn-primary">📄 Print/Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../index.html">Home</a> /
+                <a href="index.html">Current Affairs</a> /
+                <span>CA-30</span>
+            </div>
+            <h1>🤖 India AI Impact Summit 2026</h1>
+            <p class="page-subtitle">New Delhi Declaration • $200B+ Investment Pledges • First Global AI Summit in the Global South</p>
+            <div class="page-meta">
+                <span class="badge badge-primary">High Yield</span>
+                <span class="badge badge-secondary">IR + S&T + Economy</span>
+                <span class="badge badge-warning">⚡ Global AI Governance</span>
+                <span class="badge badge-secondary">📅 Last updated: Sep 2026</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="keywords-box">
+            <strong>🔍 Quick Search:</strong>
+            India AI Impact Summit 2026, New Delhi Declaration on AI, IndiaAI Mission, UPSC notes AI governance, AI Impact Summit outcomes
+        </section>
+
+        <section class="study-section collapsible" data-section="1">
+            <button class="section-header" onclick="toggleSection(1)">
+                <span class="section-number">1️⃣</span>
+                <span class="section-title">Introduction (Simple)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-1">
+                <div class="content-box intro-box">
+                    <ul class="simple-list">
+
+                        <li><strong>What is it?</strong> → A global summit on Artificial Intelligence held at Bharat Mandapam, New Delhi, from <strong>16–21 February 2026</strong> — the first such global AI summit hosted in the <strong>Global South</strong>.</li>
+                        <li><strong>Scale:</strong> Over <strong>20 Heads of Government</strong>, representatives from <strong>118 countries</strong>, 100+ global AI CEOs, and roughly <strong>6 lakh in-person attendees</strong>.</li>
+                        <li><strong>Key Outcome:</strong> Adoption of the <strong>New Delhi Declaration on AI Impact</strong> (19 February 2026), endorsed by <strong>89 countries and organisations</strong>.</li>
+                        <li><strong>Big Number:</strong> AI-related investment pledges topped <strong>USD 200 billion</strong> across infrastructure, foundational models, hardware, and applications.</li>
+                        <li><strong>Why important for UPSC?</strong> → Tests India's positioning in global tech governance, "AI for all" vs. "AI for a few" debates, digital public infrastructure diplomacy, and GS-3 science & technology linkages.</li>
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="study-section collapsible" data-section="2">
+            <button class="section-header" onclick="toggleSection(2)">
+                <span class="section-number">2️⃣</span>
+                <span class="section-title">Key Concepts (Bullet Points)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-2">
+                <div class="content-box">
+
+                    <h3>📌 Summit Structure</h3>
+                    <ul class="bullet-list">
+                        <li><strong>Dates & Venue:</strong> 16–21 February 2026, Bharat Mandapam, New Delhi.</li>
+                        <li><strong>Predecessor Summits:</strong> Part of the AI Summit series that began with the France AI Action Summit (2025); India's edition was renamed "AI <em>Impact</em> Summit" to emphasise real-world outcomes over dialogue.</li>
+                        <li><strong>Guiding Philosophy:</strong> "Sarvajan Hitaya, Sarvajan Sukhaya" (Welfare for all, Happiness for all) and "Vasudhaiva Kutumbakam" (the world is one family) — India framed AI governance around equity, not just safety.</li>
+                        <li><strong>Three Sutras:</strong> The summit's organising themes were <strong>People, Planet, and Progress</strong>.</li>
+                    </ul>
+
+                    <h3>📌 New Delhi Declaration on AI Impact</h3>
+                    <ul class="bullet-list">
+                        <li><strong>Adopted:</strong> 19 February 2026, endorsed by 89 countries and international organisations.</li>
+                        <li><strong>Nature:</strong> Non-binding, but articulates shared commitments to <strong>safe, secure, and trustworthy AI</strong>; <strong>equitable access</strong> to AI's benefits; and stronger international cooperation.</li>
+                        <li><strong>Core Message:</strong> AI's benefits must be <strong>equitably shared across humanity</strong> — a deliberate shift from summits framed mainly around AI safety/risk (as in the UK's 2023 Bletchley Summit) toward AI <em>development</em> outcomes.</li>
+                    </ul>
+
+                    <h3>📌 Key Initiatives Launched</h3>
+                    <ul class="bullet-list">
+                        <li><strong>New Delhi Frontier AI Impact Commitments:</strong> Announced by 13 leading global and Indian frontier AI model developers, promoting trustworthy and inclusive AI deployment.</li>
+                        <li><strong>Global AI Impact Commons:</strong> A voluntary initiative featuring 80+ real-world AI impact stories across 30+ countries, letting nations replicate successful use cases.</li>
+                        <li><strong>Equitable AI Transition Playbook:</strong> Released with the <strong>International Labour Organization (ILO)</strong> to prepare workers for AI-driven job changes.</li>
+                        <li><strong>Voluntary Guiding Principles for Resilient, Innovative and Efficient AI:</strong> Endorsed by 20+ countries.</li>
+                    </ul>
+
+                    <h3>📌 Investment & Infrastructure Commitments</h3>
+                    <ul class="bullet-list">
+                        <li><strong>Reliance:</strong> committed <strong>USD 110 billion</strong> over the next decade; <strong>Adani Group:</strong> USD 100 billion.</li>
+                        <li><strong>Google:</strong> announced a USD 15 billion AI hub in Visakhapatnam plus new India–US subsea cable routes.</li>
+                        <li><strong>Microsoft:</strong> on pace to invest USD 50 billion in AI across the Global South by the end of the decade.</li>
+                        <li><strong>IndiaAI Mission infrastructure:</strong> 38,000+ GPUs already provisioned, with 20,000 more GPUs added shortly after the summit.</li>
+                    </ul>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="study-section collapsible" data-section="3">
+            <button class="section-header" onclick="toggleSection(3)">
+                <span class="section-number">3️⃣</span>
+                <span class="section-title">Important Facts for Prelims</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-3">
+                <div class="content-box prelims-box">
+                    <div class="fact-grid">
+
+                        <div class="fact-item"><span class="fact-label">Dates</span><span class="fact-value">16–21 Feb 2026</span></div>
+                        <div class="fact-item"><span class="fact-label">Venue</span><span class="fact-value">Bharat Mandapam, Delhi</span></div>
+                        <div class="fact-item"><span class="fact-label">Declaration Endorsers</span><span class="fact-value">89 nations</span></div>
+                        <div class="fact-item"><span class="fact-label">Investment Pledges</span><span class="fact-value">USD 200B+</span></div>
+
+                    </div>
+
+                    <h3>✅ Quick Facts</h3>
+                    <ul class="bullet-list">
+
+                        <li><strong>Sutras:</strong> People, Planet, Progress</li>
+                        <li><strong>Guiding philosophy:</strong> "Sarvajan Hitaya, Sarvajan Sukhaya" + "Vasudhaiva Kutumbakam"</li>
+                        <li><strong>Declaration name:</strong> New Delhi Declaration on AI Impact (adopted 19 Feb 2026)</li>
+                        <li><strong>First:</strong> First global AI summit hosted in the Global South</li>
+                        <li><strong>ILO partnership:</strong> Equitable AI Transition Playbook</li>
+
+                    </ul>
+
+                    <h3>✅ Key Numbers</h3>
+                    <ul class="bullet-list">
+
+                        <li>118 countries represented; 20+ Heads of Government attended</li>
+                        <li>~6 lakh in-person attendees; 9 lakh+ cumulative virtual views</li>
+                        <li>Reliance USD 110B + Adani USD 100B = over USD 200B from two Indian conglomerates alone</li>
+                        <li>IndiaAI Mission: 38,000+ GPUs provisioned, +20,000 GPUs added post-summit</li>
+
+                    </ul>
+
+                    <div class="highlight-box">
+                        <strong>💡 Prelims Trap:</strong> The <strong>New Delhi Declaration is non-binding</strong> (like most AI summit declarations) — do not confuse it with a binding treaty. Also note it followed the <strong>France AI Action Summit (2025)</strong> and the UK's Bletchley Summit (2023) — India's edition shifted the emphasis from "AI safety" to "AI impact/equity".
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">Detailed Explanation for Mains</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
+                <div class="content-box mains-box">
+                    <h3>🎯 India AI Impact Summit: A Multi-Dimensional Analysis</h3>
+
+                    <div class="mains-subsection">
+                        <h4>🔹 Diplomatic Significance: Reframing Global AI Governance</h4>
+                        <ul class="bullet-list">
+                            <li><strong>From Safety to Impact:</strong> Earlier AI summits (Bletchley 2023, Seoul 2024, Paris 2025) focused heavily on existential risk and safety; India's summit deliberately centred equity and development outcomes for the Global South.</li>
+                            <li><strong>Global South Leadership:</strong> Being the first such summit hosted outside the traditional AI powers (US, UK, EU) signals India positioning itself as a bridge between advanced AI developers and developing nations seeking access.</li>
+                            <li><strong>Soft Power Continuity:</strong> Builds on India's earlier Digital Public Infrastructure (DPI) diplomacy at G20 2023 (UPI, Aadhaar model) — extending the same "inclusive technology" narrative to AI.</li>
+                        </ul>
+                    </div>
+
+                    <div class="mains-subsection">
+                        <h4>🔹 Economic Dimension: India as an AI Investment Destination</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Scale of Commitments:</strong> USD 200B+ in pledges (Reliance, Adani, Google, Microsoft, General Catalyst, Lightspeed) signals confidence in India's AI/data-centre market, but pledges are not disbursed capital — execution risk remains.</li>
+                            <li><strong>Compute Sovereignty:</strong> Expansion of IndiaAI Mission's GPU infrastructure addresses India's historical dependence on foreign cloud/compute providers — a strategic autonomy angle.</li>
+                            <li><strong>Employment Concern:</strong> The Equitable AI Transition Playbook (with ILO) reflects genuine anxiety about AI-driven job displacement, especially in India's large services/BPO workforce.</li>
+                        </ul>
+                    </div>
+
+                    <div class="mains-subsection">
+                        <h4>🔹 Challenges & Critical View</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Non-binding Nature:</strong> Like the G20 Delhi Declaration, this is a political commitment, not enforceable law — implementation depends on national will.</li>
+                            <li><strong>Investment vs. Disbursement Gap:</strong> Historically, summit-announced pledges (across sectors) are only partially realised over the promised timeframe.</li>
+                            <li><strong>Data Governance Concerns:</strong> Equitable "access" to AI raises unresolved questions on data sovereignty, algorithmic bias, and who controls foundational models trained largely by a handful of companies.</li>
+                        </ul>
+                    </div>
+
+                    <div class="mains-subsection">
+                        <h4 style="color: var(--primary-color);">🔹 Mains Answer Framework</h4>
+                        <ol class="numbered-list">
+
+                            <li><strong>Contextualize:</strong> Evolution of global AI summits (Bletchley → Seoul → Paris → New Delhi) and India's shift in framing from "safety" to "impact/equity".</li>
+                            <li><strong>Analyze Outcomes:</strong> New Delhi Declaration, Global AI Impact Commons, Equitable AI Transition Playbook, investment pledges.</li>
+                            <li><strong>Critically Evaluate:</strong> Non-binding nature, pledge-vs-disbursement gap, data governance and job-displacement concerns.</li>
+                            <li><strong>Way Forward:</strong> Convert pledges into measurable compute/skilling outcomes; strengthen IndiaAI Mission; build South-South AI cooperation frameworks.</li>
+
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)">
+                <span class="section-number">5️⃣</span>
+                <span class="section-title">Examples / Case Studies</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-5">
+                <div class="content-box">
+
+                    <div class="case-study">
+                        <h4>📌 Case 1: Reliance &amp; Adani's USD 210B Combined AI Pledge</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Context:</strong> India's two largest conglomerates each announced decade-long AI infrastructure investment plans at the summit.</li>
+                            <li><strong>Significance:</strong> Signals private-sector confidence in India as a data-centre and AI-compute hub, complementing the government-run IndiaAI Mission.</li>
+                            <li><strong>UPSC Link:</strong> Public-private partnership in strategic technology + India's energy demand for data centres + GS-3 infrastructure and technology missions.</li>
+                        </ul>
+                    </div>
+
+                    <div class="case-study">
+                        <h4>📌 Case 2: Equitable AI Transition Playbook with the ILO</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Context:</strong> Released in partnership with the International Labour Organization to prepare workers for AI-driven changes in employment.</li>
+                            <li><strong>Significance:</strong> Reflects a rare instance of an AI summit producing a concrete labour-market document rather than only high-level principles.</li>
+                            <li><strong>UPSC Link:</strong> GS-2 international organisations (ILO) + GS-3 employment and skilling + Social Justice linkages.</li>
+                        </ul>
+                    </div>
+
+                    <div class="case-study">
+                        <h4>📌 Case 3: IndiaAI Mission GPU Expansion</h4>
+                        <ul class="bullet-list">
+                            <li><strong>Context:</strong> India expanded its sovereign compute capacity from 38,000+ to 58,000+ GPUs around the summit.</li>
+                            <li><strong>Significance:</strong> Directly addresses "compute sovereignty" — reducing dependence on foreign cloud providers for training AI models on Indian data.</li>
+                            <li><strong>UPSC Link:</strong> Strategic autonomy in technology + Digital India + IndiaAI Mission (launched 2024) as a static-GK anchor.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)">
+                <span class="section-number">6️⃣</span>
+                <span class="section-title">5 MCQs with Answers</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-6">
+                <div class="content-box mcq-box">
+
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q1.</strong> The India AI Impact Summit 2026 was held at which venue?</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q1" value="a"> (a) Pragati Maidan, New Delhi</label>
+                            <label><input type="radio" name="q1" value="b"> (b) Bharat Mandapam, New Delhi</label>
+                            <label><input type="radio" name="q1" value="c"> (c) India Habitat Centre, New Delhi</label>
+                            <label><input type="radio" name="q1" value="d"> (d) Jio World Centre, Mumbai</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q1">
+                            <p><strong>✅ Answer:</strong> (b) Bharat Mandapam, New Delhi</p>
+                            <p><strong>💡 Explanation:</strong> The same venue that hosted the G20 Summit 2023 also hosted the AI Impact Summit 2026 (16–21 February 2026).</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q1')">Show Answer</button>
+                    </div>
+
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q2.</strong> Consider the following statements about the New Delhi Declaration on AI Impact:<br>
+                        1. It is a legally binding treaty under international law.<br>
+                        2. It was adopted on 19 February 2026.<br>
+                        3. It was endorsed by 89 countries and international organisations.<br><br>
+                        Which of the statements given above are correct?</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q2" value="a"> (a) 1 and 2 only</label>
+                            <label><input type="radio" name="q2" value="b"> (b) 2 and 3 only</label>
+                            <label><input type="radio" name="q2" value="c"> (c) 1 and 3 only</label>
+                            <label><input type="radio" name="q2" value="d"> (d) 1, 2 and 3</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q2">
+                            <p><strong>✅ Answer:</strong> (b) 2 and 3 only</p>
+                            <p><strong>💡 Explanation:</strong> The Declaration is <strong>non-binding</strong>, like most AI summit declarations — it articulates shared commitments rather than enforceable law.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q2')">Show Answer</button>
+                    </div>
+
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q3.</strong> The "Equitable AI Transition Playbook" launched at the AI Impact Summit 2026 was released in partnership with which organisation?</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q3" value="a"> (a) World Trade Organization (WTO)</label>
+                            <label><input type="radio" name="q3" value="b"> (b) International Labour Organization (ILO)</label>
+                            <label><input type="radio" name="q3" value="c"> (c) World Economic Forum (WEF)</label>
+                            <label><input type="radio" name="q3" value="d"> (d) UNESCO</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q3">
+                            <p><strong>✅ Answer:</strong> (b) International Labour Organization (ILO)</p>
+                            <p><strong>💡 Explanation:</strong> The Playbook focuses on preparing workers for AI-driven changes in employment — a natural fit for the UN's labour-focused agency.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q3')">Show Answer</button>
+                    </div>
+
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q4.</strong> The three organising "Sutras" (themes) of the India AI Impact Summit 2026 were:</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q4" value="a"> (a) Safety, Security, Sovereignty</label>
+                            <label><input type="radio" name="q4" value="b"> (b) People, Planet, Progress</label>
+                            <label><input type="radio" name="q4" value="c"> (c) Innovation, Inclusion, Investment</label>
+                            <label><input type="radio" name="q4" value="d"> (d) Growth, Governance, Guardrails</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q4">
+                            <p><strong>✅ Answer:</strong> (b) People, Planet, Progress</p>
+                            <p><strong>💡 Explanation:</strong> These three Sutras framed the summit's agenda around human welfare, sustainability, and economic advancement.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q4')">Show Answer</button>
+                    </div>
+
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q5.</strong> Which of the following AI summits preceded India's AI Impact Summit in the same global series?</p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q5" value="a"> (a) Bletchley Park Summit (UK, 2023) and Paris AI Action Summit (2025)</label>
+                            <label><input type="radio" name="q5" value="b"> (b) Davos Summit and Osaka Summit</label>
+                            <label><input type="radio" name="q5" value="c"> (c) Rio Earth Summit and Kyoto Summit</label>
+                            <label><input type="radio" name="q5" value="d"> (d) Camp David Summit and Malta Summit</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q5">
+                            <p><strong>✅ Answer:</strong> (a) Bletchley Park Summit (UK, 2023) and Paris AI Action Summit (2025)</p>
+                            <p><strong>💡 Explanation:</strong> The global AI summit series began with the UK's Bletchley Summit (2023, AI safety focus), continued via Seoul (2024) and Paris (2025), before India hosted the 2026 edition with an "impact/equity" framing.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q5')">Show Answer</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)">
+                <span class="section-number">7️⃣</span>
+                <span class="section-title">Quick Revision Notes</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-7">
+                <div class="content-box revision-box">
+                    <h3>🔁 India AI Impact Summit 2026 in 10 Seconds</h3>
+                    <ul class="revision-list">
+
+                        <li><strong>Dates:</strong> 16–21 Feb 2026 | <strong>Venue:</strong> Bharat Mandapam, New Delhi</li>
+                        <li><strong>Declaration:</strong> New Delhi Declaration on AI Impact, adopted 19 Feb 2026, 89 endorsers</li>
+                        <li><strong>Sutras:</strong> People, Planet, Progress</li>
+                        <li><strong>Big Pledges:</strong> Reliance USD 110B + Adani USD 100B + Google USD 15B (Vizag hub)</li>
+                        <li><strong>ILO Tie-up:</strong> Equitable AI Transition Playbook</li>
+                        <li><strong>Compute:</strong> IndiaAI Mission GPUs expanded from 38,000+ to 58,000+</li>
+                        <li><strong>First:</strong> First global AI summit hosted in the Global South</li>
+
+                    </ul>
+
+                    <h3>🧠 Mnemonic: "AI IMPACT"</h3>
+                    <div class="mnemonic-box">
+
+                        <p><strong>A</strong> → AI equity over AI anxiety — India's core reframing</p>
+                        <p><strong>I</strong> → International: 118 countries, 89 declaration endorsers</p>
+                        <p><strong>I</strong> → ILO partnership: Equitable AI Transition Playbook</p>
+                        <br>
+                        <p><strong>M</strong> → Money: USD 200B+ in investment pledges</p>
+                        <p><strong>P</strong> → People, Planet, Progress — the three Sutras</p>
+                        <p><strong>A</strong> → Ambition: Global AI Impact Commons (80+ stories, 30+ countries)</p>
+                        <br>
+                        <p><strong>C</strong> → Compute: IndiaAI Mission GPU expansion (sovereignty)</p>
+                        <p><strong>T</strong> → Trust: Frontier AI Impact Commitments by 13 developers</p>
+
+                    </div>
+
+                    <h3>📌 Prelims Traps to Avoid</h3>
+                    <ul class="warning-list">
+
+                        <li>✘ New Delhi Declaration is <strong>non-binding</strong> (not a treaty)</li>
+                        <li>✘ It is <strong>not</strong> the first global AI summit overall — it followed Bletchley (2023), Seoul (2024), Paris (2025)</li>
+                        <li>✘ It <strong>is</strong> the first hosted in the Global South</li>
+                        <li>✘ Investment figures are <strong>pledges</strong>, not confirmed disbursed capital</li>
+                        <li>✘ Don't confuse the "AI Impact Summit" with the "AI Safety Summit" naming used in earlier editions</li>
+
+                    </ul>
+
+                    <h3>🎯 Mains One-Liners</h3>
+                    <ul class="bullet-list">
+
+                        <li>"New Delhi Declaration = AI equity narrative + Global South leadership + non-binding political commitment"</li>
+                        <li>"USD 200B pledges test the gap between summit diplomacy and actual capital disbursement"</li>
+                        <li>"IndiaAI Mission's GPU expansion = compute sovereignty in an AI-dependent world"</li>
+                        <li>"Equitable AI Transition Playbook = first serious attempt to pair AI governance with labour policy"</li>
+                        <li>"From DPI diplomacy at G20 2023 to AI diplomacy at the 2026 summit = continuity in India's inclusive-tech soft power"</li>
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="page-navigation">
+            <a href="index.html" class="nav-btn">← Back to Current Affairs Index</a>
+            <button onclick="markAsComplete('CA-30')" class="nav-btn btn-success">✓ Mark as Complete</button>
+            <a href="gaganyaan-chandrayaan4-progress-2026.html" class="nav-btn">Next: CA-31 →</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>📄 Page Code: <strong>CA-30</strong> | Subject: Current Affairs + IR + Science & Technology + Economy</p>
+            <p>🔗 Link to Syllabus: GS-2 (International Relations, Governance), GS-3 (Science & Technology, Economy), Essay</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleSection(sectionNum) {
+            const section = document.querySelector(`[data-section="${sectionNum}"]`);
+            const content = document.getElementById(`section-${sectionNum}`);
+            const header = section.querySelector('.section-header');
+            if (content.classList.contains('collapsed')) {
+                content.classList.remove('collapsed');
+                header.classList.remove('collapsed');
+            } else {
+                content.classList.add('collapsed');
+                header.classList.add('collapsed');
+            }
+        }
+        function toggleAllSections() {
+            const sections = document.querySelectorAll('.study-section');
+            const allCollapsed = Array.from(sections).every(s => s.querySelector('.section-content').classList.contains('collapsed'));
+            sections.forEach(section => {
+                const content = section.querySelector('.section-content');
+                const header = section.querySelector('.section-header');
+                if (allCollapsed) { content.classList.remove('collapsed'); header.classList.remove('collapsed'); }
+                else { content.classList.add('collapsed'); header.classList.add('collapsed'); }
+            });
+        }
+        function showAnswer(questionId) {
+            const answerDiv = document.getElementById(`answer-${questionId}`);
+            const btn = event.target;
+            if (answerDiv.classList.contains('show')) { answerDiv.classList.remove('show'); btn.textContent = 'Show Answer'; }
+            else { answerDiv.classList.add('show'); btn.textContent = 'Hide Answer'; }
+        }
+        function markAsComplete(pageCode) {
+            let completed = JSON.parse(localStorage.getItem('completedPages') || '[]');
+            if (!completed.includes(pageCode)) {
+                completed.push(pageCode);
+                localStorage.setItem('completedPages', JSON.stringify(completed));
+                const btn = event.target;
+                btn.textContent = '✓ Completed!';
+                btn.style.background = '#059669';
+                if (window.opener) { try { window.opener.updateMainProgress?.(); } catch(e) {} }
+            }
+        }
+        document.addEventListener('DOMContentLoaded', function() {
+            const first = document.querySelector('[data-section="1"]');
+            if (first) setTimeout(() => toggleSection(1), 300);
+        });
+        document.addEventListener('keydown', function(e) {
+            if ((e.ctrlKey || e.metaKey) && e.key === 'p') { e.preventDefault(); window.print(); }
+            if (e.key === ' ' && e.target === document.body) { e.preventDefault(); const f = document.querySelector('[data-section="1"]'); if (f) toggleSection(1); }
+        });
+    </script>
+</body>
+</html>
