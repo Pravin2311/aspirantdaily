@@ -1,6 +1,6 @@
 {
   "subject": "geography",
-  "last_updated": "2025-12-20",
+  "last_updated": "2026-10-18",
   "questions": [
     {
       "question": {
@@ -154,8 +154,8 @@
         "en": ["China", "India", "USA", "Indonesia"],
         "hi": ["चीन", "भारत", "अमेरिका", "इंडोनेशिया"]
       },
-      "answer": {"en": "China", "hi": "चीन"},
-      "explanation": {"en": "China has the largest population in the world, followed closely by India.", "hi": "चीन की दुनिया में सबसे बड़ी जनसंख्या है, इसके बाद भारत का स्थान है।"},
+      "answer": {"en": "India", "hi": "भारत"},
+      "explanation": {"en": "India overtook China as the world's most populous country in 2023, according to UN estimates.", "hi": "संयुक्त राष्ट्र के अनुमानों के अनुसार भारत 2023 में चीन को पीछे छोड़कर दुनिया का सबसे अधिक आबादी वाला देश बन गया।"},
       "subject": "geography"
     },
     {
@@ -194,7 +194,7 @@
         "hi": ["K2", "कंगचेनजुङ्घा", "माउंट एवरेस्ट", "ल्होत्से"]
       },
       "answer": {"en": "Mount Everest", "hi": "माउंट एवरेस्ट"},
-      "explanation": {"en": "Mount Everest, located in the Himalayas, is the highest peak above sea level at 8,848 meters.", "hi": "हिमालय में स्थित माउंट एवरेस्ट समुद्र तल से 8,848 मीटर की ऊँचाई पर सबसे ऊँची चोटी है।"},
+      "explanation": {"en": "Mount Everest in the Himalayas is the highest peak above sea level at 8,848.86 metres (jointly announced by Nepal and China in 2020).", "hi": "हिमालय में स्थित माउंट एवरेस्ट 8,848.86 मीटर (2020 में नेपाल और चीन द्वारा संयुक्त रूप से घोषित) के साथ समुद्र तल से सबसे ऊँची चोटी है।"},
       "subject": "geography"
     },
     {
@@ -298,7 +298,7 @@
         "hi": ["मारियाना खाई", "जावा खाई", "प्यूर्टो रिको खाई", "टोंगा खाई"]
       },
       "answer": {"en": "Mariana Trench", "hi": "मारियाना खाई"},
-      "explanation": {"en": "The Mariana Trench in the Pacific Ocean is the deepest known oceanic trench, reaching about 11,034 meters.", "hi": "प्रशांत महासागर में मारियाना खाई सबसे गहरी ज्ञात महासागरीय खाई है, जो लगभग 11,034 मीटर गहरी है।"},
+      "explanation": {"en": "The Mariana Trench in the Pacific Ocean is the deepest known oceanic trench; its Challenger Deep reaches about 10,935 metres.", "hi": "प्रशांत महासागर में मारियाना खाई सबसे गहरी ज्ञात महासागरीय खाई है; इसका चैलेंजर डीप लगभग 10,935 मीटर गहरा है।"},
       "subject": "geography"
     },
     {
@@ -528,8 +528,8 @@
         "hi": "'पूर्व की वेनिस' के नाम से किस शहर को जाना जाता है?"
       },
       "options": {
-        "en": ["Kochi", "Srinagar", "Alleppey", "Udaipur"],
-        "hi": ["कोच्चि", "श्रीनगर", "अल्लेप्पे", "उदयपुर"]
+        "en": ["Kochi", "Shimla", "Alleppey", "Mysuru"],
+        "hi": ["कोच्चि", "शिमला", "अल्लेप्पे", "मैसूरु"]
       },
       "answer": {"en": "Alleppey", "hi": "अल्लेप्पे"},
       "explanation": {"en": "Alleppey (Alappuzha) in Kerala is famous for its backwaters and houseboats, earning it the nickname 'Venice of the East'.", "hi": "केरल के अल्लेप्पे (अलप्पुझा) को इसके बैकवाटर्स और हाउसबोट्स के लिए जाना जाता है, जिससे इसे 'पूर्व की वेनिस' उपनाम मिला।"},

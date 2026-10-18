@@ -1,6 +1,6 @@
 {
   "subject": "reasoning",
-  "last_updated": "2025-12-20",
+  "last_updated": "2026-10-18",
   "total_unique_questions": 54,
   "questions": [
     {
@@ -706,25 +706,25 @@
       },
       "options": {
         "en": [
-          "121",
+          "64",
           "144",
           "169",
           "196"
         ],
         "hi": [
-          "121",
+          "64",
           "144",
           "169",
           "196"
         ]
       },
       "answer": {
-        "en": "121",
-        "hi": "121"
+        "en": "169",
+        "hi": "169"
       },
       "explanation": {
-        "en": "121 is not divisible by 4.",
-        "hi": "121, 4 से विभाज्य नहीं है।"
+        "en": "169 (13²) is the only odd number; the others are squares of even numbers.",
+        "hi": "169 (13²) एकमात्र विषम संख्या है; बाकी सम संख्याओं के वर्ग हैं।"
       },
       "subject": "reasoning"
     },
@@ -868,8 +868,8 @@
         "hi": "दरवाज़ा"
       },
       "explanation": {
-        "en": "Door is not furniture used for sitting or sleeping.",
-        "hi": "दरवाज़ा बैठने या सोने का फर्नीचर नहीं है।"
+        "en": "Chair, table and bed are furniture; a door is not.",
+        "hi": "कुर्सी, मेज़ और बिस्तर फर्नीचर हैं; दरवाज़ा नहीं।"
       },
       "subject": "reasoning"
     },
@@ -1100,8 +1100,8 @@
         "hi": "साइकिल"
       },
       "explanation": {
-        "en": "Bicycle does not use fuel.",
-        "hi": "साइकिल में ईंधन नहीं लगता।"
+        "en": "Bicycle is the only one without an engine or motor.",
+        "hi": "साइकिल ही अकेला वाहन है जिसमें इंजन या मोटर नहीं होता।"
       },
       "subject": "reasoning"
     },
@@ -1137,18 +1137,18 @@
     {
       "question": {
         "en": "Which number is the odd one out?",
-        "hi": "कौन सी संख्या विषम है?"
+        "hi": "कौन सी संख्या समूह से अलग है?"
       },
       "options": {
         "en": [
           "6",
-          "10",
+          "9",
           "15",
           "21"
         ],
         "hi": [
           "6",
-          "10",
+          "9",
           "15",
           "21"
         ]
@@ -1386,12 +1386,12 @@
         ]
       },
       "answer": {
-        "en": "144",
-        "hi": "144"
+        "en": "108",
+        "hi": "108"
       },
       "explanation": {
-        "en": "Each number is multiplied by 3.",
-        "hi": "हर संख्या को 3 से गुणा किया गया है।"
+        "en": "Each number is multiplied by 3: 36 × 3 = 108 and 108 × 3 = 324.",
+        "hi": "हर संख्या को 3 से गुणा किया गया है: 36 × 3 = 108 और 108 × 3 = 324।"
       },
       "subject": "reasoning"
     },
@@ -1513,8 +1513,8 @@
     },
     {
       "question": {
-        "en": "Which shape has no sides?",
-        "hi": "किस आकृति की कोई भुजा नहीं होती?"
+        "en": "Which shape has no straight sides?",
+        "hi": "किस आकृति की कोई सीधी भुजा नहीं होती?"
       },
       "options": {
         "en": [
@@ -1535,8 +1535,8 @@
         "hi": "वृत्त"
       },
       "explanation": {
-        "en": "A circle has no sides.",
-        "hi": "वृत्त की कोई भुजा नहीं होती।"
+        "en": "A circle is a single curved line and has no straight sides.",
+        "hi": "वृत्त एक ही वक्र रेखा से बनता है और इसकी कोई सीधी भुजा नहीं होती।"
       },
       "subject": "reasoning"
     },

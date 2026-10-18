@@ -1,18 +1,18 @@
 {
   "subject": "science",
-  "last_updated": "2025-12-20",
+  "last_updated": "2026-10-18",
   "questions": [
     {
       "question": {
-        "en": "What is the chemical symbol for water?",
-        "hi": "पानी का रासायनिक प्रतीक क्या है?"
+        "en": "What is the chemical formula for water?",
+        "hi": "पानी का रासायनिक सूत्र क्या है?"
       },
       "options": {
-        "en": ["H2O", "CO2", "O2", "NaCl"],
-        "hi": ["H2O", "CO2", "O2", "NaCl"]
+        "en": ["CO2", "H2O", "O2", "NaCl"],
+        "hi": ["CO2", "H2O", "O2", "NaCl"]
       },
       "answer": {"en": "H2O", "hi": "H2O"},
-      "explanation": {"en": "The chemical symbol for water is H2O, which indicates that each molecule consists of two hydrogen atoms and one oxygen atom.", "hi": "पानी का रासायनिक प्रतीक H2O है, जो दर्शाता है कि प्रत्येक अणु में दो हाइड्रोजन परमाणु और एक ऑक्सीजन परमाणु होता है।"},
+      "explanation": {"en": "The chemical formula for water is H2O, which indicates that each molecule consists of two hydrogen atoms and one oxygen atom.", "hi": "पानी का रासायनिक सूत्र H2O है, जो दर्शाता है कि प्रत्येक अणु में दो हाइड्रोजन परमाणु और एक ऑक्सीजन परमाणु होता है।"},
       "subject": "science"
     },
     {
@@ -21,8 +21,8 @@
         "hi": "कोशिका का ऊर्जा घर कौन सा है?"
       },
       "options": {
-        "en": ["Nucleus", "Mitochondria", "Ribosome", "Endoplasmic Reticulum"],
-        "hi": ["न्यूक्लियस", "माइटोकॉन्ड्रिया", "राइबोसोम", "एंडोप्लास्मिक रेटिकुलम"]
+        "en": ["Nucleus", "Ribosome", "Endoplasmic Reticulum", "Mitochondria"],
+        "hi": ["न्यूक्लियस", "राइबोसोम", "एंडोप्लास्मिक रेटिकुलम", "माइटोकॉन्ड्रिया"]
       },
       "answer": {"en": "Mitochondria", "hi": "माइटोकॉन्ड्रिया"},
       "explanation": {"en": "Mitochondria are known as the powerhouse of the cell because they produce ATP, the energy currency of the cell.", "hi": "माइटोकॉन्ड्रिया को कोशिका का ऊर्जा घर कहा जाता है क्योंकि वे ATP, कोशिका की ऊर्जा मुद्रा, का उत्पादन करते हैं।"},
@@ -47,8 +47,8 @@
         "hi": "पौधे वायुमंडल से कौन सा गैस अवशोषित करते हैं?"
       },
       "options": {
-        "en": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
-        "hi": ["ऑक्सीजन", "कार्बन डाइऑक्साइड", "नाइट्रोजन", "हाइड्रोजन"]
+        "en": ["Carbon Dioxide", "Oxygen", "Nitrogen", "Hydrogen"],
+        "hi": ["कार्बन डाइऑक्साइड", "ऑक्सीजन", "नाइट्रोजन", "हाइड्रोजन"]
       },
       "answer": {"en": "Carbon Dioxide", "hi": "कार्बन डाइऑक्साइड"},
       "explanation": {"en": "Plants absorb carbon dioxide from the atmosphere during the process of photosynthesis to produce oxygen.", "hi": "पौधे प्रकाश संश्लेषण की प्रक्रिया के दौरान वायुमंडल से कार्बन डाइऑक्साइड अवशोषित करते हैं ताकि ऑक्सीजन का उत्पादन किया जा सके।"},
@@ -73,8 +73,8 @@
         "hi": "पौधे अपने भोजन का निर्माण किस प्रक्रिया द्वारा करते हैं?"
       },
       "options": {
-        "en": ["Photosynthesis", "Respiration", "Transpiration", "Digestion"],
-        "hi": ["फोटोसिंथेसिस", "श्वसन", "पार्श्ववाष्पीकरण", "पाचन"]
+        "en": ["Respiration", "Photosynthesis", "Transpiration", "Digestion"],
+        "hi": ["श्वसन", "फोटोसिंथेसिस", "पार्श्ववाष्पीकरण", "पाचन"]
       },
       "answer": {"en": "Photosynthesis", "hi": "फोटोसिंथेसिस"},
       "explanation": {"en": "Photosynthesis is the process by which plants use sunlight to convert carbon dioxide and water into glucose and oxygen.", "hi": "फोटोसिंथेसिस वह प्रक्रिया है जिसके द्वारा पौधे सूर्य के प्रकाश का उपयोग करके कार्बन डाइऑक्साइड और पानी को ग्लूकोज और ऑक्सीजन में परिवर्तित करते हैं।"},
@@ -99,8 +99,8 @@
         "hi": "मानव शरीर में रक्त पंप करने के लिए कौन सा अंग जिम्मेदार है?"
       },
       "options": {
-        "en": ["Heart", "Liver", "Lungs", "Kidneys"],
-        "hi": ["दिल", "जिगर", "फेफड़े", "गुर्दे"]
+        "en": ["Liver", "Lungs", "Kidneys", "Heart"],
+        "hi": ["जिगर", "फेफड़े", "गुर्दे", "दिल"]
       },
       "answer": {"en": "Heart", "hi": "दिल"},
       "explanation": {"en": "The heart is responsible for pumping blood throughout the human body, supplying oxygen and nutrients to tissues.", "hi": "दिल मानव शरीर में रक्त पंप करने के लिए जिम्मेदार है, जो ऊतकों को ऑक्सीजन और पोषक तत्वों की आपूर्ति करता है।"},
@@ -112,8 +112,8 @@
         "hi": "जीवित प्राणियों को सांस लेने के लिए कौन सा गैस चाहिए?"
       },
       "options": {
-        "en": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
-        "hi": ["ऑक्सीजन", "कार्बन डाइऑक्साइड", "नाइट्रोजन", "हाइड्रोजन"]
+        "en": ["Carbon Dioxide", "Oxygen", "Nitrogen", "Hydrogen"],
+        "hi": ["कार्बन डाइऑक्साइड", "ऑक्सीजन", "नाइट्रोजन", "हाइड्रोजन"]
       },
       "answer": {"en": "Oxygen", "hi": "ऑक्सीजन"},
       "explanation": {"en": "Living beings need oxygen to breathe as it is essential for cellular respiration, which produces energy.", "hi": "जीवित प्राणियों को सांस लेने के लिए ऑक्सीजन की आवश्यकता होती है क्योंकि यह कोशिका श्वसन के लिए आवश्यक है, जो ऊर्जा उत्पन्न करता है।"},
@@ -134,8 +134,8 @@
     },
     {
       "question": {
-        "en": "What is the chemical symbol for table salt?",
-        "hi": "नमक का रासायनिक प्रतीक क्या है?"
+        "en": "What is the chemical formula for table salt?",
+        "hi": "नमक का रासायनिक सूत्र क्या है?"
       },
       "options": {
         "en": ["NaCl", "KCl", "CaCO3", "H2O"],
@@ -151,8 +151,8 @@
         "hi": "मानव शरीर धूप में आने पर कौन सा विटामिन बनाता है?"
       },
       "options": {
-        "en": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
-        "hi": ["विटामिन A", "विटामिन B", "विटामिन C", "विटामिन D"]
+        "en": ["Vitamin A", "Vitamin D", "Vitamin B", "Vitamin C"],
+        "hi": ["विटामिन A", "विटामिन D", "विटामिन B", "विटामिन C"]
       },
       "answer": {"en": "Vitamin D", "hi": "विटामिन D"},
       "explanation": {"en": "Vitamin D is synthesized in the skin when exposed to sunlight.", "hi": "विटामिन D त्वचा में धूप के संपर्क में आने पर संश्लेषित होता है।"},
@@ -190,8 +190,8 @@
         "hi": "शुद्ध जल का pH मान क्या है?"
       },
       "options": {
-        "en": ["5", "7", "10", "14"],
-        "hi": ["5", "7", "10", "14"]
+        "en": ["5", "10", "7", "14"],
+        "hi": ["5", "10", "7", "14"]
       },
       "answer": {"en": "7", "hi": "7"},
       "explanation": {"en": "Pure water is neutral with a pH of 7.", "hi": "शुद्ध जल उदासीन होता है जिसका pH 7 होता है।"},
@@ -203,8 +203,8 @@
         "hi": "इनमें से कौन सी ग्रीनहाउस गैस नहीं है?"
       },
       "options": {
-        "en": ["Carbon Dioxide", "Methane", "Oxygen", "Nitrous Oxide"],
-        "hi": ["कार्बन डाइऑक्साइड", "मीथेन", "ऑक्सीजन", "नाइट्रस ऑक्साइड"]
+        "en": ["Oxygen", "Carbon Dioxide", "Methane", "Nitrous Oxide"],
+        "hi": ["ऑक्सीजन", "कार्बन डाइऑक्साइड", "मीथेन", "नाइट्रस ऑक्साइड"]
       },
       "answer": {"en": "Oxygen", "hi": "ऑक्सीजन"},
       "explanation": {"en": "Oxygen is not a greenhouse gas; it does not trap heat in the atmosphere.", "hi": "ऑक्सीजन ग्रीनहाउस गैस नहीं है; यह वातावरण में गर्मी को नहीं रोकती है।"},
@@ -216,8 +216,8 @@
         "hi": "विद्युत धारा की इकाई क्या है?"
       },
       "options": {
-        "en": ["Volt", "Ampere", "Ohm", "Watt"],
-        "hi": ["वोल्ट", "एम्पियर", "ओम", "वाट"]
+        "en": ["Volt", "Ohm", "Watt", "Ampere"],
+        "hi": ["वोल्ट", "ओम", "वाट", "एम्पियर"]
       },
       "answer": {"en": "Ampere", "hi": "एम्पियर"},
       "explanation": {"en": "The unit of electric current is the ampere (A).", "hi": "विद्युत धारा की इकाई एम्पियर (A) है।"},
@@ -229,8 +229,8 @@
         "hi": "कौन सी धातु कमरे के तापमान पर तरल होती है?"
       },
       "options": {
-        "en": ["Iron", "Mercury", "Copper", "Aluminum"],
-        "hi": ["लोहा", "पारा", "तांबा", "एल्यूमीनियम"]
+        "en": ["Mercury", "Iron", "Copper", "Aluminum"],
+        "hi": ["पारा", "लोहा", "तांबा", "एल्यूमीनियम"]
       },
       "answer": {"en": "Mercury", "hi": "पारा"},
       "explanation": {"en": "Mercury is the only metal that is liquid at room temperature.", "hi": "पारा एकमात्र धातु है जो कमरे के तापमान पर तरल होती है।"},
@@ -242,8 +242,8 @@
         "hi": "निर्वात में प्रकाश की गति क्या है?"
       },
       "options": {
-        "en": ["3 × 10⁶ m/s", "3 × 10⁸ m/s", "3 × 10⁵ m/s", "3 × 10⁷ m/s"],
-        "hi": ["3 × 10⁶ मी/से", "3 × 10⁸ मी/से", "3 × 10⁵ मी/से", "3 × 10⁷ मी/से"]
+        "en": ["3 × 10⁸ m/s", "3 × 10⁶ m/s", "3 × 10⁵ m/s", "3 × 10⁷ m/s"],
+        "hi": ["3 × 10⁸ मी/से", "3 × 10⁶ मी/से", "3 × 10⁵ मी/से", "3 × 10⁷ मी/से"]
       },
       "answer": {"en": "3 × 10⁸ m/s", "hi": "3 × 10⁸ मी/से"},
       "explanation": {"en": "The speed of light in vacuum is approximately 3 × 10⁸ meters per second.", "hi": "निर्वात में प्रकाश की गति लगभग 3 × 10⁸ मीटर प्रति सेकंड है।"},
@@ -255,8 +255,8 @@
         "hi": "निम्नलिखित में से कौन सा ऊर्जा का नवीकरणीय स्रोत है?"
       },
       "options": {
-        "en": ["Coal", "Petroleum", "Solar energy", "Natural gas"],
-        "hi": ["कोयला", "पेट्रोलियम", "सौर ऊर्जा", "प्राकृतिक गैस"]
+        "en": ["Solar energy", "Coal", "Petroleum", "Natural gas"],
+        "hi": ["सौर ऊर्जा", "कोयला", "पेट्रोलियम", "प्राकृतिक गैस"]
       },
       "answer": {"en": "Solar energy", "hi": "सौर ऊर्जा"},
       "explanation": {"en": "Solar energy is renewable as it comes from the sun and will not deplete.", "hi": "सौर ऊर्जा नवीकरणीय है क्योंकि यह सूर्य से आती है और समाप्त नहीं होगी।"},
@@ -268,8 +268,8 @@
         "hi": "बेकिंग सोडा का रासायनिक नाम क्या है?"
       },
       "options": {
-        "en": ["Sodium bicarbonate", "Sodium chloride", "Calcium carbonate", "Potassium nitrate"],
-        "hi": ["सोडियम बाइकार्बोनेट", "सोडियम क्लोराइड", "कैल्शियम कार्बोनेट", "पोटेशियम नाइट्रेट"]
+        "en": ["Sodium chloride", "Calcium carbonate", "Sodium bicarbonate", "Potassium nitrate"],
+        "hi": ["सोडियम क्लोराइड", "कैल्शियम कार्बोनेट", "सोडियम बाइकार्बोनेट", "पोटेशियम नाइट्रेट"]
       },
       "answer": {"en": "Sodium bicarbonate", "hi": "सोडियम बाइकार्बोनेट"},
       "explanation": {"en": "Baking soda is chemically known as sodium bicarbonate (NaHCO₃).", "hi": "बेकिंग सोडा को रासायनिक रूप से सोडियम बाइकार्बोनेट (NaHCO₃) के रूप में जाना जाता है।"},
@@ -281,8 +281,8 @@
         "hi": "मनुष्यों में श्वसन के दौरान कौन सी गैस निकलती है?"
       },
       "options": {
-        "en": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
-        "hi": ["ऑक्सीजन", "कार्बन डाइऑक्साइड", "नाइट्रोजन", "हाइड्रोजन"]
+        "en": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
+        "hi": ["ऑक्सीजन", "नाइट्रोजन", "कार्बन डाइऑक्साइड", "हाइड्रोजन"]
       },
       "answer": {"en": "Carbon Dioxide", "hi": "कार्बन डाइऑक्साइड"},
       "explanation": {"en": "Humans release carbon dioxide as a waste product during respiration.", "hi": "मनुष्य श्वसन के दौरान अपशिष्ट के रूप में कार्बन डाइऑक्साइड छोड़ते हैं।"},
@@ -294,8 +294,8 @@
         "hi": "बल की SI इकाई क्या है?"
       },
       "options": {
-        "en": ["Newton", "Joule", "Watt", "Pascal"],
-        "hi": ["न्यूटन", "जूल", "वाट", "पास्कल"]
+        "en": ["Joule", "Newton", "Watt", "Pascal"],
+        "hi": ["जूल", "न्यूटन", "वाट", "पास्कल"]
       },
       "answer": {"en": "Newton", "hi": "न्यूटन"},
       "explanation": {"en": "The SI unit of force is the newton (N).", "hi": "बल की SI इकाई न्यूटन (N) है।"},
@@ -320,8 +320,8 @@
         "hi": "वाष्प के द्रव में परिवर्तन की प्रक्रिया क्या कहलाती है?"
       },
       "options": {
-        "en": ["Evaporation", "Condensation", "Sublimation", "Freezing"],
-        "hi": ["वाष्पीकरण", "संघनन", "उर्ध्वपातन", "हिमीकरण"]
+        "en": ["Evaporation", "Sublimation", "Freezing", "Condensation"],
+        "hi": ["वाष्पीकरण", "उर्ध्वपातन", "हिमीकरण", "संघनन"]
       },
       "answer": {"en": "Condensation", "hi": "संघनन"},
       "explanation": {"en": "Condensation is the process where vapor turns into liquid, such as when dew forms.", "hi": "संघनन वह प्रक्रिया है जिसमें वाष्प द्रव में बदल जाती है, जैसे कि ओस बनती है।"},
@@ -359,8 +359,8 @@
         "hi": "निम्नलिखित में से कौन सा एक अधातु है?"
       },
       "options": {
-        "en": ["Iron", "Copper", "Sulfur", "Aluminum"],
-        "hi": ["लोहा", "तांबा", "गंधक", "एल्यूमीनियम"]
+        "en": ["Iron", "Sulfur", "Copper", "Aluminum"],
+        "hi": ["लोहा", "गंधक", "तांबा", "एल्यूमीनियम"]
       },
       "answer": {"en": "Sulfur", "hi": "गंधक"},
       "explanation": {"en": "Sulfur is a non-metal, while the others are metals.", "hi": "गंधक एक अधातु है, जबकि अन्य धातुएँ हैं।"},
@@ -372,8 +372,8 @@
         "hi": "श्वेत रक्त कोशिकाओं का क्या कार्य है?"
       },
       "options": {
-        "en": ["Carry oxygen", "Fight infections", "Clot blood", "Transport nutrients"],
-        "hi": ["ऑक्सीजन ले जाना", "संक्रमण से लड़ना", "रक्त का थक्का बनाना", "पोषक तत्वों का परिवहन करना"]
+        "en": ["Carry oxygen", "Clot blood", "Transport nutrients", "Fight infections"],
+        "hi": ["ऑक्सीजन ले जाना", "रक्त का थक्का बनाना", "पोषक तत्वों का परिवहन करना", "संक्रमण से लड़ना"]
       },
       "answer": {"en": "Fight infections", "hi": "संक्रमण से लड़ना"},
       "explanation": {"en": "White blood cells are part of the immune system and defend the body against infections.", "hi": "श्वेत रक्त कोशिकाएँ प्रतिरक्षा प्रणाली का हिस्सा हैं और संक्रमण के खिलाफ शरीर की रक्षा करती हैं।"},
@@ -398,8 +398,8 @@
         "hi": "समुद्र तल पर पानी का क्वथनांक क्या है?"
       },
       "options": {
-        "en": ["90°C", "100°C", "110°C", "120°C"],
-        "hi": ["90°C", "100°C", "110°C", "120°C"]
+        "en": ["90°C", "110°C", "120°C", "100°C"],
+        "hi": ["90°C", "110°C", "120°C", "100°C"]
       },
       "answer": {"en": "100°C", "hi": "100°C"},
       "explanation": {"en": "Water boils at 100°C at standard atmospheric pressure (sea level).", "hi": "मानक वायुमंडलीय दबाव (समुद्र तल) पर पानी 100°C पर उबलता है।"},
@@ -411,8 +411,8 @@
         "hi": "निम्नलिखित में से कौन सा रासायनिक परिवर्तन का उदाहरण है?"
       },
       "options": {
-        "en": ["Melting ice", "Burning wood", "Boiling water", "Cutting paper"],
-        "hi": ["बर्फ पिघलना", "लकड़ी जलना", "पानी उबलना", "कागज काटना"]
+        "en": ["Burning wood", "Melting ice", "Boiling water", "Cutting paper"],
+        "hi": ["लकड़ी जलना", "बर्फ पिघलना", "पानी उबलना", "कागज काटना"]
       },
       "answer": {"en": "Burning wood", "hi": "लकड़ी जलना"},
       "explanation": {"en": "Burning wood is a chemical change because it produces new substances like ash and smoke.", "hi": "लकड़ी जलना एक रासायनिक परिवर्तन है क्योंकि यह राख और धुएँ जैसे नए पदार्थ उत्पन्न करता है।"},
@@ -424,8 +424,8 @@
         "hi": "पृथ्वी के लिए ऊर्जा का प्राथमिक स्रोत क्या है?"
       },
       "options": {
-        "en": ["Moon", "Sun", "Wind", "Water"],
-        "hi": ["चंद्रमा", "सूर्य", "हवा", "जल"]
+        "en": ["Moon", "Wind", "Water", "Sun"],
+        "hi": ["चंद्रमा", "हवा", "जल", "सूर्य"]
       },
       "answer": {"en": "Sun", "hi": "सूर्य"},
       "explanation": {"en": "The Sun is the primary source of energy for Earth, driving weather, photosynthesis, and climate.", "hi": "सूर्य पृथ्वी के लिए ऊर्जा का प्राथमिक स्रोत है, जो मौसम, प्रकाश संश्लेषण और जलवायु को संचालित करता है।"},
@@ -437,8 +437,8 @@
         "hi": "इनमें से कौन जैव-निम्नीकरण योग्य अपशिष्ट है?"
       },
       "options": {
-        "en": ["Plastic", "Glass", "Vegetable peels", "Metal cans"],
-        "hi": ["प्लास्टिक", "कांच", "सब्जी के छिलके", "धातु के डिब्बे"]
+        "en": ["Vegetable peels", "Plastic", "Glass", "Metal cans"],
+        "hi": ["सब्जी के छिलके", "प्लास्टिक", "कांच", "धातु के डिब्बे"]
       },
       "answer": {"en": "Vegetable peels", "hi": "सब्जी के छिलके"},
       "explanation": {"en": "Vegetable peels decompose naturally, making them biodegradable.", "hi": "सब्जी के छिलके प्राकृतिक रूप से विघटित हो जाते हैं, जिससे वे जैव-निम्नीकरण योग्य होते हैं।"},
@@ -450,8 +450,8 @@
         "hi": "ओज़ोन का रासायनिक सूत्र क्या है?"
       },
       "options": {
-        "en": ["O2", "O3", "CO2", "H2O"],
-        "hi": ["O2", "O3", "CO2", "H2O"]
+        "en": ["O2", "CO2", "H2O", "O3"],
+        "hi": ["O2", "CO2", "H2O", "O3"]
       },
       "answer": {"en": "O3", "hi": "O3"},
       "explanation": {"en": "Ozone is a molecule made of three oxygen atoms (O₃).", "hi": "ओज़ोन तीन ऑक्सीजन परमाणुओं (O₃) से बना एक अणु है।"},
@@ -476,8 +476,8 @@
         "hi": "तत्व की सबसे छोटी इकाई क्या है?"
       },
       "options": {
-        "en": ["Molecule", "Atom", "Cell", "Electron"],
-        "hi": ["अणु", "परमाणु", "कोशिका", "इलेक्ट्रॉन"]
+        "en": ["Molecule", "Cell", "Atom", "Electron"],
+        "hi": ["अणु", "कोशिका", "परमाणु", "इलेक्ट्रॉन"]
       },
       "answer": {"en": "Atom", "hi": "परमाणु"},
       "explanation": {"en": "An atom is the smallest unit of an element that retains its chemical properties.", "hi": "परमाणु तत्व की सबसे छोटी इकाई है जो उसके रासायनिक गुणों को बनाए रखती है।"},
@@ -502,8 +502,8 @@
         "hi": "प्रकाश संश्लेषण के दौरान मुख्य गैस कौन सी उत्पन्न होती है?"
       },
       "options": {
-        "en": ["Carbon Dioxide", "Oxygen", "Nitrogen", "Hydrogen"],
-        "hi": ["कार्बन डाइऑक्साइड", "ऑक्सीजन", "नाइट्रोजन", "हाइड्रोजन"]
+        "en": ["Carbon Dioxide", "Nitrogen", "Oxygen", "Hydrogen"],
+        "hi": ["कार्बन डाइऑक्साइड", "नाइट्रोजन", "ऑक्सीजन", "हाइड्रोजन"]
       },
       "answer": {"en": "Oxygen", "hi": "ऑक्सीजन"},
       "explanation": {"en": "Plants release oxygen as a byproduct of photosynthesis.", "hi": "पौधे प्रकाश संश्लेषण के उप-उत्पाद के रूप में ऑक्सीजन छोड़ते हैं।"},
@@ -515,8 +515,8 @@
         "hi": "इनमें से कौन एक सदिश राशि है?"
       },
       "options": {
-        "en": ["Speed", "Mass", "Time", "Velocity"],
-        "hi": ["गति", "द्रव्यमान", "समय", "वेग"]
+        "en": ["Speed", "Mass", "Velocity", "Time"],
+        "hi": ["गति", "द्रव्यमान", "वेग", "समय"]
       },
       "answer": {"en": "Velocity", "hi": "वेग"},
       "explanation": {"en": "Velocity has both magnitude and direction, making it a vector quantity.", "hi": "वेग में परिमाण और दिशा दोनों होते हैं, जिससे यह एक सदिश राशि बनता है।"},
@@ -541,8 +541,8 @@
         "hi": "निम्नलिखित में से कौन ऊष्मा का अच्छा कुचालक है?"
       },
       "options": {
-        "en": ["Copper", "Aluminum", "Wood", "Iron"],
-        "hi": ["तांबा", "एल्यूमीनियम", "लकड़ी", "लोहा"]
+        "en": ["Copper", "Wood", "Aluminum", "Iron"],
+        "hi": ["तांबा", "लकड़ी", "एल्यूमीनियम", "लोहा"]
       },
       "answer": {"en": "Wood", "hi": "लकड़ी"},
       "explanation": {"en": "Wood is a poor conductor of heat, making it a good insulator.", "hi": "लकड़ी ऊष्मा की खराब चालक है, जिससे यह एक अच्छा कुचालक बनती है।"},
@@ -554,8 +554,8 @@
         "hi": "विद्युत आवेश की SI इकाई क्या है?"
       },
       "options": {
-        "en": ["Ampere", "Volt", "Coulomb", "Ohm"],
-        "hi": ["एम्पियर", "वोल्ट", "कूलम्ब", "ओम"]
+        "en": ["Ampere", "Volt", "Ohm", "Coulomb"],
+        "hi": ["एम्पियर", "वोल्ट", "ओम", "कूलम्ब"]
       },
       "answer": {"en": "Coulomb", "hi": "कूलम्ब"},
       "explanation": {"en": "The SI unit of electric charge is the coulomb (C).", "hi": "विद्युत आवेश की SI इकाई कूलम्ब (C) है।"},
@@ -567,8 +567,8 @@
         "hi": "निम्नलिखित में से किसका उपयोग वायुमंडलीय दबाव मापने के लिए किया जाता है?"
       },
       "options": {
-        "en": ["Thermometer", "Barometer", "Hygrometer", "Anemometer"],
-        "hi": ["थर्मामीटर", "बैरोमीटर", "हाइग्रोमीटर", "एनीमोमीटर"]
+        "en": ["Barometer", "Thermometer", "Hygrometer", "Anemometer"],
+        "hi": ["बैरोमीटर", "थर्मामीटर", "हाइग्रोमीटर", "एनीमोमीटर"]
       },
       "answer": {"en": "Barometer", "hi": "बैरोमीटर"},
       "explanation": {"en": "A barometer is used to measure atmospheric pressure.", "hi": "बैरोमीटर का उपयोग वायुमंडलीय दबाव मापने के लिए किया जाता है।"},
@@ -580,8 +580,8 @@
         "hi": "सोने का रासायनिक प्रतीक क्या है?"
       },
       "options": {
-        "en": ["Ag", "Au", "Fe", "Pb"],
-        "hi": ["Ag", "Au", "Fe", "Pb"]
+        "en": ["Au", "Ag", "Fe", "Pb"],
+        "hi": ["Au", "Ag", "Fe", "Pb"]
       },
       "answer": {"en": "Au", "hi": "Au"},
       "explanation": {"en": "The chemical symbol for gold is Au (from Latin 'aurum').", "hi": "सोने का रासायनिक प्रतीक Au है (लैटिन 'aurum' से)।"},
@@ -593,8 +593,8 @@
         "hi": "निम्नलिखित में से कौन चुंबकीय पदार्थ है?"
       },
       "options": {
-        "en": ["Copper", "Aluminum", "Iron", "Wood"],
-        "hi": ["तांबा", "एल्यूमीनियम", "लोहा", "लकड़ी"]
+        "en": ["Copper", "Aluminum", "Wood", "Iron"],
+        "hi": ["तांबा", "एल्यूमीनियम", "लकड़ी", "लोहा"]
       },
       "answer": {"en": "Iron", "hi": "लोहा"},
       "explanation": {"en": "Iron is magnetic and is attracted to magnets.", "hi": "लोहा चुंबकीय होता है और चुंबक की ओर आकर्षित होता है।"},

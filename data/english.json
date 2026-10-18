@@ -1,6 +1,6 @@
 {
   "subject": "english",
-  "last_updated": "2025-12-20",
+  "last_updated": "2026-10-18",
   "questions": [
     {
       "question": {
@@ -21,8 +21,8 @@
         "hi": "सही क्रिया का रूप चुनें: वह हर शनिवार _____ बाजार जाती है।"
       },
       "options": {
-        "en": ["go", "goes", "gone", "going"],
-        "hi": ["जाती", "जाता", "गया", "जाने"]
+        "en": ["go", "gone", "going", "goes"],
+        "hi": ["जाती", "गया", "जाने", "जाता"]
       },
       "answer": {"en": "goes", "hi": "जाता"},
       "explanation": {"en": "'Goes' is the correct present tense form for the third person singular.", "hi": "'जाती' तीसरे व्यक्ति एकवचन के लिए सही वर्तमान काल का रूप है।"},
@@ -34,8 +34,8 @@
         "hi": "'कठिन' का विपरीत शब्द क्या है?"
       },
       "options": {
-        "en": ["Hard", "Easy", "Complex", "Tough"],
-        "hi": ["कठोर", "आसान", "जटिल", "कठिन"]
+        "en": ["Hard", "Complex", "Tough", "Easy"],
+        "hi": ["कठोर", "जटिल", "कठिन", "आसान"]
       },
       "answer": {"en": "Easy", "hi": "आसान"},
       "explanation": {"en": "'Easy' means not difficult; simple to do or understand.", "hi": "'आसान' का अर्थ है कठिन नहीं; करना या समझना सरल।"},
@@ -47,20 +47,10 @@
         "hi": "सही वाक्य पहचानें।"
       },
       "options": {
-        "en": [
-          "He don't like apples.",
-          "He doesn't likes apples.",
-          "He doesn't like apples.",
-          "He not like apples."
-        ],
-        "hi": [
-          "वह सेब पसंद नहीं करता।",
-          "वह सेब पसंद नहीं करता।",
-          "वह सेब पसंद नहीं करता।",
-          "वह सेब पसंद नहीं करता।"
-        ]
+        "en": ["He doesn't like apples.", "He don't like apples.", "He doesn't likes apples.", "He not like apples."],
+        "hi": ["He doesn't like apples.", "He don't like apples.", "He doesn't likes apples.", "He not like apples."]
       },
-      "answer": {"en": "He doesn't like apples.", "hi": "वह सेब पसंद नहीं करता।"},
+      "answer": {"en": "He doesn't like apples.", "hi": "He doesn't like apples."},
       "explanation": {"en": "'He doesn't like apples.' is the grammatically correct form.", "hi": "'वह सेब पसंद नहीं करता।' व्याकरणिक रूप से सही है।"},
       "subject": "english"
     },
@@ -70,8 +60,8 @@
         "hi": "कौन सा शब्द संज्ञा है?"
       },
       "options": {
-        "en": ["Quickly", "Beautiful", "Happiness", "Run"],
-        "hi": ["जल्दी", "सुंदर", "खुशी", "दौड़ना"]
+        "en": ["Quickly", "Happiness", "Beautiful", "Run"],
+        "hi": ["जल्दी", "खुशी", "सुंदर", "दौड़ना"]
       },
       "answer": {"en": "Happiness", "hi": "खुशी"},
       "explanation": {"en": "'Happiness' is a noun that refers to the state of being happy.", "hi": "'खुशी' एक संज्ञा है जो खुश रहने की स्थिति को संदर्भित करती है।"},
@@ -83,11 +73,11 @@
         "hi": "वाक्य में त्रुटि पहचानें: वह सेब पसंद नहीं करती।"
       },
       "options": {
-        "en": ["A) She", "B) don't", "C) like", "D) apples"],
-        "hi": ["A) वह", "B) नहीं", "C) पसंद", "D) सेब"]
+        "en": ["She", "don't", "like", "apples"],
+        "hi": ["She", "don't", "like", "apples"]
       },
-      "answer": {"en": "don't", "hi": "नहीं"},
-      "explanation": {"en": "The correct form should be 'doesn't' instead of 'don't' for singular subjects.", "hi": "'नहीं' के बजाय 'नहीं करती' का सही रूप 'नहीं' होना चाहिए।"},
+      "answer": {"en": "don't", "hi": "don't"},
+      "explanation": {"en": "With a singular subject like 'She', the correct form is 'doesn't': 'She doesn't like apples.'", "hi": "'She' जैसे एकवचन कर्ता के साथ सही रूप 'doesn't' है: 'She doesn't like apples.'"},
       "subject": "english"
     },
     {
@@ -96,20 +86,10 @@
         "hi": "कौन सा वाक्य सही है?"
       },
       "options": {
-        "en": [
-          "He run fast.",
-          "He runs fast.",
-          "He running fast.",
-          "He runned fast."
-        ],
-        "hi": [
-          "वह तेज दौड़ता है।",
-          "वह तेज दौड़ता है।",
-          "वह तेज दौड़ रहा है।",
-          "वह तेज दौड़ा।"
-        ]
+        "en": ["He runs fast.", "He run fast.", "He running fast.", "He runned fast."],
+        "hi": ["He runs fast.", "He run fast.", "He running fast.", "He runned fast."]
       },
-      "answer": {"en": "He runs fast.", "hi": "वह तेज दौड़ता है।"},
+      "answer": {"en": "He runs fast.", "hi": "He runs fast."},
       "explanation": {"en": "'He runs fast.' is correct because it uses the proper present tense form.", "hi": "'वह तेज दौड़ता है।' सही है क्योंकि यह उचित वर्तमान काल का रूप है।"},
       "subject": "english"
     },
@@ -119,10 +99,10 @@
         "hi": "'जाना' का भूतकाल क्या है?"
       },
       "options": {
-        "en": ["Goes", "Gone", "Went", "Going"],
-        "hi": ["जाता है", "गया", "गई", "जाना"]
+        "en": ["Goes", "Gone", "Going", "Went"],
+        "hi": ["Goes", "Gone", "Going", "Went"]
       },
-      "answer": {"en": "Went", "hi": "गया"},
+      "answer": {"en": "Went", "hi": "Went"},
       "explanation": {"en": "'Went' is the past tense of 'go'.", "hi": "'गया' 'जाना' का भूतकाल है।"},
       "subject": "english"
     },
@@ -132,20 +112,10 @@
         "hi": "कौन सा वाक्य व्याकरणिक रूप से सही है?"
       },
       "options": {
-        "en": [
-          "She go to school.",
-          "She goes to school.",
-          "She gone to school.",
-          "She going to school."
-        ],
-        "hi": [
-          "वह स्कूल जाती है।",
-          "वह स्कूल जा रही है।",
-          "वह स्कूल गई।",
-          "वह स्कूल जा रही है।"
-        ]
+        "en": ["She go to school.", "She goes to school.", "She gone to school.", "She going to school."],
+        "hi": ["She go to school.", "She goes to school.", "She gone to school.", "She going to school."]
       },
-      "answer": {"en": "She goes to school.", "hi": "वह स्कूल जाती है।"},
+      "answer": {"en": "She goes to school.", "hi": "She goes to school."},
       "explanation": {"en": "'She goes to school.' is the correct present tense form.", "hi": "'वह स्कूल जाती है।' सही वर्तमान काल का रूप है।"},
       "subject": "english"
     },
@@ -155,8 +125,8 @@
         "hi": "'उदार' का क्या अर्थ है?"
       },
       "options": {
-        "en": ["Kind", "Cruel", "Selfish", "Indifferent"],
-        "hi": ["दयालु", "क्रूर", "स्वार्थी", "उदासीन"]
+        "en": ["Cruel", "Kind", "Selfish", "Indifferent"],
+        "hi": ["क्रूर", "दयालु", "स्वार्थी", "उदासीन"]
       },
       "answer": {"en": "Kind", "hi": "दयालु"},
       "explanation": {"en": "'Benevolent' means well-meaning and kindly.", "hi": "'उदार' का अर्थ है, अच्छे इरादे वाला और दयालु।"},
@@ -168,18 +138,8 @@
         "hi": "निम्नलिखित में से कौन सा यौगिक वाक्य है?"
       },
       "options": {
-        "en": [
-          "I like tea, and she likes coffee.",
-          "She runs fast.",
-          "The sun is shining.",
-          "He is a doctor."
-        ],
-        "hi": [
-          "मुझे चाय पसंद है, और उसे कॉफी पसंद है।",
-          "वह तेज दौड़ती है।",
-          "सूरज चमक रहा है।",
-          "वह एक डॉक्टर है।"
-        ]
+        "en": ["She runs fast.", "The sun is shining.", "I like tea, and she likes coffee.", "He is a doctor."],
+        "hi": ["वह तेज दौड़ती है।", "सूरज चमक रहा है।", "मुझे चाय पसंद है, और उसे कॉफी पसंद है।", "वह एक डॉक्टर है।"]
       },
       "answer": {"en": "I like tea, and she likes coffee.", "hi": "मुझे चाय पसंद है, और उसे कॉफी पसंद है।"},
       "explanation": {"en": "A compound sentence contains at least two independent clauses joined by a conjunction.", "hi": "एक यौगिक वाक्य में कम से कम दो स्वतंत्र उपवाक्य होते हैं जो एक संयोजक द्वारा जुड़े होते हैं।"},
@@ -191,18 +151,8 @@
         "hi": "'बर्फ तोड़ना' का क्या अर्थ है?"
       },
       "options": {
-        "en": [
-          "To initiate conversation in a social setting",
-          "To break something",
-          "To start a fight",
-          "To make someone cry"
-        ],
-        "hi": [
-          "सामाजिक सेटिंग में बातचीत शुरू करना",
-          "कुछ तोड़ना",
-          "झगड़ा शुरू करना",
-          "किसी को रोना"
-        ]
+        "en": ["To break something", "To initiate conversation in a social setting", "To start a fight", "To make someone cry"],
+        "hi": ["कुछ तोड़ना", "सामाजिक सेटिंग में बातचीत शुरू करना", "झगड़ा शुरू करना", "किसी को रोना"]
       },
       "answer": {"en": "To initiate conversation in a social setting", "hi": "सामाजिक सेटिंग में बातचीत शुरू करना"},
       "explanation": {"en": "'Break the ice' means to initiate conversation in a social setting, especially among strangers.", "hi": "'बर्फ तोड़ना' का अर्थ है सामाजिक सेटिंग में बातचीत शुरू करना, विशेष रूप से अजनबियों के बीच।"},
@@ -215,9 +165,9 @@
       },
       "options": {
         "en": ["goes", "gone", "went", "going"],
-        "hi": ["जाती है", "गई", "गई", "जा रही है"]
+        "hi": ["goes", "gone", "went", "going"]
       },
-      "answer": {"en": "went", "hi": "गई"},
+      "answer": {"en": "went", "hi": "went"},
       "explanation": {"en": "'Went' is the past tense of 'go', which is correct for the sentence.", "hi": "'गई' 'जाना' का भूतकाल है, जो वाक्य के लिए सही है।"},
       "subject": "english"
     },
@@ -240,8 +190,8 @@
         "hi": "निम्नलिखित में से कौन सा एक पूर्वसर्ग है?"
       },
       "options": {
-        "en": ["Quickly", "Under", "Beautiful", "Happily"],
-        "hi": ["जल्दी", "नीचे", "सुंदर", "खुशी से"]
+        "en": ["Quickly", "Beautiful", "Under", "Happily"],
+        "hi": ["जल्दी", "सुंदर", "नीचे", "खुशी से"]
       },
       "answer": {"en": "Under", "hi": "नीचे"},
       "explanation": {"en": "'Under' is a preposition that shows the relationship between a noun and another word.", "hi": "'नीचे' एक पूर्वसर्ग है जो एक संज्ञा और दूसरे शब्द के बीच संबंध को दर्शाता है।"},
@@ -253,8 +203,8 @@
         "hi": "'सूक्ष्म' का क्या अर्थ है?"
       },
       "options": {
-        "en": ["Careless", "Detailed", "Quick", "Rough"],
-        "hi": ["लापरवाह", "विस्तृत", "तेज", "खुरदुरा"]
+        "en": ["Detailed", "Careless", "Quick", "Rough"],
+        "hi": ["विस्तृत", "लापरवाह", "तेज", "खुरदुरा"]
       },
       "answer": {"en": "Detailed", "hi": "विस्तृत"},
       "explanation": {"en": "'Meticulous' means showing great attention to detail; very careful and precise.", "hi": "'सूक्ष्म' का अर्थ है विवरण पर बहुत ध्यान देना; बहुत सावधान और सटीक।"},
@@ -266,8 +216,8 @@
         "hi": "'वह नई भाषाएँ _____ सीखने में रुचि रखती है।'"
       },
       "options": {
-        "en": ["in", "on", "at", "for"],
-        "hi": ["में", "पर", "के लिए", "के साथ"]
+        "en": ["on", "at", "for", "in"],
+        "hi": ["पर", "के लिए", "के साथ", "में"]
       },
       "answer": {"en": "in", "hi": "में"},
       "explanation": {"en": "'In' is the correct preposition to indicate interest in something.", "hi": "'में' सही पूर्वसर्ग है जो किसी चीज़ में रुचि को दर्शाता है।"},
@@ -292,18 +242,8 @@
         "hi": "'द्विभाषी' का क्या अर्थ है?"
       },
       "options": {
-        "en": [
-          "Knowing one language",
-          "Knowing two languages",
-          "Knowing three languages",
-          "Knowing multiple languages"
-        ],
-        "hi": [
-          "एक भाषा जानना",
-          "दो भाषाएँ जानना",
-          "तीन भाषाएँ जानना",
-          "कई भाषाएँ जानना"
-        ]
+        "en": ["Knowing two languages", "Knowing one language", "Knowing three languages", "Knowing multiple languages"],
+        "hi": ["दो भाषाएँ जानना", "एक भाषा जानना", "तीन भाषाएँ जानना", "कई भाषाएँ जानना"]
       },
       "answer": {"en": "Knowing two languages", "hi": "दो भाषाएँ जानना"},
       "explanation": {"en": "'Bilingual' refers to a person who can speak two languages fluently.", "hi": "'द्विभाषी' उस व्यक्ति को संदर्भित करता है जो दो भाषाएँ धाराप्रवाह बोल सकता है।"},
@@ -315,8 +255,8 @@
         "hi": "'वह गणित में अच्छी _____ है।'"
       },
       "options": {
-        "en": ["at", "in", "on", "for"],
-        "hi": ["में", "पर", "के लिए", "से"]
+        "en": ["in", "on", "at", "for"],
+        "hi": ["पर", "के लिए", "में", "से"]
       },
       "answer": {"en": "at", "hi": "में"},
       "explanation": {"en": "'At' is the correct preposition to indicate proficiency in a subject.", "hi": "'में' सही पूर्वसर्ग है जो किसी विषय में दक्षता को दर्शाता है।"},
@@ -328,8 +268,8 @@
         "hi": "'दौड़ना' का भूतकाल क्या है?"
       },
       "options": {
-        "en": ["Ran", "Run", "Running", "Runs"],
-        "hi": ["दौड़ा", "दौड़ना", "दौड़ते हुए", "दौड़ती है"]
+        "en": ["Run", "Running", "Ran", "Runs"],
+        "hi": ["दौड़ना", "दौड़ते हुए", "दौड़ा", "दौड़ती है"]
       },
       "answer": {"en": "Ran", "hi": "दौड़ा"},
       "explanation": {"en": "'Ran' is the past tense of 'run'.", "hi": "'दौड़ा' 'दौड़ना' का भूतकाल है।"},
@@ -337,12 +277,12 @@
     },
     {
       "question": {
-        "en": "What is the main idea of a text?",
-        "hi": "एक पाठ का मुख्य विचार क्या है?"
+        "en": "The central message or insight that a text conveys is called its:",
+        "hi": "किसी पाठ द्वारा व्यक्त केंद्रीय संदेश या अंतर्दृष्टि को क्या कहते हैं?"
       },
       "options": {
-        "en": ["The summary", "The theme", "The conclusion", "The title"],
-        "hi": ["सारांश", "विषय", "निष्कर्ष", "शीर्षक"]
+        "en": ["The theme", "The summary", "The conclusion", "The title"],
+        "hi": ["विषय", "सारांश", "निष्कर्ष", "शीर्षक"]
       },
       "answer": {"en": "The theme", "hi": "विषय"},
       "explanation": {"en": "The theme is the central topic or idea that the text discusses.", "hi": "विषय वह केंद्रीय विषय या विचार है जिस पर पाठ चर्चा करता है।"},
@@ -354,8 +294,8 @@
         "hi": "'वह दुकान _____ गया है।' सही रूप चुनें:"
       },
       "options": {
-        "en": ["go", "went", "gone", "going"],
-        "hi": ["जाना", "गया", "गया हुआ", "जा रहा"]
+        "en": ["go", "gone", "went", "going"],
+        "hi": ["जाना", "गया हुआ", "गया", "जा रहा"]
       },
       "answer": {"en": "gone", "hi": "गया हुआ"},
       "explanation": {"en": "'Gone' is the past participle used with 'has'.", "hi": "'गया हुआ' भूतकाल का विशेषण है जो 'है' के साथ प्रयुक्त होता है।"},
@@ -367,8 +307,8 @@
         "hi": "कौन सा शब्द विशेषण है?"
       },
       "options": {
-        "en": ["Quickly", "Beautiful", "Running", "Dance"],
-        "hi": ["जल्दी", "सुंदर", "दौड़ना", "नृत्य"]
+        "en": ["Quickly", "Running", "Beautiful", "Dance"],
+        "hi": ["जल्दी", "दौड़ना", "सुंदर", "नृत्य"]
       },
       "answer": {"en": "Beautiful", "hi": "सुंदर"},
       "explanation": {"en": "'Beautiful' describes a noun and is an adjective.", "hi": "'सुंदर' एक संज्ञा का वर्णन करता है और एक विशेषण है।"},
@@ -376,15 +316,15 @@
     },
     {
       "question": {
-        "en": "Identify the pronoun in: 'She gave him the book.'",
-        "hi": "'वह ने उसे किताब दी।' में सर्वनाम पहचानें:"
+        "en": "Identify the object pronoun in: 'She gave him the book.'",
+        "hi": "'She gave him the book.' में कर्म सर्वनाम (object pronoun) पहचानें:"
       },
       "options": {
-        "en": ["She", "gave", "him", "book"],
-        "hi": ["वह", "दी", "उसे", "किताब"]
+        "en": ["She", "gave", "book", "him"],
+        "hi": ["वह", "दी", "किताब", "उसे"]
       },
-      "answer": {"en": "She and him", "hi": "वह और उसे"},
-      "explanation": {"en": "'She' and 'him' are pronouns replacing nouns.", "hi": "'वह' और 'उसे' सर्वनाम हैं जो संज्ञाओं को प्रतिस्थापित करते हैं।"},
+      "answer": {"en": "him", "hi": "उसे"},
+      "explanation": {"en": "'him' is the object pronoun (receiver of the action); 'She' is the subject pronoun.", "hi": "'him' कर्म सर्वनाम है (क्रिया को प्राप्त करने वाला); 'She' कर्ता सर्वनाम है।"},
       "subject": "english"
     },
     {
@@ -407,9 +347,9 @@
       },
       "options": {
         "en": ["a", "an", "the", "no article"],
-        "hi": ["एक", "एक", "यह", "कोई लेख नहीं"]
+        "hi": ["a", "an", "the", "no article"]
       },
-      "answer": {"en": "an", "hi": "एक"},
+      "answer": {"en": "an", "hi": "an"},
       "explanation": {"en": "'An' is used before words starting with a vowel sound like 'honest'.", "hi": "'एक' का उपयोग 'ईमानदार' जैसे स्वर ध्वनि से शुरू होने वाले शब्दों से पहले किया जाता है।"},
       "subject": "english"
     },
@@ -419,21 +359,11 @@
         "hi": "समध्वनि (होमोनिम) क्या है?"
       },
       "options": {
-        "en": [
-          "Words that sound alike but have different meanings",
-          "Words with opposite meanings",
-          "Words with similar meanings",
-          "Words that are spelled the same"
-        ],
-        "hi": [
-          "शब्द जो एक जैसे लगते हैं लेकिन अर्थ अलग-अलग होते हैं",
-          "शब्द जिनके अर्थ विपरीत होते हैं",
-          "शब्द जिनके अर्थ समान होते हैं",
-          "शब्द जो एक जैसे लिखे जाते हैं"
-        ]
+        "en": ["Words with opposite meanings", "Words that are spelled or pronounced alike but have different meanings", "Words with similar meanings", "Words borrowed from other languages"],
+        "hi": ["शब्द जिनके अर्थ विपरीत होते हैं", "शब्द जो एक जैसे लिखे या बोले जाते हैं लेकिन अर्थ अलग होते हैं", "शब्द जिनके अर्थ समान होते हैं", "अन्य भाषाओं से लिए गए शब्द"]
       },
-      "answer": {"en": "Words that sound alike but have different meanings", "hi": "शब्द जो एक जैसे लगते हैं लेकिन अर्थ अलग-अलग होते हैं"},
-      "explanation": {"en": "Homonyms sound the same but have different meanings (e.g., 'bear' animal vs. 'bear' to carry).", "hi": "समध्वनि एक जैसे लगते हैं लेकिन अर्थ अलग-अलग होते हैं (जैसे 'भालू' जानवर बनाम 'भालू' ढोना)।"},
+      "answer": {"en": "Words that are spelled or pronounced alike but have different meanings", "hi": "शब्द जो एक जैसे लिखे या बोले जाते हैं लेकिन अर्थ अलग होते हैं"},
+      "explanation": {"en": "Homonyms share the same spelling or pronunciation but differ in meaning (e.g., 'bear' the animal vs. 'bear' meaning to endure).", "hi": "समध्वनि शब्दों की वर्तनी या उच्चारण समान होता है पर अर्थ अलग होते हैं (जैसे 'bear' — भालू, और 'bear' — सहना)।"},
       "subject": "english"
     },
     {
@@ -442,20 +372,10 @@
         "hi": "कौन सा वाक्य सही तुलनात्मक रूप का उपयोग करता है?"
       },
       "options": {
-        "en": [
-          "He is more taller than his brother.",
-          "He is taller than his brother.",
-          "He is the tallest than his brother.",
-          "He is tall than his brother."
-        ],
-        "hi": [
-          "वह अपने भाई से अधिक लंबा है।",
-          "वह अपने भाई से लंबा है।",
-          "वह अपने भाई से सबसे लंबा है।",
-          "वह अपने भाई से लंबा है।"
-        ]
+        "en": ["He is more taller than his brother.", "He is the tallest than his brother.", "He is tall than his brother.", "He is taller than his brother."],
+        "hi": ["He is more taller than his brother.", "He is the tallest than his brother.", "He is tall than his brother.", "He is taller than his brother."]
       },
-      "answer": {"en": "He is taller than his brother.", "hi": "वह अपने भाई से लंबा है।"},
+      "answer": {"en": "He is taller than his brother.", "hi": "He is taller than his brother."},
       "explanation": {"en": "'Taller' is the correct comparative form of 'tall'.", "hi": "'लंबा' 'लंबा' का सही तुलनात्मक रूप है।"},
       "subject": "english"
     },
@@ -465,8 +385,8 @@
         "hi": "'अच्छा' का उत्तम रूप क्या है?"
       },
       "options": {
-        "en": ["Gooder", "Goodest", "Better", "Best"],
-        "hi": ["अच्छा", "सबसे अच्छा", "बेहतर", "सर्वश्रेष्ठ"]
+        "en": ["Gooder", "Goodest", "Best", "Better"],
+        "hi": ["अच्छा", "सबसे अच्छा", "सर्वश्रेष्ठ", "बेहतर"]
       },
       "answer": {"en": "Best", "hi": "सर्वश्रेष्ठ"},
       "explanation": {"en": "'Best' is the superlative form of 'good'.", "hi": "'सर्वश्रेष्ठ' 'अच्छा' का उत्तम रूप है।"},
@@ -478,8 +398,8 @@
         "hi": "'मैं जाना चाहता था, लेकिन बारिश हो रही थी।' में संयोजक पहचानें:"
       },
       "options": {
-        "en": ["I", "wanted", "but", "raining"],
-        "hi": ["मैं", "चाहता", "लेकिन", "हो रही"]
+        "en": ["I", "wanted", "raining", "but"],
+        "hi": ["मैं", "चाहता", "हो रही", "लेकिन"]
       },
       "answer": {"en": "but", "hi": "लेकिन"},
       "explanation": {"en": "'But' connects two contrasting clauses.", "hi": "'लेकिन' दो विपरीत उपवाक्यों को जोड़ता है।"},
@@ -491,10 +411,10 @@
         "hi": "'क्षणभंगुर' का क्या अर्थ है?"
       },
       "options": {
-        "en": ["Lasting", "Temporary", "Permanent", "Ancient"],
-        "hi": ["स्थायी", "अस्थायी", "स्थायी", "प्राचीन"]
+        "en": ["Temporary", "Lasting", "Permanent", "Ancient"],
+        "hi": ["Temporary", "Lasting", "Permanent", "Ancient"]
       },
-      "answer": {"en": "Temporary", "hi": "अस्थायी"},
+      "answer": {"en": "Temporary", "hi": "Temporary"},
       "explanation": {"en": "'Ephemeral' means lasting for a very short time.", "hi": "'क्षणभंगुर' का अर्थ है बहुत कम समय तक रहना।"},
       "subject": "english"
     },
@@ -504,11 +424,11 @@
         "hi": "सही वर्तनी चुनें।"
       },
       "options": {
-        "en": ["Recieve", "Receive", "Recive", "Recieve"],
-        "hi": ["रिसीव", "रिसीव", "रिसिव", "रिसीव"]
+        "en": ["Recieve", "Recive", "Receeve", "Receive"],
+        "hi": ["Recieve", "Recive", "Receeve", "Receive"]
       },
-      "answer": {"en": "Receive", "hi": "रिसीव"},
-      "explanation": {"en": "The correct spelling follows the 'i before e except after c' rule.", "hi": "सही वर्तनी 'c के बाद i और e' नियम का पालन करती है।"},
+      "answer": {"en": "Receive", "hi": "Receive"},
+      "explanation": {"en": "'Receive' follows the rule 'i before e, except after c'.", "hi": "'Receive' नियम 'i before e, except after c' का पालन करता है।"},
       "subject": "english"
     },
     {
@@ -517,8 +437,8 @@
         "hi": "'अस्पष्ट' का क्या अर्थ है?"
       },
       "options": {
-        "en": ["Clear", "Unclear", "Simple", "Direct"],
-        "hi": ["स्पष्ट", "अस्पष्ट", "सरल", "प्रत्यक्ष"]
+        "en": ["Unclear", "Clear", "Simple", "Direct"],
+        "hi": ["अस्पष्ट", "स्पष्ट", "सरल", "प्रत्यक्ष"]
       },
       "answer": {"en": "Unclear", "hi": "अस्पष्ट"},
       "explanation": {"en": "'Ambiguous' means open to more than one interpretation; not having one obvious meaning.", "hi": "'अस्पष्ट' का अर्थ है एक से अधिक व्याख्याओं के लिए खुला होना; एक स्पष्ट अर्थ नहीं होना।"},
@@ -530,8 +450,8 @@
         "hi": "कौन सा एक मॉडल क्रिया है?"
       },
       "options": {
-        "en": ["Run", "Can", "Beautiful", "Happiness"],
-        "hi": ["दौड़ना", "सकता है", "सुंदर", "खुशी"]
+        "en": ["Run", "Beautiful", "Happiness", "Can"],
+        "hi": ["दौड़ना", "सुंदर", "खुशी", "सकता है"]
       },
       "answer": {"en": "Can", "hi": "सकता है"},
       "explanation": {"en": "'Can' is a modal verb expressing ability or permission.", "hi": "'सकता है' एक मॉडल क्रिया है जो क्षमता या अनुमति व्यक्त करती है।"},
@@ -543,8 +463,8 @@
         "hi": "'उदार' का विलोम शब्द क्या है?"
       },
       "options": {
-        "en": ["Kind", "Selfish", "Helpful", "Giving"],
-        "hi": ["दयालु", "स्वार्थी", "सहायक", "देने वाला"]
+        "en": ["Selfish", "Kind", "Helpful", "Giving"],
+        "hi": ["स्वार्थी", "दयालु", "सहायक", "देने वाला"]
       },
       "answer": {"en": "Selfish", "hi": "स्वार्थी"},
       "explanation": {"en": "'Selfish' means lacking generosity.", "hi": "'स्वार्थी' का अर्थ है उदारता की कमी होना।"},
@@ -556,18 +476,8 @@
         "hi": "कर्मवाच्य वाक्य पहचानें।"
       },
       "options": {
-        "en": [
-          "She wrote a letter.",
-          "A letter was written by her.",
-          "She is writing a letter.",
-          "She will write a letter."
-        ],
-        "hi": [
-          "उसने एक पत्र लिखा।",
-          "एक पत्र उसके द्वारा लिखा गया था।",
-          "वह एक पत्र लिख रही है।",
-          "वह एक पत्र लिखेगी।"
-        ]
+        "en": ["A letter was written by her.", "She wrote a letter.", "She is writing a letter.", "She will write a letter."],
+        "hi": ["एक पत्र उसके द्वारा लिखा गया था।", "उसने एक पत्र लिखा।", "वह एक पत्र लिख रही है।", "वह एक पत्र लिखेगी।"]
       },
       "answer": {"en": "A letter was written by her.", "hi": "एक पत्र उसके द्वारा लिखा गया था।"},
       "explanation": {"en": "Passive voice focuses on the object receiving the action.", "hi": "कर्मवाच्य क्रिया प्राप्त करने वाली वस्तु पर केंद्रित होता है।"},
@@ -579,18 +489,8 @@
         "hi": "उपमा क्या है?"
       },
       "options": {
-        "en": [
-          "A comparison using 'like' or 'as'",
-          "A comparison without 'like' or 'as'",
-          "Exaggeration",
-          "Giving human qualities to objects"
-        ],
-        "hi": [
-          "'like' या 'as' का उपयोग करके तुलना",
-          "'like' या 'as' के बिना तुलना",
-          "अतिशयोक्ति",
-          "वस्तुओं को मानवीय गुण देना"
-        ]
+        "en": ["A comparison without 'like' or 'as'", "Exaggeration", "A comparison using 'like' or 'as'", "Giving human qualities to objects"],
+        "hi": ["'like' या 'as' के बिना तुलना", "अतिशयोक्ति", "'like' या 'as' का उपयोग करके तुलना", "वस्तुओं को मानवीय गुण देना"]
       },
       "answer": {"en": "A comparison using 'like' or 'as'", "hi": "'like' या 'as' का उपयोग करके तुलना"},
       "explanation": {"en": "A simile compares two things using 'like' or 'as' (e.g., 'as brave as a lion').", "hi": "उपमा 'like' या 'as' का उपयोग करके दो चीजों की तुलना करती है (जैसे, 'शेर के जितना बहादुर')।"},
@@ -602,8 +502,8 @@
         "hi": "'अगर मैं _____ तुम्हें, तो मैं माफी मांगता।' सही रूप चुनें:"
       },
       "options": {
-        "en": ["am", "was", "were", "be"],
-        "hi": ["हूँ", "था", "होता", "होऊँ"]
+        "en": ["am", "was", "be", "were"],
+        "hi": ["हूँ", "था", "होऊँ", "होता"]
       },
       "answer": {"en": "were", "hi": "होता"},
       "explanation": {"en": "'Were' is used in hypothetical/conditional sentences with 'I'.", "hi": "'होता' 'I' के साथ काल्पनिक/शर्तिय वाक्यों में उपयोग किया जाता है।"},
@@ -615,8 +515,8 @@
         "hi": "'माउस' का बहुवचन क्या है?"
       },
       "options": {
-        "en": ["Mouses", "Mice", "Mouse", "Meese"],
-        "hi": ["माउसेज", "चूहे", "माउस", "मीस"]
+        "en": ["Mouses", "Mouse", "Meese", "Mice"],
+        "hi": ["माउसेज", "माउस", "मीस", "चूहे"]
       },
       "answer": {"en": "Mice", "hi": "चूहे"},
       "explanation": {"en": "'Mice' is the irregular plural form of 'mouse'.", "hi": "'चूहे' 'माउस' का अनियमित बहुवचन रूप है।"},
@@ -628,18 +528,8 @@
         "hi": "कौन सा वाक्य वर्तमान पूर्ण काल का उपयोग करता है?"
       },
       "options": {
-        "en": [
-          "She goes to school.",
-          "She went to school.",
-          "She has gone to school.",
-          "She will go to school."
-        ],
-        "hi": [
-          "वह स्कूल जाती है।",
-          "वह स्कूल गई।",
-          "वह स्कूल जा चुकी है।",
-          "वह स्कूल जाएगी।"
-        ]
+        "en": ["She goes to school.", "She went to school.", "She has gone to school.", "She will go to school."],
+        "hi": ["वह स्कूल जाती है।", "वह स्कूल गई।", "वह स्कूल जा चुकी है।", "वह स्कूल जाएगी।"]
       },
       "answer": {"en": "She has gone to school.", "hi": "वह स्कूल जा चुकी है।"},
       "explanation": {"en": "Present perfect tense uses 'has/have + past participle'.", "hi": "वर्तमान पूर्ण काल 'has/have + भूतकाल का विशेषण' का उपयोग करता है।"},
@@ -651,8 +541,8 @@
         "hi": "'वाक्पटु' का क्या अर्थ है?"
       },
       "options": {
-        "en": ["Quiet", "Fluent", "Rude", "Simple"],
-        "hi": ["शांत", "धाराप्रवाह", "असभ्य", "सरल"]
+        "en": ["Quiet", "Rude", "Fluent", "Simple"],
+        "hi": ["शांत", "असभ्य", "धाराप्रवाह", "सरल"]
       },
       "answer": {"en": "Fluent", "hi": "धाराप्रवाह"},
       "explanation": {"en": "'Eloquent' means fluent or persuasive in speaking or writing.", "hi": "'वाक्पटु' का अर्थ है बोलने या लिखने में धाराप्रवाह या प्रभावशाली होना।"},
@@ -664,18 +554,8 @@
         "hi": "सही विराम चिह्न वाले वाक्य की पहचान करें।"
       },
       "options": {
-        "en": [
-          "What time is it.",
-          "What time is it!",
-          "What time is it?",
-          "What time is it,"
-        ],
-        "hi": [
-          "क्या समय हुआ।",
-          "क्या समय हुआ!",
-          "क्या समय हुआ?",
-          "क्या समय हुआ,"
-        ]
+        "en": ["What time is it.", "What time is it!", "What time is it?", "What time is it,"],
+        "hi": ["क्या समय हुआ।", "क्या समय हुआ!", "क्या समय हुआ?", "क्या समय हुआ,"]
       },
       "answer": {"en": "What time is it?", "hi": "क्या समय हुआ?"},
       "explanation": {"en": "Questions end with a question mark.", "hi": "प्रश्न चिह्न (?) के साथ समाप्त होते हैं।"},
@@ -687,18 +567,8 @@
         "hi": "मुहावरा क्या है?"
       },
       "options": {
-        "en": [
-          "A phrase with a figurative meaning",
-          "A literal phrase",
-          "A proverb",
-          "A short story"
-        ],
-        "hi": [
-          "एक वाक्यांश जिसका आलंकारिक अर्थ हो",
-          "एक शाब्दिक वाक्यांश",
-          "एक कहावत",
-          "एक छोटी कहानी"
-        ]
+        "en": ["A literal phrase", "A phrase with a figurative meaning", "A proverb", "A short story"],
+        "hi": ["एक शाब्दिक वाक्यांश", "एक वाक्यांश जिसका आलंकारिक अर्थ हो", "एक कहावत", "एक छोटी कहानी"]
       },
       "answer": {"en": "A phrase with a figurative meaning", "hi": "एक वाक्यांश जिसका आलंकारिक अर्थ हो"},
       "explanation": {"en": "An idiom has a meaning not deducible from its individual words (e.g., 'kick the bucket').", "hi": "मुहावरे का अर्थ इसके व्यक्तिगत शब्दों से नहीं निकाला जा सकता (जैसे, 'बाल्टी के पास होना')।"},
@@ -710,18 +580,8 @@
         "hi": "'उसने कहा, \"मैं थक गया हूँ।\"' प्रत्यक्ष कथन का सही रूप चुनें:"
       },
       "options": {
-        "en": [
-          "He said that I am tired.",
-          "He said that he is tired.",
-          "He said that he was tired.",
-          "He said that I was tired."
-        ],
-        "hi": [
-          "उसने कहा कि मैं थक गया हूँ।",
-          "उसने कहा कि वह थक गया है।",
-          "उसने कहा कि वह थक गया था।",
-          "उसने कहा कि मैं थक गया था।"
-        ]
+        "en": ["He said that I am tired.", "He said that he was tired.", "He said that he is tired.", "He said that I was tired."],
+        "hi": ["उसने कहा कि मैं थक गया हूँ।", "उसने कहा कि वह थक गया था।", "उसने कहा कि वह थक गया है।", "उसने कहा कि मैं थक गया था।"]
       },
       "answer": {"en": "He said that he was tired.", "hi": "उसने कहा कि वह थक गया था।"},
       "explanation": {"en": "In reported speech, present tense changes to past tense.", "hi": "प्रत्यक्ष कथन में वर्तमान काल भूतकाल में बदल जाता है।"},
@@ -733,18 +593,8 @@
         "hi": "विशेषण का कार्य क्या है?"
       },
       "options": {
-        "en": [
-          "To describe a verb",
-          "To describe a noun",
-          "To connect clauses",
-          "To show action"
-        ],
-        "hi": [
-          "क्रिया का वर्णन करना",
-          "संज्ञा का वर्णन करना",
-          "उपवाक्यों को जोड़ना",
-          "क्रिया दिखाना"
-        ]
+        "en": ["To describe a noun", "To describe a verb", "To connect clauses", "To show action"],
+        "hi": ["संज्ञा का वर्णन करना", "क्रिया का वर्णन करना", "उपवाक्यों को जोड़ना", "क्रिया दिखाना"]
       },
       "answer": {"en": "To describe a noun", "hi": "संज्ञा का वर्णन करना"},
       "explanation": {"en": "Adjectives modify or describe nouns (e.g., 'red car').", "hi": "विशेषण संज्ञाओं को संशोधित या वर्णन करते हैं (जैसे, 'लाल कार')।"},
@@ -756,18 +606,8 @@
         "hi": "विषय-क्रिया सहमति वाला सही वाक्य चुनें।"
       },
       "options": {
-        "en": [
-          "The list of items are on the table.",
-          "The list of items is on the table.",
-          "The list of items were on the table.",
-          "The list of items be on the table."
-        ],
-        "hi": [
-          "वस्तुओं की सूची मेज पर हैं।",
-          "वस्तुओं की सूची मेज पर है।",
-          "वस्तुओं की सूची मेज पर थीं।",
-          "वस्तुओं की सूची मेज पर हो।"
-        ]
+        "en": ["The list of items is on the table.", "The list of items are on the table.", "The list of items were on the table.", "The list of items be on the table."],
+        "hi": ["वस्तुओं की सूची मेज पर है।", "वस्तुओं की सूची मेज पर हैं।", "वस्तुओं की सूची मेज पर थीं।", "वस्तुओं की सूची मेज पर हो।"]
       },
       "answer": {"en": "The list of items is on the table.", "hi": "वस्तुओं की सूची मेज पर है।"},
       "explanation": {"en": "'List' is singular, so the verb must be 'is'.", "hi": "'सूची' एकवचन है, इसलिए क्रिया 'है' होनी चाहिए।"},
@@ -779,18 +619,8 @@
         "hi": "विलोमपद क्या है?"
       },
       "options": {
-        "en": [
-          "A word that reads the same backward and forward",
-          "A word with opposite meaning",
-          "A word with similar sound",
-          "A word with many syllables"
-        ],
-        "hi": [
-          "एक शब्द जो पीछे और आगे एक जैसा पढ़ा जाता है",
-          "एक शब्द जिसका अर्थ विपरीत हो",
-          "एक शब्द जिसकी ध्वनि समान हो",
-          "एक शब्द जिसमें कई मात्राएँ हों"
-        ]
+        "en": ["A word with opposite meaning", "A word with similar sound", "A word with many syllables", "A word that reads the same backward and forward"],
+        "hi": ["एक शब्द जिसका अर्थ विपरीत हो", "एक शब्द जिसकी ध्वनि समान हो", "एक शब्द जिसमें कई मात्राएँ हों", "एक शब्द जो पीछे और आगे एक जैसा पढ़ा जाता है"]
       },
       "answer": {"en": "A word that reads the same backward and forward", "hi": "एक शब्द जो पीछे और आगे एक जैसा पढ़ा जाता है"},
       "explanation": {"en": "Examples include 'madam', 'racecar', and 'level'.", "hi": "उदाहरण में 'मैडम', 'रेसकार' और 'लेवल' शामिल हैं।"},
