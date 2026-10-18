@@ -34,6 +34,11 @@ body {
     padding: 0 20px;
 }
 
+/* Keep in-page jumps clear of the sticky nav */
+html {
+    scroll-padding-top: 80px;
+}
+
 /* ===== Study Page Navigation ===== */
 .study-nav {
     background: var(--card-bg);
@@ -198,10 +203,10 @@ body {
     transform: rotate(-90deg);
 }
 
+/* No height cap when open: a fixed max-height cut off long sections on phones */
 .section-content {
-    max-height: 2000px;
+    max-height: none;
     overflow: hidden;
-    transition: max-height 0.3s ease;
 }
 
 .section-content.collapsed {
@@ -495,6 +500,44 @@ body {
     
     .page-navigation {
         flex-direction: column;
+    }
+}
+
+/* Compact single-row sticky nav on phones (it wrapped to 110-160px tall) */
+@media (max-width: 640px) {
+    .study-nav {
+        padding: 0.5rem 0;
+    }
+
+    .study-nav .container {
+        gap: 0.5rem;
+    }
+
+    .back-link {
+        flex: 1;
+        min-width: 0;
+        font-size: 0.9rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding: 0.5rem 0;
+    }
+
+    .nav-controls {
+        gap: 0.4rem;
+        flex-shrink: 0;
+    }
+
+    .nav-controls .btn-primary,
+    .nav-controls .btn-secondary {
+        padding: 0.5rem 0.65rem;
+        font-size: 0.8rem;
+        white-space: nowrap;
+    }
+
+    /* Printing from a phone is rare; the browser menu still offers it */
+    .nav-controls .btn-primary {
+        display: none;
     }
 }
 

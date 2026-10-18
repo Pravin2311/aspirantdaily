@@ -187,9 +187,45 @@
   </script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327"
      crossorigin="anonymous"></script>
+  <style id="site-header-css">
+    .site-header { background: #fff; border-bottom: 1px solid #e5e7eb; }
+    .site-header .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 0.9rem 1.25rem; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; box-sizing: border-box; }
+    .site-header .brand-link { display: flex; align-items: center; gap: 0.65rem; text-decoration: none; color: #111827; font-weight: 800; font-size: 1.15rem; }
+    .site-header .brand-logo { display: inline-flex; align-items: center; justify-content: center; width: 38px; height: 38px; border-radius: 10px; background: linear-gradient(135deg, #4338ca, #3730a3); color: #fff; font-size: 0.85rem; font-weight: 800; flex-shrink: 0; }
+    .site-header .brand-name strong { color: #4338ca; }
+    .site-nav { display: flex; align-items: center; gap: 1.35rem; flex-wrap: wrap; }
+    .site-nav a { color: #6b7280; text-decoration: none; font-weight: 600; font-size: 0.92rem; }
+    .site-nav a:hover, .site-nav a.active { color: #4338ca; }
+    .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; max-width: 100%; }
+    @media (max-width: 640px) {
+      .site-header .header-inner { flex-direction: column; align-items: stretch; gap: 0.35rem; padding: 0.7rem 1rem 0.35rem; }
+      .site-nav { gap: 0.25rem 1.1rem; width: 100%; flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; mask-image: linear-gradient(to right, #000 85%, transparent); -webkit-mask-image: linear-gradient(to right, #000 85%, transparent); }
+      .site-nav::-webkit-scrollbar { display: none; }
+      .site-nav a { white-space: nowrap; padding: 0.55rem 0; flex-shrink: 0; }
+      .site-nav a:last-child { padding-right: 1.5rem; }
+    }
+    @media print { .site-header { display: none; } }
+  </style>
 </head>
 
 <body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/index.html" class="brand-link">
+        <span class="brand-logo">AD</span>
+        <span class="brand-name">Aspirant<strong>Daily</strong></span>
+      </a>
+      <nav class="site-nav">
+        <a href="/index.html">Home</a>
+        <a href="/index.html#practice">Practice</a>
+        <a href="/study/index.html">Study Portal</a>
+        <a href="/blog/index.html" class="active">Blog</a>
+        <a href="/repeated-questions/index.html">Repeated Qs</a>
+        <a href="/exam-calendar.html">Exam Calendar</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
   <main class="container">
     <header class="post-header">
       <h1>RRB Group D Science: NCERT Class 6–10 Chapters You Can’t Skip</h1>

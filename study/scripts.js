@@ -86,12 +86,10 @@ function showAnswer(questionId) {
 document.addEventListener('DOMContentLoaded', function() {
     updateProgress();
     
-    // Auto-expand first section on study pages
-    const firstSection = document.querySelector('[data-section="1"]');
-    if (firstSection) {
-        setTimeout(() => {
-            toggleSection(1);
-        }, 300);
+    // Make sure the first section is open. Only ever opens it: pages that already render it open must not have it closed.
+    const firstContent = document.getElementById('section-1');
+    if (firstContent && firstContent.classList.contains('collapsed')) {
+        toggleSection(1);
     }
 });
 

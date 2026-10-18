@@ -35,7 +35,7 @@
   const subject = context.subject;
 
   if (!subject) {
-    location.href = "index.html";
+    location.replace("index.html#practice");
   }
 
   const title = document.getElementById("title");
@@ -58,7 +58,7 @@
   // 🔹 CA = single quiz
   if (subject === "current-affairs") {
     startQuiz(0);
-  } else {
+  } else if (subject) {
     // 🔹 Split the whole bank into even sets of at most 25 (same maths as js/quiz.js)
     fetch(`./data/${subject}.json`, { cache: "no-store" })
       .then(res => res.json())

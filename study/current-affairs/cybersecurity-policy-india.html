@@ -7,7 +7,9 @@
     <title>CA-21: Cybersecurity Policy in India | UPSC Study Notes</title>
     <meta name="description" content="Comprehensive UPSC notes on India's Cybersecurity Policy: Legal framework, CERT-In, NCIIPC, National Cyber Security Strategy, challenges, and analysis for Prelims & Mains.">
     <meta name="keywords" content="Cybersecurity Policy India, IT Act 2000, CERT-In, NCIIPC, DPDP Act, Cyber Threats, UPSC Notes, Digital Governance, National Security">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=optional" rel="stylesheet">
     <style>
         :root {
             --primary-color: #3730a3;
@@ -30,6 +32,15 @@
         /* Study Nav */
         .study-nav { background: var(--card-bg); border-bottom: 1px solid var(--border-color); padding: 1rem 0; position: sticky; top: 0; z-index: 100; box-shadow: var(--shadow); }
         .study-nav .container { display: flex; justify-content: space-between; align-items: center; }
+        html { scroll-padding-top: 80px; }
+        @media (max-width: 640px) {
+            .study-nav { padding: 0.5rem 0; }
+            .study-nav .container { gap: 0.5rem; }
+            .back-link { flex: 1; min-width: 0; font-size: 0.9rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; padding: 0.5rem 0; }
+            .nav-controls { gap: 0.4rem; flex-shrink: 0; }
+            .nav-controls .btn-primary, .nav-controls .btn-secondary { padding: 0.5rem 0.65rem; font-size: 0.8rem; white-space: nowrap; }
+            .nav-controls .btn-primary { display: none; }
+        }
         .back-link { color: var(--primary-color); text-decoration: none; font-weight: 500; }
         .nav-controls { display: flex; gap: 1rem; }
         .btn-primary, .btn-secondary { padding: 0.5rem 1rem; border: none; border-radius: 6px; font-weight: 500; cursor: pointer; transition: all 0.2s; }
@@ -60,7 +71,7 @@
         .section-number { font-size: 1.5rem; }
         .toggle-icon { margin-left: auto; transition: transform 0.3s; }
         .section-header.collapsed .toggle-icon { transform: rotate(-90deg); }
-        .section-content { max-height: 2000px; overflow: hidden; transition: max-height 0.3s ease; }
+        .section-content { max-height: none; overflow: hidden; }
         .section-content.collapsed { max-height: 0; }
         .content-box { padding: 1.5rem; }
         
@@ -653,7 +664,7 @@
         // Auto-expand first section
         document.addEventListener('DOMContentLoaded', function() {
             const first = document.querySelector('[data-section="1"]');
-            if (first) setTimeout(() => toggleSection(1), 300);
+            if (first && document.getElementById('section-1').classList.contains('collapsed')) toggleSection(1);
         });
         // Keyboard shortcuts
         document.addEventListener('keydown', function(e) {
