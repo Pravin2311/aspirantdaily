@@ -26,12 +26,12 @@
         "hi": "सांख्यिकी मंत्रालय के अनुसार, वित्त वर्ष 2025–26 की दूसरी तिमाही (जुलाई–सितंबर) में भारत की GDP वृद्धि दर क्या थी?"
       },
       "options": {
-        "en": ["A. 7.2%", "B. 8.2%", "C. 7.6%", "D. 6.5%"],
-        "hi": ["A. 7.2%", "B. 8.2%", "C. 7.6%", "D. 6.5%"]
+        "en": ["A. 7.2%", "B. 7.6%", "C. 6.5%", "D. 8.2%"],
+        "hi": ["A. 7.2%", "B. 7.6%", "C. 6.5%", "D. 8.2%"]
       },
       "answer": {
-        "en": "B. 8.2%",
-        "hi": "B. 8.2%"
+        "en": "D. 8.2%",
+        "hi": "D. 8.2%"
       },
       "explanation": {
         "en": "India’s real GDP grew 8.2% in Q2 FY26 — a six-quarter high — as per data released by the National Statistical Office (NSO) on November 28, 2025.",
@@ -58,38 +58,38 @@
     },
     {
       "question": {
-        "en": "In November 2025, which city was confirmed as the host of COP30?",
-        "hi": "नवंबर 2 2025 को, COP30 की मेजबानी के लिए किस शहर की पुष्टि की गई?"
+        "en": "Which Brazilian city hosted COP30 from November 10–21, 2025?",
+        "hi": "10–21 नवंबर 2025 को COP30 की मेजबानी किस ब्राज़ीलियाई शहर ने की?"
       },
       "options": {
-        "en": ["A. São Paulo", "B. Belém", "C. Rio de Janeiro", "D. Brasília"],
-        "hi": ["A. साओ पाउलो", "B. बेलेम", "C. रियो डी जनेरियो", "D. ब्रासीलिया"]
+        "en": ["A. Belém", "B. São Paulo", "C. Rio de Janeiro", "D. Brasília"],
+        "hi": ["A. बेलेम", "B. साओ पाउलो", "C. रियो डी जनेरियो", "D. ब्रासीलिया"]
       },
       "answer": {
-        "en": "B. Belém",
-        "hi": "B. बेलेम"
+        "en": "A. Belém",
+        "hi": "A. बेलेम"
       },
       "explanation": {
-        "en": "Belém, located in the Brazilian Amazon, was confirmed as the host city for COP30 in November 2025.",
-        "hi": "ब्राजीलियाई अमेज़न में स्थित बेलेम को नवंबर 2025 में COP30 के आयोजन हेतु मेजबान शहर के रूप में पुष्टि की गई।"
+        "en": "Belém, a gateway to the Brazilian Amazon, was approved as host at COP28 in Dubai (December 2023) and held COP30 from November 10–21, 2025.",
+        "hi": "ब्राज़ीलियाई अमेज़न के प्रवेश द्वार बेलेम को दिसंबर 2023 में दुबई (COP28) में मेजबान के रूप में मंजूरी मिली, और इसने 10–21 नवंबर 2025 तक COP30 की मेजबानी की।"
       }
     },
     {
       "question": {
-        "en": "Which Indian organization announced the Chandrayaan-4 mission in November 2025?",
-        "hi": "नवंबर 2025 में चंद्रयान-4 मिशन की घोषणा किस भारतीय संगठन ने की?"
+        "en": "Which lunar sample-return mission did the Union Cabinet approve in September 2024?",
+        "hi": "सितंबर 2024 में केंद्रीय मंत्रिमंडल ने चंद्रमा से नमूने वापस लाने वाले किस मिशन को मंजूरी दी?"
       },
       "options": {
-        "en": ["A. DRDO", "B. ISRO", "C. CSIR", "D. IN-SPACe"],
-        "hi": ["A. डीआरडीओ", "B. इसरो", "C. सीएसआईआर", "D. इन-स्पेस"]
+        "en": ["A. Gaganyaan", "B. Chandrayaan-4", "C. Aditya-L1", "D. Shukrayaan"],
+        "hi": ["A. गगनयान", "B. चंद्रयान-4", "C. आदित्य-एल1", "D. शुक्रयान"]
       },
       "answer": {
-        "en": "B. ISRO",
-        "hi": "B. इसरो"
+        "en": "B. Chandrayaan-4",
+        "hi": "B. चंद्रयान-4"
       },
       "explanation": {
-        "en": "ISRO announced Chandrayaan-4 in November 2025 as a lunar sample-return mission planned for 2027.",
-        "hi": "इसरो ने नवंबर 2025 में चंद्रयान-4 की घोषणा की, जो 2027 के लिए निर्धारित चंद्रमा से नमूना वापस लाने वाला मिशन है।"
+        "en": "The Cabinet approved ISRO’s Chandrayaan-4 on September 18, 2024 with an outlay of ₹2,104.06 crore. It will use two LVM3 launches to collect lunar samples and return them to Earth.",
+        "hi": "मंत्रिमंडल ने 18 सितंबर 2024 को ₹2,104.06 करोड़ की लागत से इसरो के चंद्रयान-4 को मंजूरी दी। यह दो LVM3 प्रक्षेपणों के माध्यम से चंद्रमा के नमूने एकत्र कर पृथ्वी पर लाएगा।"
       }
     },
     {
@@ -98,12 +98,12 @@
         "hi": "फरवरी 2025 में किस वित्त सचिव को सेबी (SEBI) का अध्यक्ष नियुक्त किया गया?"
       },
       "options": {
-        "en": ["A. T.V. Somanathan", "B. Ajay Seth", "C. Tuhin Kanta Pandey", "D. Debasish Panda"],
-        "hi": ["A. टी.वी. सोमनाथन", "B. अजय सेठ", "C. तुहिन कांत पांडे", "D. देबाशीष पांडा"]
+        "en": ["A. T.V. Somanathan", "B. Tuhin Kanta Pandey", "C. Ajay Seth", "D. Debasish Panda"],
+        "hi": ["A. टी.वी. सोमनाथन", "B. तुहिन कांत पांडे", "C. अजय सेठ", "D. देबाशीष पांडा"]
       },
       "answer": {
-        "en": "C. Tuhin Kanta Pandey",
-        "hi": "C. तुहिन कांत पांडे"
+        "en": "B. Tuhin Kanta Pandey",
+        "hi": "B. तुहिन कांत पांडे"
       },
       "explanation": {
         "en": "Tuhin Kanta Pandey, designated Finance Secretary in September 2024 (and Revenue Secretary from January 2025), was named SEBI Chairman on February 27, 2025.",
@@ -112,38 +112,38 @@
     },
     {
       "question": {
-        "en": "When did the key provisions of the Digital Personal Data Protection Act (DPDPA), 2023 come into effect?",
-        "hi": "डिजिटल व्यक्तिगत डेटा संरक्षण अधिनियम (DPDPA), 2023 के प्रमुख प्रावधान कब लागू हुए?"
+        "en": "What is the maximum penalty per breach that can be imposed on a data fiduciary under the Digital Personal Data Protection Act, 2023?",
+        "hi": "डिजिटल व्यक्तिगत डेटा संरक्षण अधिनियम, 2023 के तहत किसी डेटा फिड्यूशियरी पर प्रति उल्लंघन अधिकतम कितना जुर्माना लगाया जा सकता है?"
       },
       "options": {
-        "en": ["A. August 2024", "B. October 2025", "C. January 2025", "D. December 2023"],
-        "hi": ["A. अगस्त 2024", "B. अक्टूबर 2025", "C. जनवरी 2025", "D. दिसंबर 2023"]
+        "en": ["A. ₹250 crore", "B. ₹50 crore", "C. ₹100 crore", "D. ₹500 crore"],
+        "hi": ["A. ₹250 करोड़", "B. ₹50 करोड़", "C. ₹100 करोड़", "D. ₹500 करोड़"]
       },
       "answer": {
-        "en": "B. October 2025",
-        "hi": "B. अक्टूबर 2025"
+        "en": "A. ₹250 crore",
+        "hi": "A. ₹250 करोड़"
       },
       "explanation": {
-        "en": "The Government of India notified key rules of DPDPA in October 2025, including constitution of the Data Protection Board.",
-        "hi": "भारत सरकार ने अक्टूबर 2025 में DPDPA के प्रमुख नियम अधिसूचित किए, जिनमें डेटा संरक्षण बोर्ड का गठन शामिल है।"
+        "en": "The DPDP Act, 2023 allows penalties of up to ₹250 crore per breach. Its rules were notified on November 13, 2025, with most obligations applying after 18 months.",
+        "hi": "DPDP अधिनियम, 2023 में प्रति उल्लंघन ₹250 करोड़ तक के जुर्माने का प्रावधान है। इसके नियम 13 नवंबर 2025 को अधिसूचित हुए, और अधिकांश दायित्व 18 महीने बाद लागू होंगे।"
       }
     },
     {
       "question": {
-        "en": "India and the European Union resumed negotiations for which agreement in February 2025?",
-        "hi": "भारत और यूरोपीय संघ ने फरवरी 2025 में किस समझौते के लिए वार्ता पुनः आरंभ की?"
+        "en": "India and the European Union relaunched negotiations in June 2022 — and concluded them in January 2026 — for which agreement?",
+        "hi": "भारत और यूरोपीय संघ ने जून 2022 में किस समझौते के लिए वार्ता पुनः आरंभ की, जो जनवरी 2026 में संपन्न हुई?"
       },
       "options": {
         "en": ["A. CEPA", "B. BTIA", "C. CTIA", "D. FTA"],
         "hi": ["A. सीईपीए", "B. बीटीआईए", "C. सीटीआईए", "D. एफटीए"]
       },
       "answer": {
-        "en": "C. CTIA",
-        "hi": "C. सीटीआईए"
+        "en": "D. FTA",
+        "hi": "D. एफटीए"
       },
       "explanation": {
-        "en": "India and EU restarted negotiations for the Comprehensive Trade and Investment Agreement (CTIA) in February 2025 after a decade-long pause.",
-        "hi": "भारत और यूरोपीय संघ ने फरवरी 2025 में एक दशक लंबे अंतराल के बाद व्यापक व्यापार और निवेश समझौते (CTIA) के लिए वार्ता पुनः आरंभ की।"
+        "en": "Free Trade Agreement talks were relaunched in Brussels on June 17, 2022 (the earlier BTIA talks had stalled in 2013) and concluded at the 16th India–EU Summit in New Delhi on January 27, 2026.",
+        "hi": "मुक्त व्यापार समझौते (FTA) की वार्ता 17 जून 2022 को ब्रुसेल्स में पुनः शुरू हुई (पहले की BTIA वार्ता 2013 में रुक गई थी) और 27 जनवरी 2026 को नई दिल्ली में 16वें भारत–यूरोपीय संघ शिखर सम्मेलन में संपन्न हुई।"
       }
     },
     {
@@ -152,12 +152,12 @@
         "hi": "जुलाई 2024 में किस भारतीय राज्य ने 'मुख्यमंत्री माझी लाडकी बहीन योजना' शुरू की?"
       },
       "options": {
-        "en": ["A. Maharashtra", "B. Madhya Pradesh", "C. Chhattisgarh", "D. Rajasthan"],
-        "hi": ["A. महाराष्ट्र", "B. मध्य प्रदेश", "C. छत्तीसगढ़", "D. राजस्थान"]
+        "en": ["A. Madhya Pradesh", "B. Maharashtra", "C. Chhattisgarh", "D. Rajasthan"],
+        "hi": ["A. मध्य प्रदेश", "B. महाराष्ट्र", "C. छत्तीसगढ़", "D. राजस्थान"]
       },
       "answer": {
-        "en": "A. Maharashtra",
-        "hi": "A. महाराष्ट्र"
+        "en": "B. Maharashtra",
+        "hi": "B. महाराष्ट्र"
       },
       "explanation": {
         "en": "Approved by the Maharashtra cabinet on June 28, 2024 and launched in July 2024, the scheme provides ₹1,500 monthly to women aged 21–65 with family income up to ₹2.5 lakh a year.",
@@ -184,56 +184,56 @@
     },
     {
       "question": {
-        "en": "Who became the first Indian woman to climb Mount Everest five times in May 2024?",
-        "hi": "मई 2024 में माउंट एवरेस्ट पर पाँच बार चढ़ने वाली पहली भारतीय महिला कौन बनीं?"
+        "en": "Who became the first Indian woman to climb Mount Everest five times?",
+        "hi": "माउंट एवरेस्ट पर पाँच बार चढ़ने वाली पहली भारतीय महिला कौन बनीं?"
       },
       "options": {
-        "en": ["A. Bachendri Pal", "B. Santosh Yadav", "C. Priyanka Mohite", "D. Arunima Sinha"],
-        "hi": ["A. बचेंद्री पाल", "B. संतोष यादव", "C. प्रियंका मोहिते", "D. अरुणिमा सिन्हा"]
+        "en": ["A. Anshu Jamsenpa", "B. Bachendri Pal", "C. Santosh Yadav", "D. Arunima Sinha"],
+        "hi": ["A. अंशु जामसेनपा", "B. बचेंद्री पाल", "C. संतोष यादव", "D. अरुणिमा सिन्हा"]
       },
       "answer": {
-        "en": "C. Priyanka Mohite",
-        "hi": "C. प्रियंका मोहिते"
+        "en": "A. Anshu Jamsenpa",
+        "hi": "A. अंशु जामसेनपा"
       },
       "explanation": {
-        "en": "Priyanka Mohite from Maharashtra summited Everest for the fifth time on May 22, 2024.",
-        "hi": "महाराष्ट्र की प्रियंका मोहिते ने 22 मई 2024 को एवरेस्ट पर पाँचवीं बार चढ़ाई की।"
+        "en": "Anshu Jamsenpa of Arunachal Pradesh completed her fifth Everest ascent in May 2017, including a double ascent within five days.",
+        "hi": "अरुणाचल प्रदेश की अंशु जामसेनपा ने मई 2017 में पाँचवीं बार एवरेस्ट फतह किया, जिसमें पाँच दिनों के भीतर दो बार चढ़ाई शामिल थी।"
       }
     },
     {
       "question": {
-        "en": "Which Indian port became the first 5G-enabled smart port in March 2024?",
-        "hi": "मार्च 2024 में कौन सा भारतीय बंदरगाह पहला 5G-सक्षम स्मार्ट पोर्ट बना?"
+        "en": "Which port became the first in India to get a 5G facility, under the national 5G pilot completed in 2022?",
+        "hi": "2022 में पूरे हुए राष्ट्रीय 5G पायलट के तहत 5G सुविधा पाने वाला भारत का पहला बंदरगाह कौन सा बना?"
       },
       "options": {
-        "en": ["A. Chennai Port", "B. JNPT (Nhava Sheva)", "C. Mundra Port", "D. Visakhapatnam Port"],
-        "hi": ["A. चेन्नई पोर्ट", "B. जेएनपीटी (न्हावा शेवा)", "C. मुंदरा पोर्ट", "D. विशाखापत्तनम पोर्ट"]
+        "en": ["A. Chennai Port", "B. Deendayal Port (Kandla)", "C. JNPT (Nhava Sheva)", "D. Visakhapatnam Port"],
+        "hi": ["A. चेन्नई पोर्ट", "B. दीनदयाल पोर्ट (कांडला)", "C. जेएनपीटी (न्हावा शेवा)", "D. विशाखापत्तनम पोर्ट"]
       },
       "answer": {
-        "en": "B. JNPT (Nhava Sheva)",
-        "hi": "B. जेएनपीटी (न्हावा शेवा)"
+        "en": "B. Deendayal Port (Kandla)",
+        "hi": "B. दीनदयाल पोर्ट (कांडला)"
       },
       "explanation": {
-        "en": "Jawaharlal Nehru Port Trust (JNPT) implemented 5G, AI, and IoT for real-time cargo tracking in March 2024.",
-        "hi": "जवाहरलाल नेहरू पोर्ट ट्रस्ट (जेएनपीटी) ने मार्च 2024 में वास्तविक समय में कार्गो ट्रैकिंग के लिए 5G, एआई और आईओटी लागू किया।"
+        "en": "Deendayal Port in Kandla, Gujarat was one of four national 5G pilot sites, along with Delhi Airport, Bhopal Smart City and Bangalore Metro. Its pilot was completed in July 2022.",
+        "hi": "गुजरात के कांडला स्थित दीनदयाल पोर्ट दिल्ली हवाई अड्डे, भोपाल स्मार्ट सिटी और बैंगलोर मेट्रो के साथ चार राष्ट्रीय 5G पायलट स्थलों में से एक था। इसका पायलट जुलाई 2022 में पूरा हुआ।"
       }
     },
     {
       "question": {
-        "en": "Which state declared the 'Copper Mahseer' as its state fish in April 2024?",
-        "hi": "अप्रैल 2024 में किस राज्य ने 'कॉपर महसीर' को अपनी राज्य मछली घोषित किया?"
+        "en": "To what level did the RBI reduce the Cash Reserve Ratio (CRR) in four tranches between September and November 2025?",
+        "hi": "सितंबर से नवंबर 2025 के बीच चार किस्तों में आरबीआई ने नकद आरक्षित अनुपात (CRR) को घटाकर कितना किया?"
       },
       "options": {
-        "en": ["A. Uttarakhand", "B. Himachal Pradesh", "C. Sikkim", "D. Assam"],
-        "hi": ["A. उत्तराखंड", "B. हिमाचल प्रदेश", "C. सिक्किम", "D. असम"]
+        "en": ["A. 4.0%", "B. 3.5%", "C. 3.0%", "D. 2.5%"],
+        "hi": ["A. 4.0%", "B. 3.5%", "C. 3.0%", "D. 2.5%"]
       },
       "answer": {
-        "en": "B. Himachal Pradesh",
-        "hi": "B. हिमाचल प्रदेश"
+        "en": "C. 3.0%",
+        "hi": "C. 3.0%"
       },
       "explanation": {
-        "en": "Himachal Pradesh declared the endangered Copper Mahseer as its state fish to promote conservation.",
-        "hi": "हिमाचल प्रदेश ने संरक्षण को बढ़ावा देने के लिए लुप्तप्राय कॉपर महसीर को अपनी राज्य मछली घोषित किया।"
+        "en": "Announced on June 6, 2025, the 100-basis-point CRR cut (4% to 3%) was delivered in four 25-bps tranches from September 6 to November 29, 2025, releasing about ₹2.5 lakh crore of liquidity.",
+        "hi": "6 जून 2025 को घोषित 100 आधार अंकों की CRR कटौती (4% से 3%) 6 सितंबर से 29 नवंबर 2025 तक 25-25 आधार अंकों की चार किस्तों में लागू हुई, जिससे लगभग ₹2.5 लाख करोड़ की तरलता जारी हुई।"
       }
     },
     {
@@ -242,12 +242,12 @@
         "hi": "विश्व पर्यावरण दिवस 2024 की थीम क्या थी?"
       },
       "options": {
-        "en": ["A. Beat Plastic Pollution", "B. Land Restoration, Desertification and Drought Resilience", "C. Only One Earth", "D. Ecosystem Restoration"],
-        "hi": ["A. प्लास्टिक प्रदूषण पर रोक", "B. भूमि पुनर्स्थापन, मरुस्थलीकरण और सूखा प्रतिरोधक्षमता", "C. केवल एक पृथ्वी", "D. पारिस्थितिकी तंत्र पुनर्स्थापन"]
+        "en": ["A. Beat Plastic Pollution", "B. Only One Earth", "C. Land Restoration, Desertification and Drought Resilience", "D. Ecosystem Restoration"],
+        "hi": ["A. प्लास्टिक प्रदूषण पर रोक", "B. केवल एक पृथ्वी", "C. भूमि पुनर्स्थापन, मरुस्थलीकरण और सूखा प्रतिरोधक्षमता", "D. पारिस्थितिकी तंत्र पुनर्स्थापन"]
       },
       "answer": {
-        "en": "B. Land Restoration, Desertification and Drought Resilience",
-        "hi": "B. भूमि पुनर्स्थापन, मरुस्थलीकरण और सूखा प्रतिरोधक्षमता"
+        "en": "C. Land Restoration, Desertification and Drought Resilience",
+        "hi": "C. भूमि पुनर्स्थापन, मरुस्थलीकरण और सूखा प्रतिरोधक्षमता"
       },
       "explanation": {
         "en": "The UN designated this theme for 2024, hosted by Saudi Arabia.",
@@ -256,56 +256,56 @@
     },
     {
       "question": {
-        "en": "Which bank launched India’s first generative AI-powered banking assistant 'SARAL' in July 2024?",
-        "hi": "जुलाई 2024 में किस बैंक ने भारत का पहला जनरेटिव एआई-संचालित बैंकिंग सहायक 'सरल' लॉन्च किया?"
+        "en": "At which India–EU Summit was the conclusion of the India–EU Free Trade Agreement announced on January 27, 2026?",
+        "hi": "27 जनवरी 2026 को भारत–यूरोपीय संघ मुक्त व्यापार समझौते के संपन्न होने की घोषणा किस भारत–यूरोपीय संघ शिखर सम्मेलन में की गई?"
       },
       "options": {
-        "en": ["A. HDFC Bank", "B. ICICI Bank", "C. State Bank of India", "D. Axis Bank"],
-        "hi": ["A. एचडीएफसी बैंक", "B. आईसीआईसीआई बैंक", "C. स्टेट बैंक ऑफ इंडिया", "D. एक्सिस बैंक"]
+        "en": ["A. 14th", "B. 15th", "C. 16th", "D. 17th"],
+        "hi": ["A. 14वां", "B. 15वां", "C. 16वां", "D. 17वां"]
       },
       "answer": {
-        "en": "C. State Bank of India",
-        "hi": "C. स्टेट बैंक ऑफ इंडिया"
+        "en": "C. 16th",
+        "hi": "C. 16वां"
       },
       "explanation": {
-        "en": "SBI launched 'SARAL' (SBI’s AI-driven Rapid Assistance for Lending) for real-time loan processing.",
-        "hi": "एसबीआई ने वास्तविक समय ऋण प्रसंस्करण के लिए 'सरल' (एसबीआई की एआई-संचालित ऋण हेतु त्वरित सहायता) लॉन्च किया।"
+        "en": "PM Modi and European Commission President Ursula von der Leyen announced the deal at the 16th India–EU Summit in New Delhi. It still requires legal scrubbing, signing and ratification.",
+        "hi": "प्रधानमंत्री मोदी और यूरोपीय आयोग की अध्यक्ष उर्सुला वॉन डेर लेयेन ने नई दिल्ली में 16वें भारत–यूरोपीय संघ शिखर सम्मेलन में इस समझौते की घोषणा की। इसके लिए अभी कानूनी जाँच, हस्ताक्षर और अनुसमर्थन आवश्यक है।"
       }
     },
     {
       "question": {
-        "en": "Which new frog species was discovered in the Western Ghats in February 2024?",
-        "hi": "फरवरी 2024 में पश्चिमी घाट में खोजी गई नई मेंढक प्रजाति कौन सी थी?"
+        "en": "Which night frog species, described from Kerala’s Western Ghats in 2017, is named after primatologist Mewa Singh?",
+        "hi": "2017 में केरल के पश्चिमी घाट से वर्णित कौन सी नाइट फ्रॉग प्रजाति प्राइमेटोलॉजिस्ट मेवा सिंह के नाम पर रखी गई है?"
       },
       "options": {
-        "en": ["A. Raorchestes kadalarensis", "B. Nyctibatrachus mewasinghi", "C. Indirana paramakri", "D. Micrixalus thampii"],
-        "hi": ["A. राओर्केस्टीज़ कदलारेंसिस", "B. निक्टिबैट्रैकस मेवासिंघी", "C. इंदिराना परमाक्री", "D. माइक्रिक्सैलस थम्पी"]
+        "en": ["A. Nyctibatrachus mewasinghi", "B. Raorchestes kadalarensis", "C. Indirana paramakri", "D. Micrixalus thampii"],
+        "hi": ["A. निक्टिबैट्रैकस मेवासिंघी", "B. राओर्केस्टीज़ कदलारेंसिस", "C. इंदिराना परमाक्री", "D. माइक्रिक्सैलस थम्पी"]
       },
       "answer": {
-        "en": "B. Nyctibatrachus mewasinghi",
-        "hi": "B. निक्टिबैट्रैकस मेवासिंघी"
+        "en": "A. Nyctibatrachus mewasinghi",
+        "hi": "A. निक्टिबैट्रैकस मेवासिंघी"
       },
       "explanation": {
-        "en": "Discovered by Delhi University scientists and named after primatologist Mewa Singh.",
-        "hi": "दिल्ली विश्वविद्यालय के वैज्ञानिकों द्वारा खोजी गई और प्राइमेटोलॉजिस्ट मेवा सिंह के नाम पर नामित।"
+        "en": "Described in December 2017 by Keerthi Krutha, Neelesh Dahanukar and Sanjay Molur from Malabar Wildlife Sanctuary (Kozhikode, Kerala) in the Journal of Threatened Taxa.",
+        "hi": "दिसंबर 2017 में कीर्ति कृता, नीलेश दहाणुकर और संजय मोलूर ने जर्नल ऑफ थ्रेटन्ड टैक्सा में मालाबार वन्यजीव अभयारण्य (कोझिकोड, केरल) से इसका वर्णन किया।"
       }
     },
     {
       "question": {
-        "en": "Which country became the 100th member of the International Solar Alliance in May 2024?",
-        "hi": "मई 2024 में कौन सा देश अंतर्राष्ट्रीय सौर गठबंधन का 100वाँ सदस्य बना?"
+        "en": "Which country became the 100th full member of the International Solar Alliance in June 2024?",
+        "hi": "जून 2024 में कौन सा देश अंतर्राष्ट्रीय सौर गठबंधन का 100वाँ पूर्ण सदस्य बना?"
       },
       "options": {
-        "en": ["A. Canada", "B. Germany", "C. Belgium", "D. Norway"],
-        "hi": ["A. कनाडा", "B. जर्मनी", "C. बेल्जियम", "D. नॉर्वे"]
+        "en": ["A. Canada", "B. Germany", "C. Norway", "D. Paraguay"],
+        "hi": ["A. कनाडा", "B. जर्मनी", "C. नॉर्वे", "D. पराग्वे"]
       },
       "answer": {
-        "en": "C. Belgium",
-        "hi": "C. बेल्जियम"
+        "en": "D. Paraguay",
+        "hi": "D. पराग्वे"
       },
       "explanation": {
-        "en": "Belgium ratified the ISA Framework Agreement in May 2024, becoming the 100th member.",
-        "hi": "बेल्जियम ने मई 2024 में आईएसए ढांचा समझौते की पुष्टि की और 100वाँ सदस्य बन गया।"
+        "en": "Paraguay handed over its instrument of ratification of the ISA Framework Agreement to India’s MEA in New Delhi in June 2024, becoming the 100th full member. Spain had joined as the 99th.",
+        "hi": "पराग्वे ने जून 2024 में नई दिल्ली में भारत के विदेश मंत्रालय को आईएसए ढांचा समझौते का अनुसमर्थन पत्र सौंपा और 100वाँ पूर्ण सदस्य बना। स्पेन 99वाँ सदस्य बना था।"
       }
     },
     {
@@ -314,12 +314,12 @@
         "hi": "4–5 दिसंबर 2025 को नई दिल्ली में भारत–रूस वार्षिक शिखर सम्मेलन का कौन सा संस्करण आयोजित हुआ?"
       },
       "options": {
-        "en": ["A. 21st", "B. 22nd", "C. 23rd", "D. 24th"],
-        "hi": ["A. 21वां", "B. 22वां", "C. 23वां", "D. 24वां"]
+        "en": ["A. 23rd", "B. 21st", "C. 22nd", "D. 24th"],
+        "hi": ["A. 23वां", "B. 21वां", "C. 22वां", "D. 24वां"]
       },
       "answer": {
-        "en": "C. 23rd",
-        "hi": "C. 23वां"
+        "en": "A. 23rd",
+        "hi": "A. 23वां"
       },
       "explanation": {
         "en": "President Vladimir Putin made a state visit to India for the 23rd Annual Summit with PM Modi — his first visit since the 21st summit in December 2021.",
@@ -332,16 +332,16 @@
         "hi": "जून 2024 में यूरोपीय परिषद के अध्यक्ष कौन चुने गए?"
       },
       "options": {
-        "en": ["A. Ursula von der Leyen", "B. António Costa", "C. Charles Michel", "D. Josep Borrell"],
-        "hi": ["A. उर्सुला वॉन डर लेयन", "B. एंटोनियो कोस्टा", "C. चार्ल्स मिशेल", "D. जोसेप बोरेल"]
+        "en": ["A. António Costa", "B. Ursula von der Leyen", "C. Charles Michel", "D. Josep Borrell"],
+        "hi": ["A. एंटोनियो कोस्टा", "B. उर्सुला वॉन डर लेयन", "C. चार्ल्स मिशेल", "D. जोसेप बोरेल"]
       },
       "answer": {
-        "en": "B. António Costa",
-        "hi": "B. एंटोनियो कोस्टा"
+        "en": "A. António Costa",
+        "hi": "A. एंटोनियो कोस्टा"
       },
       "explanation": {
-        "en": "Former Portuguese PM António Costa succeeded Charles Michel as President of the European Council in June 2024.",
-        "hi": "पूर्व पुर्तगाली प्रधानमंत्री एंटोनियो कोस्टा जून 2024 में चार्ल्स मिशेल के बाद यूरोपीय परिषद के अध्यक्ष बने।"
+        "en": "Former Portuguese PM António Costa was elected on June 27, 2024 and took office on December 1, 2024, succeeding Charles Michel.",
+        "hi": "पूर्व पुर्तगाली प्रधानमंत्री एंटोनियो कोस्टा 27 जून 2024 को चुने गए और 1 दिसंबर 2024 को चार्ल्स मिशेल के बाद पदभार संभाला।"
       }
     },
     {
@@ -350,34 +350,34 @@
         "hi": "हवाई में RIMPAC 2024 में कौन सा भारतीय नौसेना जहाज भाग लिया?"
       },
       "options": {
-        "en": ["A. INS Vikrant", "B. INS Trikand", "C. INS Sahyadri", "D. INS Kolkata"],
-        "hi": ["A. आईएनएस विक्रांत", "B. आईएनएस त्रिकांड", "C. आईएनएस सह्याद्रि", "D. आईएनएस कोलकाता"]
+        "en": ["A. INS Shivalik", "B. INS Vikrant", "C. INS Trikand", "D. INS Kolkata"],
+        "hi": ["A. आईएनएस शिवालिक", "B. आईएनएस विक्रांत", "C. आईएनएस त्रिकांड", "D. आईएनएस कोलकाता"]
       },
       "answer": {
-        "en": "C. INS Sahyadri",
-        "hi": "C. आईएनएस सह्याद्रि"
+        "en": "A. INS Shivalik",
+        "hi": "A. आईएनएस शिवालिक"
       },
       "explanation": {
-        "en": "INS Sahyadri, a Shivalik-class frigate, represented India in RIMPAC 2024 held in June–August 2024.",
-        "hi": "शिवालिक-श्रेणी के फ्रिगेट आईएनएस सह्याद्रि ने जून–अगस्त 2024 में आयोजित RIMPAC 2024 में भारत का प्रतिनिधित्व किया।"
+        "en": "INS Shivalik, lead ship of India’s first class of stealth frigates, represented India at RIMPAC 2024 (June 27–August 1) off Hawaii, alongside a P-8I aircraft.",
+        "hi": "भारत के पहले स्टेल्थ फ्रिगेट वर्ग के प्रमुख जहाज आईएनएस शिवालिक ने P-8I विमान के साथ हवाई में RIMPAC 2024 (27 जून–1 अगस्त) में भारत का प्रतिनिधित्व किया।"
       }
     },
     {
       "question": {
-        "en": "Which organization developed the upgraded 'SwasthVayu' AI-integrated ventilator in March 2024?",
-        "hi": "मार्च 2024 में उन्नत 'स्वस्थवायु' एआई-एकीकृत वेंटिलेटर किस संगठन ने विकसित किया?"
+        "en": "Which organization developed the 'SwasthVayu' non-invasive ventilator for COVID-19 patients in 2020?",
+        "hi": "2020 में कोविड-19 मरीजों के लिए 'स्वस्थवायु' नॉन-इनवेसिव वेंटिलेटर किस संगठन ने विकसित किया?"
       },
       "options": {
-        "en": ["A. DRDO", "B. CSIR", "C. IIT Madras", "D. AIIMS"],
-        "hi": ["A. डीआरडीओ", "B. सीएसआईआर", "C. आईआईटी मद्रास", "D. एम्स"]
+        "en": ["A. DRDO", "B. IIT Madras", "C. CSIR-NAL", "D. AIIMS"],
+        "hi": ["A. डीआरडीओ", "B. आईआईटी मद्रास", "C. सीएसआईआर-एनएएल", "D. एम्स"]
       },
       "answer": {
-        "en": "B. CSIR",
-        "hi": "B. सीएसआईआर"
+        "en": "C. CSIR-NAL",
+        "hi": "C. सीएसआईआर-एनएएल"
       },
       "explanation": {
-        "en": "CSIR launched the upgraded version of its pandemic-era 'SwasthVayu' ventilator with AI monitoring in March 2024.",
-        "hi": "सीएसआईआर ने मार्च 2024 में एआई निगरानी के साथ अपने महामारीकालीन 'स्वस्थवायु' वेंटिलेटर का उन्नत संस्करण लॉन्च किया।"
+        "en": "CSIR-National Aerospace Laboratories, Bengaluru developed the SwasthVayu BiPAP ventilator in about 36 days in 2020 during the COVID-19 pandemic.",
+        "hi": "सीएसआईआर-राष्ट्रीय एयरोस्पेस प्रयोगशालाएँ, बेंगलुरु ने 2020 में कोविड-19 महामारी के दौरान लगभग 36 दिनों में स्वस्थवायु BiPAP वेंटिलेटर विकसित किया।"
       }
     },
     {
@@ -394,26 +394,26 @@
         "hi": "C. नई दिल्ली"
       },
       "explanation": {
-        "en": "IMC 2024 was held in New Delhi from October 15–17, 2024, focusing on 5G, AI, and semiconductor ecosystems.",
-        "hi": "IMC 2024, 15–17 अक्टूबर, 2024 को नई दिल्ली में आयोजित किया गया, जिसमें 5G, एआई और सेमीकंडक्टर पारिस्थितिकी तंत्र पर ध्यान केंद्रित किया गया।"
+        "en": "IMC 2024 was held in New Delhi from October 15–18, 2024, focusing on 5G, AI, and semiconductor ecosystems.",
+        "hi": "IMC 2024, 15–18 अक्टूबर, 2024 को नई दिल्ली में आयोजित किया गया, जिसमें 5G, एआई और सेमीकंडक्टर पारिस्थितिकी तंत्र पर ध्यान केंद्रित किया गया।"
       }
     },
     {
       "question": {
-        "en": "Who was appointed Chief Election Commissioner of India in February 2024?",
-        "hi": "फरवरी 2024 में भारत के मुख्य चुनाव आयुक्त के रूप में किसे नियुक्त किया गया?"
+        "en": "Who was appointed Chief Election Commissioner of India in February 2025?",
+        "hi": "फरवरी 2025 में भारत के मुख्य चुनाव आयुक्त के रूप में किसे नियुक्त किया गया?"
       },
       "options": {
-        "en": ["A. Sushil Chandra", "B. Rajiv Kumar", "C. Gyanesh Kumar", "D. Achal Kumar Jyoti"],
-        "hi": ["A. सुशील चंद्र", "B. राजीव कुमार", "C. ज्ञानेश कुमार", "D. अचल कुमार ज्योति"]
+        "en": ["A. Sushil Chandra", "B. Gyanesh Kumar", "C. Rajiv Kumar", "D. Achal Kumar Jyoti"],
+        "hi": ["A. सुशील चंद्र", "B. ज्ञानेश कुमार", "C. राजीव कुमार", "D. अचल कुमार ज्योति"]
       },
       "answer": {
-        "en": "C. Gyanesh Kumar",
-        "hi": "C. ज्ञानेश कुमार"
+        "en": "B. Gyanesh Kumar",
+        "hi": "B. ज्ञानेश कुमार"
       },
       "explanation": {
-        "en": "Gyanesh Kumar, a 1985-batch IAS officer, took charge as CEC on February 19, 2024.",
-        "hi": "1985 बैच के आईएएस अधिकारी ज्ञानेश कुमार ने 19 फरवरी 2024 को मुख्य चुनाव आयुक्त का पदभार संभाला।"
+        "en": "Gyanesh Kumar, a 1988-batch IAS officer of the Kerala cadre, was appointed the 26th CEC on February 17, 2025, succeeding Rajiv Kumar — the first appointment under the 2023 CEC Act.",
+        "hi": "केरल कैडर के 1988 बैच के आईएएस अधिकारी ज्ञानेश कुमार को 17 फरवरी 2025 को राजीव कुमार के बाद 26वाँ मुख्य चुनाव आयुक्त नियुक्त किया गया — यह 2023 के CEC अधिनियम के तहत पहली नियुक्ति थी।"
       }
     },
     {
@@ -430,8 +430,8 @@
         "hi": "C. कार्लोस अल्कराज़"
       },
       "explanation": {
-        "en": "Carlos Alcaraz defeated Alexander Zverev to win his second French Open title in June 2024.",
-        "hi": "कार्लोस अल्कराज़ ने जून 2024 में अलेक्जेंडर ज्वेरेव को हराकर अपना दूसरा फ्रेंच ओपन खिताब जीता।"
+        "en": "Carlos Alcaraz defeated Alexander Zverev in five sets in June 2024 to win his first French Open and third Grand Slam title.",
+        "hi": "कार्लोस अल्कराज़ ने जून 2024 में अलेक्जेंडर ज्वेरेव को पाँच सेटों में हराकर अपना पहला फ्रेंच ओपन और तीसरा ग्रैंड स्लैम खिताब जीता।"
       }
     },
     {
@@ -440,12 +440,12 @@
         "hi": "सितंबर 2024 में मौसम और जलवायु अनुसंधान के लिए उद्घाटित 'अर्क' उच्च-प्रदर्शन कंप्यूटिंग प्रणाली किस संस्थान में स्थापित है?"
       },
       "options": {
-        "en": ["A. IIT Bombay", "B. IITM, Pune", "C. ISRO", "D. DRDO"],
-        "hi": ["A. आईआईटी बॉम्बे", "B. आईआईटीएम, पुणे", "C. इसरो", "D. डीआरडीओ"]
+        "en": ["A. IIT Bombay", "B. ISRO", "C. DRDO", "D. IITM, Pune"],
+        "hi": ["A. आईआईटी बॉम्बे", "B. इसरो", "C. डीआरडीओ", "D. आईआईटीएम, पुणे"]
       },
       "answer": {
-        "en": "B. IITM, Pune",
-        "hi": "B. आईआईटीएम, पुणे"
+        "en": "D. IITM, Pune",
+        "hi": "D. आईआईटीएम, पुणे"
       },
       "explanation": {
         "en": "PM Modi inaugurated Arka (11.77 petaflops, Indian Institute of Tropical Meteorology, Pune) and Arunika (8.24 petaflops, NCMRWF, Noida) under the Ministry of Earth Sciences in September 2024.",
@@ -454,38 +454,38 @@
     },
     {
       "question": {
-        "en": "Which Indian state announced a 'One Family, One Job' scheme in September 2024?",
-        "hi": "सितंबर 2024 में किस भारतीय राज्य ने 'एक परिवार, एक नौकरी' योजना की घोषणा की?"
+        "en": "Which Indian state launched a 'One Family, One Job' scheme in January 2019?",
+        "hi": "जनवरी 2019 में किस भारतीय राज्य ने 'एक परिवार, एक नौकरी' योजना शुरू की?"
       },
       "options": {
-        "en": ["A. Uttar Pradesh", "B. Karnataka", "C. Sikkim", "D. Punjab"],
-        "hi": ["A. उत्तर प्रदेश", "B. कर्नाटक", "C. सिक्किम", "D. पंजाब"]
+        "en": ["A. Uttar Pradesh", "B. Sikkim", "C. Karnataka", "D. Punjab"],
+        "hi": ["A. उत्तर प्रदेश", "B. सिक्किम", "C. कर्नाटक", "D. पंजाब"]
       },
       "answer": {
-        "en": "C. Sikkim",
-        "hi": "C. सिक्किम"
+        "en": "B. Sikkim",
+        "hi": "B. सिक्किम"
       },
       "explanation": {
-        "en": "Sikkim CM Prem Singh Tamang announced this scheme to ensure at least one government job per family.",
-        "hi": "सिक्किम के मुख्यमंत्री प्रेम सिंह तमांग ने प्रत्येक परिवार में कम से कम एक सरकारी नौकरी सुनिश्चित करने के लिए यह योजना घोषित की।"
+        "en": "Sikkim CM Pawan Kumar Chamling launched the scheme on January 12, 2019 at Rojgar Mela in Gangtok, issuing about 11,772 temporary appointment letters on the first day.",
+        "hi": "सिक्किम के मुख्यमंत्री पवन कुमार चामलिंग ने 12 जनवरी 2019 को गंगटोक में रोजगार मेले में यह योजना शुरू की और पहले ही दिन लगभग 11,772 अस्थायी नियुक्ति पत्र जारी किए।"
       }
     },
     {
       "question": {
-        "en": "What is the name of India’s first green hydrogen-powered train, flagged off in October 2024?",
-        "hi": "अक्टूबर 2024 में शुरू की गई भारत की पहली ग्रीन हाइड्रोजन-संचालित ट्रेन का नाम क्या है?"
+        "en": "On which section did India’s first hydrogen-powered train begin service in July 2026?",
+        "hi": "जुलाई 2026 में भारत की पहली हाइड्रोजन-संचालित ट्रेन किस खंड पर शुरू हुई?"
       },
       "options": {
-        "en": ["A. Vande Bharat H2", "B. Hydro Express", "C. Vande Metro", "D. No such train yet"],
-        "hi": ["A. वंदे भारत एच2", "B. हाइड्रो एक्सप्रेस", "C. वंदे मेट्रो", "D. अभी तक कोई ऐसी ट्रेन नहीं"]
+        "en": ["A. Jind–Sonipat", "B. Delhi–Meerut", "C. Kalka–Shimla", "D. Mumbai–Pune"],
+        "hi": ["A. जींद–सोनीपत", "B. दिल्ली–मेरठ", "C. कालका–शिमला", "D. मुंबई–पुणे"]
       },
       "answer": {
-        "en": "D. No such train yet",
-        "hi": "D. अभी तक कोई ऐसी ट्रेन नहीं"
+        "en": "A. Jind–Sonipat",
+        "hi": "A. जींद–सोनीपत"
       },
       "explanation": {
-        "en": "As of December 2025, India has not launched a green hydrogen train. The first is expected in 2026.",
-        "hi": "दिसंबर 2025 तक, भारत ने ग्रीन हाइड्रोजन ट्रेन शुरू नहीं की है। पहली ट्रेन 2026 में उम्मीद की जाती है।"
+        "en": "PM Modi flagged off the train on July 17, 2026 on the ~89 km Jind–Sonipat section in Haryana. It runs on a 1,200 kW hydrogen fuel-cell system, with a hydrogen plant at Jind.",
+        "hi": "प्रधानमंत्री मोदी ने 17 जुलाई 2026 को हरियाणा के लगभग 89 किमी लंबे जींद–सोनीपत खंड पर इस ट्रेन को हरी झंडी दिखाई। यह 1,200 किलोवाट हाइड्रोजन फ्यूल-सेल प्रणाली से चलती है, और जींद में हाइड्रोजन संयंत्र है।"
       }
     },
     {
@@ -494,12 +494,12 @@
         "hi": "अक्टूबर 2025 में यूनेस्को द्वारा किस भारतीय शहर को 'गैस्ट्रोनॉमी का रचनात्मक शहर' नामित किया गया?"
       },
       "options": {
-        "en": ["A. Mumbai", "B. Kolkata", "C. Varanasi", "D. Lucknow"],
-        "hi": ["A. मुंबई", "B. कोलकाता", "C. वाराणसी", "D. लखनऊ"]
+        "en": ["A. Mumbai", "B. Lucknow", "C. Kolkata", "D. Varanasi"],
+        "hi": ["A. मुंबई", "B. लखनऊ", "C. कोलकाता", "D. वाराणसी"]
       },
       "answer": {
-        "en": "D. Lucknow",
-        "hi": "D. लखनऊ"
+        "en": "B. Lucknow",
+        "hi": "B. लखनऊ"
       },
       "explanation": {
         "en": "Lucknow was designated at UNESCO’s 43rd General Conference in Samarkand (October 31, 2025) for its Awadhi cuisine, becoming India’s second gastronomy city after Hyderabad (2019).",
@@ -508,38 +508,38 @@
     },
     {
       "question": {
-        "en": "What is the name of India’s first semiconductor plant, inaugurated in Gujarat in October 2024?",
-        "hi": "अक्टूबर 2024 में गुजरात में शुरू के गए भारत के पहले सेमीकंडक्टर संयंत्र का नाम क्या है?"
+        "en": "Where is Micron Technology’s semiconductor Assembly, Test, Marking & Packaging (ATMP) facility in India located?",
+        "hi": "भारत में माइक्रॉन टेक्नोलॉजी की सेमीकंडक्टर असेंबली, टेस्ट, मार्किंग और पैकेजिंग (ATMP) सुविधा कहाँ स्थित है?"
       },
       "options": {
-        "en": ["A. Micron India", "B. Tata Semiconductors", "C. ISRO Chips", "D. Bharat Semiconductor"],
-        "hi": ["A. माइक्रॉन इंडिया", "B. टाटा सेमीकंडक्टर्स", "C. इसरो चिप्स", "D. भारत सेमीकंडक्टर"]
+        "en": ["A. Dholera, Gujarat", "B. Bengaluru, Karnataka", "C. Noida, Uttar Pradesh", "D. Sanand, Gujarat"],
+        "hi": ["A. धोलेरा, गुजरात", "B. बेंगलुरु, कर्नाटक", "C. नोएडा, उत्तर प्रदेश", "D. सानंद, गुजरात"]
       },
       "answer": {
-        "en": "A. Micron India",
-        "hi": "A. माइक्रॉन इंडिया"
+        "en": "D. Sanand, Gujarat",
+        "hi": "D. सानंद, गुजरात"
       },
       "explanation": {
-        "en": "US-based Micron Technology inaugurated India’s first semiconductor assembly and test facility in Sanand, Gujarat.",
-        "hi": "अमेरिकी कंपनी माइक्रॉन टेक्नोलॉजी ने गुजरात के सानंद में भारत की पहली सेमीकंडक्टर असेंबली और परीक्षण सुविधा का उद्घाटन किया।"
+        "en": "Micron’s ATMP unit in Sanand was approved in June 2023 under the India Semiconductor Mission; commercial production of memory modules was scheduled to begin in February 2026.",
+        "hi": "सानंद में माइक्रॉन की ATMP इकाई को जून 2023 में इंडिया सेमीकंडक्टर मिशन के तहत मंजूरी मिली; मेमोरी मॉड्यूल का व्यावसायिक उत्पादन फरवरी 2026 में शुरू होना निर्धारित था।"
       }
     },
     {
       "question": {
-        "en": "Which Indian state launched the 'Mukhyamantri Yuva Nestham' scheme in March 2024?",
-        "hi": "मार्च 2024 में किस भारतीय राज्य ने 'मुख्यमंत्री युवा नेस्थम' योजना शुरू की?"
+        "en": "Which Indian state launched the 'Mukhyamantri Yuva Nestham' unemployment allowance scheme in 2018?",
+        "hi": "2018 में किस भारतीय राज्य ने 'मुख्यमंत्री युवा नेस्थम' बेरोजगारी भत्ता योजना शुरू की?"
       },
       "options": {
-        "en": ["A. Andhra Pradesh", "B. Telangana", "C. Tamil Nadu", "D. Karnataka"],
-        "hi": ["A. आंध्र प्रदेश", "B. तेलंगाना", "C. तमिलनाडु", "D. कर्नाटक"]
+        "en": ["A. Telangana", "B. Tamil Nadu", "C. Andhra Pradesh", "D. Karnataka"],
+        "hi": ["A. तेलंगाना", "B. तमिलनाडु", "C. आंध्र प्रदेश", "D. कर्नाटक"]
       },
       "answer": {
-        "en": "A. Andhra Pradesh",
-        "hi": "A. आंध्र प्रदेश"
+        "en": "C. Andhra Pradesh",
+        "hi": "C. आंध्र प्रदेश"
       },
       "explanation": {
-        "en": "Andhra Pradesh re-launched the scheme in March 2024, providing ₹2,000 monthly to unemployed youth aged 20–30.",
-        "hi": "आंध्र प्रदेश ने मार्च 2024 में योजना को पुनः लॉन्च किया, जिसके तहत 20–30 वर्ष के बेरोजगार युवाओं को प्रतिमाह ₹2,000 प्रदान किए जाते हैं।"
+        "en": "Approved by the Andhra Pradesh cabinet in August 2018, the scheme paid ₹1,000 a month to unemployed graduates and diploma holders aged 22–35.",
+        "hi": "अगस्त 2018 में आंध्र प्रदेश मंत्रिमंडल द्वारा स्वीकृत इस योजना के तहत 22–35 वर्ष के बेरोजगार स्नातकों और डिप्लोमा धारकों को प्रतिमाह ₹1,000 दिए गए।"
       }
     },
     {
@@ -548,12 +548,12 @@
         "hi": "नवंबर 2024 में भारत के 51वें मुख्य न्यायाधीश के रूप में किसे नियुक्त किया गया?"
       },
       "options": {
-        "en": ["A. D.Y. Chandrachud", "B. Sanjiv Khanna", "C. B.R. Gavai", "D. Surya Kant"],
-        "hi": ["A. डी.वाई. चंद्रचूड़", "B. संजीव खन्ना", "C. बी.आर. गवई", "D. सूर्या कांत"]
+        "en": ["A. D.Y. Chandrachud", "B. B.R. Gavai", "C. Surya Kant", "D. Sanjiv Khanna"],
+        "hi": ["A. डी.वाई. चंद्रचूड़", "B. बी.आर. गवई", "C. सूर्या कांत", "D. संजीव खन्ना"]
       },
       "answer": {
-        "en": "B. Sanjiv Khanna",
-        "hi": "B. संजीव खन्ना"
+        "en": "D. Sanjiv Khanna",
+        "hi": "D. संजीव खन्ना"
       },
       "explanation": {
         "en": "Justice Sanjiv Khanna assumed office as CJI on November 11, 2024, succeeding Justice D.Y. Chandrachud.",
@@ -566,12 +566,12 @@
         "hi": "मार्च 2023 में कौन सा भारतीय राज्य स्वास्थ्य के अधिकार का कानून पारित करने वाला पहला राज्य बना?"
       },
       "options": {
-        "en": ["A. Kerala", "B. Rajasthan", "C. Delhi", "D. Odisha"],
-        "hi": ["A. केरल", "B. राजस्थान", "C. दिल्ली", "D. ओडिशा"]
+        "en": ["A. Rajasthan", "B. Kerala", "C. Delhi", "D. Odisha"],
+        "hi": ["A. राजस्थान", "B. केरल", "C. दिल्ली", "D. ओडिशा"]
       },
       "answer": {
-        "en": "B. Rajasthan",
-        "hi": "B. राजस्थान"
+        "en": "A. Rajasthan",
+        "hi": "A. राजस्थान"
       },
       "explanation": {
         "en": "The Rajasthan Assembly passed the Right to Health Bill on March 21, 2023 (Governor’s assent April 12, 2023). It bars public and specified private hospitals from refusing emergency treatment.",
@@ -584,12 +584,12 @@
         "hi": "वैश्विक नवाचार सूचकांक 2025 में भारत का रैंक क्या था?"
       },
       "options": {
-        "en": ["A. 39th", "B. 42nd", "C. 38th", "D. 36th"],
-        "hi": ["A. 39वां", "B. 42वां", "C. 38वां", "D. 36वां"]
+        "en": ["A. 39th", "B. 42nd", "C. 36th", "D. 38th"],
+        "hi": ["A. 39वां", "B. 42वां", "C. 36वां", "D. 38वां"]
       },
       "answer": {
-        "en": "C. 38th",
-        "hi": "C. 38वां"
+        "en": "D. 38th",
+        "hi": "D. 38वां"
       },
       "explanation": {
         "en": "India ranked 38th of 139 economies in WIPO’s Global Innovation Index 2025, up from 39th in 2024 and 40th in 2023.",
@@ -598,20 +598,20 @@
     },
     {
       "question": {
-        "en": "Which Indian state launched the 'Ladli Behna' scheme in March 2023, expanded in 2024?",
-        "hi": "मार्च 2023 में किस भारतीय राज्य ने 'लाडली बहना' योजना शुरू की, जिसे 2024 में विस्तारित किया गया?"
+        "en": "Which Indian state launched the 'Ladli Behna' scheme for women in June 2023?",
+        "hi": "जून 2023 में किस भारतीय राज्य ने महिलाओं के लिए 'लाडली बहना' योजना शुरू की?"
       },
       "options": {
-        "en": ["A. Uttar Pradesh", "B. Madhya Pradesh", "C. Bihar", "D. Jharkhand"],
-        "hi": ["A. उत्तर प्रदेश", "B. मध्य प्रदेश", "C. बिहार", "D. झारखंड"]
+        "en": ["A. Madhya Pradesh", "B. Uttar Pradesh", "C. Bihar", "D. Jharkhand"],
+        "hi": ["A. मध्य प्रदेश", "B. उत्तर प्रदेश", "C. बिहार", "D. झारखंड"]
       },
       "answer": {
-        "en": "B. Madhya Pradesh",
-        "hi": "B. मध्य प्रदेश"
+        "en": "A. Madhya Pradesh",
+        "hi": "A. मध्य प्रदेश"
       },
       "explanation": {
-        "en": "MP’s Ladli Behna scheme provides ₹1,000 monthly to women, expanded to 1.5 crore beneficiaries in 2024.",
-        "hi": "मध्य प्रदेश की लाडली बहना योजना महिलाओं को प्रतिमाह ₹1,000 प्रदान करती है, जिसे 2024 में 1.5 करोड़ लाभार्थियों तक विस्तारित किया गया।"
+        "en": "Launched in June 2023 with ₹1,000 a month, the aid was raised to ₹1,250 and then to ₹1,500 from November 2025. It reaches about 1.27 crore women.",
+        "hi": "जून 2023 में ₹1,000 प्रतिमाह के साथ शुरू हुई इस योजना की राशि बढ़ाकर ₹1,250 और फिर नवंबर 2025 से ₹1,500 कर दी गई। इसका लाभ लगभग 1.27 करोड़ महिलाओं को मिलता है।"
       }
     },
     {
@@ -620,12 +620,12 @@
         "hi": "5 दिसंबर 2025 की मौद्रिक नीति में आरबीआई ने रेपो दर को घटाकर कितना किया?"
       },
       "options": {
-        "en": ["A. 5.25%", "B. 5.50%", "C. 5.00%", "D. 5.75%"],
-        "hi": ["A. 5.25%", "B. 5.50%", "C. 5.00%", "D. 5.75%"]
+        "en": ["A. 5.50%", "B. 5.00%", "C. 5.75%", "D. 5.25%"],
+        "hi": ["A. 5.50%", "B. 5.00%", "C. 5.75%", "D. 5.25%"]
       },
       "answer": {
-        "en": "A. 5.25%",
-        "hi": "A. 5.25%"
+        "en": "D. 5.25%",
+        "hi": "D. 5.25%"
       },
       "explanation": {
         "en": "The MPC voted 6–0 to cut the repo rate by 25 basis points to 5.25%, keeping a neutral stance, and raised the FY26 growth forecast to 7.3%.",
@@ -656,12 +656,12 @@
         "hi": "सितंबर 2022 में किस भारतीय राज्य ने स्कूली छात्रों के लिए 'मुख्यमंत्री नाश्ता योजना' शुरू की?"
       },
       "options": {
-        "en": ["A. Tamil Nadu", "B. Kerala", "C. Andhra Pradesh", "D. Karnataka"],
-        "hi": ["A. तमिलनाडु", "B. केरल", "C. आंध्र प्रदेश", "D. कर्नाटक"]
+        "en": ["A. Kerala", "B. Andhra Pradesh", "C. Tamil Nadu", "D. Karnataka"],
+        "hi": ["A. केरल", "B. आंध्र प्रदेश", "C. तमिलनाडु", "D. कर्नाटक"]
       },
       "answer": {
-        "en": "A. Tamil Nadu",
-        "hi": "A. तमिलनाडु"
+        "en": "C. Tamil Nadu",
+        "hi": "C. तमिलनाडु"
       },
       "explanation": {
         "en": "Tamil Nadu launched the scheme on September 15, 2022 for 1.14 lakh students in Classes 1–5. After expansions in 2023, 2024 and August 2025, it covers about 20 lakh children.",
@@ -674,12 +674,12 @@
         "hi": "मई 2024 में भारत के पहले निजी लॉन्चपैड 'धनुष' से अग्निबाण SOrTeD रॉकेट किस स्टार्टअप ने लॉन्च किया?"
       },
       "options": {
-        "en": ["A. Agnikul Cosmos", "B. Skyroot Aerospace", "C. Pixxel", "D. Dhruva Space"],
-        "hi": ["A. अग्निकुल कॉस्मोस", "B. स्काईरूट एयरोस्पेस", "C. पिक्सेल", "D. ध्रुव स्पेस"]
+        "en": ["A. Skyroot Aerospace", "B. Pixxel", "C. Dhruva Space", "D. Agnikul Cosmos"],
+        "hi": ["A. स्काईरूट एयरोस्पेस", "B. पिक्सेल", "C. ध्रुव स्पेस", "D. अग्निकुल कॉस्मोस"]
       },
       "answer": {
-        "en": "A. Agnikul Cosmos",
-        "hi": "A. अग्निकुल कॉस्मोस"
+        "en": "D. Agnikul Cosmos",
+        "hi": "D. अग्निकुल कॉस्मोस"
       },
       "explanation": {
         "en": "Agnikul’s sub-orbital flight from Sriharikota on May 30, 2024 used the world’s first single-piece 3D-printed semi-cryogenic engine. It was India’s second privately built rocket after Skyroot’s Vikram-S (2022).",
@@ -692,12 +692,12 @@
         "hi": "अक्टूबर 2023 में उद्घाटित दिल्ली–मेरठ आरआरटीएस कॉरिडोर पर 'नमो भारत' ट्रेनों का संचालन कौन करता है?"
       },
       "options": {
-        "en": ["A. Ministry of Railways", "B. NCRTC", "C. Ministry of Urban Development", "D. DMRC"],
-        "hi": ["A. रेल मंत्रालय", "B. एनसीआरटीसी", "C. शहरी विकास मंत्रालय", "D. दिल्ली मेट्रो रेल निगम"]
+        "en": ["A. Ministry of Railways", "B. Ministry of Urban Development", "C. NCRTC", "D. DMRC"],
+        "hi": ["A. रेल मंत्रालय", "B. शहरी विकास मंत्रालय", "C. एनसीआरटीसी", "D. दिल्ली मेट्रो रेल निगम"]
       },
       "answer": {
-        "en": "B. NCRTC",
-        "hi": "B. एनसीआरटीसी"
+        "en": "C. NCRTC",
+        "hi": "C. एनसीआरटीसी"
       },
       "explanation": {
         "en": "PM Modi inaugurated the 17-km Sahibabad–Duhai Depot section on October 20, 2023. The corridor is built and run by the National Capital Region Transport Corporation (NCRTC).",
@@ -710,12 +710,12 @@
         "hi": "नीति आयोग के भारत नवाचार सूचकांक 2021 (2022 में जारी) की 'प्रमुख राज्य' श्रेणी में कौन सा राज्य शीर्ष पर रहा?"
       },
       "options": {
-        "en": ["A. Karnataka", "B. Tamil Nadu", "C. Maharashtra", "D. Telangana"],
-        "hi": ["A. कर्नाटक", "B. तमिलनाडु", "C. महाराष्ट्र", "D. तेलंगाना"]
+        "en": ["A. Tamil Nadu", "B. Maharashtra", "C. Karnataka", "D. Telangana"],
+        "hi": ["A. तमिलनाडु", "B. महाराष्ट्र", "C. कर्नाटक", "D. तेलंगाना"]
       },
       "answer": {
-        "en": "A. Karnataka",
-        "hi": "A. कर्नाटक"
+        "en": "C. Karnataka",
+        "hi": "C. कर्नाटक"
       },
       "explanation": {
         "en": "Karnataka retained the top rank in the Major States category for the third consecutive edition, helped by its strong startup and R&D ecosystem.",
@@ -728,12 +728,12 @@
         "hi": "2025 प्रवासी भारतीय दिवस (PBD) की मेजबानी किस भारतीय शहर ने की?"
       },
       "options": {
-        "en": ["A. Varanasi", "B. Bhubaneswar", "C. Indore", "D. Ahmedabad"],
-        "hi": ["A. वाराणसी", "B. भुवनेश्वर", "C. इंदौर", "D. अहमदाबाद"]
+        "en": ["A. Varanasi", "B. Indore", "C. Bhubaneswar", "D. Ahmedabad"],
+        "hi": ["A. वाराणसी", "B. इंदौर", "C. भुवनेश्वर", "D. अहमदाबाद"]
       },
       "answer": {
-        "en": "B. Bhubaneswar",
-        "hi": "B. भुवनेश्वर"
+        "en": "C. Bhubaneswar",
+        "hi": "C. भुवनेश्वर"
       },
       "explanation": {
         "en": "The 18th Pravasi Bharatiya Divas was held in Bhubaneswar, Odisha from January 8–10, 2025, themed 'Diaspora’s Contribution to a Viksit Bharat'.",
@@ -746,34 +746,16 @@
         "hi": "अद्यतन राष्ट्रीय स्वयं निर्धारित योगदान (NDC) के अनुसार, भारत द्वारा 'शुद्ध शून्य' उत्सर्जन प्राप्त करने का लक्ष्य वर्ष क्या है?"
       },
       "options": {
-        "en": ["A. 2050", "B. 2060", "C. 2070", "D. 2047"],
-        "hi": ["A. 2050", "B. 2060", "C. 2070", "D. 2047"]
+        "en": ["A. 2050", "B. 2070", "C. 2060", "D. 2047"],
+        "hi": ["A. 2050", "B. 2070", "C. 2060", "D. 2047"]
       },
       "answer": {
-        "en": "C. 2070",
-        "hi": "C. 2070"
+        "en": "B. 2070",
+        "hi": "B. 2070"
       },
       "explanation": {
-        "en": "India reaffirmed its commitment to achieve net zero emissions by 2070 at COP28 and COP29.",
-        "hi": "भारत ने COP28 और COP29 में 2070 तक शुद्ध शून्य उत्सर्जन प्राप्त करने की प्रतिबद्धता को दोहराया।"
-      }
-    },
-    {
-      "question": {
-        "en": "Which Indian state launched the 'Mukhyamantri Majhi Ladki Bahin Yojana' in July 2024?",
-        "hi": "जुलाई 2024 में किस भारतीय राज्य ने 'मुख्यमंत्री माझी लाडकी बहीन योजना' शुरू की?"
-      },
-      "options": {
-        "en": ["A. Maharashtra", "B. Madhya Pradesh", "C. Chhattisgarh", "D. Rajasthan"],
-        "hi": ["A. महाराष्ट्र", "B. मध्य प्रदेश", "C. छत्तीसगढ़", "D. राजस्थान"]
-      },
-      "answer": {
-        "en": "A. Maharashtra",
-        "hi": "A. महाराष्ट्र"
-      },
-      "explanation": {
-        "en": "Approved by the Maharashtra cabinet on June 28, 2024 and launched in July 2024, the scheme provides ₹1,500 monthly to women aged 21–65 with family income up to ₹2.5 lakh a year.",
-        "hi": "28 जून 2024 को महाराष्ट्र मंत्रिमंडल द्वारा स्वीकृत और जुलाई 2024 में शुरू की गई यह योजना ₹2.5 लाख तक की वार्षिक पारिवारिक आय वाली 21–65 वर्ष की महिलाओं को प्रतिमाह ₹1,500 प्रदान करती है।"
+        "en": "India announced its 2070 net zero target at COP26 in Glasgow (2021) and included it in its updated NDC and long-term strategy.",
+        "hi": "भारत ने ग्लासगो में COP26 (2021) में 2070 तक शुद्ध शून्य उत्सर्जन लक्ष्य की घोषणा की और इसे अपने अद्यतन NDC तथा दीर्घकालिक रणनीति में शामिल किया।"
       }
     },
     {
@@ -782,12 +764,12 @@
         "hi": "2024 का शांति के लिए नोबेल पुरस्कार किसे मिला?"
       },
       "options": {
-        "en": ["A. Volodymyr Zelenskyy", "B. Nihon Hidankyo", "C. Maria Ressa", "D. Not awarded"],
-        "hi": ["A. वलोडिमिर ज़ेलेंस्की", "B. निहॉन हिडांक्यो", "C. मारिया रेसा", "D. प्रदान नहीं किया गया"]
+        "en": ["A. Volodymyr Zelenskyy", "B. Maria Ressa", "C. Not awarded", "D. Nihon Hidankyo"],
+        "hi": ["A. वलोडिमिर ज़ेलेंस्की", "B. मारिया रेसा", "C. प्रदान नहीं किया गया", "D. निहॉन हिडांक्यो"]
       },
       "answer": {
-        "en": "B. Nihon Hidankyo",
-        "hi": "B. निहॉन हिडांक्यो"
+        "en": "D. Nihon Hidankyo",
+        "hi": "D. निहॉन हिडांक्यो"
       },
       "explanation": {
         "en": "The 2024 Nobel Peace Prize was awarded to Nihon Hidankyo, a Japanese organization of atomic bomb survivors.",
@@ -800,12 +782,12 @@
         "hi": "डिजिटल व्यक्तिगत डेटा संरक्षण (DPDP) नियम, 2025 कब अधिसूचित किए गए?"
       },
       "options": {
-        "en": ["A. August 2023", "B. October 2025", "C. November 2025", "D. January 2026"],
-        "hi": ["A. अगस्त 2023", "B. अक्टूबर 2025", "C. नवंबर 2025", "D. जनवरी 2026"]
+        "en": ["A. November 2025", "B. August 2023", "C. October 2025", "D. January 2026"],
+        "hi": ["A. नवंबर 2025", "B. अगस्त 2023", "C. अक्टूबर 2025", "D. जनवरी 2026"]
       },
       "answer": {
-        "en": "C. November 2025",
-        "hi": "C. नवंबर 2025"
+        "en": "A. November 2025",
+        "hi": "A. नवंबर 2025"
       },
       "explanation": {
         "en": "MeitY notified the DPDP Rules on November 13, 2025, operationalising the DPDP Act, 2023 (passed August 2023). Data Protection Board provisions took effect immediately; most obligations apply after 18 months.",
@@ -818,12 +800,12 @@
         "hi": "अक्टूबर 2024 में 'विश्व आर्थिक आउटलुक' किस संगठन ने जारी किया?"
       },
       "options": {
-        "en": ["A. World Bank", "B. IMF", "C. WTO", "D. UNDP"],
-        "hi": ["A. विश्व बैंक", "B. आईएमएफ", "C. डब्ल्यूटीओ", "D. यूएनडीपी"]
+        "en": ["A. IMF", "B. World Bank", "C. WTO", "D. UNDP"],
+        "hi": ["A. आईएमएफ", "B. विश्व बैंक", "C. डब्ल्यूटीओ", "D. यूएनडीपी"]
       },
       "answer": {
-        "en": "B. IMF",
-        "hi": "B. आईएमएफ"
+        "en": "A. IMF",
+        "hi": "A. आईएमएफ"
       },
       "explanation": {
         "en": "The International Monetary Fund (IMF) releases the World Economic Outlook biannually (April & October).",
@@ -836,12 +818,12 @@
         "hi": "जून 2022 में आपातकालीन उपयोग की अनुमति प्राप्त भारत के पहले स्वदेशी रूप से विकसित एमआरएनए वैक्सीन का नाम क्या है?"
       },
       "options": {
-        "en": ["A. Covaxin", "B. ZyCoV-D", "C. GEMCOVAC-19", "D. Corbevax"],
-        "hi": ["A. कोवैक्सीन", "B. जाईकोव-डी", "C. जेमकोवैक-19", "D. कॉर्बेवैक्स"]
+        "en": ["A. Covaxin", "B. ZyCoV-D", "C. Corbevax", "D. GEMCOVAC-19"],
+        "hi": ["A. कोवैक्सीन", "B. जाईकोव-डी", "C. कॉर्बेवैक्स", "D. जेमकोवैक-19"]
       },
       "answer": {
-        "en": "C. GEMCOVAC-19",
-        "hi": "C. जेमकोवैक-19"
+        "en": "D. GEMCOVAC-19",
+        "hi": "D. जेमकोवैक-19"
       },
       "explanation": {
         "en": "Developed by Pune-based Gennova Biopharmaceuticals, GEMCOVAC-19 received DCGI emergency use authorisation on June 28, 2022. It can be stored at 2–8°C.",
