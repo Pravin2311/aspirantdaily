@@ -1,7 +1,7 @@
 // ===== Progress Tracking =====
 function updateProgress() {
     const completedPages = localStorage.getItem('completedPages');
-    const totalPages = 71;
+    const totalPages = 78;
     const completed = completedPages ? JSON.parse(completedPages).length : 0;
     const percentage = (completed / totalPages) * 100;
     
