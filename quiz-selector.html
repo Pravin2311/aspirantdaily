@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <title>Select Quiz – AspirantDaily</title>
+  <meta name="robots" content="noindex, follow">
   <meta name="description" content="Pick a set of 25 practice questions for your chosen subject on AspirantDaily.">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="./styles.css">
@@ -16,7 +17,7 @@
   <a href="index.html" class="back-btn">← Back</a>
   <div class="page-header" style="padding-top:1rem;">
     <h1 id="title"></h1>
-    <p>Pick a set of 25 questions to begin.</p>
+    <p>Pick a question set to begin.</p>
   </div>
   <div id="quizList" class="quiz-list"></div>
 </div>
@@ -38,7 +39,10 @@
     quant: "Quantitative Aptitude",
     computer: "Computer Awareness",
     science: "General Science",
-    "static-gk": "Static GK"
+    "static-gk": "Static GK",
+    english: "English",
+    economics: "Economics",
+    geography: "Geography"
   };
 
   title.innerText = labels[subject] || "Practice";
@@ -47,14 +51,26 @@
   if (subject === "current-affairs") {
     startQuiz(0);
   } else {
-    // 🔹 4 quizzes (25 × 4 = 100)
-    for (let i = 0; i < 2; i++) {
-      const btn = document.createElement("button");
-      btn.className = "btn primary block";
-      btn.innerText = `Quiz ${i + 1} (Questions ${i * 25 + 1}–${i * 25 + 25})`;
-      btn.onclick = () => startQuiz(i);
-      list.appendChild(btn);
-    }
+    // 🔹 Split the whole bank into even sets of at most 25 (same maths as js/quiz.js)
+    fetch(`./data/${subject}.json`, { cache: "no-store" })
+      .then(res => res.json())
+      .then(data => {
+        const total = (data.questions || []).length;
+        const sets = Math.max(1, Math.ceil(total / 25));
+        const size = Math.ceil(total / sets);
+        for (let i = 0; i < sets; i++) {
+          const from = i * size + 1;
+          const to = Math.min(total, (i + 1) * size);
+          const btn = document.createElement("button");
+          btn.className = "btn primary block";
+          btn.innerText = `Quiz ${i + 1} (Questions ${from}–${to})`;
+          btn.onclick = () => startQuiz(i);
+          list.appendChild(btn);
+        }
+      })
+      .catch(() => {
+        list.innerText = "Could not load quizzes. Please refresh.";
+      });
   }
 
   function startQuiz(quizIndex) {

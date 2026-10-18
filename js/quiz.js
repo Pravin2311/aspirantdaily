@@ -33,7 +33,7 @@ const subjectLabels = {
   science: "General Science",
   "static-gk": "Static GK",
   english: "English",
-  economy: "Economy",
+  economics: "Economics",
   geography: "Geography"
 };
 
@@ -74,10 +74,12 @@ async function loadQuestions() {
         pool.sort(() => Math.random() - 0.5);
         questions = pool.slice(0, 25);
       }
-      // 📦 OTHER SUBJECTS → QUIZ SELECTOR (UNCHANGED)
+      // 📦 OTHER SUBJECTS → even sets of at most 25 (same maths as quiz-selector.html)
       else {
-        const start = quizIndex * 25;
-        questions = pool.slice(start, start + 25);
+        const sets = Math.max(1, Math.ceil(pool.length / 25));
+        const size = Math.ceil(pool.length / sets);
+        const start = quizIndex * size;
+        questions = pool.slice(start, start + size);
       }
     }
 
