@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /admin.html
 
-Sitemap: https://aspirantdaily.com/sitemap.xml
+Sitemap: https://www.aspirantdaily.com/sitemap.xml
