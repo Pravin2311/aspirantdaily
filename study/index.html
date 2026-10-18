@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UPSC 500-Page Master Study Portal</title>
-    <meta name="description" content="Free UPSC study portal with exam-oriented notes on Current Affairs, Polity, and Economy — Prelims facts, Mains analysis, and MCQs, zero fluff.">
+    <title>UPSC Master Study Portal: Free Notes &amp; MCQs</title>
+    <meta name="description" content="Free UPSC study portal with exam-oriented notes on Current Affairs, Polity, Economy, History, Geography, Environment, Science, IR and Government Schemes — Prelims facts, Mains analysis and MCQs, zero fluff.">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles.css">
     <style>
@@ -275,15 +275,15 @@
             <p class="hero-subtitle">Simple • Exam-Oriented • Memory-Friendly • Zero Fluff</p>
             <div class="hero-stats">
                 <div class="stat-card">
-                    <div class="stat-number" id="total-pages">500</div>
+                    <div class="stat-number" id="total-pages">71</div>
                     <div class="stat-label">Total Pages</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-number" id="completed-pages">1</div>
+                    <div class="stat-number" id="completed-pages">0</div>
                     <div class="stat-label">Completed</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-number" id="progress-percent">0.2%</div>
+                    <div class="stat-number" id="progress-percent">0%</div>
                     <div class="stat-label">Progress</div>
                 </div>
             </div>
@@ -315,15 +315,15 @@
             <div class="progress-card">
                 <div class="progress-info">
                     <div class="progress-label">Overall Completion</div>
-                    <div class="progress-value" id="overall-progress">0.2%</div>
+                    <div class="progress-value" id="overall-progress">0%</div>
                 </div>
                 <div class="progress-bar-container">
                     <div class="progress-bar">
-                        <div class="progress-fill" id="progress-fill" style="width: 0.2%"></div>
+                        <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
                     </div>
                 </div>
                 <div class="progress-details">
-                    <span>1 of 500 pages completed</span>
+                    <span id="progress-count">0 of 71 pages completed</span>
                     <span class="separator">•</span>
                     <span>Keep going! 🚀</span>
                 </div>
@@ -369,17 +369,17 @@
                     <div class="card-icon">⚖️</div>
                     <div class="card-meta">
                         <h3>Polity</h3>
-                        <span class="card-count">4 Pages</span>
+                        <span class="card-count">8 Pages</span>
                     </div>
                 </div>
                 <div class="card-body">
-                    <p>Constitution, Fundamental Rights, Parliament, Judiciary & more</p>
+                    <p>Constitution, Rights, Parliament, Judiciary, Executive, Federalism, Panchayati Raj & constitutional bodies</p>
                     <div class="card-tags">
                         <span class="tag">Most Important</span>
                         <span class="tag">High Weightage</span>
                     </div>
                     <div class="card-progress">
-                        <span class="progress-text">Constitution • Rights • Parliament • Judiciary</span>
+                        <span class="progress-text">Constitution • Parliament • Executive • Local Govt • Bodies</span>
                     </div>
                 </div>
                 <a href="polity/index.html" class="card-cta">
@@ -450,17 +450,17 @@
                     <div class="card-icon">💰</div>
                     <div class="card-meta">
                         <h3>Economy</h3>
-                        <span class="card-count">3 Pages</span>
+                        <span class="card-count">6 Pages</span>
                     </div>
                 </div>
                 <div class="card-body">
-                    <p>Banking & RBI, Budget & fiscal policy, National income & inflation</p>
+                    <p>Banking & RBI, Budget, National income & inflation, External sector, Taxation & GST, Planning & agriculture</p>
                     <div class="card-tags">
                         <span class="tag">Conceptual</span>
                         <span class="tag">Current</span>
                     </div>
                     <div class="card-progress">
-                        <span class="progress-text">RBI • Budget • GDP • Inflation</span>
+                        <span class="progress-text">RBI • Budget • GDP • BoP • GST • MSP</span>
                     </div>
                 </div>
                 <a href="economy/index.html" class="card-cta">
@@ -588,7 +588,7 @@
                   <span class="brand-logo">AD</span>
                   <span class="brand-name">Aspirant<strong>Daily</strong></span>
                 </a>
-                <p>📚 UPSC 500-Page Master Set — built for aspirants, by aspirants. Last updated <span id="last-updated">March 2026</span>, total <strong>500</strong> pages.</p>
+                <p>📚 AspirantDaily Study Portal — built for aspirants, by aspirants. Last updated <span id="last-updated">October 2026</span>, total <strong>71</strong> pages.</p>
             </div>
             <nav class="footer-links">
                 <a href="/index.html">Home</a>
@@ -613,13 +613,14 @@
         function updateMainProgress() {
             const completedPages = localStorage.getItem('completedPages');
             const completed = completedPages ? JSON.parse(completedPages).length : 0;
-            const total = 500;
+            const total = 71;
             const percentage = ((completed / total) * 100).toFixed(1);
             
             document.getElementById('completed-pages').textContent = completed;
             document.getElementById('progress-percent').textContent = percentage + '%';
             document.getElementById('overall-progress').textContent = percentage + '%';
             document.getElementById('progress-fill').style.width = percentage + '%';
+            document.getElementById('progress-count').textContent = completed + ' of ' + total + ' pages completed';
         }
 
         function resetProgress() {
