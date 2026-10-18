@@ -599,6 +599,201 @@
       "answer": {"en": "Iron", "hi": "लोहा"},
       "explanation": {"en": "Iron is magnetic and is attracted to magnets.", "hi": "लोहा चुंबकीय होता है और चुंबक की ओर आकर्षित होता है।"},
       "subject": "science"
+    },
+    {
+      "question": {
+        "en": "What is the SI unit of energy?",
+        "hi": "ऊर्जा का SI मात्रक क्या है?"
+      },
+      "options": {
+        "en": ["Watt", "Newton", "Joule", "Pascal"],
+        "hi": ["वाट", "न्यूटन", "जूल", "पास्कल"]
+      },
+      "answer": {"en": "Joule", "hi": "जूल"},
+      "explanation": {"en": "Energy is measured in joules; the watt is the unit of power.", "hi": "ऊर्जा जूल में मापी जाती है; वाट शक्ति का मात्रक है।"},
+      "subject": "science"
+    },
+    {
+      "question": {
+        "en": "Deficiency of which vitamin causes scurvy?",
+        "hi": "किस विटामिन की कमी से स्कर्वी रोग होता है?"
+      },
+      "options": {
+        "en": ["Vitamin A", "Vitamin D", "Vitamin K", "Vitamin C"],
+        "hi": ["विटामिन A", "विटामिन D", "विटामिन K", "विटामिन C"]
+      },
+      "answer": {"en": "Vitamin C", "hi": "विटामिन C"},
+      "explanation": {"en": "Scurvy, with bleeding gums, results from a lack of vitamin C.", "hi": "मसूड़ों से खून आने वाला स्कर्वी रोग विटामिन C की कमी से होता है।"},
+      "subject": "science"
+    },
+    {
+      "question": {
+        "en": "Which is the largest organ of the human body?",
+        "hi": "मानव शरीर का सबसे बड़ा अंग कौन सा है?"
+      },
+      "options": {
+        "en": ["Liver", "Brain", "Heart", "Skin"],
+        "hi": ["यकृत", "मस्तिष्क", "हृदय", "त्वचा"]
+      },
+      "answer": {"en": "Skin", "hi": "त्वचा"},
+      "explanation": {"en": "The skin is the largest organ overall; the liver is the largest internal organ.", "hi": "त्वचा सबसे बड़ा अंग है; यकृत सबसे बड़ा आंतरिक अंग है।"},
+      "subject": "science"
+    },
+    {
+      "question": {
+        "en": "Which blood group is known as the universal donor?",
+        "hi": "किस रक्त समूह को सर्वदाता (universal donor) कहा जाता है?"
+      },
+      "options": {
+        "en": ["AB positive", "O negative", "A positive", "B negative"],
+        "hi": ["AB पॉज़िटिव", "O नेगेटिव", "A पॉज़िटिव", "B नेगेटिव"]
+      },
+      "answer": {"en": "O negative", "hi": "O नेगेटिव"},
+      "explanation": {"en": "O negative red cells carry no A, B or Rh antigens, so they can be given to most recipients; AB positive is the universal recipient.", "hi": "O नेगेटिव लाल रक्त कोशिकाओं पर A, B या Rh एंटीजन नहीं होते, इसलिए इन्हें अधिकांश लोगों को दिया जा सकता है; AB पॉज़िटिव सर्वग्राही है।"},
+      "subject": "science"
+    },
+    {
+      "question": {
+        "en": "What is the chemical formula of washing soda?",
+        "hi": "धोने के सोडे (washing soda) का रासायनिक सूत्र क्या है?"
+      },
+      "options": {
+        "en": ["Na2CO3·10H2O", "NaHCO3", "NaOH", "CaCO3"],
+        "hi": ["Na2CO3·10H2O", "NaHCO3", "NaOH", "CaCO3"]
+      },
+      "answer": {"en": "Na2CO3·10H2O", "hi": "Na2CO3·10H2O"},
+      "explanation": {"en": "Washing soda is sodium carbonate decahydrate; NaHCO3 is baking soda.", "hi": "धोने का सोडा सोडियम कार्बोनेट डेकाहाइड्रेट है; NaHCO3 खाने का सोडा है।"},
+      "subject": "science"
+    },
+    {
+      "question": {
+        "en": "Which planet is closest to the Sun?",
+        "hi": "सूर्य के सबसे निकट कौन सा ग्रह है?"
+      },
+      "options": {
+        "en": ["Venus", "Earth", "Mercury", "Mars"],
+        "hi": ["शुक्र", "पृथ्वी", "बुध", "मंगल"]
+      },
+      "answer": {"en": "Mercury", "hi": "बुध"},
+      "explanation": {"en": "Mercury is the innermost planet of the solar system.", "hi": "बुध सौरमंडल का सबसे भीतरी ग्रह है।"},
+      "subject": "science"
+    },
+    {
+      "question": {
+        "en": "Sound cannot travel through:",
+        "hi": "ध्वनि किसमें से होकर नहीं चल सकती?"
+      },
+      "options": {
+        "en": ["Water", "Steel", "Air", "Vacuum"],
+        "hi": ["पानी", "स्टील", "हवा", "निर्वात"]
+      },
+      "answer": {"en": "Vacuum", "hi": "निर्वात"},
+      "explanation": {"en": "Sound needs a medium; it travels fastest in solids and cannot travel in a vacuum.", "hi": "ध्वनि को माध्यम चाहिए; यह ठोस में सबसे तेज़ चलती है और निर्वात में नहीं चल सकती।"},
+      "subject": "science"
+    },
+    {
+      "question": {
+        "en": "How many bones are there in an adult human body?",
+        "hi": "एक वयस्क मानव शरीर में कितनी हड्डियाँ होती हैं?"
+      },
+      "options": {
+        "en": ["208", "212", "206", "300"],
+        "hi": ["208", "212", "206", "300"]
+      },
+      "answer": {"en": "206", "hi": "206"},
+      "explanation": {"en": "An adult has 206 bones; a newborn has around 300, many of which fuse.", "hi": "वयस्क में 206 हड्डियाँ होती हैं; नवजात में लगभग 300 होती हैं, जिनमें से कई आपस में जुड़ जाती हैं।"},
+      "subject": "science"
+    },
+    {
+      "question": {
+        "en": "Which gas is known as 'laughing gas'?",
+        "hi": "किस गैस को 'हँसाने वाली गैस' कहा जाता है?"
+      },
+      "options": {
+        "en": ["Nitrous oxide", "Nitric oxide", "Nitrogen dioxide", "Carbon monoxide"],
+        "hi": ["नाइट्रस ऑक्साइड", "नाइट्रिक ऑक्साइड", "नाइट्रोजन डाइऑक्साइड", "कार्बन मोनोऑक्साइड"]
+      },
+      "answer": {"en": "Nitrous oxide", "hi": "नाइट्रस ऑक्साइड"},
+      "explanation": {"en": "Nitrous oxide (N2O) is called laughing gas and is used as a mild anaesthetic.", "hi": "नाइट्रस ऑक्साइड (N2O) को हँसाने वाली गैस कहते हैं और यह हल्के निश्चेतक के रूप में प्रयोग होती है।"},
+      "subject": "science"
+    },
+    {
+      "question": {
+        "en": "Which instrument records earthquakes?",
+        "hi": "भूकंप को कौन सा उपकरण रिकॉर्ड करता है?"
+      },
+      "options": {
+        "en": ["Barometer", "Seismograph", "Hygrometer", "Ammeter"],
+        "hi": ["बैरोमीटर", "सिस्मोग्राफ़", "हाइग्रोमीटर", "एमीटर"]
+      },
+      "answer": {"en": "Seismograph", "hi": "सिस्मोग्राफ़"},
+      "explanation": {"en": "A seismograph records seismic waves; a hygrometer measures humidity.", "hi": "सिस्मोग्राफ़ भूकंपीय तरंगें रिकॉर्ड करता है; हाइग्रोमीटर आर्द्रता मापता है।"},
+      "subject": "science"
+    },
+    {
+      "question": {
+        "en": "Who formulated the three laws of motion?",
+        "hi": "गति के तीन नियम किसने दिए?"
+      },
+      "options": {
+        "en": ["Galileo Galilei", "Isaac Newton", "Albert Einstein", "Johannes Kepler"],
+        "hi": ["गैलीलियो गैलीली", "आइज़क न्यूटन", "अल्बर्ट आइंस्टीन", "योहानेस केप्लर"]
+      },
+      "answer": {"en": "Isaac Newton", "hi": "आइज़क न्यूटन"},
+      "explanation": {"en": "Newton published his three laws of motion in the Principia (1687).", "hi": "न्यूटन ने गति के तीन नियम 'प्रिंसिपिया' (1687) में प्रकाशित किए।"},
+      "subject": "science"
+    },
+    {
+      "question": {
+        "en": "Insulin is produced by which organ?",
+        "hi": "इंसुलिन किस अंग द्वारा बनाया जाता है?"
+      },
+      "options": {
+        "en": ["Liver", "Kidney", "Thyroid", "Pancreas"],
+        "hi": ["यकृत", "गुर्दा", "थायरॉयड", "अग्न्याशय"]
+      },
+      "answer": {"en": "Pancreas", "hi": "अग्न्याशय"},
+      "explanation": {"en": "Beta cells in the pancreas's islets of Langerhans produce insulin.", "hi": "अग्न्याशय की लैंगरहैंस द्वीपिकाओं की बीटा कोशिकाएँ इंसुलिन बनाती हैं।"},
+      "subject": "science"
+    },
+    {
+      "question": {
+        "en": "Which acid is found in lemons?",
+        "hi": "नींबू में कौन सा अम्ल पाया जाता है?"
+      },
+      "options": {
+        "en": ["Acetic acid", "Lactic acid", "Citric acid", "Oxalic acid"],
+        "hi": ["एसिटिक अम्ल", "लैक्टिक अम्ल", "साइट्रिक अम्ल", "ऑक्सैलिक अम्ल"]
+      },
+      "answer": {"en": "Citric acid", "hi": "साइट्रिक अम्ल"},
+      "explanation": {"en": "Citrus fruits contain citric acid; vinegar contains acetic acid and curd contains lactic acid.", "hi": "खट्टे फलों में साइट्रिक अम्ल होता है; सिरके में एसिटिक और दही में लैक्टिक अम्ल।"},
+      "subject": "science"
+    },
+    {
+      "question": {
+        "en": "Which type of mirror is used as a rear-view mirror in vehicles?",
+        "hi": "वाहनों में पीछे देखने के दर्पण के रूप में किस प्रकार का दर्पण प्रयोग होता है?"
+      },
+      "options": {
+        "en": ["Convex mirror", "Concave mirror", "Plane mirror", "Cylindrical mirror"],
+        "hi": ["उत्तल दर्पण", "अवतल दर्पण", "समतल दर्पण", "बेलनाकार दर्पण"]
+      },
+      "answer": {"en": "Convex mirror", "hi": "उत्तल दर्पण"},
+      "explanation": {"en": "A convex mirror gives an erect, diminished image and a wider field of view.", "hi": "उत्तल दर्पण सीधा, छोटा प्रतिबिंब और अधिक चौड़ा दृश्य क्षेत्र देता है।"},
+      "subject": "science"
+    },
+    {
+      "question": {
+        "en": "Which equation expresses Ohm's law?",
+        "hi": "ओम का नियम किस समीकरण द्वारा व्यक्त होता है?"
+      },
+      "options": {
+        "en": ["V = I/R", "V = IR", "P = VI", "F = ma"],
+        "hi": ["V = I/R", "V = IR", "P = VI", "F = ma"]
+      },
+      "answer": {"en": "V = IR", "hi": "V = IR"},
+      "explanation": {"en": "Ohm's law: voltage equals current times resistance (V = IR).", "hi": "ओम का नियम: विभवांतर = धारा × प्रतिरोध (V = IR)।"},
+      "subject": "science"
     }
   ]
 }

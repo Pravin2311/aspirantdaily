@@ -638,6 +638,201 @@
       "answer": {"en": "Finland", "hi": "फिनलैंड"},
       "explanation": {"en": "Finland has over 180,000 lakes, earning it the nickname 'Land of a Thousand Lakes'.", "hi": "फिनलैंड में 180,000 से अधिक झीलें हैं, जिससे इसे 'हजार झीलों वाली भूमि' उपनाम मिला है।"},
       "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "Which state is known as the 'Spice Garden of India'?",
+        "hi": "किस राज्य को 'भारत का मसाला उद्यान' कहा जाता है?"
+      },
+      "options": {
+        "en": ["Karnataka", "Assam", "Goa", "Kerala"],
+        "hi": ["कर्नाटक", "असम", "गोवा", "केरल"]
+      },
+      "answer": {"en": "Kerala", "hi": "केरल"},
+      "explanation": {"en": "Kerala is called the Spice Garden of India for its pepper, cardamom and other spices.", "hi": "काली मिर्च, इलायची और अन्य मसालों के कारण केरल को भारत का मसाला उद्यान कहा जाता है।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "Which is the largest river island in India?",
+        "hi": "भारत का सबसे बड़ा नदी द्वीप कौन सा है?"
+      },
+      "options": {
+        "en": ["Srirangam", "Umananda", "Bhavani", "Majuli"],
+        "hi": ["श्रीरंगम", "उमानंद", "भवानी", "माजुली"]
+      },
+      "answer": {"en": "Majuli", "hi": "माजुली"},
+      "explanation": {"en": "Majuli, on the Brahmaputra in Assam, is India's largest river island.", "hi": "असम में ब्रह्मपुत्र नदी पर स्थित माजुली भारत का सबसे बड़ा नदी द्वीप है।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "Which mountain pass connects Srinagar and Leh?",
+        "hi": "कौन सा दर्रा श्रीनगर और लेह को जोड़ता है?"
+      },
+      "options": {
+        "en": ["Nathu La", "Shipki La", "Bomdi La", "Zoji La"],
+        "hi": ["नाथू ला", "शिपकी ला", "बोमडी ला", "ज़ोजी ला"]
+      },
+      "answer": {"en": "Zoji La", "hi": "ज़ोजी ला"},
+      "explanation": {"en": "Zoji La links the Kashmir Valley with Ladakh on the Srinagar–Leh highway.", "hi": "ज़ोजी ला श्रीनगर–लेह राजमार्ग पर कश्मीर घाटी को लद्दाख से जोड़ता है।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "Which is the longest river of peninsular India?",
+        "hi": "प्रायद्वीपीय भारत की सबसे लंबी नदी कौन सी है?"
+      },
+      "options": {
+        "en": ["Krishna", "Kaveri", "Narmada", "Godavari"],
+        "hi": ["कृष्णा", "कावेरी", "नर्मदा", "गोदावरी"]
+      },
+      "answer": {"en": "Godavari", "hi": "गोदावरी"},
+      "explanation": {"en": "The Godavari (about 1,465 km) is the longest peninsular river and is called the 'Dakshin Ganga'.", "hi": "गोदावरी (लगभग 1,465 किमी) सबसे लंबी प्रायद्वीपीय नदी है और इसे 'दक्षिण गंगा' कहा जाता है।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "Which of these rivers flows westward into the Arabian Sea?",
+        "hi": "इनमें से कौन सी नदी पश्चिम की ओर बहकर अरब सागर में गिरती है?"
+      },
+      "options": {
+        "en": ["Godavari", "Narmada", "Krishna", "Mahanadi"],
+        "hi": ["गोदावरी", "नर्मदा", "कृष्णा", "महानदी"]
+      },
+      "answer": {"en": "Narmada", "hi": "नर्मदा"},
+      "explanation": {"en": "The Narmada flows west through a rift valley into the Arabian Sea; the others drain into the Bay of Bengal.", "hi": "नर्मदा एक भ्रंश घाटी से होकर पश्चिम में अरब सागर में गिरती है; बाकी बंगाल की खाड़ी में गिरती हैं।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "The Palk Strait separates India from which country?",
+        "hi": "पाक जलडमरूमध्य भारत को किस देश से अलग करता है?"
+      },
+      "options": {
+        "en": ["Maldives", "Myanmar", "Bangladesh", "Sri Lanka"],
+        "hi": ["मालदीव", "म्यांमार", "बांग्लादेश", "श्रीलंका"]
+      },
+      "answer": {"en": "Sri Lanka", "hi": "श्रीलंका"},
+      "explanation": {"en": "The Palk Strait lies between Tamil Nadu and northern Sri Lanka.", "hi": "पाक जलडमरूमध्य तमिलनाडु और उत्तरी श्रीलंका के बीच स्थित है।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "Which boundary line was drawn in 1947 to partition India and Pakistan?",
+        "hi": "भारत और पाकिस्तान के विभाजन के लिए 1947 में कौन सी सीमा रेखा खींची गई?"
+      },
+      "options": {
+        "en": ["McMahon Line", "Durand Line", "38th Parallel", "Radcliffe Line"],
+        "hi": ["मैकमोहन रेखा", "डूरंड रेखा", "38वीं समानांतर रेखा", "रैडक्लिफ़ रेखा"]
+      },
+      "answer": {"en": "Radcliffe Line", "hi": "रैडक्लिफ़ रेखा"},
+      "explanation": {"en": "Sir Cyril Radcliffe drew the Radcliffe Line in August 1947.", "hi": "सर सिरिल रैडक्लिफ़ ने अगस्त 1947 में रैडक्लिफ़ रेखा खींची।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "The McMahon Line is the boundary between India and:",
+        "hi": "मैकमोहन रेखा भारत और किस देश के बीच की सीमा है?"
+      },
+      "options": {
+        "en": ["Pakistan", "China", "Nepal", "Bangladesh"],
+        "hi": ["पाकिस्तान", "चीन", "नेपाल", "बांग्लादेश"]
+      },
+      "answer": {"en": "China", "hi": "चीन"},
+      "explanation": {"en": "The McMahon Line (1914) marks the eastern India–China boundary along Arunachal Pradesh.", "hi": "मैकमोहन रेखा (1914) अरुणाचल प्रदेश के साथ भारत–चीन की पूर्वी सीमा है।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "Which layer of the atmosphere contains the ozone layer?",
+        "hi": "वायुमंडल की किस परत में ओज़ोन परत होती है?"
+      },
+      "options": {
+        "en": ["Troposphere", "Mesosphere", "Thermosphere", "Stratosphere"],
+        "hi": ["क्षोभ मंडल", "मध्य मंडल", "ताप मंडल", "समताप मंडल"]
+      },
+      "answer": {"en": "Stratosphere", "hi": "समताप मंडल"},
+      "explanation": {"en": "Most atmospheric ozone lies in the stratosphere, about 15–35 km above Earth.", "hi": "अधिकांश ओज़ोन समताप मंडल में, पृथ्वी से लगभग 15–35 किमी ऊपर होती है।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "Which country is known as the 'Land of the Midnight Sun'?",
+        "hi": "किस देश को 'मध्यरात्रि के सूर्य का देश' कहा जाता है?"
+      },
+      "options": {
+        "en": ["Japan", "Norway", "Finland", "Iceland"],
+        "hi": ["जापान", "नॉर्वे", "फ़िनलैंड", "आइसलैंड"]
+      },
+      "answer": {"en": "Norway", "hi": "नॉर्वे"},
+      "explanation": {"en": "Norway, much of which lies north of the Arctic Circle, has the sun visible at midnight in summer.", "hi": "नॉर्वे का बड़ा भाग आर्कटिक वृत्त के उत्तर में है, जहाँ गर्मियों में आधी रात को भी सूर्य दिखता है।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "Which is the longest river in Asia?",
+        "hi": "एशिया की सबसे लंबी नदी कौन सी है?"
+      },
+      "options": {
+        "en": ["Ganga", "Mekong", "Ob", "Yangtze"],
+        "hi": ["गंगा", "मेकांग", "ओब", "यांग्त्ज़ी"]
+      },
+      "answer": {"en": "Yangtze", "hi": "यांग्त्ज़ी"},
+      "explanation": {"en": "The Yangtze in China, about 6,300 km long, is Asia's longest river.", "hi": "चीन की लगभग 6,300 किमी लंबी यांग्त्ज़ी नदी एशिया की सबसे लंबी नदी है।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "What is the capital of Bhutan?",
+        "hi": "भूटान की राजधानी क्या है?"
+      },
+      "options": {
+        "en": ["Paro", "Thimphu", "Punakha", "Kathmandu"],
+        "hi": ["पारो", "थिम्पू", "पुनाखा", "काठमांडू"]
+      },
+      "answer": {"en": "Thimphu", "hi": "थिम्पू"},
+      "explanation": {"en": "Thimphu is the capital of Bhutan; Kathmandu is the capital of Nepal.", "hi": "थिम्पू भूटान की राजधानी है; काठमांडू नेपाल की राजधानी है।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "Which Indian state is known as the 'Land of Five Rivers'?",
+        "hi": "किस भारतीय राज्य को 'पाँच नदियों की भूमि' कहा जाता है?"
+      },
+      "options": {
+        "en": ["Haryana", "Uttar Pradesh", "Bihar", "Punjab"],
+        "hi": ["हरियाणा", "उत्तर प्रदेश", "बिहार", "पंजाब"]
+      },
+      "answer": {"en": "Punjab", "hi": "पंजाब"},
+      "explanation": {"en": "'Punjab' comes from Persian 'panj' (five) and 'ab' (water), after the Jhelum, Chenab, Ravi, Beas and Sutlej.", "hi": "'पंजाब' फ़ारसी 'पंज' (पाँच) और 'आब' (पानी) से बना है — झेलम, चिनाब, रावी, ब्यास और सतलुज।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "Which Indian state has the largest forest cover by area?",
+        "hi": "क्षेत्रफल के अनुसार किस भारतीय राज्य में सबसे अधिक वन आवरण है?"
+      },
+      "options": {
+        "en": ["Arunachal Pradesh", "Madhya Pradesh", "Chhattisgarh", "Odisha"],
+        "hi": ["अरुणाचल प्रदेश", "मध्य प्रदेश", "छत्तीसगढ़", "ओडिशा"]
+      },
+      "answer": {"en": "Madhya Pradesh", "hi": "मध्य प्रदेश"},
+      "explanation": {"en": "According to the India State of Forest Report, Madhya Pradesh has the largest forest cover by area, followed by Arunachal Pradesh and Chhattisgarh.", "hi": "भारत वन स्थिति रिपोर्ट के अनुसार क्षेत्रफल में सबसे अधिक वन आवरण मध्य प्रदेश में है, उसके बाद अरुणाचल प्रदेश और छत्तीसगढ़।"},
+      "subject": "geography"
+    },
+    {
+      "question": {
+        "en": "The Equator passes through which of these countries?",
+        "hi": "भूमध्य रेखा इनमें से किस देश से होकर गुज़रती है?"
+      },
+      "options": {
+        "en": ["Egypt", "India", "Mexico", "Kenya"],
+        "hi": ["मिस्र", "भारत", "मेक्सिको", "केन्या"]
+      },
+      "answer": {"en": "Kenya", "hi": "केन्या"},
+      "explanation": {"en": "The Equator crosses Kenya; India lies entirely in the Northern Hemisphere.", "hi": "भूमध्य रेखा केन्या से गुज़रती है; भारत पूरी तरह उत्तरी गोलार्ध में है।"},
+      "subject": "geography"
     }
   ]
 }

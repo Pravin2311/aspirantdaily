@@ -1,7 +1,7 @@
 {
   "subject": "reasoning",
   "last_updated": "2026-10-18",
-  "total_unique_questions": 54,
+  "total_unique_questions": 69,
   "questions": [
     {
       "question": {
@@ -1566,6 +1566,441 @@
       "explanation": {
         "en": "Opposite directions are applied.",
         "hi": "विपरीत दिशाओं का प्रयोग किया गया है।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "Find the next number: 3, 6, 11, 18, ?",
+        "hi": "अगली संख्या ज्ञात करें: 3, 6, 11, 18, ?"
+      },
+      "options": {
+        "en": [
+          "25",
+          "29",
+          "30",
+          "27"
+        ],
+        "hi": [
+          "25",
+          "29",
+          "30",
+          "27"
+        ]
+      },
+      "answer": {
+        "en": "27",
+        "hi": "27"
+      },
+      "explanation": {
+        "en": "Differences are +3, +5, +7, +9, so 18 + 9 = 27.",
+        "hi": "अंतर +3, +5, +7, +9 हैं, अतः 18 + 9 = 27।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "If PEN is coded as QFO, how is INK coded?",
+        "hi": "यदि PEN को QFO लिखा जाता है, तो INK को कैसे लिखा जाएगा?"
+      },
+      "options": {
+        "en": [
+          "JNL",
+          "HOL",
+          "JOM",
+          "JOL"
+        ],
+        "hi": [
+          "JNL",
+          "HOL",
+          "JOM",
+          "JOL"
+        ]
+      },
+      "answer": {
+        "en": "JOL",
+        "hi": "JOL"
+      },
+      "explanation": {
+        "en": "Each letter moves one place forward: I→J, N→O, K→L.",
+        "hi": "प्रत्येक अक्षर एक स्थान आगे बढ़ता है: I→J, N→O, K→L।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "Find the odd one out: Mercury, Venus, Moon, Mars",
+        "hi": "विषम चुनें: बुध, शुक्र, चंद्रमा, मंगल"
+      },
+      "options": {
+        "en": [
+          "Mercury",
+          "Venus",
+          "Mars",
+          "Moon"
+        ],
+        "hi": [
+          "बुध",
+          "शुक्र",
+          "मंगल",
+          "चंद्रमा"
+        ]
+      },
+      "answer": {
+        "en": "Moon",
+        "hi": "चंद्रमा"
+      },
+      "explanation": {
+        "en": "Mercury, Venus and Mars are planets; the Moon is a natural satellite.",
+        "hi": "बुध, शुक्र और मंगल ग्रह हैं; चंद्रमा एक प्राकृतिक उपग्रह है।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "Ravi walks 5 km north, turns right and walks 3 km, then turns right again and walks 5 km. Where is he now with respect to his starting point?",
+        "hi": "रवि 5 किमी उत्तर चलता है, दाएँ मुड़कर 3 किमी चलता है, फिर दाएँ मुड़कर 5 किमी चलता है। अब वह अपने आरंभिक बिंदु से कहाँ है?"
+      },
+      "options": {
+        "en": [
+          "3 km West",
+          "5 km North",
+          "8 km East",
+          "3 km East"
+        ],
+        "hi": [
+          "3 किमी पश्चिम",
+          "5 किमी उत्तर",
+          "8 किमी पूर्व",
+          "3 किमी पूर्व"
+        ]
+      },
+      "answer": {
+        "en": "3 km East",
+        "hi": "3 किमी पूर्व"
+      },
+      "explanation": {
+        "en": "North 5, then East 3, then South 5 brings him back level with the start, 3 km to the East.",
+        "hi": "5 उत्तर, फिर 3 पूर्व, फिर 5 दक्षिण — वह आरंभिक बिंदु से 3 किमी पूर्व में है।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "Doctor : Hospital :: Teacher : ?",
+        "hi": "डॉक्टर : अस्पताल :: शिक्षक : ?"
+      },
+      "options": {
+        "en": [
+          "Book",
+          "Student",
+          "Chalk",
+          "School"
+        ],
+        "hi": [
+          "पुस्तक",
+          "विद्यार्थी",
+          "चॉक",
+          "विद्यालय"
+        ]
+      },
+      "answer": {
+        "en": "School",
+        "hi": "विद्यालय"
+      },
+      "explanation": {
+        "en": "A doctor works in a hospital; a teacher works in a school.",
+        "hi": "डॉक्टर अस्पताल में काम करता है; शिक्षक विद्यालय में।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "Find the next number: 2, 3, 5, 7, 11, ?",
+        "hi": "अगली संख्या ज्ञात करें: 2, 3, 5, 7, 11, ?"
+      },
+      "options": {
+        "en": [
+          "12",
+          "14",
+          "15",
+          "13"
+        ],
+        "hi": [
+          "12",
+          "14",
+          "15",
+          "13"
+        ]
+      },
+      "answer": {
+        "en": "13",
+        "hi": "13"
+      },
+      "explanation": {
+        "en": "The series lists consecutive prime numbers; the next prime after 11 is 13.",
+        "hi": "यह क्रमागत अभाज्य संख्याओं की शृंखला है; 11 के बाद अगला अभाज्य 13 है।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "If SKY is written as YKS in a code language, how is SUN written?",
+        "hi": "यदि किसी कूट भाषा में SKY को YKS लिखा जाता है, तो SUN को कैसे लिखा जाएगा?"
+      },
+      "options": {
+        "en": [
+          "USN",
+          "SNU",
+          "NSU",
+          "NUS"
+        ],
+        "hi": [
+          "USN",
+          "SNU",
+          "NSU",
+          "NUS"
+        ]
+      },
+      "answer": {
+        "en": "NUS",
+        "hi": "NUS"
+      },
+      "explanation": {
+        "en": "The letters are written in reverse order.",
+        "hi": "अक्षरों को उल्टे क्रम में लिखा गया है।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "Which word comes first in dictionary order?",
+        "hi": "शब्दकोश क्रम में कौन सा शब्द सबसे पहले आएगा?"
+      },
+      "options": {
+        "en": [
+          "Banana",
+          "Bat",
+          "Band",
+          "Ball"
+        ],
+        "hi": [
+          "Banana",
+          "Bat",
+          "Band",
+          "Ball"
+        ]
+      },
+      "answer": {
+        "en": "Ball",
+        "hi": "Ball"
+      },
+      "explanation": {
+        "en": "Comparing the third letter: l (Ball) comes before n (Banana, Band) and t (Bat).",
+        "hi": "तीसरे अक्षर की तुलना: l (Ball), n (Banana, Band) और t (Bat) से पहले आता है।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "What is the angle between the hour and minute hands of a clock at 3:00?",
+        "hi": "3:00 बजे घड़ी की घंटे और मिनट की सुइयों के बीच कितना कोण होता है?"
+      },
+      "options": {
+        "en": [
+          "90°",
+          "60°",
+          "120°",
+          "180°"
+        ],
+        "hi": [
+          "90°",
+          "60°",
+          "120°",
+          "180°"
+        ]
+      },
+      "answer": {
+        "en": "90°",
+        "hi": "90°"
+      },
+      "explanation": {
+        "en": "Each hour mark is 30° apart; 3 × 30° = 90°.",
+        "hi": "प्रत्येक घंटे का अंतर 30° है; 3 × 30° = 90°।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "If January 1 of a non-leap year is a Monday, what day will January 1 of the next year be?",
+        "hi": "यदि किसी साधारण (अधिवर्ष नहीं) वर्ष का 1 जनवरी सोमवार है, तो अगले वर्ष 1 जनवरी को कौन सा दिन होगा?"
+      },
+      "options": {
+        "en": [
+          "Monday",
+          "Wednesday",
+          "Tuesday",
+          "Sunday"
+        ],
+        "hi": [
+          "सोमवार",
+          "बुधवार",
+          "मंगलवार",
+          "रविवार"
+        ]
+      },
+      "answer": {
+        "en": "Tuesday",
+        "hi": "मंगलवार"
+      },
+      "explanation": {
+        "en": "365 days = 52 weeks + 1 day, so the day moves forward by one: Tuesday.",
+        "hi": "365 दिन = 52 सप्ताह + 1 दिन, अतः दिन एक आगे बढ़ेगा: मंगलवार।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "Statements: All cats are animals. All animals are living beings. Which conclusion follows?",
+        "hi": "कथन: सभी बिल्लियाँ जानवर हैं। सभी जानवर जीव हैं। कौन सा निष्कर्ष निकलता है?"
+      },
+      "options": {
+        "en": [
+          "All cats are living beings",
+          "All living beings are cats",
+          "Some animals are not cats",
+          "No cat is a living being"
+        ],
+        "hi": [
+          "सभी बिल्लियाँ जीव हैं",
+          "सभी जीव बिल्लियाँ हैं",
+          "कुछ जानवर बिल्लियाँ नहीं हैं",
+          "कोई बिल्ली जीव नहीं है"
+        ]
+      },
+      "answer": {
+        "en": "All cats are living beings",
+        "hi": "सभी बिल्लियाँ जीव हैं"
+      },
+      "explanation": {
+        "en": "Cats ⊂ animals ⊂ living beings, so all cats are living beings; the others do not necessarily follow.",
+        "hi": "बिल्लियाँ ⊂ जानवर ⊂ जीव, अतः सभी बिल्लियाँ जीव हैं; बाकी निष्कर्ष आवश्यक रूप से नहीं निकलते।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "Rahul is 7th from the top and 12th from the bottom in his class. How many students are in the class?",
+        "hi": "राहुल अपनी कक्षा में ऊपर से 7वें और नीचे से 12वें स्थान पर है। कक्षा में कितने विद्यार्थी हैं?"
+      },
+      "options": {
+        "en": [
+          "17",
+          "19",
+          "18",
+          "20"
+        ],
+        "hi": [
+          "17",
+          "19",
+          "18",
+          "20"
+        ]
+      },
+      "answer": {
+        "en": "18",
+        "hi": "18"
+      },
+      "explanation": {
+        "en": "Total = 7 + 12 − 1 = 18.",
+        "hi": "कुल = 7 + 12 − 1 = 18।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "Find the next term: AZ, BY, CX, ?",
+        "hi": "अगला पद ज्ञात करें: AZ, BY, CX, ?"
+      },
+      "options": {
+        "en": [
+          "DV",
+          "DW",
+          "EW",
+          "EV"
+        ],
+        "hi": [
+          "DV",
+          "DW",
+          "EW",
+          "EV"
+        ]
+      },
+      "answer": {
+        "en": "DW",
+        "hi": "DW"
+      },
+      "explanation": {
+        "en": "The first letter moves forward (A, B, C, D) and the second moves backward (Z, Y, X, W).",
+        "hi": "पहला अक्षर आगे (A, B, C, D) और दूसरा पीछे (Z, Y, X, W) चलता है।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "Find the odd one out: 27, 64, 125, 150",
+        "hi": "विषम चुनें: 27, 64, 125, 150"
+      },
+      "options": {
+        "en": [
+          "27",
+          "64",
+          "125",
+          "150"
+        ],
+        "hi": [
+          "27",
+          "64",
+          "125",
+          "150"
+        ]
+      },
+      "answer": {
+        "en": "150",
+        "hi": "150"
+      },
+      "explanation": {
+        "en": "27, 64 and 125 are perfect cubes (3³, 4³, 5³); 150 is not.",
+        "hi": "27, 64 और 125 पूर्ण घन (3³, 4³, 5³) हैं; 150 नहीं।"
+      },
+      "subject": "reasoning"
+    },
+    {
+      "question": {
+        "en": "A is the father of B, and B is the sister of C. How is C related to A?",
+        "hi": "A, B का पिता है और B, C की बहन है। C का A से क्या संबंध है?"
+      },
+      "options": {
+        "en": [
+          "Nephew",
+          "Brother",
+          "Child (son or daughter)",
+          "Grandchild"
+        ],
+        "hi": [
+          "भतीजा",
+          "भाई",
+          "संतान (पुत्र या पुत्री)",
+          "पोता/पोती"
+        ]
+      },
+      "answer": {
+        "en": "Child (son or daughter)",
+        "hi": "संतान (पुत्र या पुत्री)"
+      },
+      "explanation": {
+        "en": "B and C are siblings and A is B's father, so C is A's child; C's gender is not given.",
+        "hi": "B और C भाई-बहन हैं और A, B का पिता है, अतः C, A की संतान है; C का लिंग नहीं दिया गया है।"
       },
       "subject": "reasoning"
     }

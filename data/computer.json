@@ -495,6 +495,201 @@
       "answer": {"en": ".txt", "hi": ".txt"},
       "explanation": {"en": ".txt files contain unformatted text.", "hi": ".txt फ़ाइलें स्वरूपित नहीं किए गए पाठ को शामिल करती हैं।"},
       "subject": "computer"
+    },
+    {
+      "question": {
+        "en": "What does ROM stand for?",
+        "hi": "ROM का पूर्ण रूप क्या है?"
+      },
+      "options": {
+        "en": ["Random Only Memory", "Read Output Memory", "Read-Only Memory", "Run-Once Memory"],
+        "hi": ["रैंडम ओनली मेमोरी", "रीड आउटपुट मेमोरी", "रीड-ओनली मेमोरी", "रन-वन्स मेमोरी"]
+      },
+      "answer": {"en": "Read-Only Memory", "hi": "रीड-ओनली मेमोरी"},
+      "explanation": {"en": "ROM (Read-Only Memory) is non-volatile memory that stores firmware such as the boot instructions.", "hi": "ROM (रीड-ओनली मेमोरी) एक अस्थिर न होने वाली (non-volatile) मेमोरी है जिसमें बूट निर्देश जैसे फर्मवेयर संग्रहीत होते हैं।"},
+      "subject": "computer"
+    },
+    {
+      "question": {
+        "en": "How many bits make one byte?",
+        "hi": "एक बाइट में कितने बिट होते हैं?"
+      },
+      "options": {
+        "en": ["4", "16", "32", "8"],
+        "hi": ["4", "16", "32", "8"]
+      },
+      "answer": {"en": "8", "hi": "8"},
+      "explanation": {"en": "One byte consists of 8 bits.", "hi": "एक बाइट में 8 बिट होते हैं।"},
+      "subject": "computer"
+    },
+    {
+      "question": {
+        "en": "What is the full form of LAN?",
+        "hi": "LAN का पूर्ण रूप क्या है?"
+      },
+      "options": {
+        "en": ["Large Area Network", "Linked Access Network", "Local Area Network", "Long Area Node"],
+        "hi": ["लार्ज एरिया नेटवर्क", "लिंक्ड एक्सेस नेटवर्क", "लोकल एरिया नेटवर्क", "लॉन्ग एरिया नोड"]
+      },
+      "answer": {"en": "Local Area Network", "hi": "लोकल एरिया नेटवर्क"},
+      "explanation": {"en": "A LAN (Local Area Network) connects computers within a small area such as a building or campus.", "hi": "LAN (लोकल एरिया नेटवर्क) किसी भवन या परिसर जैसे छोटे क्षेत्र के कंप्यूटरों को जोड़ता है।"},
+      "subject": "computer"
+    },
+    {
+      "question": {
+        "en": "Which keyboard shortcut is used to undo the last action?",
+        "hi": "पिछली क्रिया को पूर्ववत (Undo) करने के लिए कौन सा शॉर्टकट उपयोग होता है?"
+      },
+      "options": {
+        "en": ["Ctrl + Y", "Ctrl + Z", "Ctrl + U", "Ctrl + X"],
+        "hi": ["Ctrl + Y", "Ctrl + Z", "Ctrl + U", "Ctrl + X"]
+      },
+      "answer": {"en": "Ctrl + Z", "hi": "Ctrl + Z"},
+      "explanation": {"en": "Ctrl + Z undoes the last action; Ctrl + Y redoes it.", "hi": "Ctrl + Z पिछली क्रिया को पूर्ववत करता है; Ctrl + Y उसे दोबारा करता है।"},
+      "subject": "computer"
+    },
+    {
+      "question": {
+        "en": "Which number system uses only the digits 0 and 1?",
+        "hi": "कौन सी संख्या पद्धति केवल 0 और 1 अंकों का उपयोग करती है?"
+      },
+      "options": {
+        "en": ["Decimal", "Octal", "Hexadecimal", "Binary"],
+        "hi": ["दशमलव", "ऑक्टल", "हेक्साडेसिमल", "बाइनरी (द्विआधारी)"]
+      },
+      "answer": {"en": "Binary", "hi": "बाइनरी (द्विआधारी)"},
+      "explanation": {"en": "The binary (base-2) system uses only 0 and 1, which is how computers store data.", "hi": "बाइनरी (आधार-2) पद्धति केवल 0 और 1 का उपयोग करती है, और कंप्यूटर इसी रूप में डेटा संग्रहीत करते हैं।"},
+      "subject": "computer"
+    },
+    {
+      "question": {
+        "en": "What is the decimal equivalent of the binary number 1010?",
+        "hi": "बाइनरी संख्या 1010 का दशमलव मान क्या है?"
+      },
+      "options": {
+        "en": ["10", "8", "12", "5"],
+        "hi": ["10", "8", "12", "5"]
+      },
+      "answer": {"en": "10", "hi": "10"},
+      "explanation": {"en": "1010 = 8 + 0 + 2 + 0 = 10.", "hi": "1010 = 8 + 0 + 2 + 0 = 10।"},
+      "subject": "computer"
+    },
+    {
+      "question": {
+        "en": "What is the full form of USB?",
+        "hi": "USB का पूर्ण रूप क्या है?"
+      },
+      "options": {
+        "en": ["Universal System Bus", "Unified Serial Bus", "Universal Serial Bus", "United Serial Board"],
+        "hi": ["यूनिवर्सल सिस्टम बस", "यूनिफाइड सीरियल बस", "यूनिवर्सल सीरियल बस", "यूनाइटेड सीरियल बोर्ड"]
+      },
+      "answer": {"en": "Universal Serial Bus", "hi": "यूनिवर्सल सीरियल बस"},
+      "explanation": {"en": "USB stands for Universal Serial Bus, a standard for connecting peripherals.", "hi": "USB का अर्थ यूनिवर्सल सीरियल बस है, जो बाहरी उपकरणों को जोड़ने का एक मानक है।"},
+      "subject": "computer"
+    },
+    {
+      "question": {
+        "en": "Which device converts digital signals to analog signals and back for transmission over telephone lines?",
+        "hi": "कौन सा उपकरण टेलीफोन लाइनों पर संचार के लिए डिजिटल संकेतों को एनालॉग में और वापस बदलता है?"
+      },
+      "options": {
+        "en": ["Router", "Modem", "Switch", "Hub"],
+        "hi": ["राउटर", "मॉडेम", "स्विच", "हब"]
+      },
+      "answer": {"en": "Modem", "hi": "मॉडेम"},
+      "explanation": {"en": "A modem (modulator-demodulator) converts digital data to analog signals and back.", "hi": "मॉडेम (मॉड्यूलेटर-डिमॉड्यूलेटर) डिजिटल डेटा को एनालॉग संकेतों में और वापस बदलता है।"},
+      "subject": "computer"
+    },
+    {
+      "question": {
+        "en": "Which of the following is a type of malware?",
+        "hi": "निम्नलिखित में से कौन मैलवेयर का एक प्रकार है?"
+      },
+      "options": {
+        "en": ["Firewall", "Compiler", "Spreadsheet", "Trojan horse"],
+        "hi": ["फ़ायरवॉल", "कंपाइलर", "स्प्रेडशीट", "ट्रोजन हॉर्स"]
+      },
+      "answer": {"en": "Trojan horse", "hi": "ट्रोजन हॉर्स"},
+      "explanation": {"en": "A Trojan horse is malware disguised as legitimate software.", "hi": "ट्रोजन हॉर्स एक मैलवेयर है जो वैध सॉफ़्टवेयर के रूप में छिपा होता है।"},
+      "subject": "computer"
+    },
+    {
+      "question": {
+        "en": "Which of these memories is the fastest?",
+        "hi": "इनमें से कौन सी मेमोरी सबसे तेज़ है?"
+      },
+      "options": {
+        "en": ["Cache memory", "RAM", "Hard disk", "Optical disc"],
+        "hi": ["कैश मेमोरी", "RAM", "हार्ड डिस्क", "ऑप्टिकल डिस्क"]
+      },
+      "answer": {"en": "Cache memory", "hi": "कैश मेमोरी"},
+      "explanation": {"en": "Cache memory sits closest to the CPU and is faster than RAM, which is far faster than disks.", "hi": "कैश मेमोरी CPU के सबसे निकट होती है और RAM से तेज़ होती है, जबकि RAM डिस्क से बहुत तेज़ होती है।"},
+      "subject": "computer"
+    },
+    {
+      "question": {
+        "en": "Who is known as the 'Father of the Computer'?",
+        "hi": "'कंप्यूटर का जनक' किसे कहा जाता है?"
+      },
+      "options": {
+        "en": ["Alan Turing", "John von Neumann", "Bill Gates", "Charles Babbage"],
+        "hi": ["एलन ट्यूरिंग", "जॉन वॉन न्यूमैन", "बिल गेट्स", "चार्ल्स बैबेज"]
+      },
+      "answer": {"en": "Charles Babbage", "hi": "चार्ल्स बैबेज"},
+      "explanation": {"en": "Charles Babbage designed the Analytical Engine in the 1830s, a forerunner of modern computers.", "hi": "चार्ल्स बैबेज ने 1830 के दशक में एनालिटिकल इंजन डिज़ाइन किया, जो आधुनिक कंप्यूटर का अग्रदूत था।"},
+      "subject": "computer"
+    },
+    {
+      "question": {
+        "en": "What is the main function of DNS?",
+        "hi": "DNS का मुख्य कार्य क्या है?"
+      },
+      "options": {
+        "en": ["Encrypting emails", "Compressing files", "Translating domain names into IP addresses", "Converting text to speech"],
+        "hi": ["ईमेल को एन्क्रिप्ट करना", "फ़ाइलों को संपीड़ित करना", "डोमेन नामों को IP पतों में बदलना", "टेक्स्ट को आवाज़ में बदलना"]
+      },
+      "answer": {"en": "Translating domain names into IP addresses", "hi": "डोमेन नामों को IP पतों में बदलना"},
+      "explanation": {"en": "DNS (Domain Name System) maps names like aspirantdaily.com to the IP addresses computers use.", "hi": "DNS (डोमेन नेम सिस्टम) aspirantdaily.com जैसे नामों को उन IP पतों से जोड़ता है जिनका कंप्यूटर उपयोग करते हैं।"},
+      "subject": "computer"
+    },
+    {
+      "question": {
+        "en": "One kilobyte (KB) is traditionally equal to:",
+        "hi": "एक किलोबाइट (KB) परंपरागत रूप से किसके बराबर होता है?"
+      },
+      "options": {
+        "en": ["1000 bits", "1024 bytes", "512 bytes", "2048 bytes"],
+        "hi": ["1000 बिट", "1024 बाइट", "512 बाइट", "2048 बाइट"]
+      },
+      "answer": {"en": "1024 bytes", "hi": "1024 बाइट"},
+      "explanation": {"en": "In the binary convention used in exams, 1 KB = 2¹⁰ = 1024 bytes.", "hi": "परीक्षाओं में प्रयुक्त बाइनरी परिपाटी में 1 KB = 2¹⁰ = 1024 बाइट।"},
+      "subject": "computer"
+    },
+    {
+      "question": {
+        "en": "Which function key opens Help in most Windows programs?",
+        "hi": "अधिकांश विंडोज़ प्रोग्रामों में 'हेल्प' खोलने के लिए कौन सी फ़ंक्शन कुंजी है?"
+      },
+      "options": {
+        "en": ["F1", "F5", "F10", "F12"],
+        "hi": ["F1", "F5", "F10", "F12"]
+      },
+      "answer": {"en": "F1", "hi": "F1"},
+      "explanation": {"en": "F1 opens Help; F5 typically refreshes.", "hi": "F1 हेल्प खोलती है; F5 सामान्यतः रिफ्रेश करती है।"},
+      "subject": "computer"
+    },
+    {
+      "question": {
+        "en": "How long is an IPv4 address?",
+        "hi": "IPv4 पता कितने बिट का होता है?"
+      },
+      "options": {
+        "en": ["32 bits", "64 bits", "128 bits", "16 bits"],
+        "hi": ["32 बिट", "64 बिट", "128 बिट", "16 बिट"]
+      },
+      "answer": {"en": "32 bits", "hi": "32 बिट"},
+      "explanation": {"en": "IPv4 addresses are 32 bits long; IPv6 addresses are 128 bits.", "hi": "IPv4 पते 32 बिट के होते हैं; IPv6 पते 128 बिट के।"},
+      "subject": "computer"
     }
   ]
 }

@@ -625,6 +625,201 @@
       "answer": {"en": "A word that reads the same backward and forward", "hi": "एक शब्द जो पीछे और आगे एक जैसा पढ़ा जाता है"},
       "explanation": {"en": "Examples include 'madam', 'racecar', and 'level'.", "hi": "उदाहरण में 'मैडम', 'रेसकार' और 'लेवल' शामिल हैं।"},
       "subject": "english"
+    },
+    {
+      "question": {
+        "en": "What is the synonym of 'abundant'?",
+        "hi": "'abundant' का समानार्थी शब्द क्या है?"
+      },
+      "options": {
+        "en": ["Scarce", "Tiny", "Plentiful", "Rare"],
+        "hi": ["Scarce", "Tiny", "Plentiful", "Rare"]
+      },
+      "answer": {"en": "Plentiful", "hi": "Plentiful"},
+      "explanation": {"en": "'Abundant' means existing in large quantities, i.e. plentiful.", "hi": "'Abundant' का अर्थ है बहुत अधिक मात्रा में होना, यानी plentiful।"},
+      "subject": "english"
+    },
+    {
+      "question": {
+        "en": "What is the antonym of 'ancient'?",
+        "hi": "'ancient' का विलोम शब्द क्या है?"
+      },
+      "options": {
+        "en": ["Old", "Modern", "Antique", "Aged"],
+        "hi": ["Old", "Modern", "Antique", "Aged"]
+      },
+      "answer": {"en": "Modern", "hi": "Modern"},
+      "explanation": {"en": "'Ancient' means very old; its opposite is 'modern'.", "hi": "'Ancient' का अर्थ बहुत पुराना है; इसका विलोम 'modern' है।"},
+      "subject": "english"
+    },
+    {
+      "question": {
+        "en": "One word for 'a person who cannot read or write':",
+        "hi": "'जो व्यक्ति पढ़-लिख नहीं सकता' के लिए एक शब्द:"
+      },
+      "options": {
+        "en": ["Ignorant", "Innocent", "Amateur", "Illiterate"],
+        "hi": ["Ignorant", "Innocent", "Amateur", "Illiterate"]
+      },
+      "answer": {"en": "Illiterate", "hi": "Illiterate"},
+      "explanation": {"en": "An illiterate person cannot read or write; 'ignorant' means lacking knowledge.", "hi": "Illiterate व्यक्ति पढ़-लिख नहीं सकता; 'ignorant' का अर्थ है ज्ञान की कमी।"},
+      "subject": "english"
+    },
+    {
+      "question": {
+        "en": "One word for 'a place where bees are kept':",
+        "hi": "'वह स्थान जहाँ मधुमक्खियाँ पाली जाती हैं' के लिए एक शब्द:"
+      },
+      "options": {
+        "en": ["Apiary", "Aviary", "Aquarium", "Granary"],
+        "hi": ["Apiary", "Aviary", "Aquarium", "Granary"]
+      },
+      "answer": {"en": "Apiary", "hi": "Apiary"},
+      "explanation": {"en": "An apiary is for bees; an aviary is for birds.", "hi": "Apiary मधुमक्खियों के लिए होता है; aviary पक्षियों के लिए।"},
+      "subject": "english"
+    },
+    {
+      "question": {
+        "en": "What does the idiom 'once in a blue moon' mean?",
+        "hi": "मुहावरे 'once in a blue moon' का क्या अर्थ है?"
+      },
+      "options": {
+        "en": ["Every night", "Very often", "Very rarely", "Every month"],
+        "hi": ["हर रात", "बहुत बार", "बहुत कम / कभी-कभार", "हर महीने"]
+      },
+      "answer": {"en": "Very rarely", "hi": "बहुत कम / कभी-कभार"},
+      "explanation": {"en": "'Once in a blue moon' means very rarely.", "hi": "'Once in a blue moon' का अर्थ है बहुत कम या कभी-कभार।"},
+      "subject": "english"
+    },
+    {
+      "question": {
+        "en": "What does the idiom 'a piece of cake' mean?",
+        "hi": "मुहावरे 'a piece of cake' का क्या अर्थ है?"
+      },
+      "options": {
+        "en": ["Something delicious", "A small share", "A celebration", "Something very easy"],
+        "hi": ["स्वादिष्ट चीज़", "छोटा हिस्सा", "उत्सव", "बहुत आसान काम"]
+      },
+      "answer": {"en": "Something very easy", "hi": "बहुत आसान काम"},
+      "explanation": {"en": "'A piece of cake' describes a task that is very easy.", "hi": "'A piece of cake' बहुत आसान काम के लिए कहा जाता है।"},
+      "subject": "english"
+    },
+    {
+      "question": {
+        "en": "Choose the correctly spelt word.",
+        "hi": "सही वर्तनी वाला शब्द चुनें।"
+      },
+      "options": {
+        "en": ["Accommodate", "Acommodate", "Accomodate", "Acomodate"],
+        "hi": ["Accommodate", "Acommodate", "Accomodate", "Acomodate"]
+      },
+      "answer": {"en": "Accommodate", "hi": "Accommodate"},
+      "explanation": {"en": "'Accommodate' has a double 'c' and a double 'm'.", "hi": "'Accommodate' में दो 'c' और दो 'm' होते हैं।"},
+      "subject": "english"
+    },
+    {
+      "question": {
+        "en": "Fill in the blank: 'Neither the teacher nor the students _____ present.'",
+        "hi": "रिक्त स्थान भरें: 'Neither the teacher nor the students _____ present.'"
+      },
+      "options": {
+        "en": ["was", "were", "is", "has"],
+        "hi": ["was", "were", "is", "has"]
+      },
+      "answer": {"en": "were", "hi": "were"},
+      "explanation": {"en": "With 'neither…nor', the verb agrees with the nearer subject; 'students' is plural, so 'were'.", "hi": "'neither…nor' में क्रिया निकटतम कर्ता से मेल खाती है; 'students' बहुवचन है, इसलिए 'were'।"},
+      "subject": "english"
+    },
+    {
+      "question": {
+        "en": "Choose the passive voice of: 'They are building a bridge.'",
+        "hi": "'They are building a bridge.' का कर्मवाच्य (passive voice) चुनें।"
+      },
+      "options": {
+        "en": ["A bridge is being built by them.", "A bridge was built by them.", "A bridge is built by them.", "A bridge has been built by them."],
+        "hi": ["A bridge is being built by them.", "A bridge was built by them.", "A bridge is built by them.", "A bridge has been built by them."]
+      },
+      "answer": {"en": "A bridge is being built by them.", "hi": "A bridge is being built by them."},
+      "explanation": {"en": "Present continuous active ('are building') becomes 'is being built' in the passive.", "hi": "वर्तमान अपूर्ण काल ('are building') कर्मवाच्य में 'is being built' बनता है।"},
+      "subject": "english"
+    },
+    {
+      "question": {
+        "en": "Choose the correct article: 'He is _____ university student.'",
+        "hi": "सही आर्टिकल चुनें: 'He is _____ university student.'"
+      },
+      "options": {
+        "en": ["an", "the", "no article", "a"],
+        "hi": ["an", "the", "no article", "a"]
+      },
+      "answer": {"en": "a", "hi": "a"},
+      "explanation": {"en": "'University' begins with a 'yoo' (consonant) sound, so 'a' is used.", "hi": "'University' 'यू' (व्यंजन) ध्वनि से शुरू होता है, इसलिए 'a' लगता है।"},
+      "subject": "english"
+    },
+    {
+      "question": {
+        "en": "Choose the correct preposition: 'He died _____ cholera.'",
+        "hi": "सही पूर्वसर्ग चुनें: 'He died _____ cholera.'"
+      },
+      "options": {
+        "en": ["from", "of", "with", "by"],
+        "hi": ["from", "of", "with", "by"]
+      },
+      "answer": {"en": "of", "hi": "of"},
+      "explanation": {"en": "We 'die of' a disease; 'die from' is used for wounds or causes like injury.", "hi": "बीमारी के लिए 'die of' प्रयोग होता है; चोट जैसे कारणों के लिए 'die from'।"},
+      "subject": "english"
+    },
+    {
+      "question": {
+        "en": "What is the plural of 'criterion'?",
+        "hi": "'criterion' का बहुवचन क्या है?"
+      },
+      "options": {
+        "en": ["Criterions", "Criterias", "Criteria", "Criterion"],
+        "hi": ["Criterions", "Criterias", "Criteria", "Criterion"]
+      },
+      "answer": {"en": "Criteria", "hi": "Criteria"},
+      "explanation": {"en": "'Criterion' is singular; its Greek-origin plural is 'criteria'.", "hi": "'Criterion' एकवचन है; इसका यूनानी मूल का बहुवचन 'criteria' है।"},
+      "subject": "english"
+    },
+    {
+      "question": {
+        "en": "What does 'ubiquitous' mean?",
+        "hi": "'ubiquitous' का क्या अर्थ है?"
+      },
+      "options": {
+        "en": ["Very rare", "Extremely large", "Present everywhere", "Unknown"],
+        "hi": ["बहुत दुर्लभ", "अत्यंत विशाल", "सर्वव्यापी", "अज्ञात"]
+      },
+      "answer": {"en": "Present everywhere", "hi": "सर्वव्यापी"},
+      "explanation": {"en": "'Ubiquitous' means found everywhere, e.g. 'Smartphones are ubiquitous today.'", "hi": "'Ubiquitous' का अर्थ है हर जगह मौजूद, जैसे 'Smartphones are ubiquitous today.'"},
+      "subject": "english"
+    },
+    {
+      "question": {
+        "en": "Change to indirect speech: She said, \"I will come tomorrow.\"",
+        "hi": "अप्रत्यक्ष कथन में बदलें: She said, \"I will come tomorrow.\""
+      },
+      "options": {
+        "en": ["She said that she will come tomorrow.", "She said that she would come the next day.", "She said that she would come tomorrow.", "She said that I will come the next day."],
+        "hi": ["She said that she will come tomorrow.", "She said that she would come the next day.", "She said that she would come tomorrow.", "She said that I will come the next day."]
+      },
+      "answer": {"en": "She said that she would come the next day.", "hi": "She said that she would come the next day."},
+      "explanation": {"en": "With a past reporting verb, 'will' becomes 'would' and 'tomorrow' becomes 'the next day'.", "hi": "भूतकाल की रिपोर्टिंग क्रिया के साथ 'will' 'would' बनता है और 'tomorrow' 'the next day' बनता है।"},
+      "subject": "english"
+    },
+    {
+      "question": {
+        "en": "Which of the following sentences contains a metaphor?",
+        "hi": "निम्नलिखित में से किस वाक्य में रूपक (metaphor) है?"
+      },
+      "options": {
+        "en": ["Time is a thief.", "He runs like the wind.", "She is as brave as a lion.", "She sings sweetly."],
+        "hi": ["Time is a thief.", "He runs like the wind.", "She is as brave as a lion.", "She sings sweetly."]
+      },
+      "answer": {"en": "Time is a thief.", "hi": "Time is a thief."},
+      "explanation": {"en": "A metaphor makes a direct comparison without 'like' or 'as'; the 'like/as' sentences are similes.", "hi": "रूपक 'like' या 'as' के बिना सीधी तुलना करता है; 'like/as' वाले वाक्य उपमा (simile) हैं।"},
+      "subject": "english"
     }
   ]
 }

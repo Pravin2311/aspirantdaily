@@ -534,6 +534,201 @@
       "answer": {"en": "Rabindranath Tagore", "hi": "रवींद्रनाथ टैगोर"},
       "explanation": {"en": "Jana Gana Mana was written by Rabindranath Tagore and adopted as the national anthem on January 24, 1950.", "hi": "जन गण मन रवींद्रनाथ टैगोर ने लिखा था और इसे 24 जनवरी 1950 को राष्ट्रगान के रूप में अपनाया गया।"},
       "subject": "static-gk"
+    },
+    {
+      "question": {
+        "en": "Who was the first Indian to travel to space?",
+        "hi": "अंतरिक्ष में जाने वाले पहले भारतीय कौन थे?"
+      },
+      "options": {
+        "en": ["Kalpana Chawla", "Sunita Williams", "Shubhanshu Shukla", "Rakesh Sharma"],
+        "hi": ["कल्पना चावला", "सुनीता विलियम्स", "शुभांशु शुक्ला", "राकेश शर्मा"]
+      },
+      "answer": {"en": "Rakesh Sharma", "hi": "राकेश शर्मा"},
+      "explanation": {"en": "Squadron Leader Rakesh Sharma flew aboard Soyuz T-11 in April 1984.", "hi": "स्क्वाड्रन लीडर राकेश शर्मा ने अप्रैल 1984 में सोयूज़ T-11 से उड़ान भरी।"},
+      "subject": "static-gk"
+    },
+    {
+      "question": {
+        "en": "Where is the headquarters of the United Nations?",
+        "hi": "संयुक्त राष्ट्र का मुख्यालय कहाँ है?"
+      },
+      "options": {
+        "en": ["Geneva", "New York", "Paris", "Vienna"],
+        "hi": ["जिनेवा", "न्यूयॉर्क", "पेरिस", "वियना"]
+      },
+      "answer": {"en": "New York", "hi": "न्यूयॉर्क"},
+      "explanation": {"en": "The UN headquarters is in New York; Geneva hosts the UN's European office.", "hi": "संयुक्त राष्ट्र का मुख्यालय न्यूयॉर्क में है; जिनेवा में इसका यूरोपीय कार्यालय है।"},
+      "subject": "static-gk"
+    },
+    {
+      "question": {
+        "en": "Who founded the Indian National Congress in 1885?",
+        "hi": "1885 में भारतीय राष्ट्रीय कांग्रेस की स्थापना किसने की?"
+      },
+      "options": {
+        "en": ["Dadabhai Naoroji", "Bal Gangadhar Tilak", "A.O. Hume", "W.C. Bonnerjee"],
+        "hi": ["दादाभाई नौरोजी", "बाल गंगाधर तिलक", "ए.ओ. ह्यूम", "डब्ल्यू.सी. बनर्जी"]
+      },
+      "answer": {"en": "A.O. Hume", "hi": "ए.ओ. ह्यूम"},
+      "explanation": {"en": "Allan Octavian Hume founded the INC; W.C. Bonnerjee presided over its first session in Bombay.", "hi": "एलन ऑक्टेवियन ह्यूम ने कांग्रेस की स्थापना की; बंबई में इसके पहले अधिवेशन की अध्यक्षता डब्ल्यू.सी. बनर्जी ने की।"},
+      "subject": "static-gk"
+    },
+    {
+      "question": {
+        "en": "In which city is the Gateway of India located?",
+        "hi": "गेटवे ऑफ़ इंडिया किस शहर में स्थित है?"
+      },
+      "options": {
+        "en": ["New Delhi", "Mumbai", "Kolkata", "Chennai"],
+        "hi": ["नई दिल्ली", "मुंबई", "कोलकाता", "चेन्नई"]
+      },
+      "answer": {"en": "Mumbai", "hi": "मुंबई"},
+      "explanation": {"en": "The Gateway of India stands on the Mumbai waterfront; India Gate is in New Delhi.", "hi": "गेटवे ऑफ़ इंडिया मुंबई के समुद्र तट पर है; इंडिया गेट नई दिल्ली में है।"},
+      "subject": "static-gk"
+    },
+    {
+      "question": {
+        "en": "National Youth Day in India is celebrated on:",
+        "hi": "भारत में राष्ट्रीय युवा दिवस कब मनाया जाता है?"
+      },
+      "options": {
+        "en": ["January 12", "November 14", "September 5", "October 2"],
+        "hi": ["12 जनवरी", "14 नवंबर", "5 सितंबर", "2 अक्टूबर"]
+      },
+      "answer": {"en": "January 12", "hi": "12 जनवरी"},
+      "explanation": {"en": "January 12 marks the birth anniversary of Swami Vivekananda.", "hi": "12 जनवरी स्वामी विवेकानंद की जयंती है।"},
+      "subject": "static-gk"
+    },
+    {
+      "question": {
+        "en": "National Science Day in India is celebrated on:",
+        "hi": "भारत में राष्ट्रीय विज्ञान दिवस कब मनाया जाता है?"
+      },
+      "options": {
+        "en": ["May 11", "January 12", "November 14", "February 28"],
+        "hi": ["11 मई", "12 जनवरी", "14 नवंबर", "28 फ़रवरी"]
+      },
+      "answer": {"en": "February 28", "hi": "28 फ़रवरी"},
+      "explanation": {"en": "February 28 commemorates C.V. Raman's discovery of the Raman effect (1928); May 11 is National Technology Day.", "hi": "28 फ़रवरी सी.वी. रमन द्वारा रमन प्रभाव की खोज (1928) की याद में मनाया जाता है; 11 मई राष्ट्रीय प्रौद्योगिकी दिवस है।"},
+      "subject": "static-gk"
+    },
+    {
+      "question": {
+        "en": "In which year was the Bharat Ratna first awarded?",
+        "hi": "भारत रत्न पहली बार किस वर्ष दिया गया?"
+      },
+      "options": {
+        "en": ["1950", "1952", "1954", "1960"],
+        "hi": ["1950", "1952", "1954", "1960"]
+      },
+      "answer": {"en": "1954", "hi": "1954"},
+      "explanation": {"en": "The first Bharat Ratna awards were given in 1954 to C. Rajagopalachari, S. Radhakrishnan and C.V. Raman.", "hi": "पहले भारत रत्न 1954 में सी. राजगोपालाचारी, एस. राधाकृष्णन और सी.वी. रमन को दिए गए।"},
+      "subject": "static-gk"
+    },
+    {
+      "question": {
+        "en": "Which is India's highest wartime gallantry award?",
+        "hi": "भारत का सर्वोच्च युद्धकालीन वीरता पुरस्कार कौन सा है?"
+      },
+      "options": {
+        "en": ["Ashoka Chakra", "Mahavir Chakra", "Kirti Chakra", "Param Vir Chakra"],
+        "hi": ["अशोक चक्र", "महावीर चक्र", "कीर्ति चक्र", "परमवीर चक्र"]
+      },
+      "answer": {"en": "Param Vir Chakra", "hi": "परमवीर चक्र"},
+      "explanation": {"en": "The Param Vir Chakra is the highest wartime award; the Ashoka Chakra is the highest peacetime award.", "hi": "परमवीर चक्र सर्वोच्च युद्धकालीन पुरस्कार है; अशोक चक्र सर्वोच्च शांतिकालीन पुरस्कार है।"},
+      "subject": "static-gk"
+    },
+    {
+      "question": {
+        "en": "Who wrote the 'Arthashastra'?",
+        "hi": "'अर्थशास्त्र' की रचना किसने की?"
+      },
+      "options": {
+        "en": ["Kalidasa", "Banabhatta", "Kautilya", "Panini"],
+        "hi": ["कालिदास", "बाणभट्ट", "कौटिल्य", "पाणिनि"]
+      },
+      "answer": {"en": "Kautilya", "hi": "कौटिल्य"},
+      "explanation": {"en": "The Arthashastra, a treatise on statecraft, is attributed to Kautilya (Chanakya).", "hi": "राजनीति पर ग्रंथ 'अर्थशास्त्र' कौटिल्य (चाणक्य) की रचना माना जाता है।"},
+      "subject": "static-gk"
+    },
+    {
+      "question": {
+        "en": "Kuchipudi is a classical dance form of which state?",
+        "hi": "कुचिपुड़ी किस राज्य का शास्त्रीय नृत्य है?"
+      },
+      "options": {
+        "en": ["Kerala", "Andhra Pradesh", "Tamil Nadu", "Odisha"],
+        "hi": ["केरल", "आंध्र प्रदेश", "तमिलनाडु", "ओडिशा"]
+      },
+      "answer": {"en": "Andhra Pradesh", "hi": "आंध्र प्रदेश"},
+      "explanation": {"en": "Kuchipudi is named after a village in Andhra Pradesh; Kathakali is from Kerala and Odissi from Odisha.", "hi": "कुचिपुड़ी का नाम आंध्र प्रदेश के एक गाँव पर है; कथकली केरल और ओडिसी ओडिशा का नृत्य है।"},
+      "subject": "static-gk"
+    },
+    {
+      "question": {
+        "en": "Who is known as the 'Iron Man of India'?",
+        "hi": "'भारत का लौह पुरुष' किसे कहा जाता है?"
+      },
+      "options": {
+        "en": ["Sardar Vallabhbhai Patel", "Subhas Chandra Bose", "Bhagat Singh", "Lal Bahadur Shastri"],
+        "hi": ["सरदार वल्लभभाई पटेल", "सुभाष चंद्र बोस", "भगत सिंह", "लाल बहादुर शास्त्री"]
+      },
+      "answer": {"en": "Sardar Vallabhbhai Patel", "hi": "सरदार वल्लभभाई पटेल"},
+      "explanation": {"en": "Sardar Patel integrated over 560 princely states into India and is called the Iron Man of India.", "hi": "सरदार पटेल ने 560 से अधिक रियासतों का भारत में एकीकरण किया और उन्हें लौह पुरुष कहा जाता है।"},
+      "subject": "static-gk"
+    },
+    {
+      "question": {
+        "en": "In which state is the Statue of Unity located?",
+        "hi": "स्टैच्यू ऑफ़ यूनिटी किस राज्य में स्थित है?"
+      },
+      "options": {
+        "en": ["Gujarat", "Maharashtra", "Rajasthan", "Madhya Pradesh"],
+        "hi": ["गुजरात", "महाराष्ट्र", "राजस्थान", "मध्य प्रदेश"]
+      },
+      "answer": {"en": "Gujarat", "hi": "गुजरात"},
+      "explanation": {"en": "The 182 m Statue of Unity of Sardar Patel stands at Ekta Nagar (Kevadia), Gujarat.", "hi": "सरदार पटेल की 182 मीटर ऊँची स्टैच्यू ऑफ़ यूनिटी गुजरात के एकता नगर (केवड़िया) में है।"},
+      "subject": "static-gk"
+    },
+    {
+      "question": {
+        "en": "Which city will host the 2028 Summer Olympics?",
+        "hi": "2028 ग्रीष्मकालीन ओलंपिक की मेज़बानी कौन सा शहर करेगा?"
+      },
+      "options": {
+        "en": ["Brisbane", "Paris", "Tokyo", "Los Angeles"],
+        "hi": ["ब्रिसबेन", "पेरिस", "टोक्यो", "लॉस एंजेलिस"]
+      },
+      "answer": {"en": "Los Angeles", "hi": "लॉस एंजेलिस"},
+      "explanation": {"en": "Los Angeles hosts the 2028 Games; Paris hosted 2024 and Brisbane will host 2032.", "hi": "लॉस एंजेलिस 2028 खेलों की मेज़बानी करेगा; पेरिस ने 2024 की मेज़बानी की और ब्रिसबेन 2032 की करेगा।"},
+      "subject": "static-gk"
+    },
+    {
+      "question": {
+        "en": "How many Fundamental Duties are listed in the Indian Constitution?",
+        "hi": "भारतीय संविधान में कितने मौलिक कर्तव्य हैं?"
+      },
+      "options": {
+        "en": ["10", "12", "11", "9"],
+        "hi": ["10", "12", "11", "9"]
+      },
+      "answer": {"en": "11", "hi": "11"},
+      "explanation": {"en": "The 42nd Amendment (1976) added 10 duties; the 86th Amendment (2002) added the 11th.", "hi": "42वें संशोधन (1976) ने 10 कर्तव्य जोड़े; 86वें संशोधन (2002) ने 11वाँ जोड़ा।"},
+      "subject": "static-gk"
+    },
+    {
+      "question": {
+        "en": "Which is the longest National Highway in India?",
+        "hi": "भारत का सबसे लंबा राष्ट्रीय राजमार्ग कौन सा है?"
+      },
+      "options": {
+        "en": ["NH 48", "NH 44", "NH 27", "NH 19"],
+        "hi": ["NH 48", "NH 44", "NH 27", "NH 19"]
+      },
+      "answer": {"en": "NH 44", "hi": "NH 44"},
+      "explanation": {"en": "NH 44 runs about 3,745 km from Srinagar to Kanyakumari.", "hi": "NH 44 श्रीनगर से कन्याकुमारी तक लगभग 3,745 किमी लंबा है।"},
+      "subject": "static-gk"
     }
   ]
 }

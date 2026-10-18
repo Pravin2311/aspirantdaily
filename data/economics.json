@@ -664,6 +664,201 @@
       "answer": {"en": "Prices determined by supply and demand", "hi": "आपूर्ति और मांग द्वारा निर्धारित कीमतें"},
       "explanation": {"en": "In a free market, economic decisions are made by individuals and businesses without government intervention.", "hi": "मुक्त बाजार में, आर्थिक निर्णय व्यक्तियों और व्यवसायों द्वारा सरकारी हस्तक्षेप के बिना लिए जाते हैं।"},
       "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "Who was the chairman of India's First Finance Commission?",
+        "hi": "भारत के पहले वित्त आयोग के अध्यक्ष कौन थे?"
+      },
+      "options": {
+        "en": ["Y.V. Reddy", "N.K. Singh", "Raja Chelliah", "K.C. Neogy"],
+        "hi": ["वाई.वी. रेड्डी", "एन.के. सिंह", "राजा चेलैया", "के.सी. नियोगी"]
+      },
+      "answer": {"en": "K.C. Neogy", "hi": "के.सी. नियोगी"},
+      "explanation": {"en": "The First Finance Commission (1951) was chaired by K.C. Neogy.", "hi": "पहले वित्त आयोग (1951) की अध्यक्षता के.सी. नियोगी ने की थी।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "When was GST implemented in India?",
+        "hi": "भारत में GST कब लागू हुआ?"
+      },
+      "options": {
+        "en": ["April 1, 2016", "January 1, 2018", "October 2, 2017", "July 1, 2017"],
+        "hi": ["1 अप्रैल 2016", "1 जनवरी 2018", "2 अक्टूबर 2017", "1 जुलाई 2017"]
+      },
+      "answer": {"en": "July 1, 2017", "hi": "1 जुलाई 2017"},
+      "explanation": {"en": "GST came into force on July 1, 2017 under the 101st Constitutional Amendment.", "hi": "101वें संविधान संशोधन के तहत GST 1 जुलाई 2017 से लागू हुआ।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "Which body releases Consumer Price Index (CPI) data in India?",
+        "hi": "भारत में उपभोक्ता मूल्य सूचकांक (CPI) के आँकड़े कौन जारी करता है?"
+      },
+      "options": {
+        "en": ["Reserve Bank of India", "SEBI", "NITI Aayog", "National Statistics Office (MoSPI)"],
+        "hi": ["भारतीय रिज़र्व बैंक", "सेबी", "नीति आयोग", "राष्ट्रीय सांख्यिकी कार्यालय (MoSPI)"]
+      },
+      "answer": {"en": "National Statistics Office (MoSPI)", "hi": "राष्ट्रीय सांख्यिकी कार्यालय (MoSPI)"},
+      "explanation": {"en": "CPI is compiled and released by the National Statistics Office under MoSPI.", "hi": "CPI का संकलन और प्रकाशन MoSPI के अंतर्गत राष्ट्रीय सांख्यिकी कार्यालय करता है।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "Whose signature appears on the ₹1 currency note?",
+        "hi": "₹1 के नोट पर किसके हस्ताक्षर होते हैं?"
+      },
+      "options": {
+        "en": ["RBI Governor", "Finance Secretary", "Finance Minister", "President of India"],
+        "hi": ["RBI गवर्नर", "वित्त सचिव", "वित्त मंत्री", "भारत के राष्ट्रपति"]
+      },
+      "answer": {"en": "Finance Secretary", "hi": "वित्त सचिव"},
+      "explanation": {"en": "The ₹1 note is issued by the Government of India and signed by the Finance Secretary; other notes are signed by the RBI Governor.", "hi": "₹1 का नोट भारत सरकार जारी करती है और उस पर वित्त सचिव के हस्ताक्षर होते हैं; अन्य नोटों पर RBI गवर्नर के।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "In which year were 14 major commercial banks nationalised in India?",
+        "hi": "भारत में 14 प्रमुख वाणिज्यिक बैंकों का राष्ट्रीयकरण किस वर्ष हुआ?"
+      },
+      "options": {
+        "en": ["1980", "1991", "1969", "1955"],
+        "hi": ["1980", "1991", "1969", "1955"]
+      },
+      "answer": {"en": "1969", "hi": "1969"},
+      "explanation": {"en": "14 banks were nationalised on July 19, 1969; six more followed in 1980.", "hi": "19 जुलाई 1969 को 14 बैंकों का राष्ट्रीयकरण हुआ; 1980 में छह और बैंक राष्ट्रीयकृत हुए।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "In which year did India launch the LPG (Liberalisation, Privatisation, Globalisation) reforms?",
+        "hi": "भारत ने LPG (उदारीकरण, निजीकरण, वैश्वीकरण) सुधार किस वर्ष शुरू किए?"
+      },
+      "options": {
+        "en": ["1985", "1971", "1991", "2000"],
+        "hi": ["1985", "1971", "1991", "2000"]
+      },
+      "answer": {"en": "1991", "hi": "1991"},
+      "explanation": {"en": "The New Economic Policy of 1991 began India's LPG reforms.", "hi": "1991 की नई आर्थिक नीति से भारत में LPG सुधार शुरू हुए।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "Which of the following is an indirect tax?",
+        "hi": "निम्नलिखित में से कौन सा अप्रत्यक्ष कर है?"
+      },
+      "options": {
+        "en": ["Income tax", "GST", "Corporation tax", "Wealth tax"],
+        "hi": ["आयकर", "GST", "निगम कर", "संपत्ति कर"]
+      },
+      "answer": {"en": "GST", "hi": "GST"},
+      "explanation": {"en": "GST is levied on goods and services and passed on to consumers, so it is an indirect tax.", "hi": "GST वस्तुओं और सेवाओं पर लगता है और उपभोक्ताओं पर डाला जाता है, इसलिए यह अप्रत्यक्ष कर है।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "What is 'stagflation'?",
+        "hi": "'स्टैगफ्लेशन' क्या है?"
+      },
+      "options": {
+        "en": ["High inflation combined with stagnant growth", "Falling prices with rapid growth", "Stable prices with full employment", "A sudden rise in exports"],
+        "hi": ["स्थिर विकास के साथ उच्च मुद्रास्फीति", "तेज़ विकास के साथ गिरती कीमतें", "पूर्ण रोज़गार के साथ स्थिर कीमतें", "निर्यात में अचानक वृद्धि"]
+      },
+      "answer": {"en": "High inflation combined with stagnant growth", "hi": "स्थिर विकास के साथ उच्च मुद्रास्फीति"},
+      "explanation": {"en": "Stagflation is the combination of high inflation, slow growth and high unemployment.", "hi": "स्टैगफ्लेशन उच्च मुद्रास्फीति, धीमे विकास और उच्च बेरोज़गारी का मेल है।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "The Laffer curve shows the relationship between:",
+        "hi": "लाफ़र वक्र किसके बीच संबंध दर्शाता है?"
+      },
+      "options": {
+        "en": ["Inflation and unemployment", "Price and quantity demanded", "Income and consumption", "Tax rates and tax revenue"],
+        "hi": ["मुद्रास्फीति और बेरोज़गारी", "कीमत और माँग की मात्रा", "आय और उपभोग", "कर दरें और कर राजस्व"]
+      },
+      "answer": {"en": "Tax rates and tax revenue", "hi": "कर दरें और कर राजस्व"},
+      "explanation": {"en": "The Laffer curve suggests that beyond a point, higher tax rates can reduce total tax revenue.", "hi": "लाफ़र वक्र बताता है कि एक सीमा के बाद ऊँची कर दरें कुल कर राजस्व घटा सकती हैं।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "Which organisation publishes the 'World Economic Outlook' report?",
+        "hi": "'वर्ल्ड इकोनॉमिक आउटलुक' रिपोर्ट कौन सा संगठन प्रकाशित करता है?"
+      },
+      "options": {
+        "en": ["World Bank", "WTO", "IMF", "UNCTAD"],
+        "hi": ["विश्व बैंक", "WTO", "IMF", "UNCTAD"]
+      },
+      "answer": {"en": "IMF", "hi": "IMF"},
+      "explanation": {"en": "The International Monetary Fund publishes the World Economic Outlook, usually twice a year.", "hi": "अंतरराष्ट्रीय मुद्रा कोष (IMF) वर्ल्ड इकोनॉमिक आउटलुक सामान्यतः वर्ष में दो बार प्रकाशित करता है।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "Under the Cash Reserve Ratio (CRR), banks must keep a share of their deposits:",
+        "hi": "नकद आरक्षित अनुपात (CRR) के तहत बैंकों को अपनी जमाओं का एक हिस्सा कहाँ रखना होता है?"
+      },
+      "options": {
+        "en": ["In gold with the government", "As cash balance with the RBI", "In foreign currency abroad", "As loans to farmers"],
+        "hi": ["सरकार के पास सोने के रूप में", "RBI के पास नकद शेष के रूप में", "विदेश में विदेशी मुद्रा के रूप में", "किसानों को ऋण के रूप में"]
+      },
+      "answer": {"en": "As cash balance with the RBI", "hi": "RBI के पास नकद शेष के रूप में"},
+      "explanation": {"en": "CRR is the share of net demand and time liabilities that banks must hold as cash with the RBI, earning no interest.", "hi": "CRR शुद्ध माँग और सावधि देयताओं का वह हिस्सा है जिसे बैंकों को बिना ब्याज के RBI के पास नकद रखना होता है।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "Fiscal deficit is equal to:",
+        "hi": "राजकोषीय घाटा किसके बराबर होता है?"
+      },
+      "options": {
+        "en": ["Revenue expenditure minus revenue receipts", "Imports minus exports", "Interest payments only", "Total expenditure minus total receipts excluding borrowings"],
+        "hi": ["राजस्व व्यय घटा राजस्व प्राप्तियाँ", "आयात घटा निर्यात", "केवल ब्याज भुगतान", "कुल व्यय घटा उधारी को छोड़कर कुल प्राप्तियाँ"]
+      },
+      "answer": {"en": "Total expenditure minus total receipts excluding borrowings", "hi": "कुल व्यय घटा उधारी को छोड़कर कुल प्राप्तियाँ"},
+      "explanation": {"en": "Fiscal deficit measures the government's total borrowing requirement; revenue deficit is revenue expenditure minus revenue receipts.", "hi": "राजकोषीय घाटा सरकार की कुल उधारी आवश्यकता बताता है; राजस्व घाटा राजस्व व्यय घटा राजस्व प्राप्तियाँ है।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "Which Five-Year Plan was based on the Mahalanobis model?",
+        "hi": "कौन सी पंचवर्षीय योजना महालनोबिस मॉडल पर आधारित थी?"
+      },
+      "options": {
+        "en": ["Second Plan", "First Plan", "Third Plan", "Fifth Plan"],
+        "hi": ["दूसरी योजना", "पहली योजना", "तीसरी योजना", "पाँचवीं योजना"]
+      },
+      "answer": {"en": "Second Plan", "hi": "दूसरी योजना"},
+      "explanation": {"en": "The Second Plan (1956–61) followed P.C. Mahalanobis's model emphasising heavy industry.", "hi": "दूसरी योजना (1956–61) भारी उद्योगों पर ज़ोर देने वाले पी.सी. महालनोबिस मॉडल पर आधारित थी।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "In which year was NABARD established?",
+        "hi": "नाबार्ड (NABARD) की स्थापना किस वर्ष हुई?"
+      },
+      "options": {
+        "en": ["1969", "1975", "1982", "1991"],
+        "hi": ["1969", "1975", "1982", "1991"]
+      },
+      "answer": {"en": "1982", "hi": "1982"},
+      "explanation": {"en": "NABARD was set up on July 12, 1982 to promote rural and agricultural credit.", "hi": "ग्रामीण और कृषि ऋण को बढ़ावा देने के लिए नाबार्ड की स्थापना 12 जुलाई 1982 को हुई।"},
+      "subject": "economics"
+    },
+    {
+      "question": {
+        "en": "The Gini coefficient is used to measure:",
+        "hi": "गिनी गुणांक का उपयोग किसे मापने के लिए होता है?"
+      },
+      "options": {
+        "en": ["Income inequality", "Inflation", "GDP growth", "Unemployment"],
+        "hi": ["आय असमानता", "मुद्रास्फीति", "GDP वृद्धि", "बेरोज़गारी"]
+      },
+      "answer": {"en": "Income inequality", "hi": "आय असमानता"},
+      "explanation": {"en": "The Gini coefficient ranges from 0 (perfect equality) to 1 (maximum inequality).", "hi": "गिनी गुणांक 0 (पूर्ण समानता) से 1 (अधिकतम असमानता) तक होता है।"},
+      "subject": "economics"
     }
   ]
 }

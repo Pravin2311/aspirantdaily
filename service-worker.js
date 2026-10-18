@@ -2,7 +2,7 @@
 // sw.js – FINAL PRODUCTION VERSION
 // ===============================
 
-const CACHE_NAME = "aspirant-daily-v4"; // 🔥 bump on every deploy
+const CACHE_NAME = "aspirant-daily-v5"; // 🔥 bump on every deploy
 
 const STATIC_ASSETS = [
   "/styles.css",
@@ -54,10 +54,11 @@ self.addEventListener("fetch", (event) => {
     return;
   }
 
-  // 🚫 NEVER cache HTML or JS
+  // 🚫 NEVER cache HTML, JS or quiz data (JSON)
   if (
     req.destination === "document" ||
-    req.destination === "script"
+    req.destination === "script" ||
+    url.pathname.endsWith(".json")
   ) {
     event.respondWith(fetch(req));
     return;

@@ -586,6 +586,201 @@
       "answer": {"en": "25", "hi": "25"},
       "explanation": {"en": "These are perfect squares: 1², 2², 3², 4², so next is 5² = 25.", "hi": "ये पूर्ण वर्ग हैं: 1², 2², 3², 4², इसलिए अगला 5² = 25 है।"},
       "subject": "quant"
+    },
+    {
+      "question": {
+        "en": "What is 12% of 250?",
+        "hi": "250 का 12% क्या है?"
+      },
+      "options": {
+        "en": ["25", "30", "35", "40"],
+        "hi": ["25", "30", "35", "40"]
+      },
+      "answer": {"en": "30", "hi": "30"},
+      "explanation": {"en": "12% of 250 = 0.12 × 250 = 30.", "hi": "250 का 12% = 0.12 × 250 = 30।"},
+      "subject": "quant"
+    },
+    {
+      "question": {
+        "en": "Convert 54 km/h into m/s.",
+        "hi": "54 किमी/घंटा को मीटर/सेकंड में बदलें।"
+      },
+      "options": {
+        "en": ["12 m/s", "18 m/s", "15 m/s", "20 m/s"],
+        "hi": ["12 मी/से", "18 मी/से", "15 मी/से", "20 मी/से"]
+      },
+      "answer": {"en": "15 m/s", "hi": "15 मी/से"},
+      "explanation": {"en": "54 × 5/18 = 15 m/s.", "hi": "54 × 5/18 = 15 मी/से।"},
+      "subject": "quant"
+    },
+    {
+      "question": {
+        "en": "A can finish a work in 12 days and B in 6 days. In how many days can they finish it together?",
+        "hi": "A किसी काम को 12 दिन में और B 6 दिन में पूरा करता है। दोनों मिलकर कितने दिन में पूरा करेंगे?"
+      },
+      "options": {
+        "en": ["3 days", "6 days", "8 days", "4 days"],
+        "hi": ["3 दिन", "6 दिन", "8 दिन", "4 दिन"]
+      },
+      "answer": {"en": "4 days", "hi": "4 दिन"},
+      "explanation": {"en": "Together = (12 × 6)/(12 + 6) = 72/18 = 4 days.", "hi": "मिलकर = (12 × 6)/(12 + 6) = 72/18 = 4 दिन।"},
+      "subject": "quant"
+    },
+    {
+      "question": {
+        "en": "What is the compound interest on ₹1,000 at 10% per annum for 2 years (compounded annually)?",
+        "hi": "₹1,000 पर 10% वार्षिक दर से 2 वर्ष का चक्रवृद्धि ब्याज (वार्षिक संयोजन) कितना होगा?"
+      },
+      "options": {
+        "en": ["₹200", "₹210", "₹220", "₹221"],
+        "hi": ["₹200", "₹210", "₹220", "₹221"]
+      },
+      "answer": {"en": "₹210", "hi": "₹210"},
+      "explanation": {"en": "Amount = 1000 × 1.1² = ₹1,210, so CI = ₹210.", "hi": "मिश्रधन = 1000 × 1.1² = ₹1,210, अतः चक्रवृद्धि ब्याज = ₹210।"},
+      "subject": "quant"
+    },
+    {
+      "question": {
+        "en": "What is the average of the first five even natural numbers?",
+        "hi": "पहली पाँच सम प्राकृत संख्याओं का औसत क्या है?"
+      },
+      "options": {
+        "en": ["6", "5", "7", "8"],
+        "hi": ["6", "5", "7", "8"]
+      },
+      "answer": {"en": "6", "hi": "6"},
+      "explanation": {"en": "(2 + 4 + 6 + 8 + 10)/5 = 30/5 = 6.", "hi": "(2 + 4 + 6 + 8 + 10)/5 = 30/5 = 6।"},
+      "subject": "quant"
+    },
+    {
+      "question": {
+        "en": "What is the HCF of 18 and 27?",
+        "hi": "18 और 27 का महत्तम समापवर्तक (HCF) क्या है?"
+      },
+      "options": {
+        "en": ["3", "6", "9", "18"],
+        "hi": ["3", "6", "9", "18"]
+      },
+      "answer": {"en": "9", "hi": "9"},
+      "explanation": {"en": "18 = 2 × 3², 27 = 3³, so HCF = 3² = 9.", "hi": "18 = 2 × 3², 27 = 3³, अतः HCF = 3² = 9।"},
+      "subject": "quant"
+    },
+    {
+      "question": {
+        "en": "What is the LCM of 8, 12 and 15?",
+        "hi": "8, 12 और 15 का लघुत्तम समापवर्त्य (LCM) क्या है?"
+      },
+      "options": {
+        "en": ["60", "240", "360", "120"],
+        "hi": ["60", "240", "360", "120"]
+      },
+      "answer": {"en": "120", "hi": "120"},
+      "explanation": {"en": "LCM = 2³ × 3 × 5 = 120.", "hi": "LCM = 2³ × 3 × 5 = 120।"},
+      "subject": "quant"
+    },
+    {
+      "question": {
+        "en": "An article marked at ₹800 is sold at a 15% discount. What is the selling price?",
+        "hi": "₹800 अंकित मूल्य की वस्तु 15% छूट पर बेची जाती है। विक्रय मूल्य क्या है?"
+      },
+      "options": {
+        "en": ["₹680", "₹650", "₹700", "₹720"],
+        "hi": ["₹680", "₹650", "₹700", "₹720"]
+      },
+      "answer": {"en": "₹680", "hi": "₹680"},
+      "explanation": {"en": "Discount = 15% of 800 = ₹120, so SP = 800 − 120 = ₹680.", "hi": "छूट = 800 का 15% = ₹120, अतः विक्रय मूल्य = 800 − 120 = ₹680।"},
+      "subject": "quant"
+    },
+    {
+      "question": {
+        "en": "6 men can build a wall in 10 days. How many days will 15 men take?",
+        "hi": "6 आदमी एक दीवार 10 दिन में बनाते हैं। 15 आदमी कितने दिन लेंगे?"
+      },
+      "options": {
+        "en": ["3 days", "5 days", "6 days", "4 days"],
+        "hi": ["3 दिन", "5 दिन", "6 दिन", "4 दिन"]
+      },
+      "answer": {"en": "4 days", "hi": "4 दिन"},
+      "explanation": {"en": "Work = 6 × 10 = 60 man-days; 60 ÷ 15 = 4 days.", "hi": "कार्य = 6 × 10 = 60 मानव-दिवस; 60 ÷ 15 = 4 दिन।"},
+      "subject": "quant"
+    },
+    {
+      "question": {
+        "en": "Two numbers are in the ratio 3 : 5 and their sum is 64. What is the larger number?",
+        "hi": "दो संख्याएँ 3 : 5 के अनुपात में हैं और उनका योग 64 है। बड़ी संख्या क्या है?"
+      },
+      "options": {
+        "en": ["24", "36", "40", "45"],
+        "hi": ["24", "36", "40", "45"]
+      },
+      "answer": {"en": "40", "hi": "40"},
+      "explanation": {"en": "Each part = 64/8 = 8; larger = 5 × 8 = 40.", "hi": "प्रत्येक भाग = 64/8 = 8; बड़ी संख्या = 5 × 8 = 40।"},
+      "subject": "quant"
+    },
+    {
+      "question": {
+        "en": "A 150 m long train runs at 36 km/h. How long does it take to cross a pole?",
+        "hi": "150 मीटर लंबी ट्रेन 36 किमी/घंटा की गति से चलती है। एक खंभे को पार करने में कितना समय लेगी?"
+      },
+      "options": {
+        "en": ["10 seconds", "15 seconds", "12 seconds", "18 seconds"],
+        "hi": ["10 सेकंड", "15 सेकंड", "12 सेकंड", "18 सेकंड"]
+      },
+      "answer": {"en": "15 seconds", "hi": "15 सेकंड"},
+      "explanation": {"en": "36 km/h = 10 m/s; time = 150/10 = 15 s.", "hi": "36 किमी/घंटा = 10 मी/से; समय = 150/10 = 15 सेकंड।"},
+      "subject": "quant"
+    },
+    {
+      "question": {
+        "en": "What is the sum of the interior angles of a quadrilateral?",
+        "hi": "किसी चतुर्भुज के आंतरिक कोणों का योग क्या होता है?"
+      },
+      "options": {
+        "en": ["180°", "360°", "270°", "540°"],
+        "hi": ["180°", "360°", "270°", "540°"]
+      },
+      "answer": {"en": "360°", "hi": "360°"},
+      "explanation": {"en": "Sum of interior angles = (n − 2) × 180° = 2 × 180° = 360°.", "hi": "आंतरिक कोणों का योग = (n − 2) × 180° = 2 × 180° = 360°।"},
+      "subject": "quant"
+    },
+    {
+      "question": {
+        "en": "What is the volume of a cube with side 5 cm?",
+        "hi": "5 सेमी भुजा वाले घन का आयतन क्या है?"
+      },
+      "options": {
+        "en": ["125 cm³", "25 cm³", "75 cm³", "100 cm³"],
+        "hi": ["125 सेमी³", "25 सेमी³", "75 सेमी³", "100 सेमी³"]
+      },
+      "answer": {"en": "125 cm³", "hi": "125 सेमी³"},
+      "explanation": {"en": "Volume = side³ = 5³ = 125 cm³.", "hi": "आयतन = भुजा³ = 5³ = 125 सेमी³।"},
+      "subject": "quant"
+    },
+    {
+      "question": {
+        "en": "Express 0.25 as a fraction in its simplest form.",
+        "hi": "0.25 को सरलतम भिन्न के रूप में लिखें।"
+      },
+      "options": {
+        "en": ["1/2", "1/5", "1/4", "2/5"],
+        "hi": ["1/2", "1/5", "1/4", "2/5"]
+      },
+      "answer": {"en": "1/4", "hi": "1/4"},
+      "explanation": {"en": "0.25 = 25/100 = 1/4.", "hi": "0.25 = 25/100 = 1/4।"},
+      "subject": "quant"
+    },
+    {
+      "question": {
+        "en": "Two successive discounts of 20% and 10% are equal to a single discount of:",
+        "hi": "20% और 10% की दो क्रमिक छूटें किस एकल छूट के बराबर हैं?"
+      },
+      "options": {
+        "en": ["30%", "25%", "32%", "28%"],
+        "hi": ["30%", "25%", "32%", "28%"]
+      },
+      "answer": {"en": "28%", "hi": "28%"},
+      "explanation": {"en": "Single discount = 20 + 10 − (20 × 10)/100 = 28%.", "hi": "एकल छूट = 20 + 10 − (20 × 10)/100 = 28%।"},
+      "subject": "quant"
     }
   ]
 }
