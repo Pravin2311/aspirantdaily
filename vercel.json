@@ -1,5 +1,10 @@
 {
   "redirects": [
     { "source": "/index.html", "destination": "/", "permanent": true }
+  ],
+  "headers": [
+    { "source": "/content/:path*", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow" }] },
+    { "source": "/scripts/:path*", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow" }] },
+    { "source": "/tests/:path*", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow" }] }
   ]
 }

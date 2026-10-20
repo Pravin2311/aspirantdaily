@@ -1,0 +1,119 @@
+# slug | title | subtopic | type | exams | primary search query | unique learning outcome | sources | priority
+# Reasoning (new hub study/reasoning/) and Computer Awareness (new hub study/computer/).
+analogy-types | Analogy Questions: Types and Tricks | verbal-reasoning | method | S R | analogy reasoning tricks | Identify word, number and letter analogy relationships | ORIG | P1
+classification-odd-one-out | Classification (Odd One Out) Questions | verbal-reasoning | method | S R | odd one out reasoning | Find the odd one out by property, pattern and arithmetic | ORIG | P2
+letter-series | Letter Series and Alphanumeric Series | verbal-reasoning | method | S B R | letter series tricks | Decode letter skips and repeating groups | ORIG | P1
+coding-decoding-letter-shift | Coding-Decoding: Letter Shift and Reverse Coding | coding | method | S B R | coding decoding tricks | Decode shift, reverse-alphabet and position-sum codes using letter positions | ORIG | P1
+coding-decoding-new-pattern | New-Pattern Coding-Decoding for Bank Exams | coding | method | B | new pattern coding decoding | Solve word-to-symbol and sentence-code questions by elimination | ORIG | P1
+mathematical-operations | Mathematical Operations and Symbol Substitution | coding | method | S R | mathematical operations reasoning | Substitute symbols, apply BODMAS and check equations | ORIG | P2
+alphabet-positions-ejoty | Alphabet Positions and the EJOTY Trick | verbal-reasoning | method | S B R | ejoty trick | Recall forward and reverse letter positions instantly | ORIG | P1
+blood-relations | Blood Relations: Family Tree Method | relations | method | S B R | blood relation tricks | Draw family trees with gender and generation markers | ORIG | P1
+coded-blood-relations | Coded Blood Relations (A + B, A × B) | relations | method | B | coded blood relation | Decode symbol-based relations and test each option | ORIG | P2
+direction-sense-test | Direction Sense Test: Distance and Final Direction | spatial | method | S B R | direction sense test tricks | Track turns, compute net displacement and solve shadow-based questions | ORIG | P1
+order-and-ranking | Order and Ranking: Position from Top and Bottom | arrangement | method | S B R | ranking from top and bottom formula | Use total = top + bottom − 1 and interchange problems | ORIG | P1
+dictionary-order-word-formation | Dictionary Order and Word Formation | verbal-reasoning | method | S R | arrange words in dictionary order | Sort words alphabetically and form words from letters | ORIG | P3
+syllogism-rules | Syllogism: Venn Diagram Method | logic | method | S B R | syllogism venn diagram method | Draw minimum-overlap diagrams and test each conclusion | ORIG | P1
+syllogism-possibility-cases | Syllogism Possibility Cases | logic | method | B | syllogism possibility questions | Decide when 'possibility' conclusions are true | ORIG | P1
+syllogism-only-a-few | Syllogism with 'Only a Few' and 'Only' | logic | method | B | only a few syllogism | Handle restrictive quantifiers correctly | ORIG | P2
+coded-and-direct-inequality | Inequality: Direct and Coded | logic | method | B | coded inequality tricks | Combine inequality chains and decide either-or cases | ORIG | P1
+statement-and-assumptions | Statement and Assumptions | critical-reasoning | method | S B | statement and assumption tricks | Separate implicit assumptions from inferences | ORIG | P2
+statement-and-conclusions | Statement and Conclusions | critical-reasoning | method | S B | statement and conclusion reasoning | Accept only conclusions that follow directly | ORIG | P2
+course-of-action | Course of Action Questions | critical-reasoning | method | S B | course of action reasoning | Judge practical and proportionate actions | ORIG | P3
+cause-and-effect | Cause and Effect Questions | critical-reasoning | method | B | cause and effect reasoning | Tell independent causes from common causes | ORIG | P3
+strengthen-weaken-arguments | Strengthening and Weakening Arguments | critical-reasoning | method | B U | strengthen weaken argument questions | Locate the assumption an argument depends on | ORIG | P2
+input-output | Input-Output (Machine) Questions | arrangement | method | B | input output reasoning tricks | Identify the rearrangement step and project later steps | ORIG | P2
+data-sufficiency-reasoning | Data Sufficiency in Reasoning | logic | method | B | data sufficiency reasoning | Decide sufficiency for blood relation, direction and ranking data | ORIG | P3
+linear-seating-arrangement | Linear Seating Arrangement | arrangement | method | S B | linear seating arrangement tricks | Place people facing north or south using fixed clues first | ORIG | P1
+circular-seating-arrangement | Circular Seating Arrangement: Facing Centre and Outside | arrangement | method | S B | circular seating arrangement tricks | Handle left and right correctly for inward and outward facing | ORIG | P1
+square-table-arrangement | Square and Rectangular Table Arrangement | arrangement | method | B | square table seating arrangement | Place people at corners and middles with mixed facing | ORIG | P2
+floor-puzzle | Floor Puzzles | puzzles | method | B | floor puzzle reasoning | Build a floor grid and fix absolute clues first | ORIG | P1
+box-puzzle | Box Stacking Puzzles | puzzles | method | B | box puzzle reasoning | Handle above-below and gap clues | ORIG | P2
+scheduling-puzzle | Month and Day Scheduling Puzzles | puzzles | method | B | month day puzzle | Place events across months and days with 30 and 31-day rules | ORIG | P2
+calendar-odd-days | Calendar Problems: Odd Days Method | time-reasoning | method | S B R | how to find day of any date | Find the day of the week for any date using odd days and leap-year rules | ORIG | P1
+clock-angle-problems | Angle Between Clock Hands: 30H − 5.5M | time-reasoning | method | S B R | angle between hands of clock formula | Find the angle at any time and the times when hands are at a given angle | ORIG | P1
+clock-gain-and-loss | Fast and Slow Clocks: Gain and Loss Problems | time-reasoning | method | S R | clock gains minutes problem | Find the true time shown by a fast or slow clock and when it shows correct time | ORIG | P1
+dice-problems | Dice Problems: Opposite Faces | spatial | method | S B R | dice opposite face trick | Find opposite faces from two or more positions and from unfolded nets | ORIG | P1
+cube-cutting-and-painting | Cube Cutting and Painting | spatial | method | S R | cube painted cut into small cubes | Count cubes with 0, 1, 2 and 3 painted faces | ORIG | P1
+counting-figures | Counting Triangles and Squares in Figures | non-verbal | method | S R | how to count triangles in a figure | Use systematic counting for triangles, squares and rectangles | ORIG | P1
+mirror-and-water-images | Mirror and Water Images | non-verbal | method | S R | mirror image of clock time | Find mirror and water images of letters, numbers and clocks | ORIG | P2
+paper-folding-cutting | Paper Folding and Cutting | non-verbal | method | S R | paper folding and cutting reasoning | Unfold punched paper step by step | ORIG | P3
+embedded-figures | Embedded Figures | non-verbal | method | S R | embedded figures reasoning | Spot a figure hidden in a larger one | ORIG | P3
+venn-diagram-reasoning | Venn Diagram Relationships | logic | method | S R | venn diagram reasoning questions | Choose the diagram that fits the relationship between classes | ORIG | P2
+missing-number-in-figures | Missing Number in Figures and Matrices | verbal-reasoning | method | S R | missing number in figure | Find row, column and diagonal patterns | ORIG | P2
+figure-series | Non-Verbal Figure Series | non-verbal | method | S R | figure series reasoning | Track rotation, addition and position of elements | ORIG | P3
+alphanumeric-symbol-series | Alphanumeric Symbol Series for Bank Exams | verbal-reasoning | method | B | alphanumeric series reasoning | Answer position-based questions on mixed series | ORIG | P2
+csat-decision-making | CSAT Decision-Making and Interpersonal Skills | critical-reasoning | method | U | csat decision making questions | Apply a consistent approach to scenario questions | ORIG+NOTICE | P3
+reasoning-mcqs-ssc | Reasoning MCQs for SSC with Explanations | verbal-reasoning | mcq | S R | reasoning questions for ssc | Practise 30 original mixed reasoning questions | ORIG | P2
+puzzles-practice-bank | Bank Exam Puzzle Practice Sets | puzzles | mcq | B | puzzle questions for bank exams | Practise five original puzzles with step-by-step solutions | ORIG | P2
+syllogism-mcqs | Syllogism Practice Questions | logic | mcq | S B | syllogism questions | Practise 25 original syllogisms with diagrams | ORIG | P2
+blood-relation-direction-mcqs | Blood Relation and Direction MCQs | relations | mcq | S B R | blood relation questions | Practise 25 original questions with worked solutions | ORIG | P3
+coding-decoding-mcqs | Coding-Decoding Practice Questions | coding | mcq | S B R | coding decoding questions | Practise 25 original questions with worked solutions | ORIG | P2
+non-verbal-reasoning-guide | Non-Verbal Reasoning: Types and Approach | non-verbal | guide | S R | non verbal reasoning types | Recognise each non-verbal question type and its first step | ORIG | P3
+number-ranking-and-digit-questions | Number Ranking and Digit Rearrangement | arrangement | method | B | number arrangement reasoning | Rearrange digits and numbers by rules | ORIG | P3
+generations-of-computers | Generations of Computers: Technology and Examples | computer-basics | revision | S B R | generations of computer | Match each generation to its technology, period and examples | NCERT+ORIG | P1
+computer-memory-types | Computer Memory: RAM, ROM, Cache and Secondary Storage | computer-basics | guide | S B R | types of computer memory | Compare memory types by volatility, speed and use | NCERT | P1
+memory-units-bit-to-yottabyte | Memory Units: Bit, Byte, KB to YB | computer-basics | revision | S B R | memory units in computer | Convert between memory units in binary (KiB) and decimal (KB) conventions | IEC+ORIG | P1
+number-system-conversion | Binary, Octal, Decimal and Hexadecimal Conversion | computer-basics | method | S B R | binary to decimal conversion | Convert between bases step by step | ORIG | P1
+input-output-devices | Input and Output Devices | computer-basics | revision | S B R | input and output devices list | Classify devices as input, output or both | NCERT | P2
+operating-system-types | Operating System: Functions and Types | software | guide | S B | functions of operating system | Explain OS functions and batch, time-sharing, real-time and distributed types | NCERT | P2
+system-vs-application-software | System Software vs Application Software | software | guide | S B R | system software vs application software | Classify software with examples | NCERT | P2
+programming-language-generations | Programming Languages: Machine to High-Level | software | guide | S B | generations of programming languages | Compare language generations and compilers, interpreters and assemblers | NCERT | P2
+computer-networks-lan-man-wan | Computer Networks: LAN, MAN, WAN and PAN | networking | guide | S B R | types of computer network | Compare networks by range, ownership and examples | NCERT | P1
+network-topologies | Network Topologies: Bus, Star, Ring, Mesh | networking | guide | S B | network topology types | Compare topologies by cabling, failure and cost | NCERT | P2
+osi-model-layers | OSI Model: Seven Layers and Their Protocols | networking | guide | S B | osi model 7 layers | Match each layer to its function, devices and protocols | ISO+NCERT | P1
+internet-protocols | HTTP, FTP, SMTP, POP3 and IMAP | networking | revision | S B | email protocols smtp pop3 imap | Match protocols to purpose and default port | IETF | P2
+ip-address-ipv4-ipv6 | IP Addresses: IPv4 vs IPv6 | networking | guide | S B | ipv4 vs ipv6 | Compare address length, notation and features | IETF | P2
+internet-terms | Internet Terms: URL, DNS, ISP, Browser and Cookies | internet | revision | S B R | url full form and parts | Explain common internet terms with examples | NCERT | P2
+email-terms | Email Terms: CC, BCC, Attachments and Spam | internet | revision | S B | cc and bcc difference | Explain email fields and features asked in bank exams | NCERT | P3
+malware-types | Malware: Virus, Worm, Trojan, Ransomware and Spyware | security | revision | S B R | types of computer virus | Distinguish malware types by spread and effect | CERTIN | P1
+cyber-security-terms | Cyber Security Terms: Phishing, Vishing, Firewall and 2FA | security | revision | S B | phishing vishing smishing | Explain common attack and defence terms | CERTIN | P2
+ms-word-shortcuts | MS Word Shortcut Keys | office | revision | S B R | ms word shortcut keys | Recall common Word shortcuts and their functions | MSDOC | P1
+ms-excel-functions-and-shortcuts | MS Excel Functions and Shortcuts | office | revision | S B | excel functions list for exam | Explain common Excel functions, cell references and shortcuts | MSDOC | P1
+windows-keyboard-shortcuts | Windows Keyboard Shortcuts | office | revision | S B | windows shortcut keys list | Recall Windows shortcuts commonly asked | MSDOC | P3
+dbms-basics | DBMS Basics: Keys, Normalisation and SQL Commands | software | guide | B | primary key foreign key difference | Explain database keys, DDL vs DML and normal forms | NCERT | P2
+cloud-computing-types | Cloud Computing: IaaS, PaaS, SaaS | internet | guide | S B | iaas paas saas examples | Compare cloud service and deployment models | NIST | P2
+computer-abbreviations | Computer Abbreviations and Full Forms | computer-basics | revision | S B R | computer full forms list | Recall 100 common abbreviations | NCERT | P1
+logic-gates | Logic Gates and Truth Tables | computer-basics | method | S B | logic gates truth table | Build truth tables for AND, OR, NOT, NAND, NOR, XOR | ORIG+NCERT | P2
+computer-awareness-mcqs-basics | Computer Awareness MCQs: Basics and Hardware | computer-basics | mcq | S B R | computer awareness questions | Practise 30 original questions on hardware and memory | NCERT | P2
+computer-awareness-mcqs-networking | Computer Awareness MCQs: Internet and Networking | networking | mcq | S B | networking mcq | Practise 30 original networking and security questions | NCERT | P2
+file-extensions-list | File Extensions and File Types | software | revision | S B | file extensions list | Match file extensions to applications | MSDOC | P3
+ms-powerpoint-basics | MS PowerPoint Basics and Shortcuts | office | revision | S B | powerpoint shortcut keys | Explain views, slide master and shortcuts | MSDOC | P3
+artificial-intelligence-basics | AI, Machine Learning and Generative AI Basics | internet | guide | S B U | difference between ai and machine learning | Distinguish AI, ML, deep learning and generative AI | NCERT+MEITY | P2
+upi-and-digital-payment-systems | UPI, IMPS, NEFT and RTGS Compared | internet | revision | B S | neft rtgs imps difference | Compare payment systems by timing, limits and operator | RBI+NPCI | P1
+digital-signature-and-encryption | Encryption, Digital Signatures and Certificates | security | guide | B | digital signature meaning | Explain encryption, hashing and digital signatures | CCA | P3
+computer-ports-and-cables | Computer Ports and Cables: USB, HDMI, Ethernet | computer-basics | revision | S B | types of computer ports | Recognise ports and their uses | NCERT | P3
+storage-devices | Storage Devices: HDD, SSD, Optical and Flash | computer-basics | revision | S B R | hdd vs ssd difference | Compare storage devices by type and capacity | NCERT | P2
+printers-and-scanners | Printers and Scanners: Impact vs Non-Impact | computer-basics | revision | S B | impact and non impact printer | Classify printers and scanners | NCERT | P3
+computer-history-and-pioneers | History of Computers and Pioneers | computer-basics | revision | S R | father of computer | Match inventions to pioneers and years | NCERT | P3
+web-browsers-and-search-engines | Web Browsers vs Search Engines | internet | revision | S B | browser vs search engine | Distinguish browsers, engines and portals | NCERT | P3
+social-media-and-it-act | IT Act 2000: Key Sections for Exams | security | guide | U B S | it act 2000 sections | Explain the IT Act's key sections and the 2021 intermediary rules | ACT | P2
+open-source-software | Open Source vs Proprietary Software | software | guide | S B | open source software examples | Explain licences and examples | NCERT | P3
+reasoning-for-upsc-csat | CSAT Logical Reasoning Topics | logic | guide | U | csat logical reasoning topics | Map the official CSAT syllabus lines to reasoning question types | NOTICE+ORIG | P2
+number-analogy | Number Analogy Questions | verbal-reasoning | method | S R | number analogy reasoning | Find square, cube and arithmetic relations between number pairs | ORIG | P2
+word-analogy-relations | Word Analogy Relationship Types | verbal-reasoning | method | S R | word analogy relationships | Recognise worker-tool, part-whole and other relationships | ORIG | P3
+statement-arguments | Statement and Arguments: Strong vs Weak | critical-reasoning | method | B | strong and weak arguments | Judge argument strength by relevance and universality | ORIG | P3
+seating-arrangement-mcqs | Seating Arrangement Practice Sets | arrangement | mcq | S B | seating arrangement questions | Practise five original seating sets with solutions | ORIG | P2
+direction-shadow-problems | Shadow-Based Direction Problems | spatial | method | S | shadow direction reasoning | Use sunrise and sunset shadow rules to find direction | ORIG | P3
+calendar-repeat-years | When Does a Calendar Repeat? | time-reasoning | method | S B | calendar repeat years | Find the next year with the same calendar using odd days | ORIG | P2
+clock-mcqs | Clock and Calendar MCQs with Solutions | time-reasoning | mcq | S B R | clock and calendar questions | Practise 25 original questions with worked solutions | ORIG | P2
+reasoning-for-rrb-ntpc | Reasoning for RRB NTPC: Topic Map | verbal-reasoning | exam | R | rrb ntpc reasoning syllabus | Map the official RRB NTPC reasoning syllabus to topic pages | NOTICE | P3
+computer-for-ibps-so-it | Computer Knowledge for IBPS SO (IT Officer): Topic Map | software | exam | B | ibps so it officer syllabus | Map the official professional knowledge syllabus to topics | NOTICE | P3
+letter-pairs-in-word | Letter Pairs in a Word: Same Gap as in Alphabet | verbal-reasoning | method | S B | how many pairs of letters in the word | Count letter pairs in both directions without missing any | ORIG | P2
+parameter-based-puzzles | Parameter Puzzles: Person, Colour, City | puzzles | method | B | classification puzzle reasoning | Build a grid of parameters and eliminate | ORIG | P2
+uncertain-number-seating | Uncertain Number of Persons Seating | arrangement | method | B | uncertain number of persons seating arrangement | Find the total from position clues | ORIG | P2
+logical-sequence-of-words | Logical Sequence of Words | verbal-reasoning | method | S R | logical sequence of words | Order words by size, process or life cycle | ORIG | P3
+counting-cubes-in-stacks | Counting Cubes in a Stack | spatial | method | S R | count cubes in figure | Count visible and hidden cubes by layer | ORIG | P3
+pattern-completion | Pattern Completion (Non-Verbal) | non-verbal | method | S R | pattern completion reasoning | Complete patterns using symmetry | ORIG | P3
+parallel-row-seating | Parallel Row Seating Arrangement | arrangement | method | B | two row seating arrangement | Place people in facing rows | ORIG | P2
+inferences-from-passage | Inferences from a Passage (Bank Critical Reasoning) | critical-reasoning | method | B | inference questions reasoning | Classify statements as definitely true, probably true or false | ORIG | P3
+fact-inference-judgement | Fact, Inference and Judgement | critical-reasoning | method | B | fact inference judgement questions | Classify statements as fact, inference or judgement | ORIG | P3
+time-sequence-test | Time Sequence Questions | time-reasoning | method | S | time sequence reasoning | Solve meeting-time and arrival problems | ORIG | P3
+figure-rotation-and-symmetry | Figure Rotation and Symmetry | non-verbal | method | S R | rotation of figures reasoning | Track clockwise and anticlockwise rotation | ORIG | P3
+selection-puzzles | Selection and Grouping Puzzles | puzzles | method | B U | team selection puzzle | Apply inclusion and exclusion rules to pick groups | ORIG | P3
+comparison-puzzles | Comparison Puzzles: Tallest, Heaviest, Richest | puzzles | method | S B | comparison reasoning questions | Order people from comparative clues | ORIG | P2
+cpu-components | CPU Components: ALU, Control Unit and Registers | computer-basics | guide | S B R | parts of cpu | Explain the CPU's parts and the machine cycle | NCERT | P1
+booting-and-bios | Booting Process, BIOS and UEFI | computer-basics | guide | S B | cold booting and warm booting | Explain cold and warm booting and the role of firmware | NCERT | P3
+transmission-modes | Simplex, Half-Duplex and Full-Duplex | networking | revision | S B | simplex half duplex full duplex examples | Classify transmission modes with examples | NCERT | P2
+transmission-media | Transmission Media: Wired and Wireless | networking | revision | S B | guided and unguided media | Compare cables and wireless media | NCERT | P3
+networking-devices | Hub, Switch, Router, Modem and Gateway | networking | revision | S B | difference between hub switch and router | Compare devices by OSI layer and function | NCERT | P1
+iot-and-blockchain-basics | IoT and Blockchain Basics | internet | guide | S B | blockchain technology basics | Explain IoT and blockchain at exam level | MEITY | P3

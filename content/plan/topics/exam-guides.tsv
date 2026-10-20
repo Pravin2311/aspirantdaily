@@ -1,0 +1,74 @@
+# slug | title | subtopic | type | exams | primary search query | unique learning outcome | sources | priority
+# Exam-specific guides. New hub: exams/. Each must name the exam year and the notification it follows (NOTICE),
+# and be labelled historical when it describes an older cycle. No dates or vacancies without the official PDF.
+ssc-chsl-syllabus-exam-pattern | SSC CHSL Syllabus and Exam Pattern (Official Notice) | ssc | exam | S | ssc chsl syllabus | Summarise the CHSL tiers, marks and syllabus from the current notice | NOTICE | P1
+ssc-mts-syllabus-exam-pattern | SSC MTS and Havaldar Syllabus and Exam Pattern | ssc | exam | S | ssc mts syllabus | Summarise MTS sessions, marking and PET for Havaldar from the notice | NOTICE | P1
+ssc-gd-constable-syllabus-exam-pattern | SSC GD Constable Syllabus, CBE Pattern and PET | ssc | exam | S | ssc gd syllabus | Summarise the CBE, PET and PST from the current GD notice | NOTICE | P1
+ssc-cpo-si-syllabus-exam-pattern | SSC CPO Sub-Inspector Syllabus and Exam Pattern | ssc | exam | S | ssc cpo syllabus | Summarise Papers I and II and the PET from the notice | NOTICE | P2
+ssc-je-syllabus-exam-pattern | SSC JE Syllabus and Exam Pattern | ssc | exam | S | ssc je syllabus | Summarise Paper I and II for civil, mechanical and electrical streams | NOTICE | P2
+ssc-stenographer-syllabus | SSC Stenographer Grade C and D Syllabus | ssc | exam | S | ssc stenographer syllabus | Summarise the CBE and skill test rules | NOTICE | P2
+ssc-selection-post-syllabus | SSC Selection Post: Exam Levels and Pattern | ssc | exam | S | ssc selection post syllabus | Explain matric, higher secondary and graduate levels and the common CBE | NOTICE | P3
+ssc-cgl-eligibility-age-limit | SSC CGL Eligibility and Age Limit by Post | ssc | exam | S | ssc cgl age limit post wise | Tabulate post-wise age limits and qualifications from the current notice | NOTICE | P1
+ssc-cgl-posts-and-pay-levels | SSC CGL Posts and Pay Levels | ssc | exam | S | ssc cgl post list and salary | Tabulate posts, departments and pay levels from the notice | NOTICE | P1
+ssc-chsl-eligibility-age-limit | SSC CHSL Eligibility and Age Limit | ssc | exam | S | ssc chsl age limit | Tabulate age and qualification rules from the notice | NOTICE | P2
+ssc-cgl-tier-2-syllabus | SSC CGL Tier-II Syllabus by Section | ssc | exam | S | ssc cgl tier 2 syllabus | Explain each Tier-II section's syllabus and marking from the notice | NOTICE | P1
+ssc-exam-calendar-2026-27 | SSC Exam Calendar 2026-27 (Tentative) | ssc | exam | S | ssc exam calendar 2026-27 | Reproduce SSC's tentative calendar with a link to the PDF and update log | NOTICE | P1
+ssc-cgl-cut-off-official | SSC CGL Cut-Off Marks from Official Results | ssc | exam | S | ssc cgl cut off previous year | Tabulate category-wise cut-offs only from SSC result PDFs | NOTICE | P2
+ssc-normalisation-explained | SSC Normalisation of Marks Explained | ssc | method | S | ssc normalisation formula | Explain SSC's published normalisation formula with a worked example | NOTICE+ORIG | P2
+ibps-po-syllabus-exam-pattern | IBPS PO Syllabus and Exam Pattern (CRP PO/MT) | banking-exams | exam | B | ibps po syllabus | Summarise prelims, mains and interview from the current CRP notice | NOTICE | P1
+ibps-clerk-syllabus-exam-pattern | IBPS Clerk Syllabus and Exam Pattern | banking-exams | exam | B | ibps clerk syllabus | Summarise prelims and mains from the current notice | NOTICE | P1
+ibps-rrb-po-clerk-syllabus | IBPS RRB PO and Office Assistant Syllabus | banking-exams | exam | B | ibps rrb syllabus | Summarise RRB Officer Scale I and Office Assistant patterns | NOTICE | P2
+ibps-so-syllabus | IBPS SO Syllabus by Post | banking-exams | exam | B | ibps so syllabus | Summarise the professional knowledge papers by post | NOTICE | P3
+sbi-po-syllabus-exam-pattern | SBI PO Syllabus and Exam Pattern | banking-exams | exam | B | sbi po syllabus | Summarise SBI PO phases and marks from the current advertisement | NOTICE | P1
+sbi-clerk-syllabus-exam-pattern | SBI Clerk (Junior Associate) Syllabus and Exam Pattern | banking-exams | exam | B | sbi clerk syllabus | Summarise SBI Clerk prelims, mains and language test | NOTICE | P1
+rbi-grade-b-syllabus | RBI Grade B Officer Syllabus and Phases | banking-exams | exam | B | rbi grade b syllabus | Summarise Phase I, Phase II and interview from the RBI advertisement | NOTICE | P1
+rbi-assistant-syllabus | RBI Assistant Syllabus and Exam Pattern | banking-exams | exam | B | rbi assistant syllabus | Summarise prelims, mains and the language proficiency test | NOTICE | P2
+nabard-grade-a-syllabus | NABARD Grade A Syllabus and Exam Pattern | banking-exams | exam | B | nabard grade a syllabus | Summarise phases and the ESI and ARD papers | NOTICE | P2
+lic-aao-syllabus | LIC AAO Syllabus and Exam Pattern | banking-exams | exam | B | lic aao syllabus | Summarise LIC AAO prelims and mains | NOTICE | P3
+ibps-po-eligibility-age-limit | IBPS PO Eligibility, Age Limit and Relaxations | banking-exams | exam | B | ibps po age limit | Tabulate eligibility and relaxations from the CRP notice | NOTICE | P2
+sbi-po-eligibility-age-limit | SBI PO Eligibility and Age Limit | banking-exams | exam | B | sbi po age limit | Tabulate eligibility and relaxations from the SBI advertisement | NOTICE | P2
+bank-exam-negative-marking-calculator | Bank Exam Score Calculator with Negative Marking | banking-exams | method | B | bank exam marks calculator | Compute raw score from attempts with the 0.25 penalty and explain sectional cut-offs | NOTICE+ORIG | P2
+rrb-ntpc-graduate-syllabus | RRB NTPC Graduate Level Syllabus and CBT Pattern | railway | exam | R | rrb ntpc graduate syllabus | Summarise CBT-1, CBT-2 and skill tests from the current CEN | NOTICE | P1
+rrb-ntpc-undergraduate-syllabus | RRB NTPC Undergraduate Level Syllabus | railway | exam | R | rrb ntpc 12th level syllabus | Summarise the under-graduate posts' CBTs and typing test | NOTICE | P2
+rrb-group-d-syllabus | RRB Group D (Level 1) Syllabus and CBT Pattern | railway | exam | R | rrb group d syllabus | Summarise the CBT and PET from the current CEN | NOTICE | P1
+rrb-alp-syllabus | RRB ALP Syllabus: CBT-1, CBT-2 and CBAT | railway | exam | R | rrb alp syllabus | Summarise ALP stages including the aptitude test | NOTICE | P2
+rrb-je-syllabus | RRB JE Syllabus and CBT Pattern | railway | exam | R | rrb je syllabus | Summarise CBT-1 and CBT-2 by stream | NOTICE | P2
+rpf-constable-si-syllabus | RPF Constable and SI Syllabus | railway | exam | R | rpf constable syllabus | Summarise CBT, PET and PMT from the RPF notice | NOTICE | P3
+upsc-mains-syllabus | UPSC Mains Syllabus: GS I to IV and Essay | upsc | exam | U | upsc mains syllabus | Reproduce the official GS and essay syllabus with paper marks | NOTICE | P1
+upsc-optional-subjects | UPSC Optional Subjects List | upsc | exam | U | upsc optional subjects list | List the optional subjects from the CSE notice | NOTICE | P1
+upsc-cse-eligibility-attempts | UPSC CSE Eligibility, Age Limit and Number of Attempts | upsc | exam | U | upsc age limit and attempts | Tabulate age and attempts by category from the CSE notice | NOTICE | P1
+upsc-csat-pattern | UPSC CSAT: Pattern, Qualifying Marks and Syllabus | upsc | exam | U | csat qualifying marks | Explain CSAT's official syllabus and 33% qualifying rule | NOTICE | P1
+upsc-prelims-score-calculator | UPSC Prelims Score Calculator with Negative Marking | upsc | method | U | upsc prelims marks calculator | Compute GS-I scores with the one-third penalty | NOTICE+ORIG | P2
+upsc-interview-personality-test | UPSC Personality Test: Marks and Process | upsc | exam | U | upsc interview marks | Explain the interview stage and its 275 marks from the notice | NOTICE | P2
+upsc-cds-syllabus | UPSC CDS Syllabus and Exam Pattern | defence | exam | D | cds syllabus | Summarise CDS papers by academy from the notice | NOTICE | P2
+upsc-nda-syllabus | UPSC NDA Syllabus and Exam Pattern | defence | exam | D | nda syllabus | Summarise the Mathematics and GAT papers from the notice | NOTICE | P2
+upsc-capf-ac-syllabus | UPSC CAPF Assistant Commandant Syllabus | defence | exam | D U | capf ac syllabus | Summarise Papers I and II from the notice | NOTICE | P3
+afcat-syllabus | AFCAT Syllabus and Exam Pattern | defence | exam | D | afcat syllabus | Summarise AFCAT's paper and EKT from the IAF notice | NOTICE | P3
+uppsc-pcs-syllabus | UPPSC PCS Syllabus and Exam Pattern | state-psc | exam | P | uppsc pcs syllabus | Summarise the current UPPSC PCS scheme from its notice | NOTICE | P1
+bpsc-cce-syllabus | BPSC CCE Syllabus and Exam Pattern | state-psc | exam | P | bpsc syllabus | Summarise the current BPSC scheme from its notice | NOTICE | P1
+mppsc-state-service-syllabus | MPPSC State Service Syllabus | state-psc | exam | P | mppsc syllabus | Summarise the current MPPSC scheme from its notice | NOTICE | P2
+rpsc-ras-syllabus | RPSC RAS Syllabus and Exam Pattern | state-psc | exam | P | ras syllabus | Summarise the current RAS scheme from its notice | NOTICE | P2
+tnpsc-group-1-syllabus | TNPSC Group I Syllabus | state-psc | exam | P | tnpsc group 1 syllabus | Summarise the Group I scheme from the TNPSC notice | NOTICE | P2
+tnpsc-group-4-syllabus | TNPSC Group IV Syllabus | state-psc | exam | P | tnpsc group 4 syllabus | Summarise the Group IV scheme from the TNPSC notice | NOTICE | P2
+kpsc-kas-syllabus | KPSC KAS Syllabus | state-psc | exam | P | kas syllabus | Summarise the KAS scheme from the KPSC notice | NOTICE | P3
+mpsc-rajyaseva-syllabus | MPSC Rajyaseva Syllabus | state-psc | exam | P | mpsc rajyaseva syllabus | Summarise the MPSC State Services scheme from its notice | NOTICE | P2
+wbcs-syllabus | WBCS Syllabus and Exam Pattern | state-psc | exam | P | wbcs syllabus | Summarise the WBCS scheme from the WBPSC notice | NOTICE | P3
+appsc-group-1-syllabus | APPSC Group 1 Syllabus | state-psc | exam | P | appsc group 1 syllabus | Summarise the APPSC Group 1 scheme from its notice | NOTICE | P3
+tgpsc-group-1-syllabus | TGPSC Group 1 Syllabus | state-psc | exam | P | tspsc group 1 syllabus | Summarise the TGPSC Group 1 scheme from its notice | NOTICE | P3
+opsc-oas-syllabus | OPSC OCS Syllabus | state-psc | exam | P | opsc syllabus | Summarise the OPSC Civil Services scheme from its notice | NOTICE | P3
+hpsc-hcs-syllabus | HPSC HCS Syllabus | state-psc | exam | P | hcs syllabus | Summarise the HCS scheme from the HPSC notice | NOTICE | P3
+uksssc-and-ukpsc-pcs-syllabus | UKPSC PCS Syllabus | state-psc | exam | P | ukpsc pcs syllabus | Summarise the UKPSC PCS scheme from its notice | NOTICE | P3
+cgpsc-syllabus | CGPSC State Service Syllabus | state-psc | exam | P | cgpsc syllabus | Summarise the CGPSC scheme from its notice | NOTICE | P3
+jpsc-syllabus | JPSC Civil Services Syllabus | state-psc | exam | P | jpsc syllabus | Summarise the JPSC scheme from its notice | NOTICE | P3
+gpsc-class-1-2-syllabus | GPSC Class 1 and 2 Syllabus | state-psc | exam | P | gpsc syllabus | Summarise the GPSC scheme from its notice | NOTICE | P3
+state-psc-comparison | State PSC Exams Compared: Stages and Papers | state-psc | exam | P | state psc exam pattern comparison | Compare stages and paper counts across major PSCs, each cited | NOTICE | P2
+upsc-vs-ssc-cgl-syllabus-overlap | UPSC vs SSC CGL Syllabus Overlap | upsc | exam | U S | upsc and ssc cgl common syllabus | Map overlapping syllabus lines from both official notices | NOTICE | P3
+bank-po-vs-clerk | Bank PO vs Clerk: Role, Exam and Pay from Official Notices | banking-exams | exam | B | difference between bank po and clerk | Compare the two roles using official notice data | NOTICE | P3
+rrb-ntpc-vs-ssc-chsl | RRB NTPC vs SSC CHSL | railway | exam | R S | rrb ntpc vs ssc chsl | Compare eligibility, stages and posts from official notices | NOTICE | P3
+how-to-read-an-exam-notification | How to Read a Government Exam Notification | general | guide | U S B R P | how to read exam notification | Find eligibility, dates, scheme and fee in any notice | NOTICE | P2
+category-certificates-for-exams | OBC-NCL, EWS and Other Certificates for Exams | general | guide | U S B R P | obc ncl certificate format for central jobs | Explain which certificates are needed and their validity rules from DoPT orders | DOPT | P2
+age-relaxation-rules-central-exams | Age Relaxation Rules for Central Government Exams | general | revision | U S B R | age relaxation for obc sc st | Tabulate relaxations by category from DoPT and notices | DOPT+NOTICE | P2
+pwbd-scribe-rules | Scribe and Compensatory Time Rules for PwBD Candidates | general | guide | U S B R P | scribe rules for pwbd candidates | Explain the scribe and compensatory time rules from the official guidelines | DOEPWD+NOTICE | P2
+ssc-cgl-tier-1-score-calculator | SSC CGL Tier-I Score Calculator | ssc | method | S | ssc cgl marks calculator | Compute Tier-I raw score with the −0.50 penalty | NOTICE+ORIG | P2
+ibps-calendar-2026-27 | IBPS Calendar 2026-27 (Tentative) | banking-exams | exam | B | ibps calendar 2026 | Reproduce the official tentative calendar with a link and update log | NOTICE | P2
+rrb-calendar-2026 | RRB Indicative Calendar | railway | exam | R | rrb exam calendar 2026 | Reproduce the official indicative calendar with a link | NOTICE | P3

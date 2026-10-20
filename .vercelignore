@@ -1,0 +1,9 @@
+# Not part of the live site: content pipeline (drafts, noindex previews, state),
+# tooling, tests and planning documents.
+/content
+/scripts
+/tests
+/search console
+/*.md
+/CONTENT_MASTER_PLAN.csv
+/content_inventory.json

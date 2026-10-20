@@ -1,0 +1,104 @@
+# slug | title | subtopic | type | exams | primary search query | unique learning outcome | sources | priority
+# Economy, Banking and General Science. Parent notes live in study/economy/ and study/science-tech/.
+gdp-gnp-nnp-differences | GDP vs GNP vs NNP vs NDP | national-income | guide | U S B R P | difference between gdp and gnp | Derive each aggregate from GDP and explain factor cost vs market price | MOSPI+NCERT | P1
+real-vs-nominal-gdp-and-deflator | Real vs Nominal GDP and the GDP Deflator | national-income | method | U S B | gdp deflator formula | Compute real GDP and the deflator from nominal data | MOSPI+NCERT | P1
+gdp-calculation-methods | Three Methods of Measuring National Income | national-income | guide | U S B | methods of calculating national income | Compare the production, income and expenditure methods | NCERT+MOSPI | P2
+types-of-inflation | Types of Inflation: Demand-Pull, Cost-Push and More | inflation | guide | U S B R P | types of inflation | Distinguish inflation types, stagflation and deflation | NCERT+RBI | P1
+cpi-vs-wpi | CPI vs WPI: How Inflation Is Measured in India | inflation | guide | U S B | difference between cpi and wpi | Compare the indices by publisher, base year and basket | MOSPI+DPIIT | P1
+monetary-policy-instruments | Quantitative vs Qualitative Monetary Policy Tools | banking | guide | U S B | quantitative and qualitative credit control | Classify RBI's tools and explain how each works | RBI | P1
+repo-reverse-repo-sdf-msf | Repo, Reverse Repo, SDF and MSF Explained | banking | guide | U S B | difference between repo and reverse repo | Explain the policy corridor and current rates from rbi.org.in | RBI | P1
+crr-vs-slr | CRR vs SLR: Differences and Current Rates | banking | guide | U S B | difference between crr and slr | Compare the two reserve ratios by form, interest and legal basis | RBI | P1
+money-supply-measures | Money Supply in India: M0, M1, M2, M3 | banking | guide | U S B | m1 m2 m3 m4 money supply | Define each measure and the RBI's current classification | RBI | P2
+types-of-banks-in-india | Types of Banks in India: Scheduled to Payments Banks | banking | revision | U S B | types of banks in india | Classify banks by licence and regulator, including SFBs and payments banks | RBI | P1
+basel-norms | Basel I, II and III Norms | banking | guide | U B | basel 3 norms | Explain capital adequacy, the three pillars and India's requirements | RBI+BASEL | P2
+npa-classification | NPA Classification: Substandard, Doubtful and Loss | banking | guide | U B | npa classification 90 days | Classify NPAs by age and explain provisioning | RBI | P1
+insolvency-and-bankruptcy-code | Insolvency and Bankruptcy Code 2016 | banking | guide | U B | ibc resolution process timeline | Explain the CIRP process, the NCLT and IBBI roles and timelines | ACT+IBBI | P2
+money-market-vs-capital-market | Money Market vs Capital Market Instruments | financial-markets | revision | U S B | money market instruments list | Classify instruments like T-bills, CPs and CDs and their maturities | RBI+SEBI | P1
+primary-vs-secondary-market | Primary vs Secondary Market and IPOs | financial-markets | guide | U B | primary and secondary market difference | Explain how IPOs, FPOs and exchanges work | SEBI | P2
+sebi-functions | SEBI: Structure and Functions | financial-markets | guide | U S B | functions of sebi | Explain SEBI's powers under the 1992 Act | ACT+SEBI | P2
+fiscal-revenue-primary-deficit | Fiscal, Revenue and Primary Deficit Formulas | public-finance | method | U S B | fiscal deficit formula | Compute each deficit from budget figures | MOF | P1
+frbm-act | FRBM Act 2003 and Fiscal Targets | public-finance | guide | U B | frbm act targets | Explain the FRBM framework and current fiscal targets from the Budget | ACT+MOF | P2
+budget-capital-vs-revenue | Capital vs Revenue Receipts and Expenditure | public-finance | guide | U S B | capital receipts vs revenue receipts | Classify budget items with examples | MOF+NCERT | P1
+current-account-deficit | Current Account Deficit: Meaning and India's Data | external-sector | guide | U B | current account deficit meaning | Explain the current account components and read RBI BoP data | RBI | P2
+exchange-rate-systems | Exchange Rate Systems: Appreciation, Depreciation, Devaluation | external-sector | guide | U S B | devaluation vs depreciation | Distinguish exchange rate terms and India's managed float | RBI | P2
+wto-agreements | WTO Agreements: AoA, TRIPS and Green-Amber-Blue Boxes | external-sector | guide | U | amber box green box blue box | Explain the agriculture boxes and other key WTO agreements | WTO | P2
+five-year-plans-list | Five-Year Plans of India: Focus and Outcomes | planning | revision | U S B R P | five year plans of india list | Recall each plan's period, model and focus | NITI+NCERT | P1
+poverty-estimation-in-india | Poverty Estimation: Committees and the MPI | development | guide | U S B | poverty estimation committees in india | Compare poverty lines from Lakdawala to Rangarajan and the NITI MPI | NITI+NCERT | P2
+unemployment-types-plfs | Types of Unemployment and the PLFS | development | guide | U S B | types of unemployment | Define unemployment types and read the PLFS measures | MOSPI | P2
+hdi-and-india | Human Development Index and India's Rank | development | guide | U S B | hdi components | Explain HDI components and India's latest rank from the UNDP report | UNDP | P2
+msp-and-agricultural-marketing | MSP, APMC and Agricultural Marketing | agriculture | guide | U S B | how msp is calculated a2 fl c2 | Explain cost concepts A2, A2+FL and C2, and the CACP's role | CACP+MOA | P1
+revolutions-in-agriculture | Green, White, Blue and Other Revolutions | agriculture | revision | U S B R P | revolutions in india list | Match each revolution to its sector and father | NCERT | P1
+land-reforms-india | Land Reforms in India | agriculture | guide | U P | land reforms in india | Explain zamindari abolition, tenancy reform and ceilings | NCERT | P3
+msme-definition | MSME Definition: Investment and Turnover Limits | industry | guide | U S B | msme classification limit | State the current investment and turnover thresholds from the latest notification | GAZ+MSME | P1
+payment-systems-in-india | Payment and Settlement Systems in India | banking | guide | B | payment systems in india rbi | Explain NPCI, RBI-run systems and the PSS Act 2007 | RBI+NPCI | P2
+rbi-integrated-ombudsman | RBI Integrated Ombudsman Scheme | banking | guide | B | rbi ombudsman scheme 2021 | Explain who it covers and how to file a complaint | RBI | P2
+dicgc-deposit-insurance | Deposit Insurance (DICGC): ₹5 Lakh Cover | banking | guide | B S | dicgc deposit insurance limit | Explain what DICGC covers, the limit and payout timeline | DICGC | P2
+priority-sector-lending | Priority Sector Lending Targets | banking | guide | B U | priority sector lending targets | List the PSL categories and targets from the RBI master direction | RBI | P1
+negotiable-instruments-and-cheques | Cheques and Negotiable Instruments: Types and Rules | banking | revision | B | types of cheques | Explain cheque types, crossing and the NI Act's Section 138 | ACT+RBI | P1
+kyc-and-aml | KYC and Anti-Money Laundering Rules | banking | guide | B | kyc norms rbi | Explain KYC requirements and the PMLA framework | RBI+ACT | P2
+economic-reports-and-publishers | Economic Reports and Their Publishers | development | revision | U S B | reports and indices published by | Match key reports and indices to their publishers | ORIG | P1
+economy-mcqs | Indian Economy MCQs with Explanations | national-income | mcq | U S B | indian economy mcq | Practise 30 original economy questions | NCERT+RBI | P2
+banking-awareness-mcqs | Banking Awareness MCQs with Explanations | banking | mcq | B | banking awareness questions | Practise 30 original banking questions | RBI | P1
+si-units-list | SI Units and Derived Units | physics | revision | S R | si units list | Recall base and derived SI units and their symbols | BIPM+NCERT | P1
+laws-of-motion | Newton's Laws of Motion with Everyday Examples | physics | guide | S R | newton's laws of motion examples | Apply the three laws to everyday situations | NCERT | P1
+gravitation | Gravitation: g, Escape Velocity and Satellites | physics | guide | S R | escape velocity of earth | Explain the variation of g and escape and orbital velocity | NCERT | P2
+work-energy-power | Work, Energy and Power | physics | guide | S R | work energy power formula | Apply the work, energy and power formulas | NCERT | P2
+sound-waves | Sound: Properties, Speed and Doppler Effect | physics | guide | S R | speed of sound in different media | Explain sound properties and the frequency ranges | NCERT | P2
+light-mirrors-and-lenses | Light: Reflection, Refraction, Mirrors and Lenses | physics | guide | S R | concave and convex mirror uses | Explain mirror and lens types and their uses | NCERT | P1
+human-eye-defects | Human Eye Defects and Their Correction | physics | revision | S R | myopia hypermetropia correction | Match each defect to its cause and corrective lens | NCERT | P1
+electricity-ohms-law | Electricity: Ohm's Law, Resistance and Circuits | physics | method | S R | series and parallel resistance formula | Compute resistance, current and power in circuits | NCERT | P1
+magnetism-and-em-induction | Magnetism and Electromagnetic Induction | physics | guide | S R | electromagnetic induction applications | Explain magnetic effects and induction with devices | NCERT | P3
+heat-and-thermodynamics | Heat, Temperature Scales and Transfer | physics | guide | S R | celsius to fahrenheit formula | Convert scales and explain conduction, convection and radiation | NCERT | P2
+atomic-structure | Atomic Structure: Models and Subatomic Particles | chemistry | guide | S R | atomic models thomson rutherford bohr | Compare atomic models and particle discoveries | NCERT | P2
+periodic-table-trends | Periodic Table: Groups, Periods and Trends | chemistry | guide | S R | periodic table trends | Explain trends in size, valency and metallic character | NCERT | P2
+types-of-chemical-reactions | Types of Chemical Reactions with Examples | chemistry | guide | S R | types of chemical reactions | Classify reactions with everyday examples | NCERT | P2
+acids-bases-ph | Acids, Bases and the pH Scale | chemistry | revision | S R | ph value of common substances | Recall pH of common substances and indicators | NCERT | P1
+metals-non-metals-alloys | Metals, Non-Metals and Alloys | chemistry | revision | S R | alloys and their composition | Recall alloy compositions and metal properties | NCERT | P1
+carbon-compounds | Carbon and Its Compounds | chemistry | guide | S R | allotropes of carbon | Explain allotropes, hydrocarbons and functional groups | NCERT | P3
+chemical-names-of-compounds | Common Names and Formulas of Chemical Compounds | chemistry | revision | S R | common names of chemical compounds | Recall common names and formulas | NCERT | P1
+digestive-system | Human Digestive System and Enzymes | biology | guide | S R | digestive enzymes and their functions | Match enzymes to organ, substrate and product | NCERT | P1
+circulatory-system-blood-groups | Circulatory System and Blood Groups | biology | guide | S R | blood groups universal donor | Explain the heart, blood components and ABO and Rh groups | NCERT | P1
+respiratory-and-excretory-system | Respiratory and Excretory Systems | biology | guide | S R | human excretory system | Explain breathing, gas exchange and kidney function | NCERT | P2
+endocrine-glands-and-hormones | Endocrine Glands and Hormones | biology | revision | S R | endocrine glands and hormones table | Match glands to hormones and disorders | NCERT | P1
+diseases-and-pathogens | Diseases Caused by Bacteria, Viruses, Protozoa and Fungi | biology | revision | S R | diseases caused by bacteria and viruses | Classify diseases by pathogen | NCERT+WHO | P1
+plant-hormones | Plant Hormones and Their Functions | biology | revision | S R | plant hormones functions | Match plant hormones to their effects | NCERT | P2
+mitosis-vs-meiosis | Mitosis vs Meiosis | biology | guide | S R | difference between mitosis and meiosis | Compare the two divisions stage by stage | NCERT | P2
+dna-vs-rna | DNA vs RNA | biology | guide | S R | difference between dna and rna | Compare structure, sugar, bases and function | NCERT | P2
+five-kingdom-classification | Five-Kingdom Classification | biology | guide | S R | five kingdom classification | Explain Whittaker's kingdoms with examples | NCERT | P2
+animal-kingdom-classification | Animal Kingdom: Phyla with Examples | biology | revision | S R | animal kingdom classification | Match phyla to features and examples | NCERT | P3
+types-of-satellite-orbits | Satellite Orbits: LEO, MEO, GEO and Sun-Synchronous | space | guide | U S | types of orbits geostationary | Compare orbits by height, period and use | ISRO | P1
+navic-navigation-system | NavIC: India's Regional Navigation System | space | guide | U S | navic satellites | Explain NavIC's constellation, coverage and the latest launches | ISRO | P2
+missiles-of-india | Missiles of India: Agni, Prithvi, BrahMos and More | defence | revision | U S R | missiles of india list | Classify missiles by type and range from DRDO data | DRDO | P1
+three-stage-nuclear-programme | India's Three-Stage Nuclear Programme | energy | guide | U | three stage nuclear power programme | Explain each stage, its fuel and current status | DAE | P2
+general-science-mcqs-physics | Physics MCQs for General Science | physics | mcq | S R | physics questions for ssc | Practise 30 original physics questions | NCERT | P2
+general-science-mcqs-chemistry | Chemistry MCQs for General Science | chemistry | mcq | S R | chemistry questions for ssc | Practise 30 original chemistry questions | NCERT | P2
+general-science-mcqs-biology | Biology MCQs for General Science | biology | mcq | S R | biology questions for ssc | Practise 30 original biology questions | NCERT | P2
+inventions-and-inventors | Inventions and Inventors List | physics | revision | S R | inventions and inventors | Match inventions to inventors and years | ORIG | P2
+scientific-instruments | Scientific Instruments and Their Uses | physics | revision | S R | scientific instruments and uses | Match instruments to what they measure | NCERT | P2
+nutrition-vitamins-minerals | Vitamins and Minerals: Sources and Deficiency Diseases | biology | revision | S R | vitamins deficiency diseases table | Match vitamins and minerals to sources and deficiencies | NCERT+ICMR | P1
+human-skeleton-and-muscles | Human Skeletal System Facts | biology | revision | S R | number of bones in human body | Recall skeletal facts asked in exams | NCERT | P3
+nervous-system | Human Nervous System: Brain Parts and Functions | biology | guide | S R | parts of brain and functions | Match brain parts to functions | NCERT | P2
+photosynthesis-and-respiration-in-plants | Photosynthesis and Respiration in Plants | biology | guide | S R | photosynthesis equation | Explain light and dark reactions and plant respiration | NCERT | P3
+genetics-mendels-laws | Mendel's Laws and Inheritance Ratios | biology | method | S R | mendel monohybrid ratio | Work out monohybrid and dihybrid ratios | NCERT | P3
+biotechnology-applications | Biotechnology: GM Crops, Vaccines and CRISPR | biology | guide | U S | applications of biotechnology | Explain applications and India's regulatory framework | NCERT+DBT | P3
+vaccines-and-immunity | Immunity and Vaccines | biology | guide | S R | types of immunity | Explain innate and acquired immunity and vaccine types | NCERT+WHO | P3
+renewable-energy-india | Renewable Energy in India: Targets and Capacity | energy | guide | U S B | renewable energy capacity india | Explain targets and installed capacity from MNRE data | MNRE | P2
+isro-missions-timeline | ISRO Missions Timeline | space | revision | U S R | isro missions list | Order major ISRO missions with launch vehicle and purpose | ISRO | P1
+defence-exercises-of-india | Military Exercises of India with Other Countries | defence | revision | U S R | india military exercises list | Match exercises to partner country and service | PIB+MOD | P2
+economic-survey-concepts | Key Terms from the Economic Survey | development | revision | U B | economic survey important terms | Explain recurring Economic Survey concepts | MOF | P3
+gst-structure-and-rates | GST Structure: CGST, SGST, IGST and Rate Slabs | public-finance | guide | U S B | gst rates slab current | Explain GST components and the current slabs from the GST Council | GSTC | P1
+direct-tax-concepts | Direct Taxes: Income Tax, Corporate Tax and Cess | public-finance | guide | U S B | direct tax examples | Explain direct taxes and cess and surcharge | CBDT | P3
+rbi-functions | Functions of the RBI | banking | guide | U S B | functions of rbi | Explain the RBI's roles as issuer, regulator and banker | RBI | P1
+nabard-sidbi-exim-nhb | Development Financial Institutions: NABARD, SIDBI, EXIM, NHB | banking | revision | B | nabard sidbi functions | Match DFIs to their founding year and role | RBI | P2
+microfinance-and-shgs | Microfinance, SHGs and JLGs | banking | guide | B | self help group bank linkage | Explain SHG-bank linkage and NABARD's role | NABARD | P3
+inflation-targeting-and-mpc | Inflation Targeting and the Monetary Policy Committee | inflation | guide | U B | inflation targeting india | Explain the 4% ±2% target and how the MPC votes | RBI+ACT | P2
+indian-banking-history | History of Banking in India: Nationalisation to Mergers | banking | revision | B | bank nationalisation 1969 1980 | Order key events from 1969 to the 2020 mergers | RBI | P2
+science-and-tech-mcqs | Science and Technology MCQs | space | mcq | U S | science and technology mcq | Practise 30 original questions on space, defence and emerging tech | ISRO+DRDO | P2
+fiscal-vs-monetary-policy | Fiscal Policy vs Monetary Policy | public-finance | guide | U S B | difference between fiscal and monetary policy | Compare tools, authority and goals | RBI+MOF | P1
+phillips-and-laffer-curves | Phillips Curve and Laffer Curve | inflation | guide | U | phillips curve | Explain both curves and their policy use | NCERT | P3
+cooperative-banks | Urban and Rural Cooperative Banks | banking | guide | B | cooperative banks structure | Explain the structure and dual regulation of cooperative banks | RBI | P2
+regional-rural-banks | Regional Rural Banks | banking | guide | B | regional rural banks shareholding | Explain RRBs' shareholding, sponsors and amalgamation | RBI+NABARD | P2
+forex-reserves | Foreign Exchange Reserves: Composition and Data | external-sector | guide | U B | forex reserves composition | Explain components from the RBI weekly statistical supplement | RBI | P3
+balance-of-trade-vs-payments | Balance of Trade vs Balance of Payments | external-sector | guide | U S B | balance of trade vs balance of payments | Distinguish the two with India's data | RBI | P2
+density-buoyancy-archimedes | Density, Buoyancy and Archimedes' Principle | physics | guide | S R | archimedes principle examples | Explain floating and sinking with examples | NCERT | P3
+radioactivity-fission-fusion | Radioactivity, Nuclear Fission and Fusion | physics | guide | S R | nuclear fission and fusion difference | Compare alpha, beta and gamma and fission and fusion | NCERT | P3

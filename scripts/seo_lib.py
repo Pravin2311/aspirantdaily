@@ -9,7 +9,7 @@ from bs4 import BeautifulSoup
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 HOST = "https://www.aspirantdaily.com"
-SKIP_DIRS = {".git", ".vscode", "node_modules", "scripts", "search console"}
+SKIP_DIRS = {".git", ".vscode", "node_modules", "scripts", "search console", "content", "tests"}
 
 
 def html_pages():

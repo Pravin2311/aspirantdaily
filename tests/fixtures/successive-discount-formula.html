@@ -1,0 +1,121 @@
+<script type="application/json" id="draft-meta">
+{
+  "id": "successive-discount-formula",
+  "title": "Successive Discount Formula and Equivalent Discount",
+  "h1": "Successive Discount Formula: Turning Two or Three Discounts into One",
+  "description": "Convert successive discounts into one equivalent discount with a + b − ab/100, extend it to three discounts and compare shop offers. Worked examples and 6 MCQs.",
+  "subtitle": "Equivalent discount • Three discounts • Finding the second discount • Comparing offers",
+  "page_type": "method",
+  "exams": ["SSC", "Banking", "Railway"],
+  "primary_query": "successive discount formula",
+  "keywords": ["successive discount formula", "equivalent single discount", "two successive discounts", "discount on discount problems"],
+  "learning_outcome": "Convert two or three successive discounts into one equivalent discount and compare offers",
+  "sources": [],
+  "claims": [],
+  "checks": [
+    {"id": "c1", "expr": "20 + 10 - 20*10/100", "expect": 28},
+    {"id": "c2", "expr": "100 - 100*0.9*0.8*0.7", "expect": 49.6},
+    {"id": "c3", "expr": "2500*0.8*0.85", "expect": 1700},
+    {"id": "c4", "expr": "4000*0.30 - 4000*(1 - 0.8*0.9)", "expect": 80},
+    {"id": "c5", "expr": "100 - 100*(0.6/0.75)", "expect": 20},
+    {"id": "c6", "expr": "1530/(0.85*0.9)", "expect": 2000},
+    {"id": "c7", "expr": "100*1.4*0.75 - 100", "expect": 5},
+    {"id": "m1", "expr": "25 + 20 - 25*20/100", "expect": 40},
+    {"id": "m2", "expr": "1200*0.9*0.95", "expect": 1026},
+    {"id": "m3", "expr": "100 - 100*0.9**3", "expect": 27.1},
+    {"id": "m4", "expr": "1368/(0.8*0.95)", "expect": 1800},
+    {"id": "m5", "expr": "30 - 20 - 30*20/100", "expect": 4},
+    {"id": "m6", "expr": "100 - 100*0.54/0.9", "expect": 40}
+  ],
+  "mcqs": [
+    {"q": "What single discount is equivalent to successive discounts of 25% and 20%?", "options": ["45%", "40%", "42.5%", "35%"], "answer": 1, "explanation": "Using a + b − ab/100: 25 + 20 − (25 × 20)/100 = 45 − 5 = 40%. Adding the two (45%) overstates the discount.", "difficulty": "easy", "topic": "two discounts", "check": "m1"},
+    {"q": "An article marked at ₹1,200 is sold after successive discounts of 10% and 5%. What is the selling price?", "options": ["₹1,020", "₹1,080", "₹1,032", "₹1,026"], "answer": 3, "explanation": "Multiply by the retention factors: 1,200 × 0.90 × 0.95 = 1,080 × 0.95 = ₹1,026.", "difficulty": "easy", "topic": "selling price", "check": "m2"},
+    {"q": "Three successive discounts of 10% each are equivalent to a single discount of:", "options": ["27.1%", "30%", "27%", "28.1%"], "answer": 0, "explanation": "The price kept is 0.9 × 0.9 × 0.9 = 0.729 of the marked price, so the discount is 1 − 0.729 = 27.1%.", "difficulty": "medium", "topic": "three discounts", "check": "m3"},
+    {"q": "After successive discounts of 20% and 5%, a shirt sells for ₹1,368. What is its marked price?", "options": ["₹1,710", "₹1,750", "₹1,800", "₹1,900"], "answer": 2, "explanation": "Selling price = MP × 0.8 × 0.95 = 0.76 MP, so MP = 1,368 ÷ 0.76 = ₹1,800.", "difficulty": "medium", "topic": "marked price", "check": "m4"},
+    {"q": "A price is raised by 30% and the new price is then discounted by 20%. What is the net change in price?", "options": ["10% increase", "4% increase", "4% decrease", "6% increase"], "answer": 1, "explanation": "Treat the rise as +30 and the discount as −20: 30 − 20 + (30 × −20)/100 = 10 − 6 = +4%, an increase.", "difficulty": "medium", "topic": "rise then discount", "check": "m5"},
+    {"q": "Two successive discounts are equivalent to a single discount of 46%. If the first is 10%, what is the second?", "options": ["36%", "38%", "35%", "40%"], "answer": 3, "explanation": "The price kept is 0.54 = 0.90 × x, so x = 0.6 and the second discount is 1 − 0.6 = 40%.", "difficulty": "hard", "topic": "missing discount", "check": "m6"}
+  ],
+  "faq": [
+    {"q": "Why can't I simply add two successive discounts?", "a": "The second discount is taken on a price that is already reduced, so it removes less money than the same percentage of the marked price. The overlap is ab/100, which is why the equivalent discount is a + b − ab/100 rather than a + b."},
+    {"q": "Does the order of successive discounts matter?", "a": "No. Each discount multiplies the price by a factor such as 0.8 or 0.9, and multiplication gives the same result in any order. A 20% then 10% discount and a 10% then 20% discount both leave 72% of the marked price."}
+  ],
+  "drafted_by": "Claude (Anthropic AI model)",
+  "notes_for_reviewer": "All numbers are original and recomputed by the checks block. Please read for clarity and confirm the examples suit SSC/bank level."
+}
+</script>
+
+<section data-heading="What a Successive Discount Means">
+<p>A successive discount is a chain of reductions where each new percentage is applied to the price left after the previous one. A shop that advertises "20% off, plus an extra 10% at the counter" does not give 30% off the tag price. It first cuts the tag price by 20%, and then takes 10% off what remains.</p>
+<p>Exam questions test whether you can turn such a chain into one <strong>equivalent single discount</strong>, work backwards to the marked price, or choose the better of two offers. All three tasks become quick once you think of each discount as a <em>multiplier</em> rather than an amount to subtract.</p>
+<p>A discount of r% leaves (100 − r)% of the price, so the price is multiplied by (1 − r/100). A 20% discount multiplies by 0.80; a 15% discount multiplies by 0.85; a 5% discount multiplies by 0.95. A chain of discounts is simply a product of these multipliers.</p>
+</section>
+
+<section data-heading="The Two-Discount Formula and Where It Comes From">
+<p>For two discounts of a% and b%, the price kept is (1 − a/100)(1 − b/100). Expanding the brackets gives 1 − a/100 − b/100 + ab/10,000. The fraction removed is therefore a/100 + b/100 − ab/10,000, which, written as a percentage, is:</p>
+<div class="highlight-box"><p><strong>Equivalent discount = a + b − ab/100</strong></p></div>
+<p>The term ab/100 is the part of the second discount that would have been charged on money already removed by the first. Subtracting it corrects the double-counting. Because the formula is symmetric in a and b, the order of the two discounts never changes the answer.</p>
+<div class="case-study" data-check="c1">
+<h4>Worked example 1: 20% and 10%</h4>
+<p>Equivalent discount = 20 + 10 − (20 × 10)/100 = 30 − 2 = <strong>28%</strong>. Check with multipliers: 0.8 × 0.9 = 0.72, so 72% of the price is kept and 28% is removed.</p>
+</div>
+<p>The same formula handles price rises if you write an increase as a negative discount, or more simply use the general rule for successive percentage changes: x + y + xy/100, where an increase is positive and a decrease is negative. A 30% rise followed by a 20% cut is 30 − 20 − 6 = a 4% net rise.</p>
+</section>
+
+<section data-heading="Three or More Discounts">
+<p>With three discounts the expanded formula becomes long, so use the multiplier method directly. Multiply the three retention factors, then subtract the product from 1.</p>
+<div class="case-study" data-check="c2">
+<h4>Worked example 2: 10%, 20% and 30%</h4>
+<p>Price kept = 0.9 × 0.8 × 0.7 = 0.504. The equivalent single discount is 1 − 0.504 = <strong>49.6%</strong>, well short of the 60% you would get by adding.</p>
+</div>
+<p>A useful shortcut is to apply the two-discount formula twice. Combine 10% and 20% into 28%, then combine 28% and 30%: 28 + 30 − (28 × 30)/100 = 58 − 8.4 = 49.6%. Both routes agree, and the second one is easier to do in your head when the numbers are round.</p>
+</section>
+
+<section data-heading="Working Backwards: Marked Price and a Missing Discount">
+<p>When the selling price is given, divide by the product of the multipliers instead of multiplying.</p>
+<div class="case-study" data-check="c6">
+<h4>Worked example 3: finding the marked price</h4>
+<p>A bag sells for ₹1,530 after discounts of 15% and 10%. The price kept is 0.85 × 0.9 = 0.765 of the marked price, so the marked price is 1,530 ÷ 0.765 = <strong>₹2,000</strong>.</p>
+</div>
+<div class="case-study" data-check="c3">
+<h4>Worked example 4: finding the selling price</h4>
+<p>A jacket marked ₹2,500 carries discounts of 20% and 15%. Selling price = 2,500 × 0.8 × 0.85 = 2,000 × 0.85 = <strong>₹1,700</strong>.</p>
+</div>
+<p>To find a missing discount, divide the overall retention factor by the known one. If the overall discount is 40% and the first discount is 25%, the second multiplier is 0.60 ÷ 0.75 = 0.80, so the second discount is 20%.</p>
+<div class="case-study" data-check="c5">
+<h4>Worked example 5: the missing second discount</h4>
+<p>Overall discount 40%, first discount 25%. Second multiplier = 0.6 ÷ 0.75 = 0.8, so the second discount is <strong>20%</strong>.</p>
+</div>
+</section>
+
+<section data-heading="Comparing Offers and Linking to Profit">
+<p>Comparing a flat discount with a chain is a common question. Convert the chain to its equivalent single discount and compare the two percentages; the larger one is better for the buyer. To express the difference in rupees, multiply the gap in percentage points by the marked price.</p>
+<div class="case-study" data-check="c4">
+<h4>Worked example 6: flat 30% or 20% + 10%?</h4>
+<p>On a ₹4,000 item, the chain 20% + 10% is a 28% discount (₹1,120 off), while a flat 30% is ₹1,200 off. The flat offer saves the buyer <strong>₹80</strong> more.</p>
+</div>
+<p>Discount questions often combine with mark-up. If a trader marks goods 40% above cost and then allows a 25% discount, the selling price is 1.4 × 0.75 = 1.05 times the cost, a 5% profit. The same multiplier chain works for any sequence of mark-ups and discounts.</p>
+<div class="case-study" data-check="c7">
+<h4>Worked example 7: mark-up then discount</h4>
+<p>Cost ₹100 → marked ₹140 → after 25% discount ₹105. Profit = <strong>5%</strong>.</p>
+</div>
+</section>
+
+<section data-heading="Common Traps and a Quick Revision Table">
+<ul class="warning-list">
+<li>✘ Adding the discounts. Two 50% discounts leave 25% of the price, not zero.</li>
+<li>✘ Applying the second discount to the marked price instead of the reduced price.</li>
+<li>✘ Dividing by the wrong factor when working backwards. Use the product of all retention factors.</li>
+<li>✘ Treating "buy 3, get 1 free" as 33⅓% off. You pay for 3 items and receive 4, so the discount is 1/4 = 25% of the total value.</li>
+</ul>
+<div class="table-wrap"><table class="data-table">
+<thead><tr><th>Discounts</th><th>Price kept</th><th>Equivalent discount</th></tr></thead>
+<tbody>
+<tr><td>10% + 10%</td><td>0.81</td><td>19%</td></tr>
+<tr><td>20% + 10%</td><td>0.72</td><td>28%</td></tr>
+<tr><td>20% + 20%</td><td>0.64</td><td>36%</td></tr>
+<tr><td>25% + 20%</td><td>0.60</td><td>40%</td></tr>
+<tr><td>30% + 20%</td><td>0.56</td><td>44%</td></tr>
+<tr><td>10% + 20% + 30%</td><td>0.504</td><td>49.6%</td></tr>
+</tbody></table></div>
+<p>For more percentage tools, see the <a href="../../repeated-questions/quant-cheat-code.html">Quant cheat code</a> and the page on <a href="product-constancy-price-and-consumption.html">price rise and consumption cut</a>, which uses the same multiplier idea in reverse.</p>
+</section>

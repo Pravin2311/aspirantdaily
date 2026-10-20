@@ -1,0 +1,151 @@
+# slug | title | subtopic | type | exams | primary search query | unique learning outcome | sources | priority
+# Quantitative Aptitude. New hub: study/quant/. Every numeric answer must carry an automated computation check (ORIG).
+divisibility-rules | Divisibility Rules from 2 to 19 with Examples | number-system | method | S B R | divisibility rules 7 11 13 | Test divisibility by any number up to 19, including the osculator method for 7, 13, 17 and 19 | ORIG+NCERT | P1
+hcf-and-lcm-word-problems | HCF and LCM Word Problems: When to Use Which | number-system | method | S B R | hcf and lcm word problems | Decide whether a word problem needs HCF or LCM and solve bells, tiles and remainder types | ORIG | P1
+hcf-lcm-of-fractions | HCF and LCM of Fractions and Decimals | number-system | method | S R | hcf and lcm of fractions formula | Apply the numerator and denominator rules for fractions and convert decimals | ORIG | P2
+unit-digit-of-powers | Unit Digit of Powers: Cyclicity Method | number-system | method | S B R | unit digit of power cyclicity | Find the unit digit of any power using the cyclicity of 2, 3, 7 and 8 | ORIG | P1
+remainder-problems | Remainder Problems: Negative Remainders and Cyclicity | number-system | method | S B | remainder when divided by tricks | Find remainders of large powers and products using negative remainders and cyclicity | ORIG | P1
+number-of-factors | Number of Factors, Sum of Factors and Even Factors | number-system | method | S B | number of factors formula | Count total, even, odd and perfect-square factors from the prime factorisation | ORIG | P1
+trailing-zeros-in-factorial | Trailing Zeros in a Factorial | number-system | method | S B | number of zeros in factorial | Count trailing zeros of n! and the highest power of any prime in n! | ORIG | P2
+recurring-decimals-to-fractions | Converting Recurring Decimals to Fractions | number-system | method | S R | convert recurring decimal to fraction | Convert pure and mixed recurring decimals using the 9s and 0s rule | ORIG | P2
+simplification-bodmas | Simplification and BODMAS: Rules and Common Traps | arithmetic-basics | method | S B R | bodmas rule with examples | Apply the order of operations including the 'of' rule used in SSC papers | ORIG | P1
+square-roots-and-cube-roots | Square Roots and Cube Roots Without a Calculator | arithmetic-basics | method | S B R | cube root of perfect cube trick | Find square and cube roots of perfect powers by unit digit and grouping | ORIG | P1
+surds-and-indices | Surds and Indices: Laws and Comparison | arithmetic-basics | method | S B R | laws of indices | Apply index laws and compare surds by equalising the root | ORIG | P2
+number-system-mcqs | Number System MCQs with Solutions | number-system | mcq | S B R | number system questions for ssc | Practise 30 original questions with worked solutions | ORIG | P2
+percentage-fraction-table | Percentage to Fraction Conversion Table | percentage | revision | S B R | percentage to fraction chart | Recall the fraction equivalents from 1/2 to 1/20 and use them to calculate fast | ORIG | P1
+successive-percentage-change | Successive Percentage Change Formula | percentage | method | S B R | successive percentage change formula | Combine two or three percentage changes with a + b + ab/100 and handle decreases | ORIG | P1
+product-constancy-price-and-consumption | Price Rise and Consumption Cut: Product Constancy | percentage | method | S B R | if price increases by 25 consumption decrease | Find the cut in consumption that keeps expenditure constant, and related area and speed cases | ORIG | P1
+population-growth-and-depreciation | Population Growth and Depreciation Problems | percentage | method | S B R | population increase percentage formula | Use the compound-growth formula for population and depreciation, including backward cases | ORIG | P2
+percentage-election-problems | Election and Votes Percentage Problems | percentage | method | S B | percentage election problems | Solve winner and loser margins with invalid votes and non-voters | ORIG | P2
+percentage-income-expenditure-savings | Income, Expenditure and Savings Percentage Problems | percentage | method | S B | income expenditure savings problems | Solve savings problems when income and expenditure change by different percentages | ORIG | P2
+percentage-mcqs | Percentage MCQs with Solutions | percentage | mcq | S B R | percentage questions for ssc | Practise 30 original percentage questions with worked solutions | ORIG | P2
+profit-and-loss-formulas | Profit and Loss Formulas: CP, SP and Profit Percentage | profit-loss | method | S B R | profit and loss formulas | Apply the core formulas, and find CP from SP and the profit or loss percentage | ORIG | P1
+marked-price-and-discount | Marked Price, Discount and Profit Problems | profit-loss | method | S B R | marked price and discount problems | Link marked price, discount and profit percentage in one equation | ORIG | P1
+successive-discount-formula | Successive Discount Formula and Equivalent Discount | profit-loss | method | S B R | successive discount formula | Convert two or three successive discounts into one equivalent discount and compare offers | ORIG | P1
+dishonest-dealer-false-weight | Dishonest Dealer and False Weight Problems | profit-loss | method | S B | false weight profit percentage formula | Find the gain from false weights, with and without a stated profit or loss percentage | ORIG | P1
+same-selling-price-profit-and-loss | Two Articles Sold at the Same Price: Profit x%, Loss x% | profit-loss | method | S B | same selling price profit loss percentage | Show why equal profit and loss percentages at the same SP always give a loss of x²/100 % | ORIG | P2
+buy-x-get-y-free-offers | Buy X Get Y Free: Effective Discount | profit-loss | method | S B | buy 3 get 1 free discount percentage | Convert free-item offers into an equivalent discount and compare them | ORIG | P2
+profit-loss-mcqs | Profit and Loss MCQs with Solutions | profit-loss | mcq | S B R | profit and loss questions for ssc | Practise 30 original profit and loss questions with worked solutions | ORIG | P2
+simple-interest-problems | Simple Interest Formula and Problems | interest | method | S B R | simple interest formula problems | Solve for principal, rate and time, including sums that double or triple | ORIG | P1
+compound-interest-formulas | Compound Interest: Annual, Half-Yearly and Quarterly | interest | method | S B R | compound interest half yearly formula | Apply the CI formula for different compounding periods and fractional years | ORIG | P1
+ci-si-difference-formula | Difference Between CI and SI for 2 and 3 Years | interest | method | S B R | difference between ci and si for 2 years formula | Use P(r/100)² and P(r/100)²(3 + r/100) and derive them | ORIG | P1
+installment-problems | Instalment Problems in Simple and Compound Interest | interest | method | S B | equal instalments compound interest | Find the equal instalment that repays a loan under SI and CI | ORIG | P2
+interest-mcqs | Simple and Compound Interest MCQs with Solutions | interest | mcq | S B R | compound interest questions | Practise 30 original interest questions with worked solutions | ORIG | P2
+ratio-and-proportion-basics | Ratio and Proportion: Compounded, Duplicate and Mean Proportion | ratio | method | S B R | mean proportional and third proportional | Find mean, third and fourth proportionals and combine ratios | ORIG | P1
+partnership-problems | Partnership Problems: Profit Sharing by Capital and Time | ratio | method | S B R | partnership problems with time | Share profit when partners invest different amounts for different periods | ORIG | P1
+problems-on-ages | Problems on Ages: Ratio Method | ratio | method | S B R | problems on ages tricks | Solve age problems using constant differences and ratio units | ORIG | P1
+alligation-and-mixture | Alligation Rule for Mixture Problems | ratio | method | S B R | alligation rule mixture problems | Use the alligation cross to mix two prices or concentrations and when the rule does not apply | ORIG | P1
+replacement-repeated-dilution | Repeated Replacement of Liquid Formula | ratio | method | S B | milk replaced by water repeatedly formula | Apply the remaining-quantity formula after n replacements | ORIG | P2
+ratio-mcqs | Ratio, Proportion and Partnership MCQs | ratio | mcq | S B R | ratio and proportion questions | Practise 30 original ratio questions with worked solutions | ORIG | P2
+average-formulas | Average: Formulas and the Deviation Method | average | method | S B R | average shortcut deviation method | Find averages fast by assuming a base and averaging deviations | ORIG | P1
+average-replacement-problems | Average Age When a Member Is Replaced or Added | average | method | S B R | average age replacement problems | Solve replacement, joining and leaving problems with the net-change method | ORIG | P2
+average-speed-formula | Average Speed Formula: Why It Is Not the Simple Mean | average | method | S B R | average speed formula 2xy/x+y | Derive 2xy/(x+y) and extend it to three equal distances and unequal distances | ORIG | P1
+cricket-average-problems | Cricket Batting and Bowling Average Problems | average | method | S B | batting average problems | Solve runs-needed and bowling-average problems | ORIG | P3
+average-mcqs | Average MCQs with Solutions | average | mcq | S B R | average questions for ssc | Practise 25 original average questions with worked solutions | ORIG | P2
+time-and-work-lcm-method | Time and Work: The LCM (Total Work) Method | time-work | method | S B R | time and work lcm method | Solve two- and three-person work problems by taking total work as the LCM | ORIG | P1
+work-and-wages | Work and Wages: Sharing Payment by Work Done | time-work | method | S B | work and wages problems | Divide wages in the ratio of work done, including helpers | ORIG | P2
+men-days-hours-formula | M1D1H1/W1 = M2D2H2/W2 Formula | time-work | method | S B R | m1d1h1 w1 formula | Apply the chain formula with efficiency differences between men, women and children | ORIG | P1
+alternate-days-work | Alternate-Day and Leaving-Midway Work Problems | time-work | method | S B | working on alternate days problems | Solve alternate-day and leave-midway problems by cycles | ORIG | P2
+pipes-and-cisterns | Pipes and Cisterns: Inlets, Outlets and Leaks | time-work | method | S B R | pipes and cisterns problems | Treat inlets as positive and outlets and leaks as negative work, and find fill or empty time | ORIG | P1
+work-efficiency-percentage | Work Efficiency in Percentage Problems | time-work | method | S B | efficiency percentage time and work | Convert efficiency percentages into time ratios | ORIG | P3
+time-work-mcqs | Time and Work MCQs with Solutions | time-work | mcq | S B R | time and work questions | Practise 30 original work and pipes questions with worked solutions | ORIG | P2
+speed-time-distance-basics | Speed, Time and Distance: Formulas and Unit Conversion | tsd | method | S B R | speed time distance formula | Apply the formulas, km/h to m/s conversion and the proportionality rules | ORIG | P1
+relative-speed | Relative Speed: Same and Opposite Directions | tsd | method | S B R | relative speed formula | Solve meeting and overtaking problems with relative speed | ORIG | P1
+train-problems | Train Problems: Crossing a Pole, Platform and Another Train | tsd | method | S B R | train crossing platform problems | Choose the right distance (train length, plus platform, plus other train) for each crossing type | ORIG | P1
+boats-and-streams | Boats and Streams: Upstream and Downstream Formulas | tsd | method | S B R | boats and streams formula | Find boat and stream speed from upstream and downstream speeds, including round trips | ORIG | P1
+races-and-circular-tracks | Races and Circular Track Problems | tsd | method | S B | circular track meeting time | Solve start-and-beat race problems and first meeting on circular tracks | ORIG | P2
+speed-ratio-and-time-ratio | Speed Ratio vs Time Ratio Problems | tsd | method | S B | late early speed problems | Use inverse proportion for late-early and changed-speed problems | ORIG | P2
+escalator-problems | Escalator Problems | tsd | method | B | escalator problems aptitude | Solve escalator step-count problems with relative speed | ORIG | P3
+tsd-mcqs | Time, Speed and Distance MCQs with Solutions | tsd | mcq | S B R | time speed distance questions | Practise 30 original questions on trains, boats and races | ORIG | P2
+algebraic-identities | Algebraic Identities for SSC: List and Uses | algebra | method | S R | algebraic identities list | Apply the square, cube and a³ + b³ + c³ − 3abc identities | ORIG | P1
+x-plus-1-by-x-problems | x + 1/x Problems: Finding x² + 1/x² and x³ + 1/x³ | algebra | method | S | if x+1/x then x3+1/x3 | Move between x + 1/x, x² + 1/x² and x³ + 1/x³ and higher powers | ORIG | P1
+linear-equations-word-problems | Linear Equations: Two-Variable Word Problems | algebra | method | S B R | linear equations word problems | Form and solve two-variable equations from word problems | ORIG | P2
+quadratic-equations-bank-exams | Quadratic Equations for Bank Exams: Comparing x and y | algebra | method | B | quadratic equation questions for bank exam | Find roots quickly by sign rules and compare x and y | ORIG | P1
+polynomials-remainder-theorem | Polynomials: Remainder and Factor Theorems | algebra | method | S | remainder theorem polynomial | Find remainders and factors of polynomials | ORIG | P3
+algebra-mcqs | Algebra MCQs for SSC with Solutions | algebra | mcq | S | algebra questions for ssc cgl | Practise 30 original algebra questions with worked solutions | ORIG | P2
+triangle-centres | Centroid, Incentre, Circumcentre and Orthocentre | geometry | method | S | centroid incentre circumcentre orthocentre properties | Use each centre's properties, including the angle formulas at the incentre and orthocentre | ORIG | P1
+similar-triangles-and-bpt | Similar Triangles and the Basic Proportionality Theorem | geometry | method | S | basic proportionality theorem | Apply similarity tests and area ratios of similar triangles | ORIG+NCERT | P2
+pythagorean-triplets | Pythagorean Triplets and Right Triangles | geometry | method | S R | pythagorean triplets list | Generate triplets and use them to shortcut right-triangle problems | ORIG | P2
+circle-chords-and-tangents | Circle Theorems: Chords, Tangents and Angles | geometry | method | S | tangent and chord properties | Apply the chord, tangent and angle theorems used in SSC questions | ORIG+NCERT | P1
+cyclic-quadrilateral | Cyclic Quadrilateral Properties | geometry | method | S | cyclic quadrilateral properties | Use opposite-angle and exterior-angle properties | ORIG+NCERT | P3
+polygon-angles | Interior and Exterior Angles of Polygons | geometry | method | S R | interior angle of polygon formula | Find angles, sides and diagonals of regular polygons | ORIG | P1
+quadrilaterals-properties | Properties of Quadrilaterals | geometry | revision | S R | properties of parallelogram rhombus | Compare diagonals, angles and symmetry of the quadrilaterals | ORIG+NCERT | P3
+lines-and-angles | Lines and Angles: Transversal Rules | geometry | method | S R | angles formed by transversal | Use corresponding, alternate and co-interior angle rules | ORIG+NCERT | P3
+coordinate-geometry-basics | Coordinate Geometry: Distance, Section and Area Formulas | geometry | method | S | section formula coordinate geometry | Apply the distance, section, centroid and area formulas | ORIG+NCERT | P2
+straight-lines-slope | Straight Lines: Slope and Equation Forms | geometry | method | S | slope of a line formula | Find slopes, intercepts and equations of lines | ORIG | P3
+geometry-mcqs | Geometry MCQs for SSC with Solutions | geometry | mcq | S | geometry questions for ssc cgl | Practise 30 original geometry questions with worked solutions | ORIG | P2
+area-perimeter-2d-formulas | Area and Perimeter Formulas for 2D Shapes | mensuration | revision | S B R | area and perimeter formulas | Recall area and perimeter of all plane figures with one worked use each | ORIG | P1
+herons-formula | Area of a Triangle: Heron's Formula and Special Cases | mensuration | method | S R | herons formula | Apply Heron's formula and the equilateral and isosceles shortcuts | ORIG | P2
+circle-sector-arc | Circle, Sector and Arc Length Formulas | mensuration | method | S R | area of sector formula | Find arc length, sector area and segment area | ORIG | P2
+cube-and-cuboid | Cube and Cuboid: Volume, Surface Area and Diagonal | mensuration | method | S R | surface area of cuboid formula | Apply the cube and cuboid formulas and the face-area product trick | ORIG | P1
+cylinder-cone-sphere | Cylinder, Cone, Sphere and Hemisphere Formulas | mensuration | method | S R | volume of cone cylinder sphere | Apply volume and surface area formulas and their ratios | ORIG | P1
+frustum-of-cone | Frustum of a Cone | mensuration | method | S | frustum volume formula | Apply the frustum volume and surface area formulas | ORIG | P3
+melting-and-recasting | Melting and Recasting Problems | mensuration | method | S R | melting and recasting problems | Equate volumes to count recast pieces | ORIG | P2
+path-and-border-area | Area of Paths and Borders | mensuration | method | S B | area of path around rectangle | Find the area of inner and outer paths and crossroads | ORIG | P3
+mensuration-mcqs | Mensuration MCQs with Solutions | mensuration | mcq | S B R | mensuration questions for ssc | Practise 30 original mensuration questions with worked solutions | ORIG | P2
+trigonometric-ratios-table | Trigonometric Ratios Table for 0° to 90° | trigonometry | revision | S | trigonometry table | Recall the standard values and complementary-angle rules | ORIG | P1
+trigonometric-identities | Trigonometric Identities for SSC | trigonometry | method | S | trigonometric identities list | Apply the Pythagorean identities and value-putting checks | ORIG | P1
+heights-and-distances | Heights and Distances Problems | trigonometry | method | S | heights and distances problems | Solve angle-of-elevation and depression problems with 30°, 45° and 60° | ORIG | P1
+trigonometry-max-min | Maximum and Minimum Values in Trigonometry | trigonometry | method | S | maximum value of a sin x + b cos x | Find the extremes of a sin x + b cos x and related forms | ORIG | P2
+trigonometry-mcqs | Trigonometry MCQs with Solutions | trigonometry | mcq | S | trigonometry questions for ssc | Practise 25 original trigonometry questions with worked solutions | ORIG | P2
+bar-graph-di | Bar Graph Data Interpretation | data-interpretation | method | S B | bar graph di questions | Read single and multiple bar graphs and compute growth and ratios quickly | ORIG | P1
+pie-chart-di | Pie Chart Data Interpretation | data-interpretation | method | S B | pie chart questions | Convert degrees and percentages and compare sectors | ORIG | P1
+line-graph-di | Line Graph Data Interpretation | data-interpretation | method | S B | line graph di | Read trends and compute percentage changes | ORIG | P2
+table-di | Table Data Interpretation | data-interpretation | method | S B | tabular data interpretation | Handle multi-column tables and missing values | ORIG | P2
+caselet-di | Caselet Data Interpretation | data-interpretation | method | B | caselet di questions | Turn a paragraph into a table before answering | ORIG | P2
+di-approximation | Approximation Techniques for DI | data-interpretation | method | B | approximation tricks for di | Estimate percentages and ratios within answer gaps | ORIG | P2
+mean-median-mode | Mean, Median and Mode: Grouped and Ungrouped Data | statistics | method | S | mean median mode formula grouped data | Compute the three measures and the empirical relation | ORIG+NCERT | P1
+standard-deviation-variance | Standard Deviation and Variance | statistics | method | S | standard deviation formula | Compute variance and SD and their effect under change of origin and scale | ORIG | P2
+probability-basics | Probability with Coins, Dice and Cards | probability | method | S B | probability questions on dice and cards | Count sample spaces for coins, dice and a 52-card deck | ORIG | P1
+permutations-and-combinations | Permutations and Combinations: When Order Matters | probability | method | S B | permutation vs combination | Decide between nPr and nCr and handle restrictions | ORIG | P1
+word-arrangement-problems | Arrangements of Letters of a Word | probability | method | B | arrangements of letters with repetition | Count arrangements with repeated letters and vowels together or apart | ORIG | P2
+probability-mcqs | Probability and P&C MCQs with Solutions | probability | mcq | S B | probability questions for bank exam | Practise 25 original questions with worked solutions | ORIG | P2
+number-series-bank | Number Series for Bank Exams: Missing and Wrong Number | bank-quant | method | B | number series tricks for bank exam | Identify difference, ratio, square and mixed patterns to find missing or wrong terms | ORIG | P1
+approximation-simplification-bank | Approximation and Simplification for Bank Prelims | bank-quant | method | B | approximation questions for bank | Round to friendly numbers within the answer gap | ORIG | P1
+quantity-comparison | Quantity I vs Quantity II Questions | bank-quant | method | B | quantity 1 quantity 2 questions | Compute both quantities and choose the right relation | ORIG | P2
+data-sufficiency-quant | Data Sufficiency in Quant | bank-quant | method | B | data sufficiency questions quant | Decide sufficiency without solving fully | ORIG | P2
+logarithm-rules | Logarithm Rules and Problems | algebra | method | D | logarithm rules | Apply product, quotient, power and base-change rules | ORIG | P3
+arithmetic-geometric-progression | AP and GP: nth Term and Sum Formulas | algebra | method | S D | ap and gp formulas | Apply AP and GP term and sum formulas | ORIG+NCERT | P2
+sum-of-natural-numbers-squares-cubes | Sum of First n Natural Numbers, Squares and Cubes | number-system | method | S R | sum of squares of n natural numbers | Apply the three sum formulas and odd and even variants | ORIG | P2
+sets-and-venn-diagram-problems | Sets and Venn Diagram Word Problems | algebra | method | S B | venn diagram problems with three sets | Use inclusion-exclusion for two and three sets | ORIG | P2
+vedic-maths-multiplication | Fast Multiplication Tricks | arithmetic-basics | method | S B R | fast multiplication tricks | Multiply near bases and by 11, 25 and 99 quickly | ORIG | P2
+squares-and-cubes-table | Squares 1 to 50 and Cubes 1 to 30 | arithmetic-basics | revision | S B R | squares 1 to 50 | Recall squares and cubes and the patterns that build them | ORIG | P2
+fractions-comparison | Comparing Fractions Quickly | arithmetic-basics | method | S R | how to compare fractions quickly | Compare fractions by cross-multiplication and benchmarks | ORIG | P3
+digit-problems | Two-Digit Number and Digit Reversal Problems | algebra | method | S B | two digit number problems | Solve reversal and digit-sum problems | ORIG | P3
+consecutive-numbers | Consecutive Numbers Problems | number-system | method | S B | sum of consecutive numbers | Solve consecutive, odd and even number problems | ORIG | P3
+stocks-and-shares | Stocks and Shares Problems | interest | method | D | stocks and shares problems | Compute income and yield on face value and market value | ORIG | P3
+ci-population-mixed-mcqs | Arithmetic Mixed MCQs: Percentage to Interest | percentage | mcq | S B R | arithmetic questions mixed | Practise 30 original mixed arithmetic questions | ORIG | P3
+quant-formula-sheet | Quant Formula Sheet for SSC and Bank Exams | arithmetic-basics | revision | S B R | quant formulas pdf | Revise every formula from the arithmetic chapters on one printable page | ORIG | P2
+triangle-inequality-and-counting | Triangle Inequality and Counting Triangles | geometry | method | S | number of triangles with integer sides | Apply the triangle inequality and count integer-sided triangles | ORIG | P3
+angle-bisector-and-median-theorems | Angle Bisector, Median and Apollonius Theorems | geometry | method | S | angle bisector theorem | Apply the three theorems to find lengths | ORIG | P3
+inscribed-and-circumscribed-figures | Inscribed and Circumscribed Figures | mensuration | method | S | circle inscribed in square area | Find areas of figures inscribed in or around others | ORIG | P3
+ages-and-ratio-mcqs | Ages and Partnership MCQs | ratio | mcq | S B | problems on ages questions | Practise 25 original questions with worked solutions | ORIG | P3
+percentage-change-in-area-and-volume | Percentage Change in Area and Volume | percentage | method | S | percentage change in area of circle | Apply successive change to area and volume when dimensions change | ORIG | P3
+compound-interest-tricks | CI Shortcuts: Successive Rate and Tree Methods | interest | method | S B | compound interest tricks | Compute CI for 2 and 3 years by successive percentage | ORIG | P3
+mixture-with-three-varieties | Mixtures of Three or More Varieties | ratio | method | B | mixture of three varieties alligation | Extend alligation to three ingredients | ORIG | P3
+profit-on-cp-vs-sp | Profit Percentage on Cost vs Selling Price | profit-loss | method | S B | profit on selling price | Convert profit on SP into profit on CP | ORIG | P3
+discount-and-tax-gst-problems | Discount with GST Problems | profit-loss | method | S B | gst profit loss problems | Compute final price with discount and GST in the right order | ORIG | P3
+work-done-by-groups | Work Problems with Men, Women and Children | time-work | method | S B | men women children work problems | Equate efficiencies to solve group work | ORIG | P3
+trains-and-man-walking | Trains Passing a Moving Man or Car | tsd | method | S | train passes a man walking in same direction | Use relative speed for moving observers | ORIG | P3
+upstream-downstream-round-trip | Boat Round Trip and Average Speed | tsd | method | S | boat round trip average speed | Combine boat speeds for a round trip | ORIG | P3
+mensuration-3d-ratios | Ratio Problems in 3D Mensuration | mensuration | method | S | ratio of volumes cone cylinder | Compare volumes and areas of solids with equal radius or height | ORIG | P3
+trigonometry-value-putting | Value-Putting Method in Trigonometry | trigonometry | method | S | value putting method trigonometry | Check identities fast by putting standard angles | ORIG | P3
+simplification-mcqs | Simplification MCQs with Solutions | arithmetic-basics | mcq | S B R | simplification questions | Practise 30 original simplification questions | ORIG | P3
+di-mcqs | Data Interpretation Practice Sets | data-interpretation | mcq | S B | di questions with solutions | Practise five original DI sets with worked solutions | ORIG | P2
+statistics-for-ssc-cgl-paper-2 | Statistics for SSC CGL Paper II: Topic Guide | statistics | exam | S | ssc cgl statistics syllabus | Map the official Paper II syllabus to topics and formulas | NOTICE+ORIG | P3
+passing-marks-percentage | Passing Marks Percentage Problems | percentage | method | S B R | passing marks percentage problems | Find maximum marks from fail and pass margins | ORIG | P2
+digital-root-and-digit-sum | Digit Sum and Digital Root Checks | number-system | method | S B | digital root method | Check multiplication and squares with digital roots | ORIG | P3
+lcm-with-remainders | Least Number Leaving a Given Remainder | number-system | method | S B R | least number which when divided leaves remainder | Use LCM + remainder and LCM - difference cases | ORIG | P1
+prime-and-co-prime-numbers | Prime, Composite and Co-Prime Numbers | number-system | method | S R | how to check prime number quickly | Test primes up to 1,000 and identify co-primes | ORIG | P2
+place-value-and-face-value | Place Value and Face Value | number-system | method | S R | difference between place value and face value | Find place and face values and their difference | ORIG | P3
+ratio-of-income-and-expenditure | Ratio of Incomes and Expenditures Problems | ratio | method | S B | ratio of income and expenditure problems | Solve two-person income-expenditure-savings problems | ORIG | P2
+speed-with-stoppages | Speed With and Without Stoppages | tsd | method | S B R | bus stops per hour problems | Find stoppage time per hour from two speeds | ORIG | P2
+weighted-average | Weighted Average | average | method | S B | weighted average formula | Combine group averages with weights | ORIG | P2
+chain-rule-proportion | Chain Rule: Direct and Inverse Proportion | ratio | method | S | chain rule maths | Combine direct and inverse variations in one step | ORIG | P3
+prism-and-pyramid | Volume and Surface Area of Prisms and Pyramids | mensuration | method | S | volume of pyramid formula | Apply prism and pyramid formulas | ORIG | P3
+area-ratios-in-triangles | Area Ratios in Triangles | geometry | method | S | ratio of areas of triangles | Use base-height and similarity to find area ratios | ORIG | P3
+mixed-graph-di | Mixed Graph Data Interpretation | data-interpretation | method | B | mixed graph di | Combine two charts to answer questions | ORIG | P3
+handshakes-and-diagonals | Handshakes, Diagonals and Matches: Counting Problems | probability | method | S B | number of handshakes formula | Use nC2 for handshakes, diagonals and round-robin matches | ORIG | P2
+circular-permutations | Circular Permutations | probability | method | B | circular permutation formula | Arrange around a circle with and without reflection | ORIG | P3
+probability-balls-in-bag | Probability with Balls in a Bag | probability | method | S B | probability of drawing balls from bag | Compute with and without replacement | ORIG | P2
+quadratic-word-problems | Quadratic Equation Word Problems | algebra | method | S | quadratic equation word problems | Form and solve quadratics from word problems | ORIG | P3
