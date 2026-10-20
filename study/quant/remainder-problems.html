@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remainder Problems: Negative Remainders and Cyclicity | AspirantDaily</title>
+    <meta name="description" content="Find remainders of products and large powers without dividing: multiply remainders, use negative remainders, spot repeating cycles. 8 worked examples, 6 MCQs.">
+    <meta name="keywords" content="remainder when divided by tricks, negative remainder method, remainder of large powers, remainder theorem for aptitude">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.aspirantdaily.com/study/quant/remainder-problems.html">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.aspirantdaily.com/study/quant/remainder-problems.html">
+    <meta property="og:title" content="Remainder Problems: Negative Remainders and Cyclicity | AspirantDaily">
+    <meta property="og:description" content="Find remainders of products and large powers without dividing: multiply remainders, use negative remainders, spot repeating cycles. 8 worked examples, 6 MCQs.">
+    <meta property="og:image" content="https://www.aspirantdaily.com/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Remainder Problems: Negative Remainders, Cycles and Large Powers",
+  "description": "Find remainders of products and large powers without dividing: multiply remainders, use negative remainders, spot repeating cycles. 8 worked examples, 6 MCQs.",
+  "image": "https://www.aspirantdaily.com/og-image.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "url": "https://www.aspirantdaily.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.aspirantdaily.com/icons/icon-512.png"
+    }
+  },
+  "datePublished": "2026-10-20",
+  "dateModified": "2026-10-20",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.aspirantdaily.com/study/quant/remainder-problems.html"
+  },
+  "articleSection": "Quantitative Aptitude",
+  "citation": []
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.aspirantdaily.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Study Notes",
+      "item": "https://www.aspirantdaily.com/study/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Quantitative Aptitude",
+      "item": "https://www.aspirantdaily.com/study/quant/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Remainder Problems: Negative Remainders, Cycles and Large Powers",
+      "item": "https://www.aspirantdaily.com/study/quant/remainder-problems.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is a negative remainder a valid final answer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. A negative remainder is only a working step. To report the answer, add the divisor: a remainder of −3 on division by 10 means the actual remainder is 7."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I find the cycle of remainders quickly?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Write out the remainders of the first few powers until you get a remainder of 1. The cycle restarts from there, because multiplying by the base again repeats the earlier remainders in the same order."
+      }
+    }
+  ]
+}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css?v=2">
+    <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-51XLJE4TVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-51XLJE4TVH');
+  </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327"
+     crossorigin="anonymous"></script>
+</head>
+<body class="study-page subject-quant">
+    <nav class="study-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Quantitative Aptitude</a>
+            <div class="nav-controls">
+                <button onclick="toggleAllSections()" class="btn-secondary">Expand/Collapse All</button>
+                <button onclick="window.print()" class="btn-primary">📄 Print/Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> / <a href="../index.html">Study Notes</a> / <a href="index.html">Quantitative Aptitude</a> / <span>Remainder Problems: Negative Remainders, Cycles and Large Powers</span>
+            </div>
+            <h1>Remainder Problems: Negative Remainders, Cycles and Large Powers</h1>
+            <p class="page-subtitle">Remainder of a product • Negative remainders • Powers of (divisor ± 1) • Cycles of remainders • Prime divisors</p>
+            <div class="page-meta">
+                <span class="badge badge-secondary">SSC</span>
+                <span class="badge badge-secondary">Banking</span>
+                <span class="badge badge-secondary">📅 Last updated: 2026-10-20</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="study-section collapsible" data-section="1">
+            <button class="section-header" onclick="toggleSection(1)" aria-expanded="true" aria-controls="section-1">
+                <span class="section-number">1️⃣</span>
+                <span class="section-title">The Rule That Makes Remainders Easy</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-1">
+                <div class="content-box">
+<p>Remainder questions look frightening because the numbers are huge: 2¹⁰⁰, or a product of five three-digit numbers. You never need to calculate those numbers. One rule does almost all the work: <strong>the remainder of a product equals the product of the remainders</strong>, reduced again by the divisor. The same holds for sums.</p>
+<p>So you replace every number with its remainder first, multiply those small remainders, and divide once more at the end. Large powers are just repeated products, so the same rule applies to them, helped by two shortcuts covered below: negative remainders and cycles.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="2">
+            <button class="section-header" onclick="toggleSection(2)" aria-expanded="true" aria-controls="section-2">
+                <span class="section-number">2️⃣</span>
+                <span class="section-title">Products and Negative Remainders</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-2">
+                <div class="content-box">
+<div class="case-study">
+<h4>Worked example 1: a product</h4>
+<p>17 × 23 × 29 divided by 6. The remainders are 5, 5 and 5. Their product is 125, and 125 ÷ 6 leaves remainder <strong>5</strong>.</p>
+</div>
+<p>When a number is just below the divisor, write its remainder as a small negative number. 47 divided by 49 leaves 47, but it is easier to think of 47 as 2 short of 49, a remainder of −2. Negative remainders keep the multiplication small.</p>
+<div class="case-study">
+<h4>Worked example 2: two numbers just below the divisor</h4>
+<p>47 × 48 divided by 49. Remainders −2 and −1 multiply to 2, so the remainder is <strong>2</strong>.</p>
+</div>
+<p>If the final result is negative, add the divisor to make it a proper remainder between 0 and the divisor.</p>
+<p>Sums follow the same rule: replace each term by its remainder, add, and reduce once more. With 9 as the divisor this is especially fast, because a number leaves the same remainder as its digit sum.</p>
+<div class="case-study">
+<h4>Worked example 3: a sum divided by 9</h4>
+<p>1,234 + 5,678 + 9,012 divided by 9. The digit sums give remainders 1, 8 and 3. Their total is 12, and 12 ÷ 9 leaves remainder <strong>3</strong>. There is no need to add the three numbers first.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="3">
+            <button class="section-header" onclick="toggleSection(3)" aria-expanded="true" aria-controls="section-3">
+                <span class="section-number">3️⃣</span>
+                <span class="section-title">Powers Just Above or Below the Divisor</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-3">
+                <div class="content-box">
+<p>When the base is one more than a multiple of the divisor, its remainder is 1, and every power of it also leaves 1. When the base is one less, its remainder is −1, and the power leaves 1 for an even exponent and −1 for an odd one.</p>
+<div class="table-wrap"><table class="data-table">
+<thead><tr><th>Base on division by n</th><th>Even exponent</th><th>Odd exponent</th></tr></thead>
+<tbody>
+<tr><td>remainder 1</td><td>1</td><td>1</td></tr>
+<tr><td>remainder −1 (that is, n − 1)</td><td>1</td><td>n − 1</td></tr>
+</tbody></table></div>
+<div class="case-study">
+<h4>Worked example 4: 2¹⁰⁰ ÷ 3</h4>
+<p>2 is one less than 3, so its remainder is −1. With an even exponent, (−1)¹⁰⁰ = 1, so the remainder is <strong>1</strong>.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 5: 7⁵⁰ ÷ 8</h4>
+<p>7 leaves −1 on division by 8, and 50 is even, so the remainder is <strong>1</strong>.</p>
+</div>
+<p>With an odd exponent the sign stays negative: 3³³ ÷ 4 gives (−1)³³ = −1, which is the remainder 3.</p>
+<div class="case-study">
+<h4>Worked example 6: 17²³ ÷ 18</h4>
+<p>17 leaves −1 on division by 18, and 23 is odd, so the result is −1, that is, a remainder of 18 − 1 = <strong>17</strong>.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)" aria-expanded="true" aria-controls="section-4">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">Cycles of Remainders</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
+                <div class="content-box">
+<p>When neither shortcut applies, list the remainders of the first few powers. They always start repeating, and once you see a remainder of 1 the cycle restarts. Divide the exponent by the cycle length and use the position, exactly as with unit digits.</p>
+<div class="case-study">
+<h4>Worked example 7: 2¹⁰⁰ ÷ 7</h4>
+<p>2¹ leaves 2, 2² leaves 4, 2³ = 8 leaves 1. The cycle is 2, 4, 1, of length 3. 100 ÷ 3 leaves remainder 1, so take the first term: <strong>2</strong>.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 8: 2³¹ ÷ 5</h4>
+<p>Powers of 2 leave 2, 4, 3, 1 on division by 5, a cycle of 4. 31 ÷ 4 leaves 3, so the answer is the third term, <strong>3</strong>.</p>
+</div>
+<p>For a prime divisor p, a base not divisible by p always has a cycle whose length divides p − 1. This is Fermat's little theorem. For example, 3⁴⁰ ÷ 41 leaves 1, because 41 is prime and the exponent is 40 = 41 − 1.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)" aria-expanded="true" aria-controls="section-5">
+                <span class="section-number">5️⃣</span>
+                <span class="section-title">Common Traps</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-5">
+                <div class="content-box">
+<ul class="warning-list">
+<li>✘ Leaving a negative remainder as the final answer. Add the divisor.</li>
+<li>✘ Multiplying the original numbers instead of their remainders. Reduce first.</li>
+<li>✘ Taking the first term of the cycle when the exponent is an exact multiple of the cycle length. Take the last term.</li>
+<li>✘ Applying the prime shortcut to a divisor that is not prime.</li>
+</ul>
+<p>The cycle idea is the same one used for <a href="unit-digit-of-powers.html">unit digits of powers</a>, which are simply remainders on division by 10. Quick <a href="divisibility-rules.html">divisibility tests</a> help when the divisor is 9 or 11, and the key results are collected in the <a href="../../repeated-questions/quant-cheat-code.html">Quant cheat code</a>.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)" aria-expanded="true" aria-controls="section-6">
+                <span class="section-number">6️⃣</span>
+                <span class="section-title">Practice Questions (6)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-6">
+                <div class="content-box">
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q1.</strong> What is the remainder when 23 × 37 × 41 is divided by 9? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q1" value="a"> (a) 5</label>
+                            <label><input type="radio" name="q1" value="b"> (b) 7</label>
+                            <label><input type="radio" name="q1" value="c"> (c) 1</label>
+                            <label><input type="radio" name="q1" value="d"> (d) 4</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q1">
+                            <p><strong>✅ Answer:</strong> (b) 7</p>
+                            <p><strong>💡 Explanation:</strong> The remainders on division by 9 are 5, 1 and 5. Their product is 25, and 25 ÷ 9 leaves 7.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q1')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q2.</strong> What is the remainder when 99 × 98 is divided by 100? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q2" value="a"> (a) 98</label>
+                            <label><input type="radio" name="q2" value="b"> (b) 1</label>
+                            <label><input type="radio" name="q2" value="c"> (c) 2</label>
+                            <label><input type="radio" name="q2" value="d"> (d) 4</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q2">
+                            <p><strong>✅ Answer:</strong> (c) 2</p>
+                            <p><strong>💡 Explanation:</strong> 99 is 1 less than 100 and 98 is 2 less, so their remainders can be written as −1 and −2. The product (−1) × (−2) = 2 is the remainder.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q2')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q3.</strong> What is the remainder when 5⁷⁰ is divided by 6? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q3" value="a"> (a) 5</label>
+                            <label><input type="radio" name="q3" value="b"> (b) 0</label>
+                            <label><input type="radio" name="q3" value="c"> (c) 4</label>
+                            <label><input type="radio" name="q3" value="d"> (d) 1</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q3">
+                            <p><strong>✅ Answer:</strong> (d) 1</p>
+                            <p><strong>💡 Explanation:</strong> 5 leaves remainder −1 on division by 6. (−1)⁷⁰ = 1 because 70 is even, so the remainder is 1.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q3')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q4.</strong> What is the remainder when 2⁷⁵ is divided by 7? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q4" value="a"> (a) 1</label>
+                            <label><input type="radio" name="q4" value="b"> (b) 2</label>
+                            <label><input type="radio" name="q4" value="c"> (c) 4</label>
+                            <label><input type="radio" name="q4" value="d"> (d) 6</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q4">
+                            <p><strong>✅ Answer:</strong> (a) 1</p>
+                            <p><strong>💡 Explanation:</strong> Powers of 2 leave remainders 2, 4, 1 on division by 7 and then repeat, a cycle of 3. 75 is a multiple of 3, so take the last remainder in the cycle, 1.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q4')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q5.</strong> What is the remainder when 29⁴⁷ is divided by 30? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q5" value="a"> (a) 1</label>
+                            <label><input type="radio" name="q5" value="b"> (b) 29</label>
+                            <label><input type="radio" name="q5" value="c"> (c) 0</label>
+                            <label><input type="radio" name="q5" value="d"> (d) 17</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q5">
+                            <p><strong>✅ Answer:</strong> (b) 29</p>
+                            <p><strong>💡 Explanation:</strong> 29 leaves remainder −1 on division by 30. An odd power of −1 is −1, and a remainder of −1 means 30 − 1 = 29.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q5')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q6.</strong> What is the remainder when 3⁹⁹ is divided by 8? <span class="badge badge-secondary">hard</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q6" value="a"> (a) 1</label>
+                            <label><input type="radio" name="q6" value="b"> (b) 5</label>
+                            <label><input type="radio" name="q6" value="c"> (c) 7</label>
+                            <label><input type="radio" name="q6" value="d"> (d) 3</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q6">
+                            <p><strong>✅ Answer:</strong> (d) 3</p>
+                            <p><strong>💡 Explanation:</strong> 3² = 9 leaves remainder 1 on division by 8. So 3⁹⁸ = (3²)⁴⁹ leaves 1, and 3⁹⁹ = 3⁹⁸ × 3 leaves 1 × 3 = 3.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q6')">Show Answer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)" aria-expanded="true" aria-controls="section-7">
+                <span class="section-number">7️⃣</span>
+                <span class="section-title">Frequently Asked Questions</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-7">
+                <div class="content-box">
+                    <h3>Is a negative remainder a valid final answer?</h3>
+                    <p>No. A negative remainder is only a working step. To report the answer, add the divisor: a remainder of −3 on division by 10 means the actual remainder is 7.</p>
+                    <h3>How do I find the cycle of remainders quickly?</h3>
+                    <p>Write out the remainders of the first few powers until you get a remainder of 1. The cycle restarts from there, because multiplying by the base again repeats the earlier remainders in the same order.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="8">
+            <button class="section-header" onclick="toggleSection(8)" aria-expanded="true" aria-controls="section-8">
+                <span class="section-number">8️⃣</span>
+                <span class="section-title">Sources and Review</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-8">
+                <div class="content-box">
+                    <p>All problems and solutions on this page are original. No outside facts are relied on; every numeric answer is recomputed by software before publishing.</p>
+                    <div class="highlight-box">
+                        <p><strong>How this page was prepared.</strong> Drafted with AI assistance (Claude (Anthropic AI model)) from the sources listed above. 16 calculations on this page were recomputed by software and matched. Automated checks also covered structure, internal links and duplicate text. Software checks cannot confirm facts. Reviewed by praveenkumar on 2026-10-20 against the sources listed above.</p>
+                        <p>Found an error? <a href="../../contact.html">Report it</a> and we will correct the page.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="9">
+            <button class="section-header" onclick="toggleSection(9)" aria-expanded="true" aria-controls="section-9">
+                <span class="section-number">9️⃣</span>
+                <span class="section-title">Related Pages</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-9">
+                <div class="content-box">
+                    <ul class="bullet-list">
+                        <li><a href="../../repeated-questions/quant-cheat-code.html">Quant Cheat Code: 20 Must-Know Shortcuts &amp; Formulas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="page-navigation">
+            <a href="index.html" class="nav-btn">← Quantitative Aptitude</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>Subject: Quantitative Aptitude | Sources are listed on this page. <a href="../../contact.html">Report an error</a>.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>

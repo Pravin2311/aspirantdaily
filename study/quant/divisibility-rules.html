@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divisibility Rules from 2 to 19 with Examples | AspirantDaily</title>
+    <meta name="description" content="Test any number for divisibility by 2 to 19: digit-sum and last-digit rules, the alternating sum for 11, and the osculator method for 7, 13, 17 and 19.">
+    <meta name="keywords" content="divisibility rules 7 11 13, divisibility rule of 7, divisibility rule of 11, osculator method, divisibility test 13 17 19">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.aspirantdaily.com/study/quant/divisibility-rules.html">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.aspirantdaily.com/study/quant/divisibility-rules.html">
+    <meta property="og:title" content="Divisibility Rules from 2 to 19 with Examples | AspirantDaily">
+    <meta property="og:description" content="Test any number for divisibility by 2 to 19: digit-sum and last-digit rules, the alternating sum for 11, and the osculator method for 7, 13, 17 and 19.">
+    <meta property="og:image" content="https://www.aspirantdaily.com/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Divisibility Rules from 2 to 19, Including the Osculator Method",
+  "description": "Test any number for divisibility by 2 to 19: digit-sum and last-digit rules, the alternating sum for 11, and the osculator method for 7, 13, 17 and 19.",
+  "image": "https://www.aspirantdaily.com/og-image.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "url": "https://www.aspirantdaily.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.aspirantdaily.com/icons/icon-512.png"
+    }
+  },
+  "datePublished": "2026-10-20",
+  "dateModified": "2026-10-20",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.aspirantdaily.com/study/quant/divisibility-rules.html"
+  },
+  "articleSection": "Quantitative Aptitude",
+  "citation": []
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.aspirantdaily.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Study Notes",
+      "item": "https://www.aspirantdaily.com/study/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Quantitative Aptitude",
+      "item": "https://www.aspirantdaily.com/study/quant/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Divisibility Rules from 2 to 19, Including the Osculator Method",
+      "item": "https://www.aspirantdaily.com/study/quant/divisibility-rules.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why does the digit-sum rule work for 3 and 9 but not for 7?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Every power of 10 leaves remainder 1 when divided by 3 or 9, so a number and its digit sum leave the same remainder. Powers of 10 leave different remainders when divided by 7, so the digit sum tells you nothing about 7."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I combine two rules to test a composite number?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, but only when the two numbers share no common factor. Divisible by 3 and by 8 means divisible by 24. Divisible by 4 and by 6 does not prove divisibility by 24, because 12 passes both tests and 24 does not divide it."
+      }
+    }
+  ]
+}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css?v=2">
+    <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-51XLJE4TVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-51XLJE4TVH');
+  </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327"
+     crossorigin="anonymous"></script>
+</head>
+<body class="study-page subject-quant">
+    <nav class="study-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Quantitative Aptitude</a>
+            <div class="nav-controls">
+                <button onclick="toggleAllSections()" class="btn-secondary">Expand/Collapse All</button>
+                <button onclick="window.print()" class="btn-primary">📄 Print/Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> / <a href="../index.html">Study Notes</a> / <a href="index.html">Quantitative Aptitude</a> / <span>Divisibility Rules from 2 to 19, Including the Osculator Method</span>
+            </div>
+            <h1>Divisibility Rules from 2 to 19, Including the Osculator Method</h1>
+            <p class="page-subtitle">Last-digit rules • Digit sums • Alternating sum for 11 • Osculators for 7, 13, 17, 19 • Composite divisors</p>
+            <div class="page-meta">
+                <span class="badge badge-secondary">SSC</span>
+                <span class="badge badge-secondary">Banking</span>
+                <span class="badge badge-secondary">Railway</span>
+                <span class="badge badge-secondary">📅 Last updated: 2026-10-20</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="study-section collapsible" data-section="1">
+            <button class="section-header" onclick="toggleSection(1)" aria-expanded="true" aria-controls="section-1">
+                <span class="section-number">1️⃣</span>
+                <span class="section-title">Why Divisibility Tests Save Time</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-1">
+                <div class="content-box">
+<p>Divisibility tests let you decide whether one number divides another without doing the long division. In the exam they do three jobs. They simplify fractions before you multiply, they eliminate wrong options in number-system questions, and they find missing digits in questions such as "what must replace the star so that the number is divisible by 9?"</p>
+<p>The rules fall into four families. Some look only at the last digits, some add the digits, one uses an alternating sum, and the rest use a repeated shortcut called an osculator. Learn the family first and the individual rule follows naturally.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="2">
+            <button class="section-header" onclick="toggleSection(2)" aria-expanded="true" aria-controls="section-2">
+                <span class="section-number">2️⃣</span>
+                <span class="section-title">Rules That Look at the Last Digits</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-2">
+                <div class="content-box">
+<p>These work because 10, 100 and 1,000 are themselves divisible by 2, 4, 5 and 8. Everything to the left of the last few digits is already a multiple of the divisor, so only the tail matters.</p>
+<div class="table-wrap"><table class="data-table">
+<thead><tr><th>Divisor</th><th>Test</th><th>Example</th></tr></thead>
+<tbody>
+<tr><td>2</td><td>last digit is even</td><td>3,718 ends in 8</td></tr>
+<tr><td>4</td><td>last two digits form a multiple of 4</td><td>7,316: 16 = 4 × 4</td></tr>
+<tr><td>5</td><td>last digit is 0 or 5</td><td>4,135 ends in 5</td></tr>
+<tr><td>8</td><td>last three digits form a multiple of 8</td><td>25,104: 104 = 8 × 13</td></tr>
+<tr><td>10</td><td>last digit is 0</td><td>6,290 ends in 0</td></tr>
+<tr><td>16</td><td>last four digits form a multiple of 16</td><td>31,248: 1,248 = 16 × 78</td></tr>
+</tbody></table></div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="3">
+            <button class="section-header" onclick="toggleSection(3)" aria-expanded="true" aria-controls="section-3">
+                <span class="section-number">3️⃣</span>
+                <span class="section-title">Digit-Sum Rules for 3 and 9</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-3">
+                <div class="content-box">
+<p>Add the digits. If the sum is a multiple of 3, so is the number; if the sum is a multiple of 9, so is the number. You can repeat the process on the sum until it is small enough to recognise.</p>
+<p>For 37,452 the digits add to 3 + 7 + 4 + 5 + 2 = 21. Since 21 is a multiple of 3 but not of 9, the number is divisible by 3 and not by 9.</p>
+<p>The rule for 6 combines two earlier tests: the number must be even and its digit sum must be a multiple of 3. The rule for 12 is "divisible by 3 and by 4", and the rule for 18 is "divisible by 2 and by 9".</p>
+<div class="case-study">
+<h4>Worked example 1: testing for 12</h4>
+<p>37,452 has digit sum 21 (a multiple of 3), and its last two digits 52 = 4 × 13. It passes both tests, so it is divisible by 12. Indeed 37,452 ÷ 12 leaves <strong>remainder 0</strong>.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)" aria-expanded="true" aria-controls="section-4">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">The Alternating Sum for 11</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
+                <div class="content-box">
+<p>Number the digits from the right: the units digit is in place 1, the tens digit in place 2, and so on. Add the digits in odd places, add the digits in even places, and subtract. If the difference is 0 or a multiple of 11, the number is divisible by 11. If not, the difference (taken modulo 11) is the remainder.</p>
+<div class="case-study">
+<h4>Worked example 2: a remainder from the rule</h4>
+<p>For 87,432 the digits from the right are 2, 3, 4, 7, 8. Odd places: 2 + 4 + 8 = 14. Even places: 3 + 7 = 10. The difference is <strong>4</strong>.</p>
+</div>
+<p>So 87,432 is not divisible by 11, and dividing it by 11 leaves remainder 4.</p>
+<div class="case-study">
+<h4>Worked example 3: a difference of 11</h4>
+<p>For 92,345 the digits from the right are 5, 4, 3, 2, 9. Odd places: 5 + 3 + 9 = 17. Even places: 4 + 2 = 6. The difference is <strong>11</strong>, a multiple of 11.</p>
+</div>
+<p>So 92,345 is divisible by 11, which a direct division confirms.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)" aria-expanded="true" aria-controls="section-5">
+                <span class="section-number">5️⃣</span>
+                <span class="section-title">The Osculator Method for 7, 13, 17 and 19</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-5">
+                <div class="content-box">
+<p>For these primes there is no neat last-digit rule. Instead, each prime has a multiplier called its osculator. Take the last digit, multiply it by the osculator, and add the result to (or subtract it from) the number formed by the remaining digits. Repeat until the number is small enough to test by eye. The original number is divisible by the prime exactly when the final number is.</p>
+<div class="table-wrap"><table class="data-table">
+<thead><tr><th>Prime</th><th>Osculator</th><th>Step</th></tr></thead>
+<tbody>
+<tr><td>7</td><td>−2</td><td>remaining digits − 2 × last digit</td></tr>
+<tr><td>13</td><td>+4</td><td>remaining digits + 4 × last digit</td></tr>
+<tr><td>17</td><td>−5</td><td>remaining digits − 5 × last digit</td></tr>
+<tr><td>19</td><td>+2</td><td>remaining digits + 2 × last digit</td></tr>
+</tbody></table></div>
+<div class="case-study">
+<h4>Worked example 4: testing 1,694 for 7</h4>
+<p>One step: 169 − 2 × 4 = 161. Another: 16 − 2 × 1 = 14, which is 7 × 2. So 1,694 is divisible by 7, with <strong>remainder 0</strong>.</p>
+</div>
+<p>If the first step's result is already familiar, stop there: 161 = 7 × 23, so one step was enough.</p>
+<div class="case-study">
+<h4>Worked example 5: testing 4,537 for 13</h4>
+<p>453 + 4 × 7 = 481. Then 48 + 4 × 1 = 52 = 13 × 4. So 4,537 is divisible by 13 (<strong>remainder 0</strong>).</p>
+</div>
+<p>The first step, 453 + 28 = 481, already gives 13 × 37 if you recognise it.</p>
+<div class="case-study">
+<h4>Worked example 6: testing 3,757 for 17</h4>
+<p>375 − 5 × 7 = 340, and 340 = 17 × 20. So 3,757 is divisible by 17 (<strong>remainder 0</strong>).</p>
+</div>
+<p>A single osculator step turned a four-digit test into a product you can see at a glance.</p>
+<div class="case-study">
+<h4>Worked example 7: testing 2,147 for 19</h4>
+<p>214 + 2 × 7 = 228, and 228 = 19 × 12. So 2,147 is divisible by 19 (<strong>remainder 0</strong>).</p>
+</div>
+<p>Note that 228 is the first-step value; checking it is easier than checking 2,147.</p>
+<p>A useful link between three of these primes: 7 × 11 × 13 = 1,001. Any six-digit number made by repeating a three-digit block, such as 452,452, equals the block times 1,001, so it is divisible by 7, 11 and 13 at once.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)" aria-expanded="true" aria-controls="section-6">
+                <span class="section-number">6️⃣</span>
+                <span class="section-title">Common Traps</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-6">
+                <div class="content-box">
+<ul class="warning-list">
+<li>✘ Combining rules for numbers that share a factor. To test for 24 use 3 and 8, not 4 and 6.</li>
+<li>✘ Counting places for the 11 rule from the left. Count from the units digit.</li>
+<li>✘ Using the osculator with the wrong sign. It is minus for 7 and 17, plus for 13 and 19.</li>
+<li>✘ Stopping the digit-sum test at a large sum. Keep adding until the answer is obvious.</li>
+</ul>
+<p>Divisibility tests feed directly into <a href="../../repeated-questions/quant-cheat-code.html">the Quant cheat code</a> number-system shortcuts, and they make fraction-heavy questions such as <a href="successive-discount-formula.html">successive discounts</a> faster to simplify.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)" aria-expanded="true" aria-controls="section-7">
+                <span class="section-number">7️⃣</span>
+                <span class="section-title">Practice Questions (6)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-7">
+                <div class="content-box">
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q1.</strong> For 9,281,563, find (sum of digits in odd places from the right) minus (sum of digits in even places). Is the number divisible by 11? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q1" value="a"> (a) 16, so not divisible</label>
+                            <label><input type="radio" name="q1" value="b"> (b) 11, so divisible</label>
+                            <label><input type="radio" name="q1" value="c"> (c) 0, so divisible</label>
+                            <label><input type="radio" name="q1" value="d"> (d) 9, so not divisible</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q1">
+                            <p><strong>✅ Answer:</strong> (a) 16, so not divisible</p>
+                            <p><strong>💡 Explanation:</strong> From the right the digits are 3, 6, 5, 1, 8, 2, 9. Odd places: 3 + 5 + 8 + 9 = 25. Even places: 6 + 1 + 2 = 9. The difference 16 is not 0 or a multiple of 11, so 11 does not divide the number.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q1')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q2.</strong> Using the osculator for 7, what number do you get after one step from 1003? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q2" value="a"> (a) 97</label>
+                            <label><input type="radio" name="q2" value="b"> (b) 94</label>
+                            <label><input type="radio" name="q2" value="c"> (c) 100</label>
+                            <label><input type="radio" name="q2" value="d"> (d) 106</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q2">
+                            <p><strong>✅ Answer:</strong> (b) 94</p>
+                            <p><strong>💡 Explanation:</strong> Drop the last digit 3 and subtract twice it from 100: 100 − 6 = 94. Since 94 is not a multiple of 7, 1003 is not divisible by 7.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q2')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q3.</strong> What is the smallest digit d that makes 57d32 divisible by 9? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q3" value="a"> (a) 4</label>
+                            <label><input type="radio" name="q3" value="b"> (b) 8</label>
+                            <label><input type="radio" name="q3" value="c"> (c) 1</label>
+                            <label><input type="radio" name="q3" value="d"> (d) 7</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q3">
+                            <p><strong>✅ Answer:</strong> (c) 1</p>
+                            <p><strong>💡 Explanation:</strong> The known digits 5, 7, 3 and 2 add to 17. The next multiple of 9 is 18, so d = 1 brings the digit sum to 18.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q3')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q4.</strong> Which of these numbers is divisible by 13? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q4" value="a"> (a) 5302</label>
+                            <label><input type="radio" name="q4" value="b"> (b) 5306</label>
+                            <label><input type="radio" name="q4" value="c"> (c) 5308</label>
+                            <label><input type="radio" name="q4" value="d"> (d) 5304</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q4">
+                            <p><strong>✅ Answer:</strong> (d) 5304</p>
+                            <p><strong>💡 Explanation:</strong> The osculator for 13 is +4: 530 + 4 × 4 = 546, then 54 + 4 × 6 = 78, which is 6 × 13. So 5304 is divisible by 13.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q4')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q5.</strong> 4872 is divisible by 24. Which pair of tests proves it? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q5" value="a"> (a) 3 and 8</label>
+                            <label><input type="radio" name="q5" value="b"> (b) 4 and 6</label>
+                            <label><input type="radio" name="q5" value="c"> (c) 2 and 12</label>
+                            <label><input type="radio" name="q5" value="d"> (d) 6 and 8</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q5">
+                            <p><strong>✅ Answer:</strong> (a) 3 and 8</p>
+                            <p><strong>💡 Explanation:</strong> 24 = 3 × 8, and 3 and 8 share no factor. The digit sum 21 is a multiple of 3, and the last three digits 872 = 8 × 109. Pairs such as 4 and 6 share a factor, so passing both does not prove divisibility by 24.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q5')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q6.</strong> 1615 is divisible by 19. What is the quotient? <span class="badge badge-secondary">hard</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q6" value="a"> (a) 75</label>
+                            <label><input type="radio" name="q6" value="b"> (b) 95</label>
+                            <label><input type="radio" name="q6" value="c"> (c) 85</label>
+                            <label><input type="radio" name="q6" value="d"> (d) 65</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q6">
+                            <p><strong>✅ Answer:</strong> (c) 85</p>
+                            <p><strong>💡 Explanation:</strong> The osculator for 19 is +2: 161 + 2 × 5 = 171, then 17 + 2 × 1 = 19, so 19 divides 1615. Dividing, 1615 ÷ 19 = 85.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q6')">Show Answer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="8">
+            <button class="section-header" onclick="toggleSection(8)" aria-expanded="true" aria-controls="section-8">
+                <span class="section-number">8️⃣</span>
+                <span class="section-title">Frequently Asked Questions</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-8">
+                <div class="content-box">
+                    <h3>Why does the digit-sum rule work for 3 and 9 but not for 7?</h3>
+                    <p>Every power of 10 leaves remainder 1 when divided by 3 or 9, so a number and its digit sum leave the same remainder. Powers of 10 leave different remainders when divided by 7, so the digit sum tells you nothing about 7.</p>
+                    <h3>Can I combine two rules to test a composite number?</h3>
+                    <p>Yes, but only when the two numbers share no common factor. Divisible by 3 and by 8 means divisible by 24. Divisible by 4 and by 6 does not prove divisibility by 24, because 12 passes both tests and 24 does not divide it.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="9">
+            <button class="section-header" onclick="toggleSection(9)" aria-expanded="true" aria-controls="section-9">
+                <span class="section-number">9️⃣</span>
+                <span class="section-title">Sources and Review</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-9">
+                <div class="content-box">
+                    <p>All problems and solutions on this page are original. No outside facts are relied on; every numeric answer is recomputed by software before publishing.</p>
+                    <div class="highlight-box">
+                        <p><strong>How this page was prepared.</strong> Drafted with AI assistance (Claude (Anthropic AI model)) from the sources listed above. 21 calculations on this page were recomputed by software and matched. Automated checks also covered structure, internal links and duplicate text. Software checks cannot confirm facts. Reviewed by praveenkumar on 2026-10-20 against the sources listed above.</p>
+                        <p>Found an error? <a href="../../contact.html">Report it</a> and we will correct the page.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="10">
+            <button class="section-header" onclick="toggleSection(10)" aria-expanded="true" aria-controls="section-10">
+                <span class="section-number">🔟</span>
+                <span class="section-title">Related Pages</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-10">
+                <div class="content-box">
+                    <ul class="bullet-list">
+                        <li><a href="../../repeated-questions/quant-cheat-code.html">Quant Cheat Code: 20 Must-Know Shortcuts &amp; Formulas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="page-navigation">
+            <a href="index.html" class="nav-btn">← Quantitative Aptitude</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>Subject: Quantitative Aptitude | Sources are listed on this page. <a href="../../contact.html">Report an error</a>.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>

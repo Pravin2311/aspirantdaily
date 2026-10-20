@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number of Factors, Sum of Factors and Even Factors | AspirantDaily</title>
+    <meta name="description" content="Count the factors of any number from its prime factorisation: total, even, odd, perfect-square and multiples-of-k factors, plus the sum of factors. 7 examples.">
+    <meta name="keywords" content="number of factors formula, how to find number of factors, even factors of a number, sum of factors formula, perfect square factors">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.aspirantdaily.com/study/quant/number-of-factors.html">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.aspirantdaily.com/study/quant/number-of-factors.html">
+    <meta property="og:title" content="Number of Factors, Sum of Factors and Even Factors | AspirantDaily">
+    <meta property="og:description" content="Count the factors of any number from its prime factorisation: total, even, odd, perfect-square and multiples-of-k factors, plus the sum of factors. 7 examples.">
+    <meta property="og:image" content="https://www.aspirantdaily.com/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Number of Factors: Total, Even, Odd, Perfect-Square and Sum",
+  "description": "Count the factors of any number from its prime factorisation: total, even, odd, perfect-square and multiples-of-k factors, plus the sum of factors. 7 examples.",
+  "image": "https://www.aspirantdaily.com/og-image.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "url": "https://www.aspirantdaily.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.aspirantdaily.com/icons/icon-512.png"
+    }
+  },
+  "datePublished": "2026-10-20",
+  "dateModified": "2026-10-20",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.aspirantdaily.com/study/quant/number-of-factors.html"
+  },
+  "articleSection": "Quantitative Aptitude",
+  "citation": []
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.aspirantdaily.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Study Notes",
+      "item": "https://www.aspirantdaily.com/study/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Quantitative Aptitude",
+      "item": "https://www.aspirantdaily.com/study/quant/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Number of Factors: Total, Even, Odd, Perfect-Square and Sum",
+      "item": "https://www.aspirantdaily.com/study/quant/number-of-factors.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do I count 1 and the number itself as factors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The formula counts every factor, including 1 and the number itself. If a question asks for proper factors or factors other than 1 and the number, subtract the ones it excludes from the total."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does a perfect square have an odd number of factors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Factors pair up as a and N ÷ a. For a perfect square, the square root pairs with itself, so one factor has no partner and the total is odd. Every exponent in its factorisation is even, so every bracket (a + 1) is odd."
+      }
+    }
+  ]
+}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css?v=2">
+    <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-51XLJE4TVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-51XLJE4TVH');
+  </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327"
+     crossorigin="anonymous"></script>
+</head>
+<body class="study-page subject-quant">
+    <nav class="study-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Quantitative Aptitude</a>
+            <div class="nav-controls">
+                <button onclick="toggleAllSections()" class="btn-secondary">Expand/Collapse All</button>
+                <button onclick="window.print()" class="btn-primary">📄 Print/Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> / <a href="../index.html">Study Notes</a> / <a href="index.html">Quantitative Aptitude</a> / <span>Number of Factors: Total, Even, Odd, Perfect-Square and Sum</span>
+            </div>
+            <h1>Number of Factors: Total, Even, Odd, Perfect-Square and Sum</h1>
+            <p class="page-subtitle">Prime factorisation • (a+1)(b+1)(c+1) • Even and odd factors • Perfect-square factors • Sum of factors</p>
+            <div class="page-meta">
+                <span class="badge badge-secondary">SSC</span>
+                <span class="badge badge-secondary">Banking</span>
+                <span class="badge badge-secondary">📅 Last updated: 2026-10-20</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="study-section collapsible" data-section="1">
+            <button class="section-header" onclick="toggleSection(1)" aria-expanded="true" aria-controls="section-1">
+                <span class="section-number">1️⃣</span>
+                <span class="section-title">Start with the Prime Factorisation</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-1">
+                <div class="content-box">
+<p>Every question on this topic begins the same way: break the number into primes and write it with exponents. Once you have, say, N = 2ᵃ × 3ᵇ × 5ᶜ, every factor of N is built by choosing a power of 2 from 2⁰ to 2ᵃ, a power of 3 from 3⁰ to 3ᵇ, and a power of 5 from 5⁰ to 5ᶜ. Counting factors is therefore counting choices.</p>
+<p>Divide by small primes in order, 2, then 3, then 5, then 7, until you reach 1. Write the result neatly; a wrong exponent at this stage spoils every later step.</p>
+<p>For example, 360 = 2³ × 3² × 5. This single line is the input for every worked example below.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="2">
+            <button class="section-header" onclick="toggleSection(2)" aria-expanded="true" aria-controls="section-2">
+                <span class="section-number">2️⃣</span>
+                <span class="section-title">Total Number of Factors</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-2">
+                <div class="content-box">
+<p>There are (a + 1) choices for the power of 2, because the exponent can be 0, 1, …, a. Likewise (b + 1) for 3 and (c + 1) for 5. Multiply the choices:</p>
+<div class="highlight-box"><p><strong>Number of factors = (a + 1)(b + 1)(c + 1)…</strong></p></div>
+<div class="case-study">
+<h4>Worked example 1: factors of 360</h4>
+<p>360 = 2³ × 3² × 5¹, so the number of factors is (3 + 1)(2 + 1)(1 + 1) = <strong>24</strong>.</p>
+</div>
+<p>A useful consequence: the number of ways to write N as a product of two factors is half the number of factors, because factors pair up as a and N ÷ a. If N is a perfect square, the square root pairs with itself, so add 1 before halving.</p>
+<div class="case-study">
+<h4>Worked example 2: pairs for a perfect square</h4>
+<p>144 = 2⁴ × 3² has (4 + 1)(2 + 1) = 15 factors. It is a perfect square, so it can be written as a product of two factors in (15 + 1) ÷ 2 = <strong>8</strong> ways, including 12 × 12.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="3">
+            <button class="section-header" onclick="toggleSection(3)" aria-expanded="true" aria-controls="section-3">
+                <span class="section-number">3️⃣</span>
+                <span class="section-title">Even, Odd and Perfect-Square Factors</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-3">
+                <div class="content-box">
+<p>Restrict the choices to match the condition, then multiply as before.</p>
+<ul class="bullet-list">
+<li><strong>Odd factors</strong> contain no 2, so drop the 2 entirely and use the other brackets.</li>
+<li><strong>Even factors</strong> contain at least one 2, so the power of 2 has only a choices (1 to a). Alternatively, subtract the odd factors from the total.</li>
+<li><strong>Perfect-square factors</strong> need every exponent even. For exponent a, the even choices are 0, 2, 4, …, a count of ⌊a ÷ 2⌋ + 1.</li>
+<li><strong>Factors divisible by k</strong> are k times a factor of N ÷ k, so count the factors of N ÷ k.</li>
+</ul>
+<div class="case-study">
+<h4>Worked example 3: even factors of 360</h4>
+<p>The power of 2 can be 1, 2 or 3 (3 choices); 3 and 5 keep their 3 and 2 choices. Even factors = 3 × 3 × 2 = <strong>18</strong>.</p>
+</div>
+<p>The odd factors are therefore 24 − 18 = 6, which matches (2 + 1)(1 + 1) = 6 when the 2 is dropped.</p>
+<div class="case-study">
+<h4>Worked example 4: perfect-square factors of 360</h4>
+<p>For 2³ the even exponents are 0 and 2 (2 choices); for 3² they are 0 and 2 (2 choices); for 5¹ only 0 (1 choice). So 2 × 2 × 1 = <strong>4</strong>: they are 1, 4, 9 and 36.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 5: factors of 360 divisible by 6</h4>
+<p>360 ÷ 6 = 60 = 2² × 3 × 5, which has (2 + 1)(1 + 1)(1 + 1) = <strong>12</strong> factors. Each one times 6 is a factor of 360 divisible by 6.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)" aria-expanded="true" aria-controls="section-4">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">Sum of Factors</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
+                <div class="content-box">
+<p>Each bracket in the factor formula becomes a sum of powers. For N = 2ᵃ × 3ᵇ × 5ᶜ:</p>
+<div class="highlight-box"><p><strong>Sum of factors = (1 + 2 + … + 2ᵃ)(1 + 3 + … + 3ᵇ)(1 + 5 + … + 5ᶜ)</strong></p></div>
+<div class="case-study">
+<h4>Worked example 6: sum of the factors of 360</h4>
+<p>(1 + 2 + 4 + 8)(1 + 3 + 9)(1 + 5) = 15 × 13 × 6 = <strong>1,170</strong>.</p>
+</div>
+<p>Multiplying out the brackets produces every possible combination of one power from each bracket, which is exactly the list of factors, so the product is their sum. The same reasoning explains why the counting formula works.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)" aria-expanded="true" aria-controls="section-5">
+                <span class="section-number">5️⃣</span>
+                <span class="section-title">Common Traps</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-5">
+                <div class="content-box">
+<ul class="warning-list">
+<li>✘ Forgetting the "+1" for the zero exponent. 2³ gives 4 choices, not 3.</li>
+<li>✘ Factorising carelessly. Check by multiplying the primes back together.</li>
+<li>✘ Counting even factors with (a + 1) choices for 2. An even factor needs at least one 2.</li>
+<li>✘ Halving an odd count when pairing factors of a perfect square. Add 1 first.</li>
+</ul>
+<p>Factor counts connect to <a href="hcf-and-lcm-word-problems.html">HCF and LCM questions</a>, which use the same prime factorisations, and to the <a href="divisibility-rules.html">divisibility rules</a> that speed up factorising. For a quick formula sheet, see the <a href="../../repeated-questions/quant-cheat-code.html">Quant cheat code</a>.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)" aria-expanded="true" aria-controls="section-6">
+                <span class="section-number">6️⃣</span>
+                <span class="section-title">Practice Questions (6)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-6">
+                <div class="content-box">
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q1.</strong> How many factors does 540 have? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q1" value="a"> (a) 18</label>
+                            <label><input type="radio" name="q1" value="b"> (b) 20</label>
+                            <label><input type="radio" name="q1" value="c"> (c) 24</label>
+                            <label><input type="radio" name="q1" value="d"> (d) 36</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q1">
+                            <p><strong>✅ Answer:</strong> (c) 24</p>
+                            <p><strong>💡 Explanation:</strong> 540 = 2² × 3³ × 5. Add 1 to each exponent and multiply: (2 + 1)(3 + 1)(1 + 1) = 3 × 4 × 2 = 24.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q1')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q2.</strong> How many even factors does 540 have? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q2" value="a"> (a) 16</label>
+                            <label><input type="radio" name="q2" value="b"> (b) 8</label>
+                            <label><input type="radio" name="q2" value="c"> (c) 12</label>
+                            <label><input type="radio" name="q2" value="d"> (d) 24</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q2">
+                            <p><strong>✅ Answer:</strong> (a) 16</p>
+                            <p><strong>💡 Explanation:</strong> An even factor must contain at least one 2, so the power of 2 can be 1 or 2 (2 choices). The powers of 3 and 5 are free: 4 and 2 choices. 2 × 4 × 2 = 16.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q2')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q3.</strong> How many odd factors does 1000 have? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q3" value="a"> (a) 3</label>
+                            <label><input type="radio" name="q3" value="b"> (b) 16</label>
+                            <label><input type="radio" name="q3" value="c"> (c) 8</label>
+                            <label><input type="radio" name="q3" value="d"> (d) 4</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q3">
+                            <p><strong>✅ Answer:</strong> (d) 4</p>
+                            <p><strong>💡 Explanation:</strong> 1000 = 2³ × 5³. An odd factor uses no 2 at all, so only the powers of 5 vary: 5⁰, 5¹, 5², 5³, giving 4 odd factors.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q3')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q4.</strong> What is the sum of all the factors of 72? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q4" value="a"> (a) 168</label>
+                            <label><input type="radio" name="q4" value="b"> (b) 195</label>
+                            <label><input type="radio" name="q4" value="c"> (c) 180</label>
+                            <label><input type="radio" name="q4" value="d"> (d) 210</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q4">
+                            <p><strong>✅ Answer:</strong> (b) 195</p>
+                            <p><strong>💡 Explanation:</strong> 72 = 2³ × 3². Sum of factors = (1 + 2 + 4 + 8) × (1 + 3 + 9) = 15 × 13 = 195.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q4')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q5.</strong> How many factors of 2⁴ × 3³ × 7² are perfect squares? <span class="badge badge-secondary">hard</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q5" value="a"> (a) 18</label>
+                            <label><input type="radio" name="q5" value="b"> (b) 8</label>
+                            <label><input type="radio" name="q5" value="c"> (c) 12</label>
+                            <label><input type="radio" name="q5" value="d"> (d) 6</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q5">
+                            <p><strong>✅ Answer:</strong> (c) 12</p>
+                            <p><strong>💡 Explanation:</strong> A perfect-square factor needs even exponents. For 2: 0, 2 or 4 (3 choices). For 3: 0 or 2 (2 choices). For 7: 0 or 2 (2 choices). 3 × 2 × 2 = 12.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q5')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q6.</strong> How many factors of 1800 are divisible by 10? <span class="badge badge-secondary">hard</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q6" value="a"> (a) 12</label>
+                            <label><input type="radio" name="q6" value="b"> (b) 24</label>
+                            <label><input type="radio" name="q6" value="c"> (c) 36</label>
+                            <label><input type="radio" name="q6" value="d"> (d) 18</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q6">
+                            <p><strong>✅ Answer:</strong> (d) 18</p>
+                            <p><strong>💡 Explanation:</strong> Factors divisible by 10 are 10 × (a factor of 1800 ÷ 10). 180 = 2² × 3² × 5 has (2 + 1)(2 + 1)(1 + 1) = 18 factors.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q6')">Show Answer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)" aria-expanded="true" aria-controls="section-7">
+                <span class="section-number">7️⃣</span>
+                <span class="section-title">Frequently Asked Questions</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-7">
+                <div class="content-box">
+                    <h3>Do I count 1 and the number itself as factors?</h3>
+                    <p>Yes. The formula counts every factor, including 1 and the number itself. If a question asks for proper factors or factors other than 1 and the number, subtract the ones it excludes from the total.</p>
+                    <h3>Why does a perfect square have an odd number of factors?</h3>
+                    <p>Factors pair up as a and N ÷ a. For a perfect square, the square root pairs with itself, so one factor has no partner and the total is odd. Every exponent in its factorisation is even, so every bracket (a + 1) is odd.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="8">
+            <button class="section-header" onclick="toggleSection(8)" aria-expanded="true" aria-controls="section-8">
+                <span class="section-number">8️⃣</span>
+                <span class="section-title">Sources and Review</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-8">
+                <div class="content-box">
+                    <p>All problems and solutions on this page are original. No outside facts are relied on; every numeric answer is recomputed by software before publishing.</p>
+                    <div class="highlight-box">
+                        <p><strong>How this page was prepared.</strong> Drafted with AI assistance (Claude (Anthropic AI model)) from the sources listed above. 14 calculations on this page were recomputed by software and matched. Automated checks also covered structure, internal links and duplicate text. Software checks cannot confirm facts. Reviewed by praveenkumar on 2026-10-20 against the sources listed above.</p>
+                        <p>Found an error? <a href="../../contact.html">Report it</a> and we will correct the page.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="9">
+            <button class="section-header" onclick="toggleSection(9)" aria-expanded="true" aria-controls="section-9">
+                <span class="section-number">9️⃣</span>
+                <span class="section-title">Related Pages</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-9">
+                <div class="content-box">
+                    <ul class="bullet-list">
+                        <li><a href="../../repeated-questions/quant-cheat-code.html">Quant Cheat Code: 20 Must-Know Shortcuts &amp; Formulas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="page-navigation">
+            <a href="index.html" class="nav-btn">← Quantitative Aptitude</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>Subject: Quantitative Aptitude | Sources are listed on this page. <a href="../../contact.html">Report an error</a>.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>
