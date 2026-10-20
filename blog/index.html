@@ -4,6 +4,10 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css?v=2">
 
   <!-- SEO -->
   <title>Exam Tips & Current Affairs Blog | AspirantDaily</title>
@@ -17,56 +21,6 @@
   <meta property="og:description" content="Daily current affairs, exam strategies, and syllabus updates for Indian competitive exams." />
   <meta property="og:url" content="https://www.aspirantdaily.com/blog/index.html" />
 
-  <link rel="stylesheet" href="../styles.css">
-  <style>
-    /* Blog listing grid — specific to this page */
-    .blog-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 1.25rem;
-      margin: 1.5rem 0 2rem;
-    }
-
-    .blog-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      padding: 1.25rem;
-      border-radius: var(--radius);
-      box-shadow: var(--shadow-sm);
-      text-decoration: none;
-      color: inherit;
-      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-    }
-
-    .blog-card:hover {
-      transform: translateY(-4px);
-      box-shadow: var(--shadow-md);
-      border-color: var(--primary-light);
-    }
-
-    .blog-card h3 { margin: 0 0 0.5rem; font-size: 1.1rem; color: var(--primary); }
-    .blog-card p { font-size: 0.95rem; color: var(--text-light); line-height: 1.45; margin-bottom: 0.75rem; }
-
-    .blog-tag {
-      margin-top: auto;
-      display: inline-block;
-      background: var(--primary-light);
-      color: var(--primary-dark);
-      padding: 0.25rem 0.75rem;
-      border-radius: 999px;
-      font-size: 0.8rem;
-      font-weight: 600;
-      width: fit-content;
-    }
-
-    @media (max-width: 600px) {
-      .blog-grid { grid-template-columns: 1fr; gap: 1rem; }
-      .blog-card { padding: 1rem; }
-    }
-  </style>
 
   <!-- Schema -->
   <script type="application/ld+json">

@@ -1,6 +1,6 @@
 """Render a validated draft into a site page (or a noindex preview).
 
-The page reuses the study-note template: ../styles.css, ../scripts.js
+The page reuses the study-note template: /styles.css, ../scripts.js
 (toggleSection, showAnswer), the same analytics and AdSense tags, Article and
 BreadcrumbList JSON-LD (FAQPage only when the FAQ is visible on the page), a
 Sources section and a "How this page was prepared" box that states plainly
@@ -21,10 +21,12 @@ HUB_NAMES = {
     "study/current-affairs": "Current Affairs", "study/ir": "International Relations", "study/schemes": "Schemes",
     **{k: v[0] for k, v in NEW_HUBS.items()},
 }
+# The site-wide stylesheet; the version must match the links in every page and the service worker.
+STYLES = "/styles.css?v=2"
 NUMBERS = ["1️⃣", "2️⃣", "3️⃣", "4️⃣", "5️⃣", "6️⃣", "7️⃣", "8️⃣", "9️⃣", "🔟"]
 HEAD_TAGS = """    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=optional" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional" rel="stylesheet">
     <link rel="stylesheet" href="{styles}">
     <!-- Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-51XLJE4TVH"></script>
@@ -116,7 +118,6 @@ def render(draft_text, plan_row, review=None, preview=False, date_published=None
     url = HOST + "/" + path
     hub = folder + "/index.html"
     hub_name = HUB_NAMES.get(folder, folder.split("/")[-1].title())
-    styles = rel(path, "study/styles.css")
     scripts = rel(path, "study/scripts.js")
     full_title = f"{meta['title']} | AspirantDaily"
     desc = meta["description"]
@@ -201,9 +202,9 @@ def render(draft_text, plan_row, review=None, preview=False, date_published=None
     <meta property="og:image" content="{HOST}/og-image.jpg">
     <meta name="twitter:card" content="summary_large_image">
 {chr(10).join(ld)}
-{HEAD_TAGS.format(styles=styles)}
+{HEAD_TAGS.format(styles=STYLES)}
 </head>
-<body class="study-page">
+<body class="study-page subject-{folder.split('/')[-1]}">
 {banner}    <nav class="study-nav">
         <div class="container">
             <a href="index.html" class="back-link">← Back to {esc(hub_name)}</a>
@@ -305,18 +306,9 @@ def hub_page(folder, title, intro, pages, parent_label="Study Notes", preview=Fa
     <meta property="og:description" content="{esc(desc)}">
     <meta property="og:image" content="{HOST}/og-image.jpg">
 {ld}
-{HEAD_TAGS.format(styles=rel(path, "study/styles.css"))}
-    <style>
-        .topic-grid {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; margin: 2rem 0; }}
-        .topic-card {{ display: block; background: var(--card-bg); border: 1px solid var(--border-color); border-top: 4px solid #8b5cf6; border-radius: 12px; padding: 1.5rem; text-decoration: none; color: var(--text-primary); box-shadow: var(--shadow); transition: transform .15s, box-shadow .15s; }}
-        .topic-card:hover {{ transform: translateY(-2px); box-shadow: var(--shadow-lg); }}
-        .topic-card h2 {{ font-size: 1.15rem; margin: .5rem 0; }}
-        .topic-card p {{ color: var(--text-secondary); font-size: .92rem; }}
-        .topic-cta {{ display: inline-block; margin-top: .9rem; font-weight: 600; color: var(--primary-color); font-size: .9rem; }}
-        .hub-intro {{ max-width: 720px; margin: 1rem auto 0; color: var(--text-secondary); }}
-    </style>
+{HEAD_TAGS.format(styles=STYLES)}
 </head>
-<body class="study-page">
+<body class="study-page subject-{path.split('/')[-2]}">
 {banner}    <nav class="study-nav">
         <div class="container">
             <a href="{rel(path, up)}" class="back-link">← {esc(parent_label)}</a>

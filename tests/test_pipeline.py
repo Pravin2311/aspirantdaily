@@ -119,7 +119,7 @@ class PipelineTests(unittest.TestCase):
         with open(os.path.join(content_lib.DRAFTS_DIR, GOOD_ID + ".html"), "w", encoding="utf-8") as fh:
             fh.write(text)
         # Stubs for the shared files every rendered page links to.
-        for rel in ("index.html", "contact.html", "favicon.svg", "study/index.html", "study/styles.css",
+        for rel in ("index.html", "contact.html", "favicon.svg", "study/index.html", "styles.css",
                     "study/scripts.js", "repeated-questions/quant-cheat-code.html"):
             os.makedirs(os.path.dirname(os.path.join(self.tmp, rel)), exist_ok=True)
             with open(os.path.join(self.tmp, rel), "w", encoding="utf-8") as fh:

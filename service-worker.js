@@ -2,10 +2,10 @@
 // sw.js – FINAL PRODUCTION VERSION
 // ===============================
 
-const CACHE_NAME = "aspirant-daily-v5"; // 🔥 bump on every deploy
+const CACHE_NAME = "aspirant-daily-v6"; // 🔥 bump on every deploy
 
 const STATIC_ASSETS = [
-  "/styles.css",
+  "/styles.css?v=2",
   "/manifest.webmanifest"
 ];
 
