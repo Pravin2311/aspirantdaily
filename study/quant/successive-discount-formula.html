@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Successive Discount Formula and Equivalent Discount | AspirantDaily</title>
+    <meta name="description" content="Convert successive discounts into one equivalent discount with a + b − ab/100, extend it to three discounts and compare shop offers. Worked examples and 6 MCQs.">
+    <meta name="keywords" content="successive discount formula, equivalent single discount, two successive discounts, discount on discount problems">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.aspirantdaily.com/study/quant/successive-discount-formula.html">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.aspirantdaily.com/study/quant/successive-discount-formula.html">
+    <meta property="og:title" content="Successive Discount Formula and Equivalent Discount | AspirantDaily">
+    <meta property="og:description" content="Convert successive discounts into one equivalent discount with a + b − ab/100, extend it to three discounts and compare shop offers. Worked examples and 6 MCQs.">
+    <meta property="og:image" content="https://www.aspirantdaily.com/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Successive Discount Formula: Turning Two or Three Discounts into One",
+  "description": "Convert successive discounts into one equivalent discount with a + b − ab/100, extend it to three discounts and compare shop offers. Worked examples and 6 MCQs.",
+  "image": "https://www.aspirantdaily.com/og-image.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "url": "https://www.aspirantdaily.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.aspirantdaily.com/icons/icon-512.png"
+    }
+  },
+  "datePublished": "2026-10-20",
+  "dateModified": "2026-10-20",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.aspirantdaily.com/study/quant/successive-discount-formula.html"
+  },
+  "articleSection": "Quantitative Aptitude",
+  "citation": []
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.aspirantdaily.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Study Notes",
+      "item": "https://www.aspirantdaily.com/study/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Quantitative Aptitude",
+      "item": "https://www.aspirantdaily.com/study/quant/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Successive Discount Formula: Turning Two or Three Discounts into One",
+      "item": "https://www.aspirantdaily.com/study/quant/successive-discount-formula.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why can't I simply add two successive discounts?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The second discount is taken on a price that is already reduced, so it removes less money than the same percentage of the marked price. The overlap is ab/100, which is why the equivalent discount is a + b − ab/100 rather than a + b."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the order of successive discounts matter?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Each discount multiplies the price by a factor such as 0.8 or 0.9, and multiplication gives the same result in any order. A 20% then 10% discount and a 10% then 20% discount both leave 72% of the marked price."
+      }
+    }
+  ]
+}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css?v=2">
+    <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-51XLJE4TVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-51XLJE4TVH');
+  </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327"
+     crossorigin="anonymous"></script>
+</head>
+<body class="study-page subject-quant">
+    <nav class="study-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Quantitative Aptitude</a>
+            <div class="nav-controls">
+                <button onclick="toggleAllSections()" class="btn-secondary">Expand/Collapse All</button>
+                <button onclick="window.print()" class="btn-primary">📄 Print/Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> / <a href="../index.html">Study Notes</a> / <a href="index.html">Quantitative Aptitude</a> / <span>Successive Discount Formula: Turning Two or Three Discounts into One</span>
+            </div>
+            <h1>Successive Discount Formula: Turning Two or Three Discounts into One</h1>
+            <p class="page-subtitle">Equivalent discount • Three discounts • Finding the second discount • Comparing offers</p>
+            <div class="page-meta">
+                <span class="badge badge-secondary">SSC</span>
+                <span class="badge badge-secondary">Banking</span>
+                <span class="badge badge-secondary">Railway</span>
+                <span class="badge badge-secondary">📅 Last updated: 2026-10-20</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="study-section collapsible" data-section="1">
+            <button class="section-header" onclick="toggleSection(1)" aria-expanded="true" aria-controls="section-1">
+                <span class="section-number">1️⃣</span>
+                <span class="section-title">What a Successive Discount Means</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-1">
+                <div class="content-box">
+<p>A successive discount is a chain of reductions where each new percentage is applied to the price left after the previous one. A shop that advertises "20% off, plus an extra 10% at the counter" does not give 30% off the tag price. It first cuts the tag price by 20%, and then takes 10% off what remains.</p>
+<p>Exam questions test whether you can turn such a chain into one <strong>equivalent single discount</strong>, work backwards to the marked price, or choose the better of two offers. All three tasks become quick once you think of each discount as a <em>multiplier</em> rather than an amount to subtract.</p>
+<p>A discount of r% leaves (100 − r)% of the price, so the price is multiplied by (1 − r/100). A 20% discount multiplies by 0.80; a 15% discount multiplies by 0.85; a 5% discount multiplies by 0.95. A chain of discounts is simply a product of these multipliers.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="2">
+            <button class="section-header" onclick="toggleSection(2)" aria-expanded="true" aria-controls="section-2">
+                <span class="section-number">2️⃣</span>
+                <span class="section-title">The Two-Discount Formula and Where It Comes From</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-2">
+                <div class="content-box">
+<p>For two discounts of a% and b%, the price kept is (1 − a/100)(1 − b/100). Expanding the brackets gives 1 − a/100 − b/100 + ab/10,000. The fraction removed is therefore a/100 + b/100 − ab/10,000, which, written as a percentage, is:</p>
+<div class="highlight-box"><p><strong>Equivalent discount = a + b − ab/100</strong></p></div>
+<p>The term ab/100 is the part of the second discount that would have been charged on money already removed by the first. Subtracting it corrects the double-counting. Because the formula is symmetric in a and b, the order of the two discounts never changes the answer.</p>
+<div class="case-study">
+<h4>Worked example 1: 20% and 10%</h4>
+<p>Equivalent discount = 20 + 10 − (20 × 10)/100 = 30 − 2 = <strong>28%</strong>. Check with multipliers: 0.8 × 0.9 = 0.72, so 72% of the price is kept and 28% is removed.</p>
+</div>
+<p>The same formula handles price rises if you write an increase as a negative discount, or more simply use the general rule for successive percentage changes: x + y + xy/100, where an increase is positive and a decrease is negative. A 30% rise followed by a 20% cut is 30 − 20 − 6 = a 4% net rise.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="3">
+            <button class="section-header" onclick="toggleSection(3)" aria-expanded="true" aria-controls="section-3">
+                <span class="section-number">3️⃣</span>
+                <span class="section-title">Three or More Discounts</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-3">
+                <div class="content-box">
+<p>With three discounts the expanded formula becomes long, so use the multiplier method directly. Multiply the three retention factors, then subtract the product from 1.</p>
+<div class="case-study">
+<h4>Worked example 2: 10%, 20% and 30%</h4>
+<p>Price kept = 0.9 × 0.8 × 0.7 = 0.504. The equivalent single discount is 1 − 0.504 = <strong>49.6%</strong>, well short of the 60% you would get by adding.</p>
+</div>
+<p>A useful shortcut is to apply the two-discount formula twice. Combine 10% and 20% into 28%, then combine 28% and 30%: 28 + 30 − (28 × 30)/100 = 58 − 8.4 = 49.6%. Both routes agree, and the second one is easier to do in your head when the numbers are round.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)" aria-expanded="true" aria-controls="section-4">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">Working Backwards: Marked Price and a Missing Discount</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
+                <div class="content-box">
+<p>When the selling price is given, divide by the product of the multipliers instead of multiplying.</p>
+<div class="case-study">
+<h4>Worked example 3: finding the marked price</h4>
+<p>A bag sells for ₹1,530 after discounts of 15% and 10%. The price kept is 0.85 × 0.9 = 0.765 of the marked price, so the marked price is 1,530 ÷ 0.765 = <strong>₹2,000</strong>.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 4: finding the selling price</h4>
+<p>A jacket marked ₹2,500 carries discounts of 20% and 15%. Selling price = 2,500 × 0.8 × 0.85 = 2,000 × 0.85 = <strong>₹1,700</strong>.</p>
+</div>
+<p>To find a missing discount, divide the overall retention factor by the known one. If the overall discount is 40% and the first discount is 25%, the second multiplier is 0.60 ÷ 0.75 = 0.80, so the second discount is 20%.</p>
+<div class="case-study">
+<h4>Worked example 5: the missing second discount</h4>
+<p>Overall discount 40%, first discount 25%. Second multiplier = 0.6 ÷ 0.75 = 0.8, so the second discount is <strong>20%</strong>.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)" aria-expanded="true" aria-controls="section-5">
+                <span class="section-number">5️⃣</span>
+                <span class="section-title">Comparing Offers and Linking to Profit</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-5">
+                <div class="content-box">
+<p>Comparing a flat discount with a chain is a common question. Convert the chain to its equivalent single discount and compare the two percentages; the larger one is better for the buyer. To express the difference in rupees, multiply the gap in percentage points by the marked price.</p>
+<div class="case-study">
+<h4>Worked example 6: flat 30% or 20% + 10%?</h4>
+<p>On a ₹4,000 item, the chain 20% + 10% is a 28% discount (₹1,120 off), while a flat 30% is ₹1,200 off. The flat offer saves the buyer <strong>₹80</strong> more.</p>
+</div>
+<p>Discount questions often combine with mark-up. If a trader marks goods 40% above cost and then allows a 25% discount, the selling price is 1.4 × 0.75 = 1.05 times the cost, a 5% profit. The same multiplier chain works for any sequence of mark-ups and discounts.</p>
+<div class="case-study">
+<h4>Worked example 7: mark-up then discount</h4>
+<p>Cost ₹100 → marked ₹140 → after 25% discount ₹105. Profit = <strong>5%</strong>.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)" aria-expanded="true" aria-controls="section-6">
+                <span class="section-number">6️⃣</span>
+                <span class="section-title">Common Traps and a Quick Revision Table</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-6">
+                <div class="content-box">
+<ul class="warning-list">
+<li>✘ Adding the discounts. Two 50% discounts leave 25% of the price, not zero.</li>
+<li>✘ Applying the second discount to the marked price instead of the reduced price.</li>
+<li>✘ Dividing by the wrong factor when working backwards. Use the product of all retention factors.</li>
+<li>✘ Treating "buy 3, get 1 free" as 33⅓% off. You pay for 3 items and receive 4, so the discount is 1/4 = 25% of the total value.</li>
+</ul>
+<div class="table-wrap"><table class="data-table">
+<thead><tr><th>Discounts</th><th>Price kept</th><th>Equivalent discount</th></tr></thead>
+<tbody>
+<tr><td>10% + 10%</td><td>0.81</td><td>19%</td></tr>
+<tr><td>20% + 10%</td><td>0.72</td><td>28%</td></tr>
+<tr><td>20% + 20%</td><td>0.64</td><td>36%</td></tr>
+<tr><td>25% + 20%</td><td>0.60</td><td>40%</td></tr>
+<tr><td>30% + 20%</td><td>0.56</td><td>44%</td></tr>
+<tr><td>10% + 20% + 30%</td><td>0.504</td><td>49.6%</td></tr>
+</tbody></table></div>
+<p>For more percentage tools, see the <a href="../../repeated-questions/quant-cheat-code.html">Quant cheat code</a> and the page on <a href="product-constancy-price-and-consumption.html">price rise and consumption cut</a>, which uses the same multiplier idea in reverse.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)" aria-expanded="true" aria-controls="section-7">
+                <span class="section-number">7️⃣</span>
+                <span class="section-title">Practice Questions (6)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-7">
+                <div class="content-box">
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q1.</strong> What single discount is equivalent to successive discounts of 25% and 20%? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q1" value="a"> (a) 45%</label>
+                            <label><input type="radio" name="q1" value="b"> (b) 40%</label>
+                            <label><input type="radio" name="q1" value="c"> (c) 42.5%</label>
+                            <label><input type="radio" name="q1" value="d"> (d) 35%</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q1">
+                            <p><strong>✅ Answer:</strong> (b) 40%</p>
+                            <p><strong>💡 Explanation:</strong> Using a + b − ab/100: 25 + 20 − (25 × 20)/100 = 45 − 5 = 40%. Adding the two (45%) overstates the discount.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q1')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q2.</strong> An article marked at ₹1,200 is sold after successive discounts of 10% and 5%. What is the selling price? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q2" value="a"> (a) ₹1,020</label>
+                            <label><input type="radio" name="q2" value="b"> (b) ₹1,080</label>
+                            <label><input type="radio" name="q2" value="c"> (c) ₹1,032</label>
+                            <label><input type="radio" name="q2" value="d"> (d) ₹1,026</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q2">
+                            <p><strong>✅ Answer:</strong> (d) ₹1,026</p>
+                            <p><strong>💡 Explanation:</strong> Multiply by the retention factors: 1,200 × 0.90 × 0.95 = 1,080 × 0.95 = ₹1,026.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q2')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q3.</strong> Three successive discounts of 10% each are equivalent to a single discount of: <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q3" value="a"> (a) 27.1%</label>
+                            <label><input type="radio" name="q3" value="b"> (b) 30%</label>
+                            <label><input type="radio" name="q3" value="c"> (c) 27%</label>
+                            <label><input type="radio" name="q3" value="d"> (d) 28.1%</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q3">
+                            <p><strong>✅ Answer:</strong> (a) 27.1%</p>
+                            <p><strong>💡 Explanation:</strong> The price kept is 0.9 × 0.9 × 0.9 = 0.729 of the marked price, so the discount is 1 − 0.729 = 27.1%.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q3')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q4.</strong> After successive discounts of 20% and 5%, a shirt sells for ₹1,368. What is its marked price? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q4" value="a"> (a) ₹1,710</label>
+                            <label><input type="radio" name="q4" value="b"> (b) ₹1,750</label>
+                            <label><input type="radio" name="q4" value="c"> (c) ₹1,800</label>
+                            <label><input type="radio" name="q4" value="d"> (d) ₹1,900</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q4">
+                            <p><strong>✅ Answer:</strong> (c) ₹1,800</p>
+                            <p><strong>💡 Explanation:</strong> Selling price = MP × 0.8 × 0.95 = 0.76 MP, so MP = 1,368 ÷ 0.76 = ₹1,800.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q4')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q5.</strong> A price is raised by 30% and the new price is then discounted by 20%. What is the net change in price? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q5" value="a"> (a) 10% increase</label>
+                            <label><input type="radio" name="q5" value="b"> (b) 4% increase</label>
+                            <label><input type="radio" name="q5" value="c"> (c) 4% decrease</label>
+                            <label><input type="radio" name="q5" value="d"> (d) 6% increase</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q5">
+                            <p><strong>✅ Answer:</strong> (b) 4% increase</p>
+                            <p><strong>💡 Explanation:</strong> Treat the rise as +30 and the discount as −20: 30 − 20 + (30 × −20)/100 = 10 − 6 = +4%, an increase.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q5')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q6.</strong> Two successive discounts are equivalent to a single discount of 46%. If the first is 10%, what is the second? <span class="badge badge-secondary">hard</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q6" value="a"> (a) 36%</label>
+                            <label><input type="radio" name="q6" value="b"> (b) 38%</label>
+                            <label><input type="radio" name="q6" value="c"> (c) 35%</label>
+                            <label><input type="radio" name="q6" value="d"> (d) 40%</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q6">
+                            <p><strong>✅ Answer:</strong> (d) 40%</p>
+                            <p><strong>💡 Explanation:</strong> The price kept is 0.54 = 0.90 × x, so x = 0.6 and the second discount is 1 − 0.6 = 40%.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q6')">Show Answer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="8">
+            <button class="section-header" onclick="toggleSection(8)" aria-expanded="true" aria-controls="section-8">
+                <span class="section-number">8️⃣</span>
+                <span class="section-title">Frequently Asked Questions</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-8">
+                <div class="content-box">
+                    <h3>Why can&#x27;t I simply add two successive discounts?</h3>
+                    <p>The second discount is taken on a price that is already reduced, so it removes less money than the same percentage of the marked price. The overlap is ab/100, which is why the equivalent discount is a + b − ab/100 rather than a + b.</p>
+                    <h3>Does the order of successive discounts matter?</h3>
+                    <p>No. Each discount multiplies the price by a factor such as 0.8 or 0.9, and multiplication gives the same result in any order. A 20% then 10% discount and a 10% then 20% discount both leave 72% of the marked price.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="9">
+            <button class="section-header" onclick="toggleSection(9)" aria-expanded="true" aria-controls="section-9">
+                <span class="section-number">9️⃣</span>
+                <span class="section-title">Sources and Review</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-9">
+                <div class="content-box">
+                    <p>All problems and solutions on this page are original. No outside facts are relied on; every numeric answer is recomputed by software before publishing.</p>
+                    <div class="highlight-box">
+                        <p><strong>How this page was prepared.</strong> Drafted with AI assistance (Claude (Anthropic AI model)) from the sources listed above. 13 calculations on this page were recomputed by software and matched. Automated checks also covered structure, internal links and duplicate text. Software checks cannot confirm facts. Reviewed by praveen on 2026-10-20 against the sources listed above.</p>
+                        <p>Found an error? <a href="../../contact.html">Report it</a> and we will correct the page.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="10">
+            <button class="section-header" onclick="toggleSection(10)" aria-expanded="true" aria-controls="section-10">
+                <span class="section-number">🔟</span>
+                <span class="section-title">Related Pages</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-10">
+                <div class="content-box">
+                    <ul class="bullet-list">
+                        <li><a href="../../repeated-questions/quant-cheat-code.html">Quant Cheat Code: 20 Must-Know Shortcuts &amp; Formulas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="page-navigation">
+            <a href="index.html" class="nav-btn">← Quantitative Aptitude</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>Subject: Quantitative Aptitude | Sources are listed on this page. <a href="../../contact.html">Report an error</a>.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>

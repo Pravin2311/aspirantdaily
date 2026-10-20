@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Average Speed Formula: Why It Is Not the Simple Mean | AspirantDaily</title>
+    <meta name="description" content="Derive the average speed formula 2xy/(x+y) for equal distances, extend it to three legs and unequal distances, and see when the simple mean is right. 6 MCQs.">
+    <meta name="keywords" content="average speed formula 2xy/x+y, average speed for equal distances, harmonic mean speed, average speed three speeds">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.aspirantdaily.com/study/quant/average-speed-formula.html">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.aspirantdaily.com/study/quant/average-speed-formula.html">
+    <meta property="og:title" content="Average Speed Formula: Why It Is Not the Simple Mean | AspirantDaily">
+    <meta property="og:description" content="Derive the average speed formula 2xy/(x+y) for equal distances, extend it to three legs and unequal distances, and see when the simple mean is right. 6 MCQs.">
+    <meta property="og:image" content="https://www.aspirantdaily.com/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Average Speed: Why 2xy/(x + y) and Not (x + y)/2",
+  "description": "Derive the average speed formula 2xy/(x+y) for equal distances, extend it to three legs and unequal distances, and see when the simple mean is right. 6 MCQs.",
+  "image": "https://www.aspirantdaily.com/og-image.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "url": "https://www.aspirantdaily.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.aspirantdaily.com/icons/icon-512.png"
+    }
+  },
+  "datePublished": "2026-10-20",
+  "dateModified": "2026-10-20",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.aspirantdaily.com/study/quant/average-speed-formula.html"
+  },
+  "articleSection": "Quantitative Aptitude",
+  "citation": []
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.aspirantdaily.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Study Notes",
+      "item": "https://www.aspirantdaily.com/study/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Quantitative Aptitude",
+      "item": "https://www.aspirantdaily.com/study/quant/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Average Speed: Why 2xy/(x + y) and Not (x + y)/2",
+      "item": "https://www.aspirantdaily.com/study/quant/average-speed-formula.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is average speed the harmonic mean of the speeds?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For equal distances, yes: 2xy/(x + y) is the harmonic mean of x and y. For equal times it is the arithmetic mean. For anything else, divide total distance by total time, which covers both special cases."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can the formula 2xy/(x + y) be used when the distances differ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. The formula assumes both legs are the same length. With different distances, find the time for each leg separately, add the times, and divide the total distance by the total time."
+      }
+    }
+  ]
+}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css?v=2">
+    <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-51XLJE4TVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-51XLJE4TVH');
+  </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327"
+     crossorigin="anonymous"></script>
+</head>
+<body class="study-page subject-quant">
+    <nav class="study-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Quantitative Aptitude</a>
+            <div class="nav-controls">
+                <button onclick="toggleAllSections()" class="btn-secondary">Expand/Collapse All</button>
+                <button onclick="window.print()" class="btn-primary">📄 Print/Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> / <a href="../index.html">Study Notes</a> / <a href="index.html">Quantitative Aptitude</a> / <span>Average Speed: Why 2xy/(x + y) and Not (x + y)/2</span>
+            </div>
+            <h1>Average Speed: Why 2xy/(x + y) and Not (x + y)/2</h1>
+            <p class="page-subtitle">Equal distances • Equal times • Three legs • Unequal distances • Required return speed</p>
+            <div class="page-meta">
+                <span class="badge badge-secondary">SSC</span>
+                <span class="badge badge-secondary">Banking</span>
+                <span class="badge badge-secondary">Railway</span>
+                <span class="badge badge-secondary">📅 Last updated: 2026-10-20</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="study-section collapsible" data-section="1">
+            <button class="section-header" onclick="toggleSection(1)" aria-expanded="true" aria-controls="section-1">
+                <span class="section-number">1️⃣</span>
+                <span class="section-title">The Definition Decides Everything</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-1">
+                <div class="content-box">
+<p>Average speed is defined as <strong>total distance ÷ total time</strong>. It is not the average of the speeds. The two agree only when each speed is held for the same length of time. In most exam questions the speeds are held over the same <em>distance</em>, which means the slower leg takes longer and drags the average below the simple mean.</p>
+<p>So the first question to ask is: are the distances equal, the times equal, or neither? Each case has its own short formula, and all of them come from the definition.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="2">
+            <button class="section-header" onclick="toggleSection(2)" aria-expanded="true" aria-controls="section-2">
+                <span class="section-number">2️⃣</span>
+                <span class="section-title">Equal Distances: Deriving 2xy/(x + y)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-2">
+                <div class="content-box">
+<p>Let a journey have two legs of the same length d, covered at speeds x and y. The times are d/x and d/y, so the total time is d(x + y)/xy. Dividing the total distance 2d by this time gives:</p>
+<div class="highlight-box"><p><strong>Average speed (equal distances) = 2xy ÷ (x + y)</strong></p></div>
+<p>The distance d cancels, which is why the question never needs to tell you how long the road is.</p>
+<div class="case-study">
+<h4>Worked example 1: 40 km/h out, 60 km/h back</h4>
+<p>Average = 2 × 40 × 60 ÷ 100 = <strong>48 km/h</strong>, not 50. For a 120 km road, the trip out takes 3 hours and the trip back 2 hours, so 240 km in 5 hours is indeed 48 km/h.</p>
+</div>
+<p>With three equal legs at x, y and z, the same algebra gives 3xyz ÷ (xy + yz + zx).</p>
+<div class="case-study">
+<h4>Worked example 2: three equal stretches</h4>
+<p>Speeds 30, 40 and 60 km/h. Average = 3 × 30 × 40 × 60 ÷ (1,200 + 2,400 + 1,800) = 216,000 ÷ 5,400 = <strong>40 km/h</strong>.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="3">
+            <button class="section-header" onclick="toggleSection(3)" aria-expanded="true" aria-controls="section-3">
+                <span class="section-number">3️⃣</span>
+                <span class="section-title">Equal Times and Unequal Distances</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-3">
+                <div class="content-box">
+<p>If each speed is held for the same time t, the distances are xt and yt, and the average is (xt + yt) ÷ 2t = (x + y) ÷ 2. Here, and only here, the simple mean is correct.</p>
+<div class="case-study">
+<h4>Worked example 3: equal times</h4>
+<p>A train runs for one hour at 40 km/h and one hour at 60 km/h. Average = (40 + 60) ÷ 2 = <strong>50 km/h</strong>.</p>
+</div>
+<p>When neither the distances nor the times are equal, go back to the definition. Find each leg's time, add them, and divide the total distance by the total time.</p>
+<div class="case-study">
+<h4>Worked example 4: unequal distances</h4>
+<p>A car covers 120 km at 40 km/h (3 hours) and 180 km at 60 km/h (3 hours). Average = 300 ÷ 6 = <strong>50 km/h</strong>. The legs happen to take equal times, so the simple mean also works; that is a coincidence, not a rule.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)" aria-expanded="true" aria-controls="section-4">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">Finding the Speed Needed for a Target Average</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
+                <div class="content-box">
+<p>Questions often fix the outward speed and the target average, and ask for the return speed. Set 2xy ÷ (x + y) equal to the target A and solve for y: <strong>y = Ax ÷ (2x − A)</strong>.</p>
+<div class="case-study">
+<h4>Worked example 5: the return speed</h4>
+<p>A driver goes out at 40 km/h and wants to average 48 km/h for the round trip. y = 48 × 40 ÷ (80 − 48) = 1,920 ÷ 32 = <strong>60 km/h</strong>.</p>
+</div>
+<p>The formula also shows when a target cannot be reached. If the target average is twice the outward speed, the denominator 2x − A becomes zero. Going out at 40 km/h and hoping to average 80 km/h would require an infinite return speed, because all the allowed time has already been used on the way out. Some questions test exactly this.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)" aria-expanded="true" aria-controls="section-5">
+                <span class="section-number">5️⃣</span>
+                <span class="section-title">Stoppages Count as Time</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-5">
+                <div class="content-box">
+<p>Halts are part of the journey time even though no distance is covered. A bus that stops at stations has a lower average speed than its running speed, and questions sometimes ask how many minutes per hour it stops.</p>
+<div class="case-study">
+<h4>Worked example 6: a 30-minute halt</h4>
+<p>A bus runs 120 km at 60 km/h, which takes 2 hours, and also halts for 30 minutes. The total time is 2.5 hours, so the average speed is 120 ÷ 2.5 = <strong>48 km/h</strong>.</p>
+</div>
+<p>Turned round, if a bus averages 48 km/h including halts but runs at 60 km/h, it loses 12 km of running in every hour. At 60 km/h, 12 km takes 12 minutes, so it stops for 12 minutes in each hour.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)" aria-expanded="true" aria-controls="section-6">
+                <span class="section-number">6️⃣</span>
+                <span class="section-title">Common Traps and Revision</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-6">
+                <div class="content-box">
+<ul class="warning-list">
+<li>✘ Taking the simple mean when the distances are equal.</li>
+<li>✘ Using 2xy/(x + y) when the distances are different.</li>
+<li>✘ Forgetting to include stoppage time when the question mentions halts.</li>
+<li>✘ Assuming any target average is possible. It must be less than twice the first speed.</li>
+</ul>
+<div class="table-wrap"><table class="data-table">
+<thead><tr><th>Situation</th><th>Average speed</th></tr></thead>
+<tbody>
+<tr><td>Equal distances at x and y</td><td>2xy ÷ (x + y)</td></tr>
+<tr><td>Three equal distances at x, y, z</td><td>3xyz ÷ (xy + yz + zx)</td></tr>
+<tr><td>Equal times at x and y</td><td>(x + y) ÷ 2</td></tr>
+<tr><td>Any journey</td><td>total distance ÷ total time</td></tr>
+<tr><td>Return speed for target A</td><td>Ax ÷ (2x − A)</td></tr>
+</tbody></table></div>
+<p>Round trips on rivers use the same idea; see <a href="boats-and-streams.html">boats and streams</a>. For trains, see <a href="train-problems.html">train problems</a>, and for a formula list the <a href="../../repeated-questions/quant-cheat-code.html">Quant cheat code</a>.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)" aria-expanded="true" aria-controls="section-7">
+                <span class="section-number">7️⃣</span>
+                <span class="section-title">Practice Questions (6)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-7">
+                <div class="content-box">
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q1.</strong> A cyclist rides to a town at 30 km/h and returns along the same road at 20 km/h. What is the average speed for the round trip? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q1" value="a"> (a) 25 km/h</label>
+                            <label><input type="radio" name="q1" value="b"> (b) 24 km/h</label>
+                            <label><input type="radio" name="q1" value="c"> (c) 22 km/h</label>
+                            <label><input type="radio" name="q1" value="d"> (d) 26 km/h</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q1">
+                            <p><strong>✅ Answer:</strong> (b) 24 km/h</p>
+                            <p><strong>💡 Explanation:</strong> Equal distances, so use 2xy/(x + y) = 2 × 30 × 20 ÷ 50 = 24 km/h. The simple mean, 25, ignores the extra time spent at 20 km/h.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q1')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q2.</strong> A car covers 100 km at 50 km/h and then 150 km at 75 km/h. What is its average speed? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q2" value="a"> (a) 62.5 km/h</label>
+                            <label><input type="radio" name="q2" value="b"> (b) 60 km/h</label>
+                            <label><input type="radio" name="q2" value="c"> (c) 65 km/h</label>
+                            <label><input type="radio" name="q2" value="d"> (d) 64 km/h</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q2">
+                            <p><strong>✅ Answer:</strong> (a) 62.5 km/h</p>
+                            <p><strong>💡 Explanation:</strong> Total distance = 250 km and total time = 2 + 2 = 4 hours, so the average is 250 ÷ 4 = 62.5 km/h. The two legs take equal times, so the simple mean also works here.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q2')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q3.</strong> A runner covers three equal stretches at 10, 20 and 30 km/h. What is the average speed, to two decimal places? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q3" value="a"> (a) 20 km/h</label>
+                            <label><input type="radio" name="q3" value="b"> (b) 15 km/h</label>
+                            <label><input type="radio" name="q3" value="c"> (c) 16.36 km/h</label>
+                            <label><input type="radio" name="q3" value="d"> (d) 18 km/h</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q3">
+                            <p><strong>✅ Answer:</strong> (c) 16.36 km/h</p>
+                            <p><strong>💡 Explanation:</strong> For three equal distances the average is 3xyz/(xy + yz + zx) = 18,000 ÷ 1,100 = 16.36 km/h.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q3')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q4.</strong> A bus travels half of its journey time at 40 km/h and the other half at 80 km/h. What is its average speed? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q4" value="a"> (a) 53.33 km/h</label>
+                            <label><input type="radio" name="q4" value="b"> (b) 50 km/h</label>
+                            <label><input type="radio" name="q4" value="c"> (c) 70 km/h</label>
+                            <label><input type="radio" name="q4" value="d"> (d) 60 km/h</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q4">
+                            <p><strong>✅ Answer:</strong> (d) 60 km/h</p>
+                            <p><strong>💡 Explanation:</strong> When the times are equal, the average speed is the simple mean: (40 + 80) ÷ 2 = 60 km/h. 53.33 km/h would be right only for equal distances.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q4')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q5.</strong> A man drives to a city at 60 km/h. At what speed must he return along the same road to average 75 km/h for the round trip? <span class="badge badge-secondary">hard</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q5" value="a"> (a) 90 km/h</label>
+                            <label><input type="radio" name="q5" value="b"> (b) 100 km/h</label>
+                            <label><input type="radio" name="q5" value="c"> (c) 120 km/h</label>
+                            <label><input type="radio" name="q5" value="d"> (d) 110 km/h</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q5">
+                            <p><strong>✅ Answer:</strong> (b) 100 km/h</p>
+                            <p><strong>💡 Explanation:</strong> Solve 2 × 60 × y ÷ (60 + y) = 75: 120y = 4,500 + 75y, so y = 100 km/h.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q5')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q6.</strong> A car covers one-third of a distance at 20 km/h, one-third at 30 km/h and the rest at 60 km/h. What is its average speed? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q6" value="a"> (a) 30 km/h</label>
+                            <label><input type="radio" name="q6" value="b"> (b) 36.67 km/h</label>
+                            <label><input type="radio" name="q6" value="c"> (c) 35 km/h</label>
+                            <label><input type="radio" name="q6" value="d"> (d) 32 km/h</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q6">
+                            <p><strong>✅ Answer:</strong> (a) 30 km/h</p>
+                            <p><strong>💡 Explanation:</strong> Three equal distances: 3 × 20 × 30 × 60 ÷ (600 + 1,800 + 1,200) = 108,000 ÷ 3,600 = 30 km/h.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q6')">Show Answer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="8">
+            <button class="section-header" onclick="toggleSection(8)" aria-expanded="true" aria-controls="section-8">
+                <span class="section-number">8️⃣</span>
+                <span class="section-title">Frequently Asked Questions</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-8">
+                <div class="content-box">
+                    <h3>Is average speed the harmonic mean of the speeds?</h3>
+                    <p>For equal distances, yes: 2xy/(x + y) is the harmonic mean of x and y. For equal times it is the arithmetic mean. For anything else, divide total distance by total time, which covers both special cases.</p>
+                    <h3>Can the formula 2xy/(x + y) be used when the distances differ?</h3>
+                    <p>No. The formula assumes both legs are the same length. With different distances, find the time for each leg separately, add the times, and divide the total distance by the total time.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="9">
+            <button class="section-header" onclick="toggleSection(9)" aria-expanded="true" aria-controls="section-9">
+                <span class="section-number">9️⃣</span>
+                <span class="section-title">Sources and Review</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-9">
+                <div class="content-box">
+                    <p>All problems and solutions on this page are original. No outside facts are relied on; every numeric answer is recomputed by software before publishing.</p>
+                    <div class="highlight-box">
+                        <p><strong>How this page was prepared.</strong> Drafted with AI assistance (Claude (Anthropic AI model)) from the sources listed above. 12 calculations on this page were recomputed by software and matched. Automated checks also covered structure, internal links and duplicate text. Software checks cannot confirm facts. Reviewed by praveen on 2026-10-20 against the sources listed above.</p>
+                        <p>Found an error? <a href="../../contact.html">Report it</a> and we will correct the page.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="10">
+            <button class="section-header" onclick="toggleSection(10)" aria-expanded="true" aria-controls="section-10">
+                <span class="section-number">🔟</span>
+                <span class="section-title">Related Pages</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-10">
+                <div class="content-box">
+                    <ul class="bullet-list">
+                        <li><a href="../../repeated-questions/quant-cheat-code.html">Quant Cheat Code: 20 Must-Know Shortcuts &amp; Formulas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="page-navigation">
+            <a href="index.html" class="nav-btn">← Quantitative Aptitude</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>Subject: Quantitative Aptitude | Sources are listed on this page. <a href="../../contact.html">Report an error</a>.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>

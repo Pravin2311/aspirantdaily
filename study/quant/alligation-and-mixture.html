@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alligation Rule for Mixture Problems | AspirantDaily</title>
+    <meta name="description" content="Use the alligation cross to find mixing ratios for prices, concentrations, averages and profits, and the replacement formula where alligation fails.">
+    <meta name="keywords" content="alligation rule mixture problems, alligation method, mixture and alligation formula, repeated replacement formula">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.aspirantdaily.com/study/quant/alligation-and-mixture.html">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.aspirantdaily.com/study/quant/alligation-and-mixture.html">
+    <meta property="og:title" content="Alligation Rule for Mixture Problems | AspirantDaily">
+    <meta property="og:description" content="Use the alligation cross to find mixing ratios for prices, concentrations, averages and profits, and the replacement formula where alligation fails.">
+    <meta property="og:image" content="https://www.aspirantdaily.com/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Alligation: The Cross Method for Mixtures, and When It Fails",
+  "description": "Use the alligation cross to find mixing ratios for prices, concentrations, averages and profits, and the replacement formula where alligation fails.",
+  "image": "https://www.aspirantdaily.com/og-image.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "url": "https://www.aspirantdaily.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.aspirantdaily.com/icons/icon-512.png"
+    }
+  },
+  "datePublished": "2026-10-20",
+  "dateModified": "2026-10-20",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.aspirantdaily.com/study/quant/alligation-and-mixture.html"
+  },
+  "articleSection": "Quantitative Aptitude",
+  "citation": []
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.aspirantdaily.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Study Notes",
+      "item": "https://www.aspirantdaily.com/study/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Quantitative Aptitude",
+      "item": "https://www.aspirantdaily.com/study/quant/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Alligation: The Cross Method for Mixtures, and When It Fails",
+      "item": "https://www.aspirantdaily.com/study/quant/alligation-and-mixture.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Which quantity goes on which side of the alligation cross?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The difference between the dearer value and the mean gives the share of the cheaper item, and the difference between the mean and the cheaper value gives the share of the dearer item. Each ingredient's share is the distance of the other ingredient from the mean."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does alligation fail for repeated replacement?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Alligation mixes two fixed ingredients once. In repeated replacement, each draw removes a mixture whose strength keeps changing, so there is no single pair of values to cross. Use the multiplier formula final = initial × (1 − x/V) to the power n instead."
+      }
+    }
+  ]
+}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css?v=2">
+    <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-51XLJE4TVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-51XLJE4TVH');
+  </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327"
+     crossorigin="anonymous"></script>
+</head>
+<body class="study-page subject-quant">
+    <nav class="study-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Quantitative Aptitude</a>
+            <div class="nav-controls">
+                <button onclick="toggleAllSections()" class="btn-secondary">Expand/Collapse All</button>
+                <button onclick="window.print()" class="btn-primary">📄 Print/Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> / <a href="../index.html">Study Notes</a> / <a href="index.html">Quantitative Aptitude</a> / <span>Alligation: The Cross Method for Mixtures, and When It Fails</span>
+            </div>
+            <h1>Alligation: The Cross Method for Mixtures, and When It Fails</h1>
+            <p class="page-subtitle">Mean price • Mixing ratio • Concentrations • Group averages • Profit mixtures • Repeated replacement</p>
+            <div class="page-meta">
+                <span class="badge badge-secondary">SSC</span>
+                <span class="badge badge-secondary">Banking</span>
+                <span class="badge badge-secondary">Railway</span>
+                <span class="badge badge-secondary">📅 Last updated: 2026-10-20</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="study-section collapsible" data-section="1">
+            <button class="section-header" onclick="toggleSection(1)" aria-expanded="true" aria-controls="section-1">
+                <span class="section-number">1️⃣</span>
+                <span class="section-title">What Alligation Does</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-1">
+                <div class="content-box">
+<p>Alligation answers one question: <strong>in what ratio must two ingredients be mixed to reach a given average?</strong> The ingredients might be grades of rice at different prices, acid solutions of different strengths, two groups of students with different average marks, or two parts of a stock sold at different profits. In every case there is a cheaper value (c), a dearer value (d) and a mean value (m) somewhere between them.</p>
+<div class="highlight-box"><p><strong>Quantity of cheaper : quantity of dearer = (d − m) : (m − c)</strong></p></div>
+<p>Each ingredient's share is the distance of the <em>other</em> ingredient from the mean. If the mean lies close to the dearer value, you need a lot of the dearer item and only a little of the cheaper one, which is exactly what the rule gives.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="2">
+            <button class="section-header" onclick="toggleSection(2)" aria-expanded="true" aria-controls="section-2">
+                <span class="section-number">2️⃣</span>
+                <span class="section-title">Why the Rule Works</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-2">
+                <div class="content-box">
+<p>Suppose x kg of the cheaper item and y kg of the dearer item make a mixture worth m per kg. The total value is unchanged by mixing, so cx + dy = m(x + y). Rearranging gives x(m − c) = y(d − m), so x : y = (d − m) : (m − c). The "cross" diagram that coaching books draw is just a picture of this equation.</p>
+<p>Because the proof uses nothing but a weighted average, the rule works for anything that averages by quantity: prices per kg, percentage concentrations, average marks per student, profit percentages on cost, or speeds when each speed is held for a time.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="3">
+            <button class="section-header" onclick="toggleSection(3)" aria-expanded="true" aria-controls="section-3">
+                <span class="section-number">3️⃣</span>
+                <span class="section-title">Worked Examples</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-3">
+                <div class="content-box">
+<div class="case-study">
+<h4>Worked example 1: two prices</h4>
+<p>Rice at ₹40 a kg is mixed with rice at ₹60 a kg to give a mixture worth ₹46 a kg. Cheaper : dearer = (60 − 46) : (46 − 40) = 14 : 6 = <strong>7 : 3</strong>.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 2: adding water</h4>
+<p>Water costs nothing, so its value is 0. To bring milk worth ₹50 a litre down to ₹40 a litre, water : milk = (50 − 40) : (40 − 0) = <strong>1 : 4</strong>. One litre of water goes into every four litres of milk.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 3: concentrations</h4>
+<p>To make 30 litres of 40% acid from 30% and 60% solutions, 30% : 60% = (60 − 40) : (40 − 30) = 2 : 1. So <strong>20 litres</strong> of the 30% solution and 10 litres of the 60% solution are needed.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 4: group averages</h4>
+<p>A class averages 60 marks; boys average 55 and girls 70. Boys : girls = (70 − 60) : (60 − 55) = <strong>2 : 1</strong>.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 5: profit and loss</h4>
+<p>A trader sells part of his goods at a 10% profit and the rest at a 20% loss, ending with a 4% profit overall. Treat the loss as −20. Profit part : loss part = (4 − (−20)) : (10 − 4) = 24 : 6 = <strong>4 : 1</strong>.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)" aria-expanded="true" aria-controls="section-4">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">When Alligation Does Not Apply: Repeated Replacement</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
+                <div class="content-box">
+<p>A different type of question takes some liquid out of a container, replaces it with water, and repeats. The strength drops each time, but by a <em>fraction</em> of what is left rather than by a fixed amount, so there is no single pair of values to cross. Use the replacement formula instead. If a container holds V litres and x litres are replaced n times:</p>
+<div class="highlight-box"><p><strong>Pure liquid left = V × (1 − x/V)<sup>n</sup></strong></p></div>
+<div class="case-study">
+<h4>Worked example 6: two replacements</h4>
+<p>A 50-litre can of milk has 10 litres drawn off and replaced with water, twice. Each step keeps 40/50 = 0.8 of the milk. Milk left = 50 × 0.8² = <strong>32 litres</strong>, so the can now holds 18 litres of water.</p>
+</div>
+<p>It is tempting to subtract 10 litres of milk twice and answer 30 litres. That is wrong because the second draw removes a mixture that already contains water, so it takes out only 8 litres of milk.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)" aria-expanded="true" aria-controls="section-5">
+                <span class="section-number">5️⃣</span>
+                <span class="section-title">Common Traps and Revision</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-5">
+                <div class="content-box">
+<ul class="warning-list">
+<li>✘ Writing the ratio the wrong way round. The cheaper item's share is (d − m), not (m − c).</li>
+<li>✘ Using alligation when the mean is not between the two values. Then no mixture can reach it.</li>
+<li>✘ Forgetting that water has a price of 0 and a concentration of 0%.</li>
+<li>✘ Using alligation for repeated replacement. Use the power formula.</li>
+</ul>
+<div class="table-wrap"><table class="data-table">
+<thead><tr><th>Question type</th><th>c and d are</th><th>m is</th></tr></thead>
+<tbody>
+<tr><td>Price mixture</td><td>prices per kg</td><td>mixture price</td></tr>
+<tr><td>Solutions</td><td>concentrations (%)</td><td>target concentration</td></tr>
+<tr><td>Two groups</td><td>group averages</td><td>overall average</td></tr>
+<tr><td>Profit on parts</td><td>profit % (loss negative)</td><td>overall profit %</td></tr>
+</tbody></table></div>
+<p>Adulteration with water also appears in <a href="dishonest-dealer-false-weight.html">dishonest dealer problems</a>. For more formulas see the <a href="../../repeated-questions/quant-cheat-code.html">Quant cheat code</a>.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)" aria-expanded="true" aria-controls="section-6">
+                <span class="section-number">6️⃣</span>
+                <span class="section-title">Practice Questions (6)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-6">
+                <div class="content-box">
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q1.</strong> In what ratio must tea at ₹120 a kg be mixed with tea at ₹180 a kg so that the mixture is worth ₹160 a kg? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q1" value="a"> (a) 1 : 2</label>
+                            <label><input type="radio" name="q1" value="b"> (b) 2 : 1</label>
+                            <label><input type="radio" name="q1" value="c"> (c) 2 : 3</label>
+                            <label><input type="radio" name="q1" value="d"> (d) 3 : 2</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q1">
+                            <p><strong>✅ Answer:</strong> (a) 1 : 2</p>
+                            <p><strong>💡 Explanation:</strong> Cheaper : dearer = (180 − 160) : (160 − 120) = 20 : 40 = 1 : 2. The mean is closer to ₹180, so more of the dearer tea is needed.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q1')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q2.</strong> How much water must be added to 40 litres of milk costing ₹45 a litre so that the mixture is worth ₹36 a litre? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q2" value="a"> (a) 8 litres</label>
+                            <label><input type="radio" name="q2" value="b"> (b) 12 litres</label>
+                            <label><input type="radio" name="q2" value="c"> (c) 10 litres</label>
+                            <label><input type="radio" name="q2" value="d"> (d) 9 litres</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q2">
+                            <p><strong>✅ Answer:</strong> (c) 10 litres</p>
+                            <p><strong>💡 Explanation:</strong> Water costs ₹0. Water : milk = (45 − 36) : (36 − 0) = 9 : 36 = 1 : 4, so 40 litres of milk needs 10 litres of water.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q2')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q3.</strong> Solutions with 20% and 50% alcohol are mixed to make 60 litres of a 30% solution. How many litres of the 20% solution are used? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q3" value="a"> (a) 20 litres</label>
+                            <label><input type="radio" name="q3" value="b"> (b) 30 litres</label>
+                            <label><input type="radio" name="q3" value="c"> (c) 45 litres</label>
+                            <label><input type="radio" name="q3" value="d"> (d) 40 litres</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q3">
+                            <p><strong>✅ Answer:</strong> (d) 40 litres</p>
+                            <p><strong>💡 Explanation:</strong> 20% : 50% = (50 − 30) : (30 − 20) = 2 : 1. Two-thirds of 60 litres is 40 litres of the 20% solution.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q3')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q4.</strong> A firm of 60 people has an average salary of ₹15,000. Officers average ₹30,000 and the other staff ₹12,000. How many officers are there? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q4" value="a"> (a) 10</label>
+                            <label><input type="radio" name="q4" value="b"> (b) 12</label>
+                            <label><input type="radio" name="q4" value="c"> (c) 15</label>
+                            <label><input type="radio" name="q4" value="d"> (d) 6</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q4">
+                            <p><strong>✅ Answer:</strong> (a) 10</p>
+                            <p><strong>💡 Explanation:</strong> Officers : others = (15,000 − 12,000) : (30,000 − 15,000) = 1 : 5. One-sixth of 60 is 10 officers.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q4')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q5.</strong> From 80 litres of milk, 8 litres are taken out and replaced with water. This is done three times in all. How much milk is left? <span class="badge badge-secondary">hard</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q5" value="a"> (a) 56 litres</label>
+                            <label><input type="radio" name="q5" value="b"> (b) 58.32 litres</label>
+                            <label><input type="radio" name="q5" value="c"> (c) 57.6 litres</label>
+                            <label><input type="radio" name="q5" value="d"> (d) 60 litres</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q5">
+                            <p><strong>✅ Answer:</strong> (b) 58.32 litres</p>
+                            <p><strong>💡 Explanation:</strong> Each step keeps 72/80 = 0.9 of the milk. After three steps, milk = 80 × 0.9³ = 80 × 0.729 = 58.32 litres. Subtracting 24 litres is wrong because later draws remove a mixture.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q5')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q6.</strong> A trader sells part of his stock at an 8% gain and the rest at an 18% gain, making 14% overall. What percentage of the stock was sold at the 8% gain? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q6" value="a"> (a) 60%</label>
+                            <label><input type="radio" name="q6" value="b"> (b) 45%</label>
+                            <label><input type="radio" name="q6" value="c"> (c) 40%</label>
+                            <label><input type="radio" name="q6" value="d"> (d) 35%</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q6">
+                            <p><strong>✅ Answer:</strong> (c) 40%</p>
+                            <p><strong>💡 Explanation:</strong> 8% part : 18% part = (18 − 14) : (14 − 8) = 4 : 6 = 2 : 3, so the 8% part is 2/5 = 40% of the stock.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q6')">Show Answer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)" aria-expanded="true" aria-controls="section-7">
+                <span class="section-number">7️⃣</span>
+                <span class="section-title">Frequently Asked Questions</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-7">
+                <div class="content-box">
+                    <h3>Which quantity goes on which side of the alligation cross?</h3>
+                    <p>The difference between the dearer value and the mean gives the share of the cheaper item, and the difference between the mean and the cheaper value gives the share of the dearer item. Each ingredient&#x27;s share is the distance of the other ingredient from the mean.</p>
+                    <h3>Why does alligation fail for repeated replacement?</h3>
+                    <p>Alligation mixes two fixed ingredients once. In repeated replacement, each draw removes a mixture whose strength keeps changing, so there is no single pair of values to cross. Use the multiplier formula final = initial × (1 − x/V) to the power n instead.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="8">
+            <button class="section-header" onclick="toggleSection(8)" aria-expanded="true" aria-controls="section-8">
+                <span class="section-number">8️⃣</span>
+                <span class="section-title">Sources and Review</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-8">
+                <div class="content-box">
+                    <p>All problems and solutions on this page are original. No outside facts are relied on; every numeric answer is recomputed by software before publishing.</p>
+                    <div class="highlight-box">
+                        <p><strong>How this page was prepared.</strong> Drafted with AI assistance (Claude (Anthropic AI model)) from the sources listed above. 12 calculations on this page were recomputed by software and matched. Automated checks also covered structure, internal links and duplicate text. Software checks cannot confirm facts. Reviewed by praveen on 2026-10-20 against the sources listed above.</p>
+                        <p>Found an error? <a href="../../contact.html">Report it</a> and we will correct the page.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="9">
+            <button class="section-header" onclick="toggleSection(9)" aria-expanded="true" aria-controls="section-9">
+                <span class="section-number">9️⃣</span>
+                <span class="section-title">Related Pages</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-9">
+                <div class="content-box">
+                    <ul class="bullet-list">
+                        <li><a href="../../repeated-questions/quant-cheat-code.html">Quant Cheat Code: 20 Must-Know Shortcuts &amp; Formulas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="page-navigation">
+            <a href="index.html" class="nav-btn">← Quantitative Aptitude</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>Subject: Quantitative Aptitude | Sources are listed on this page. <a href="../../contact.html">Report an error</a>.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>

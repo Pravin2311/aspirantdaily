@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast and Slow Clocks: Gain and Loss Problems | AspirantDaily</title>
+    <meta name="description" content="Solve faulty-clock questions: true time from a fast or slow clock, when it shows correct time again, two clocks drifting apart, hands meeting too early.">
+    <meta name="keywords" content="clock gains minutes problem, fast clock slow clock questions, faulty clock true time, clock shows correct time again">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.aspirantdaily.com/study/reasoning/clock-gain-and-loss.html">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.aspirantdaily.com/study/reasoning/clock-gain-and-loss.html">
+    <meta property="og:title" content="Fast and Slow Clocks: Gain and Loss Problems | AspirantDaily">
+    <meta property="og:description" content="Solve faulty-clock questions: true time from a fast or slow clock, when it shows correct time again, two clocks drifting apart, hands meeting too early.">
+    <meta property="og:image" content="https://www.aspirantdaily.com/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Fast and Slow Clocks: Finding True Time from a Faulty Clock",
+  "description": "Solve faulty-clock questions: true time from a fast or slow clock, when it shows correct time again, two clocks drifting apart, hands meeting too early.",
+  "image": "https://www.aspirantdaily.com/og-image.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "url": "https://www.aspirantdaily.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.aspirantdaily.com/icons/icon-512.png"
+    }
+  },
+  "datePublished": "2026-10-20",
+  "dateModified": "2026-10-20",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.aspirantdaily.com/study/reasoning/clock-gain-and-loss.html"
+  },
+  "articleSection": "Reasoning",
+  "citation": []
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.aspirantdaily.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Study Notes",
+      "item": "https://www.aspirantdaily.com/study/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Reasoning",
+      "item": "https://www.aspirantdaily.com/study/reasoning/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Fast and Slow Clocks: Finding True Time from a Faulty Clock",
+      "item": "https://www.aspirantdaily.com/study/reasoning/clock-gain-and-loss.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why does a fast clock show the correct time after drifting 12 hours?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An ordinary clock face shows only 12 hours. A clock that is exactly 12 hours ahead or behind points to the same numbers as a correct clock, so it looks right even though it is half a day out. A 24-hour digital clock would need to drift a full 24 hours."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I convert shown time to true time by adding or by scaling?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Scale it. If the clock runs at 61 dial minutes per 60 true minutes, true time elapsed equals shown time multiplied by 60/61. Simply subtracting the hourly gain works only when you know the exact number of true hours, which is what you are trying to find."
+      }
+    }
+  ]
+}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css?v=2">
+    <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-51XLJE4TVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-51XLJE4TVH');
+  </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327"
+     crossorigin="anonymous"></script>
+</head>
+<body class="study-page subject-reasoning">
+    <nav class="study-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Reasoning</a>
+            <div class="nav-controls">
+                <button onclick="toggleAllSections()" class="btn-secondary">Expand/Collapse All</button>
+                <button onclick="window.print()" class="btn-primary">📄 Print/Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> / <a href="../index.html">Study Notes</a> / <a href="index.html">Reasoning</a> / <span>Fast and Slow Clocks: Finding True Time from a Faulty Clock</span>
+            </div>
+            <h1>Fast and Slow Clocks: Finding True Time from a Faulty Clock</h1>
+            <p class="page-subtitle">Clock rate • True time from shown time • Correct again after 12 hours&#x27; drift • Two clocks • 65-minute coincidence</p>
+            <div class="page-meta">
+                <span class="badge badge-secondary">SSC</span>
+                <span class="badge badge-secondary">Railway</span>
+                <span class="badge badge-secondary">📅 Last updated: 2026-10-20</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="study-section collapsible" data-section="1">
+            <button class="section-header" onclick="toggleSection(1)" aria-expanded="true" aria-controls="section-1">
+                <span class="section-number">1️⃣</span>
+                <span class="section-title">Think of a Faulty Clock as Running at the Wrong Rate</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-1">
+                <div class="content-box">
+<p>A clock that <strong>gains</strong> runs fast: its hands cover more than 60 minutes of dial while 60 true minutes pass. A clock that <strong>loses</strong> runs slow. Every faulty-clock question is about the ratio between dial time and true time, which stays fixed for a given clock.</p>
+<div class="highlight-box"><p><strong>Dial time ÷ true time = constant rate.</strong> A clock that gains 1 minute an hour has rate 61/60; one that loses 2 minutes an hour has rate 58/60.</p></div>
+<p>From that ratio you can answer the three questions examiners ask: what the clock shows after a given true time, what the true time is when the clock shows a given time, and when the clock will look correct again.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="2">
+            <button class="section-header" onclick="toggleSection(2)" aria-expanded="true" aria-controls="section-2">
+                <span class="section-number">2️⃣</span>
+                <span class="section-title">From True Time to Shown Time, and Back</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-2">
+                <div class="content-box">
+<p>To find what a faulty clock shows, multiply the true time elapsed by the rate. To find the true time from what the clock shows, divide by the rate.</p>
+<div class="case-study">
+<h4>Worked example 1: a slow clock</h4>
+<p>A clock loses 2 minutes every hour. Ten true hours (600 minutes) after being set right, it shows 600 × 58/60 = <strong>580 minutes</strong> elapsed, i.e. 9 hours 40 minutes.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 2: a fast clock</h4>
+<p>A clock gains 1 minute every hour and is set right at noon. Later it shows 6:06 p.m., which is 366 dial minutes after noon. True time elapsed = 366 × 60/61 = <strong>360 minutes</strong>, so it is really 6:00 p.m.</p>
+</div>
+<p>A tempting shortcut is to subtract "one minute per hour" from the shown time. It happens to work here because the numbers were chosen to fit, but in general the number of true hours is what you are solving for, so scaling is the safe method.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="3">
+            <button class="section-header" onclick="toggleSection(3)" aria-expanded="true" aria-controls="section-3">
+                <span class="section-number">3️⃣</span>
+                <span class="section-title">When Does a Faulty Clock Show the Correct Time Again?</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-3">
+                <div class="content-box">
+<p>A normal clock face repeats every 12 hours. A faulty clock therefore looks correct again once its total error reaches 12 hours, that is 720 minutes, ahead or behind.</p>
+<div class="highlight-box"><p><strong>Days until correct again = 720 ÷ minutes gained (or lost) per day</strong></p></div>
+<div class="case-study">
+<h4>Worked example 3: gaining 5 minutes a day</h4>
+<p>720 ÷ 5 = <strong>144 days</strong>. Nothing about the starting time changes the answer.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 4: gaining 4 minutes a day</h4>
+<p>A clock set right at 6 a.m. on a Monday gains 4 minutes a day. It shows the correct time again after 720 ÷ 4 = <strong>180 days</strong>, at 6 a.m.</p>
+</div>
+<p>If the question involves a 24-hour digital display, the clock must drift 1,440 minutes instead, doubling the answer. Read the question for the kind of clock.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)" aria-expanded="true" aria-controls="section-4">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">Two Faulty Clocks</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
+                <div class="content-box">
+<p>When two clocks drift in opposite directions, their gap grows by the sum of their errors each hour. When both drift the same way, the gap grows by the difference.</p>
+<div class="case-study">
+<h4>Worked example 5: drifting apart</h4>
+<p>One clock gains 2 minutes an hour and another loses 3. Set together, they move apart by 5 minutes every hour, so they differ by an hour after 60 ÷ 5 = <strong>12 hours</strong>.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 6: both clocks fast</h4>
+<p>One clock gains 3 minutes an hour and another gains 1 minute an hour. Both run ahead of true time, but the first pulls away from the second by only 3 − 1 = 2 minutes an hour. They differ by 10 minutes after 10 ÷ 2 = <strong>5 hours</strong>.</p>
+</div>
+<p>The question may instead ask when both clocks will next show the same time. That happens when the gap between them reaches 720 minutes on a 12-hour dial, so divide 720 by the hourly gap.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)" aria-expanded="true" aria-controls="section-5">
+                <span class="section-number">5️⃣</span>
+                <span class="section-title">Hands That Meet Too Early</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-5">
+                <div class="content-box">
+<p>On a correct clock the hands coincide every 720/11 minutes, about 65 minutes 27 seconds (see <a href="clock-angle-problems.html">the clock angle method</a> for why). If a clock's hands are observed to meet every 65 true minutes, the clock has covered 720/11 dial minutes in only 65 true minutes, so it is running fast.</p>
+<div class="case-study">
+<h4>Worked example 7: meeting every 65 minutes</h4>
+<p>Each meeting, the clock gains 720/11 − 65 = 5/11 of a minute. In a day of 1,440 true minutes there are 1,440 ÷ 65 such intervals, so the daily gain is (5/11) × (1,440/65) ≈ <strong>10.07 minutes</strong>.</p>
+</div>
+<ul class="warning-list">
+<li>✘ Subtracting the gain instead of scaling by the clock's rate.</li>
+<li>✘ Using 1,440 minutes for a 12-hour clock face; it repeats after 720.</li>
+<li>✘ Subtracting the errors of two clocks that drift in opposite directions.</li>
+<li>✘ Assuming hands that meet every 65 minutes are correct. A correct clock's hands meet every 65 5/11 minutes.</li>
+</ul>
+<p>Related: <a href="calendar-odd-days.html">calendar problems by odd days</a> and <a href="direction-sense-test.html">direction sense</a>.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)" aria-expanded="true" aria-controls="section-6">
+                <span class="section-number">6️⃣</span>
+                <span class="section-title">Practice Questions (6)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-6">
+                <div class="content-box">
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q1.</strong> A clock gains 6 minutes every day. After being set right, how many days pass before it next shows the correct time? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q1" value="a"> (a) 120 days</label>
+                            <label><input type="radio" name="q1" value="b"> (b) 240 days</label>
+                            <label><input type="radio" name="q1" value="c"> (c) 60 days</label>
+                            <label><input type="radio" name="q1" value="d"> (d) 144 days</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q1">
+                            <p><strong>✅ Answer:</strong> (a) 120 days</p>
+                            <p><strong>💡 Explanation:</strong> A 12-hour dial looks right again once the clock is a full 12 hours (720 minutes) ahead: 720 ÷ 6 = 120 days.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q1')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q2.</strong> A clock loses 3 minutes every hour. Eight true hours after it was set right, how many minutes will it show as having passed? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q2" value="a"> (a) 480 minutes</label>
+                            <label><input type="radio" name="q2" value="b"> (b) 464 minutes</label>
+                            <label><input type="radio" name="q2" value="c"> (c) 456 minutes</label>
+                            <label><input type="radio" name="q2" value="d"> (d) 444 minutes</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q2">
+                            <p><strong>✅ Answer:</strong> (c) 456 minutes</p>
+                            <p><strong>💡 Explanation:</strong> The clock shows 57 minutes for every 60 true minutes, so in 8 hours it shows 8 × 57 = 456 minutes, i.e. 7 hours 36 minutes.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q2')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q3.</strong> A clock gains 1 minute every hour and is set right at noon. When it shows 3:03 p.m., how many true minutes have passed since noon? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q3" value="a"> (a) 183</label>
+                            <label><input type="radio" name="q3" value="b"> (b) 177</label>
+                            <label><input type="radio" name="q3" value="c"> (c) 186</label>
+                            <label><input type="radio" name="q3" value="d"> (d) 180</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q3">
+                            <p><strong>✅ Answer:</strong> (d) 180</p>
+                            <p><strong>💡 Explanation:</strong> The clock shows 61 minutes for every 60 true minutes. It shows 183 minutes, so the true time elapsed is 183 × 60/61 = 180 minutes: it is exactly 3:00 p.m.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q3')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q4.</strong> One clock gains 4 minutes an hour and another loses 2 minutes an hour. They are set together. After how many hours will they differ by 30 minutes? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q4" value="a"> (a) 5 hours</label>
+                            <label><input type="radio" name="q4" value="b"> (b) 6 hours</label>
+                            <label><input type="radio" name="q4" value="c"> (c) 7.5 hours</label>
+                            <label><input type="radio" name="q4" value="d"> (d) 15 hours</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q4">
+                            <p><strong>✅ Answer:</strong> (a) 5 hours</p>
+                            <p><strong>💡 Explanation:</strong> The gap grows by 4 + 2 = 6 minutes every hour, so a 30-minute gap takes 30 ÷ 6 = 5 hours.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q4')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q5.</strong> The hands of a faulty clock coincide every 64 minutes of true time. How much does the clock gain in a day, to two decimal places? <span class="badge badge-secondary">hard</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q5" value="a"> (a) 30 minutes</label>
+                            <label><input type="radio" name="q5" value="b"> (b) 32.73 minutes</label>
+                            <label><input type="radio" name="q5" value="c"> (c) 36 minutes</label>
+                            <label><input type="radio" name="q5" value="d"> (d) 24 minutes</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q5">
+                            <p><strong>✅ Answer:</strong> (b) 32.73 minutes</p>
+                            <p><strong>💡 Explanation:</strong> On a correct clock the hands meet every 720/11 ≈ 65.45 minutes of dial time. This clock covers that much dial time in 64 true minutes, gaining 16/11 minutes each time. In a day that happens 1440/64 = 22.5 times: 22.5 × 16/11 ≈ 32.73 minutes.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q5')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q6.</strong> A clock loses 8 minutes a day. How many days after being set right will it next show the correct time? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q6" value="a"> (a) 45 days</label>
+                            <label><input type="radio" name="q6" value="b"> (b) 180 days</label>
+                            <label><input type="radio" name="q6" value="c"> (c) 90 days</label>
+                            <label><input type="radio" name="q6" value="d"> (d) 60 days</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q6">
+                            <p><strong>✅ Answer:</strong> (c) 90 days</p>
+                            <p><strong>💡 Explanation:</strong> A slow clock also looks right again after falling 12 hours (720 minutes) behind: 720 ÷ 8 = 90 days.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q6')">Show Answer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)" aria-expanded="true" aria-controls="section-7">
+                <span class="section-number">7️⃣</span>
+                <span class="section-title">Frequently Asked Questions</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-7">
+                <div class="content-box">
+                    <h3>Why does a fast clock show the correct time after drifting 12 hours?</h3>
+                    <p>An ordinary clock face shows only 12 hours. A clock that is exactly 12 hours ahead or behind points to the same numbers as a correct clock, so it looks right even though it is half a day out. A 24-hour digital clock would need to drift a full 24 hours.</p>
+                    <h3>Should I convert shown time to true time by adding or by scaling?</h3>
+                    <p>Scale it. If the clock runs at 61 dial minutes per 60 true minutes, true time elapsed equals shown time multiplied by 60/61. Simply subtracting the hourly gain works only when you know the exact number of true hours, which is what you are trying to find.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="8">
+            <button class="section-header" onclick="toggleSection(8)" aria-expanded="true" aria-controls="section-8">
+                <span class="section-number">8️⃣</span>
+                <span class="section-title">Sources and Review</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-8">
+                <div class="content-box">
+                    <p>All problems and solutions on this page are original. No outside facts are relied on; every numeric answer is recomputed by software before publishing.</p>
+                    <div class="highlight-box">
+                        <p><strong>How this page was prepared.</strong> Drafted with AI assistance (Claude (Anthropic AI model)) from the sources listed above. 13 calculations on this page were recomputed by software and matched. Automated checks also covered structure, internal links and duplicate text. Software checks cannot confirm facts. Reviewed by praveen on 2026-10-20 against the sources listed above.</p>
+                        <p>Found an error? <a href="../../contact.html">Report it</a> and we will correct the page.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="page-navigation">
+            <a href="index.html" class="nav-btn">← Reasoning</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>Subject: Reasoning | Sources are listed on this page. <a href="../../contact.html">Report an error</a>.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>
