@@ -185,6 +185,21 @@ class PipelineTests(unittest.TestCase):
         self.assertIn("REFUSED", out)
         self.assertTrue(open(page, encoding="utf-8").read().endswith("<!-- manual edit -->"))
 
+    def test_republish_accepts_page_from_crlf_draft(self):
+        path = os.path.join(content_lib.DRAFTS_DIR, GOOD_ID + ".html")
+        with open(path, encoding="utf-8") as fh:
+            text = fh.read()
+        with open(path, "w", encoding="utf-8", newline="") as fh:
+            fh.write(text.replace("\n", "\r\n"))
+        run("select", "--ids", GOOD_ID)
+        run("validate", "--batch", "batch-001")
+        run("review", "--id", GOOD_ID, "--status", "approved", "--reviewer", "Test Reviewer", "--with-fact-check")
+        code, out = run("publish", "--batch", "batch-001", "--no-site-checks")
+        self.assertEqual(code, 0, out)
+        code, out = run("publish", "--batch", "batch-001", "--no-site-checks")
+        self.assertEqual(code, 0, out)
+        self.assertNotIn("REFUSED", out)
+
     def test_publish_holds_pages_linking_to_unpublished_pages(self):
         shutil.copy(GOOD, content_lib.DRAFTS_DIR)  # original draft links to an unpublished sibling
         run("select", "--ids", GOOD_ID)

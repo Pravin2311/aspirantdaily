@@ -367,7 +367,8 @@ def draft_path(pid):
 def file_hash(path):
     if not os.path.exists(path):
         return None
-    with open(path, encoding="utf-8") as fh:
+    # newline="" keeps CRLF as written, so this matches sha() of the text the pipeline wrote
+    with open(path, encoding="utf-8", newline="") as fh:
         return sha(fh.read())
 
 

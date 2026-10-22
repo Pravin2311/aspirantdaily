@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counting Triangles and Squares in Figures | AspirantDaily</title>
+    <meta name="description" content="How to count triangles in a figure without missing any: lines from a vertex, square grids, rectangles, diagonals and triangular grids, with 7 worked examples.">
+    <meta name="keywords" content="how to count triangles in a figure, number of squares in a grid, number of rectangles in a grid formula, counting figures reasoning">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.aspirantdaily.com/study/reasoning/counting-figures.html">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.aspirantdaily.com/study/reasoning/counting-figures.html">
+    <meta property="og:title" content="Counting Triangles and Squares in Figures | AspirantDaily">
+    <meta property="og:description" content="How to count triangles in a figure without missing any: lines from a vertex, square grids, rectangles, diagonals and triangular grids, with 7 worked examples.">
+    <meta property="og:image" content="https://www.aspirantdaily.com/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Counting Triangles, Squares and Rectangles in Figures: Systematic Methods",
+  "description": "How to count triangles in a figure without missing any: lines from a vertex, square grids, rectangles, diagonals and triangular grids, with 7 worked examples.",
+  "image": "https://www.aspirantdaily.com/og-image.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "url": "https://www.aspirantdaily.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.aspirantdaily.com/icons/icon-512.png"
+    }
+  },
+  "datePublished": "2026-10-20",
+  "dateModified": "2026-10-20",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.aspirantdaily.com/study/reasoning/counting-figures.html"
+  },
+  "articleSection": "Reasoning",
+  "citation": []
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.aspirantdaily.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Study Notes",
+      "item": "https://www.aspirantdaily.com/study/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Reasoning",
+      "item": "https://www.aspirantdaily.com/study/reasoning/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Counting Triangles, Squares and Rectangles in Figures: Systematic Methods",
+      "item": "https://www.aspirantdaily.com/study/reasoning/counting-figures.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the best general method when no formula fits?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Label every point where lines meet. Then count by size or by a fixed starting point, listing each figure by its corner letters. Listing by letters makes it easy to spot a figure counted twice or one you missed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the rectangle count include squares?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. A square is a rectangle, so the C(lines, 2) × C(lines, 2) formula counts squares too. If a question asks for rectangles that are not squares, subtract the square count from the rectangle count."
+      }
+    }
+  ]
+}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css?v=2">
+    <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-51XLJE4TVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-51XLJE4TVH');
+  </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327"
+     crossorigin="anonymous"></script>
+</head>
+<body class="study-page subject-reasoning">
+    <nav class="study-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Reasoning</a>
+            <div class="nav-controls">
+                <button onclick="toggleAllSections()" class="btn-secondary">Expand/Collapse All</button>
+                <button onclick="window.print()" class="btn-primary">📄 Print/Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> / <a href="../index.html">Study Notes</a> / <a href="index.html">Reasoning</a> / <span>Counting Triangles, Squares and Rectangles in Figures: Systematic Methods</span>
+            </div>
+            <h1>Counting Triangles, Squares and Rectangles in Figures: Systematic Methods</h1>
+            <p class="page-subtitle">Label and count by size • Lines from one vertex • Squares in a grid • Rectangles in a grid • Squares with diagonals • Triangular grids</p>
+            <div class="page-meta">
+                <span class="badge badge-secondary">SSC</span>
+                <span class="badge badge-secondary">Railway</span>
+                <span class="badge badge-secondary">📅 Last updated: 2026-10-20</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="study-section collapsible" data-section="1">
+            <button class="section-header" onclick="toggleSection(1)" aria-expanded="true" aria-controls="section-1">
+                <span class="section-number">1️⃣</span>
+                <span class="section-title">Why Counting Goes Wrong</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-1">
+                <div class="content-box">
+<p>Counting-figure questions show a drawing made of straight lines and ask how many triangles, squares or rectangles it contains. The answer is almost never the number of small shapes you can see. Larger shapes are made by combining smaller ones, and the usual mistake is to miss some of those, or to count one twice.</p>
+<p>Two habits fix this. First, label every point where lines meet with a letter, so each figure can be named by its corners. Second, count in a fixed order: by size, smallest first, or by a fixed starting corner. For common figure types there are also formulas, which give the answer in seconds and act as a check on your count.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="2">
+            <button class="section-header" onclick="toggleSection(2)" aria-expanded="true" aria-controls="section-2">
+                <span class="section-number">2️⃣</span>
+                <span class="section-title">Lines from One Vertex</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-2">
+                <div class="content-box">
+<p>Take a triangle and draw straight lines from its top vertex down to the base. Every pair of lines from that vertex, together with the base, makes a triangle. So if there are k lines from the vertex in total, counting the two sides, the number of triangles is the number of ways to choose 2 of them: C(k, 2).</p>
+<div class="case-study">
+<h4>Worked example 1: three lines inside</h4>
+<p>A triangle has three lines drawn from its top vertex to the base. With the two sides, there are 5 lines from the vertex, so the figure has C(5, 2) = <strong>10</strong> triangles.</p>
+</div>
+<p>If lines are also drawn across the triangle parallel to the base, each one acts as another base. Multiply by the number of such lines, including the base itself.</p>
+<div class="case-study">
+<h4>Worked example 2: one line across</h4>
+<p>The same figure with one line drawn across, parallel to the base, has 10 triangles on each of 2 lines: 10 × 2 = <strong>20</strong>.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="3">
+            <button class="section-header" onclick="toggleSection(3)" aria-expanded="true" aria-controls="section-3">
+                <span class="section-number">3️⃣</span>
+                <span class="section-title">Squares in a Grid</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-3">
+                <div class="content-box">
+<p>In an n × n grid of small squares, count squares by size. There are n² squares of side 1, (n − 1)² of side 2, and so on down to 1 square of side n. The total is the sum of the first n square numbers:</p>
+<div class="highlight-box"><p><strong>Squares in an n × n grid = 1² + 2² + … + n² = n(n + 1)(2n + 1) ÷ 6</strong></p></div>
+<div class="case-study">
+<h4>Worked example 3: a 4 × 4 grid</h4>
+<p>16 + 9 + 4 + 1 = 4 × 5 × 9 ÷ 6 = <strong>30</strong> squares.</p>
+</div>
+<p>For a rectangular grid m squares tall and n wide, with m smaller, count each size separately: squares of side k number (m − k + 1)(n − k + 1), for k from 1 to m.</p>
+<div class="case-study">
+<h4>Worked example 4: a 3 × 4 grid</h4>
+<p>Side 1: 3 × 4 = 12. Side 2: 2 × 3 = 6. Side 3: 1 × 2 = 2. The total is <strong>20</strong>.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)" aria-expanded="true" aria-controls="section-4">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">Rectangles in a Grid</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
+                <div class="content-box">
+<p>Every rectangle in a grid is fixed by choosing two horizontal lines and two vertical lines. A grid m squares tall and n wide has m + 1 horizontal lines and n + 1 vertical lines.</p>
+<div class="highlight-box"><p><strong>Rectangles = C(m + 1, 2) × C(n + 1, 2)</strong>, squares included</p></div>
+<div class="case-study">
+<h4>Worked example 5: a 3 × 3 grid</h4>
+<p>There are 4 horizontal and 4 vertical lines. C(4, 2) × C(4, 2) = 6 × 6 = <strong>36</strong> rectangles. Of these, 14 are squares, so 22 are rectangles that are not squares.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)" aria-expanded="true" aria-controls="section-5">
+                <span class="section-number">5️⃣</span>
+                <span class="section-title">Diagonals and Triangular Grids</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-5">
+                <div class="content-box">
+<p>A square with both diagonals drawn is a common building block. The diagonals meet at the centre and cut the square into 4 small triangles. Each half of the square cut off by one diagonal is a larger triangle, and there are 4 such halves.</p>
+<div class="case-study">
+<h4>Worked example 6: a square with both diagonals</h4>
+<p>4 small triangles + 4 half-square triangles = <strong>8</strong> triangles.</p>
+</div>
+<p>An equilateral triangle divided into small equilateral triangles, with n along each side, contains triangles pointing up and pointing down. Count both. For small n it is quick to count by size; the total also follows a formula, n(n + 2)(2n + 1) ÷ 8, rounded down.</p>
+<div class="case-study">
+<h4>Worked example 7: 3 along each side</h4>
+<p>Pointing up: 6 of size 1, 3 of size 2 and 1 of size 3, making 10. Pointing down: 3 of size 1. The total is 3 × 5 × 7 ÷ 8 = 13.125, rounded down to <strong>13</strong>, which matches 10 + 3.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)" aria-expanded="true" aria-controls="section-6">
+                <span class="section-number">6️⃣</span>
+                <span class="section-title">Common Traps</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-6">
+                <div class="content-box">
+<ul class="warning-list">
+<li>✘ Counting only the smallest shapes and missing the combined ones.</li>
+<li>✘ Forgetting the two sides of the triangle when counting lines from a vertex.</li>
+<li>✘ Missing the pointing-down triangles in a triangular grid.</li>
+<li>✘ Using the n × n square formula on a grid that is not square.</li>
+</ul>
+<p>Other spatial topics are <a href="dice-problems.html">dice problems</a> and <a href="cube-cutting-and-painting.html">cube cutting and painting</a>. More reasoning methods are on the <a href="../index.html">study hub</a>.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)" aria-expanded="true" aria-controls="section-7">
+                <span class="section-number">7️⃣</span>
+                <span class="section-title">Practice Questions (6)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-7">
+                <div class="content-box">
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q1.</strong> Inside a triangle, two straight lines are drawn from the top vertex to the base. How many triangles are there in the figure? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q1" value="a"> (a) 4</label>
+                            <label><input type="radio" name="q1" value="b"> (b) 5</label>
+                            <label><input type="radio" name="q1" value="c"> (c) 6</label>
+                            <label><input type="radio" name="q1" value="d"> (d) 3</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q1">
+                            <p><strong>✅ Answer:</strong> (c) 6</p>
+                            <p><strong>💡 Explanation:</strong> There are 4 lines from the top vertex: the two sides and the two new lines. Any two of them, with the base, form a triangle, so the count is C(4, 2) = 6.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q1')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q2.</strong> How many squares of all sizes are there in a 5 × 5 grid of small squares? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q2" value="a"> (a) 55</label>
+                            <label><input type="radio" name="q2" value="b"> (b) 25</label>
+                            <label><input type="radio" name="q2" value="c"> (c) 50</label>
+                            <label><input type="radio" name="q2" value="d"> (d) 41</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q2">
+                            <p><strong>✅ Answer:</strong> (a) 55</p>
+                            <p><strong>💡 Explanation:</strong> Count by size: 25 of side 1, 16 of side 2, 9 of side 3, 4 of side 4 and 1 of side 5. The total is 1² + 2² + 3² + 4² + 5² = 55.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q2')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q3.</strong> How many rectangles, including squares, are there in a grid 2 squares tall and 4 squares wide? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q3" value="a"> (a) 24</label>
+                            <label><input type="radio" name="q3" value="b"> (b) 8</label>
+                            <label><input type="radio" name="q3" value="c"> (c) 18</label>
+                            <label><input type="radio" name="q3" value="d"> (d) 30</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q3">
+                            <p><strong>✅ Answer:</strong> (d) 30</p>
+                            <p><strong>💡 Explanation:</strong> A rectangle needs 2 of the 3 horizontal lines and 2 of the 5 vertical lines. C(3, 2) × C(5, 2) = 3 × 10 = 30.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q3')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q4.</strong> Inside a triangle, three lines are drawn from the top vertex to the base, and two lines are drawn across parallel to the base. How many triangles are there? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q4" value="a"> (a) 20</label>
+                            <label><input type="radio" name="q4" value="b"> (b) 30</label>
+                            <label><input type="radio" name="q4" value="c"> (c) 10</label>
+                            <label><input type="radio" name="q4" value="d"> (d) 25</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q4">
+                            <p><strong>✅ Answer:</strong> (b) 30</p>
+                            <p><strong>💡 Explanation:</strong> There are 5 lines from the vertex, giving C(5, 2) = 10 triangles on each horizontal line. With the base and the two cross lines there are 3 such lines: 10 × 3 = 30.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q4')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q5.</strong> How many squares are there in a grid 2 squares tall and 5 squares wide? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q5" value="a"> (a) 10</label>
+                            <label><input type="radio" name="q5" value="b"> (b) 12</label>
+                            <label><input type="radio" name="q5" value="c"> (c) 14</label>
+                            <label><input type="radio" name="q5" value="d"> (d) 15</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q5">
+                            <p><strong>✅ Answer:</strong> (c) 14</p>
+                            <p><strong>💡 Explanation:</strong> There are 2 × 5 = 10 squares of side 1 and 1 × 4 = 4 squares of side 2. No larger square fits, so the total is 14.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q5')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q6.</strong> An equilateral triangle is divided into small equilateral triangles with 4 along each side. How many triangles of all sizes does the figure contain? <span class="badge badge-secondary">hard</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q6" value="a"> (a) 16</label>
+                            <label><input type="radio" name="q6" value="b"> (b) 20</label>
+                            <label><input type="radio" name="q6" value="c"> (c) 24</label>
+                            <label><input type="radio" name="q6" value="d"> (d) 27</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q6">
+                            <p><strong>✅ Answer:</strong> (d) 27</p>
+                            <p><strong>💡 Explanation:</strong> Pointing-up triangles: 10 + 6 + 3 + 1 = 20. Pointing-down triangles: 6 of size 1 and 1 of size 2, a total of 7. Altogether 20 + 7 = 27.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q6')">Show Answer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="8">
+            <button class="section-header" onclick="toggleSection(8)" aria-expanded="true" aria-controls="section-8">
+                <span class="section-number">8️⃣</span>
+                <span class="section-title">Frequently Asked Questions</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-8">
+                <div class="content-box">
+                    <h3>What is the best general method when no formula fits?</h3>
+                    <p>Label every point where lines meet. Then count by size or by a fixed starting point, listing each figure by its corner letters. Listing by letters makes it easy to spot a figure counted twice or one you missed.</p>
+                    <h3>Does the rectangle count include squares?</h3>
+                    <p>Yes. A square is a rectangle, so the C(lines, 2) × C(lines, 2) formula counts squares too. If a question asks for rectangles that are not squares, subtract the square count from the rectangle count.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="9">
+            <button class="section-header" onclick="toggleSection(9)" aria-expanded="true" aria-controls="section-9">
+                <span class="section-number">9️⃣</span>
+                <span class="section-title">Sources and Review</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-9">
+                <div class="content-box">
+                    <p>All problems and solutions on this page are original. No outside facts are relied on; every numeric answer is recomputed by software before publishing.</p>
+                    <div class="highlight-box">
+                        <p><strong>How this page was prepared.</strong> Drafted with AI assistance (Claude (Anthropic AI model)) from the sources listed above. 13 calculations on this page were recomputed by software and matched. Automated checks also covered structure, internal links and duplicate text. Software checks cannot confirm facts. Reviewed by praveenkumar on 2026-10-20 against the sources listed above.</p>
+                        <p>Found an error? <a href="../../contact.html">Report it</a> and we will correct the page.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="page-navigation">
+            <a href="index.html" class="nav-btn">← Reasoning</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>Subject: Reasoning | Sources are listed on this page. <a href="../../contact.html">Report an error</a>.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>

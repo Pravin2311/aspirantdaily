@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cube Cutting and Painting | AspirantDaily</title>
+    <meta name="description" content="A cube painted and cut into small cubes: count cubes with 3, 2, 1 and 0 painted faces, find the number of cuts, and handle cuboids and partly painted cubes.">
+    <meta name="keywords" content="cube painted cut into small cubes, cube cutting reasoning, painted cube formula, how many cubes have two faces painted">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.aspirantdaily.com/study/reasoning/cube-cutting-and-painting.html">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.aspirantdaily.com/study/reasoning/cube-cutting-and-painting.html">
+    <meta property="og:title" content="Cube Cutting and Painting | AspirantDaily">
+    <meta property="og:description" content="A cube painted and cut into small cubes: count cubes with 3, 2, 1 and 0 painted faces, find the number of cuts, and handle cuboids and partly painted cubes.">
+    <meta property="og:image" content="https://www.aspirantdaily.com/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Cube Cutting and Painting: Counting Cubes with 0, 1, 2 and 3 Painted Faces",
+  "description": "A cube painted and cut into small cubes: count cubes with 3, 2, 1 and 0 painted faces, find the number of cuts, and handle cuboids and partly painted cubes.",
+  "image": "https://www.aspirantdaily.com/og-image.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "url": "https://www.aspirantdaily.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.aspirantdaily.com/icons/icon-512.png"
+    }
+  },
+  "datePublished": "2026-10-20",
+  "dateModified": "2026-10-20",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.aspirantdaily.com/study/reasoning/cube-cutting-and-painting.html"
+  },
+  "articleSection": "Reasoning",
+  "citation": []
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.aspirantdaily.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Study Notes",
+      "item": "https://www.aspirantdaily.com/study/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Reasoning",
+      "item": "https://www.aspirantdaily.com/study/reasoning/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Cube Cutting and Painting: Counting Cubes with 0, 1, 2 and 3 Painted Faces",
+      "item": "https://www.aspirantdaily.com/study/reasoning/cube-cutting-and-painting.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do the formulas work if the cube is cut into only 8 small cubes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. With n = 2, every small cube is a corner, so all 8 have three painted faces, and the formulas for two, one and zero faces all give 0 because n − 2 = 0."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if the small cubes are not all the same size?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The formulas assume equal cuts along every edge. If the cuts are uneven, draw the cube layer by layer and count each kind of small cube directly, because the corner, edge, face and core pattern no longer has equal pieces."
+      }
+    }
+  ]
+}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css?v=2">
+    <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-51XLJE4TVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-51XLJE4TVH');
+  </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327"
+     crossorigin="anonymous"></script>
+</head>
+<body class="study-page subject-reasoning">
+    <nav class="study-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Reasoning</a>
+            <div class="nav-controls">
+                <button onclick="toggleAllSections()" class="btn-secondary">Expand/Collapse All</button>
+                <button onclick="window.print()" class="btn-primary">📄 Print/Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> / <a href="../index.html">Study Notes</a> / <a href="index.html">Reasoning</a> / <span>Cube Cutting and Painting: Counting Cubes with 0, 1, 2 and 3 Painted Faces</span>
+            </div>
+            <h1>Cube Cutting and Painting: Counting Cubes with 0, 1, 2 and 3 Painted Faces</h1>
+            <p class="page-subtitle">Corners, edges, faces and core • 8, 12(n − 2), 6(n − 2)², (n − 2)³ • Number of cuts • Cuboids • Only some faces painted</p>
+            <div class="page-meta">
+                <span class="badge badge-secondary">SSC</span>
+                <span class="badge badge-secondary">Railway</span>
+                <span class="badge badge-secondary">📅 Last updated: 2026-10-20</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="study-section collapsible" data-section="1">
+            <button class="section-header" onclick="toggleSection(1)" aria-expanded="true" aria-controls="section-1">
+                <span class="section-number">1️⃣</span>
+                <span class="section-title">Corners, Edges, Faces and Core</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-1">
+                <div class="content-box">
+<p>The classic question takes a large cube, paints all six faces, cuts it into n × n × n equal small cubes, and asks how many small cubes have three, two, one or no painted faces. You do not need to picture all the small cubes. Every small cube is in exactly one of four places, and each place has a fixed number of painted faces.</p>
+<ul class="bullet-list">
+<li><strong>Corners</strong> touch three outer faces, so they have <strong>3</strong> painted faces. A cube always has 8 corners.</li>
+<li><strong>Edges</strong>, excluding the corners, touch two faces: <strong>2</strong> painted faces. Each of the 12 edges has n − 2 such cubes.</li>
+<li><strong>Face centres</strong>, away from edges, touch one face: <strong>1</strong> painted face. Each of the 6 faces has (n − 2)² of them.</li>
+<li><strong>Core</strong> cubes are hidden inside: <strong>0</strong> painted faces. They form an inner cube of side n − 2.</li>
+</ul>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="2">
+            <button class="section-header" onclick="toggleSection(2)" aria-expanded="true" aria-controls="section-2">
+                <span class="section-number">2️⃣</span>
+                <span class="section-title">The Four Formulas</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-2">
+                <div class="content-box">
+<div class="table-wrap"><table class="data-table">
+<thead><tr><th>Painted faces</th><th>Position</th><th>Number of small cubes</th></tr></thead>
+<tbody>
+<tr><td>3</td><td>corners</td><td>8</td></tr>
+<tr><td>2</td><td>edges</td><td>12(n − 2)</td></tr>
+<tr><td>1</td><td>face centres</td><td>6(n − 2)²</td></tr>
+<tr><td>0</td><td>core</td><td>(n − 2)³</td></tr>
+</tbody></table></div>
+<p>Here n is the number of small cubes along one edge. If the question gives the total number of small cubes, take its cube root to find n: 64 small cubes means n = 4. If it gives lengths, divide: a 6 cm cube cut into 1 cm cubes has n = 6.</p>
+<div class="case-study">
+<h4>Worked example 1: n = 4</h4>
+<p>A painted cube is cut into 64 small cubes, so n = 4. Three faces: 8. Two faces: 12 × 2 = <strong>24</strong>.</p>
+</div>
+<p>One face: 6 × 2² = 24.</p>
+<p>No face: 2³ = 8.</p>
+<p>Check: 8 + 24 + 24 + 8 = 64, the total number of small cubes. Always make this check; it catches most slips.</p>
+<div class="case-study">
+<h4>Worked example 2: n = 5</h4>
+<p>A painted cube cut into 125 small cubes has a core of 3³ = <strong>27</strong> unpainted cubes.</p>
+</div>
+<p>It also has 6 × 3² = 54 cubes with exactly one painted face.</p>
+<div class="case-study">
+<h4>Worked example 3: lengths instead of a count</h4>
+<p>A cube of side 6 cm is painted and cut into 1 cm cubes. Then n = 6, and the cubes with exactly two painted faces number 12 × 4 = <strong>48</strong>.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="3">
+            <button class="section-header" onclick="toggleSection(3)" aria-expanded="true" aria-controls="section-3">
+                <span class="section-number">3️⃣</span>
+                <span class="section-title">Number of Cuts</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-3">
+                <div class="content-box">
+<p>To divide each edge into n equal parts you need n − 1 cuts, and you must cut in three directions. So the minimum number of straight cuts is 3(n − 1), assuming you do not rearrange the pieces between cuts.</p>
+<div class="case-study">
+<h4>Worked example 4: six cuts</h4>
+<p>Six cuts, two in each direction, divide each edge into 3 parts, giving 3³ = <strong>27</strong> small cubes.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)" aria-expanded="true" aria-controls="section-4">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">Cuboids and Partly Painted Cubes</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
+                <div class="content-box">
+<p>For a painted cuboid of l × b × h small cubes, the same four positions apply, but the edges and faces have different lengths. There are still 8 corners. The 12 edges come in three groups of four, of lengths l − 2, b − 2 and h − 2. The six faces come in three pairs.</p>
+<div class="case-study">
+<h4>Worked example 5: a 4 × 3 × 2 cuboid</h4>
+<p>Two faces: 4 × (2 + 1 + 0) = <strong>12</strong>.</p>
+</div>
+<p>One face: 2 × (2 × 1 + 1 × 0 + 2 × 0) = 4. With 8 corners and no core, 8 + 12 + 4 + 0 = 24, the full count of small cubes.</p>
+<p>If only some faces are painted, the four formulas no longer apply. Count by layers instead: decide which layers touch a painted face, and count the cubes in each layer.</p>
+<div class="case-study">
+<h4>Worked example 6: only two opposite faces painted</h4>
+<p>A cube with only its top and bottom painted is cut into 64 small cubes. The top and bottom layers, 16 cubes each, have one painted face. The two middle layers have none: 16 × 2 = <strong>32</strong> unpainted cubes.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)" aria-expanded="true" aria-controls="section-5">
+                <span class="section-number">5️⃣</span>
+                <span class="section-title">Common Traps</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-5">
+                <div class="content-box">
+<ul class="warning-list">
+<li>✘ Using n as the total number of cubes instead of the number along one edge.</li>
+<li>✘ Forgetting to subtract the two corners from each edge: the edge count is n − 2, not n.</li>
+<li>✘ Applying the all-faces formulas when only some faces are painted.</li>
+<li>✘ Skipping the check that the four counts add up to the total.</li>
+</ul>
+<p>Spatial questions also include <a href="dice-problems.html">dice problems</a> and <a href="counting-figures.html">counting figures</a>. Cube roots of the totals come quickly with the <a href="../quant/square-roots-and-cube-roots.html">cube root of a perfect cube trick</a>, and more methods are on the <a href="../index.html">study hub</a>.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)" aria-expanded="true" aria-controls="section-6">
+                <span class="section-number">6️⃣</span>
+                <span class="section-title">Practice Questions (6)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-6">
+                <div class="content-box">
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q1.</strong> A cube painted on all faces is cut into 27 equal small cubes. How many small cubes have exactly one face painted? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q1" value="a"> (a) 8</label>
+                            <label><input type="radio" name="q1" value="b"> (b) 6</label>
+                            <label><input type="radio" name="q1" value="c"> (c) 12</label>
+                            <label><input type="radio" name="q1" value="d"> (d) 1</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q1">
+                            <p><strong>✅ Answer:</strong> (b) 6</p>
+                            <p><strong>💡 Explanation:</strong> 27 cubes means n = 3. Each face has (3 − 2)² = 1 centre cube with one painted face, and there are 6 faces, giving 6.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q1')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q2.</strong> A painted cube is cut into 216 equal small cubes. How many small cubes have no face painted? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q2" value="a"> (a) 96</label>
+                            <label><input type="radio" name="q2" value="b"> (b) 125</label>
+                            <label><input type="radio" name="q2" value="c"> (c) 100</label>
+                            <label><input type="radio" name="q2" value="d"> (d) 64</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q2">
+                            <p><strong>✅ Answer:</strong> (d) 64</p>
+                            <p><strong>💡 Explanation:</strong> 216 = 6³, so n = 6. The unpainted cubes form an inner cube of side n − 2 = 4, which holds 4³ = 64 cubes.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q2')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q3.</strong> A painted cube is cut into 125 equal small cubes. How many have exactly two faces painted? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q3" value="a"> (a) 36</label>
+                            <label><input type="radio" name="q3" value="b"> (b) 24</label>
+                            <label><input type="radio" name="q3" value="c"> (c) 48</label>
+                            <label><input type="radio" name="q3" value="d"> (d) 54</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q3">
+                            <p><strong>✅ Answer:</strong> (a) 36</p>
+                            <p><strong>💡 Explanation:</strong> 125 = 5³, so n = 5. Each of the 12 edges has n − 2 = 3 middle cubes with two painted faces, giving 12 × 3 = 36.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q3')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q4.</strong> A cube painted on all faces is cut into 64 equal small cubes. How many small cubes have at least one face painted? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q4" value="a"> (a) 48</label>
+                            <label><input type="radio" name="q4" value="b"> (b) 8</label>
+                            <label><input type="radio" name="q4" value="c"> (c) 56</label>
+                            <label><input type="radio" name="q4" value="d"> (d) 24</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q4">
+                            <p><strong>✅ Answer:</strong> (c) 56</p>
+                            <p><strong>💡 Explanation:</strong> The only cubes with no paint are the inner (4 − 2)³ = 8. Every other cube has at least one painted face: 64 − 8 = 56.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q4')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q5.</strong> What is the minimum number of straight cuts needed to divide a cube into 216 equal small cubes? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q5" value="a"> (a) 18</label>
+                            <label><input type="radio" name="q5" value="b"> (b) 15</label>
+                            <label><input type="radio" name="q5" value="c"> (c) 12</label>
+                            <label><input type="radio" name="q5" value="d"> (d) 36</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q5">
+                            <p><strong>✅ Answer:</strong> (b) 15</p>
+                            <p><strong>💡 Explanation:</strong> 216 = 6³, so each edge must be divided into 6 parts, which needs 5 cuts. The cube needs 5 cuts in each of 3 directions: 3 × 5 = 15.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q5')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q6.</strong> A painted cube is cut into equal small cubes, and exactly 27 of them have no face painted. How many small cubes are there in all? <span class="badge badge-secondary">hard</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q6" value="a"> (a) 125</label>
+                            <label><input type="radio" name="q6" value="b"> (b) 64</label>
+                            <label><input type="radio" name="q6" value="c"> (c) 216</label>
+                            <label><input type="radio" name="q6" value="d"> (d) 343</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q6">
+                            <p><strong>✅ Answer:</strong> (a) 125</p>
+                            <p><strong>💡 Explanation:</strong> The unpainted core is (n − 2)³ = 27, so n − 2 = 3 and n = 5. The total is 5³ = 125.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q6')">Show Answer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)" aria-expanded="true" aria-controls="section-7">
+                <span class="section-number">7️⃣</span>
+                <span class="section-title">Frequently Asked Questions</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-7">
+                <div class="content-box">
+                    <h3>Do the formulas work if the cube is cut into only 8 small cubes?</h3>
+                    <p>Yes. With n = 2, every small cube is a corner, so all 8 have three painted faces, and the formulas for two, one and zero faces all give 0 because n − 2 = 0.</p>
+                    <h3>What if the small cubes are not all the same size?</h3>
+                    <p>The formulas assume equal cuts along every edge. If the cuts are uneven, draw the cube layer by layer and count each kind of small cube directly, because the corner, edge, face and core pattern no longer has equal pieces.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="8">
+            <button class="section-header" onclick="toggleSection(8)" aria-expanded="true" aria-controls="section-8">
+                <span class="section-number">8️⃣</span>
+                <span class="section-title">Sources and Review</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-8">
+                <div class="content-box">
+                    <p>All problems and solutions on this page are original. No outside facts are relied on; every numeric answer is recomputed by software before publishing.</p>
+                    <div class="highlight-box">
+                        <p><strong>How this page was prepared.</strong> Drafted with AI assistance (Claude (Anthropic AI model)) from the sources listed above. 17 calculations on this page were recomputed by software and matched. Automated checks also covered structure, internal links and duplicate text. Software checks cannot confirm facts. Reviewed by praveenkumar on 2026-10-20 against the sources listed above.</p>
+                        <p>Found an error? <a href="../../contact.html">Report it</a> and we will correct the page.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="9">
+            <button class="section-header" onclick="toggleSection(9)" aria-expanded="true" aria-controls="section-9">
+                <span class="section-number">9️⃣</span>
+                <span class="section-title">Related Pages</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-9">
+                <div class="content-box">
+                    <ul class="bullet-list">
+                        <li><a href="direction-sense-test.html">Direction Sense Test: Distance and Final Direction</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="page-navigation">
+            <a href="index.html" class="nav-btn">← Reasoning</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>Subject: Reasoning | Sources are listed on this page. <a href="../../contact.html">Report an error</a>.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>
