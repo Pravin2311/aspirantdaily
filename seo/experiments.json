@@ -149,5 +149,27 @@
     "status": "running",
     "confounders": "Separate from 2026-10-23-ca-fact-corrections (its baseline was already taken). Titles changed on two pages along with content. Very small impression counts.",
     "next_action": "Weekly interim; decide after 2026-11-20."
+  },
+  {
+    "id": "2026-10-23-ca-fact-corrections-3",
+    "date": "2026-10-23",
+    "commits": [
+      "528b0ba",
+      "c41fd22"
+    ],
+    "pages_regex": "/study/current-affairs/(aditya-l1-mission|brics-summit-2026-new-delhi|chandrayan-updates|deepfake-regulation-in-india|digital-personal-data-protection-act|gaganyaan-chandrayaan4-progress-2026|india-china-border-updates|india-usa-partnership|indian-net-zero-target|new-education-policy-india|start-up-india-updates|uniform-civil-code-debate|union-budget-2026-27)\\.html",
+    "change": "Fact-checked 13 current affairs pages against official sources and 2025-26 developments (e.g., DPDP Rules 2025, IT Rules deepfake amendment 2026, 2026 startup definition, angel tax abolition, Gujarat UCC Bill, VBSA Bill); corrected wrong figures and outdated MCQs; refreshed descriptions.",
+    "hypothesis": "Pages that state current, correct facts match 2026 queries better and earn more impressions and clicks.",
+    "metric": "clicks",
+    "secondary_metrics": [
+      "ctr",
+      "position",
+      "impressions"
+    ],
+    "window_days": 28,
+    "evaluate_after": "2026-11-20",
+    "status": "running",
+    "confounders": "Descriptions and one title (deepfake) changed along with content. The start-up, UCC and budget pages are in the same commit as this entry. Very small impression counts per page.",
+    "next_action": "Weekly interim; decide after 2026-11-20."
   }
 ]
