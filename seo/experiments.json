@@ -179,10 +179,11 @@
       "d12d69a",
       "ec0e080",
       "aade0c6",
-      "02ecc8e"
+      "02ecc8e",
+      "30e92db"
     ],
-    "pages_regex": "^/(blog/rrb-group-d-science-ncert-chapters|study/economy/(budget-and-fiscal-policy|external-sector-and-trade|money-banking-and-rbi|national-income-and-inflation)|study/polity/judiciary-and-landmark-cases|study/ir/(treaties-and-agreements-of-india|un-and-international-organisations)|study/schemes/industry-infrastructure-and-digital-schemes)\\.html$",
-    "change": "Brought evergreen notes up to date: RRB Group D science rewritten to current NCERT editions with unverifiable claims removed; 2026 updates to Finance Commission, fiscal anchor, inflation target, CPI/WPI base years, trade agreements and Supreme Court strength (38). Added 02ecc8e: UN Secretary-General selection 2026, Ganga treaty expiry, Chabahar waiver lapse, Smart Cities Mission closure.",
+    "pages_regex": "^/(blog/rrb-group-d-science-ncert-chapters|study/economy/(budget-and-fiscal-policy|external-sector-and-trade|money-banking-and-rbi|national-income-and-inflation)|study/polity/judiciary-and-landmark-cases|study/ir/(treaties-and-agreements-of-india|un-and-international-organisations)|study/schemes/industry-infrastructure-and-digital-schemes|study/environment/(climate-change-and-india|biodiversity-and-conservation)|study/science-tech/biotechnology-nuclear-and-emerging-tech)\\.html$",
+    "change": "Brought evergreen notes up to date: RRB Group D science rewritten to current NCERT editions with unverifiable claims removed; 2026 updates to Finance Commission, fiscal anchor, inflation target, CPI/WPI base years, trade agreements and Supreme Court strength (38). Added 02ecc8e: UN Secretary-General selection 2026, Ganga treaty expiry, Chabahar waiver lapse, Smart Cities Mission closure. Added 30e92db: India's 2035 NDC, COP30 outcome, Project Cheetah 2026, PFBR criticality and SHANTI Act.",
     "hypothesis": "Current, accurate study notes earn more impressions and clicks over time; the RRB Group D page (73 impressions, 1.4% CTR) should improve CTR once the refreshed snippet is crawled.",
     "metric": "clicks",
     "secondary_metrics": [
