@@ -178,10 +178,11 @@
     "commits": [
       "d12d69a",
       "ec0e080",
-      "aade0c6"
+      "aade0c6",
+      "02ecc8e"
     ],
-    "pages_regex": "^/(blog/rrb-group-d-science-ncert-chapters|study/economy/(budget-and-fiscal-policy|external-sector-and-trade|money-banking-and-rbi|national-income-and-inflation)|study/polity/judiciary-and-landmark-cases)\\.html$",
-    "change": "Brought evergreen notes up to date: RRB Group D science rewritten to current NCERT editions with unverifiable claims removed; 2026 updates to Finance Commission, fiscal anchor, inflation target, CPI/WPI base years, trade agreements and Supreme Court strength (38).",
+    "pages_regex": "^/(blog/rrb-group-d-science-ncert-chapters|study/economy/(budget-and-fiscal-policy|external-sector-and-trade|money-banking-and-rbi|national-income-and-inflation)|study/polity/judiciary-and-landmark-cases|study/ir/(treaties-and-agreements-of-india|un-and-international-organisations)|study/schemes/industry-infrastructure-and-digital-schemes)\\.html$",
+    "change": "Brought evergreen notes up to date: RRB Group D science rewritten to current NCERT editions with unverifiable claims removed; 2026 updates to Finance Commission, fiscal anchor, inflation target, CPI/WPI base years, trade agreements and Supreme Court strength (38). Added 02ecc8e: UN Secretary-General selection 2026, Ganga treaty expiry, Chabahar waiver lapse, Smart Cities Mission closure.",
     "hypothesis": "Current, accurate study notes earn more impressions and clicks over time; the RRB Group D page (73 impressions, 1.4% CTR) should improve CTR once the refreshed snippet is crawled.",
     "metric": "clicks",
     "secondary_metrics": [
