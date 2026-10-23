@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cube and Cuboid: Volume, Surface Area and Diagonal | AspirantDaily</title>
+    <meta name="description" content="Surface area of cuboid formula, volume and diagonal for cubes and cuboids, the face-area product trick, walls of a room, recasting and percentage changes.">
+    <meta name="keywords" content="surface area of cuboid formula, volume of cuboid, diagonal of cuboid formula, cube surface area and volume">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.aspirantdaily.com/study/quant/cube-and-cuboid.html">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.aspirantdaily.com/study/quant/cube-and-cuboid.html">
+    <meta property="og:title" content="Cube and Cuboid: Volume, Surface Area and Diagonal | AspirantDaily">
+    <meta property="og:description" content="Surface area of cuboid formula, volume and diagonal for cubes and cuboids, the face-area product trick, walls of a room, recasting and percentage changes.">
+    <meta property="og:image" content="https://www.aspirantdaily.com/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Cube and Cuboid Formulas: Volume, Surface Area, Diagonal and the Face-Area Trick",
+  "description": "Surface area of cuboid formula, volume and diagonal for cubes and cuboids, the face-area product trick, walls of a room, recasting and percentage changes.",
+  "image": "https://www.aspirantdaily.com/og-image.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "url": "https://www.aspirantdaily.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.aspirantdaily.com/icons/icon-512.png"
+    }
+  },
+  "datePublished": "2026-10-23",
+  "dateModified": "2026-10-23",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.aspirantdaily.com/study/quant/cube-and-cuboid.html"
+  },
+  "articleSection": "Quantitative Aptitude",
+  "citation": []
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.aspirantdaily.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Study Notes",
+      "item": "https://www.aspirantdaily.com/study/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Quantitative Aptitude",
+      "item": "https://www.aspirantdaily.com/study/quant/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Cube and Cuboid Formulas: Volume, Surface Area, Diagonal and the Face-Area Trick",
+      "item": "https://www.aspirantdaily.com/study/quant/cube-and-cuboid.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the difference between total and lateral surface area?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Total surface area counts all six faces. Lateral surface area counts only the four side faces, leaving out the top and bottom. For a room, the lateral area is the area of the four walls, which is what a painting question usually needs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does the face-area trick work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The three faces meeting at one corner have areas lb, bh and hl. Their product is l²b²h², which is the square of the volume lbh. Taking the square root of the product therefore gives the volume directly."
+      }
+    }
+  ]
+}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css?v=2">
+    <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-51XLJE4TVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-51XLJE4TVH');
+  </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327"
+     crossorigin="anonymous"></script>
+</head>
+<body class="study-page subject-quant">
+    <nav class="study-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Quantitative Aptitude</a>
+            <div class="nav-controls">
+                <button onclick="toggleAllSections()" class="btn-secondary">Expand/Collapse All</button>
+                <button onclick="window.print()" class="btn-primary">📄 Print/Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> / <a href="../index.html">Study Notes</a> / <a href="index.html">Quantitative Aptitude</a> / <span>Cube and Cuboid Formulas: Volume, Surface Area, Diagonal and the Face-Area Trick</span>
+            </div>
+            <h1>Cube and Cuboid Formulas: Volume, Surface Area, Diagonal and the Face-Area Trick</h1>
+            <p class="page-subtitle">Volume lbh and a³ • Total and lateral surface area • Diagonal √(l² + b² + h²) • V = √(xyz) from face areas • Recasting • Effect of changing the side</p>
+            <div class="page-meta">
+                <span class="badge badge-secondary">SSC</span>
+                <span class="badge badge-secondary">Railway</span>
+                <span class="badge badge-secondary">📅 Last updated: 2026-10-23</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="study-section collapsible" data-section="1">
+            <button class="section-header" onclick="toggleSection(1)" aria-expanded="true" aria-controls="section-1">
+                <span class="section-number">1️⃣</span>
+                <span class="section-title">The Formula Sheet</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-1">
+                <div class="content-box">
+<p>A cuboid is a box with six rectangular faces, length l, breadth b and height h. A cube is a cuboid whose edges are all equal to a. Every question in this chapter uses one of a handful of formulas.</p>
+<div class="table-wrap"><table class="data-table">
+<thead><tr><th>Quantity</th><th>Cuboid</th><th>Cube</th></tr></thead>
+<tbody>
+<tr><td>Volume</td><td>l × b × h</td><td>a³</td></tr>
+<tr><td>Total surface area</td><td>2(lb + bh + hl)</td><td>6a²</td></tr>
+<tr><td>Lateral surface area (four walls)</td><td>2h(l + b)</td><td>4a²</td></tr>
+<tr><td>Space diagonal</td><td>√(l² + b² + h²)</td><td>a√3</td></tr>
+</tbody></table></div>
+<p>Volume is measured in cubic units, such as cm³, and areas in square units, such as cm². Options often include the same number with the wrong unit, so check which one the question asks for.</p>
+<div class="case-study">
+<h4>Worked example 1: volume of a box</h4>
+<p>A box measures 12 cm × 8 cm × 5 cm. Its volume is 12 × 8 × 5 = <strong>480 cm³</strong>.</p>
+</div>
+<p>Its total surface area is 2(96 + 40 + 60) = 392 cm².</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="2">
+            <button class="section-header" onclick="toggleSection(2)" aria-expanded="true" aria-controls="section-2">
+                <span class="section-number">2️⃣</span>
+                <span class="section-title">Diagonals and Cubes</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-2">
+                <div class="content-box">
+<p>The space diagonal runs from one corner to the opposite corner through the inside of the box. It is the longest straight rod that fits inside.</p>
+<div class="case-study">
+<h4>Worked example 2: the diagonal</h4>
+<p>For a 12 × 4 × 3 box, the diagonal is √(144 + 16 + 9) = √169 = <strong>13</strong>.</p>
+</div>
+<p>For a cube, one known measurement fixes everything, because the side a determines the rest. Work back to the side first, then compute what the question asks for.</p>
+<div class="case-study">
+<h4>Worked example 3: from surface area to volume</h4>
+<p>A cube has total surface area 150 cm². Then 6a² = 150, so a² = 25 and a = 5. The volume is 5³ = <strong>125 cm³</strong>.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 4: from the diagonal</h4>
+<p>A cube's diagonal is 6√3 cm. Since the diagonal is a√3, the side is 6 cm and the volume is <strong>216 cm³</strong>.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="3">
+            <button class="section-header" onclick="toggleSection(3)" aria-expanded="true" aria-controls="section-3">
+                <span class="section-number">3️⃣</span>
+                <span class="section-title">The Face-Area Product Trick</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-3">
+                <div class="content-box">
+<p>Sometimes a question gives the areas of three faces that meet at a corner instead of the edges. These areas are lb, bh and hl. Multiplying them gives (lbh)², so:</p>
+<div class="highlight-box"><p><strong>Volume = √(product of the three face areas)</strong></p></div>
+<div class="case-study">
+<h4>Worked example 5: areas 24, 32 and 48</h4>
+<p>V = √(24 × 32 × 48) = √36,864 = <strong>192 cm³</strong>. The edges are 4, 6 and 8 cm, since 4 × 6 = 24, 4 × 8 = 32 and 6 × 8 = 48.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)" aria-expanded="true" aria-controls="section-4">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">Rooms, Recasting and Changes</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
+                <div class="content-box">
+<p>Painting the walls of a room uses the lateral surface area, because the floor and ceiling are usually excluded. Subtract doors and windows if the question gives them.</p>
+<div class="case-study">
+<h4>Worked example 6: painting four walls</h4>
+<p>A room is 10 m long, 8 m wide and 4 m high. The walls cover 2 × 4 × (10 + 8) = 144 m². At ₹20 per m², the cost is <strong>₹2,880</strong>.</p>
+</div>
+<p>Capacity questions convert volume into litres. One cubic metre holds 1,000 litres, and one litre is 1,000 cm³. Convert all lengths to metres or all to centimetres before multiplying, or the answer will be off by a power of ten.</p>
+<div class="case-study">
+<h4>Worked example 7: a water tank</h4>
+<p>A tank is 2 m long, 1.5 m wide and 1 m deep. It holds 2 × 1.5 × 1 = 3 m³, which is <strong>3,000 litres</strong>.</p>
+</div>
+<p>When solids are melted and recast, the volume stays the same. Add the volumes of the pieces, then find the new shape's dimension.</p>
+<div class="case-study">
+<h4>Worked example 8: three cubes into one</h4>
+<p>Cubes of side 3, 4 and 5 cm are melted into one cube. Its volume is 27 + 64 + 125 = 216 cm³, so its side is <strong>6 cm</strong>.</p>
+</div>
+<p>Scaling the side by a factor k multiplies areas by k² and volumes by k³. Use multipliers, not added percentages.</p>
+<div class="case-study">
+<h4>Worked example 9: a 10% longer side</h4>
+<p>Each edge of a cube grows by 10%. The volume is multiplied by 1.1³ = 1.331, an increase of <strong>33.1%</strong>, while the surface area rises by 21%.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)" aria-expanded="true" aria-controls="section-5">
+                <span class="section-number">5️⃣</span>
+                <span class="section-title">Common Traps</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-5">
+                <div class="content-box">
+<ul class="warning-list">
+<li>✘ Forgetting the 2 in 2(lb + bh + hl).</li>
+<li>✘ Using total surface area for the four walls of a room.</li>
+<li>✘ Mixing cm² and cm³ in the answer.</li>
+<li>✘ Adding percentages instead of multiplying when the side changes.</li>
+</ul>
+<p>Painted cubes cut into smaller cubes have their own counting method; see <a href="../reasoning/cube-cutting-and-painting.html">cube cutting and painting</a>. Round solids are covered on <a href="cylinder-cone-sphere.html">cylinder, cone and sphere</a>, and cube roots come quickly with the <a href="square-roots-and-cube-roots.html">cube root trick</a>.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)" aria-expanded="true" aria-controls="section-6">
+                <span class="section-number">6️⃣</span>
+                <span class="section-title">Practice Questions (6)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-6">
+                <div class="content-box">
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q1.</strong> What is the total surface area of a cuboid measuring 10 cm × 6 cm × 4 cm? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q1" value="a"> (a) 240 cm²</label>
+                            <label><input type="radio" name="q1" value="b"> (b) 248 cm²</label>
+                            <label><input type="radio" name="q1" value="c"> (c) 124 cm²</label>
+                            <label><input type="radio" name="q1" value="d"> (d) 240 cm³</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q1">
+                            <p><strong>✅ Answer:</strong> (b) 248 cm²</p>
+                            <p><strong>💡 Explanation:</strong> TSA = 2(lb + bh + hl) = 2(60 + 24 + 40) = 2 × 124 = 248 cm². Forgetting the factor 2 gives 124.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q1')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q2.</strong> A cube has a volume of 343 cm³. What is its total surface area? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q2" value="a"> (a) 196 cm²</label>
+                            <label><input type="radio" name="q2" value="b"> (b) 245 cm²</label>
+                            <label><input type="radio" name="q2" value="c"> (c) 343 cm²</label>
+                            <label><input type="radio" name="q2" value="d"> (d) 294 cm²</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q2">
+                            <p><strong>✅ Answer:</strong> (d) 294 cm²</p>
+                            <p><strong>💡 Explanation:</strong> The side is ∛343 = 7 cm. TSA = 6a² = 6 × 49 = 294 cm². 196 cm² is the lateral surface area, 4a².</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q2')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q3.</strong> What is the length of the longest rod that fits in a box 6 m × 8 m × 24 m? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q3" value="a"> (a) 26 m</label>
+                            <label><input type="radio" name="q3" value="b"> (b) 24 m</label>
+                            <label><input type="radio" name="q3" value="c"> (c) 38 m</label>
+                            <label><input type="radio" name="q3" value="d"> (d) 28 m</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q3">
+                            <p><strong>✅ Answer:</strong> (a) 26 m</p>
+                            <p><strong>💡 Explanation:</strong> The longest rod lies along the space diagonal: √(36 + 64 + 576) = √676 = 26 m.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q3')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q4.</strong> Three faces of a cuboid that meet at a corner have areas 12 cm², 15 cm² and 20 cm². What is its volume? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q4" value="a"> (a) 47 cm³</label>
+                            <label><input type="radio" name="q4" value="b"> (b) 120 cm³</label>
+                            <label><input type="radio" name="q4" value="c"> (c) 60 cm³</label>
+                            <label><input type="radio" name="q4" value="d"> (d) 3,600 cm³</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q4">
+                            <p><strong>✅ Answer:</strong> (c) 60 cm³</p>
+                            <p><strong>💡 Explanation:</strong> The product of the three face areas is lb × bh × hl = (lbh)². So V = √(12 × 15 × 20) = √3,600 = 60 cm³.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q4')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q5.</strong> How many cubes of side 2 cm can be cut from a cube of side 8 cm? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q5" value="a"> (a) 4</label>
+                            <label><input type="radio" name="q5" value="b"> (b) 16</label>
+                            <label><input type="radio" name="q5" value="c"> (c) 32</label>
+                            <label><input type="radio" name="q5" value="d"> (d) 64</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q5">
+                            <p><strong>✅ Answer:</strong> (d) 64</p>
+                            <p><strong>💡 Explanation:</strong> Divide the volumes: 8³ ÷ 2³ = 512 ÷ 8 = 64. Equivalently, 4 small cubes fit along each edge, and 4³ = 64.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q5')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q6.</strong> If each edge of a cube is increased by 20%, by what percentage does its surface area increase? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q6" value="a"> (a) 44%</label>
+                            <label><input type="radio" name="q6" value="b"> (b) 40%</label>
+                            <label><input type="radio" name="q6" value="c"> (c) 20%</label>
+                            <label><input type="radio" name="q6" value="d"> (d) 72.8%</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q6">
+                            <p><strong>✅ Answer:</strong> (a) 44%</p>
+                            <p><strong>💡 Explanation:</strong> Surface area depends on the square of the side: 1.2² = 1.44, an increase of 44%. The volume would rise by 1.2³ − 1 = 72.8%.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q6')">Show Answer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)" aria-expanded="true" aria-controls="section-7">
+                <span class="section-number">7️⃣</span>
+                <span class="section-title">Frequently Asked Questions</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-7">
+                <div class="content-box">
+                    <h3>What is the difference between total and lateral surface area?</h3>
+                    <p>Total surface area counts all six faces. Lateral surface area counts only the four side faces, leaving out the top and bottom. For a room, the lateral area is the area of the four walls, which is what a painting question usually needs.</p>
+                    <h3>Why does the face-area trick work?</h3>
+                    <p>The three faces meeting at one corner have areas lb, bh and hl. Their product is l²b²h², which is the square of the volume lbh. Taking the square root of the product therefore gives the volume directly.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="8">
+            <button class="section-header" onclick="toggleSection(8)" aria-expanded="true" aria-controls="section-8">
+                <span class="section-number">8️⃣</span>
+                <span class="section-title">Sources and Review</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-8">
+                <div class="content-box">
+                    <p>All problems and solutions on this page are original. No outside facts are relied on; every numeric answer is recomputed by software before publishing.</p>
+                    <div class="highlight-box">
+                        <p><strong>How this page was prepared.</strong> Drafted with AI assistance (Claude (Anthropic AI model)) from the sources listed above. 16 calculations on this page were recomputed by software and matched. Automated checks also covered structure, internal links and duplicate text. Software checks cannot confirm facts. Reviewed by praveenkumar on 2026-10-23 against the sources listed above.</p>
+                        <p>Found an error? <a href="../../contact.html">Report it</a> and we will correct the page.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="9">
+            <button class="section-header" onclick="toggleSection(9)" aria-expanded="true" aria-controls="section-9">
+                <span class="section-number">9️⃣</span>
+                <span class="section-title">Related Pages</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-9">
+                <div class="content-box">
+                    <ul class="bullet-list">
+                        <li><a href="../../repeated-questions/quant-cheat-code.html">Quant Cheat Code: 20 Must-Know Shortcuts &amp; Formulas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="page-navigation">
+            <a href="index.html" class="nav-btn">← Quantitative Aptitude</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>Subject: Quantitative Aptitude | Sources are listed on this page. <a href="../../contact.html">Report an error</a>.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>

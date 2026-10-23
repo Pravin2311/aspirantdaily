@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simplification and BODMAS: Rules and Common Traps | AspirantDaily</title>
+    <meta name="description" content="BODMAS rule with examples: bracket order including the bar, the &#x27;of&#x27; rule, left-to-right for ÷ × and + −, fraction chains and quick checks. 8 worked examples.">
+    <meta name="keywords" content="bodmas rule with examples, vbodmas rule, simplification tricks, of in bodmas">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.aspirantdaily.com/study/quant/simplification-bodmas.html">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.aspirantdaily.com/study/quant/simplification-bodmas.html">
+    <meta property="og:title" content="Simplification and BODMAS: Rules and Common Traps | AspirantDaily">
+    <meta property="og:description" content="BODMAS rule with examples: bracket order including the bar, the &#x27;of&#x27; rule, left-to-right for ÷ × and + −, fraction chains and quick checks. 8 worked examples.">
+    <meta property="og:image" content="https://www.aspirantdaily.com/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Simplification and BODMAS: The Order of Operations and Its Traps",
+  "description": "BODMAS rule with examples: bracket order including the bar, the 'of' rule, left-to-right for ÷ × and + −, fraction chains and quick checks. 8 worked examples.",
+  "image": "https://www.aspirantdaily.com/og-image.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "url": "https://www.aspirantdaily.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.aspirantdaily.com/icons/icon-512.png"
+    }
+  },
+  "datePublished": "2026-10-23",
+  "dateModified": "2026-10-23",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.aspirantdaily.com/study/quant/simplification-bodmas.html"
+  },
+  "articleSection": "Quantitative Aptitude",
+  "citation": []
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.aspirantdaily.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Study Notes",
+      "item": "https://www.aspirantdaily.com/study/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Quantitative Aptitude",
+      "item": "https://www.aspirantdaily.com/study/quant/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Simplification and BODMAS: The Order of Operations and Its Traps",
+      "item": "https://www.aspirantdaily.com/study/quant/simplification-bodmas.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does BODMAS mean division always comes before multiplication?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Division and multiplication have equal priority and are worked from left to right, and the same is true for addition and subtraction. The letters only give a memory order; reading the D before the M literally can give wrong answers in other contexts."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the 'of' rule?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "'Of' means multiplication, but in exam simplification it is worked before ordinary division and multiplication. So 48 ÷ 4 of 3 means 48 ÷ 12 = 4, while 48 ÷ 4 × 3 means 12 × 3 = 36."
+      }
+    }
+  ]
+}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css?v=2">
+    <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-51XLJE4TVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-51XLJE4TVH');
+  </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327"
+     crossorigin="anonymous"></script>
+</head>
+<body class="study-page subject-quant">
+    <nav class="study-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Quantitative Aptitude</a>
+            <div class="nav-controls">
+                <button onclick="toggleAllSections()" class="btn-secondary">Expand/Collapse All</button>
+                <button onclick="window.print()" class="btn-primary">📄 Print/Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> / <a href="../index.html">Study Notes</a> / <a href="index.html">Quantitative Aptitude</a> / <span>Simplification and BODMAS: The Order of Operations and Its Traps</span>
+            </div>
+            <h1>Simplification and BODMAS: The Order of Operations and Its Traps</h1>
+            <p class="page-subtitle">Bar, ( ), { }, [ ] • &#x27;Of&#x27; before division • ÷ and × left to right • + and − left to right • Identity shortcuts • Digit-sum check</p>
+            <div class="page-meta">
+                <span class="badge badge-secondary">SSC</span>
+                <span class="badge badge-secondary">Banking</span>
+                <span class="badge badge-secondary">Railway</span>
+                <span class="badge badge-secondary">📅 Last updated: 2026-10-23</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="study-section collapsible" data-section="1">
+            <button class="section-header" onclick="toggleSection(1)" aria-expanded="true" aria-controls="section-1">
+                <span class="section-number">1️⃣</span>
+                <span class="section-title">The Order of Operations</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-1">
+                <div class="content-box">
+<p>Simplification questions give a long string of numbers and signs and ask for a single value. The arithmetic is easy; the trap is doing the steps in the wrong order. The order taught for exams is usually remembered as BODMAS, or VBODMAS when the bar is included:</p>
+<ol class="numbered-list">
+<li><strong>V</strong>inculum (the bar drawn over an expression)</li>
+<li><strong>B</strong>rackets, from the inside out: ( ), then { }, then [ ]</li>
+<li><strong>O</strong>f</li>
+<li><strong>D</strong>ivision and <strong>M</strong>ultiplication, from left to right</li>
+<li><strong>A</strong>ddition and <strong>S</strong>ubtraction, from left to right</li>
+</ol>
+<p>The key detail is in steps 4 and 5. Division and multiplication share the same rank, so you work them in the order they appear, left to right. Addition and subtraction also share a rank. Reading BODMAS as "add before subtract" is the single most common error in this chapter.</p>
+<div class="case-study">
+<h4>Worked example 1: a mixed string</h4>
+<p>18 − 6 ÷ 3 × 2 + 4. First 6 ÷ 3 = 2, then 2 × 2 = 4. Now 18 − 4 + 4, left to right: 14 + 4 = <strong>18</strong>.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="2">
+            <button class="section-header" onclick="toggleSection(2)" aria-expanded="true" aria-controls="section-2">
+                <span class="section-number">2️⃣</span>
+                <span class="section-title">The &#x27;Of&#x27; Rule</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-2">
+                <div class="content-box">
+<p>"Of" means multiplication, but in exam simplification it is worked before ordinary division and multiplication. That makes "of" behave as if it had its own bracket.</p>
+<div class="case-study">
+<h4>Worked example 2: 48 ÷ 4 of 3</h4>
+<p>"4 of 3" is 12, so 48 ÷ 12 = <strong>4</strong>.</p>
+</div>
+<p>Compare 48 ÷ 4 × 3, where there is no "of": left to right gives 12 × 3 = 36. One word changes the answer ninefold.</p>
+<div class="case-study">
+<h4>Worked example 3: fraction chains</h4>
+<p>3/4 of 2/3 of 120 is a chain of multiplications: 2/3 × 120 = 80, and 3/4 × 80 = <strong>60</strong>. Cancelling first, 3/4 × 2/3 = 1/2, makes it faster still.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="3">
+            <button class="section-header" onclick="toggleSection(3)" aria-expanded="true" aria-controls="section-3">
+                <span class="section-number">3️⃣</span>
+                <span class="section-title">Brackets and the Bar</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-3">
+                <div class="content-box">
+<p>A bar, or vinculum, drawn over part of an expression groups it even more tightly than a bracket, so it is worked first. Then clear brackets from the innermost outwards. Write each step on a new line instead of keeping all of it in your head.</p>
+<div class="case-study">
+<h4>Worked example 4: four levels</h4>
+<p>20 − [8 − {6 − (5 − 3 − 1)}], with a bar drawn over 3 − 1. The bar gives 2. Then (5 − 2) = 3, {6 − 3} = 3, [8 − 3] = 5, and 20 − 5 = <strong>15</strong>.</p>
+</div>
+<p>A minus sign in front of a bracket changes the sign of every term inside it when the bracket is removed. Most bracket mistakes come from forgetting this when expanding rather than evaluating.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)" aria-expanded="true" aria-controls="section-4">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">Left to Right for Plus and Minus</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
+                <div class="content-box">
+<div class="case-study">
+<h4>Worked example 5: the classic trap</h4>
+<p>15 − 7 + 3. Left to right: 15 − 7 = 8, then 8 + 3 = <strong>11</strong>. Adding first, 15 − 10 = 5, is wrong.</p>
+</div>
+<p>A safe habit is to think of each minus sign as belonging to the number after it: 15 + (−7) + (+3). Then the terms can be added in any order and the answer is always 11.</p>
+<div class="case-study">
+<h4>Worked example 6: decimals</h4>
+<p>0.5 × 0.5 + 0.5 ÷ 5. Multiplication and division first: 0.25 and 0.1. Then 0.25 + 0.1 = <strong>0.35</strong>.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)" aria-expanded="true" aria-controls="section-5">
+                <span class="section-number">5️⃣</span>
+                <span class="section-title">Shortcuts and Checks</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-5">
+                <div class="content-box">
+<p>Simplification questions often hide an identity. When you see a difference of squares divided by a sum or difference, use a² − b² = (a + b)(a − b) instead of squaring.</p>
+<div class="case-study">
+<h4>Worked example 7: a difference of squares</h4>
+<p>(73² − 27²) ÷ (73 − 27) = 73 + 27 = <strong>100</strong>.</p>
+</div>
+<p>To check a long multiplication without redoing it, compare digit sums. The digit sum of the answer must match the product of the digit sums, both reduced to a single digit.</p>
+<div class="case-study">
+<h4>Worked example 8: the digit-sum check</h4>
+<p>123 × 456 = <strong>56,088</strong>. Check: 123 has digit sum 6 and 456 has 15, which reduces to 6. 6 × 6 = 36 reduces to 9. The answer's digits add to 27, which also reduces to 9, so the result passes.</p>
+</div>
+<p>The check catches most slips, though not a swap of two digits, which leaves the digit sum unchanged.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)" aria-expanded="true" aria-controls="section-6">
+                <span class="section-number">6️⃣</span>
+                <span class="section-title">Common Traps</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-6">
+                <div class="content-box">
+<ul class="warning-list">
+<li>✘ Adding before subtracting. Work + and − left to right.</li>
+<li>✘ Dividing before multiplying when multiplication comes first. Work ÷ and × left to right.</li>
+<li>✘ Treating "of" like ordinary ×. Work it before ÷ and ×.</li>
+<li>✘ Forgetting to change signs when removing a bracket after a minus.</li>
+</ul>
+<p>Fast arithmetic also needs <a href="square-roots-and-cube-roots.html">square and cube roots</a> and the <a href="divisibility-rules.html">divisibility rules</a>. The formula list is in the <a href="../../repeated-questions/quant-cheat-code.html">Quant cheat code</a>.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)" aria-expanded="true" aria-controls="section-7">
+                <span class="section-number">7️⃣</span>
+                <span class="section-title">Practice Questions (6)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-7">
+                <div class="content-box">
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q1.</strong> Simplify: 36 ÷ 6 × 3 + 2 − 5 <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q1" value="a"> (a) 15</label>
+                            <label><input type="radio" name="q1" value="b"> (b) 7</label>
+                            <label><input type="radio" name="q1" value="c"> (c) 4</label>
+                            <label><input type="radio" name="q1" value="d"> (d) 21</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q1">
+                            <p><strong>✅ Answer:</strong> (a) 15</p>
+                            <p><strong>💡 Explanation:</strong> Division and multiplication go left to right: 36 ÷ 6 = 6, then 6 × 3 = 18. Then 18 + 2 − 5 = 15, again left to right.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q1')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q2.</strong> Simplify: 64 ÷ 4 of 2 + 3 <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q2" value="a"> (a) 35</label>
+                            <label><input type="radio" name="q2" value="b"> (b) 131</label>
+                            <label><input type="radio" name="q2" value="c"> (c) 11</label>
+                            <label><input type="radio" name="q2" value="d"> (d) 8</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q2">
+                            <p><strong>✅ Answer:</strong> (c) 11</p>
+                            <p><strong>💡 Explanation:</strong> &#x27;Of&#x27; is worked before division: 4 of 2 = 8. Then 64 ÷ 8 = 8, and 8 + 3 = 11.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q2')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q3.</strong> Simplify: 30 − [12 − {8 − (6 − 2)}] <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q3" value="a"> (a) 14</label>
+                            <label><input type="radio" name="q3" value="b"> (b) 22</label>
+                            <label><input type="radio" name="q3" value="c"> (c) 26</label>
+                            <label><input type="radio" name="q3" value="d"> (d) 18</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q3">
+                            <p><strong>✅ Answer:</strong> (b) 22</p>
+                            <p><strong>💡 Explanation:</strong> Work from the innermost bracket out: (6 − 2) = 4, {8 − 4} = 4, [12 − 4] = 8, and 30 − 8 = 22.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q3')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q4.</strong> What is 2/5 of 3/4 of 800? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q4" value="a"> (a) 320</label>
+                            <label><input type="radio" name="q4" value="b"> (b) 200</label>
+                            <label><input type="radio" name="q4" value="c"> (c) 300</label>
+                            <label><input type="radio" name="q4" value="d"> (d) 240</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q4">
+                            <p><strong>✅ Answer:</strong> (d) 240</p>
+                            <p><strong>💡 Explanation:</strong> &#x27;Of&#x27; means multiply: 3/4 × 800 = 600, and 2/5 × 600 = 240.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q4')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q5.</strong> Simplify: (68² − 32²) ÷ (68 + 32) <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q5" value="a"> (a) 100</label>
+                            <label><input type="radio" name="q5" value="b"> (b) 64</label>
+                            <label><input type="radio" name="q5" value="c"> (c) 36</label>
+                            <label><input type="radio" name="q5" value="d"> (d) 32</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q5">
+                            <p><strong>✅ Answer:</strong> (c) 36</p>
+                            <p><strong>💡 Explanation:</strong> 68² − 32² = (68 + 32)(68 − 32). Dividing by (68 + 32) leaves 68 − 32 = 36, with no squaring needed.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q5')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q6.</strong> Simplify: 50 − 20 + 10 <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q6" value="a"> (a) 20</label>
+                            <label><input type="radio" name="q6" value="b"> (b) 40</label>
+                            <label><input type="radio" name="q6" value="c"> (c) 30</label>
+                            <label><input type="radio" name="q6" value="d"> (d) 60</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q6">
+                            <p><strong>✅ Answer:</strong> (b) 40</p>
+                            <p><strong>💡 Explanation:</strong> Addition and subtraction have equal priority and go left to right: 50 − 20 = 30, then 30 + 10 = 40. Adding first would give the wrong 20.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q6')">Show Answer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="8">
+            <button class="section-header" onclick="toggleSection(8)" aria-expanded="true" aria-controls="section-8">
+                <span class="section-number">8️⃣</span>
+                <span class="section-title">Frequently Asked Questions</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-8">
+                <div class="content-box">
+                    <h3>Does BODMAS mean division always comes before multiplication?</h3>
+                    <p>No. Division and multiplication have equal priority and are worked from left to right, and the same is true for addition and subtraction. The letters only give a memory order; reading the D before the M literally can give wrong answers in other contexts.</p>
+                    <h3>What is the &#x27;of&#x27; rule?</h3>
+                    <p>&#x27;Of&#x27; means multiplication, but in exam simplification it is worked before ordinary division and multiplication. So 48 ÷ 4 of 3 means 48 ÷ 12 = 4, while 48 ÷ 4 × 3 means 12 × 3 = 36.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="9">
+            <button class="section-header" onclick="toggleSection(9)" aria-expanded="true" aria-controls="section-9">
+                <span class="section-number">9️⃣</span>
+                <span class="section-title">Sources and Review</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-9">
+                <div class="content-box">
+                    <p>All problems and solutions on this page are original. No outside facts are relied on; every numeric answer is recomputed by software before publishing.</p>
+                    <div class="highlight-box">
+                        <p><strong>How this page was prepared.</strong> Drafted with AI assistance (Claude (Anthropic AI model)) from the sources listed above. 15 calculations on this page were recomputed by software and matched. Automated checks also covered structure, internal links and duplicate text. Software checks cannot confirm facts. Reviewed by praveenkumar on 2026-10-23 against the sources listed above.</p>
+                        <p>Found an error? <a href="../../contact.html">Report it</a> and we will correct the page.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="10">
+            <button class="section-header" onclick="toggleSection(10)" aria-expanded="true" aria-controls="section-10">
+                <span class="section-number">🔟</span>
+                <span class="section-title">Related Pages</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-10">
+                <div class="content-box">
+                    <ul class="bullet-list">
+                        <li><a href="../../repeated-questions/quant-cheat-code.html">Quant Cheat Code: 20 Must-Know Shortcuts &amp; Formulas</a></li>
+                        <li><a href="square-roots-and-cube-roots.html">Square Roots and Cube Roots Without a Calculator</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="page-navigation">
+            <a href="index.html" class="nav-btn">← Quantitative Aptitude</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>Subject: Quantitative Aptitude | Sources are listed on this page. <a href="../../contact.html">Report an error</a>.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>

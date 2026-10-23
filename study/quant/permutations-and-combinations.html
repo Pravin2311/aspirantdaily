@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Permutations and Combinations: When Order Matters | AspirantDaily</title>
+    <meta name="description" content="Permutation vs combination explained: nPr when order matters, nCr when it doesn&#x27;t, repeated letters, items kept together, circular seating and committees.">
+    <meta name="keywords" content="permutation vs combination, npr and ncr formula, arrangements of letters of a word, vowels together permutation">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.aspirantdaily.com/study/quant/permutations-and-combinations.html">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.aspirantdaily.com/study/quant/permutations-and-combinations.html">
+    <meta property="og:title" content="Permutations and Combinations: When Order Matters | AspirantDaily">
+    <meta property="og:description" content="Permutation vs combination explained: nPr when order matters, nCr when it doesn&#x27;t, repeated letters, items kept together, circular seating and committees.">
+    <meta property="og:image" content="https://www.aspirantdaily.com/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Permutation vs Combination: When Order Matters, Repeated Letters and Restrictions",
+  "description": "Permutation vs combination explained: nPr when order matters, nCr when it doesn't, repeated letters, items kept together, circular seating and committees.",
+  "image": "https://www.aspirantdaily.com/og-image.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "url": "https://www.aspirantdaily.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.aspirantdaily.com/icons/icon-512.png"
+    }
+  },
+  "datePublished": "2026-10-23",
+  "dateModified": "2026-10-23",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.aspirantdaily.com/study/quant/permutations-and-combinations.html"
+  },
+  "articleSection": "Quantitative Aptitude",
+  "citation": []
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.aspirantdaily.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Study Notes",
+      "item": "https://www.aspirantdaily.com/study/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Quantitative Aptitude",
+      "item": "https://www.aspirantdaily.com/study/quant/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Permutation vs Combination: When Order Matters, Repeated Letters and Restrictions",
+      "item": "https://www.aspirantdaily.com/study/quant/permutations-and-combinations.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I decide quickly between permutation and combination?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ask whether swapping two chosen items gives a different outcome. If it does, as with ranks, seats, passwords or different posts, order matters and you need a permutation. If it does not, as with teams, committees or handfuls, use a combination."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do I divide by the factorials of repeated letters?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Swapping two identical letters gives the same word. If a letter appears p times, each distinct word has been counted p! times among the n! arrangements, so you divide by p! for each repeated letter."
+      }
+    }
+  ]
+}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css?v=2">
+    <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-51XLJE4TVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-51XLJE4TVH');
+  </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327"
+     crossorigin="anonymous"></script>
+</head>
+<body class="study-page subject-quant">
+    <nav class="study-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Quantitative Aptitude</a>
+            <div class="nav-controls">
+                <button onclick="toggleAllSections()" class="btn-secondary">Expand/Collapse All</button>
+                <button onclick="window.print()" class="btn-primary">📄 Print/Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> / <a href="../index.html">Study Notes</a> / <a href="index.html">Quantitative Aptitude</a> / <span>Permutation vs Combination: When Order Matters, Repeated Letters and Restrictions</span>
+            </div>
+            <h1>Permutation vs Combination: When Order Matters, Repeated Letters and Restrictions</h1>
+            <p class="page-subtitle">Counting principle • nPr versus nCr • Words with repeated letters • Together and never together • Circular arrangements • Committees and &#x27;at least one&#x27;</p>
+            <div class="page-meta">
+                <span class="badge badge-secondary">SSC</span>
+                <span class="badge badge-secondary">Banking</span>
+                <span class="badge badge-secondary">📅 Last updated: 2026-10-23</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="study-section collapsible" data-section="1">
+            <button class="section-header" onclick="toggleSection(1)" aria-expanded="true" aria-controls="section-1">
+                <span class="section-number">1️⃣</span>
+                <span class="section-title">The Counting Principle</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-1">
+                <div class="content-box">
+<p>Every counting question rests on one rule. If one choice can be made in m ways and a second, independent choice in n ways, the two together can be made in m × n ways. Permutations and combinations are this rule applied to choices that use up items as you go.</p>
+<div class="case-study">
+<h4>Worked example 1: outfits</h4>
+<p>With 3 shirts and 4 pairs of trousers, there are 3 × 4 = <strong>12</strong> outfits.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 2: books on a shelf</h4>
+<p>5 different books can be arranged in 5 × 4 × 3 × 2 × 1 = 5! = <strong>120</strong> ways: 5 choices for the first place, 4 for the next, and so on.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="2">
+            <button class="section-header" onclick="toggleSection(2)" aria-expanded="true" aria-controls="section-2">
+                <span class="section-number">2️⃣</span>
+                <span class="section-title">Permutation vs Combination</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-2">
+                <div class="content-box">
+<p>The only question to ask is whether order matters. If swapping two chosen items gives a different result, count permutations. If it does not, count combinations.</p>
+<div class="table-wrap"><table class="data-table">
+<thead><tr><th></th><th>Permutation (arrangement)</th><th>Combination (selection)</th></tr></thead>
+<tbody>
+<tr><td>Order matters?</td><td>Yes</td><td>No</td></tr>
+<tr><td>Formula</td><td>nPr = n! ÷ (n − r)!</td><td>nCr = n! ÷ (r! (n − r)!)</td></tr>
+<tr><td>Typical wording</td><td>arrange, seat, rank, posts, passwords</td><td>choose, select, team, committee</td></tr>
+</tbody></table></div>
+<p>Each selection of r items can be arranged in r! orders, so nPr = nCr × r!.</p>
+<div class="case-study">
+<h4>Worked example 3: a committee</h4>
+<p>A committee of 3 from 7 people: order does not matter, so 7C3 = <strong>35</strong>.</p>
+</div>
+<p>A captain and a vice-captain from the same 7: the two posts differ, so order matters and 7P2 = 7 × 6 = 42.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="3">
+            <button class="section-header" onclick="toggleSection(3)" aria-expanded="true" aria-controls="section-3">
+                <span class="section-number">3️⃣</span>
+                <span class="section-title">Forming Numbers</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-3">
+                <div class="content-box">
+<p>Number-formation questions are permutations with a twist: you must check whether digits may repeat. Without repetition, each place has one choice fewer than the last; with repetition, every place has the full set of choices.</p>
+<div class="case-study">
+<h4>Worked example 4: three-digit numbers from 1 to 5</h4>
+<p>Without repeating a digit: 5 × 4 × 3 = <strong>60</strong> numbers.</p>
+</div>
+<p>If digits may repeat, every place has 5 choices: 5³ = 125 numbers. If 0 is among the digits, remember that it cannot stand in the first place.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)" aria-expanded="true" aria-controls="section-4">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">Words with Repeated Letters</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
+                <div class="content-box">
+<p>To count arrangements of the letters of a word, start with n! for n letters, then divide by p! for every letter that appears p times, because swapping identical letters does not create a new word.</p>
+<div class="case-study">
+<h4>Worked example 5: LEVEL</h4>
+<p>LEVEL has 5 letters, with L twice and E twice. Arrangements = 5! ÷ (2! × 2!) = 120 ÷ 4 = <strong>30</strong>.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)" aria-expanded="true" aria-controls="section-5">
+                <span class="section-number">5️⃣</span>
+                <span class="section-title">Together and Never Together</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-5">
+                <div class="content-box">
+<p>When some items must stay together, tie them into a single block. Arrange the block with the other items, then multiply by the number of ways to arrange the items inside the block.</p>
+<div class="case-study">
+<h4>Worked example 6: vowels together in MOTHER</h4>
+<p>The vowels O and E form one block. That leaves 5 units (the block plus M, T, H, R), arranged in 5! = 120 ways, and the block itself in 2! ways: 120 × 2 = <strong>240</strong>.</p>
+</div>
+<p>For "never together", subtract the together count from the total. It is usually easier than counting the separated arrangements directly.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)" aria-expanded="true" aria-controls="section-6">
+                <span class="section-number">6️⃣</span>
+                <span class="section-title">Circular Arrangements</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-6">
+                <div class="content-box">
+<p>Around a circle there is no first seat: rotating everyone one place gives the same arrangement. Fix one person's seat and arrange the others in a line, giving (n − 1)! arrangements. If clockwise and anticlockwise orders count as the same, as with beads on a necklace, divide by 2 as well.</p>
+<div class="case-study">
+<h4>Worked example 7: six at a round table</h4>
+<p>6 people can sit around a round table in (6 − 1)! = 5! = <strong>120</strong> ways.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)" aria-expanded="true" aria-controls="section-7">
+                <span class="section-number">7️⃣</span>
+                <span class="section-title">Committees with Conditions</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-7">
+                <div class="content-box">
+<p>When a committee must contain a set number from each group, choose from each group separately and multiply.</p>
+<div class="case-study">
+<h4>Worked example 8: 3 men and 2 women</h4>
+<p>From 5 men and 4 women, a committee of 3 men and 2 women can be formed in 5C3 × 4C2 = 10 × 6 = <strong>60</strong> ways.</p>
+</div>
+<p>"At least one" questions are fastest by complement: count all selections, then subtract those with none of the required kind.</p>
+<div class="case-study">
+<h4>Worked example 9: at least one woman</h4>
+<p>A committee of 3 from 4 men and 3 women: all selections 7C3 = 35, with no women 4C3 = 4. At least one woman: 35 − 4 = <strong>31</strong>.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="8">
+            <button class="section-header" onclick="toggleSection(8)" aria-expanded="true" aria-controls="section-8">
+                <span class="section-number">8️⃣</span>
+                <span class="section-title">Common Traps</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-8">
+                <div class="content-box">
+<ul class="warning-list">
+<li>✘ Using nPr for a committee or team, where order does not matter.</li>
+<li>✘ Forgetting to arrange the items inside a "together" block.</li>
+<li>✘ Using n! instead of (n − 1)! for seats around a circle.</li>
+<li>✘ Adding the cases for "at least one" one by one when the complement is quicker.</li>
+</ul>
+<p>Counting is the first step in <a href="probability-basics.html">probability with coins, dice and cards</a>, and in <a href="../reasoning/circular-seating-arrangement.html">circular seating arrangements</a>. The formula list is in the <a href="../../repeated-questions/quant-cheat-code.html">Quant cheat code</a>.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="9">
+            <button class="section-header" onclick="toggleSection(9)" aria-expanded="true" aria-controls="section-9">
+                <span class="section-number">9️⃣</span>
+                <span class="section-title">Practice Questions (6)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-9">
+                <div class="content-box">
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q1.</strong> In how many ways can 3 students be chosen from a group of 8? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q1" value="a"> (a) 336</label>
+                            <label><input type="radio" name="q1" value="b"> (b) 24</label>
+                            <label><input type="radio" name="q1" value="c"> (c) 56</label>
+                            <label><input type="radio" name="q1" value="d"> (d) 40</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q1">
+                            <p><strong>✅ Answer:</strong> (c) 56</p>
+                            <p><strong>💡 Explanation:</strong> Choosing a group ignores order, so use 8C3 = (8 × 7 × 6) ÷ (3 × 2 × 1) = 56. 336 is 8P3, which would count the same three students in different orders.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q1')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q2.</strong> In how many ways can gold, silver and bronze medals be awarded among 6 runners? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q2" value="a"> (a) 120</label>
+                            <label><input type="radio" name="q2" value="b"> (b) 20</label>
+                            <label><input type="radio" name="q2" value="c"> (c) 216</label>
+                            <label><input type="radio" name="q2" value="d"> (d) 18</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q2">
+                            <p><strong>✅ Answer:</strong> (a) 120</p>
+                            <p><strong>💡 Explanation:</strong> The medals are different, so order matters: 6 choices for gold, then 5 for silver, then 4 for bronze. 6P3 = 6 × 5 × 4 = 120.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q2')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q3.</strong> How many different arrangements can be made of the letters of the word BANANA? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q3" value="a"> (a) 720</label>
+                            <label><input type="radio" name="q3" value="b"> (b) 120</label>
+                            <label><input type="radio" name="q3" value="c"> (c) 36</label>
+                            <label><input type="radio" name="q3" value="d"> (d) 60</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q3">
+                            <p><strong>✅ Answer:</strong> (d) 60</p>
+                            <p><strong>💡 Explanation:</strong> BANANA has 6 letters with A repeated 3 times and N twice. Arrangements = 6! ÷ (3! × 2!) = 720 ÷ 12 = 60.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q3')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q4.</strong> In how many ways can 7 people sit around a circular table? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q4" value="a"> (a) 5,040</label>
+                            <label><input type="radio" name="q4" value="b"> (b) 720</label>
+                            <label><input type="radio" name="q4" value="c"> (c) 120</label>
+                            <label><input type="radio" name="q4" value="d"> (d) 2,520</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q4">
+                            <p><strong>✅ Answer:</strong> (b) 720</p>
+                            <p><strong>💡 Explanation:</strong> Around a circle, rotations of the same seating are identical, so fix one person and arrange the rest: (7 − 1)! = 6! = 720.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q4')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q5.</strong> In how many arrangements of the letters of PENCIL do the vowels never come together? <span class="badge badge-secondary">hard</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q5" value="a"> (a) 480</label>
+                            <label><input type="radio" name="q5" value="b"> (b) 240</label>
+                            <label><input type="radio" name="q5" value="c"> (c) 600</label>
+                            <label><input type="radio" name="q5" value="d"> (d) 720</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q5">
+                            <p><strong>✅ Answer:</strong> (a) 480</p>
+                            <p><strong>💡 Explanation:</strong> All arrangements: 6! = 720. With E and I together as one block: 5! × 2! = 240. Never together = 720 − 240 = 480.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q5')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q6.</strong> A committee of 4 is chosen from 6 men and 4 women. In how many ways can it have exactly 2 women? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q6" value="a"> (a) 210</label>
+                            <label><input type="radio" name="q6" value="b"> (b) 36</label>
+                            <label><input type="radio" name="q6" value="c"> (c) 90</label>
+                            <label><input type="radio" name="q6" value="d"> (d) 60</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q6">
+                            <p><strong>✅ Answer:</strong> (c) 90</p>
+                            <p><strong>💡 Explanation:</strong> Choose the 2 women and the 2 men independently and multiply: 4C2 × 6C2 = 6 × 15 = 90.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q6')">Show Answer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="10">
+            <button class="section-header" onclick="toggleSection(10)" aria-expanded="true" aria-controls="section-10">
+                <span class="section-number">🔟</span>
+                <span class="section-title">Frequently Asked Questions</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-10">
+                <div class="content-box">
+                    <h3>How do I decide quickly between permutation and combination?</h3>
+                    <p>Ask whether swapping two chosen items gives a different outcome. If it does, as with ranks, seats, passwords or different posts, order matters and you need a permutation. If it does not, as with teams, committees or handfuls, use a combination.</p>
+                    <h3>Why do I divide by the factorials of repeated letters?</h3>
+                    <p>Swapping two identical letters gives the same word. If a letter appears p times, each distinct word has been counted p! times among the n! arrangements, so you divide by p! for each repeated letter.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="11">
+            <button class="section-header" onclick="toggleSection(11)" aria-expanded="true" aria-controls="section-11">
+                <span class="section-number">11.</span>
+                <span class="section-title">Sources and Review</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-11">
+                <div class="content-box">
+                    <p>All problems and solutions on this page are original. No outside facts are relied on; every numeric answer is recomputed by software before publishing.</p>
+                    <div class="highlight-box">
+                        <p><strong>How this page was prepared.</strong> Drafted with AI assistance (Claude (Anthropic AI model)) from the sources listed above. 17 calculations on this page were recomputed by software and matched. Automated checks also covered structure, internal links and duplicate text. Software checks cannot confirm facts. Reviewed by praveenkumar on 2026-10-23 against the sources listed above.</p>
+                        <p>Found an error? <a href="../../contact.html">Report it</a> and we will correct the page.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="12">
+            <button class="section-header" onclick="toggleSection(12)" aria-expanded="true" aria-controls="section-12">
+                <span class="section-number">12.</span>
+                <span class="section-title">Related Pages</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-12">
+                <div class="content-box">
+                    <ul class="bullet-list">
+                        <li><a href="../../repeated-questions/quant-cheat-code.html">Quant Cheat Code: 20 Must-Know Shortcuts &amp; Formulas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="page-navigation">
+            <a href="index.html" class="nav-btn">← Quantitative Aptitude</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>Subject: Quantitative Aptitude | Sources are listed on this page. <a href="../../contact.html">Report an error</a>.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>

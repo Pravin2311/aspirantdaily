@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mean, Median and Mode: Grouped and Ungrouped Data | AspirantDaily</title>
+    <meta name="description" content="Mean median mode formula for grouped data with worked tables: Σfx ÷ Σf, the median and modal-class formulas, ungrouped data and Mode = 3 Median − 2 Mean.">
+    <meta name="keywords" content="mean median mode formula grouped data, median of grouped data formula, mode of grouped data formula, mode = 3 median - 2 mean">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.aspirantdaily.com/study/quant/mean-median-mode.html">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.aspirantdaily.com/study/quant/mean-median-mode.html">
+    <meta property="og:title" content="Mean, Median and Mode: Grouped and Ungrouped Data | AspirantDaily">
+    <meta property="og:description" content="Mean median mode formula for grouped data with worked tables: Σfx ÷ Σf, the median and modal-class formulas, ungrouped data and Mode = 3 Median − 2 Mean.">
+    <meta property="og:image" content="https://www.aspirantdaily.com/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Mean, Median and Mode Formula for Grouped Data, with Ungrouped Examples",
+  "description": "Mean median mode formula for grouped data with worked tables: Σfx ÷ Σf, the median and modal-class formulas, ungrouped data and Mode = 3 Median − 2 Mean.",
+  "image": "https://www.aspirantdaily.com/og-image.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "url": "https://www.aspirantdaily.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.aspirantdaily.com/icons/icon-512.png"
+    }
+  },
+  "datePublished": "2026-10-23",
+  "dateModified": "2026-10-23",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.aspirantdaily.com/study/quant/mean-median-mode.html"
+  },
+  "articleSection": "Quantitative Aptitude",
+  "citation": []
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.aspirantdaily.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Study Notes",
+      "item": "https://www.aspirantdaily.com/study/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Quantitative Aptitude",
+      "item": "https://www.aspirantdaily.com/study/quant/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Mean, Median and Mode Formula for Grouped Data, with Ungrouped Examples",
+      "item": "https://www.aspirantdaily.com/study/quant/mean-median-mode.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why are class midpoints used for the grouped mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In grouped data the individual values are lost; only the class and its frequency are known. The midpoint is taken as a fair representative of every value in the class, so the grouped mean is an estimate, not an exact value."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Mode = 3 Median − 2 Mean always true?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. It is an approximate empirical relation that works well for moderately skewed distributions. Use it when a question asks for it or gives two of the three measures and no data, but do not rely on it for exact calculations."
+      }
+    }
+  ]
+}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css?v=2">
+    <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-51XLJE4TVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-51XLJE4TVH');
+  </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327"
+     crossorigin="anonymous"></script>
+</head>
+<body class="study-page subject-quant">
+    <nav class="study-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Quantitative Aptitude</a>
+            <div class="nav-controls">
+                <button onclick="toggleAllSections()" class="btn-secondary">Expand/Collapse All</button>
+                <button onclick="window.print()" class="btn-primary">📄 Print/Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> / <a href="../index.html">Study Notes</a> / <a href="index.html">Quantitative Aptitude</a> / <span>Mean, Median and Mode Formula for Grouped Data, with Ungrouped Examples</span>
+            </div>
+            <h1>Mean, Median and Mode Formula for Grouped Data, with Ungrouped Examples</h1>
+            <p class="page-subtitle">Ungrouped mean, median, mode • Grouped mean Σfx ÷ Σf • Median L + (N/2 − cf) ÷ f × h • Mode with f₀, f₁, f₂ • Empirical relation • Effect of changing every value</p>
+            <div class="page-meta">
+                <span class="badge badge-secondary">SSC</span>
+                <span class="badge badge-secondary">📅 Last updated: 2026-10-23</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="study-section collapsible" data-section="1">
+            <button class="section-header" onclick="toggleSection(1)" aria-expanded="true" aria-controls="section-1">
+                <span class="section-number">1️⃣</span>
+                <span class="section-title">Three Kinds of Average</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-1">
+                <div class="content-box">
+<p>Mean, median and mode each describe the centre of a set of data in a different way. The mean adds everything and divides by the count. The median is the middle value when the data are in order. The mode is the value that occurs most often. Questions either give a short list of numbers, ungrouped data, or a frequency table with classes such as 0–10 and 10–20, grouped data.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="2">
+            <button class="section-header" onclick="toggleSection(2)" aria-expanded="true" aria-controls="section-2">
+                <span class="section-number">2️⃣</span>
+                <span class="section-title">Ungrouped Data</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-2">
+                <div class="content-box">
+<div class="case-study">
+<h4>Worked example 1: the mean</h4>
+<p>The mean of 4, 7, 9, 10 and 15 is 45 ÷ 5 = <strong>9</strong>.</p>
+</div>
+<p>For the median, sort the values first. With an odd count, the median is the middle value. With an even count, it is the average of the two middle values. For example, 3, 8, 5, 12, 7 sorts to 3, 5, 7, 8, 12, with median 7.</p>
+<div class="case-study">
+<h4>Worked example 2: an even count</h4>
+<p>4, 9, 2, 11, 6 and 8 sort to 2, 4, 6, 8, 9, 11. The two middle values are 6 and 8, so the median is <strong>7</strong>.</p>
+</div>
+<p>The mode needs no calculation, only a count. In 2, 3, 3, 5, 7, 3, 5 the value 3 appears three times, more than any other, so the mode is 3. A set can have no mode, or more than one.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="3">
+            <button class="section-header" onclick="toggleSection(3)" aria-expanded="true" aria-controls="section-3">
+                <span class="section-number">3️⃣</span>
+                <span class="section-title">Grouped Data: The Mean</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-3">
+                <div class="content-box">
+<p>For a frequency table, take the midpoint x of each class, multiply by its frequency f, add the products, and divide by the total frequency:</p>
+<div class="highlight-box"><p><strong>Mean = Σfx ÷ Σf</strong></p></div>
+<p>All three grouped examples below use this table:</p>
+<div class="table-wrap"><table class="data-table">
+<thead><tr><th>Class</th><th>Midpoint x</th><th>Frequency f</th><th>fx</th><th>Cumulative frequency</th></tr></thead>
+<tbody>
+<tr><td>0–10</td><td>5</td><td>4</td><td>20</td><td>4</td></tr>
+<tr><td>10–20</td><td>15</td><td>6</td><td>90</td><td>10</td></tr>
+<tr><td>20–30</td><td>25</td><td>8</td><td>200</td><td>18</td></tr>
+<tr><td>30–40</td><td>35</td><td>2</td><td>70</td><td>20</td></tr>
+</tbody></table></div>
+<div class="case-study">
+<h4>Worked example 3: grouped mean</h4>
+<p>Σfx = 380 and Σf = 20, so the mean is 380 ÷ 20 = <strong>19</strong>.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)" aria-expanded="true" aria-controls="section-4">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">Grouped Data: Median and Mode</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
+                <div class="content-box">
+<p>For the median, find N/2, then the median class: the first class whose cumulative frequency reaches N/2. Then:</p>
+<div class="highlight-box"><p><strong>Median = L + ((N/2 − cf) ÷ f) × h</strong></p></div>
+<p>Here L is the lower limit of the median class, cf the cumulative frequency before it, f its frequency and h the class width.</p>
+<div class="case-study">
+<h4>Worked example 4: grouped median</h4>
+<p>N/2 = 10. The cumulative frequency first reaches 10 in the class 10–20, so L = 10, cf = 4, f = 6 and h = 10. Median = 10 + (10 − 4) ÷ 6 × 10 = <strong>20</strong>.</p>
+</div>
+<p>For the mode, the modal class is the one with the highest frequency, f₁. Let f₀ be the frequency of the class before it and f₂ the class after it:</p>
+<div class="highlight-box"><p><strong>Mode = L + ((f₁ − f₀) ÷ (2f₁ − f₀ − f₂)) × h</strong></p></div>
+<div class="case-study">
+<h4>Worked example 5: grouped mode</h4>
+<p>The modal class is 20–30 with f₁ = 8, f₀ = 6 and f₂ = 2. Mode = 20 + (8 − 6) ÷ (16 − 6 − 2) × 10 = 20 + 2.5 = <strong>22.5</strong>.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)" aria-expanded="true" aria-controls="section-5">
+                <span class="section-number">5️⃣</span>
+                <span class="section-title">The Empirical Relation and Changing the Data</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-5">
+                <div class="content-box">
+<p>For moderately skewed data the three measures are linked approximately by:</p>
+<div class="highlight-box"><p><strong>Mode = 3 Median − 2 Mean</strong></p></div>
+<div class="case-study">
+<h4>Worked example 6: finding the mode</h4>
+<p>If the mean is 30 and the median is 28, the mode is about 3 × 28 − 2 × 30 = <strong>24</strong>.</p>
+</div>
+<p>If every value is changed in the same way, the mean, median and mode all change in that way too. Adding a constant shifts each measure by that constant; multiplying scales each by the same factor.</p>
+<div class="case-study">
+<h4>Worked example 7: transforming data</h4>
+<p>Data with mean 9 are doubled and then increased by 5. The new mean is 2 × 9 + 5 = <strong>23</strong>.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)" aria-expanded="true" aria-controls="section-6">
+                <span class="section-number">6️⃣</span>
+                <span class="section-title">Combined Mean of Two Groups</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-6">
+                <div class="content-box">
+<p>When two groups are joined, the new mean is not the simple average of the two means unless the groups are the same size. Multiply each mean by its group size to get each total, add the totals, and divide by the combined size. This is the weighted mean, and it is the same idea as Σfx ÷ Σf with the group means playing the part of the midpoints.</p>
+<div class="case-study">
+<h4>Worked example 8: two sections of a class</h4>
+<p>Section A has 20 students with a mean score of 15, and section B has 30 students with a mean of 20. The totals are 300 and 600, so the combined mean is 900 ÷ 50 = <strong>18</strong>, closer to the larger section's mean.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)" aria-expanded="true" aria-controls="section-7">
+                <span class="section-number">7️⃣</span>
+                <span class="section-title">Common Traps</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-7">
+                <div class="content-box">
+<ul class="warning-list">
+<li>✘ Taking the median before sorting the data.</li>
+<li>✘ Using the class limits instead of the midpoints for a grouped mean.</li>
+<li>✘ Using the median class's own cumulative frequency as cf. Use the one before it.</li>
+<li>✘ Treating Mode = 3 Median − 2 Mean as exact.</li>
+</ul>
+<p>The simple mean is covered in depth on <a href="average-formulas.html">average formulas</a>, including the deviation method that speeds up Σfx. More formulas are in the <a href="../../repeated-questions/quant-cheat-code.html">Quant cheat code</a>.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="8">
+            <button class="section-header" onclick="toggleSection(8)" aria-expanded="true" aria-controls="section-8">
+                <span class="section-number">8️⃣</span>
+                <span class="section-title">Practice Questions (6)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-8">
+                <div class="content-box">
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q1.</strong> What is the mean of 12, 15, 18, 21 and 24? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q1" value="a"> (a) 15</label>
+                            <label><input type="radio" name="q1" value="b"> (b) 21</label>
+                            <label><input type="radio" name="q1" value="c"> (c) 18</label>
+                            <label><input type="radio" name="q1" value="d"> (d) 19</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q1">
+                            <p><strong>✅ Answer:</strong> (c) 18</p>
+                            <p><strong>💡 Explanation:</strong> The sum is 90 and there are 5 values, so the mean is 18. Because the values are evenly spaced, the mean is also the middle value.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q1')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q2.</strong> What is the median of 10, 3, 7, 15, 12 and 6? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q2" value="a"> (a) 8.5</label>
+                            <label><input type="radio" name="q2" value="b"> (b) 7</label>
+                            <label><input type="radio" name="q2" value="c"> (c) 10</label>
+                            <label><input type="radio" name="q2" value="d"> (d) 9</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q2">
+                            <p><strong>✅ Answer:</strong> (a) 8.5</p>
+                            <p><strong>💡 Explanation:</strong> In order the values are 3, 6, 7, 10, 12, 15. With an even count, the median is the average of the two middle values: (7 + 10) ÷ 2 = 8.5.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q2')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q3.</strong> For a moderately skewed distribution the mean is 40 and the mode is 34. What is the median, by the empirical relation? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q3" value="a"> (a) 36</label>
+                            <label><input type="radio" name="q3" value="b"> (b) 37</label>
+                            <label><input type="radio" name="q3" value="c"> (c) 42</label>
+                            <label><input type="radio" name="q3" value="d"> (d) 38</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q3">
+                            <p><strong>✅ Answer:</strong> (d) 38</p>
+                            <p><strong>💡 Explanation:</strong> Mode = 3 Median − 2 Mean, so 34 = 3 Median − 80. Then 3 Median = 114 and the median is 38.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q3')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q4.</strong> Find the mean of the data: class 0–20 with frequency 3, 20–40 with frequency 5, 40–60 with frequency 2. <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q4" value="a"> (a) 30</label>
+                            <label><input type="radio" name="q4" value="b"> (b) 28</label>
+                            <label><input type="radio" name="q4" value="c"> (c) 26</label>
+                            <label><input type="radio" name="q4" value="d"> (d) 33.3</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q4">
+                            <p><strong>✅ Answer:</strong> (b) 28</p>
+                            <p><strong>💡 Explanation:</strong> Use class midpoints 10, 30 and 50. Σfx = 30 + 150 + 100 = 280 and Σf = 10, so the mean is 280 ÷ 10 = 28.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q4')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q5.</strong> Find the mode of the data: class 10–20 with frequency 4, 20–30 with frequency 10, 30–40 with frequency 6. <span class="badge badge-secondary">hard</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q5" value="a"> (a) 25</label>
+                            <label><input type="radio" name="q5" value="b"> (b) 24</label>
+                            <label><input type="radio" name="q5" value="c"> (c) 26</label>
+                            <label><input type="radio" name="q5" value="d"> (d) 28</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q5">
+                            <p><strong>✅ Answer:</strong> (c) 26</p>
+                            <p><strong>💡 Explanation:</strong> The modal class is 20–30, with f₁ = 10, f₀ = 4 and f₂ = 6. Mode = 20 + (10 − 4) ÷ (20 − 4 − 6) × 10 = 20 + 6 = 26.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q5')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q6.</strong> The mean of 10 numbers is 25. Each number is multiplied by 3 and then increased by 4. What is the new mean? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q6" value="a"> (a) 79</label>
+                            <label><input type="radio" name="q6" value="b"> (b) 75</label>
+                            <label><input type="radio" name="q6" value="c"> (c) 87</label>
+                            <label><input type="radio" name="q6" value="d"> (d) 29</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q6">
+                            <p><strong>✅ Answer:</strong> (a) 79</p>
+                            <p><strong>💡 Explanation:</strong> The mean changes in exactly the same way as each value: 25 × 3 + 4 = 79.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q6')">Show Answer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="9">
+            <button class="section-header" onclick="toggleSection(9)" aria-expanded="true" aria-controls="section-9">
+                <span class="section-number">9️⃣</span>
+                <span class="section-title">Frequently Asked Questions</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-9">
+                <div class="content-box">
+                    <h3>Why are class midpoints used for the grouped mean?</h3>
+                    <p>In grouped data the individual values are lost; only the class and its frequency are known. The midpoint is taken as a fair representative of every value in the class, so the grouped mean is an estimate, not an exact value.</p>
+                    <h3>Is Mode = 3 Median − 2 Mean always true?</h3>
+                    <p>No. It is an approximate empirical relation that works well for moderately skewed distributions. Use it when a question asks for it or gives two of the three measures and no data, but do not rely on it for exact calculations.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="10">
+            <button class="section-header" onclick="toggleSection(10)" aria-expanded="true" aria-controls="section-10">
+                <span class="section-number">🔟</span>
+                <span class="section-title">Sources and Review</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-10">
+                <div class="content-box">
+                    <p>All problems and solutions on this page are original. No outside facts are relied on; every numeric answer is recomputed by software before publishing.</p>
+                    <div class="highlight-box">
+                        <p><strong>How this page was prepared.</strong> Drafted with AI assistance (Claude (Anthropic AI model)) from the sources listed above. 14 calculations on this page were recomputed by software and matched. Automated checks also covered structure, internal links and duplicate text. Software checks cannot confirm facts. Reviewed by praveenkumar on 2026-10-23 against the sources listed above.</p>
+                        <p>Found an error? <a href="../../contact.html">Report it</a> and we will correct the page.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="11">
+            <button class="section-header" onclick="toggleSection(11)" aria-expanded="true" aria-controls="section-11">
+                <span class="section-number">11.</span>
+                <span class="section-title">Related Pages</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-11">
+                <div class="content-box">
+                    <ul class="bullet-list">
+                        <li><a href="../../repeated-questions/quant-cheat-code.html">Quant Cheat Code: 20 Must-Know Shortcuts &amp; Formulas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="page-navigation">
+            <a href="index.html" class="nav-btn">← Quantitative Aptitude</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>Subject: Quantitative Aptitude | Sources are listed on this page. <a href="../../contact.html">Report an error</a>.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>

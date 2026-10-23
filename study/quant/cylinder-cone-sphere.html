@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cylinder, Cone, Sphere and Hemisphere Formulas | AspirantDaily</title>
+    <meta name="description" content="Volume of cone, cylinder and sphere with surface area formulas, slant height, the 1 : 2 : 3 ratio, recasting and the effect of doubling the radius. 8 examples.">
+    <meta name="keywords" content="volume of cone cylinder sphere, curved surface area of cone, surface area of hemisphere, ratio of volumes of cone hemisphere cylinder">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.aspirantdaily.com/study/quant/cylinder-cone-sphere.html">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.aspirantdaily.com/study/quant/cylinder-cone-sphere.html">
+    <meta property="og:title" content="Cylinder, Cone, Sphere and Hemisphere Formulas | AspirantDaily">
+    <meta property="og:description" content="Volume of cone, cylinder and sphere with surface area formulas, slant height, the 1 : 2 : 3 ratio, recasting and the effect of doubling the radius. 8 examples.">
+    <meta property="og:image" content="https://www.aspirantdaily.com/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Volume of Cone, Cylinder and Sphere: Formulas, Surface Areas and Ratios",
+  "description": "Volume of cone, cylinder and sphere with surface area formulas, slant height, the 1 : 2 : 3 ratio, recasting and the effect of doubling the radius. 8 examples.",
+  "image": "https://www.aspirantdaily.com/og-image.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "url": "https://www.aspirantdaily.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.aspirantdaily.com/icons/icon-512.png"
+    }
+  },
+  "datePublished": "2026-10-23",
+  "dateModified": "2026-10-23",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.aspirantdaily.com/study/quant/cylinder-cone-sphere.html"
+  },
+  "articleSection": "Quantitative Aptitude",
+  "citation": []
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.aspirantdaily.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Study Notes",
+      "item": "https://www.aspirantdaily.com/study/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Quantitative Aptitude",
+      "item": "https://www.aspirantdaily.com/study/quant/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Volume of Cone, Cylinder and Sphere: Formulas, Surface Areas and Ratios",
+      "item": "https://www.aspirantdaily.com/study/quant/cylinder-cone-sphere.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Should I use π = 22/7 or 3.14?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use whatever the question states. Most SSC questions choose radii that are multiples of 7 so that 22/7 cancels neatly. If the question gives no value and the radius is a multiple of 7, 22/7 is usually the intended choice."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is the hemisphere's total surface area 3πr²?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The curved part is half of the sphere's 4πr², which is 2πr². A solid hemisphere also has a flat circular face of area πr². Together they give 3πr². A hollow bowl has only the curved 2πr²."
+      }
+    }
+  ]
+}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css?v=2">
+    <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-51XLJE4TVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-51XLJE4TVH');
+  </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327"
+     crossorigin="anonymous"></script>
+</head>
+<body class="study-page subject-quant">
+    <nav class="study-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Quantitative Aptitude</a>
+            <div class="nav-controls">
+                <button onclick="toggleAllSections()" class="btn-secondary">Expand/Collapse All</button>
+                <button onclick="window.print()" class="btn-primary">📄 Print/Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> / <a href="../index.html">Study Notes</a> / <a href="index.html">Quantitative Aptitude</a> / <span>Volume of Cone, Cylinder and Sphere: Formulas, Surface Areas and Ratios</span>
+            </div>
+            <h1>Volume of Cone, Cylinder and Sphere: Formulas, Surface Areas and Ratios</h1>
+            <p class="page-subtitle">Cylinder πr²h • Cone ⅓πr²h and slant height • Sphere ⁴⁄₃πr³ • Hemisphere • Cone : hemisphere : cylinder = 1 : 2 : 3 • Melting and recasting</p>
+            <div class="page-meta">
+                <span class="badge badge-secondary">SSC</span>
+                <span class="badge badge-secondary">Railway</span>
+                <span class="badge badge-secondary">📅 Last updated: 2026-10-23</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="study-section collapsible" data-section="1">
+            <button class="section-header" onclick="toggleSection(1)" aria-expanded="true" aria-controls="section-1">
+                <span class="section-number">1️⃣</span>
+                <span class="section-title">The Formulas in One Table</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-1">
+                <div class="content-box">
+<p>These solids share one measurement, the radius r of the circular base or of the sphere, and the cylinder and cone also have a height h. Most questions use π = 22/7 with a radius that is a multiple of 7, so the 7 cancels and the arithmetic stays whole.</p>
+<div class="table-wrap"><table class="data-table">
+<thead><tr><th>Solid</th><th>Volume</th><th>Curved surface area</th><th>Total surface area</th></tr></thead>
+<tbody>
+<tr><td>Cylinder</td><td>πr²h</td><td>2πrh</td><td>2πr(r + h)</td></tr>
+<tr><td>Cone</td><td>⅓πr²h</td><td>πrl</td><td>πr(l + r)</td></tr>
+<tr><td>Sphere</td><td>⁴⁄₃πr³</td><td>4πr²</td><td>4πr²</td></tr>
+<tr><td>Hemisphere</td><td>⅔πr³</td><td>2πr²</td><td>3πr²</td></tr>
+</tbody></table></div>
+<p>For a cone, l is the slant height, the distance from the tip to the edge of the base. It is the hypotenuse of a right triangle with sides r and h, so l = √(r² + h²).</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="2">
+            <button class="section-header" onclick="toggleSection(2)" aria-expanded="true" aria-controls="section-2">
+                <span class="section-number">2️⃣</span>
+                <span class="section-title">Cylinder</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-2">
+                <div class="content-box">
+<div class="case-study">
+<h4>Worked example 1: volume</h4>
+<p>A cylinder has r = 7 cm and h = 10 cm. V = 22/7 × 49 × 10 = <strong>1,540 cm³</strong>.</p>
+</div>
+<p>Its curved surface area is 2 × 22/7 × 7 × 10 = 440 cm². This is the area of the label on a can, which unrolls into a rectangle of length 2πr and height h.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="3">
+            <button class="section-header" onclick="toggleSection(3)" aria-expanded="true" aria-controls="section-3">
+                <span class="section-number">3️⃣</span>
+                <span class="section-title">Cone</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-3">
+                <div class="content-box">
+<p>Most cone questions need the slant height first. Look for familiar right-triangle triples such as 3–4–5, 5–12–13, 7–24–25 and 20–21–29.</p>
+<div class="case-study">
+<h4>Worked example 2: slant height</h4>
+<p>A cone has r = 7 cm and h = 24 cm. Then l = √(49 + 576) = √625 = <strong>25 cm</strong>.</p>
+</div>
+<p>Its curved surface area is πrl = 22/7 × 7 × 25 = 550 cm².</p>
+<p>Its volume is ⅓ × 22/7 × 49 × 24 = 1,232 cm³.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)" aria-expanded="true" aria-controls="section-4">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">Sphere and Hemisphere</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
+                <div class="content-box">
+<div class="case-study">
+<h4>Worked example 3: sphere of radius 21 cm</h4>
+<p>Surface area = 4 × 22/7 × 441 = <strong>5,544 cm²</strong>.</p>
+</div>
+<p>Its volume is ⁴⁄₃ × 22/7 × 9,261 = 38,808 cm³.</p>
+<div class="case-study">
+<h4>Worked example 4: a solid hemisphere</h4>
+<p>A solid hemisphere of radius 7 cm has total surface area 3 × 22/7 × 49 = <strong>462 cm²</strong>: 308 cm² curved and 154 cm² flat.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)" aria-expanded="true" aria-controls="section-5">
+                <span class="section-number">5️⃣</span>
+                <span class="section-title">Ratios Between the Solids</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-5">
+                <div class="content-box">
+<p>When a cone, a hemisphere and a cylinder share the same radius r, and the cone and cylinder have height h = r, their volumes are ⅓πr³, ⅔πr³ and πr³.</p>
+<div class="highlight-box"><p><strong>Cone : hemisphere : cylinder = 1 : 2 : 3</strong></p></div>
+<div class="case-study">
+<h4>Worked example 5: cone and hemisphere</h4>
+<p>With the same radius and h = r, the cone holds ⅓πr³ and the hemisphere ⅔πr³, a ratio of <strong>1 : 2</strong>. Even without equal heights, any cone holds exactly one third of the cylinder with the same base and height.</p>
+</div>
+<p>Changing the radius scales the solids quickly. Areas grow with r² and volumes with r³, so doubling the radius of a sphere multiplies its surface area by 4.</p>
+<div class="case-study">
+<h4>Worked example 6: doubling the radius</h4>
+<p>Doubling a sphere's radius multiplies its volume by 2³ = <strong>8</strong>.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)" aria-expanded="true" aria-controls="section-6">
+                <span class="section-number">6️⃣</span>
+                <span class="section-title">Melting and Recasting</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-6">
+                <div class="content-box">
+<p>When one solid is melted and recast into another, the volume does not change. Write both volumes, set them equal, and solve for the unknown measurement. π cancels from both sides, so you rarely need its value.</p>
+<div class="case-study">
+<h4>Worked example 7: sphere into cylinder</h4>
+<p>A sphere of radius 6 cm is melted into a cylinder of radius 4 cm. Then ⁴⁄₃π × 216 = π × 16 × h, so h = 288 ÷ 16 = <strong>18 cm</strong>.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)" aria-expanded="true" aria-controls="section-7">
+                <span class="section-number">7️⃣</span>
+                <span class="section-title">Hollow and Combined Solids</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-7">
+                <div class="content-box">
+<p>A pipe or a hollow cylinder has an outer radius R and an inner radius r. The metal in it is the outer cylinder minus the hole: π(R² − r²)h. Factorising R² − r² as (R + r)(R − r) often makes the arithmetic easier.</p>
+<div class="case-study">
+<h4>Worked example 8: metal in a pipe</h4>
+<p>A pipe 14 cm long has outer radius 8 cm and inner radius 6 cm. The metal volume is 22/7 × (64 − 36) × 14 = 22/7 × 28 × 14 = <strong>1,232 cm³</strong>.</p>
+</div>
+<p>Combined solids, such as a cone on top of a hemisphere or a cylinder with hemispherical ends, are handled piece by piece. Add the volumes of the parts. For surface area, add only the faces that remain on the outside: the joined circles are hidden and must not be counted.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="8">
+            <button class="section-header" onclick="toggleSection(8)" aria-expanded="true" aria-controls="section-8">
+                <span class="section-number">8️⃣</span>
+                <span class="section-title">Common Traps</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-8">
+                <div class="content-box">
+<ul class="warning-list">
+<li>✘ Using the height h instead of the slant height l in the cone's surface area.</li>
+<li>✘ Forgetting the flat face in a solid hemisphere's total surface area.</li>
+<li>✘ Taking the diameter as the radius. Halve it first.</li>
+<li>✘ Scaling volumes by r² instead of r³ when the radius changes.</li>
+</ul>
+<p>Flat-faced solids are on <a href="cube-and-cuboid.html">cube and cuboid</a>. The right-triangle triples used here also appear in <a href="square-roots-and-cube-roots.html">square roots</a> questions, and the formula list is in the <a href="../../repeated-questions/quant-cheat-code.html">Quant cheat code</a>.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="9">
+            <button class="section-header" onclick="toggleSection(9)" aria-expanded="true" aria-controls="section-9">
+                <span class="section-number">9️⃣</span>
+                <span class="section-title">Practice Questions (6)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-9">
+                <div class="content-box">
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q1.</strong> What is the volume of a cylinder with radius 14 cm and height 5 cm? (Use π = 22/7.) <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q1" value="a"> (a) 2,200 cm³</label>
+                            <label><input type="radio" name="q1" value="b"> (b) 1,540 cm³</label>
+                            <label><input type="radio" name="q1" value="c"> (c) 3,080 cm³</label>
+                            <label><input type="radio" name="q1" value="d"> (d) 6,160 cm³</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q1">
+                            <p><strong>✅ Answer:</strong> (c) 3,080 cm³</p>
+                            <p><strong>💡 Explanation:</strong> V = πr²h = 22/7 × 196 × 5 = 22 × 28 × 5 = 3,080 cm³.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q1')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q2.</strong> A cone has radius 21 cm and height 20 cm. What is its curved surface area? (Use π = 22/7.) <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q2" value="a"> (a) 1,914 cm²</label>
+                            <label><input type="radio" name="q2" value="b"> (b) 1,320 cm²</label>
+                            <label><input type="radio" name="q2" value="c"> (c) 2,860 cm²</label>
+                            <label><input type="radio" name="q2" value="d"> (d) 1,386 cm²</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q2">
+                            <p><strong>✅ Answer:</strong> (a) 1,914 cm²</p>
+                            <p><strong>💡 Explanation:</strong> The slant height is √(21² + 20²) = √841 = 29 cm. CSA = πrl = 22/7 × 21 × 29 = 66 × 29 = 1,914 cm².</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q2')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q3.</strong> What is the surface area of a sphere of radius 7 cm? (Use π = 22/7.) <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q3" value="a"> (a) 154 cm²</label>
+                            <label><input type="radio" name="q3" value="b"> (b) 616 cm²</label>
+                            <label><input type="radio" name="q3" value="c"> (c) 1,437 cm²</label>
+                            <label><input type="radio" name="q3" value="d"> (d) 308 cm²</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q3">
+                            <p><strong>✅ Answer:</strong> (b) 616 cm²</p>
+                            <p><strong>💡 Explanation:</strong> Surface area = 4πr² = 4 × 22/7 × 49 = 4 × 154 = 616 cm². 154 cm² is the area of one great circle, πr².</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q3')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q4.</strong> What is the volume of a hemisphere of radius 21 cm? (Use π = 22/7.) <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q4" value="a"> (a) 38,808 cm³</label>
+                            <label><input type="radio" name="q4" value="b"> (b) 9,702 cm³</label>
+                            <label><input type="radio" name="q4" value="c"> (c) 13,860 cm³</label>
+                            <label><input type="radio" name="q4" value="d"> (d) 19,404 cm³</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q4">
+                            <p><strong>✅ Answer:</strong> (d) 19,404 cm³</p>
+                            <p><strong>💡 Explanation:</strong> V = ⅔πr³ = ⅔ × 22/7 × 9,261 = 19,404 cm³, exactly half the volume of the full sphere, 38,808 cm³.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q4')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q5.</strong> How many solid spheres of radius 1 cm can be made by melting a solid sphere of radius 4 cm? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q5" value="a"> (a) 16</label>
+                            <label><input type="radio" name="q5" value="b"> (b) 64</label>
+                            <label><input type="radio" name="q5" value="c"> (c) 4</label>
+                            <label><input type="radio" name="q5" value="d"> (d) 12</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q5">
+                            <p><strong>✅ Answer:</strong> (b) 64</p>
+                            <p><strong>💡 Explanation:</strong> Volume scales with the cube of the radius, so the large sphere holds (4 ÷ 1)³ = 64 times as much metal as each small one.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q5')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q6.</strong> A cone and a cylinder have the same base and the same height. The cylinder&#x27;s volume is 1,500 cm³. What is the cone&#x27;s volume? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q6" value="a"> (a) 500 cm³</label>
+                            <label><input type="radio" name="q6" value="b"> (b) 750 cm³</label>
+                            <label><input type="radio" name="q6" value="c"> (c) 1,000 cm³</label>
+                            <label><input type="radio" name="q6" value="d"> (d) 4,500 cm³</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q6">
+                            <p><strong>✅ Answer:</strong> (a) 500 cm³</p>
+                            <p><strong>💡 Explanation:</strong> A cone holds one third of the cylinder with the same base and height: 1,500 ÷ 3 = 500 cm³.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q6')">Show Answer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="10">
+            <button class="section-header" onclick="toggleSection(10)" aria-expanded="true" aria-controls="section-10">
+                <span class="section-number">🔟</span>
+                <span class="section-title">Frequently Asked Questions</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-10">
+                <div class="content-box">
+                    <h3>Should I use π = 22/7 or 3.14?</h3>
+                    <p>Use whatever the question states. Most SSC questions choose radii that are multiples of 7 so that 22/7 cancels neatly. If the question gives no value and the radius is a multiple of 7, 22/7 is usually the intended choice.</p>
+                    <h3>Why is the hemisphere&#x27;s total surface area 3πr²?</h3>
+                    <p>The curved part is half of the sphere&#x27;s 4πr², which is 2πr². A solid hemisphere also has a flat circular face of area πr². Together they give 3πr². A hollow bowl has only the curved 2πr².</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="11">
+            <button class="section-header" onclick="toggleSection(11)" aria-expanded="true" aria-controls="section-11">
+                <span class="section-number">11.</span>
+                <span class="section-title">Sources and Review</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-11">
+                <div class="content-box">
+                    <p>All problems and solutions on this page are original. No outside facts are relied on; every numeric answer is recomputed by software before publishing.</p>
+                    <div class="highlight-box">
+                        <p><strong>How this page was prepared.</strong> Drafted with AI assistance (Claude (Anthropic AI model)) from the sources listed above. 18 calculations on this page were recomputed by software and matched. Automated checks also covered structure, internal links and duplicate text. Software checks cannot confirm facts. Reviewed by praveenkumar on 2026-10-23 against the sources listed above.</p>
+                        <p>Found an error? <a href="../../contact.html">Report it</a> and we will correct the page.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="12">
+            <button class="section-header" onclick="toggleSection(12)" aria-expanded="true" aria-controls="section-12">
+                <span class="section-number">12.</span>
+                <span class="section-title">Related Pages</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-12">
+                <div class="content-box">
+                    <ul class="bullet-list">
+                        <li><a href="../../repeated-questions/quant-cheat-code.html">Quant Cheat Code: 20 Must-Know Shortcuts &amp; Formulas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="page-navigation">
+            <a href="index.html" class="nav-btn">← Quantitative Aptitude</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>Subject: Quantitative Aptitude | Sources are listed on this page. <a href="../../contact.html">Report an error</a>.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>

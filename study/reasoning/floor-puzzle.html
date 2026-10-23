@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floor Puzzles: Build the Grid, Fix Clues First | AspirantDaily</title>
+    <meta name="description" content="Floor puzzle reasoning for bank exams: draw the floors bottom-up, place fixed floors first, branch on &#x27;between&#x27; clues and add a second attribute column.">
+    <meta name="keywords" content="floor puzzle reasoning, floor based puzzle bank exam, floor puzzle tricks, puzzle with floors and colours">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.aspirantdaily.com/study/reasoning/floor-puzzle.html">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.aspirantdaily.com/study/reasoning/floor-puzzle.html">
+    <meta property="og:title" content="Floor Puzzles: Build the Grid, Fix Clues First | AspirantDaily">
+    <meta property="og:description" content="Floor puzzle reasoning for bank exams: draw the floors bottom-up, place fixed floors first, branch on &#x27;between&#x27; clues and add a second attribute column.">
+    <meta property="og:image" content="https://www.aspirantdaily.com/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Floor Puzzle Reasoning: Drawing the Floor Grid and Placing Fixed Clues First",
+  "description": "Floor puzzle reasoning for bank exams: draw the floors bottom-up, place fixed floors first, branch on 'between' clues and add a second attribute column.",
+  "image": "https://www.aspirantdaily.com/og-image.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "url": "https://www.aspirantdaily.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.aspirantdaily.com/icons/icon-512.png"
+    }
+  },
+  "datePublished": "2026-10-23",
+  "dateModified": "2026-10-23",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.aspirantdaily.com/study/reasoning/floor-puzzle.html"
+  },
+  "articleSection": "Reasoning",
+  "citation": []
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.aspirantdaily.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Study Notes",
+      "item": "https://www.aspirantdaily.com/study/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Reasoning",
+      "item": "https://www.aspirantdaily.com/study/reasoning/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Floor Puzzle Reasoning: Drawing the Floor Grid and Placing Fixed Clues First",
+      "item": "https://www.aspirantdaily.com/study/reasoning/floor-puzzle.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is the ground floor floor 0 or floor 1?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on the question, so read the first line carefully. Most bank puzzles say the bottom floor is numbered 1 and the floor above it 2. When a question says ground floor is 0, every floor number shifts down by one."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does 'above' mean without 'immediately'?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "'Above' alone means anywhere higher, not necessarily the next floor. Only 'immediately above' or 'just above' means the very next floor. Treating plain 'above' as 'immediately above' is a common source of wrong arrangements."
+      }
+    }
+  ]
+}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css?v=2">
+    <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-51XLJE4TVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-51XLJE4TVH');
+  </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327"
+     crossorigin="anonymous"></script>
+</head>
+<body class="study-page subject-reasoning">
+    <nav class="study-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Reasoning</a>
+            <div class="nav-controls">
+                <button onclick="toggleAllSections()" class="btn-secondary">Expand/Collapse All</button>
+                <button onclick="window.print()" class="btn-primary">📄 Print/Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> / <a href="../index.html">Study Notes</a> / <a href="index.html">Reasoning</a> / <span>Floor Puzzle Reasoning: Drawing the Floor Grid and Placing Fixed Clues First</span>
+            </div>
+            <h1>Floor Puzzle Reasoning: Drawing the Floor Grid and Placing Fixed Clues First</h1>
+            <p class="page-subtitle">Floor 1 is the bottom • Fixed floors first • Branch on &#x27;between&#x27; and &#x27;above&#x27; clues • A second column for colours or cities • Counting floors</p>
+            <div class="page-meta">
+                <span class="badge badge-secondary">Banking</span>
+                <span class="badge badge-secondary">📅 Last updated: 2026-10-23</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="study-section collapsible" data-section="1">
+            <button class="section-header" onclick="toggleSection(1)" aria-expanded="true" aria-controls="section-1">
+                <span class="section-number">1️⃣</span>
+                <span class="section-title">Draw the Building First</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-1">
+                <div class="content-box">
+<p>A floor puzzle places a group of people on the floors of a building, one person per floor, and gives clues about who lives where. Seven people can be placed on seven floors in 7! = <span>5040</span> ways, so the clues must be used in an order that removes possibilities fast.</p>
+<p>Start by drawing the building as a column of boxes and numbering the floors. Unless the question says otherwise, floor 1 is the bottom floor and the numbers rise upwards. Write the numbers on the left so that "above" always means a larger number and "below" a smaller one.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="2">
+            <button class="section-header" onclick="toggleSection(2)" aria-expanded="true" aria-controls="section-2">
+                <span class="section-number">2️⃣</span>
+                <span class="section-title">Which Clues to Use First</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-2">
+                <div class="content-box">
+<p>Sort the clues before placing anyone:</p>
+<ol class="numbered-list">
+<li><strong>Fixed clues</strong> name a floor: "T lives on the middle floor", "S lives on the lowest floor".</li>
+<li><strong>Linked clues</strong> tie someone to an already placed person: "P lives immediately below T".</li>
+<li><strong>Branching clues</strong> allow two floors: "one person lives between T and Q". Draw both cases side by side.</li>
+<li><strong>Negative clues</strong> rule something out: "E does not live on floor 1". Use them last, to settle what is still open.</li>
+</ol>
+<div class="table-wrap"><table class="data-table">
+<thead><tr><th>Clue wording</th><th>Floor arithmetic</th></tr></thead>
+<tbody>
+<tr><td>X lives immediately above Y</td><td>X = Y + 1</td></tr>
+<tr><td>X lives above Y</td><td>X &gt; Y, any gap</td></tr>
+<tr><td>Two people live between X and Y</td><td>the floors differ by 3</td></tr>
+<tr><td>X lives on the middle floor of 7</td><td>X = (7 + 1) ÷ 2 = <span>4</span></td></tr>
+</tbody></table></div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="3">
+            <button class="section-header" onclick="toggleSection(3)" aria-expanded="true" aria-controls="section-3">
+                <span class="section-number">3️⃣</span>
+                <span class="section-title">Puzzle 1: One Person per Floor</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-3">
+                <div class="content-box">
+<div class="case-study">
+<h4>Worked example 1: seven floors</h4>
+<p>P, Q, R, S, T, U and V live on the seven floors of a building, one on each floor. Floor 1 is the bottom floor.</p>
+<ol class="numbered-list">
+<li>T lives on the middle floor.</li>
+<li>S lives on the lowest floor.</li>
+<li>P lives immediately below T.</li>
+<li>One person lives between T and Q.</li>
+<li>U lives immediately above Q.</li>
+<li>V lives below R.</li>
+</ol>
+<p><strong>Solution.</strong> The fixed clues come first. Clue 1 puts T on floor 4 and clue 2 puts S on floor 1. Clue 3 links P to T, so P is on floor 3. Clue 4 branches: Q is on floor 2 or floor 6. If Q were on floor 2, clue 5 would put U on floor 3, which is P's, so that case fails. Q is on floor 6 and U on floor 7. Floors 2 and 5 remain for R and V, and clue 6 puts V on floor 2 and R on floor 5.</p>
+<p>From the bottom: <strong>S, V, P, T, R, Q, U</strong>.</p>
+</div>
+<p>Check clue 4 on the answer: T is on floor 4 and Q on floor 6, so 6 − 4 − 1 = 1 person lives between them.</p>
+<p>Questions often ask for counts too: above R, on floor 5, there are 7 − 5 = 2 people, Q and U.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)" aria-expanded="true" aria-controls="section-4">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">Puzzle 2: A Second Attribute</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
+                <div class="content-box">
+<p>Harder puzzles give each person a second attribute, such as a favourite colour, a city or a job. Draw a table with one row per floor and one column per attribute. Five people and five colours give 5! × 5! = <span>14400</span> combinations, so the table matters even more here. Some clues tie a colour to a floor without naming the person; write the colour in its column and fill in the name later.</p>
+<div class="case-study">
+<h4>Worked example 2: five floors and five colours</h4>
+<p>A, B, C, D and E live on floors 1 to 5, one per floor. Each likes a different colour: Red, Blue, Green, Yellow or White.</p>
+<ol class="numbered-list">
+<li>The person who likes Red lives on floor 3.</li>
+<li>B lives immediately above the person who likes Red.</li>
+<li>D lives on the top floor and does not like White.</li>
+<li>The person who likes Green lives on the lowest floor.</li>
+<li>A lives immediately above the person who likes Green.</li>
+<li>E does not live on floor 1.</li>
+<li>B likes Yellow.</li>
+</ol>
+<p><strong>Solution.</strong> Clue 1 writes Red against floor 3, and clue 2 puts B on floor 4. Clue 3 puts D on floor 5. Clue 4 writes Green against floor 1, and clue 5 puts A on floor 2. C and E share floors 1 and 3, and clue 6 puts E on floor 3 and C on floor 1. B likes Yellow. White and Blue remain for A and D, and D does not like White, so D likes Blue and A likes White.</p>
+<div class="table-wrap"><table class="data-table">
+<thead><tr><th>Floor</th><th>Person</th><th>Colour</th></tr></thead>
+<tbody>
+<tr><td>5</td><td>D</td><td>Blue</td></tr>
+<tr><td>4</td><td>B</td><td>Yellow</td></tr>
+<tr><td>3</td><td>E</td><td>Red</td></tr>
+<tr><td>2</td><td>A</td><td>White</td></tr>
+<tr><td>1</td><td>C</td><td>Green</td></tr>
+</tbody></table></div>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)" aria-expanded="true" aria-controls="section-5">
+                <span class="section-number">5️⃣</span>
+                <span class="section-title">Common Traps</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-5">
+                <div class="content-box">
+<ul class="warning-list">
+<li>✘ Reading "above" as "immediately above".</li>
+<li>✘ Numbering from the top when the question numbers from the bottom.</li>
+<li>✘ Forgetting the ground floor when floors start at 0.</li>
+<li>✘ Following only one branch of a "between" clue without checking the other.</li>
+</ul>
+<p>The same fixed-first method works for rows in <a href="linear-seating-arrangement.html">linear seating arrangement</a> and for tables in <a href="circular-seating-arrangement.html">circular seating arrangement</a>. The full list of reasoning topics is in the <a href="../index.html">study hub</a>.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)" aria-expanded="true" aria-controls="section-6">
+                <span class="section-number">6️⃣</span>
+                <span class="section-title">Practice Questions (6)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-6">
+                <div class="content-box">
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q1.</strong> In puzzle 1 on this page (P to V on floors 1 to 7), who lives between P and R? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q1" value="a"> (a) Q</label>
+                            <label><input type="radio" name="q1" value="b"> (b) V</label>
+                            <label><input type="radio" name="q1" value="c"> (c) U</label>
+                            <label><input type="radio" name="q1" value="d"> (d) T</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q1">
+                            <p><strong>✅ Answer:</strong> (d) T</p>
+                            <p><strong>💡 Explanation:</strong> From the bottom the floors are S, V, P, T, R, Q, U. P is on floor 3 and R on floor 5, so the only person between them is T on floor 4.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q1')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q2.</strong> In puzzle 1 on this page, who lives immediately above V? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q2" value="a"> (a) S</label>
+                            <label><input type="radio" name="q2" value="b"> (b) P</label>
+                            <label><input type="radio" name="q2" value="c"> (c) T</label>
+                            <label><input type="radio" name="q2" value="d"> (d) R</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q2">
+                            <p><strong>✅ Answer:</strong> (b) P</p>
+                            <p><strong>💡 Explanation:</strong> V lives on floor 2, because V must be below R and floors 2 and 5 were the only ones left. Floor 3, immediately above, belongs to P.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q2')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q3.</strong> In puzzle 2 on this page (A to E and five colours), which colour does A like? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q3" value="a"> (a) White</label>
+                            <label><input type="radio" name="q3" value="b"> (b) Blue</label>
+                            <label><input type="radio" name="q3" value="c"> (c) Green</label>
+                            <label><input type="radio" name="q3" value="d"> (d) Yellow</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q3">
+                            <p><strong>✅ Answer:</strong> (a) White</p>
+                            <p><strong>💡 Explanation:</strong> A lives on floor 2, immediately above the Green lover on floor 1. Only White and Blue are left for A and D, and D does not like White, so A likes White.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q3')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q4.</strong> In puzzle 2 on this page, who likes Red? <span class="badge badge-secondary">hard</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q4" value="a"> (a) B</label>
+                            <label><input type="radio" name="q4" value="b"> (b) C</label>
+                            <label><input type="radio" name="q4" value="c"> (c) E</label>
+                            <label><input type="radio" name="q4" value="d"> (d) A</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q4">
+                            <p><strong>✅ Answer:</strong> (c) E</p>
+                            <p><strong>💡 Explanation:</strong> Red is on floor 3. B is on floor 4, A on floor 2 and D on floor 5. E cannot be on floor 1, so E takes floor 3 and likes Red, leaving floor 1 for C.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q4')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q5.</strong> A building has 8 floors, numbered 1 at the bottom to 8 at the top. M lives on floor 3 and N lives four floors above M. How many floors are above N&#x27;s floor? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q5" value="a"> (a) 3</label>
+                            <label><input type="radio" name="q5" value="b"> (b) 2</label>
+                            <label><input type="radio" name="q5" value="c"> (c) 0</label>
+                            <label><input type="radio" name="q5" value="d"> (d) 1</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q5">
+                            <p><strong>✅ Answer:</strong> (d) 1</p>
+                            <p><strong>💡 Explanation:</strong> N lives on floor 3 + 4 = 7. The only floor above floor 7 is floor 8, so 8 − 7 = 1 floor is above N.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q5')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q6.</strong> A building&#x27;s floors are numbered from 0 for the ground floor up to 6 for the top floor. How many floors does the building have? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q6" value="a"> (a) 6</label>
+                            <label><input type="radio" name="q6" value="b"> (b) 7</label>
+                            <label><input type="radio" name="q6" value="c"> (c) 5</label>
+                            <label><input type="radio" name="q6" value="d"> (d) 8</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q6">
+                            <p><strong>✅ Answer:</strong> (b) 7</p>
+                            <p><strong>💡 Explanation:</strong> Counting from 0 to 6 includes both ends, so the number of floors is 6 − 0 + 1 = 7. Answering 6 forgets the ground floor.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q6')">Show Answer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)" aria-expanded="true" aria-controls="section-7">
+                <span class="section-number">7️⃣</span>
+                <span class="section-title">Frequently Asked Questions</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-7">
+                <div class="content-box">
+                    <h3>Is the ground floor floor 0 or floor 1?</h3>
+                    <p>It depends on the question, so read the first line carefully. Most bank puzzles say the bottom floor is numbered 1 and the floor above it 2. When a question says ground floor is 0, every floor number shifts down by one.</p>
+                    <h3>What does &#x27;above&#x27; mean without &#x27;immediately&#x27;?</h3>
+                    <p>&#x27;Above&#x27; alone means anywhere higher, not necessarily the next floor. Only &#x27;immediately above&#x27; or &#x27;just above&#x27; means the very next floor. Treating plain &#x27;above&#x27; as &#x27;immediately above&#x27; is a common source of wrong arrangements.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="8">
+            <button class="section-header" onclick="toggleSection(8)" aria-expanded="true" aria-controls="section-8">
+                <span class="section-number">8️⃣</span>
+                <span class="section-title">Sources and Review</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-8">
+                <div class="content-box">
+                    <p>All problems and solutions on this page are original. No outside facts are relied on; every numeric answer is recomputed by software before publishing.</p>
+                    <div class="highlight-box">
+                        <p><strong>How this page was prepared.</strong> Drafted with AI assistance (Claude (Anthropic AI model)) from the sources listed above. 7 calculations on this page were recomputed by software and matched. Automated checks also covered structure, internal links and duplicate text. Software checks cannot confirm facts. Reviewed by praveenkumar on 2026-10-23 against the sources listed above.</p>
+                        <p>Found an error? <a href="../../contact.html">Report it</a> and we will correct the page.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="9">
+            <button class="section-header" onclick="toggleSection(9)" aria-expanded="true" aria-controls="section-9">
+                <span class="section-number">9️⃣</span>
+                <span class="section-title">Related Pages</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-9">
+                <div class="content-box">
+                    <ul class="bullet-list">
+                        <li><a href="../../blog/bank-exam-puzzles-5-types.html">Bank Exam Puzzles: 5 Types That Appear Every Year (With Shortcuts)</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="page-navigation">
+            <a href="index.html" class="nav-btn">← Reasoning</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>Subject: Reasoning | Sources are listed on this page. <a href="../../contact.html">Report an error</a>.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>
