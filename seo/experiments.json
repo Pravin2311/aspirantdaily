@@ -1,0 +1,68 @@
+[
+  {
+    "id": "2026-10-23-ca-fact-corrections",
+    "date": "2026-10-23",
+    "commits": [
+      "2e4e72e",
+      "ea41f96",
+      "f94b019",
+      "27a3071",
+      "0929890",
+      "815898e",
+      "67d4f5b"
+    ],
+    "pages_regex": "/study/current-affairs/(national-quantum-mission-india|national-logistic-policy|indian-ai-mission|cybersecurity-policy-india|green-energy-corridor|pm-ghati-shakti|india-uae-cepa|indian-space-policy|g20-summit|carbon-credit-trading-scheme|electric-vehicle-policy-india|lithium-discovery-in-india|semiconductor-mission-india|india-ai-impact-summit-2026|major-government-schemes-2026|climate-summit-outcomes|one-nation-one-election)\\.html",
+    "change": "Corrected 17 current-affairs pages against PIB and official releases (several fully rewritten); quick-answer boxes on 4 pages (2e4e72e).",
+    "hypothesis": "Accurate, directly answered pages earn more clicks for the question-style queries they already appear for (positions ~8-12), and better positions over time.",
+    "metric": "clicks",
+    "secondary_metrics": [
+      "ctr",
+      "position",
+      "impressions"
+    ],
+    "window_days": 28,
+    "evaluate_after": "2026-11-20",
+    "status": "running",
+    "confounders": "Pages changed on different days (20-23 Oct); impressions are very small (single digits per page), so only large changes are readable. Apex-to-www consolidation is still moving impressions between URLs.",
+    "next_action": "Interim check weekly; decide after 2026-11-20.",
+    "baseline": {
+      "window": [
+        "2026-09-25",
+        "2026-10-22"
+      ],
+      "clicks": 0,
+      "impressions": 282,
+      "ctr": 0.0,
+      "position": 13.404255319148936
+    }
+  },
+  {
+    "id": "2026-10-23-adsense-host-guard",
+    "date": "2026-10-23",
+    "commits": [
+      "df8f6d5"
+    ],
+    "pages_regex": ".*",
+    "change": "AdSense loader injected only on www.aspirantdaily.com (no ads on 127.0.0.1 or *.vercel.app previews).",
+    "hypothesis": "Non-production ad page views (207 on 127.0.0.1 plus ~40 preview hosts in the 28 days to 20 Oct) fall to zero; www page views and earnings are unaffected.",
+    "metric": "clicks",
+    "secondary_metrics": [
+      "impressions"
+    ],
+    "window_days": 28,
+    "evaluate_after": "2026-11-20",
+    "status": "running",
+    "confounders": "This is a hygiene change; read it in the AdSense 'other domains' table, not in search metrics.",
+    "next_action": "Confirm in the next weekly report that other-domain ad page views are zero.",
+    "baseline": {
+      "window": [
+        "2026-09-25",
+        "2026-10-22"
+      ],
+      "clicks": 17,
+      "impressions": 1197,
+      "ctr": 0.014202172096908938,
+      "position": 11.030075187969924
+    }
+  }
+]

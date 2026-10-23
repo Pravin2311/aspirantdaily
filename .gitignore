@@ -2,3 +2,8 @@
 __pycache__/
 content/preview/
 search console/
+# Growth engine output (contains revenue and query data; the repo is public)
+seo/data/
+seo/reports/
+seo/logs/
+seo/__pycache__/
