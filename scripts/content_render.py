@@ -36,8 +36,7 @@ HEAD_TAGS = """    <link rel="preconnect" href="https://fonts.googleapis.com">
     gtag('js', new Date());
     gtag('config', 'G-51XLJE4TVH');
   </script>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327"
-     crossorigin="anonymous"></script>"""
+  <script>/* AdSense only on the production host (not localhost or preview deployments) */(function(){{if(location.hostname!=="www.aspirantdaily.com")return;var a=document.createElement("script");a.async=true;a.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327";a.crossOrigin="anonymous";document.head.appendChild(a);}})();</script>"""
 ANALYTICS_RE = re.compile(r"    <!-- Analytics -->.*?crossorigin=\"anonymous\"></script>", re.S)
 
 
