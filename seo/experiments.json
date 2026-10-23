@@ -128,5 +128,26 @@
     "status": "running",
     "confounders": "Content and title changed together (deliberately, as one intent fix). Exam-season demand varies by month; compare with the site-wide control.",
     "next_action": "Weekly interim; re-check calendars for revisions monthly; decide after 2026-11-27."
+  },
+  {
+    "id": "2026-10-23-ca-fact-corrections-2",
+    "date": "2026-10-23",
+    "commits": [
+      "de30989"
+    ],
+    "pages_regex": "/study/current-affairs/(national-green-hydrogen-mission-india|brics-expansion|india-eu-free-trade-talks)\\.html",
+    "change": "Corrected green hydrogen, BRICS and India-EU FTA pages against official releases; India-EU rewritten as concluded (27 Jan 2026) and retitled; BRICS retitled to cover 2025 members and partners.",
+    "hypothesis": "Pages that reflect the current state (India-EU deal concluded, BRICS with Indonesia and partners) match what searchers now look for and earn impressions and clicks for 2026 queries.",
+    "metric": "clicks",
+    "secondary_metrics": [
+      "ctr",
+      "position",
+      "impressions"
+    ],
+    "window_days": 28,
+    "evaluate_after": "2026-11-20",
+    "status": "running",
+    "confounders": "Separate from 2026-10-23-ca-fact-corrections (its baseline was already taken). Titles changed on two pages along with content. Very small impression counts.",
+    "next_action": "Weekly interim; decide after 2026-11-20."
   }
 ]
