@@ -107,5 +107,26 @@
     "status": "running",
     "confounders": "Google's chosen canonical for this page is still the apex URL. Title only.",
     "next_action": "Weekly interim; decide after 2026-11-27."
+  },
+  {
+    "id": "2026-10-23-exam-calendar-dates",
+    "date": "2026-10-23",
+    "commits": [
+      "401c197"
+    ],
+    "pages_regex": "^/exam-calendar\\.html$",
+    "change": "Added official UPSC 2027, SSC 2026-27 and IBPS 2026-27 calendar tables (linked sources); retitled to 'Exam Calendar 2026-27: UPSC 2027, SSC & IBPS Official Dates'.",
+    "hypothesis": "Matching date-seeking intent turns 98 impressions/28d at position ~8.5 with 0 clicks into clicks, and widens the query set (UPSC 2027 date, IBPS calendar).",
+    "metric": "clicks",
+    "secondary_metrics": [
+      "ctr",
+      "position",
+      "impressions"
+    ],
+    "window_days": 28,
+    "evaluate_after": "2026-11-27",
+    "status": "running",
+    "confounders": "Content and title changed together (deliberately, as one intent fix). Exam-season demand varies by month; compare with the site-wide control.",
+    "next_action": "Weekly interim; re-check calendars for revisions monthly; decide after 2026-11-27."
   }
 ]
