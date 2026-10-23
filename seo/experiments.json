@@ -171,5 +171,28 @@
     "status": "running",
     "confounders": "Descriptions and one title (deepfake) changed along with content. The start-up, UCC and budget pages are in the same commit as this entry. Very small impression counts per page.",
     "next_action": "Weekly interim; decide after 2026-11-20."
+  },
+  {
+    "id": "2026-10-23-study-notes-2026-updates",
+    "date": "2026-10-23",
+    "commits": [
+      "d12d69a",
+      "ec0e080",
+      "aade0c6"
+    ],
+    "pages_regex": "^/(blog/rrb-group-d-science-ncert-chapters|study/economy/(budget-and-fiscal-policy|external-sector-and-trade|money-banking-and-rbi|national-income-and-inflation)|study/polity/judiciary-and-landmark-cases)\\.html$",
+    "change": "Brought evergreen notes up to date: RRB Group D science rewritten to current NCERT editions with unverifiable claims removed; 2026 updates to Finance Commission, fiscal anchor, inflation target, CPI/WPI base years, trade agreements and Supreme Court strength (38).",
+    "hypothesis": "Current, accurate study notes earn more impressions and clicks over time; the RRB Group D page (73 impressions, 1.4% CTR) should improve CTR once the refreshed snippet is crawled.",
+    "metric": "clicks",
+    "secondary_metrics": [
+      "ctr",
+      "position",
+      "impressions"
+    ],
+    "window_days": 28,
+    "evaluate_after": "2026-11-20",
+    "status": "running",
+    "confounders": "Meta description of the RRB Group D page changed along with content. Most economy/polity pages had near-zero impressions before. Custom 404 page shipped the same day (1347712), site-wide but only affects missing URLs.",
+    "next_action": "Weekly interim; decide after 2026-11-20. Consider an RRB Group D title test only after this is evaluated."
   }
 ]
