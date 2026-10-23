@@ -96,6 +96,15 @@ class SiteTests(unittest.TestCase):
     def test_previews_are_not_in_site_scan(self):
         self.assertFalse(any(p.startswith("content/") for p in html_pages()))
 
+    def test_indexnow_key_and_urls(self):
+        import indexnow
+        key = indexnow.find_key()
+        self.assertIsNotNone(key, "IndexNow key file missing at the site root")
+        urls = indexnow.select_urls()
+        sitemap = re.findall(r"<loc>([^<]+)</loc>", read("sitemap.xml"))
+        self.assertEqual(sorted(urls), sorted(sitemap))
+        self.assertEqual(indexnow.select_urls({"quiz.html"}), [])  # noindex pages are never submitted
+
 
 if __name__ == "__main__":
     unittest.main()
