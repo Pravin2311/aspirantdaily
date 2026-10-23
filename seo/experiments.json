@@ -52,7 +52,7 @@
     "window_days": 28,
     "evaluate_after": "2026-11-20",
     "status": "running",
-    "confounders": "This is a hygiene change; read it in the AdSense 'other domains' table, not in search metrics.",
+    "confounders": "This is a hygiene change; read it in the AdSense 'other domains' table, not in search metrics. Site-wide hygiene change: holds_back is false so it does not block page-level tests.",
     "next_action": "Confirm in the next weekly report that other-domain ad page views are zero.",
     "baseline": {
       "window": [
@@ -63,6 +63,49 @@
       "impressions": 1197,
       "ctr": 0.014202172096908938,
       "position": 11.030075187969924
-    }
+    },
+    "holds_back": false
+  },
+  {
+    "id": "2026-10-23-home-title",
+    "date": "2026-10-23",
+    "commits": [
+      "23ce4ad"
+    ],
+    "pages_regex": "^/$",
+    "change": "Home title 'Daily MCQ Practice for SSC, Bank, UPSC & More' -> 'Free Daily MCQs for Exam Aspirants: SSC, Bank, UPSC, RRB'.",
+    "hypothesis": "Matching the 'exam aspirants' wording lifts CTR from ~0% at position ~6 for that query, and overall home CTR above 2.7%.",
+    "metric": "clicks",
+    "secondary_metrics": [
+      "ctr",
+      "position",
+      "impressions"
+    ],
+    "window_days": 28,
+    "evaluate_after": "2026-11-27",
+    "status": "running",
+    "confounders": "Google currently treats https://aspirantdaily.com/ (apex) as canonical for the home page; impressions may move between apex and www as it consolidates. Title only; nothing else changed on the page.",
+    "next_action": "Weekly interim; decide after 2026-11-27."
+  },
+  {
+    "id": "2026-10-23-ssc-cgl-title",
+    "date": "2026-10-23",
+    "commits": [
+      "23ce4ad"
+    ],
+    "pages_regex": "^/blog/ssc-cgl-syllabus-2025\\.html$",
+    "change": "Title 'SSC CGL 2026 Syllabus & Exam Pattern (Official Notice)' -> 'SSC CGL Syllabus 2026 & Exam Pattern: Tier 1 and Tier 2'.",
+    "hypothesis": "Echoing the 'exam pattern' / 'tier' queries the page ranks 5-12 for earns its first clicks.",
+    "metric": "clicks",
+    "secondary_metrics": [
+      "ctr",
+      "position",
+      "impressions"
+    ],
+    "window_days": 28,
+    "evaluate_after": "2026-11-27",
+    "status": "running",
+    "confounders": "Google's chosen canonical for this page is still the apex URL. Title only.",
+    "next_action": "Weekly interim; decide after 2026-11-27."
   }
 ]
