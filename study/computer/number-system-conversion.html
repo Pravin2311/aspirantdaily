@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary, Octal, Decimal and Hexadecimal Conversion | AspirantDaily</title>
+    <meta name="description" content="Binary to decimal conversion and back, plus octal and hexadecimal by grouping bits. Step-by-step methods, a 0 to 15 table, 8 worked examples and 6 MCQs.">
+    <meta name="keywords" content="binary to decimal conversion, decimal to binary, hexadecimal to decimal, octal to binary conversion, number system in computer">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.aspirantdaily.com/study/computer/number-system-conversion.html">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.aspirantdaily.com/study/computer/number-system-conversion.html">
+    <meta property="og:title" content="Binary, Octal, Decimal and Hexadecimal Conversion | AspirantDaily">
+    <meta property="og:description" content="Binary to decimal conversion and back, plus octal and hexadecimal by grouping bits. Step-by-step methods, a 0 to 15 table, 8 worked examples and 6 MCQs.">
+    <meta property="og:image" content="https://www.aspirantdaily.com/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Number System Conversion: Binary, Octal, Decimal and Hexadecimal",
+  "description": "Binary to decimal conversion and back, plus octal and hexadecimal by grouping bits. Step-by-step methods, a 0 to 15 table, 8 worked examples and 6 MCQs.",
+  "image": "https://www.aspirantdaily.com/og-image.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "url": "https://www.aspirantdaily.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.aspirantdaily.com/icons/icon-512.png"
+    }
+  },
+  "datePublished": "2026-10-24",
+  "dateModified": "2026-10-24",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.aspirantdaily.com/study/computer/number-system-conversion.html"
+  },
+  "articleSection": "Computer Awareness",
+  "citation": []
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.aspirantdaily.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Study Notes",
+      "item": "https://www.aspirantdaily.com/study/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Computer Awareness",
+      "item": "https://www.aspirantdaily.com/study/computer/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Number System Conversion: Binary, Octal, Decimal and Hexadecimal",
+      "item": "https://www.aspirantdaily.com/study/computer/number-system-conversion.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why do computers use the binary number system?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Digital circuits work most reliably with two states, such as a voltage being present or absent. Binary needs only two digits, 0 and 1, so each bit maps directly onto one of those two states."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why are octal and hexadecimal used if computers work in binary?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "They are shorthand for binary. Because 8 = 2³ and 16 = 2⁴, every octal digit stands for exactly three bits and every hexadecimal digit for exactly four, so long binary strings become short and easier for people to read."
+      }
+    }
+  ]
+}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css?v=2">
+    <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-51XLJE4TVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-51XLJE4TVH');
+  </script>
+  <script>/* AdSense only on the production host (not localhost or preview deployments) */(function(){if(location.hostname!=="www.aspirantdaily.com")return;var a=document.createElement("script");a.async=true;a.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327";a.crossOrigin="anonymous";document.head.appendChild(a);})();</script>
+</head>
+<body class="study-page subject-computer">
+    <nav class="study-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Computer Awareness</a>
+            <div class="nav-controls">
+                <button onclick="toggleAllSections()" class="btn-secondary">Expand/Collapse All</button>
+                <button onclick="window.print()" class="btn-primary">📄 Print/Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> / <a href="../index.html">Study Notes</a> / <a href="index.html">Computer Awareness</a> / <span>Number System Conversion: Binary, Octal, Decimal and Hexadecimal</span>
+            </div>
+            <h1>Number System Conversion: Binary, Octal, Decimal and Hexadecimal</h1>
+            <p class="page-subtitle">Place values • Decimal to binary by division • Grouping bits for octal and hex • Binary addition • Common traps</p>
+            <div class="page-meta">
+                <span class="badge badge-secondary">SSC</span>
+                <span class="badge badge-secondary">Banking</span>
+                <span class="badge badge-secondary">Railway</span>
+                <span class="badge badge-secondary">📅 Last updated: 2026-10-24</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="study-section collapsible" data-section="1">
+            <button class="section-header" onclick="toggleSection(1)" aria-expanded="true" aria-controls="section-1">
+                <span class="section-number">1️⃣</span>
+                <span class="section-title">Place Value in Any Base</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-1">
+                <div class="content-box">
+<p>Every number system works the same way: each position is worth the base raised to a power, counting from 0 on the right. Decimal uses base 10, binary base 2, octal base 8 and hexadecimal base 16. Hexadecimal needs six extra symbols, so A to F stand for 10 to 15. Computer awareness sections in SSC, bank and railway exams test conversions between these bases, usually with small numbers that can be worked by hand in under a minute.</p>
+<div class="table-wrap"><table class="data-table">
+<thead><tr><th>Decimal</th><th>Binary</th><th>Octal</th><th>Hex</th></tr></thead>
+<tbody>
+<tr><td>0</td><td>0000</td><td>0</td><td>0</td></tr>
+<tr><td>1</td><td>0001</td><td>1</td><td>1</td></tr>
+<tr><td>2</td><td>0010</td><td>2</td><td>2</td></tr>
+<tr><td>3</td><td>0011</td><td>3</td><td>3</td></tr>
+<tr><td>4</td><td>0100</td><td>4</td><td>4</td></tr>
+<tr><td>5</td><td>0101</td><td>5</td><td>5</td></tr>
+<tr><td>6</td><td>0110</td><td>6</td><td>6</td></tr>
+<tr><td>7</td><td>0111</td><td>7</td><td>7</td></tr>
+<tr><td>8</td><td>1000</td><td>10</td><td>8</td></tr>
+<tr><td>9</td><td>1001</td><td>11</td><td>9</td></tr>
+<tr><td>10</td><td>1010</td><td>12</td><td>A</td></tr>
+<tr><td>11</td><td>1011</td><td>13</td><td>B</td></tr>
+<tr><td>12</td><td>1100</td><td>14</td><td>C</td></tr>
+<tr><td>13</td><td>1101</td><td>15</td><td>D</td></tr>
+<tr><td>14</td><td>1110</td><td>16</td><td>E</td></tr>
+<tr><td>15</td><td>1111</td><td>17</td><td>F</td></tr>
+</tbody></table></div>
+<p>Learning this table removes most of the work: the binary-to-octal and binary-to-hex methods below are just lookups in it.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="2">
+            <button class="section-header" onclick="toggleSection(2)" aria-expanded="true" aria-controls="section-2">
+                <span class="section-number">2️⃣</span>
+                <span class="section-title">Binary to Decimal and Back</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-2">
+                <div class="content-box">
+<p>To convert binary to decimal, write the place values 1, 2, 4, 8, 16, 32, 64, 128 from the right and add the ones where the bit is 1.</p>
+<div class="case-study">
+<h4>Worked example 1: binary to decimal</h4>
+<p>(101101)₂. The 1s sit at the places worth 32, 8, 4 and 1. Their sum is 32 + 8 + 4 + 1 = <strong>45</strong>.</p>
+</div>
+<p>To convert decimal to binary, divide by 2 repeatedly and write down each remainder. The binary number is the remainders read from the <strong>last to the first</strong>.</p>
+<div class="case-study">
+<h4>Worked example 2: decimal to binary by division</h4>
+<p>156 ÷ 2 = 78 r 0; 78 ÷ 2 = 39 r 0; 39 ÷ 2 = 19 r 1; 19 ÷ 2 = 9 r 1; 9 ÷ 2 = 4 r 1; 4 ÷ 2 = 2 r 0; 2 ÷ 2 = 1 r 0; 1 ÷ 2 = 0 r 1. Reading the remainders upwards gives <strong>10011100</strong>. Check: 128 + 16 + 8 + 4 = 156.</p>
+</div>
+<p>For small numbers, subtraction is quicker than division: take away the largest power of 2 that fits, mark that bit, and repeat with what is left.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="3">
+            <button class="section-header" onclick="toggleSection(3)" aria-expanded="true" aria-controls="section-3">
+                <span class="section-number">3️⃣</span>
+                <span class="section-title">Octal and Hexadecimal by Grouping Bits</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-3">
+                <div class="content-box">
+<p>Because 8 = 2³, each octal digit is exactly three bits; because 16 = 2⁴, each hex digit is exactly four bits. So conversions between binary and these bases need no arithmetic at all, only grouping. Always group from the <strong>right</strong>, adding zeros on the left if the last group is short.</p>
+<div class="case-study">
+<h4>Worked example 3: binary to octal</h4>
+<p>(110101011)₂ splits into 110 | 101 | 011, which are 6, 5 and 3. So the octal number is <strong>(653)₈</strong>, and 6 × 64 + 5 × 8 + 3 = 427 in decimal.</p>
+</div>
+<p>As a cross-check, the original binary number's place values give 256 + 128 + 32 + 8 + 2 + 1 = 427 too.</p>
+<div class="case-study">
+<h4>Worked example 4: binary to hexadecimal</h4>
+<p>(11010111)₂ splits into 1101 | 0111, which are D (13) and 7. So the hex number is <strong>(D7)₁₆</strong>, which is 13 × 16 + 7 = 215 in decimal, the same as the binary value.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 5: hexadecimal to decimal</h4>
+<p>(2F)₁₆ = 2 × 16 + 15 = <strong>47</strong>.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 6: decimal to hexadecimal</h4>
+<p>Divide by 16 this time. 250 ÷ 16 = 15 r 10, and 15 ÷ 16 = 0 r 15. Reading the remainders upwards gives 15 and 10, which are F and A: <strong>(FA)₁₆</strong>.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 7: octal to decimal</h4>
+<p>(75)₈ = 7 × 8 + 5 = <strong>61</strong>.</p>
+</div>
+<p>To go between octal and hexadecimal, pass through binary: expand each octal digit to three bits, then regroup the bits in fours.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)" aria-expanded="true" aria-controls="section-4">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">Binary Addition</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
+                <div class="content-box">
+<p>Binary addition follows four rules: 0 + 0 = 0, 0 + 1 = 1, 1 + 1 = 10 (write 0, carry 1), and 1 + 1 + 1 = 11 (write 1, carry 1).</p>
+<div class="case-study">
+<h4>Worked example 8: adding two binary numbers</h4>
+<p>1011 + 0110. From the right: 1 + 0 = 1; 1 + 1 = 0 carry 1; 0 + 1 + 1 = 0 carry 1; 1 + 0 + 1 = 0 carry 1; the final carry gives a leading 1. The result is <strong>10001</strong>. In decimal that is 11 + 6 = 17, which matches.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)" aria-expanded="true" aria-controls="section-5">
+                <span class="section-number">5️⃣</span>
+                <span class="section-title">Common Traps and Revision</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-5">
+                <div class="content-box">
+<ul class="warning-list">
+<li>✘ Reading division remainders from top to bottom instead of bottom to top.</li>
+<li>✘ Grouping bits from the left, which shifts every group when the length is not a multiple of 3 or 4.</li>
+<li>✘ Treating hex letters as separate numbers, so that 3A becomes 310 instead of 58.</li>
+<li>✘ Confusing the number of values n bits can hold (2ⁿ) with the largest value (2ⁿ − 1).</li>
+</ul>
+<p>Converting the answer back to the original base takes a few seconds and catches nearly every slip. For the logic built on these bits, see <a href="logic-gates.html">logic gates and truth tables</a>. For wider computer awareness revision, see <a href="../science-tech/computer-and-it-fundamentals.html">computer and IT fundamentals</a> and the <a href="../../repeated-questions/computer-awareness-cheat-code.html">computer awareness cheat code</a>.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)" aria-expanded="true" aria-controls="section-6">
+                <span class="section-number">6️⃣</span>
+                <span class="section-title">Practice Questions (6)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-6">
+                <div class="content-box">
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q1.</strong> What is the decimal value of (1101)₂? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q1" value="a"> (a) 11</label>
+                            <label><input type="radio" name="q1" value="b"> (b) 13</label>
+                            <label><input type="radio" name="q1" value="c"> (c) 14</label>
+                            <label><input type="radio" name="q1" value="d"> (d) 15</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q1">
+                            <p><strong>✅ Answer:</strong> (b) 13</p>
+                            <p><strong>💡 Explanation:</strong> Place values from the right are 1, 2, 4 and 8. The 1s sit at 8, 4 and 1, so the value is 8 + 4 + 1 = 13.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q1')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q2.</strong> Which binary number equals decimal 37? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q2" value="a"> (a) 100111</label>
+                            <label><input type="radio" name="q2" value="b"> (b) 101001</label>
+                            <label><input type="radio" name="q2" value="c"> (c) 100101</label>
+                            <label><input type="radio" name="q2" value="d"> (d) 110101</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q2">
+                            <p><strong>✅ Answer:</strong> (c) 100101</p>
+                            <p><strong>💡 Explanation:</strong> 37 = 32 + 4 + 1, so the bits for 32, 4 and 1 are set: 100101. The other options equal 39, 41 and 53.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q2')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q3.</strong> What is the decimal value of (3A)₁₆? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q3" value="a"> (a) 58</label>
+                            <label><input type="radio" name="q3" value="b"> (b) 310</label>
+                            <label><input type="radio" name="q3" value="c"> (c) 48</label>
+                            <label><input type="radio" name="q3" value="d"> (d) 62</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q3">
+                            <p><strong>✅ Answer:</strong> (a) 58</p>
+                            <p><strong>💡 Explanation:</strong> A stands for 10. The value is 3 × 16 + 10 = 48 + 10 = 58. Reading 3A as 3 and 10 side by side gives the trap answer 310.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q3')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q4.</strong> What is the decimal value of (127)₈? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q4" value="a"> (a) 127</label>
+                            <label><input type="radio" name="q4" value="b"> (b) 85</label>
+                            <label><input type="radio" name="q4" value="c"> (c) 95</label>
+                            <label><input type="radio" name="q4" value="d"> (d) 87</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q4">
+                            <p><strong>✅ Answer:</strong> (d) 87</p>
+                            <p><strong>💡 Explanation:</strong> Octal place values are 64, 8 and 1. The value is 1 × 64 + 2 × 8 + 7 = 64 + 16 + 7 = 87.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q4')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q5.</strong> What is the octal equivalent of (101110)₂? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q5" value="a"> (a) 46</label>
+                            <label><input type="radio" name="q5" value="b"> (b) 56</label>
+                            <label><input type="radio" name="q5" value="c"> (c) 65</label>
+                            <label><input type="radio" name="q5" value="d"> (d) 26</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q5">
+                            <p><strong>✅ Answer:</strong> (b) 56</p>
+                            <p><strong>💡 Explanation:</strong> Group the bits in threes from the right: 101 and 110, which are 5 and 6. So the octal number is 56. The trap option 46 is the decimal value of the same number.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q5')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q6.</strong> What is the largest decimal number that can be written with 8 bits? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q6" value="a"> (a) 256</label>
+                            <label><input type="radio" name="q6" value="b"> (b) 128</label>
+                            <label><input type="radio" name="q6" value="c"> (c) 255</label>
+                            <label><input type="radio" name="q6" value="d"> (d) 127</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q6">
+                            <p><strong>✅ Answer:</strong> (c) 255</p>
+                            <p><strong>💡 Explanation:</strong> Eight bits all set to 1 give 2⁸ − 1 = 255. 256 is the number of different values, 0 to 255, not the largest value.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q6')">Show Answer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)" aria-expanded="true" aria-controls="section-7">
+                <span class="section-number">7️⃣</span>
+                <span class="section-title">Frequently Asked Questions</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-7">
+                <div class="content-box">
+                    <h3>Why do computers use the binary number system?</h3>
+                    <p>Digital circuits work most reliably with two states, such as a voltage being present or absent. Binary needs only two digits, 0 and 1, so each bit maps directly onto one of those two states.</p>
+                    <h3>Why are octal and hexadecimal used if computers work in binary?</h3>
+                    <p>They are shorthand for binary. Because 8 = 2³ and 16 = 2⁴, every octal digit stands for exactly three bits and every hexadecimal digit for exactly four, so long binary strings become short and easier for people to read.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="8">
+            <button class="section-header" onclick="toggleSection(8)" aria-expanded="true" aria-controls="section-8">
+                <span class="section-number">8️⃣</span>
+                <span class="section-title">Sources and Review</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-8">
+                <div class="content-box">
+                    <p>All problems and solutions on this page are original. No outside facts are relied on; every numeric answer is recomputed by software before publishing.</p>
+                    <div class="highlight-box">
+                        <p><strong>How this page was prepared.</strong> Drafted with AI assistance (Claude (Anthropic AI model)) from the sources listed above. 15 calculations on this page were recomputed by software and matched. Automated checks also covered structure, internal links and duplicate text. Software checks cannot confirm facts. Reviewed by praveenkumar on 2026-10-24 against the sources listed above.</p>
+                        <p>Found an error? <a href="../../contact.html">Report it</a> and we will correct the page.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="9">
+            <button class="section-header" onclick="toggleSection(9)" aria-expanded="true" aria-controls="section-9">
+                <span class="section-number">9️⃣</span>
+                <span class="section-title">Related Pages</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-9">
+                <div class="content-box">
+                    <ul class="bullet-list">
+                        <li><a href="../science-tech/computer-and-it-fundamentals.html">💻 Computer &amp; IT Fundamentals</a></li>
+                        <li><a href="../../repeated-questions/computer-awareness-cheat-code.html">Computer Awareness Cheat Code: 15 Must-Know Facts</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="page-navigation">
+            <a href="index.html" class="nav-btn">← Computer Awareness</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>Subject: Computer Awareness | Sources are listed on this page. <a href="../../contact.html">Report an error</a>.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>

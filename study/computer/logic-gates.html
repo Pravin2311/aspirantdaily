@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logic Gates and Truth Tables: AND, OR, NAND, XOR | AspirantDaily</title>
+    <meta name="description" content="Logic gates truth table for AND, OR, NOT, NAND, NOR, XOR and XNOR, why NAND and NOR are universal, De Morgan&#x27;s laws and evaluating expressions. 6 MCQs.">
+    <meta name="keywords" content="logic gates truth table, universal gates nand nor, xor gate truth table, de morgan&#x27;s law logic gates">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.aspirantdaily.com/study/computer/logic-gates.html">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.aspirantdaily.com/study/computer/logic-gates.html">
+    <meta property="og:title" content="Logic Gates and Truth Tables: AND, OR, NAND, XOR | AspirantDaily">
+    <meta property="og:description" content="Logic gates truth table for AND, OR, NOT, NAND, NOR, XOR and XNOR, why NAND and NOR are universal, De Morgan&#x27;s laws and evaluating expressions. 6 MCQs.">
+    <meta property="og:image" content="https://www.aspirantdaily.com/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Logic Gates and Truth Tables: AND, OR, NOT, NAND, NOR, XOR",
+  "description": "Logic gates truth table for AND, OR, NOT, NAND, NOR, XOR and XNOR, why NAND and NOR are universal, De Morgan's laws and evaluating expressions. 6 MCQs.",
+  "image": "https://www.aspirantdaily.com/og-image.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "url": "https://www.aspirantdaily.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.aspirantdaily.com/icons/icon-512.png"
+    }
+  },
+  "datePublished": "2026-10-24",
+  "dateModified": "2026-10-24",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.aspirantdaily.com/study/computer/logic-gates.html"
+  },
+  "articleSection": "Computer Awareness",
+  "citation": []
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.aspirantdaily.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Study Notes",
+      "item": "https://www.aspirantdaily.com/study/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Computer Awareness",
+      "item": "https://www.aspirantdaily.com/study/computer/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Logic Gates and Truth Tables: AND, OR, NOT, NAND, NOR, XOR",
+      "item": "https://www.aspirantdaily.com/study/computer/logic-gates.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the difference between XOR and OR?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "They differ only when both inputs are 1. OR gives 1 if at least one input is 1, so it gives 1 for the inputs 1 and 1. XOR gives 1 only when exactly one input is 1, so it gives 0 when both are 1."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I remember which gate is which?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Learn three base gates: AND needs all ones, OR needs at least one, NOT flips. Every other gate is a variant: NAND and NOR are AND and OR followed by NOT, and XOR checks whether the inputs differ, with XNOR as its opposite."
+      }
+    }
+  ]
+}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css?v=2">
+    <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-51XLJE4TVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-51XLJE4TVH');
+  </script>
+  <script>/* AdSense only on the production host (not localhost or preview deployments) */(function(){if(location.hostname!=="www.aspirantdaily.com")return;var a=document.createElement("script");a.async=true;a.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327";a.crossOrigin="anonymous";document.head.appendChild(a);})();</script>
+</head>
+<body class="study-page subject-computer">
+    <nav class="study-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Computer Awareness</a>
+            <div class="nav-controls">
+                <button onclick="toggleAllSections()" class="btn-secondary">Expand/Collapse All</button>
+                <button onclick="window.print()" class="btn-primary">📄 Print/Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> / <a href="../index.html">Study Notes</a> / <a href="index.html">Computer Awareness</a> / <span>Logic Gates and Truth Tables: AND, OR, NOT, NAND, NOR, XOR</span>
+            </div>
+            <h1>Logic Gates and Truth Tables: AND, OR, NOT, NAND, NOR, XOR</h1>
+            <p class="page-subtitle">Basic gates • One combined truth table • Universal gates • De Morgan&#x27;s laws • Evaluating expressions</p>
+            <div class="page-meta">
+                <span class="badge badge-secondary">SSC</span>
+                <span class="badge badge-secondary">Banking</span>
+                <span class="badge badge-secondary">📅 Last updated: 2026-10-24</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="study-section collapsible" data-section="1">
+            <button class="section-header" onclick="toggleSection(1)" aria-expanded="true" aria-controls="section-1">
+                <span class="section-number">1️⃣</span>
+                <span class="section-title">What a Logic Gate Does</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-1">
+                <div class="content-box">
+<p>A logic gate takes one or more inputs, each 0 or 1, and produces a single output of 0 or 1 by a fixed rule. Gates are the building blocks of every digital circuit, from a calculator to a processor. In computer awareness sections, questions usually ask for a gate's output for given inputs, the number of rows in a truth table, or which gates are universal.</p>
+<p>A <strong>truth table</strong> lists every possible combination of inputs and the output for each. With n inputs there are 2ⁿ combinations, because each input independently takes one of two values.</p>
+<p>So a three-input gate has 2³ = 8 rows, and a two-input gate has 4.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="2">
+            <button class="section-header" onclick="toggleSection(2)" aria-expanded="true" aria-controls="section-2">
+                <span class="section-number">2️⃣</span>
+                <span class="section-title">The Seven Gates in One Truth Table</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-2">
+                <div class="content-box">
+<p>There are three basic gates. <strong>AND</strong> outputs 1 only if every input is 1. <strong>OR</strong> outputs 1 if at least one input is 1. <strong>NOT</strong> has a single input and flips it. The other four gates are built from these: NAND is NOT-AND, NOR is NOT-OR, XOR (exclusive OR) outputs 1 when the inputs differ, and XNOR outputs 1 when they are the same.</p>
+<div class="table-wrap"><table class="data-table">
+<thead><tr><th>A</th><th>B</th><th>AND</th><th>OR</th><th>NAND</th><th>NOR</th><th>XOR</th><th>XNOR</th></tr></thead>
+<tbody>
+<tr><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td></tr>
+<tr><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+</tbody></table></div>
+<p>NOT has only one input: NOT 0 = 1 and NOT 1 = 0.</p>
+<p>A quick way to read the table: each NAND column is the AND column flipped, each NOR column is the OR column flipped, and XNOR is XOR flipped. If you remember AND, OR and XOR, you can derive the rest in seconds.</p>
+<div class="case-study">
+<h4>Worked example 1: AND</h4>
+<p>A = 1, B = 0. AND needs both to be 1, so the output is <strong>0</strong>. A handy way to think of it: AND behaves like multiplication, 1 × 0 = 0.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 2: counting ones in the OR column</h4>
+<p>OR gives 0 only when both inputs are 0. So of the four rows, <strong>3</strong> give an output of 1.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 3: NAND</h4>
+<p>A = 1, B = 1. AND gives 1, and the NOT flips it, so NAND gives <strong>0</strong>. This is the only row where NAND outputs 0.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 4: XOR</h4>
+<p>A = 1, B = 0. The inputs differ, so XOR gives <strong>1</strong>. XOR behaves like adding the bits and keeping only the last binary digit.</p>
+</div>
+<p>Across its four rows, XOR outputs 1 exactly twice, in the two rows where the inputs differ.</p>
+<div class="case-study">
+<h4>Worked example 5: NOR</h4>
+<p>A = 0, B = 0. OR gives 0, and the NOT flips it, so NOR gives <strong>1</strong>.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="3">
+            <button class="section-header" onclick="toggleSection(3)" aria-expanded="true" aria-controls="section-3">
+                <span class="section-number">3️⃣</span>
+                <span class="section-title">Universal Gates and De Morgan&#x27;s Laws</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-3">
+                <div class="content-box">
+<p>NAND and NOR are called <strong>universal gates</strong> because any circuit can be built from one of them alone. With NAND, for example:</p>
+<ul class="bullet-list">
+<li><strong>NOT A</strong> = A NAND A, since joining both inputs gives NOT (A AND A) = NOT A.</li>
+<li><strong>A AND B</strong> = (A NAND B) NAND (A NAND B), which flips NAND back to AND.</li>
+<li><strong>A OR B</strong> = (NOT A) NAND (NOT B), using the NAND-built NOT from the first line.</li>
+</ul>
+<p>The third line rests on <strong>De Morgan's laws</strong>: NOT (A AND B) equals (NOT A) OR (NOT B), and NOT (A OR B) equals (NOT A) AND (NOT B). In words, flipping a combined result flips each input and swaps AND with OR.</p>
+<div class="case-study">
+<h4>Worked example 6: checking De Morgan's law</h4>
+<p>A = 1, B = 0. Left side: A AND B = 0, so NOT gives 1. Right side: NOT A = 0 and NOT B = 1, and 0 OR 1 = 1. Both sides equal 1, so the <strong>difference is 0</strong>, as the law says.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)" aria-expanded="true" aria-controls="section-4">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">Evaluating a Gate Expression</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
+                <div class="content-box">
+<p>Expressions such as (A AND B) OR (NOT C) are evaluated like arithmetic: work out the innermost brackets first, then combine. NOT applies only to what immediately follows it unless brackets say otherwise.</p>
+<div class="case-study">
+<h4>Worked example 7: a three-variable expression</h4>
+<p>A = 1, B = 0, C = 0. A AND B = 0. NOT C = 1. Then 0 OR 1 = <strong>1</strong>.</p>
+</div>
+<p>Write each intermediate value on paper. With three or more gates, holding results in your head is where most mistakes happen.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)" aria-expanded="true" aria-controls="section-5">
+                <span class="section-number">5️⃣</span>
+                <span class="section-title">Common Traps and Revision</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-5">
+                <div class="content-box">
+<ul class="warning-list">
+<li>✘ Treating XOR like OR when both inputs are 1. OR gives 1; XOR gives 0.</li>
+<li>✘ Saying a truth table with n inputs has 2n rows instead of 2ⁿ.</li>
+<li>✘ Applying NOT to a whole expression when it covers only one variable.</li>
+<li>✘ Calling AND or OR universal. Only NAND and NOR are.</li>
+</ul>
+<p>Gates work on the bits covered in <a href="number-system-conversion.html">binary, octal and hexadecimal conversion</a>. For broader revision, see <a href="../science-tech/computer-and-it-fundamentals.html">computer and IT fundamentals</a> and the <a href="../../repeated-questions/computer-awareness-cheat-code.html">computer awareness cheat code</a>.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)" aria-expanded="true" aria-controls="section-6">
+                <span class="section-number">6️⃣</span>
+                <span class="section-title">Practice Questions (6)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-6">
+                <div class="content-box">
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q1.</strong> A three-input AND gate receives the inputs 1, 1 and 0. What is its output? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q1" value="a"> (a) 0</label>
+                            <label><input type="radio" name="q1" value="b"> (b) 1</label>
+                            <label><input type="radio" name="q1" value="c"> (c) It depends on the order of the inputs</label>
+                            <label><input type="radio" name="q1" value="d"> (d) Undefined</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q1">
+                            <p><strong>✅ Answer:</strong> (a) 0</p>
+                            <p><strong>💡 Explanation:</strong> An AND gate outputs 1 only when every input is 1. One input is 0, so the output is 0. The order of the inputs never matters for AND.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q1')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q2.</strong> Which gates are called universal gates? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q2" value="a"> (a) AND and OR</label>
+                            <label><input type="radio" name="q2" value="b"> (b) NAND and NOR</label>
+                            <label><input type="radio" name="q2" value="c"> (c) XOR and XNOR</label>
+                            <label><input type="radio" name="q2" value="d"> (d) NOT only</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q2">
+                            <p><strong>✅ Answer:</strong> (b) NAND and NOR</p>
+                            <p><strong>💡 Explanation:</strong> Any logic circuit can be built using only NAND gates, or using only NOR gates. That is why these two are called universal. AND, OR and XOR cannot produce NOT on their own.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q2')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q3.</strong> How many rows does the complete truth table of a four-input gate have? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q3" value="a"> (a) 8</label>
+                            <label><input type="radio" name="q3" value="b"> (b) 4</label>
+                            <label><input type="radio" name="q3" value="c"> (c) 16</label>
+                            <label><input type="radio" name="q3" value="d"> (d) 32</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q3">
+                            <p><strong>✅ Answer:</strong> (c) 16</p>
+                            <p><strong>💡 Explanation:</strong> Each input can be 0 or 1, so four inputs give 2 × 2 × 2 × 2 = 2⁴ = 16 combinations, one row each.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q3')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q4.</strong> What is the output of a two-input XOR gate when both inputs are 1? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q4" value="a"> (a) 1</label>
+                            <label><input type="radio" name="q4" value="b"> (b) 0</label>
+                            <label><input type="radio" name="q4" value="c"> (c) Same as the OR output</label>
+                            <label><input type="radio" name="q4" value="d"> (d) Undefined</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q4">
+                            <p><strong>✅ Answer:</strong> (b) 0</p>
+                            <p><strong>💡 Explanation:</strong> XOR outputs 1 only when the inputs differ. Both inputs are 1, so they are the same and the output is 0. OR would give 1 here, which is the trap.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q4')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q5.</strong> If A = 0, B = 1 and C = 1, what is the value of (A OR B) AND (NOT C)? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q5" value="a"> (a) 1</label>
+                            <label><input type="radio" name="q5" value="b"> (b) Cannot be determined</label>
+                            <label><input type="radio" name="q5" value="c"> (c) Equal to B</label>
+                            <label><input type="radio" name="q5" value="d"> (d) 0</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q5">
+                            <p><strong>✅ Answer:</strong> (d) 0</p>
+                            <p><strong>💡 Explanation:</strong> A OR B = 0 OR 1 = 1. NOT C = NOT 1 = 0. Then 1 AND 0 = 0.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q5')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q6.</strong> What is the output of a NOR gate when both inputs are 0? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q6" value="a"> (a) 0</label>
+                            <label><input type="radio" name="q6" value="b"> (b) Equal to the OR output</label>
+                            <label><input type="radio" name="q6" value="c"> (c) 1</label>
+                            <label><input type="radio" name="q6" value="d"> (d) Undefined</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q6">
+                            <p><strong>✅ Answer:</strong> (c) 1</p>
+                            <p><strong>💡 Explanation:</strong> NOR is OR followed by NOT. 0 OR 0 = 0, and NOT 0 = 1. NOR gives 1 only in this one row.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q6')">Show Answer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)" aria-expanded="true" aria-controls="section-7">
+                <span class="section-number">7️⃣</span>
+                <span class="section-title">Frequently Asked Questions</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-7">
+                <div class="content-box">
+                    <h3>What is the difference between XOR and OR?</h3>
+                    <p>They differ only when both inputs are 1. OR gives 1 if at least one input is 1, so it gives 1 for the inputs 1 and 1. XOR gives 1 only when exactly one input is 1, so it gives 0 when both are 1.</p>
+                    <h3>How do I remember which gate is which?</h3>
+                    <p>Learn three base gates: AND needs all ones, OR needs at least one, NOT flips. Every other gate is a variant: NAND and NOR are AND and OR followed by NOT, and XOR checks whether the inputs differ, with XNOR as its opposite.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="8">
+            <button class="section-header" onclick="toggleSection(8)" aria-expanded="true" aria-controls="section-8">
+                <span class="section-number">8️⃣</span>
+                <span class="section-title">Sources and Review</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-8">
+                <div class="content-box">
+                    <p>All problems and solutions on this page are original. No outside facts are relied on; every numeric answer is recomputed by software before publishing.</p>
+                    <div class="highlight-box">
+                        <p><strong>How this page was prepared.</strong> Drafted with AI assistance (Claude (Anthropic AI model)) from the sources listed above. 14 calculations on this page were recomputed by software and matched. Automated checks also covered structure, internal links and duplicate text. Software checks cannot confirm facts. Reviewed by praveenkumar on 2026-10-24 against the sources listed above.</p>
+                        <p>Found an error? <a href="../../contact.html">Report it</a> and we will correct the page.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="9">
+            <button class="section-header" onclick="toggleSection(9)" aria-expanded="true" aria-controls="section-9">
+                <span class="section-number">9️⃣</span>
+                <span class="section-title">Related Pages</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-9">
+                <div class="content-box">
+                    <ul class="bullet-list">
+                        <li><a href="../science-tech/computer-and-it-fundamentals.html">💻 Computer &amp; IT Fundamentals</a></li>
+                        <li><a href="../../repeated-questions/computer-awareness-cheat-code.html">Computer Awareness Cheat Code: 15 Must-Know Facts</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="page-navigation">
+            <a href="index.html" class="nav-btn">← Computer Awareness</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>Subject: Computer Awareness | Sources are listed on this page. <a href="../../contact.html">Report an error</a>.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>
