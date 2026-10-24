@@ -112,7 +112,8 @@
     "id": "2026-10-23-exam-calendar-dates",
     "date": "2026-10-23",
     "commits": [
-      "401c197"
+      "401c197",
+      "7cae31d"
     ],
     "pages_regex": "^/exam-calendar\\.html$",
     "change": "Added official UPSC 2027, SSC 2026-27 and IBPS 2026-27 calendar tables (linked sources); retitled to 'Exam Calendar 2026-27: UPSC 2027, SSC & IBPS Official Dates'.",
@@ -126,7 +127,7 @@
     "window_days": 28,
     "evaluate_after": "2026-11-27",
     "status": "running",
-    "confounders": "Content and title changed together (deliberately, as one intent fix). Exam-season demand varies by month; compare with the site-wide control.",
+    "confounders": "Content and title changed together (deliberately, as one intent fix). Exam-season demand varies by month; compare with the site-wide control. 2026-10-24 (7cae31d): added a State PSC table (UPPSC PCS Prelims 6 Dec 2026, MPPSC, BPSC) and dateModified; title/description unchanged. Body content grew mid-test, so a click gain is not attributable to the title alone.",
     "next_action": "Weekly interim; re-check calendars for revisions monthly; decide after 2026-11-27."
   },
   {
