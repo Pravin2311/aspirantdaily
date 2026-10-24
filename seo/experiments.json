@@ -201,10 +201,11 @@
     "id": "2026-10-24-blog-fact-cleanup",
     "date": "2026-10-24",
     "commits": [
-      "07205e6"
+      "07205e6",
+      "54433ff"
     ],
-    "pages_regex": "^/blog/(ssc-cgl-vs-chsl-which-to-prepare|upsc-vs-state-psc-which-is-easier|25-must-know-geography-facts-state-psc-exams)\\.html$",
-    "change": "Fact-checked three December 2025 comparison/fact posts: removed unsourced statistics (salaries, applicants, success rates, cut-offs, marks shares), corrected factual errors, refreshed meta descriptions. Titles and URLs unchanged.",
+    "pages_regex": "^/(blog/(ssc-cgl-vs-chsl-which-to-prepare|upsc-vs-state-psc-which-is-easier|25-must-know-geography-facts-state-psc-exams)|repeated-questions/(english|quant)-cheat-code)\\.html$",
+    "change": "Fact-checked three December 2025 comparison/fact posts: removed unsourced statistics (salaries, applicants, success rates, cut-offs, marks shares), corrected factual errors, refreshed meta descriptions. Titles and URLs unchanged. Added 54433ff: English and Quant cheat codes (unverifiable PYQ-analysis notes removed).",
     "hypothesis": "Accurate content with corrected snippets earns more impressions and clicks; the geography post (Discovered - not indexed) may get crawled and indexed after the update.",
     "metric": "clicks",
     "secondary_metrics": [
