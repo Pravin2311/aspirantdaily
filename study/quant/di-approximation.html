@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Approximation Tricks for DI: Percentages and Ratios Fast | AspirantDaily</title>
+    <meta name="description" content="Speed up DI with safe approximation: build percentages from 10% and 1%, use fraction-percent pairs and compare fractions by cross-multiplying. 7 examples, 6 MCQs.">
+    <meta name="keywords" content="approximation tricks for di, di calculation tricks, fraction to percentage table, compare fractions quickly">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.aspirantdaily.com/study/quant/di-approximation.html">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.aspirantdaily.com/study/quant/di-approximation.html">
+    <meta property="og:title" content="Approximation Tricks for DI: Percentages and Ratios Fast | AspirantDaily">
+    <meta property="og:description" content="Speed up DI with safe approximation: build percentages from 10% and 1%, use fraction-percent pairs and compare fractions by cross-multiplying. 7 examples, 6 MCQs.">
+    <meta property="og:image" content="https://www.aspirantdaily.com/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Approximation for Data Interpretation: Fast, Safe Estimates",
+  "description": "Speed up DI with safe approximation: build percentages from 10% and 1%, use fraction-percent pairs and compare fractions by cross-multiplying. 7 examples, 6 MCQs.",
+  "image": "https://www.aspirantdaily.com/og-image.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "url": "https://www.aspirantdaily.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.aspirantdaily.com/icons/icon-512.png"
+    }
+  },
+  "datePublished": "2026-10-24",
+  "dateModified": "2026-10-24",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.aspirantdaily.com/study/quant/di-approximation.html"
+  },
+  "articleSection": "Quantitative Aptitude",
+  "citation": []
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.aspirantdaily.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Study Notes",
+      "item": "https://www.aspirantdaily.com/study/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Quantitative Aptitude",
+      "item": "https://www.aspirantdaily.com/study/quant/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Approximation for Data Interpretation: Fast, Safe Estimates",
+      "item": "https://www.aspirantdaily.com/study/quant/di-approximation.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "When is it safe to approximate in a DI question?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When the gap between the options is larger than the error your rounding can create. Look at the options first: if they are 10 percent or more apart, round freely; if two are within one or two percent, keep more digits or calculate exactly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which fraction-to-percentage pairs are worth memorising?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The unit fractions from 1/2 to 1/12 and a few multiples: 1/3 is 33.33, 1/6 is 16.67, 1/7 is 14.29, 1/8 is 12.5, 1/9 is 11.11, 1/11 is 9.09 and 1/12 is 8.33 percent. They turn many divisions into a single look-up."
+      }
+    }
+  ]
+}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css?v=2">
+    <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-51XLJE4TVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-51XLJE4TVH');
+  </script>
+  <script>/* AdSense only on the production host (not localhost or preview deployments) */(function(){if(location.hostname!=="www.aspirantdaily.com")return;var a=document.createElement("script");a.async=true;a.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327";a.crossOrigin="anonymous";document.head.appendChild(a);})();</script>
+</head>
+<body class="study-page subject-quant">
+    <nav class="study-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Quantitative Aptitude</a>
+            <div class="nav-controls">
+                <button onclick="toggleAllSections()" class="btn-secondary">Expand/Collapse All</button>
+                <button onclick="window.print()" class="btn-primary">📄 Print/Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> / <a href="../index.html">Study Notes</a> / <a href="index.html">Quantitative Aptitude</a> / <span>Approximation for Data Interpretation: Fast, Safe Estimates</span>
+            </div>
+            <h1>Approximation for Data Interpretation: Fast, Safe Estimates</h1>
+            <p class="page-subtitle">10% and 1% blocks • Fraction–percentage table • Rounding both terms • Comparing fractions</p>
+            <div class="page-meta">
+                <span class="badge badge-secondary">Banking</span>
+                <span class="badge badge-secondary">SSC</span>
+                <span class="badge badge-secondary">📅 Last updated: 2026-10-24</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="study-section collapsible" data-section="1">
+            <button class="section-header" onclick="toggleSection(1)" aria-expanded="true" aria-controls="section-1">
+                <span class="section-number">1️⃣</span>
+                <span class="section-title">Why Approximate at All</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-1">
+                <div class="content-box">
+<p>DI sets in bank exams are built so that exact calculation of every question takes too long. The options, however, are usually far enough apart that a careful estimate is enough. The skill is to round in a way that keeps the error smaller than the gap between options.</p>
+<p>The rule that keeps approximation safe: <strong>read the options before you calculate</strong>. If they are widely spread, round both numbers to friendly values. If two options are close, keep more digits for the step that decides between them.</p>
+<p>A useful way to judge this is to think in terms of relative error. Rounding 4,812 to 4,800 changes it by about 0.25%, which is harmless when the options differ by 5% or more. Rounding 4,812 to 5,000 changes it by about 4%, which can push you onto the wrong option. As a rough guide, keep each rounding within about 1% of the original number unless the options are very far apart, and never round the same number twice in one calculation.</p>
+<p>Approximation also helps you check exact work. If you calculate 18% of 4,250 and get 7,650, a quick estimate of "a bit under one-fifth of 4,250, so about 800" tells you immediately that a decimal point has slipped.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="2">
+            <button class="section-header" onclick="toggleSection(2)" aria-expanded="true" aria-controls="section-2">
+                <span class="section-number">2️⃣</span>
+                <span class="section-title">Build Percentages from 10% and 1%</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-2">
+                <div class="content-box">
+<p>Any percentage can be assembled from easy blocks: 10% (move the decimal one place), 5% (half of 10%), 1% (move two places) and 50% or 25% (halve, or halve twice).</p>
+<div class="case-study">
+<h4>Worked example 1: 18% of 4,250</h4>
+<p>10% = 425, 5% = 212.5 and 3% = 3 × 42.5 = 127.5. Adding them: 425 + 212.5 + 127.5 = <strong>765</strong>. Alternatively, 20% (850) minus 2% (85) gives the same answer.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 2: a percentage close to a friendly one</h4>
+<p>24.8% of 1,603 is very close to one-quarter of 1,600, which is 400. The exact value is <strong>397.5</strong>, so the estimate is off by under 1%. That is safe unless two options lie within a few units of each other.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="3">
+            <button class="section-header" onclick="toggleSection(3)" aria-expanded="true" aria-controls="section-3">
+                <span class="section-number">3️⃣</span>
+                <span class="section-title">Fraction–Percentage Pairs</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-3">
+                <div class="content-box">
+<p>Many DI percentages turn out to be simple fractions in disguise. Knowing the common pairs lets you divide by recognising rather than calculating.</p>
+<div class="table-wrap"><table class="data-table">
+<thead><tr><th>Fraction</th><th>Percentage</th><th>Fraction</th><th>Percentage</th></tr></thead>
+<tbody>
+<tr><td>1/3</td><td>33.33%</td><td>1/8</td><td>12.5%</td></tr>
+<tr><td>1/6</td><td>16.67%</td><td>1/9</td><td>11.11%</td></tr>
+<tr><td>1/7</td><td>14.29%</td><td>1/11</td><td>9.09%</td></tr>
+<tr><td>3/7</td><td>42.86%</td><td>1/12</td><td>8.33%</td></tr>
+</tbody></table></div>
+<p>Each pair comes from a single division, for example 100 ÷ 7 = 14.29, so you can rebuild one you forget.</p>
+<div class="case-study">
+<h4>Worked example 3: spotting a fraction</h4>
+<p>What percentage is 2,856 of 6,664? Since 6,664 ÷ 7 = 952 and 952 × 3 = 2,856, the share is exactly 3/7, which is <strong>42.86%</strong>.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)" aria-expanded="true" aria-controls="section-4">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">Rounding Both Terms and Comparing Fractions</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
+                <div class="content-box">
+<p>For a division, round the numerator and denominator in the <strong>same direction</strong> where possible, so the errors partly cancel. Rounding one up and the other down doubles the error.</p>
+<div class="case-study">
+<h4>Worked example 4: a division</h4>
+<p>3,148 ÷ 789 is close to 3,150 ÷ 790, and 790 × 4 = 3,160, so the answer is just under 4. The exact value is <strong>3.99</strong>.</p>
+</div>
+<p>"Which ratio is the highest?" questions do not need decimals at all. To compare a/b with c/d, compare the cross-products a × d and c × b.</p>
+<div class="case-study">
+<h4>Worked example 5: comparing two fractions</h4>
+<p>Compare 47/63 with 52/71. Cross-products: 47 × 71 = 3,337 and 52 × 63 = 3,276. The difference is <strong>61</strong> in favour of the first, so 47/63 is larger.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 6: estimating growth</h4>
+<p>A value rose from 4,812 to 5,390, a change of 578. 10% of 4,812 is about 481, and 578 is a little more, about 1.2 times 481. The growth is <strong>12.01%</strong>, roughly 12%.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)" aria-expanded="true" aria-controls="section-5">
+                <span class="section-number">5️⃣</span>
+                <span class="section-title">Common Traps and Revision</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-5">
+                <div class="content-box">
+<ul class="warning-list">
+<li>✘ Approximating before looking at the options, then finding two options inside your error.</li>
+<li>✘ Rounding the numerator up and the denominator down, which stacks the errors.</li>
+<li>✘ Converting fractions to decimals just to compare them; cross-multiply instead.</li>
+<li>✘ Rounding the base of a percentage change more than the change itself.</li>
+</ul>
+<div class="table-wrap"><table class="data-table">
+<thead><tr><th>Task</th><th>Quick method</th></tr></thead>
+<tbody>
+<tr><td>x% of N</td><td>Build from 10%, 5% and 1% blocks</td></tr>
+<tr><td>Percentage near a fraction</td><td>Use the fraction (12.5% = 1/8)</td></tr>
+<tr><td>Division</td><td>Round both terms the same way; use a nearby multiple</td></tr>
+<tr><td>Compare a/b and c/d</td><td>Compare a × d with c × b</td></tr>
+<tr><td>Percentage change</td><td>Compare the change with 10% of the base</td></tr>
+</tbody></table></div>
+<p>Use these with <a href="bar-graph-di.html">bar graphs</a>, <a href="pie-chart-di.html">pie charts</a> and <a href="table-di.html">tables</a>. Bank prelims also test pure calculation in <a href="approximation-simplification-bank.html">approximation and simplification</a>; see <a href="square-roots-and-cube-roots.html">square and cube roots</a> and the <a href="../../repeated-questions/quant-cheat-code.html">Quant cheat code</a>.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)" aria-expanded="true" aria-controls="section-6">
+                <span class="section-number">6️⃣</span>
+                <span class="section-title">Practice Questions (6)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-6">
+                <div class="content-box">
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q1.</strong> What is 35% of 2,460? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q1" value="a"> (a) 846</label>
+                            <label><input type="radio" name="q1" value="b"> (b) 861</label>
+                            <label><input type="radio" name="q1" value="c"> (c) 874</label>
+                            <label><input type="radio" name="q1" value="d"> (d) 738</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q1">
+                            <p><strong>✅ Answer:</strong> (b) 861</p>
+                            <p><strong>💡 Explanation:</strong> Build it from blocks: 10% is 246, so 30% is 738, and 5% is 123. Then 738 + 123 = 861. The option 738 stops at 30%.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q1')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q2.</strong> The fraction 1/9 is closest to which percentage? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q2" value="a"> (a) 9%</label>
+                            <label><input type="radio" name="q2" value="b"> (b) 12.5%</label>
+                            <label><input type="radio" name="q2" value="c"> (c) 11.11%</label>
+                            <label><input type="radio" name="q2" value="d"> (d) 10%</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q2">
+                            <p><strong>✅ Answer:</strong> (c) 11.11%</p>
+                            <p><strong>💡 Explanation:</strong> 100 ÷ 9 = 11.11, so 1/9 = 11.11%. It is worth memorising alongside 1/8 = 12.5% and 1/7 ≈ 14.29%, because DI options often sit near these values.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q2')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q3.</strong> 4,987 ÷ 62 is approximately: <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q3" value="a"> (a) ≈ 70</label>
+                            <label><input type="radio" name="q3" value="b"> (b) ≈ 75</label>
+                            <label><input type="radio" name="q3" value="c"> (c) ≈ 85</label>
+                            <label><input type="radio" name="q3" value="d"> (d) ≈ 80</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q3">
+                            <p><strong>✅ Answer:</strong> (d) ≈ 80</p>
+                            <p><strong>💡 Explanation:</strong> Round to 4,960 ÷ 62, because 62 × 80 = 4,960. The extra 27 adds less than 1, so the answer is about 80. Rounding to 5,000 ÷ 60 gives 83, close but less accurate.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q3')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q4.</strong> What is 12.5% of 3,368? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q4" value="a"> (a) 421</label>
+                            <label><input type="radio" name="q4" value="b"> (b) 336.8</label>
+                            <label><input type="radio" name="q4" value="c"> (c) 404</label>
+                            <label><input type="radio" name="q4" value="d"> (d) 448</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q4">
+                            <p><strong>✅ Answer:</strong> (a) 421</p>
+                            <p><strong>💡 Explanation:</strong> 12.5% is 1/8, so divide by 8: 3,368 ÷ 8 = 421. Replacing a percentage with its fraction avoids a long multiplication.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q4')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q5.</strong> Which is larger, 31/43 or 38/53? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q5" value="a"> (a) 31/43</label>
+                            <label><input type="radio" name="q5" value="b"> (b) 38/53</label>
+                            <label><input type="radio" name="q5" value="c"> (c) They are equal</label>
+                            <label><input type="radio" name="q5" value="d"> (d) Cannot be compared without a calculator</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q5">
+                            <p><strong>✅ Answer:</strong> (a) 31/43</p>
+                            <p><strong>💡 Explanation:</strong> Cross-multiply: 31 × 53 = 1,643 and 38 × 43 = 1,634. The first product is larger, so 31/43 is the larger fraction, though only just.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q5')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q6.</strong> A value rose from 7,215 to 8,640. The percentage increase is approximately: <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q6" value="a"> (a) 15%</label>
+                            <label><input type="radio" name="q6" value="b"> (b) 17.5%</label>
+                            <label><input type="radio" name="q6" value="c"> (c) 19.75%</label>
+                            <label><input type="radio" name="q6" value="d"> (d) 22.5%</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q6">
+                            <p><strong>✅ Answer:</strong> (c) 19.75%</p>
+                            <p><strong>💡 Explanation:</strong> The rise is 1,425 on a base of 7,215. 10% of the base is about 722, so 20% is about 1,443; the rise is just under that, about 19.75%.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q6')">Show Answer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)" aria-expanded="true" aria-controls="section-7">
+                <span class="section-number">7️⃣</span>
+                <span class="section-title">Frequently Asked Questions</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-7">
+                <div class="content-box">
+                    <h3>When is it safe to approximate in a DI question?</h3>
+                    <p>When the gap between the options is larger than the error your rounding can create. Look at the options first: if they are 10 percent or more apart, round freely; if two are within one or two percent, keep more digits or calculate exactly.</p>
+                    <h3>Which fraction-to-percentage pairs are worth memorising?</h3>
+                    <p>The unit fractions from 1/2 to 1/12 and a few multiples: 1/3 is 33.33, 1/6 is 16.67, 1/7 is 14.29, 1/8 is 12.5, 1/9 is 11.11, 1/11 is 9.09 and 1/12 is 8.33 percent. They turn many divisions into a single look-up.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="8">
+            <button class="section-header" onclick="toggleSection(8)" aria-expanded="true" aria-controls="section-8">
+                <span class="section-number">8️⃣</span>
+                <span class="section-title">Sources and Review</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-8">
+                <div class="content-box">
+                    <p>All problems and solutions on this page are original. No outside facts are relied on; every numeric answer is recomputed by software before publishing.</p>
+                    <div class="highlight-box">
+                        <p><strong>How this page was prepared.</strong> Drafted with AI assistance (Claude (Anthropic AI model)) from the sources listed above. 13 calculations on this page were recomputed by software and matched. Automated checks also covered structure, internal links and duplicate text. Software checks cannot confirm facts. Reviewed by praveenkumar on 2026-10-24 against the sources listed above.</p>
+                        <p>Found an error? <a href="../../contact.html">Report it</a> and we will correct the page.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="9">
+            <button class="section-header" onclick="toggleSection(9)" aria-expanded="true" aria-controls="section-9">
+                <span class="section-number">9️⃣</span>
+                <span class="section-title">Related Pages</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-9">
+                <div class="content-box">
+                    <ul class="bullet-list">
+                        <li><a href="../../repeated-questions/quant-cheat-code.html">Quant Cheat Code: 20 Must-Know Shortcuts &amp; Formulas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="page-navigation">
+            <a href="index.html" class="nav-btn">← Quantitative Aptitude</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>Subject: Quantitative Aptitude | Sources are listed on this page. <a href="../../contact.html">Report an error</a>.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>
