@@ -218,5 +218,27 @@
     "status": "running",
     "confounders": "Meta descriptions changed with content. Pages had little or no impressions before; the geography post was not indexed. Study-notes updates shipped the same days. a94f873 (same day) made wording-only edits to 3 other blog posts and the share descriptions of 10 cheat codes; not tracked separately.",
     "next_action": "Weekly interim; decide after 2026-11-21. Check indexing status of the geography post in Search Console."
+  },
+  {
+    "id": "2026-10-24-about-and-privacy",
+    "date": "2026-10-24",
+    "commits": [
+      "0f096cb"
+    ],
+    "pages_regex": "^/(about|privacy-policy|terms)\\.html$",
+    "change": "Added an About page (sources, editorial checks, no affiliation, ads, corrections) linked from home/contact/404 footers; privacy policy now discloses Google and third-party advertising cookies with opt-out links (it previously denied using them).",
+    "hypothesis": "Trust pages support site-wide quality signals and AdSense compliance; no direct traffic effect expected on these URLs. Track as a site-wide confounder.",
+    "metric": "impressions",
+    "secondary_metrics": [
+      "ctr",
+      "position",
+      "impressions"
+    ],
+    "window_days": 28,
+    "evaluate_after": "2026-11-21",
+    "status": "running",
+    "confounders": "Site-wide trust change; overlaps every running experiment. Home page footer gained an About link during the home-title test.",
+    "next_action": "Note as a confounder in all evaluations after 2026-10-24; no decision needed.",
+    "holds_back": false
   }
 ]
