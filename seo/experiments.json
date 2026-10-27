@@ -282,5 +282,27 @@
     "status": "running",
     "confounders": "Only 24 of the 136 baseline impressions had a visible query (the rest anonymised), so query-level intent rests on a small sample. Impressions began only in this window, so demand may still be ramping up. Site-wide AdSense host guard and About page changes overlap.",
     "next_action": "Weekly interim; decide after 2026-11-27."
+  },
+  {
+    "id": "2026-10-27-headers-and-hub-redirects",
+    "date": "2026-10-27",
+    "commits": [
+      "3a12949"
+    ],
+    "pages_regex": ".*",
+    "change": "Site-wide security headers (nosniff, Referrer-Policy strict-origin-when-cross-origin, X-Frame-Options SAMEORIGIN); hub folder URLs without index.html (/study/quant, /study/quant/, /blog/ ...) now 308 to their canonical /x/index.html.",
+    "hypothesis": "Hygiene change from the 2026-10-27 audit; no direct traffic effect expected. Redirects consolidate any hub signals onto the canonical URL.",
+    "metric": "impressions",
+    "secondary_metrics": [
+      "ctr",
+      "position",
+      "impressions"
+    ],
+    "window_days": 28,
+    "evaluate_after": "2026-11-27",
+    "status": "running",
+    "confounders": "Site-wide technical change; overlaps every running experiment. Watch hub pages for any impression shift between /x/ and /x/index.html.",
+    "next_action": "Note as a confounder in evaluations after 2026-10-27; no decision needed.",
+    "holds_back": false
   }
 ]
