@@ -1,8 +1,17 @@
 {
   "redirects": [
-    { "source": "/index.html", "destination": "/", "permanent": true }
+    { "source": "/index.html", "destination": "/", "permanent": true },
+    { "source": "/:hub(blog|repeated-questions|study)", "destination": "/:hub/index.html", "permanent": true },
+    { "source": "/:hub(blog|repeated-questions|study)/", "destination": "/:hub/index.html", "permanent": true },
+    { "source": "/study/:section([a-z-]+)", "destination": "/study/:section/index.html", "permanent": true },
+    { "source": "/study/:section([a-z-]+)/", "destination": "/study/:section/index.html", "permanent": true }
   ],
   "headers": [
+    { "source": "/(.*)", "headers": [
+      { "key": "X-Content-Type-Options", "value": "nosniff" },
+      { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+      { "key": "X-Frame-Options", "value": "SAMEORIGIN" }
+    ] },
     { "source": "/content/:path*", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow" }] },
     { "source": "/scripts/:path*", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow" }] },
     { "source": "/tests/:path*", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow" }] }

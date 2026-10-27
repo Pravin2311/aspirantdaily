@@ -38,6 +38,31 @@ class SiteTests(unittest.TestCase):
         cfg = json.loads(read("vercel.json"))
         self.assertIn({"source": "/index.html", "destination": "/", "permanent": True}, cfg["redirects"])
 
+    def test_hub_folders_redirect_to_their_canonical_index(self):
+        # /study/quant and /study/quant/ must 308 to /study/quant/index.html (the canonical and sitemap URL);
+        # served directly, the no-slash form resolves relative links one folder too high.
+        cfg = json.loads(read("vercel.json"))
+        rules = [(re.compile("^" + re.sub(r":(\w+)\(([^)]*)\)", r"(?P<\1>\2)", r["source"]) + "$"), r["destination"])
+                 for r in cfg["redirects"]]
+        hubs = [os.path.dirname(p).replace(os.sep, "/") for p in glob.glob(os.path.join(ROOT, "**", "index.html"), recursive=True)]
+        hubs = [os.path.relpath(h, ROOT).replace(os.sep, "/") for h in hubs]
+        hubs = [h for h in hubs if h != "." and not h.startswith(("content", "node_modules", "pdfs", "icons"))]
+        self.assertIn("study/quant", hubs)
+        for hub in hubs:
+            for url in (f"/{hub}", f"/{hub}/"):
+                dest = next((re.sub(r":(\w+)", lambda m: mt.group(m.group(1)), d) for rx, d in rules
+                             for mt in [rx.match(url)] if mt), None)
+                self.assertEqual(dest, f"/{hub}/index.html", url)
+                self.assertTrue(os.path.exists(os.path.join(ROOT, dest.lstrip("/"))), dest)
+
+    def test_security_headers_on_every_path(self):
+        cfg = json.loads(read("vercel.json"))
+        everything = next(h["headers"] for h in cfg["headers"] if h["source"] == "/(.*)")
+        keys = {h["key"]: h["value"] for h in everything}
+        self.assertEqual(keys.get("X-Content-Type-Options"), "nosniff")
+        self.assertIn("Referrer-Policy", keys)
+        self.assertEqual(keys.get("X-Frame-Options"), "SAMEORIGIN")
+
     def test_robots_points_to_www_sitemap(self):
         robots = read("robots.txt")
         self.assertIn(f"Sitemap: {HOST}/sitemap.xml", robots)
