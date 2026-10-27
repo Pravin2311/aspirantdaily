@@ -149,7 +149,17 @@
     "evaluate_after": "2026-11-20",
     "status": "running",
     "confounders": "Separate from 2026-10-23-ca-fact-corrections (its baseline was already taken). Titles changed on two pages along with content. Very small impression counts.",
-    "next_action": "Weekly interim; decide after 2026-11-20."
+    "next_action": "Weekly interim; decide after 2026-11-20.",
+    "baseline": {
+      "window": [
+        "2026-09-25",
+        "2026-10-22"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0.0,
+      "position": 16.0
+    }
   },
   {
     "id": "2026-10-23-ca-fact-corrections-3",
@@ -171,7 +181,17 @@
     "evaluate_after": "2026-11-20",
     "status": "running",
     "confounders": "Descriptions and one title (deepfake) changed along with content. The start-up, UCC and budget pages are in the same commit as this entry. Very small impression counts per page.",
-    "next_action": "Weekly interim; decide after 2026-11-20."
+    "next_action": "Weekly interim; decide after 2026-11-20.",
+    "baseline": {
+      "window": [
+        "2026-09-25",
+        "2026-10-22"
+      ],
+      "clicks": 0,
+      "impressions": 26,
+      "ctr": 0.0,
+      "position": 13.115384615384615
+    }
   },
   {
     "id": "2026-10-23-study-notes-2026-updates",

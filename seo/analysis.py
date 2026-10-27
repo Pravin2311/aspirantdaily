@@ -573,9 +573,15 @@ def rank_opportunities(r, cfg, running=()):
 
 # ---------------------------------------------------------------- experiments
 
+def gsc_page_regex(regex):
+    """Experiment regexes match URL paths ("^/exam-calendar\\.html$"), but Search Console's page
+    dimension is the full URL, so a path anchor must be moved past the scheme and host."""
+    return "^https?://[^/]+" + regex[1:] if regex.startswith("^/") else regex
+
+
 def window_daily(gsc, site, regex, start, end):
     rows = gsc.query(site, start, end, ["date"],
-                     filters=[{"dimension": "page", "operator": "includingRegex", "expression": regex}])
+                     filters=[{"dimension": "page", "operator": "includingRegex", "expression": gsc_page_regex(regex)}])
     return rows
 
 
