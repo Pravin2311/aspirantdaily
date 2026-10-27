@@ -6,7 +6,7 @@ It then saves a dated snapshot, evaluates the experiments in `experiments.json`,
 
 | Path | In git? | What |
 |---|---|---|
-| `gapi.py`, `bing.py`, `weekly.py`, `analysis.py`, `config.json`, `requirements.txt`, `run_weekly.cmd` | yes | code and settings (no secrets) |
+| `gapi.py`, `bing.py`, `weekly.py`, `analysis.py`, `inspect_all.py`, `config.json`, `requirements.txt`, `run_weekly.cmd` | yes | code and settings (no secrets) |
 | `experiments.json` | yes | change log: change, commits, hypothesis, baseline (recorded automatically), evaluations |
 | `data/`, `reports/`, `logs/` | **no** | raw snapshots and reports (they contain revenue; the repo is public) |
 | `%APPDATA%\teachings-seo\` | **no** (outside the repo) | OAuth client file and token, shared with Teachings.ai |
@@ -21,6 +21,18 @@ It then saves a dated snapshot, evaluates the experiments in `experiments.json`,
 ```
 
 In Git Bash: `/c/Users/whynew/Documents/GitHub/Teachings.ai/seo/.venv/Scripts/python.exe seo/weekly.py`.
+
+## Full index check (monthly)
+
+The weekly run inspects about 30 URLs. `inspect_all.py` inspects every sitemap URL (read-only, about 210 of the
+2,000-a-day quota) and prints indexed/total by section plus URLs whose Google canonical is on the apex host:
+
+```
+"%USERPROFILE%\Documents\GitHub\Teachings.ai\seo\.venv\Scripts\python.exe" seo\inspect_all.py
+python seo\inspect_all.py --summary      # re-print the latest saved run; no API call
+```
+
+Results go to `data/<date>/inspections-all.json` and `-summary.json`. A run stopped part-way resumes the same day.
 
 ## Bing
 
