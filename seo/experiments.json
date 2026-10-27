@@ -325,5 +325,26 @@
     "status": "running",
     "confounders": "The page had no Search impressions and was 'Discovered - currently not indexed' on 2026-10-23, so any change may simply be Google crawling it for the first time; a manual indexing request would overlap too. Site-wide headers/hub redirects (2026-10-27) overlap.",
     "next_action": "Check coverage state with seo/inspect_all.py; decide after 2026-11-25."
+  },
+  {
+    "id": "2026-10-28-rrb-syllabus-2026",
+    "date": "2026-10-28",
+    "commits": [
+      "c69f000"
+    ],
+    "pages_regex": "^/blog/rrb-syllabus-2025\\.html$",
+    "change": "Title 'RRB Syllabus 2025 (NTPC, Group D, JE)' -> 'RRB Syllabus 2026 (NTPC, Group D, JE)'; description, og tags, JSON-LD, H1 and H2s relabelled. Body rebuilt on CEN 06/2025 (NTPC Graduate), CEN 09/2025 (Level 1) and CEN 04/2026 (JE) with links to the notices: added the JE CBT 1/CBT 2 pattern, NTPC skill-test and merit rules, a minimum-marks FAQ (FAQPage JSON-LD updated); topic lists aligned to the official wording; unsourced lines removed. Blog index card relabelled. URL unchanged.",
+    "hypothesis": "A 2025 label on a page about the 2026 exams, with thin JE coverage and no cited source, is a weak freshness and quality signal. A sourced, complete page labelled 2026 is more likely to move from 'Discovered - currently not indexed' to indexed and earn impressions for 2026 RRB syllabus and pattern queries.",
+    "metric": "impressions",
+    "secondary_metrics": [
+      "clicks",
+      "position",
+      "coverage state"
+    ],
+    "window_days": 28,
+    "evaluate_after": "2026-11-25",
+    "status": "running",
+    "confounders": "The page had no Search impressions and was 'Discovered - currently not indexed' on 2026-10-23, so any change may simply be Google crawling it for the first time; a manual indexing request would overlap too. Title and body changed together, so a gain cannot be credited to either alone. Site-wide headers/hub redirects (2026-10-27) overlap.",
+    "next_action": "Check coverage state with seo/inspect_all.py; decide after 2026-11-25."
   }
 ]
