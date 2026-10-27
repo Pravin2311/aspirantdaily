@@ -304,5 +304,26 @@
     "confounders": "Site-wide technical change; overlaps every running experiment. Watch hub pages for any impression shift between /x/ and /x/index.html.",
     "next_action": "Note as a confounder in evaluations after 2026-10-27; no decision needed.",
     "holds_back": false
+  },
+  {
+    "id": "2026-10-28-bank-syllabus-2026",
+    "date": "2026-10-28",
+    "commits": [
+      "29cdb7c"
+    ],
+    "pages_regex": "^/blog/bank-exam-syllabus-2025\\.html$",
+    "change": "Title 'Bank Exam Syllabus 2025 (IBPS, SBI, RBI)' -> 'Bank Exam Syllabus 2026 (IBPS PO, Clerk, SBI, RBI)'; description, og tags, JSON-LD headline, H1 and two H2s relabelled 2026 to match the body, which already follows the 2026 IBPS notifications. Unsupported 'they dominate' tip reworded. Anchor text 'Bank Exam Syllabus 2025' -> '2026' on six linking pages and the blog index card. URL unchanged.",
+    "hypothesis": "A 2025 label on a page about the 2026 exams is a weak freshness signal for Google and for searchers. Matching the label to the content helps the page move from 'Discovered - currently not indexed' to indexed and earn impressions for 2026 bank syllabus queries.",
+    "metric": "impressions",
+    "secondary_metrics": [
+      "clicks",
+      "position",
+      "coverage state"
+    ],
+    "window_days": 28,
+    "evaluate_after": "2026-11-25",
+    "status": "running",
+    "confounders": "The page had no Search impressions and was 'Discovered - currently not indexed' on 2026-10-23, so any change may simply be Google crawling it for the first time; a manual indexing request would overlap too. Site-wide headers/hub redirects (2026-10-27) overlap.",
+    "next_action": "Check coverage state with seo/inspect_all.py; decide after 2026-11-25."
   }
 ]
