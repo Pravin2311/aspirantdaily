@@ -562,5 +562,27 @@
       "impressions": 0,
       "note": "new URLs"
     }
+  },
+  {
+    "id": "2026-10-28-breadcrumbs",
+    "date": "2026-10-28",
+    "commits": [
+      "ebac393"
+    ],
+    "pages_regex": "^/(about|contact|privacy-policy|terms)\\.html$|^/blog/(index|10-most-repeated-upsc-polity-questions-2020-2025|bank-exam-puzzles-5-types|current-affairs-dec-2025-summary|how-to-revise-current-affairs-daily-in-20-minutes|how-to-score-180-ssc-cgl-tier1|ibps-po-vs-sbi-po-salary-syllabus-career|important-days-and-dates-for-competitive-exams|top-15-banking-terms-ibps-sbi-exams|top-25-current-affairs-mcqs-december-2025|upsc-prelims-attempt-90-questions|upsc-prelims-syllabus-2025)\\.html$|^/repeated-questions/(index|banking-awareness-cheat-code|computer-awareness-cheat-code|economy-cheat-code|environment-cheat-code|geography-cheat-code|history-cheat-code|polity-cheat-code|science-tech-cheat-code|static-gk-cheat-code)\\.html$|^/study/([a-z-]+/)?index\\.html$",
+    "change": "BreadcrumbList JSON-LD (Home > section > page) added to 39 pages that lacked it: study hubs, blog/cheat-code indexes, unheld blog posts and cheat codes, about/contact/privacy/terms. No visible change. Pipeline hub_page now emits it too.",
+    "hypothesis": "Breadcrumb trails replace raw URLs in Google snippets and clarify site structure, nudging CTR on these pages up.",
+    "metric": "ctr",
+    "secondary_metrics": [
+      "clicks",
+      "impressions",
+      "position"
+    ],
+    "window_days": 28,
+    "evaluate_after": "2026-11-25",
+    "status": "running",
+    "holds_back": false,
+    "confounders": "Small expected effect. Same-day practice pages add links to several of these hubs, and study-series-nav adds crawl paths. Some blog posts had indexing requests on 2026-10-28.",
+    "next_action": "Check Search Console > Breadcrumbs enhancement report for errors after recrawl; decide after 2026-11-25. Add breadcrumbs to the 12 held pages after their verdicts."
   }
 ]
