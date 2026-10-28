@@ -54,6 +54,16 @@ def jsonld(obj):
             + "\n    </script>")
 
 
+def breadcrumb_ld(crumbs):
+    """BreadcrumbList JSON-LD for [(name, site-relative path)], home first."""
+    return jsonld({
+        "@context": "https://schema.org", "@type": "BreadcrumbList",
+        "itemListElement": [{"@type": "ListItem", "position": i, "name": name,
+                             "item": HOST if p == "index.html" else HOST + "/" + p}
+                            for i, (name, p) in enumerate(crumbs, 1)],
+    })
+
+
 def section(n, title, inner):
     num = NUMBERS[n - 1] if n <= len(NUMBERS) else f"{n}."
     return f"""        <section class="study-section collapsible" data-section="{n}">
@@ -136,12 +146,7 @@ def render(draft_text, plan_row, review=None, preview=False, date_published=None
         "datePublished": date_published, "dateModified": date_modified,
         "mainEntityOfPage": {"@type": "WebPage", "@id": url}, "articleSection": hub_name,
         "citation": [s["url"] for s in meta["sources"]],
-    }), jsonld({
-        "@context": "https://schema.org", "@type": "BreadcrumbList",
-        "itemListElement": [{"@type": "ListItem", "position": i, "name": name,
-                             "item": HOST if p == "index.html" else HOST + "/" + p}
-                            for i, (name, p) in enumerate(crumbs, 1)],
-    })]
+    }), breadcrumb_ld(crumbs)]
     faq = meta.get("faq", [])
     if faq:
         ld.append(jsonld({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
@@ -286,6 +291,7 @@ def hub_page(folder, title, intro, pages, parent_label="Study Notes", preview=Fa
     desc = f"{intro} {len(pages)} page{'s' if len(pages) != 1 else ''}, each with sources and worked examples or practice questions."
     ld = jsonld({"@context": "https://schema.org", "@type": "CollectionPage", "name": title, "description": desc,
                  "url": url, "hasPart": [{"@type": "Article", "name": h, "url": HOST + "/" + p} for p, h, _ in pages]})
+    ld += "\n" + breadcrumb_ld([("Home", "index.html"), (parent_label, up), (title, path)])
     robots = "noindex, nofollow" if preview else "index, follow"
     banner = ('    <div class="highlight-box" style="margin:0;border-radius:0"><strong>DRAFT PREVIEW</strong> — this hub is '
               'created only when its first page is published.</div>\n') if preview else ""
