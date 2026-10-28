@@ -233,7 +233,7 @@ def subject_page(subject, qs, updated):
     slug, data_file, short, h1, intro, related = subject
     n = len(qs)
     url = f"{HOST}/{OUT}/{slug}.html"
-    title = f"{h1} ({n} Questions) | AspirantDaily"
+    title = f"{h1} | AspirantDaily"
     desc = (f"{n} free {short} practice MCQs for SSC, Bank, RRB and PSC exams, each with the answer and a short "
             f"explanation. English and Hindi, no login.")
     quiz = {"@context": "https://schema.org", "@type": "Quiz", "name": h1, "about": short,
@@ -312,7 +312,7 @@ def subject_page(subject, qs, updated):
 def index_page(counts):
     url = f"{HOST}/{OUT}/index.html"
     total = sum(counts.values())
-    title = "Free Practice MCQs with Answers: SSC, Bank, RRB | AspirantDaily"
+    title = "Practice MCQs with Answers: SSC, Bank, RRB | AspirantDaily"
     desc = (f"{total} free practice MCQs with answers and explanations in {len(SUBJECTS)} subjects: quant, reasoning, "
             "English, GK, science, geography, economy and computers. English and Hindi.")
     collection = {"@context": "https://schema.org", "@type": "CollectionPage", "name": "Practice MCQs with Answers",

@@ -551,7 +551,7 @@
     "evaluate_after": "2026-11-25",
     "status": "running",
     "holds_back": false,
-    "confounders": "New pages, so there is no before window; judge on absolute impressions/clicks and indexing. Same-day study-series-nav (59c8eba) also adds crawl paths. Pages may compete with the cheat-code pages for some MCQ queries; check for cannibalisation.",
+    "confounders": "New pages, so there is no before window; judge on absolute impressions/clicks and indexing. Same-day study-series-nav (59c8eba) also adds crawl paths. Pages may compete with the cheat-code pages for some MCQ queries; check for cannibalisation. Titles shortened on day 0 (2026-10-28) to fit Google's ~60-character display; question count moved out of the title.",
     "next_action": "After deploy: IndexNow and request indexing for practice/index.html and 2-3 subject pages; weekly interim; decide after 2026-11-25.",
     "baseline": {
       "window": [
