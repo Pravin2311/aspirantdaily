@@ -128,7 +128,10 @@ def render(draft_text, plan_row, review=None, preview=False, date_published=None
     hub = folder + "/index.html"
     hub_name = HUB_NAMES.get(folder, folder.split("/")[-1].title())
     scripts = rel(path, "study/scripts.js")
+    # Google shows about 60 characters of a title; drop the brand rather than truncate the topic.
     full_title = f"{meta['title']} | AspirantDaily"
+    if len(full_title) > 60:
+        full_title = meta["title"]
     desc = meta["description"]
     date_published = date_published or meta.get("date", "")
     date_modified = date_modified or date_published
@@ -310,6 +313,7 @@ def hub_page(folder, title, intro, pages, parent_label="Study Notes", preview=Fa
     <meta property="og:title" content="{esc(title)} Notes and Practice | AspirantDaily">
     <meta property="og:description" content="{esc(desc)}">
     <meta property="og:image" content="{HOST}/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
 {ld}
 {HEAD_TAGS.format(styles=STYLES)}
 </head>
