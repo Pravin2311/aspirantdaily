@@ -346,5 +346,26 @@
     "status": "running",
     "confounders": "The page had no Search impressions and was 'Discovered - currently not indexed' on 2026-10-23, so any change may simply be Google crawling it for the first time; a manual indexing request would overlap too. Title and body changed together, so a gain cannot be credited to either alone. Site-wide headers/hub redirects (2026-10-27) overlap.",
     "next_action": "Check coverage state with seo/inspect_all.py; decide after 2026-11-25."
+  },
+  {
+    "id": "2026-10-28-psc-syllabus-2026",
+    "date": "2026-10-28",
+    "commits": [
+      "b315fac"
+    ],
+    "pages_regex": "^/blog/psc-syllabus-2025\\.html$",
+    "change": "Title 'PSC Syllabus 2025 (UPPSC, MPPSC, TNPSC)' -> 'State PSC Syllabus 2026 (MPPSC, BPSC, TNPSC Group 1)'; description, og tags, JSON-LD, H1 and H2s updated. Body rebuilt on the MPPSC SSE 2026 exam plan, BPSC Integrated 72nd CCE advertisement and TNPSC Group I scheme/syllabus/instructions (linked): prelims comparison with marking rules and minimum marks, TNPSC unit-wise question counts, BPSC topic list, BPSC and TNPSC Mains papers, FAQ (FAQPage JSON-LD updated). UPPSC figures removed (2026 notice not readable on the official site). Blog index card and geography cheat-code anchor relabelled. URL unchanged.",
+    "hypothesis": "A 2025 label, unsourced figures and a title promising UPPSC/TNPSC detail the body lacked are weak freshness and quality signals. A sourced page labelled 2026 is more likely to move from 'Discovered - currently not indexed' to indexed and earn impressions for MPPSC, BPSC and TNPSC Group 1 syllabus and pattern queries.",
+    "metric": "impressions",
+    "secondary_metrics": [
+      "clicks",
+      "position",
+      "coverage state"
+    ],
+    "window_days": 28,
+    "evaluate_after": "2026-11-25",
+    "status": "running",
+    "confounders": "The page had no Search impressions and was 'Discovered - currently not indexed' on 2026-10-23, so any change may simply be Google crawling it for the first time; a manual indexing request would overlap too. Title, target commissions (UPPSC dropped, BPSC added) and body changed together. Site-wide headers/hub redirects (2026-10-27) overlap.",
+    "next_action": "Check coverage state with seo/inspect_all.py; decide after 2026-11-25. Add UPPSC once its PCS notice can be read on the official site."
   }
 ]
