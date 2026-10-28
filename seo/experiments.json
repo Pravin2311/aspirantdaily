@@ -617,5 +617,28 @@
       "position": 11.496402877697841,
       "pages_with_impressions": 50
     }
+  },
+  {
+    "id": "2026-10-29-gs-notes-keep-practising",
+    "date": "2026-10-29",
+    "commits": [
+      "3841679"
+    ],
+    "pages_regex": "^/(practice/economics-mcqs\\.html|practice/general-science-mcqs\\.html|practice/geography-mcqs\\.html|study/economy/planning-reforms-and-agriculture\\.html|study/economy/taxation-and-gst\\.html|study/environment/disaster-management-in-india\\.html|study/environment/ecology-and-ecosystem-basics\\.html|study/environment/environmental-conventions-and-organisations\\.html|study/environment/pollution-and-environmental-laws\\.html|study/environment/wildlife-and-forest-laws-of-india\\.html|study/geography/agriculture-minerals-industries-and-transport\\.html|study/geography/atmosphere-and-oceans\\.html|study/geography/climate-and-monsoon-of-india\\.html|study/geography/geomorphology-earth-interior-and-landforms\\.html|study/geography/physiography-of-india\\.html|study/geography/rivers-and-drainage-of-india\\.html|study/geography/soils-vegetation-and-protected-areas\\.html|study/history/buddhism-jainism-mauryas-guptas\\.html|study/history/delhi-sultanate-and-mughals\\.html|study/history/indian-architecture-and-sculpture\\.html|study/history/indian-dance-music-and-painting\\.html|study/history/indus-valley-and-vedic-age\\.html|study/history/modern-india-freedom-struggle\\.html|study/history/social-reform-and-british-administration\\.html|study/ir/india-foreign-policy-and-neighbours\\.html|study/ir/regional-and-global-groupings\\.html|study/polity/constitution-making-and-salient-features\\.html|study/polity/constitutional-and-statutory-bodies\\.html|study/polity/federalism-and-centre-state-relations\\.html|study/polity/fundamental-rights-dpsp-duties\\.html|study/polity/panchayati-raj-and-municipalities\\.html|study/polity/parliament-of-india\\.html|study/polity/union-and-state-executive\\.html|study/schemes/agriculture-and-rural-development-schemes\\.html|study/schemes/financial-inclusion-and-social-security-schemes\\.html|study/schemes/health-education-and-women-schemes\\.html|study/science-tech/cell-genetics-and-plant-biology\\.html|study/science-tech/chemistry-in-everyday-life\\.html|study/science-tech/computer-and-it-fundamentals\\.html|study/science-tech/human-body-and-health\\.html|study/science-tech/physics-in-everyday-life\\.html|study/science-tech/space-and-defence-technology\\.html)$",
+    "change": "'Keep practising' box before the prev/next nav on 39 unheld GS notes pages (polity, history, geography, economy, environment, IR, schemes, science-tech): subject cheat code (banking awareness for schemes, current affairs hub for IR) plus the subject practice page or the practice hub. Geography, economics and general science practice pages now list their subject's unheld notes under 'Revise the topics'. Sitemap lastmod filled for 20 pages (separate commit).",
+    "hypothesis": "GS notes had 2-3 inbound internal links each and never linked to the cheat codes (the site's best-CTR pages) or practice pages. Linking notes, cheat codes and practice both ways should help Google and Bing crawl and index them, and lift impressions for notes and cheat codes.",
+    "metric": "impressions",
+    "secondary_metrics": [
+      "clicks",
+      "indexed_pages",
+      "position"
+    ],
+    "baseline": "GSC 2026-09-30..2026-10-27 for these 42 pages: 2 clicks, 303 impressions, position 11.8, 31 pages with impressions.",
+    "window_days": 28,
+    "evaluate_after": "2026-11-26",
+    "status": "running",
+    "confounders": "Site is young and Bing only started reporting on 2026-10-23, so organic growth from age alone is likely. Cheat codes also gain inbound links (they are not held). Overlaps titles-meta-sweep and practice-mcq-pages. Index state from seo/inspect_all.py on 2026-10-29 is the indexing baseline.",
+    "next_action": "On 2026-11-26 compare impressions and index state; after the 2026-11-20..27 verdicts add the box to held notes too.",
+    "holds_back": false
   }
 ]
