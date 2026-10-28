@@ -83,9 +83,9 @@
     ],
     "window_days": 28,
     "evaluate_after": "2026-11-27",
-    "status": "running",
+    "status": "stopped",
     "confounders": "Google currently treats https://aspirantdaily.com/ (apex) as canonical for the home page; impressions may move between apex and www as it consolidates. Title only; nothing else changed on the page. 2026-10-28 (commit 628fb5b): class google-anno-skip added to the hero so AdSense ad intent links stay out of it (they had shifted the buttons). Lab check after deploy: the links are gone from the hero, but mobile Lighthouse CLS is unchanged at 0.211 because Auto ads now inserts a display unit inside the hero at ~6 s (throttled). No visible text or title change; page-experience only.",
-    "next_action": "Weekly interim; decide after 2026-11-27."
+    "next_action": "Stopped 2026-10-28 by choice: superseded by 2026-10-28-home-refresh (c7cbc8d), which changed the title again plus description, schema and visible cards. No verdict."
   },
   {
     "id": "2026-10-23-ssc-cgl-title",
@@ -367,5 +367,26 @@
     "status": "running",
     "confounders": "The page had no Search impressions and was 'Discovered - currently not indexed' on 2026-10-23, so any change may simply be Google crawling it for the first time; a manual indexing request would overlap too. Title, target commissions (UPPSC dropped, BPSC added) and body changed together. Site-wide headers/hub redirects (2026-10-27) overlap.",
     "next_action": "Check coverage state with seo/inspect_all.py; decide after 2026-11-25. Add UPPSC once its PCS notice can be read on the official site."
+  },
+  {
+    "id": "2026-10-28-home-refresh",
+    "date": "2026-10-28",
+    "commits": [
+      "c7cbc8d"
+    ],
+    "pages_regex": "^/$",
+    "change": "Home title 'Free Daily MCQs for Exam Aspirants: SSC, Bank, UPSC, RRB' (74 chars with brand) -> 'Free Daily MCQs: SSC, Bank, UPSC, RRB' (53). Description 87 -> 140 chars (daily 25-question set, English and Hindi); og:title/og:description now match; Twitter Card tags added; WebSite + Organization JSON-LD added. 'Latest' cards: Dec 2025 current affairs -> Important Days & Dates 2026; SSC CGL and UPSC Prelims cards relabelled 2026 (posts were already 2026).",
+    "hypothesis": "An untruncated title, a fuller snippet and no stale 2025 labels lift home CTR above the ~2.7% baseline and home clicks.",
+    "metric": "clicks",
+    "secondary_metrics": [
+      "ctr",
+      "position",
+      "impressions"
+    ],
+    "window_days": 28,
+    "evaluate_after": "2026-11-25",
+    "status": "running",
+    "confounders": "Replaces 2026-10-23-home-title after 5 days, so the before window mixes both titles. Google treats the apex as canonical for the home page; impressions may move between apex and www. Title, description, schema and cards changed together, so a result can't be pinned to one of them. Hero google-anno-skip (628fb5b, 2026-10-28) overlaps.",
+    "next_action": "Weekly interim; decide after 2026-11-25."
   }
 ]
