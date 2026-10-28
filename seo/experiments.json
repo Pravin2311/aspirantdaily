@@ -106,7 +106,17 @@
     "evaluate_after": "2026-11-27",
     "status": "running",
     "confounders": "Google's chosen canonical for this page is still the apex URL. Title only.",
-    "next_action": "Weekly interim; decide after 2026-11-27."
+    "next_action": "Weekly interim; decide after 2026-11-27.",
+    "baseline": {
+      "window": [
+        "2026-09-25",
+        "2026-10-22"
+      ],
+      "clicks": 0,
+      "impressions": 104,
+      "ctr": 0.0,
+      "position": 12.23076923076923
+    }
   },
   {
     "id": "2026-10-23-exam-calendar-dates",
@@ -128,7 +138,17 @@
     "evaluate_after": "2026-11-27",
     "status": "running",
     "confounders": "Content and title changed together (deliberately, as one intent fix). Exam-season demand varies by month; compare with the site-wide control. 2026-10-24 (7cae31d): added a State PSC table (UPPSC PCS Prelims 6 Dec 2026, MPPSC, BPSC) and dateModified; title/description unchanged. Body content grew mid-test, so a click gain is not attributable to the title alone.",
-    "next_action": "Weekly interim; re-check calendars for revisions monthly; decide after 2026-11-27."
+    "next_action": "Weekly interim; re-check calendars for revisions monthly; decide after 2026-11-27.",
+    "baseline": {
+      "window": [
+        "2026-09-25",
+        "2026-10-22"
+      ],
+      "clicks": 0,
+      "impressions": 98,
+      "ctr": 0.0,
+      "position": 8.36734693877551
+    }
   },
   {
     "id": "2026-10-23-ca-fact-corrections-2",
@@ -216,7 +236,17 @@
     "evaluate_after": "2026-11-20",
     "status": "running",
     "confounders": "Meta description of the RRB Group D page changed along with content. Most economy/polity pages had near-zero impressions before. Custom 404 page shipped the same day (1347712), site-wide but only affects missing URLs.",
-    "next_action": "Weekly interim; decide after 2026-11-20. Consider an RRB Group D title test only after this is evaluated."
+    "next_action": "Weekly interim; decide after 2026-11-20. Consider an RRB Group D title test only after this is evaluated.",
+    "baseline": {
+      "window": [
+        "2026-09-25",
+        "2026-10-22"
+      ],
+      "clicks": 2,
+      "impressions": 109,
+      "ctr": 0.01834862385321101,
+      "position": 13.889908256880734
+    }
   },
   {
     "id": "2026-10-24-blog-fact-cleanup",
@@ -238,7 +268,17 @@
     "evaluate_after": "2026-11-21",
     "status": "running",
     "confounders": "Meta descriptions changed with content. Pages had little or no impressions before; the geography post was not indexed. Study-notes updates shipped the same days. a94f873 (same day) made wording-only edits to 3 other blog posts and the share descriptions of 10 cheat codes; not tracked separately.",
-    "next_action": "Weekly interim; decide after 2026-11-21. Check indexing status of the geography post in Search Console."
+    "next_action": "Weekly interim; decide after 2026-11-21. Check indexing status of the geography post in Search Console.",
+    "baseline": {
+      "window": [
+        "2026-09-26",
+        "2026-10-23"
+      ],
+      "clicks": 6,
+      "impressions": 87,
+      "ctr": 0.06896551724137931,
+      "position": 5.494252873563219
+    }
   },
   {
     "id": "2026-10-24-about-and-privacy",
@@ -260,7 +300,17 @@
     "status": "running",
     "confounders": "Site-wide trust change; overlaps every running experiment. Home page footer gained an About link during the home-title test.",
     "next_action": "Note as a confounder in all evaluations after 2026-10-24; no decision needed.",
-    "holds_back": false
+    "holds_back": false,
+    "baseline": {
+      "window": [
+        "2026-09-26",
+        "2026-10-23"
+      ],
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0,
+      "position": null
+    }
   },
   {
     "id": "2026-10-27-south-indian-dynasties-title",
@@ -281,7 +331,17 @@
     "evaluate_after": "2026-11-27",
     "status": "running",
     "confounders": "Only 24 of the 136 baseline impressions had a visible query (the rest anonymised), so query-level intent rests on a small sample. Impressions began only in this window, so demand may still be ramping up. Site-wide AdSense host guard and About page changes overlap.",
-    "next_action": "Weekly interim; decide after 2026-11-27."
+    "next_action": "Weekly interim; decide after 2026-11-27.",
+    "baseline": {
+      "window": [
+        "2026-09-29",
+        "2026-10-26"
+      ],
+      "clicks": 1,
+      "impressions": 210,
+      "ctr": 0.004761904761904762,
+      "position": 7.404761904761905
+    }
   },
   {
     "id": "2026-10-27-headers-and-hub-redirects",
@@ -303,7 +363,17 @@
     "status": "running",
     "confounders": "Site-wide technical change; overlaps every running experiment. Watch hub pages for any impression shift between /x/ and /x/index.html.",
     "next_action": "Note as a confounder in evaluations after 2026-10-27; no decision needed.",
-    "holds_back": false
+    "holds_back": false,
+    "baseline": {
+      "window": [
+        "2026-09-29",
+        "2026-10-26"
+      ],
+      "clicks": 18,
+      "impressions": 1436,
+      "ctr": 0.012534818941504178,
+      "position": 11.970752089136491
+    }
   },
   {
     "id": "2026-10-28-bank-syllabus-2026",
@@ -324,7 +394,17 @@
     "evaluate_after": "2026-11-25",
     "status": "running",
     "confounders": "The page had no Search impressions and was 'Discovered - currently not indexed' on 2026-10-23, so any change may simply be Google crawling it for the first time; a manual indexing request would overlap too. Site-wide headers/hub redirects (2026-10-27) overlap.",
-    "next_action": "Check coverage state with seo/inspect_all.py; decide after 2026-11-25."
+    "next_action": "Check coverage state with seo/inspect_all.py; decide after 2026-11-25.",
+    "baseline": {
+      "window": [
+        "2026-09-30",
+        "2026-10-27"
+      ],
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0,
+      "position": null
+    }
   },
   {
     "id": "2026-10-28-rrb-syllabus-2026",
@@ -345,7 +425,17 @@
     "evaluate_after": "2026-11-25",
     "status": "running",
     "confounders": "The page had no Search impressions and was 'Discovered - currently not indexed' on 2026-10-23, so any change may simply be Google crawling it for the first time; a manual indexing request would overlap too. Title and body changed together, so a gain cannot be credited to either alone. Site-wide headers/hub redirects (2026-10-27) overlap.",
-    "next_action": "Check coverage state with seo/inspect_all.py; decide after 2026-11-25."
+    "next_action": "Check coverage state with seo/inspect_all.py; decide after 2026-11-25.",
+    "baseline": {
+      "window": [
+        "2026-09-30",
+        "2026-10-27"
+      ],
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0,
+      "position": null
+    }
   },
   {
     "id": "2026-10-28-psc-syllabus-2026",
@@ -366,7 +456,17 @@
     "evaluate_after": "2026-11-25",
     "status": "running",
     "confounders": "The page had no Search impressions and was 'Discovered - currently not indexed' on 2026-10-23, so any change may simply be Google crawling it for the first time; a manual indexing request would overlap too. Title, target commissions (UPPSC dropped, BPSC added) and body changed together. Site-wide headers/hub redirects (2026-10-27) overlap.",
-    "next_action": "Check coverage state with seo/inspect_all.py; decide after 2026-11-25. Add UPPSC once its PCS notice can be read on the official site."
+    "next_action": "Check coverage state with seo/inspect_all.py; decide after 2026-11-25. Add UPPSC once its PCS notice can be read on the official site.",
+    "baseline": {
+      "window": [
+        "2026-09-30",
+        "2026-10-27"
+      ],
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0,
+      "position": null
+    }
   },
   {
     "id": "2026-10-28-home-refresh",
@@ -387,6 +487,49 @@
     "evaluate_after": "2026-11-25",
     "status": "running",
     "confounders": "Replaces 2026-10-23-home-title after 5 days, so the before window mixes both titles. Google treats the apex as canonical for the home page; impressions may move between apex and www. Title, description, schema and cards changed together, so a result can't be pinned to one of them. Hero google-anno-skip (628fb5b, 2026-10-28) overlaps.",
-    "next_action": "Weekly interim; decide after 2026-11-25."
+    "next_action": "Weekly interim; decide after 2026-11-25.",
+    "baseline": {
+      "window": [
+        "2026-09-30",
+        "2026-10-27"
+      ],
+      "clicks": 7,
+      "impressions": 328,
+      "ctr": 0.021341463414634148,
+      "position": 11.46951219512195
+    }
+  },
+  {
+    "id": "2026-10-28-study-series-nav",
+    "date": "2026-10-28",
+    "commits": [
+      "59c8eba"
+    ],
+    "pages_regex": "^/study/(quant|reasoning|computer)/(?!index\\.html)[^/]+\\.html$",
+    "change": "74 pipeline pages (quant 48, reasoning 24, computer 2) only linked back to their hub at the foot of the page. They now get previous / hub / next links in hub order, like the older polity/history/economy pages already had. New `content_pipeline.py series` command, run automatically after every publish; only the navigation bar changes.",
+    "hypothesis": "Chained internal links give Googlebot a path through the whole series. More of these pages get crawled and indexed, and their impressions rise.",
+    "metric": "impressions",
+    "secondary_metrics": [
+      "clicks",
+      "position",
+      "indexed_pages"
+    ],
+    "window_days": 28,
+    "evaluate_after": "2026-11-25",
+    "status": "running",
+    "holds_back": false,
+    "confounders": "Most of these pages are young, so impressions would grow anyway; compare indexed share against the older study subjects. IndexNow and manual indexing requests on 2026-10-28 overlap. Only the 9 pages already getting impressions give a click baseline.",
+    "next_action": "Weekly interim; on 2026-11-25 compare the indexed count of these 74 (inspection) with today's, and impressions with the baseline.",
+    "baseline": {
+      "window": [
+        "2026-09-30",
+        "2026-10-27"
+      ],
+      "clicks": 2,
+      "impressions": 102,
+      "ctr": 0.0196078431372549,
+      "position": 8.42156862745098,
+      "pages_with_impressions": 9
+    }
   }
 ]
