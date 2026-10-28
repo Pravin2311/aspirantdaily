@@ -84,7 +84,7 @@
     "window_days": 28,
     "evaluate_after": "2026-11-27",
     "status": "running",
-    "confounders": "Google currently treats https://aspirantdaily.com/ (apex) as canonical for the home page; impressions may move between apex and www as it consolidates. Title only; nothing else changed on the page.",
+    "confounders": "Google currently treats https://aspirantdaily.com/ (apex) as canonical for the home page; impressions may move between apex and www as it consolidates. Title only; nothing else changed on the page. 2026-10-28 (commit 628fb5b): class google-anno-skip added to the hero so AdSense ad intent links stay out of it (they had shifted the buttons). Lab check after deploy: the links are gone from the hero, but mobile Lighthouse CLS is unchanged at 0.211 because Auto ads now inserts a display unit inside the hero at ~6 s (throttled). No visible text or title change; page-experience only.",
     "next_action": "Weekly interim; decide after 2026-11-27."
   },
   {
