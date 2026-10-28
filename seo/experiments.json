@@ -531,5 +531,36 @@
       "position": 8.42156862745098,
       "pages_with_impressions": 9
     }
+  },
+  {
+    "id": "2026-10-28-practice-mcq-pages",
+    "date": "2026-10-28",
+    "commits": [
+      "ca83ee8"
+    ],
+    "pages_regex": "^/practice/",
+    "change": "New indexable section practice/: a hub plus 8 subject pages (quant, reasoning, English, science, geography, economy, static GK, computer) with 491 question-bank MCQs, answers behind a toggle, explanations, English/Hindi switch and Quiz JSON-LD. Linked from study/index, blog/index, repeated-questions/index, 5 cheat codes; the geography/economy/science-tech study hubs' 'Practise MCQs' buttons now point here instead of /#practice. Also fixed one wrong quant answer (2x^2+3x-5 at x=3 is 22).",
+    "hypothesis": "Question-text and '<subject> MCQs with answers' searches, which the noindex quiz could never rank for, start reaching these pages, adding impressions and clicks outside the homepage.",
+    "metric": "impressions",
+    "secondary_metrics": [
+      "clicks",
+      "position",
+      "indexed_pages"
+    ],
+    "window_days": 28,
+    "evaluate_after": "2026-11-25",
+    "status": "running",
+    "holds_back": false,
+    "confounders": "New pages, so there is no before window; judge on absolute impressions/clicks and indexing. Same-day study-series-nav (59c8eba) also adds crawl paths. Pages may compete with the cheat-code pages for some MCQ queries; check for cannibalisation.",
+    "next_action": "After deploy: IndexNow and request indexing for practice/index.html and 2-3 subject pages; weekly interim; decide after 2026-11-25.",
+    "baseline": {
+      "window": [
+        "2026-09-30",
+        "2026-10-27"
+      ],
+      "clicks": 0,
+      "impressions": 0,
+      "note": "new URLs"
+    }
   }
 ]
