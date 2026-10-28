@@ -185,6 +185,26 @@ class PipelineTests(unittest.TestCase):
         self.assertIn("REFUSED", out)
         self.assertTrue(open(page, encoding="utf-8").read().endswith("<!-- manual edit -->"))
 
+    def test_series_links_neighbours_and_keeps_republish_quiet(self):
+        run("select", "--ids", GOOD_ID)
+        run("validate", "--batch", "batch-001")
+        run("review", "--id", GOOD_ID, "--status", "approved", "--reviewer", "Test Reviewer", "--with-fact-check")
+        self.assertEqual(run("publish", "--batch", "batch-001", "--no-site-checks")[0], 0)
+        page = os.path.join(self.tmp, "study", "quant", GOOD_ID + ".html")
+        state, topics = content_lib.load_state(), content_pipeline.topics_by_id()
+        with open(os.path.join(self.tmp, "study", "quant", "other.html"), "w", encoding="utf-8") as fh:
+            fh.write("<html><h1>Other Page</h1></html>")
+        nav = content_pipeline.series_nav(topics[GOOD_ID]["path"], None, "study/quant/other.html")
+        self.assertIn('href="other.html" class="nav-btn">Other Page →', nav)
+        # A one-page series keeps the hub-only bar, and republishing finds nothing to change.
+        self.assertEqual(content_pipeline.apply_series(state, topics, False), [])
+        self.assertIn("same", run("publish", "--batch", "batch-001", "--no-site-checks")[1])
+        # A bar edited by hand is left alone.
+        text = open(page, encoding="utf-8").read()
+        with open(page, "w", encoding="utf-8") as fh:
+            fh.write(text.replace('<div class="page-navigation">', '<div class="page-navigation"><button>x</button>', 1))
+        self.assertIn("REFUSED", content_pipeline.apply_series(state, topics, True)[0])
+
     def test_republish_accepts_page_from_crlf_draft(self):
         path = os.path.join(content_lib.DRAFTS_DIR, GOOD_ID + ".html")
         with open(path, encoding="utf-8") as fh:

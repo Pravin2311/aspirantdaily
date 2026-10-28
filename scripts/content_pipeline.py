@@ -32,11 +32,12 @@ from datetime import date
 import content_lib
 from content_lib import (BATCHES_DIR, CATEGORIES, NEW_HUBS, PREVIEW_DIR, ROOT, draft_path, file_hash,
                          hub_for, load_state, page_state, parents_for, read_topics, save_state, set_status, sha)
-from content_render import esc, hub_page, rel, render
+from content_render import HUB_NAMES, esc, hub_page, rel, render
 from content_validate import parse_draft, resolve_link, validate_draft
 
 PRIORITY_ORDER = {"P1": 0, "P2": 1, "P3": 2}
 BLOCK_START, BLOCK_END = "<!-- content-pipeline:start -->", "<!-- content-pipeline:end -->"
+NAV_RE = re.compile(r'<div class="page-navigation">.*?</div>', re.S)
 SKELETON = """<script type="application/json" id="draft-meta">
 {meta}
 </script>
@@ -630,6 +631,8 @@ def cmd_publish(args):
         ps["date_published"] = first
         if ps["status"] != "published":
             set_status(state, pid, "published", f"published by pipeline on {today}")
+    for line in apply_series(state, topics, False):
+        print(line)
     save_state(state)
     print(f"wrote {len(pending)} file(s)")
     if staged and not args.no_site_checks:
@@ -644,8 +647,88 @@ def cmd_publish(args):
 
 
 def parse_body(html):
-    """Page text minus the modified dates, to detect publishes that change nothing."""
-    return re.sub(r'"dateModified": "[^"]*"|Last updated: [^<]*', "", html)
+    """Page text minus the modified dates and the prev/next bar (rewritten by `series`),
+    to detect publishes that change nothing."""
+    return NAV_RE.sub("", re.sub(r'"dateModified": "[^"]*"|Last updated: [^<]*', "", html))
+
+
+def series_order(state, topics):
+    """Published pipeline pages per folder, in the order their hub lists them."""
+    by_folder = {}
+    for pid, ps in state["pages"].items():
+        if ps.get("status") == "published" and pid in topics:
+            by_folder.setdefault(topics[pid]["folder"], []).append(topics[pid]["path"])
+    out = {}
+    for folder, paths in by_folder.items():
+        hub = hub_for(folder)
+        listed = []
+        if os.path.exists(os.path.join(ROOT, hub)):
+            for href in re.findall(r'href="([^"]+)"', read(os.path.join(ROOT, hub))):
+                tgt = resolve_link(href, hub)
+                if tgt in paths and tgt not in listed:
+                    listed.append(tgt)
+        out[folder] = listed + sorted(set(paths) - set(listed))
+    return out
+
+
+def series_nav(path, prev, nxt):
+    """The prev / hub / next bar at the foot of a pipeline page."""
+    folder = os.path.dirname(path)
+    hub_name = HUB_NAMES.get(folder, folder.split("/")[-1].title())
+    hub_label = ("↑ " if prev and nxt else "← " if nxt else "") + esc(hub_name) + (" →" if prev and not nxt else "")
+    links = []
+    if prev:
+        links.append(f'<a href="{rel(path, prev)}" class="nav-btn">← {esc(title_of(prev))}</a>')
+    links.append(f'<a href="index.html" class="nav-btn">{hub_label}</a>')
+    if nxt:
+        links.append(f'<a href="{rel(path, nxt)}" class="nav-btn">{esc(title_of(nxt))} →</a>')
+    return '<div class="page-navigation">\n' + "\n".join("            " + a for a in links) + "\n        </div>"
+
+
+def apply_series(state, topics, dry):
+    """Point every published pipeline page at its neighbours in hub order. Only the
+    navigation bar changes, and only while it holds nothing but pipeline links. A page
+    changed since publishing keeps its old hash, so `publish` still refuses to overwrite it."""
+    log = []
+    pid_of = {t["path"]: pid for pid, t in topics.items()}
+    for _folder, paths in sorted(series_order(state, topics).items()):
+        for i, path in enumerate(paths):
+            full = os.path.join(ROOT, path)
+            ps = page_state(state, pid_of[path])
+            if not os.path.exists(full):
+                continue
+            text = read(full)
+            m = NAV_RE.search(text)
+            if not m or re.sub(r'\s*<a href="[a-z0-9-]+\.html" class="nav-btn">[^<]*</a>', "",
+                               m.group(0)).split() != ['<div', 'class="page-navigation">', '</div>']:
+                log.append(f"REFUSED  {path}: navigation bar missing or edited by hand")
+                continue
+            matched = file_hash(full) == ps.get("published_hash")
+            nl = "\r\n" if "\r\n" in text else "\n"
+            nav = series_nav(path, paths[i - 1] if i else None, paths[i + 1] if i + 1 < len(paths) else None)
+            new = NAV_RE.sub(lambda _m: nav.replace("\n", nl), text, count=1)
+            if new == text:
+                continue
+            if not dry:
+                write(full, new)
+                if matched:
+                    if state.get("managed_files", {}).get(path) == ps["published_hash"]:
+                        state["managed_files"][path] = sha(new)
+                    ps["published_hash"] = sha(new)
+            log.append(f"{'would link' if dry else 'linked'}   {path}")
+    return log
+
+
+def cmd_series(args):
+    state = load_state()
+    log = apply_series(state, topics_by_id(), args.dry_run)
+    for line in log:
+        print(line)
+    if not args.dry_run:
+        save_state(state)
+    done = sum(1 for line in log if not line.startswith("REFUSED"))
+    print(f"{done} page(s) {'would be ' if args.dry_run else ''}relinked")
+    return 1 if any(line.startswith("REFUSED") for line in log) else 0
 
 
 def update_block(state, path, inner, dry, pending=None):
@@ -717,6 +800,8 @@ def main(argv=None):
     r.add_argument("--note")
     r.add_argument("--with-fact-check", action="store_true")
     sub.add_parser("status")
+    s = sub.add_parser("series", help="refresh the prev/next bar on published pages")
+    s.add_argument("--dry-run", action="store_true")
     args = ap.parse_args(argv)
     return globals()["cmd_" + args.cmd](args)
 
