@@ -1,8 +1,8 @@
 {
   "redirects": [
     { "source": "/index.html", "destination": "/", "permanent": true },
-    { "source": "/:hub(blog|repeated-questions|study)", "destination": "/:hub/index.html", "permanent": true },
-    { "source": "/:hub(blog|repeated-questions|study)/", "destination": "/:hub/index.html", "permanent": true },
+    { "source": "/:hub(blog|practice|repeated-questions|study)", "destination": "/:hub/index.html", "permanent": true },
+    { "source": "/:hub(blog|practice|repeated-questions|study)/", "destination": "/:hub/index.html", "permanent": true },
     { "source": "/study/:section([a-z-]+)", "destination": "/study/:section/index.html", "permanent": true },
     { "source": "/study/:section([a-z-]+)/", "destination": "/study/:section/index.html", "permanent": true }
   ],

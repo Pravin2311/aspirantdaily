@@ -17,7 +17,7 @@ from seo_lib import HOST, canonical_of, html_pages, is_indexable, soup_for, url_
 
 KEY_ROUTES = [
     "index.html", "study/index.html", "blog/index.html", "repeated-questions/index.html", "exam-calendar.html",
-    "quiz.html", "quiz-selector.html", "contact.html", "privacy-policy.html", "terms.html",
+    "quiz.html", "quiz-selector.html", "practice/index.html", "contact.html", "privacy-policy.html", "terms.html",
     "blog/upsc-prelims-syllabus-2025.html", "blog/ssc-cgl-syllabus-2025.html",
     "blog/how-to-score-180-ssc-cgl-tier1.html", "study/polity/parliament-of-india.html",
 ]
@@ -92,6 +92,15 @@ class SiteTests(unittest.TestCase):
             for i, q in enumerate(questions):
                 for lang in q["options"]:
                     self.assertIn(q["answer"][lang], q["options"][lang], f"{os.path.basename(path)} #{i} ({lang})")
+
+    def test_practice_pages_match_question_bank(self):
+        # practice/*.html are generated from data/*.json; rerun scripts/build_practice.py after editing the data.
+        import build_practice
+        pages = build_practice.build()
+        self.assertGreater(len(pages), 1)
+        for rel, text in pages.items():
+            self.assertTrue(os.path.exists(os.path.join(ROOT, rel)), rel)
+            self.assertEqual(read(rel), text, f"{rel} is stale: run scripts/build_practice.py")
 
     def test_no_unsupported_trust_claims(self):
         pattern = re.compile(r"facts checked|fact-checked by|guaranteed (marks|selection)|all facts verified", re.I)
