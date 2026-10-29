@@ -80,7 +80,7 @@ def folder_for(category, subtopic):
 NEW_HUBS = {
     "study/quant": ("Quantitative Aptitude", "Methods, worked examples and practice for SSC, bank and railway Quant."),
     "study/reasoning": ("Reasoning", "Methods and practice for verbal, logical and non-verbal reasoning."),
-    "study/computer": ("Computer Awareness", "Hardware, software, networking and security for SSC and bank exams."),
+    "study/computer": ("Computer Awareness", "Memory, number systems, logic gates and computer networks for SSC and bank exams, explained from the NCERT Computer Science textbooks."),
     "study/english": ("English Language", "Grammar rules, vocabulary and comprehension methods for SSC and bank exams."),
     "study/gk": ("Static GK", "Verified static general knowledge lists with sources."),
     "exams": ("Exam Guides", "Syllabus, pattern and eligibility guides, each tied to its official notification."),
