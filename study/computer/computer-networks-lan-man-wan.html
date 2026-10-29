@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Networks: LAN, MAN, WAN and PAN Compared</title>
+    <meta name="description" content="PAN, LAN, MAN and WAN compared by range, speed and examples, with nodes, packets, Ethernet and why the Internet is the largest WAN. Table plus 6 MCQs.">
+    <meta name="keywords" content="types of computer network, lan man wan difference, personal area network, largest wan">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.aspirantdaily.com/study/computer/computer-networks-lan-man-wan.html">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.aspirantdaily.com/study/computer/computer-networks-lan-man-wan.html">
+    <meta property="og:title" content="Computer Networks: LAN, MAN, WAN and PAN Compared">
+    <meta property="og:description" content="PAN, LAN, MAN and WAN compared by range, speed and examples, with nodes, packets, Ethernet and why the Internet is the largest WAN. Table plus 6 MCQs.">
+    <meta property="og:image" content="https://www.aspirantdaily.com/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Types of Computer Network: PAN, LAN, MAN and WAN",
+  "description": "PAN, LAN, MAN and WAN compared by range, speed and examples, with nodes, packets, Ethernet and why the Internet is the largest WAN. Table plus 6 MCQs.",
+  "image": "https://www.aspirantdaily.com/og-image.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "url": "https://www.aspirantdaily.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.aspirantdaily.com/icons/icon-512.png"
+    }
+  },
+  "datePublished": "2026-10-29",
+  "dateModified": "2026-10-29",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.aspirantdaily.com/study/computer/computer-networks-lan-man-wan.html"
+  },
+  "articleSection": "Computer Awareness",
+  "citation": [
+    "https://ncert.nic.in/textbook/pdf/lecs110.pdf",
+    "https://ncert.nic.in/textbook/pdf/lecs111.pdf"
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.aspirantdaily.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Study Notes",
+      "item": "https://www.aspirantdaily.com/study/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Computer Awareness",
+      "item": "https://www.aspirantdaily.com/study/computer/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Types of Computer Network: PAN, LAN, MAN and WAN",
+      "item": "https://www.aspirantdaily.com/study/computer/computer-networks-lan-man-wan.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is Wi-Fi a LAN or a WAN?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wi-Fi is a wireless LAN. Its standard is IEEE 802.11, and a home or office Wi-Fi network covers a limited area like any LAN. When the router connects that LAN to the Internet, the traffic travels onward over WANs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is a bank's network a LAN, MAN or WAN?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Each branch usually has its own LAN, and the branches across the country are joined into a WAN. That is how you can reach your account from anywhere. The answer depends on which part of the network the question describes."
+      }
+    }
+  ]
+}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css?v=2">
+    <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-51XLJE4TVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-51XLJE4TVH');
+  </script>
+  <script>/* AdSense only on the production host (not localhost or preview deployments) */(function(){if(location.hostname!=="www.aspirantdaily.com")return;var a=document.createElement("script");a.async=true;a.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327";a.crossOrigin="anonymous";document.head.appendChild(a);})();</script>
+</head>
+<body class="study-page subject-computer">
+    <nav class="study-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Computer Awareness</a>
+            <div class="nav-controls">
+                <button onclick="toggleAllSections()" class="btn-secondary">Expand/Collapse All</button>
+                <button onclick="window.print()" class="btn-primary">📄 Print/Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> / <a href="../index.html">Study Notes</a> / <a href="index.html">Computer Awareness</a> / <span>Types of Computer Network: PAN, LAN, MAN and WAN</span>
+            </div>
+            <h1>Types of Computer Network: PAN, LAN, MAN and WAN</h1>
+            <p class="page-subtitle">What a network is • Nodes and packets • PAN • LAN and Ethernet • MAN • WAN and the Internet • Comparison table</p>
+            <div class="page-meta">
+                <span class="badge badge-secondary">SSC</span>
+                <span class="badge badge-secondary">Banking</span>
+                <span class="badge badge-secondary">Railway</span>
+                <span class="badge badge-secondary">📅 Last updated: 2026-10-29</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="study-section collapsible" data-section="1">
+            <button class="section-header" onclick="toggleSection(1)" aria-expanded="true" aria-controls="section-1">
+                <span class="section-number">1️⃣</span>
+                <span class="section-title">What Counts as a Computer Network</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-1">
+                <div class="content-box">
+<p>A <strong>computer network</strong> is two or more computers or computing devices connected so that they can share data and resources. A printer that several computers use, a shared folder on an office server, and a phone hotspot that your laptop joins are all examples. A small network might link a few machines in one room; the largest links billions of devices worldwide.</p>
+<p>Each device on a network that can create, receive, store or send data is a <strong>node</strong>, sometimes called a host. Nodes include servers, desktops, laptops and phones, as well as networking devices such as switches, routers and modems. Data does not travel as one large block: it is split into small chunks called <strong>packets</strong>, which are carried across the network and reassembled at the far end. Links can be wired, using cables, or wireless, using radio waves through the air.</p>
+<p>Networking began with <strong>ARPANET</strong>, a 1960s project of the US Department of Defence to connect research institutions. Its first message passed between the University of California, Los Angeles (UCLA) and the Stanford Research Institute (SRI). Independent networks joined over time, and the network of networks that grew from them is today's Internet.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="2">
+            <button class="section-header" onclick="toggleSection(2)" aria-expanded="true" aria-controls="section-2">
+                <span class="section-number">2️⃣</span>
+                <span class="section-title">Four Types by Area</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-2">
+                <div class="content-box">
+<p>Networks are grouped by the <strong>geographical area</strong> they cover and their <strong>data transfer rate</strong>. From smallest to largest, the four types are PAN, LAN, MAN and WAN. A useful rule: as the area grows, the number of connected devices grows, and the speed of the typical link falls.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="3">
+            <button class="section-header" onclick="toggleSection(3)" aria-expanded="true" aria-controls="section-3">
+                <span class="section-number">3️⃣</span>
+                <span class="section-title">PAN: Personal Area Network</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-3">
+                <div class="content-box">
+<p>A PAN links a few personal devices such as a phone, a laptop, a smartwatch or a printer, all within roughly <strong>10 metres</strong>. It can be wired or wireless. A phone connected to a laptop by a USB cable forms a wired PAN. Two phones talking over Bluetooth form a <strong>wireless PAN (WPAN)</strong>. A Bluetooth group of this kind is called a piconet.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)" aria-expanded="true" aria-controls="section-4">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">LAN: Local Area Network</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
+                <div class="content-box">
+<p>A LAN connects devices in a limited area: a room, a floor, an office building, a laboratory, or a school or university campus. It can be extended up to about <strong>1 km</strong>. Devices connect by Ethernet cables, fibre optics or Wi-Fi.</p>
+<p>LANs give high data transfer rates over short distances, usually from <strong>10 Mbps</strong> (classic Ethernet) to <strong>1000 Mbps</strong> (Gigabit Ethernet). Mbps means megabits per second. <strong>Ethernet</strong> is the set of rules that decides how computers and other devices connect through cables in a LAN.</p>
+<p>A LAN is comparatively secure, because only authorised users on the network can reach the shared computers and resources. Users can print on a shared printer and upload or download files and software to and from a local server.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)" aria-expanded="true" aria-controls="section-5">
+                <span class="section-number">5️⃣</span>
+                <span class="section-title">MAN: Metropolitan Area Network</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-5">
+                <div class="content-box">
+<p>A MAN is an extended form of LAN covering a city or town, often by joining several LANs. It can stretch to about <strong>30 to 40 km</strong>. Speeds are still in Mbps but are considerably lower than on a LAN. The standard examples are a <strong>cable TV network</strong> and cable-based broadband Internet services in a city.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)" aria-expanded="true" aria-controls="section-6">
+                <span class="section-number">6️⃣</span>
+                <span class="section-title">WAN: Wide Area Network</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-6">
+                <div class="content-box">
+<p>A WAN connects computers, LANs and MANs spread across different parts of a country, or across countries and continents. Large companies, banks, universities and government departments use WANs to connect offices in different locations. A WAN can be formed by joining one LAN to other LANs over wired or wireless media.</p>
+<p>The <strong>Internet is the largest WAN</strong>. It connects billions of computers and smartphones and millions of LANs across the continents.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)" aria-expanded="true" aria-controls="section-7">
+                <span class="section-number">7️⃣</span>
+                <span class="section-title">Comparison Table</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-7">
+                <div class="content-box">
+<div class="table-wrap"><table class="data-table">
+<thead><tr><th>Type</th><th>Typical area</th><th>Approximate range</th><th>Speed</th><th>Example</th></tr></thead>
+<tbody>
+<tr><td>PAN</td><td>Around one person</td><td>About 10 m</td><td>Low</td><td>Phone and earbuds over Bluetooth</td></tr>
+<tr><td>LAN</td><td>Room, building or campus</td><td>Up to about 1 km</td><td>High: 10–1000 Mbps</td><td>School computer lab, office Wi-Fi</td></tr>
+<tr><td>MAN</td><td>City or town</td><td>About 30–40 km</td><td>Lower than LAN</td><td>Cable TV network</td></tr>
+<tr><td>WAN</td><td>Country or world</td><td>Unlimited</td><td>Varies by link</td><td>The Internet, a bank's branch network</td></tr>
+</tbody></table></div>
+<p>The ranges are guide figures used in textbooks, not fixed limits. A question is really asking which scale fits the situation it describes.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="8">
+            <button class="section-header" onclick="toggleSection(8)" aria-expanded="true" aria-controls="section-8">
+                <span class="section-number">8️⃣</span>
+                <span class="section-title">Choosing the Type: Four Scenarios</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-8">
+                <div class="content-box">
+<p>Scenario questions describe a situation and ask which network it is. Decide by the area covered, then check the example against the table.</p>
+<ul class="bullet-list">
+<li><strong>Wireless earbuds paired with a phone:</strong> personal devices a few metres apart, linked by Bluetooth, so a WPAN.</li>
+<li><strong>Thirty computers and a printer in a school lab:</strong> one room or building, so a LAN.</li>
+<li><strong>A cable broadband operator serving one city:</strong> a town-sized area, so a MAN.</li>
+<li><strong>A railway reservation system linking stations across India:</strong> sites in many states, so a WAN.</li>
+</ul>
+<p>If a question mixes scales, such as branch LANs joined into a national network, name the type for the part the question asks about.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="9">
+            <button class="section-header" onclick="toggleSection(9)" aria-expanded="true" aria-controls="section-9">
+                <span class="section-number">9️⃣</span>
+                <span class="section-title">Common Traps</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-9">
+                <div class="content-box">
+<ul class="warning-list">
+<li>✘ Ordering the types by speed instead of area. The order by area is PAN &lt; LAN &lt; MAN &lt; WAN.</li>
+<li>✘ Calling Wi-Fi a WAN because it reaches the Internet. Wi-Fi is a wireless LAN.</li>
+<li>✘ Picking LAN for offices in different cities. Distance decides: that needs a WAN.</li>
+<li>✘ Treating the Internet and the World Wide Web as the same. The Internet is the network; the web is the pages reached through it.</li>
+</ul>
+<p>Next, see how devices in a network are wired together in <a href="network-topologies.html">network topologies</a>, which devices join them in <a href="networking-devices.html">hub, switch, router, modem and gateway</a>, and what carries the signals in <a href="transmission-media.html">transmission media</a>.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="10">
+            <button class="section-header" onclick="toggleSection(10)" aria-expanded="true" aria-controls="section-10">
+                <span class="section-number">🔟</span>
+                <span class="section-title">Practice Questions (6)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-10">
+                <div class="content-box">
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q1.</strong> Which is the largest WAN? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q1" value="a"> (a) A national bank&#x27;s network</label>
+                            <label><input type="radio" name="q1" value="b"> (b) A cable TV network</label>
+                            <label><input type="radio" name="q1" value="c"> (c) The Internet</label>
+                            <label><input type="radio" name="q1" value="d"> (d) A university campus network</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q1">
+                            <p><strong>✅ Answer:</strong> (c) The Internet</p>
+                            <p><strong>💡 Explanation:</strong> The Internet connects billions of devices and millions of LANs across every continent, so it is the largest Wide Area Network.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q1')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q2.</strong> Two smartphones exchanging files over Bluetooth form a: <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q2" value="a"> (a) WPAN</label>
+                            <label><input type="radio" name="q2" value="b"> (b) MAN</label>
+                            <label><input type="radio" name="q2" value="c"> (c) WAN</label>
+                            <label><input type="radio" name="q2" value="d"> (d) Wired LAN</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q2">
+                            <p><strong>✅ Answer:</strong> (a) WPAN</p>
+                            <p><strong>💡 Explanation:</strong> Personal devices within about 10 metres form a personal area network. When the link is wireless, as with Bluetooth, it is called a wireless PAN or WPAN.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q2')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q3.</strong> Up to what distance does the textbook say a LAN usually extends? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q3" value="a"> (a) 10 metres</label>
+                            <label><input type="radio" name="q3" value="b"> (b) About 1 km</label>
+                            <label><input type="radio" name="q3" value="c"> (c) 30 to 40 km</label>
+                            <label><input type="radio" name="q3" value="d"> (d) Across a country</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q3">
+                            <p><strong>✅ Answer:</strong> (b) About 1 km</p>
+                            <p><strong>💡 Explanation:</strong> A LAN covers a room, floor, building or campus and can be extended up to about 1 km. 10 metres is a PAN and 30 to 40 km is a MAN.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q3')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q4.</strong> A cable TV network across a city is an example of a: <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q4" value="a"> (a) PAN</label>
+                            <label><input type="radio" name="q4" value="b"> (b) LAN</label>
+                            <label><input type="radio" name="q4" value="c"> (c) WAN</label>
+                            <label><input type="radio" name="q4" value="d"> (d) MAN</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q4">
+                            <p><strong>✅ Answer:</strong> (d) MAN</p>
+                            <p><strong>💡 Explanation:</strong> A Metropolitan Area Network covers a city or town. Cable TV and cable broadband networks are the standard examples.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q4')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q5.</strong> Two universities in different states want to share data over their own network. Which type do they need? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q5" value="a"> (a) WAN</label>
+                            <label><input type="radio" name="q5" value="b"> (b) LAN</label>
+                            <label><input type="radio" name="q5" value="c"> (c) PAN</label>
+                            <label><input type="radio" name="q5" value="d"> (d) MAN</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q5">
+                            <p><strong>✅ Answer:</strong> (a) WAN</p>
+                            <p><strong>💡 Explanation:</strong> The two sites are far apart, in different states, so the link must be a Wide Area Network. A LAN or MAN cannot span that distance.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q5')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q6.</strong> Gigabit Ethernet on a LAN supports speeds of about: <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q6" value="a"> (a) 10 Mbps</label>
+                            <label><input type="radio" name="q6" value="b"> (b) 100 Kbps</label>
+                            <label><input type="radio" name="q6" value="c"> (c) 1000 Mbps</label>
+                            <label><input type="radio" name="q6" value="d"> (d) 1 Tbps</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q6">
+                            <p><strong>✅ Answer:</strong> (c) 1000 Mbps</p>
+                            <p><strong>💡 Explanation:</strong> LAN speeds usually range from 10 Mbps, called Ethernet, to 1000 Mbps, called Gigabit Ethernet. 1000 Mbps is 1 Gbps.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q6')">Show Answer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="11">
+            <button class="section-header" onclick="toggleSection(11)" aria-expanded="true" aria-controls="section-11">
+                <span class="section-number">11.</span>
+                <span class="section-title">Frequently Asked Questions</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-11">
+                <div class="content-box">
+                    <h3>Is Wi-Fi a LAN or a WAN?</h3>
+                    <p>Wi-Fi is a wireless LAN. Its standard is IEEE 802.11, and a home or office Wi-Fi network covers a limited area like any LAN. When the router connects that LAN to the Internet, the traffic travels onward over WANs.</p>
+                    <h3>Is a bank&#x27;s network a LAN, MAN or WAN?</h3>
+                    <p>Each branch usually has its own LAN, and the branches across the country are joined into a WAN. That is how you can reach your account from anywhere. The answer depends on which part of the network the question describes.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="12">
+            <button class="section-header" onclick="toggleSection(12)" aria-expanded="true" aria-controls="section-12">
+                <span class="section-number">12.</span>
+                <span class="section-title">Sources and Review</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-12">
+                <div class="content-box">
+                    <ul class="bullet-list">
+                        <li><a href="https://ncert.nic.in/textbook/pdf/lecs110.pdf" rel="noopener">Computer Science Class XII, Chapter 10: Computer Networks</a>, NCERT (accessed 2026-10-27). Used for: definitions of network, node and packet (§10.1), ARPANET (§10.2), PAN, LAN, MAN and WAN with ranges, speeds and examples (§10.3).</li>
+                        <li><a href="https://ncert.nic.in/textbook/pdf/lecs111.pdf" rel="noopener">Computer Science Class XII, Chapter 11: Data Communication</a>, NCERT (accessed 2026-10-27). Used for: Bluetooth piconet range of 10 metres (§11.6.3).</li>
+                    </ul>
+                    <div class="highlight-box">
+                        <p><strong>How this page was prepared.</strong> Drafted with AI assistance (Claude (Anthropic AI model)) from the sources listed above. Automated checks also covered structure, internal links and duplicate text. Software checks cannot confirm facts. Reviewed by praveenkumar on 2026-10-29 against the sources listed above.</p>
+                        <p>Found an error? <a href="../../contact.html">Report it</a> and we will correct the page.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="13">
+            <button class="section-header" onclick="toggleSection(13)" aria-expanded="true" aria-controls="section-13">
+                <span class="section-number">13.</span>
+                <span class="section-title">Related Pages</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-13">
+                <div class="content-box">
+                    <ul class="bullet-list">
+                        <li><a href="../science-tech/computer-and-it-fundamentals.html">💻 Computer &amp; IT Fundamentals</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="page-navigation">
+            <a href="computer-memory-types.html" class="nav-btn">← Types of Computer Memory: Registers, Cache, RAM, ROM and Secondary Storage</a>
+            <a href="index.html" class="nav-btn">↑ Computer Awareness</a>
+            <a href="logic-gates.html" class="nav-btn">Logic Gates and Truth Tables: AND, OR, NOT, NAND, NOR, XOR →</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>Subject: Computer Awareness | Sources are listed on this page. <a href="../../contact.html">Report an error</a>.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>

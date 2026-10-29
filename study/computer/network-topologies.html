@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Topologies: Bus, Star, Ring, Mesh and Tree</title>
+    <meta name="description" content="Bus, star, ring, mesh and tree topologies compared by cabling, cost and what fails when a link breaks, with the n(n-1)/2 mesh formula worked. 6 MCQs.">
+    <meta name="keywords" content="network topology types, bus star ring mesh topology, mesh topology formula n(n-1)/2, advantages of star topology">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.aspirantdaily.com/study/computer/network-topologies.html">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.aspirantdaily.com/study/computer/network-topologies.html">
+    <meta property="og:title" content="Network Topologies: Bus, Star, Ring, Mesh and Tree">
+    <meta property="og:description" content="Bus, star, ring, mesh and tree topologies compared by cabling, cost and what fails when a link breaks, with the n(n-1)/2 mesh formula worked. 6 MCQs.">
+    <meta property="og:image" content="https://www.aspirantdaily.com/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Network Topology Types: Bus, Star, Ring, Mesh and Tree Compared",
+  "description": "Bus, star, ring, mesh and tree topologies compared by cabling, cost and what fails when a link breaks, with the n(n-1)/2 mesh formula worked. 6 MCQs.",
+  "image": "https://www.aspirantdaily.com/og-image.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "url": "https://www.aspirantdaily.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.aspirantdaily.com/icons/icon-512.png"
+    }
+  },
+  "datePublished": "2026-10-29",
+  "dateModified": "2026-10-29",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.aspirantdaily.com/study/computer/network-topologies.html"
+  },
+  "articleSection": "Computer Awareness",
+  "citation": [
+    "https://ncert.nic.in/textbook/pdf/lecs110.pdf"
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.aspirantdaily.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Study Notes",
+      "item": "https://www.aspirantdaily.com/study/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Computer Awareness",
+      "item": "https://www.aspirantdaily.com/study/computer/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Network Topology Types: Bus, Star, Ring, Mesh and Tree Compared",
+      "item": "https://www.aspirantdaily.com/study/computer/network-topologies.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Which network topology is most common today?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Home and office wired LANs are usually built as a star around a switch, and larger networks join many such stars into a tree. The site cannot give a market share figure, so treat this as the typical layout rather than a statistic."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is topology the same as the physical cabling?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Topology describes how devices are arranged and linked. Exam questions mean the physical layout of cables and devices, which is what this page covers. Networking courses also discuss logical topology, the path data actually takes, which can differ from the cabling."
+      }
+    }
+  ]
+}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css?v=2">
+    <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-51XLJE4TVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-51XLJE4TVH');
+  </script>
+  <script>/* AdSense only on the production host (not localhost or preview deployments) */(function(){if(location.hostname!=="www.aspirantdaily.com")return;var a=document.createElement("script");a.async=true;a.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327";a.crossOrigin="anonymous";document.head.appendChild(a);})();</script>
+</head>
+<body class="study-page subject-computer">
+    <nav class="study-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Computer Awareness</a>
+            <div class="nav-controls">
+                <button onclick="toggleAllSections()" class="btn-secondary">Expand/Collapse All</button>
+                <button onclick="window.print()" class="btn-primary">📄 Print/Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> / <a href="../index.html">Study Notes</a> / <a href="index.html">Computer Awareness</a> / <span>Network Topology Types: Bus, Star, Ring, Mesh and Tree Compared</span>
+            </div>
+            <h1>Network Topology Types: Bus, Star, Ring, Mesh and Tree Compared</h1>
+            <p class="page-subtitle">What topology means • Bus • Ring • Star • Mesh and its cable formula • Tree or hybrid • Comparison table</p>
+            <div class="page-meta">
+                <span class="badge badge-secondary">SSC</span>
+                <span class="badge badge-secondary">Banking</span>
+                <span class="badge badge-secondary">📅 Last updated: 2026-10-29</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="study-section collapsible" data-section="1">
+            <button class="section-header" onclick="toggleSection(1)" aria-expanded="true" aria-controls="section-1">
+                <span class="section-number">1️⃣</span>
+                <span class="section-title">What Network Topology Means</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-1">
+                <div class="content-box">
+<p>A network's <strong>topology</strong> is the way its computers and other devices are arranged and connected. The same handful of computers can be wired in very different shapes, and the shape decides three things exam questions ask about: <strong>how much cable</strong> is needed, <strong>what it costs</strong>, and <strong>what fails</strong> when one cable or device breaks.</p>
+<p>Five layouts are standard: bus, ring, star, mesh and tree (also called hybrid). The first four are the basic shapes; tree combines them.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="2">
+            <button class="section-header" onclick="toggleSection(2)" aria-expanded="true" aria-controls="section-2">
+                <span class="section-number">2️⃣</span>
+                <span class="section-title">Bus Topology</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-2">
+                <div class="content-box">
+<p>In a bus topology, every device connects to one shared cable, the <strong>bus</strong> or backbone. A node puts its data onto the bus, and the data travels along the whole length of the cable in both directions, so any node can receive it.</p>
+<p><strong>Strengths:</strong> it needs the least cable and is cheap and easy to maintain. <strong>Weaknesses:</strong> all nodes share one wire, so it is considered less secure and less reliable.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="3">
+            <button class="section-header" onclick="toggleSection(3)" aria-expanded="true" aria-controls="section-3">
+                <span class="section-number">3️⃣</span>
+                <span class="section-title">Ring Topology</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-3">
+                <div class="content-box">
+<p>In a ring topology, each node connects to exactly two others, one on either side, so the connections close into a ring. The link is <strong>unidirectional</strong>: data travels in one direction only, clockwise or anticlockwise, passing from node to node until it arrives.</p>
+<p>A ring uses about as many cables as there are nodes. Like the bus, it is considered less secure and less reliable.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)" aria-expanded="true" aria-controls="section-4">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">Star Topology</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
+                <div class="content-box">
+<p>In a star topology, every device has its own cable to a <strong>central node</strong>, which is a networking device such as a hub or a switch. It is effective and fast, because each device talks directly to the centre.</p>
+<p>The failure rules are the most tested point. If one ordinary device or its cable fails, the <strong>rest of the network keeps working</strong>. But if the <strong>central device fails</strong>, the whole network can go down, because every message passes through it.</p>
+<p>The centre can behave in two ways. A broadcasting device, like a hub, sends data to all nodes. A unicast device, like a switch, identifies the destination and forwards data to that node only.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)" aria-expanded="true" aria-controls="section-5">
+                <span class="section-number">5️⃣</span>
+                <span class="section-title">Mesh Topology</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-5">
+                <div class="content-box">
+<p>In a full mesh, <strong>every device connects to every other device</strong>. A mesh can handle a lot of traffic, because many pairs of nodes can send at the same time. It is reliable: if one node goes down, the others keep communicating over their own links. It is also more secure, since each cable carries only the data between its two nodes. The price is complex wiring, high cable cost and many links that sit unused much of the time.</p>
+<p>The number of cables in a full mesh of n nodes is <strong>n(n − 1)/2</strong>. Each node links to the other n − 1 nodes, and the division by 2 stops each cable being counted twice, once from each end.</p>
+<div class="case-study">
+<h4>Worked example 1: five computers</h4>
+<p>n = 5: 5 × 4 ÷ 2 = <strong>10 cables</strong>.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 2: eight computers</h4>
+<p>n = 8: 8 × 7 ÷ 2 = <strong>28 cables</strong>.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 3: ports on each computer</h4>
+<p>In the same eight-node mesh, each computer connects to every other one, so it needs 8 − 1 = <strong>7 ports</strong>.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 4: mesh against star</h4>
+<p>A star of 8 computers needs 8 cables, one to each device from the centre. The mesh needs 28, so it uses <strong>20 more cables</strong>. The gap widens quickly as n grows.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)" aria-expanded="true" aria-controls="section-6">
+                <span class="section-number">6️⃣</span>
+                <span class="section-title">Tree or Hybrid Topology</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-6">
+                <div class="content-box">
+<p>A <strong>tree</strong> or <strong>hybrid</strong> topology is hierarchical. It has several branches, and each branch can be built from one or more basic topologies: star, ring or bus. A common example is several star-shaped LANs hanging off one bus. Data from a source first reaches a central device and then passes down the branches.</p>
+<p>Tree layouts are usually found in WANs, where many LANs of different shapes are joined. They inherit both the strengths and the weak points of the shapes they combine.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)" aria-expanded="true" aria-controls="section-7">
+                <span class="section-number">7️⃣</span>
+                <span class="section-title">Comparison Table</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-7">
+                <div class="content-box">
+<div class="table-wrap"><table class="data-table">
+<thead><tr><th>Topology</th><th>Layout</th><th>Cables for n devices</th><th>Cost</th><th>Reliability</th></tr></thead>
+<tbody>
+<tr><td>Bus</td><td>One shared backbone</td><td>1 backbone plus a drop line each</td><td>Lowest</td><td>Less reliable, less secure</td></tr>
+<tr><td>Ring</td><td>Each node to two neighbours</td><td>n</td><td>Low</td><td>Less reliable, less secure</td></tr>
+<tr><td>Star</td><td>All to a central hub or switch</td><td>n</td><td>Moderate</td><td>One device failing does not affect the rest; the centre failing can stop the whole network</td></tr>
+<tr><td>Mesh</td><td>Every node to every node</td><td>n(n − 1)/2</td><td>Highest</td><td>More reliable: a node going down does not break the others' links</td></tr>
+<tr><td>Tree</td><td>Hierarchy of basic topologies</td><td>Depends on the branches</td><td>Varies</td><td>Depends on the shapes in each branch</td></tr>
+</tbody></table></div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="8">
+            <button class="section-header" onclick="toggleSection(8)" aria-expanded="true" aria-controls="section-8">
+                <span class="section-number">8️⃣</span>
+                <span class="section-title">Common Traps</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-8">
+                <div class="content-box">
+<ul class="warning-list">
+<li>✘ Using n(n − 1) for mesh cables. Halve it: each cable has two ends.</li>
+<li>✘ Saying a star survives any failure. It fails as a whole if the centre fails.</li>
+<li>✘ Calling a ring two-way. In the textbook ring, data moves in one direction.</li>
+<li>✘ Calling a tree a separate basic shape. It is a combination of the basic shapes.</li>
+</ul>
+<p>The central devices are explained in <a href="networking-devices.html">hub, switch, router, modem and gateway</a>, and the scales these layouts serve in <a href="computer-networks-lan-man-wan.html">types of computer network</a>.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="9">
+            <button class="section-header" onclick="toggleSection(9)" aria-expanded="true" aria-controls="section-9">
+                <span class="section-number">9️⃣</span>
+                <span class="section-title">Practice Questions (6)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-9">
+                <div class="content-box">
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q1.</strong> In which topology is every device connected to a single central device? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q1" value="a"> (a) Bus</label>
+                            <label><input type="radio" name="q1" value="b"> (b) Ring</label>
+                            <label><input type="radio" name="q1" value="c"> (c) Star</label>
+                            <label><input type="radio" name="q1" value="d"> (d) Mesh</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q1">
+                            <p><strong>✅ Answer:</strong> (c) Star</p>
+                            <p><strong>💡 Explanation:</strong> In a star topology each device has its own cable to a central hub or switch. In a bus they share one cable; in a ring each links to two neighbours.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q1')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q2.</strong> Which topology uses a single shared backbone cable? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q2" value="a"> (a) Bus</label>
+                            <label><input type="radio" name="q2" value="b"> (b) Star</label>
+                            <label><input type="radio" name="q2" value="c"> (c) Mesh</label>
+                            <label><input type="radio" name="q2" value="d"> (d) Tree</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q2">
+                            <p><strong>✅ Answer:</strong> (a) Bus</p>
+                            <p><strong>💡 Explanation:</strong> A bus topology connects every node to one backbone wire called the bus. It is cheap to lay but less reliable.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q2')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q3.</strong> Which topology has the highest cabling cost but stays working even if one link fails? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q3" value="a"> (a) Bus</label>
+                            <label><input type="radio" name="q3" value="b"> (b) Ring</label>
+                            <label><input type="radio" name="q3" value="c"> (c) Star</label>
+                            <label><input type="radio" name="q3" value="d"> (d) Mesh</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q3">
+                            <p><strong>✅ Answer:</strong> (d) Mesh</p>
+                            <p><strong>💡 Explanation:</strong> A mesh connects every device to every other, so there is always another path, but it needs the most cables and the most complex wiring.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q3')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q4.</strong> How many cables does a fully connected mesh of 6 computers need? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q4" value="a"> (a) 6</label>
+                            <label><input type="radio" name="q4" value="b"> (b) 15</label>
+                            <label><input type="radio" name="q4" value="c"> (c) 30</label>
+                            <label><input type="radio" name="q4" value="d"> (d) 36</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q4">
+                            <p><strong>✅ Answer:</strong> (b) 15</p>
+                            <p><strong>💡 Explanation:</strong> Use n(n − 1)/2 with n = 6: 6 × 5 ÷ 2 = 15. Thirty is the trap of forgetting to halve, since each cable joins two computers.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q4')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q5.</strong> In a star network, what happens if the central switch fails? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q5" value="a"> (a) The whole network can go down</label>
+                            <label><input type="radio" name="q5" value="b"> (b) Only one computer is affected</label>
+                            <label><input type="radio" name="q5" value="c"> (c) Nothing; data takes another path</label>
+                            <label><input type="radio" name="q5" value="d"> (d) The network becomes a ring</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q5">
+                            <p><strong>✅ Answer:</strong> (a) The whole network can go down</p>
+                            <p><strong>💡 Explanation:</strong> Every device reaches the others only through the central device, so its failure can bring down the complete network. Failure of one ordinary device affects only that device.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q5')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q6.</strong> A company joins several star-shaped office LANs to one backbone cable. This layout is: <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q6" value="a"> (a) A ring topology</label>
+                            <label><input type="radio" name="q6" value="b"> (b) A mesh topology</label>
+                            <label><input type="radio" name="q6" value="c"> (c) A tree or hybrid topology</label>
+                            <label><input type="radio" name="q6" value="d"> (d) A pure bus topology</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q6">
+                            <p><strong>✅ Answer:</strong> (c) A tree or hybrid topology</p>
+                            <p><strong>💡 Explanation:</strong> Combining basic topologies in a hierarchy, here stars hanging off a bus, makes a tree or hybrid topology. Such layouts are common when many LANs are connected.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q6')">Show Answer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="10">
+            <button class="section-header" onclick="toggleSection(10)" aria-expanded="true" aria-controls="section-10">
+                <span class="section-number">🔟</span>
+                <span class="section-title">Frequently Asked Questions</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-10">
+                <div class="content-box">
+                    <h3>Which network topology is most common today?</h3>
+                    <p>Home and office wired LANs are usually built as a star around a switch, and larger networks join many such stars into a tree. The site cannot give a market share figure, so treat this as the typical layout rather than a statistic.</p>
+                    <h3>Is topology the same as the physical cabling?</h3>
+                    <p>Topology describes how devices are arranged and linked. Exam questions mean the physical layout of cables and devices, which is what this page covers. Networking courses also discuss logical topology, the path data actually takes, which can differ from the cabling.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="11">
+            <button class="section-header" onclick="toggleSection(11)" aria-expanded="true" aria-controls="section-11">
+                <span class="section-number">11.</span>
+                <span class="section-title">Sources and Review</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-11">
+                <div class="content-box">
+                    <ul class="bullet-list">
+                        <li><a href="https://ncert.nic.in/textbook/pdf/lecs110.pdf" rel="noopener">Computer Science Class XII, Chapter 10: Computer Networks</a>, NCERT (accessed 2026-10-27). Used for: definition of topology and the mesh, ring, bus, star and tree or hybrid topologies (§10.5), including the n(n-1)/2 note.</li>
+                    </ul>
+                    <div class="highlight-box">
+                        <p><strong>How this page was prepared.</strong> Drafted with AI assistance (Claude (Anthropic AI model)) from the sources listed above. 5 calculations on this page were recomputed by software and matched. Automated checks also covered structure, internal links and duplicate text. Software checks cannot confirm facts. Reviewed by praveenkumar on 2026-10-29 against the sources listed above.</p>
+                        <p>Found an error? <a href="../../contact.html">Report it</a> and we will correct the page.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="12">
+            <button class="section-header" onclick="toggleSection(12)" aria-expanded="true" aria-controls="section-12">
+                <span class="section-number">12.</span>
+                <span class="section-title">Related Pages</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-12">
+                <div class="content-box">
+                    <ul class="bullet-list">
+                        <li><a href="../science-tech/computer-and-it-fundamentals.html">💻 Computer &amp; IT Fundamentals</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="page-navigation">
+            <a href="memory-units-bit-to-yottabyte.html" class="nav-btn">← Memory Units: Bit, Nibble, Byte and KB to YB with Conversions</a>
+            <a href="index.html" class="nav-btn">↑ Computer Awareness</a>
+            <a href="networking-devices.html" class="nav-btn">Networking Devices: Hub, Switch, Router, Modem, Gateway, Repeater and NIC →</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>Subject: Computer Awareness | Sources are listed on this page. <a href="../../contact.html">Report an error</a>.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>

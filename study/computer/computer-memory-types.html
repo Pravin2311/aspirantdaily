@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Memory: RAM, ROM, Cache and Secondary Storage</title>
+    <meta name="description" content="Registers, cache, RAM, ROM and secondary storage compared by volatility, speed, capacity and CPU access, plus the system bus and a comparison table. 6 MCQs.">
+    <meta name="keywords" content="types of computer memory, difference between ram and rom, primary and secondary memory, cache memory, volatile and non volatile memory">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.aspirantdaily.com/study/computer/computer-memory-types.html">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.aspirantdaily.com/study/computer/computer-memory-types.html">
+    <meta property="og:title" content="Computer Memory: RAM, ROM, Cache and Secondary Storage">
+    <meta property="og:description" content="Registers, cache, RAM, ROM and secondary storage compared by volatility, speed, capacity and CPU access, plus the system bus and a comparison table. 6 MCQs.">
+    <meta property="og:image" content="https://www.aspirantdaily.com/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Types of Computer Memory: Registers, Cache, RAM, ROM and Secondary Storage",
+  "description": "Registers, cache, RAM, ROM and secondary storage compared by volatility, speed, capacity and CPU access, plus the system bus and a comparison table. 6 MCQs.",
+  "image": "https://www.aspirantdaily.com/og-image.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "url": "https://www.aspirantdaily.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.aspirantdaily.com/icons/icon-512.png"
+    }
+  },
+  "datePublished": "2026-10-29",
+  "dateModified": "2026-10-29",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.aspirantdaily.com/study/computer/computer-memory-types.html"
+  },
+  "articleSection": "Computer Awareness",
+  "citation": [
+    "https://ncert.nic.in/textbook/pdf/kecs101.pdf"
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.aspirantdaily.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Study Notes",
+      "item": "https://www.aspirantdaily.com/study/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Computer Awareness",
+      "item": "https://www.aspirantdaily.com/study/computer/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Types of Computer Memory: Registers, Cache, RAM, ROM and Secondary Storage",
+      "item": "https://www.aspirantdaily.com/study/computer/computer-memory-types.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is cache memory primary or secondary memory?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cache is usually grouped with primary memory because the CPU accesses it directly and it is volatile. It is not main memory, though: it holds only copies of data that already sit in RAM, to save the CPU the slower trip to main memory."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does a computer need RAM if it already has a hard disk or SSD?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The CPU cannot work on data stored on a disk directly. Programs and files must be loaded into RAM first, and RAM is far faster than secondary storage, so the computer stays responsive while it works."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is a pen drive RAM or ROM?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Neither. A pen drive is secondary storage: non-volatile, removable and not accessed directly by the CPU. It uses flash memory, which keeps data without power, but in exam terms it belongs with hard disks, SSDs and memory cards."
+      }
+    }
+  ]
+}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css?v=2">
+    <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-51XLJE4TVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-51XLJE4TVH');
+  </script>
+  <script>/* AdSense only on the production host (not localhost or preview deployments) */(function(){if(location.hostname!=="www.aspirantdaily.com")return;var a=document.createElement("script");a.async=true;a.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327";a.crossOrigin="anonymous";document.head.appendChild(a);})();</script>
+</head>
+<body class="study-page subject-computer">
+    <nav class="study-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Computer Awareness</a>
+            <div class="nav-controls">
+                <button onclick="toggleAllSections()" class="btn-secondary">Expand/Collapse All</button>
+                <button onclick="window.print()" class="btn-primary">📄 Print/Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> / <a href="../index.html">Study Notes</a> / <a href="index.html">Computer Awareness</a> / <span>Types of Computer Memory: Registers, Cache, RAM, ROM and Secondary Storage</span>
+            </div>
+            <h1>Types of Computer Memory: Registers, Cache, RAM, ROM and Secondary Storage</h1>
+            <p class="page-subtitle">Memory hierarchy • Primary memory: RAM and ROM • Cache • Secondary storage • System bus • Comparison table</p>
+            <div class="page-meta">
+                <span class="badge badge-secondary">SSC</span>
+                <span class="badge badge-secondary">Banking</span>
+                <span class="badge badge-secondary">Railway</span>
+                <span class="badge badge-secondary">📅 Last updated: 2026-10-29</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="study-section collapsible" data-section="1">
+            <button class="section-header" onclick="toggleSection(1)" aria-expanded="true" aria-controls="section-1">
+                <span class="section-number">1️⃣</span>
+                <span class="section-title">The Memory Hierarchy at a Glance</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-1">
+                <div class="content-box">
+<p>A computer keeps data and instructions in several kinds of memory at once. They differ in four ways that questions keep returning to: <strong>speed</strong>, <strong>capacity</strong>, <strong>cost per byte</strong> and whether the contents survive a power cut (<strong>volatility</strong>). The fastest memory is the smallest and most expensive; the largest is the slowest and cheapest.</p>
+<p>From the CPU outwards, the levels are:</p>
+<ol class="bullet-list">
+<li><strong>Registers</strong>: tiny storage on the CPU chip itself.</li>
+<li><strong>Cache</strong>: very fast memory between the CPU and main memory.</li>
+<li><strong>Primary memory</strong>: RAM, the working memory, plus ROM for fixed startup code.</li>
+<li><strong>Secondary memory</strong>: hard disks, SSDs, optical discs, memory cards and pen drives.</li>
+</ol>
+<p>When people talk about a computer's "memory", they usually mean primary memory. Secondary memory is more often called storage.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="2">
+            <button class="section-header" onclick="toggleSection(2)" aria-expanded="true" aria-controls="section-2">
+                <span class="section-number">2️⃣</span>
+                <span class="section-title">Registers: Inside the CPU</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-2">
+                <div class="content-box">
+<p>While the CPU processes a program, it holds the data and instructions it is working on in its own local memory, the <strong>registers</strong>. Registers are part of the CPU chip, and they are limited in both size and number. Different registers hold data, instructions or intermediate results.</p>
+<p>Alongside the registers, the CPU has the Arithmetic Logic Unit (ALU), which does the calculations and comparisons, and the Control Unit (CU), which interprets instructions and directs the flow of data. Because registers sit inside the processor, nothing is faster to reach.</p>
+<p>Today the whole CPU, registers included, is usually built on a single chip called a <strong>microprocessor</strong>. Microprocessors are compared by features such as word size, the maximum memory they can address and clock speed, which is why processor specifications and memory questions often appear side by side.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="3">
+            <button class="section-header" onclick="toggleSection(3)" aria-expanded="true" aria-controls="section-3">
+                <span class="section-number">3️⃣</span>
+                <span class="section-title">Primary Memory: RAM and ROM</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-3">
+                <div class="content-box">
+<p>Programs and data are loaded into primary memory before they are processed, and the CPU reads and writes it directly. It comes in two kinds.</p>
+<p><strong>RAM (Random Access Memory)</strong> is the main memory. It is <strong>volatile</strong>: it keeps its contents only while power is supplied, and everything in it is wiped out when the computer is switched off. Each time you start the computer or open an application, the program and its data are loaded into RAM. RAM is faster than any secondary storage device.</p>
+<p><strong>ROM (Read Only Memory)</strong> is <strong>non-volatile</strong>: its contents stay when the power is off. It is a small, fast, permanent store for contents that rarely change. The classic example is the startup program, or boot loader, which loads the operating system into RAM when the computer is switched on.</p>
+<p>A useful way to keep the pair straight: RAM is the desk you work at, cleared every evening; ROM is the printed instruction card fixed to the desk, which you read but rarely rewrite.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)" aria-expanded="true" aria-controls="section-4">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">Cache Memory</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
+                <div class="content-box">
+<p>RAM is faster than storage but slower than the processor, so a CPU waiting on RAM would have to slow down. <strong>Cache memory</strong> solves this. It is a very high-speed memory placed between the CPU and main memory, holding copies of the data from the main-memory locations used most often.</p>
+<p>When the CPU needs data, it looks in the cache first. If the data is there, it is read from the cache; if not, the CPU goes to main memory. This cuts the <em>average</em> time to fetch data, even though main memory itself is no faster.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)" aria-expanded="true" aria-controls="section-5">
+                <span class="section-number">5️⃣</span>
+                <span class="section-title">Secondary Memory: Permanent Storage</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-5">
+                <div class="content-box">
+<p>Primary memory is limited in capacity, and RAM forgets everything at power-off. A computer therefore needs <strong>secondary</strong> (auxiliary) memory to keep data and programs permanently. Secondary memory is non-volatile, has a much larger capacity, and is slower and cheaper than main memory.</p>
+<p>The key exam point: the CPU <strong>cannot access secondary memory directly</strong>. Contents must first be brought into main memory. Examples are hard disk drives (HDD), CDs and DVDs, memory cards, solid-state drives (SSD), which are much faster than older hard disks, and portable flash or pen drives.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)" aria-expanded="true" aria-controls="section-6">
+                <span class="section-number">6️⃣</span>
+                <span class="section-title">How Data Moves: The System Bus</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-6">
+                <div class="content-box">
+<p>Data moves between memory and the CPU over sets of wires called a <strong>bus</strong>. There are three:</p>
+<ul class="bullet-list">
+<li><strong>Data bus</strong>: carries the data itself. It is <strong>bidirectional</strong>, because the CPU both reads from and writes to memory.</li>
+<li><strong>Address bus</strong>: carries the address of the memory location the CPU wants. It is unidirectional.</li>
+<li><strong>Control bus</strong>: carries read and write signals. It is unidirectional.</li>
+</ul>
+<p>Together these three form the <strong>system bus</strong>. A memory controller manages the flow of data into and out of main memory.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)" aria-expanded="true" aria-controls="section-7">
+                <span class="section-number">7️⃣</span>
+                <span class="section-title">Comparison Table</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-7">
+                <div class="content-box">
+<div class="table-wrap"><table class="data-table">
+<thead><tr><th>Memory</th><th>Volatile?</th><th>CPU accesses directly?</th><th>Relative speed</th><th>Typical use</th></tr></thead>
+<tbody>
+<tr><td>Registers</td><td>Yes</td><td>Yes (inside the CPU)</td><td>Fastest</td><td>Values being processed now</td></tr>
+<tr><td>Cache</td><td>Yes</td><td>Yes</td><td>Very fast</td><td>Copies of frequently used data</td></tr>
+<tr><td>RAM</td><td>Yes</td><td>Yes</td><td>Fast</td><td>Running programs and open files</td></tr>
+<tr><td>ROM</td><td>No</td><td>Yes</td><td>Fast</td><td>Startup program (boot loader)</td></tr>
+<tr><td>Secondary storage</td><td>No</td><td>No</td><td>Slowest</td><td>Permanent files and installed software</td></tr>
+</tbody></table></div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="8">
+            <button class="section-header" onclick="toggleSection(8)" aria-expanded="true" aria-controls="section-8">
+                <span class="section-number">8️⃣</span>
+                <span class="section-title">Common Traps</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-8">
+                <div class="content-box">
+<ul class="warning-list">
+<li>✘ Calling ROM volatile. ROM keeps its contents without power; RAM does not.</li>
+<li>✘ Saying the CPU reads the hard disk directly. Data must reach RAM first.</li>
+<li>✘ Treating cache as extra storage space. It only holds copies of data already in main memory.</li>
+<li>✘ Calling all three buses bidirectional. Only the data bus is.</li>
+</ul>
+<p>Memory sizes are measured in the units covered in <a href="memory-units-bit-to-yottabyte.html">memory units from bit to yottabyte</a>. For wider revision, see <a href="../science-tech/computer-and-it-fundamentals.html">computer and IT fundamentals</a> and the <a href="../../repeated-questions/computer-awareness-cheat-code.html">computer awareness cheat code</a>.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="9">
+            <button class="section-header" onclick="toggleSection(9)" aria-expanded="true" aria-controls="section-9">
+                <span class="section-number">9️⃣</span>
+                <span class="section-title">Practice Questions (6)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-9">
+                <div class="content-box">
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q1.</strong> Which memory loses its contents when the power is switched off? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q1" value="a"> (a) ROM</label>
+                            <label><input type="radio" name="q1" value="b"> (b) Hard disk</label>
+                            <label><input type="radio" name="q1" value="c"> (c) RAM</label>
+                            <label><input type="radio" name="q1" value="d"> (d) Pen drive</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q1">
+                            <p><strong>✅ Answer:</strong> (c) RAM</p>
+                            <p><strong>💡 Explanation:</strong> RAM is volatile: its contents are wiped out when the power supply stops. ROM, hard disks and pen drives are non-volatile.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q1')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q2.</strong> Where is the boot loader that loads the operating system usually stored? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q2" value="a"> (a) ROM</label>
+                            <label><input type="radio" name="q2" value="b"> (b) Cache</label>
+                            <label><input type="radio" name="q2" value="c"> (c) RAM</label>
+                            <label><input type="radio" name="q2" value="d"> (d) Registers</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q2">
+                            <p><strong>✅ Answer:</strong> (a) ROM</p>
+                            <p><strong>💡 Explanation:</strong> The startup program must survive power-off and rarely changes, so it is kept in non-volatile ROM. RAM is empty when the computer is switched on.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q2')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q3.</strong> Which memory sits between the CPU and RAM to reduce the average access time? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q3" value="a"> (a) Secondary memory</label>
+                            <label><input type="radio" name="q3" value="b"> (b) Cache memory</label>
+                            <label><input type="radio" name="q3" value="c"> (c) Virtual memory</label>
+                            <label><input type="radio" name="q3" value="d"> (d) ROM</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q3">
+                            <p><strong>✅ Answer:</strong> (b) Cache memory</p>
+                            <p><strong>💡 Explanation:</strong> Cache is a very high-speed memory that keeps copies of frequently used data from main memory. The CPU checks it first and goes to RAM only on a miss.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q3')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q4.</strong> Which of these cannot be accessed directly by the CPU? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q4" value="a"> (a) Registers</label>
+                            <label><input type="radio" name="q4" value="b"> (b) Cache</label>
+                            <label><input type="radio" name="q4" value="c"> (c) RAM</label>
+                            <label><input type="radio" name="q4" value="d"> (d) Hard disk</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q4">
+                            <p><strong>✅ Answer:</strong> (d) Hard disk</p>
+                            <p><strong>💡 Explanation:</strong> Secondary storage such as a hard disk must first be copied into main memory before the CPU can use it. Registers, cache and RAM are accessed directly.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q4')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q5.</strong> Arrange from fastest to slowest: RAM, registers, hard disk, cache. <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q5" value="a"> (a) Cache, registers, RAM, hard disk</label>
+                            <label><input type="radio" name="q5" value="b"> (b) Registers, RAM, cache, hard disk</label>
+                            <label><input type="radio" name="q5" value="c"> (c) Registers, cache, RAM, hard disk</label>
+                            <label><input type="radio" name="q5" value="d"> (d) RAM, cache, registers, hard disk</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q5">
+                            <p><strong>✅ Answer:</strong> (c) Registers, cache, RAM, hard disk</p>
+                            <p><strong>💡 Explanation:</strong> Registers are on the CPU chip itself, cache sits next to the CPU, RAM is main memory, and the hard disk is slowest secondary storage.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q5')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q6.</strong> Which bus carries signals in both directions between the CPU and main memory? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q6" value="a"> (a) Address bus</label>
+                            <label><input type="radio" name="q6" value="b"> (b) Data bus</label>
+                            <label><input type="radio" name="q6" value="c"> (c) Control bus</label>
+                            <label><input type="radio" name="q6" value="d"> (d) None of them</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q6">
+                            <p><strong>✅ Answer:</strong> (b) Data bus</p>
+                            <p><strong>💡 Explanation:</strong> The CPU both reads data from and writes data to memory, so the data bus is bidirectional. The address and control buses carry signals from the CPU only.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q6')">Show Answer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="10">
+            <button class="section-header" onclick="toggleSection(10)" aria-expanded="true" aria-controls="section-10">
+                <span class="section-number">🔟</span>
+                <span class="section-title">Frequently Asked Questions</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-10">
+                <div class="content-box">
+                    <h3>Is cache memory primary or secondary memory?</h3>
+                    <p>Cache is usually grouped with primary memory because the CPU accesses it directly and it is volatile. It is not main memory, though: it holds only copies of data that already sit in RAM, to save the CPU the slower trip to main memory.</p>
+                    <h3>Why does a computer need RAM if it already has a hard disk or SSD?</h3>
+                    <p>The CPU cannot work on data stored on a disk directly. Programs and files must be loaded into RAM first, and RAM is far faster than secondary storage, so the computer stays responsive while it works.</p>
+                    <h3>Is a pen drive RAM or ROM?</h3>
+                    <p>Neither. A pen drive is secondary storage: non-volatile, removable and not accessed directly by the CPU. It uses flash memory, which keeps data without power, but in exam terms it belongs with hard disks, SSDs and memory cards.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="11">
+            <button class="section-header" onclick="toggleSection(11)" aria-expanded="true" aria-controls="section-11">
+                <span class="section-number">11.</span>
+                <span class="section-title">Sources and Review</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-11">
+                <div class="content-box">
+                    <ul class="bullet-list">
+                        <li><a href="https://ncert.nic.in/textbook/pdf/kecs101.pdf" rel="noopener">Computer Science Class XI, Chapter 1: Computer System</a>, NCERT (accessed 2026-10-27). Used for: registers (§1.2), primary memory RAM and ROM, cache, secondary memory (§1.3.2), data, address and control buses (§1.4).</li>
+                    </ul>
+                    <div class="highlight-box">
+                        <p><strong>How this page was prepared.</strong> Drafted with AI assistance (Claude (Anthropic AI model)) from the sources listed above. Automated checks also covered structure, internal links and duplicate text. Software checks cannot confirm facts. Reviewed by praveenkumar on 2026-10-29 against the sources listed above.</p>
+                        <p>Found an error? <a href="../../contact.html">Report it</a> and we will correct the page.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="12">
+            <button class="section-header" onclick="toggleSection(12)" aria-expanded="true" aria-controls="section-12">
+                <span class="section-number">12.</span>
+                <span class="section-title">Related Pages</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-12">
+                <div class="content-box">
+                    <ul class="bullet-list">
+                        <li><a href="../science-tech/computer-and-it-fundamentals.html">💻 Computer &amp; IT Fundamentals</a></li>
+                        <li><a href="../../repeated-questions/computer-awareness-cheat-code.html">Computer Awareness Cheat Code: 15 Must-Know Facts</a></li>
+                        <li><a href="number-system-conversion.html">Binary, Octal, Decimal and Hexadecimal Conversion</a></li>
+                        <li><a href="logic-gates.html">Logic Gates and Truth Tables</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="page-navigation">
+            <a href="index.html" class="nav-btn">← Computer Awareness</a>
+            <a href="computer-networks-lan-man-wan.html" class="nav-btn">Types of Computer Network: PAN, LAN, MAN and WAN →</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>Subject: Computer Awareness | Sources are listed on this page. <a href="../../contact.html">Report an error</a>.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>
