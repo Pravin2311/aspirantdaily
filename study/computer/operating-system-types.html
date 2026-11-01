@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operating System: Functions, Interfaces and Examples</title>
+    <meta name="description" content="Functions of operating system from NCERT: process, memory, file and device management, five user interface types, system utilities, drivers and examples.">
+    <meta name="keywords" content="functions of operating system, what is operating system, types of user interface, command line vs gui, system software examples, device driver, freeware and open source software">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.aspirantdaily.com/study/computer/operating-system-types.html">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.aspirantdaily.com/study/computer/operating-system-types.html">
+    <meta property="og:title" content="Operating System: Functions, Interfaces and Examples">
+    <meta property="og:description" content="Functions of operating system from NCERT: process, memory, file and device management, five user interface types, system utilities, drivers and examples.">
+    <meta property="og:image" content="https://www.aspirantdaily.com/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Operating System: Its Four Functions, Five Types of User Interface, and Where It Sits Among System Software",
+  "description": "Functions of operating system from NCERT: process, memory, file and device management, five user interface types, system utilities, drivers and examples.",
+  "image": "https://www.aspirantdaily.com/og-image.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "url": "https://www.aspirantdaily.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.aspirantdaily.com/icons/icon-512.png"
+    }
+  },
+  "datePublished": "2026-11-01",
+  "dateModified": "2026-11-01",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.aspirantdaily.com/study/computer/operating-system-types.html"
+  },
+  "articleSection": "Computer Awareness",
+  "citation": [
+    "https://ncert.nic.in/textbook/pdf/kecs101.pdf"
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.aspirantdaily.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Study Notes",
+      "item": "https://www.aspirantdaily.com/study/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Computer Awareness",
+      "item": "https://www.aspirantdaily.com/study/computer/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Operating System: Its Four Functions, Five Types of User Interface, and Where It Sits Among System Software",
+      "item": "https://www.aspirantdaily.com/study/computer/operating-system-types.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why is the operating system called a resource manager?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It shares the computer's resources, such as the CPU, main memory, storage and input-output devices, among running programs, so that each is used well and the system does not slow down."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can a computer work without an operating system?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not for ordinary use. NCERT explains that a computer can work without application software such as a word processor, but it cannot work without system software like the operating system."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between a device driver and a utility?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A device driver lets the operating system talk to one particular device, such as a printer. A utility maintains or configures the system as a whole, for example by defragmenting or formatting a disk."
+      }
+    }
+  ]
+}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css?v=2">
+    <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-51XLJE4TVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-51XLJE4TVH');
+  </script>
+  <script>/* AdSense only on the production host (not localhost or preview deployments) */(function(){if(location.hostname!=="www.aspirantdaily.com")return;var a=document.createElement("script");a.async=true;a.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327";a.crossOrigin="anonymous";document.head.appendChild(a);})();</script>
+</head>
+<body class="study-page subject-computer">
+    <nav class="study-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Computer Awareness</a>
+            <div class="nav-controls">
+                <button onclick="toggleAllSections()" class="btn-secondary">Expand/Collapse All</button>
+                <button onclick="window.print()" class="btn-primary">📄 Print/Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> / <a href="../index.html">Study Notes</a> / <a href="index.html">Computer Awareness</a> / <span>Operating System: Its Four Functions, Five Types of User Interface, and Where It Sits Among System Software</span>
+            </div>
+            <h1>Operating System: Its Four Functions, Five Types of User Interface, and Where It Sits Among System Software</h1>
+            <p class="page-subtitle">OS as resource manager • Process, memory, file and device management • Command, GUI, touch, voice and gesture interfaces • Utilities and device drivers • FOSS, freeware, proprietary</p>
+            <div class="page-meta">
+                <span class="badge badge-secondary">SSC</span>
+                <span class="badge badge-secondary">Bank</span>
+                <span class="badge badge-secondary">Railway</span>
+                <span class="badge badge-secondary">📅 Last updated: 2026-11-01</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="study-section collapsible" data-section="1">
+            <button class="section-header" onclick="toggleSection(1)" aria-expanded="true" aria-controls="section-1">
+                <span class="section-number">1️⃣</span>
+                <span class="section-title">What an Operating System Is</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-1">
+                <div class="content-box">
+<p>An operating system (OS) is the system software that runs the computer. NCERT calls it the most basic system software, because no other software can work without it. Popular examples are Windows, Linux, Macintosh, Ubuntu, Fedora, Android and iOS.</p>
+<p>NCERT describes the OS as a <strong>resource manager</strong>. It manages the hardware: the CPU, RAM, disk, network and input-output devices. It also controls application software and device drivers, looks after system security, and handles access by different users.</p>
+<p>The OS has two main objectives:</p>
+<ol>
+<li><strong>Running programs:</strong> it loads a program into memory and gives it the CPU. When several programs need to run, it decides their order.</li>
+<li><strong>Giving the user an interface:</strong> a part of the OS takes the user's commands or inputs and passes them on for processing.</li>
+</ol>
+<p>A computer can work without application software. If no word processor is installed, you can still use the computer. It cannot work without system software such as the OS.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="2">
+            <button class="section-header" onclick="toggleSection(2)" aria-expanded="true" aria-controls="section-2">
+                <span class="section-number">2️⃣</span>
+                <span class="section-title">Four Functions of the Operating System</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-2">
+                <div class="content-box">
+<div class="table-wrap"><table class="data-table">
+<thead><tr><th>Function</th><th>What it manages</th><th>Key points</th></tr></thead>
+<tbody>
+<tr><td>Process management</td><td>Programs that are running (processes)</td><td>A task in execution is a process. Sharing the CPU among processes is the OS's most important service. This function also allocates resources and lets processes exchange information.</td></tr>
+<tr><td>Memory management</td><td>Main memory (RAM)</td><td>Gives memory to running processes and takes it back when they finish, without disturbing other processes. Tracks every location as free or occupied.</td></tr>
+<tr><td>File management</td><td>Secondary storage</td><td>Creates, updates, deletes and protects files, and stops users from opening files that others have not shared with them.</td></tr>
+<tr><td>Device management</td><td>Input-output devices</td><td>Works through device drivers, lets devices be configured, and limits device access to authorised users, software and hardware.</td></tr>
+</tbody></table></div>
+<p><strong>An easy trap:</strong> memory management is about main memory, while file management is about secondary storage such as the hard disk. Questions often swap the two. The system monitor that shows running processes can be opened with Ctrl+Alt+Delete on some systems.</p>
+<p>For the memory hierarchy behind these functions, see <a href="computer-memory-types.html">types of computer memory</a>.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="3">
+            <button class="section-header" onclick="toggleSection(3)" aria-expanded="true" aria-controls="section-3">
+                <span class="section-number">3️⃣</span>
+                <span class="section-title">Five Types of User Interface</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-3">
+                <div class="content-box">
+<div class="table-wrap"><table class="data-table">
+<thead><tr><th>Interface</th><th>How the user interacts</th><th>Examples in NCERT</th></tr></thead>
+<tbody>
+<tr><td>Command-based</td><td>Types commands on the keyboard. It is less interactive and usually runs one program at a time, and the user must remember the commands.</td><td>MS-DOS, Unix</td></tr>
+<tr><td>Graphical (GUI)</td><td>Icons, menus and windows, using a mouse and keyboard</td><td>Microsoft Windows, Ubuntu, Fedora, Macintosh</td></tr>
+<tr><td>Touch-based</td><td>Taps and swipes on a touchscreen to open apps, dial or scroll</td><td>Android, iOS; Windows 8.1 and 10 on touch devices</td></tr>
+<tr><td>Voice-based</td><td>Spoken commands; helpful for people who cannot use a mouse, keyboard or touchscreen</td><td>iOS (Siri), Android (Google Now or "OK Google"), Windows 10 (Cortana)</td></tr>
+<tr><td>Gesture-based</td><td>Waving, tilting, eye motion and shaking</td><td>Some Android and iOS phones and some laptops</td></tr>
+</tbody></table></div>
+<p>NCERT notes that gesture control is developing fast, with promising uses in gaming and medicine.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)" aria-expanded="true" aria-controls="section-4">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">Where the OS Sits Among System Software</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
+                <div class="content-box">
+<p>System software works directly with the hardware to give the computer its basic functions. NCERT names three kinds:</p>
+<ul>
+<li><strong>Operating system:</strong> runs the computer and manages the other software.</li>
+<li><strong>System utilities:</strong> maintain and configure the computer. Some come with the OS, such as disk defragmentation, formatting and system restore. Others are installed separately to improve performance.</li>
+<li><strong>Device drivers:</strong> each one is the interface between a particular device and the OS. Like a translator, it hides the hardware details. Drivers exist because the OS alone cannot operate every new device that is added to a computer.</li>
+</ul>
+<p>Programming tools, such as translators and code editors, and application software, such as office suites, run on top of the system software.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)" aria-expanded="true" aria-controls="section-5">
+                <span class="section-number">5️⃣</span>
+                <span class="section-title">Translators: Assembler, Compiler and Interpreter</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-5">
+                <div class="content-box">
+<p>Computers understand only machine language (1s and 0s), but people write programs in assembly or high-level languages. Code written in these languages is called <strong>source code</strong>. A translator converts it into machine-understandable <strong>object code</strong>. NCERT names three translators:</p>
+<div class="table-wrap"><table class="data-table">
+<thead><tr><th>Translator</th><th>Converts</th><th>How it works</th></tr></thead>
+<tbody>
+<tr><td>Assembler</td><td>Assembly language to machine language</td><td>Each assembler understands one microprocessor's instruction set, so its machine code is not portable</td></tr>
+<tr><td>Compiler</td><td>High-level language to machine code</td><td>Translates the whole program; once it is translated, the compiler is no longer needed</td></tr>
+<tr><td>Interpreter</td><td>High-level language, line by line</td><td>Translates and runs one line at a time, so it is needed every time the program runs</td></tr>
+</tbody></table></div>
+<p>Low-level languages, meaning machine and assembly language, are machine-dependent. High-level languages are machine-independent and use English-like statements, which is why they need translators. Translators and code editors are programming tools. They sit between system software and the application software that end users run.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)" aria-expanded="true" aria-controls="section-6">
+                <span class="section-number">6️⃣</span>
+                <span class="section-title">Free, Open Source and Proprietary</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-6">
+                <div class="content-box">
+<div class="table-wrap"><table class="data-table">
+<thead><tr><th>Type</th><th>Meaning</th><th>Examples in NCERT</th></tr></thead>
+<tbody>
+<tr><td>Free and Open Source Software (FOSS)</td><td>The software and its source code are freely available, so others can improve it</td><td>Ubuntu</td></tr>
+<tr><td>Freeware</td><td>Free to use, but the source code may not be available</td><td>Skype, Adobe Reader</td></tr>
+<tr><td>Proprietary</td><td>Must be bought from the vendor that holds the copyright</td><td>Microsoft Windows, Tally, Quickheal</td></tr>
+</tbody></table></div>
+<p>So Windows and Ubuntu are both operating systems, but Windows is proprietary and Ubuntu is FOSS. This pairing is a common exam question. For computer history and generations, see <a href="computer-history-and-pioneers.html">history of computers</a>.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)" aria-expanded="true" aria-controls="section-7">
+                <span class="section-number">7️⃣</span>
+                <span class="section-title">Practice Questions (5)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-7">
+                <div class="content-box">
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q1.</strong> Which of these is NOT system software? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q1" value="a"> (a) Device driver</label>
+                            <label><input type="radio" name="q1" value="b"> (b) Disk defragmenter</label>
+                            <label><input type="radio" name="q1" value="c"> (c) Operating system</label>
+                            <label><input type="radio" name="q1" value="d"> (d) Spreadsheet program</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q1">
+                            <p><strong>✅ Answer:</strong> (d) Spreadsheet program</p>
+                            <p><strong>💡 Explanation:</strong> A spreadsheet is application software. NCERT lists operating systems, system utilities such as defragmenters, and device drivers as system software.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q1')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q2.</strong> MS-DOS is an example of an operating system with which kind of interface? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q2" value="a"> (a) Command-based</label>
+                            <label><input type="radio" name="q2" value="b"> (b) Graphical</label>
+                            <label><input type="radio" name="q2" value="c"> (c) Touch-based</label>
+                            <label><input type="radio" name="q2" value="d"> (d) Gesture-based</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q2">
+                            <p><strong>✅ Answer:</strong> (a) Command-based</p>
+                            <p><strong>💡 Explanation:</strong> NCERT gives MS-DOS and Unix as examples of command-based interfaces, where the user types commands on the keyboard.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q2')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q3.</strong> Which OS function manages files stored in secondary memory? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q3" value="a"> (a) Process management</label>
+                            <label><input type="radio" name="q3" value="b"> (b) Memory management</label>
+                            <label><input type="radio" name="q3" value="c"> (c) File management</label>
+                            <label><input type="radio" name="q3" value="d"> (d) Device management</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q3">
+                            <p><strong>✅ Answer:</strong> (c) File management</p>
+                            <p><strong>💡 Explanation:</strong> File management handles creating, updating, deleting and protecting files in secondary storage. Memory management handles main memory.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q3')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q4.</strong> According to NCERT, the most important service of an operating system is: <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q4" value="a"> (a) Formatting disks</label>
+                            <label><input type="radio" name="q4" value="b"> (b) Allocating the CPU among processes</label>
+                            <label><input type="radio" name="q4" value="c"> (c) Providing antivirus protection</label>
+                            <label><input type="radio" name="q4" value="d"> (d) Translating source code</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q4">
+                            <p><strong>✅ Answer:</strong> (b) Allocating the CPU among processes</p>
+                            <p><strong>💡 Explanation:</strong> NCERT says the CPU is the main resource, so allocating it among processes is the most important service of the OS.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q4')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q5.</strong> Software whose source code is freely available for anyone to improve, such as Ubuntu, is called: <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q5" value="a"> (a) Freeware</label>
+                            <label><input type="radio" name="q5" value="b"> (b) Proprietary software</label>
+                            <label><input type="radio" name="q5" value="c"> (c) Free and Open Source Software (FOSS)</label>
+                            <label><input type="radio" name="q5" value="d"> (d) Customised software</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q5">
+                            <p><strong>✅ Answer:</strong> (c) Free and Open Source Software (FOSS)</p>
+                            <p><strong>💡 Explanation:</strong> FOSS shares both the software and its source code. Freeware is free to use, but its source code may not be available.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q5')">Show Answer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="8">
+            <button class="section-header" onclick="toggleSection(8)" aria-expanded="true" aria-controls="section-8">
+                <span class="section-number">8️⃣</span>
+                <span class="section-title">Frequently Asked Questions</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-8">
+                <div class="content-box">
+                    <h3>Why is the operating system called a resource manager?</h3>
+                    <p>It shares the computer&#x27;s resources, such as the CPU, main memory, storage and input-output devices, among running programs, so that each is used well and the system does not slow down.</p>
+                    <h3>Can a computer work without an operating system?</h3>
+                    <p>Not for ordinary use. NCERT explains that a computer can work without application software such as a word processor, but it cannot work without system software like the operating system.</p>
+                    <h3>What is the difference between a device driver and a utility?</h3>
+                    <p>A device driver lets the operating system talk to one particular device, such as a printer. A utility maintains or configures the system as a whole, for example by defragmenting or formatting a disk.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="9">
+            <button class="section-header" onclick="toggleSection(9)" aria-expanded="true" aria-controls="section-9">
+                <span class="section-number">9️⃣</span>
+                <span class="section-title">Sources and Review</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-9">
+                <div class="content-box">
+                    <ul class="bullet-list">
+                        <li><a href="https://ncert.nic.in/textbook/pdf/kecs101.pdf" rel="noopener">Computer Science, Class XI, Chapter 1: Computer System (Reprint 2026-27)</a>, NCERT (accessed 2026-11-01). Used for: system software, operating system, utilities, device drivers, software licensing, OS user interfaces and OS functions (printed pp. 15-23)..</li>
+                    </ul>
+                    <div class="highlight-box">
+                        <p><strong>How this page was prepared.</strong> Drafted with AI assistance (Claude (Anthropic AI model)) from the sources listed above. Automated checks also covered structure, internal links and duplicate text. Software checks cannot confirm facts. </p>
+                        <p>Found an error? <a href="../../contact.html">Report it</a> and we will correct the page.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="10">
+            <button class="section-header" onclick="toggleSection(10)" aria-expanded="true" aria-controls="section-10">
+                <span class="section-number">🔟</span>
+                <span class="section-title">Related Pages</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-10">
+                <div class="content-box">
+                    <ul class="bullet-list">
+                        <li><a href="../science-tech/computer-and-it-fundamentals.html">💻 Computer &amp; IT Fundamentals</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="page-navigation">
+            <a href="transmission-media.html" class="nav-btn">← Transmission Media: Twisted Pair, Coaxial, Optical Fibre and Wireless</a>
+            <a href="index.html" class="nav-btn">Computer Awareness →</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>Subject: Computer Awareness | Sources are listed on this page. <a href="../../contact.html">Report an error</a>.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>
