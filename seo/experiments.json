@@ -393,7 +393,7 @@
     "window_days": 28,
     "evaluate_after": "2026-11-25",
     "status": "running",
-    "confounders": "The page had no Search impressions and was 'Discovered - currently not indexed' on 2026-10-23, so any change may simply be Google crawling it for the first time; a manual indexing request would overlap too. Site-wide headers/hub redirects (2026-10-27) overlap.",
+    "confounders": "The page had no Search impressions and was 'Discovered - currently not indexed' on 2026-10-23, so any change may simply be Google crawling it for the first time; a manual indexing request would overlap too. Site-wide headers/hub redirects (2026-10-27) overlap. 2026-11-01 (batch-013): new pages exams/ibps-po-syllabus-exam-pattern, exams/ibps-clerk-syllabus-exam-pattern and exams/sbi-po-syllabus-exam-pattern target overlapping bank-syllabus queries and may draw impressions from this page (cannibalisation). Compare this page's impressions with the three new URLs' before reading a verdict. The page itself was not edited (the link-block guard skipped it).",
     "next_action": "Check coverage state with seo/inspect_all.py; decide after 2026-11-25.",
     "baseline": {
       "window": [
