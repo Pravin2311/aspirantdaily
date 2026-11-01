@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Standard Deviation and Variance: Formulas and Shortcuts</title>
+    <meta name="description" content="Standard deviation and variance worked step by step: the deviation and shortcut formulas, frequency data, change of origin and scale, CV and 5 MCQs.">
+    <meta name="keywords" content="standard deviation formula, variance formula, change of origin and scale standard deviation, coefficient of variation, standard deviation of first n natural numbers">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.aspirantdaily.com/study/quant/standard-deviation-variance.html">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.aspirantdaily.com/study/quant/standard-deviation-variance.html">
+    <meta property="og:title" content="Standard Deviation and Variance: Formulas and Shortcuts">
+    <meta property="og:description" content="Standard deviation and variance worked step by step: the deviation and shortcut formulas, frequency data, change of origin and scale, CV and 5 MCQs.">
+    <meta property="og:image" content="https://www.aspirantdaily.com/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Standard Deviation and Variance: Formula, Shortcut Method and Change of Origin and Scale",
+  "description": "Standard deviation and variance worked step by step: the deviation and shortcut formulas, frequency data, change of origin and scale, CV and 5 MCQs.",
+  "image": "https://www.aspirantdaily.com/og-image.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "url": "https://www.aspirantdaily.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.aspirantdaily.com/icons/icon-512.png"
+    }
+  },
+  "datePublished": "2026-11-01",
+  "dateModified": "2026-11-01",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.aspirantdaily.com/study/quant/standard-deviation-variance.html"
+  },
+  "articleSection": "Quantitative Aptitude",
+  "citation": []
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.aspirantdaily.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Study Notes",
+      "item": "https://www.aspirantdaily.com/study/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Quantitative Aptitude",
+      "item": "https://www.aspirantdaily.com/study/quant/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Standard Deviation and Variance: Formula, Shortcut Method and Change of Origin and Scale",
+      "item": "https://www.aspirantdaily.com/study/quant/standard-deviation-variance.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Should I divide by n or by n − 1?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Divide by n when the data is the whole group you are describing, which is what aptitude questions almost always intend. Dividing by n − 1 gives the sample variance, used in statistics when the data is a sample standing in for a larger population. If a question does not say 'sample', use n."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can the standard deviation be zero or negative?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It can be zero, but only when every value is the same, because then no value deviates from the mean. It can never be negative: variance is an average of squares, and the SD is its positive square root."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is this different from mean deviation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Mean deviation averages the distances from the mean while ignoring their signs. Variance squares the deviations instead, which weights large deviations more heavily, and the SD takes the square root to return to the original units."
+      }
+    }
+  ]
+}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css?v=2">
+    <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-51XLJE4TVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-51XLJE4TVH');
+  </script>
+  <script>/* AdSense only on the production host (not localhost or preview deployments) */(function(){if(location.hostname!=="www.aspirantdaily.com")return;var a=document.createElement("script");a.async=true;a.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327";a.crossOrigin="anonymous";document.head.appendChild(a);})();</script>
+</head>
+<body class="study-page subject-quant">
+    <nav class="study-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Quantitative Aptitude</a>
+            <div class="nav-controls">
+                <button onclick="toggleAllSections()" class="btn-secondary">Expand/Collapse All</button>
+                <button onclick="window.print()" class="btn-primary">📄 Print/Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> / <a href="../index.html">Study Notes</a> / <a href="index.html">Quantitative Aptitude</a> / <span>Standard Deviation and Variance: Formula, Shortcut Method and Change of Origin and Scale</span>
+            </div>
+            <h1>Standard Deviation and Variance: Formula, Shortcut Method and Change of Origin and Scale</h1>
+            <p class="page-subtitle">Variance and SD defined • Deviation method • Mean-of-squares shortcut • Frequency tables • Adding or multiplying every value • Coefficient of variation</p>
+            <div class="page-meta">
+                <span class="badge badge-secondary">SSC</span>
+                <span class="badge badge-secondary">Banking</span>
+                <span class="badge badge-secondary">Railway</span>
+                <span class="badge badge-secondary">📅 Last updated: 2026-11-01</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="study-section collapsible" data-section="1">
+            <button class="section-header" onclick="toggleSection(1)" aria-expanded="true" aria-controls="section-1">
+                <span class="section-number">1️⃣</span>
+                <span class="section-title">What Variance and Standard Deviation Measure</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-1">
+                <div class="content-box">
+<p>Two classes can have the same average mark and still look very different. In one, every student scores close to the average; in the other, marks are scattered from very low to very high. The mean cannot tell these apart. Variance and standard deviation can: they measure how far the values typically sit from the mean.</p>
+<p><strong>Variance</strong> is the average of the squared deviations from the mean. <strong>Standard deviation</strong> (SD, written σ) is the positive square root of the variance, which brings the answer back to the same units as the data. If marks are in points, the SD is in points and the variance is in points squared.</p>
+<div class="highlight-box"><p><strong>Variance σ² = Σ(x − x̄)² ÷ n  •  SD σ = √variance</strong></p></div>
+<p>Here x̄ is the mean and n is the number of values. Squaring each deviation does two jobs: it stops positive and negative deviations from cancelling out, and it gives extra weight to values far from the mean.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="2">
+            <button class="section-header" onclick="toggleSection(2)" aria-expanded="true" aria-controls="section-2">
+                <span class="section-number">2️⃣</span>
+                <span class="section-title">Method 1: The Deviation Method</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-2">
+                <div class="content-box">
+<p>Work in three steps: find the mean, square each value's distance from it, and average those squares.</p>
+<div class="case-study">
+<h4>Worked example 1: five scores</h4>
+<p>Find the variance and SD of 4, 8, 6, 10 and 12.</p>
+<p>Step 1: the mean is (4 + 8 + 6 + 10 + 12) ÷ 5 = 40 ÷ 5 = 8.</p>
+<p>Step 2: the deviations are −4, 0, −2, 2 and 4. Their squares are 16, 0, 4, 4 and 16, which add to 40.</p>
+<p>Step 3: variance = 40 ÷ 5 = <strong>8</strong>, so SD = √8 = 2√2 ≈ <strong>2.83</strong>.</p>
+</div>
+<p>The deviations always add to zero, here −4 + 0 − 2 + 2 + 4 = 0. That makes a useful check that the mean was right before you start squaring.</p>
+<p>Leaving the SD as 2√2 is often fine, because exam options are usually written in surd form.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="3">
+            <button class="section-header" onclick="toggleSection(3)" aria-expanded="true" aria-controls="section-3">
+                <span class="section-number">3️⃣</span>
+                <span class="section-title">Method 2: The Mean-of-Squares Shortcut</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-3">
+                <div class="content-box">
+<p>When the mean is not a whole number, deviations become messy decimals. A shortcut avoids them entirely:</p>
+<div class="highlight-box"><p><strong>Variance = (mean of the squares) − (square of the mean) = Σx² ÷ n − x̄²</strong></p></div>
+<div class="case-study">
+<h4>Worked example 2: the same five scores</h4>
+<p>The squares of 4, 8, 6, 10 and 12 are 16, 64, 36, 100 and 144, adding to 360. Their mean is 360 ÷ 5 = 72. Subtract the square of the mean: 72 − 8² = 72 − 64 = <strong>8</strong>, matching the deviation method.</p>
+</div>
+<p>A handy memory line: the variance is the mean of the squares minus the square of the mean. The order matters. Squaring first and averaging second always gives the larger number, so the result can never come out negative.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)" aria-expanded="true" aria-controls="section-4">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">Data With Frequencies</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
+                <div class="content-box">
+<p>When values repeat, multiply each squared deviation by its frequency f and divide by the total frequency N = Σf.</p>
+<div class="case-study">
+<h4>Worked example 3: a frequency table</h4>
+<div class="table-wrap"><table class="data-table">
+<thead><tr><th>x</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr></thead>
+<tbody>
+<tr><td>f</td><td>2</td><td>3</td><td>5</td><td>3</td><td>2</td></tr>
+</tbody></table></div>
+<p>N = 15 and the mean is (2 + 6 + 15 + 12 + 10) ÷ 15 = 45 ÷ 15 = 3, as the symmetry suggests. The squared deviations are 4, 1, 0, 1 and 4; weighted by frequency they add to 8 + 3 + 0 + 3 + 8 = 22. Variance = 22 ÷ 15 ≈ <strong>1.467</strong>.</p>
+</div>
+<p>The SD is √(22 ÷ 15) ≈ 1.21. For grouped data in class intervals, use each class's midpoint as x and proceed the same way.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)" aria-expanded="true" aria-controls="section-5">
+                <span class="section-number">5️⃣</span>
+                <span class="section-title">Change of Origin and Scale</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-5">
+                <div class="content-box">
+<p>These are the most tested properties, because they turn long calculations into one line.</p>
+<ul>
+<li><strong>Change of origin.</strong> Adding or subtracting the same number from every value shifts the whole data set without changing its spread. The mean moves; the variance and SD do not.</li>
+<li><strong>Change of scale.</strong> Multiplying every value by k multiplies the SD by |k| and the variance by k². Dividing by k divides the SD by |k|.</li>
+</ul>
+<div class="case-study">
+<h4>Worked example 4: shifting the data</h4>
+<p>Find the SD of 10, 12, 12, 12, 13, 13, 15 and 17.</p>
+<p>The mean is 104 ÷ 8 = 13. The squared deviations are 9, 1, 1, 1, 0, 0, 4 and 16, adding to 32, so the variance is 32 ÷ 8 = 4 and the SD is <strong>2</strong>. Subtracting 8 from every value gives 2, 4, 4, 4, 5, 5, 7 and 9, with mean 5 and the same SD of 2. Only the origin moved.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 5: a linear change</h4>
+<p>The SD of x is 2. What is the SD of y = 5 − 3x? The 5 changes only the origin, and the −3 scales the spread by |−3| = 3. So SD(y) = 3 × 2 = <strong>6</strong>, and the variance of y is 36.</p>
+</div>
+<p>Two special cases follow directly. The variance of a constant is zero, since nothing deviates. And for the first n natural numbers 1, 2, …, n, the variance is (n² − 1) ÷ 12.</p>
+<p>For the first 10 natural numbers that is 99 ÷ 12 = 8.25.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)" aria-expanded="true" aria-controls="section-6">
+                <span class="section-number">6️⃣</span>
+                <span class="section-title">Coefficient of Variation</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-6">
+                <div class="content-box">
+<p>SD alone cannot compare two groups with very different means. A spread of 10 runs means a lot for a batsman averaging 20 and much less for one averaging 80. The coefficient of variation (CV) expresses the SD as a percentage of the mean:</p>
+<div class="highlight-box"><p><strong>CV = SD ÷ mean × 100</strong></p></div>
+<div class="case-study">
+<h4>Worked example 6: which batsman is more consistent?</h4>
+<p>Batsman A averages 50 with an SD of 10, so his CV is 10 ÷ 50 × 100 = 20%.</p>
+<p>Batsman B averages 40 with an SD of 6, a CV of 6 ÷ 40 × 100 = 15%. B has the lower CV, so B is <strong>more consistent</strong>, even though A scores more on average.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)" aria-expanded="true" aria-controls="section-7">
+                <span class="section-number">7️⃣</span>
+                <span class="section-title">Common Traps</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-7">
+                <div class="content-box">
+<ul class="warning-list">
+<li>✘ Reporting the variance when the question asks for the SD, or the reverse.</li>
+<li>✘ Changing the SD when a constant is added to every value. Shifts leave the spread alone.</li>
+<li>✘ Multiplying the variance by k instead of k² after a change of scale.</li>
+<li>✘ Giving a negative SD after multiplying by a negative number. Use the absolute value.</li>
+<li>✘ Dividing by n − 1 when the question means the whole group. With n − 1, worked example 1 would give 40 ÷ 4 = 10 instead of 8.</li>
+</ul>
+<p>For the measures of centre that variance is built around, see <a href="mean-median-mode.html">mean, median and mode</a>, and for averages of groups see <a href="weighted-average.html">weighted average</a>.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="8">
+            <button class="section-header" onclick="toggleSection(8)" aria-expanded="true" aria-controls="section-8">
+                <span class="section-number">8️⃣</span>
+                <span class="section-title">Practice Questions (5)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-8">
+                <div class="content-box">
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q1.</strong> What is the variance of 2, 4, 6, 8 and 10? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q1" value="a"> (a) 4</label>
+                            <label><input type="radio" name="q1" value="b"> (b) 8</label>
+                            <label><input type="radio" name="q1" value="c"> (c) 10</label>
+                            <label><input type="radio" name="q1" value="d"> (d) 2√2</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q1">
+                            <p><strong>✅ Answer:</strong> (b) 8</p>
+                            <p><strong>💡 Explanation:</strong> The mean is 6. The deviations are −4, −2, 0, 2 and 4; their squares add to 16 + 4 + 0 + 4 + 16 = 40, and 40 ÷ 5 = 8. 2√2 is the standard deviation, not the variance.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q1')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q2.</strong> The standard deviation of a data set is 4. If 10 is added to every value and the result is multiplied by 5, what is the new standard deviation? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q2" value="a"> (a) 14</label>
+                            <label><input type="radio" name="q2" value="b"> (b) 20</label>
+                            <label><input type="radio" name="q2" value="c"> (c) 70</label>
+                            <label><input type="radio" name="q2" value="d"> (d) 54</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q2">
+                            <p><strong>✅ Answer:</strong> (b) 20</p>
+                            <p><strong>💡 Explanation:</strong> Adding 10 moves every value by the same amount and leaves the spread unchanged. Multiplying by 5 multiplies the SD by 5: 4 × 5 = 20.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q2')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q3.</strong> The variance of x is 9. What is the variance of y = 7 − 2x? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q3" value="a"> (a) 18</label>
+                            <label><input type="radio" name="q3" value="b"> (b) −18</label>
+                            <label><input type="radio" name="q3" value="c"> (c) 36</label>
+                            <label><input type="radio" name="q3" value="d"> (d) 11</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q3">
+                            <p><strong>✅ Answer:</strong> (c) 36</p>
+                            <p><strong>💡 Explanation:</strong> The 7 changes only the origin. Multiplying by −2 multiplies the variance by (−2)² = 4, so the new variance is 4 × 9 = 36. Variance is never negative.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q3')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q4.</strong> What is the variance of the first 7 natural numbers? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q4" value="a"> (a) 4</label>
+                            <label><input type="radio" name="q4" value="b"> (b) 2</label>
+                            <label><input type="radio" name="q4" value="c"> (c) 3.5</label>
+                            <label><input type="radio" name="q4" value="d"> (d) 7</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q4">
+                            <p><strong>✅ Answer:</strong> (a) 4</p>
+                            <p><strong>💡 Explanation:</strong> For 1, 2, …, n the variance is (n² − 1) ÷ 12. With n = 7 that is 48 ÷ 12 = 4, so the SD is 2.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q4')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q5.</strong> A data set has mean 60 and standard deviation 12. What is its coefficient of variation? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q5" value="a"> (a) 5%</label>
+                            <label><input type="radio" name="q5" value="b"> (b) 12%</label>
+                            <label><input type="radio" name="q5" value="c"> (c) 20%</label>
+                            <label><input type="radio" name="q5" value="d"> (d) 72%</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q5">
+                            <p><strong>✅ Answer:</strong> (c) 20%</p>
+                            <p><strong>💡 Explanation:</strong> CV = SD ÷ mean × 100 = 12 ÷ 60 × 100 = 20%.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q5')">Show Answer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="9">
+            <button class="section-header" onclick="toggleSection(9)" aria-expanded="true" aria-controls="section-9">
+                <span class="section-number">9️⃣</span>
+                <span class="section-title">Frequently Asked Questions</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-9">
+                <div class="content-box">
+                    <h3>Should I divide by n or by n − 1?</h3>
+                    <p>Divide by n when the data is the whole group you are describing, which is what aptitude questions almost always intend. Dividing by n − 1 gives the sample variance, used in statistics when the data is a sample standing in for a larger population. If a question does not say &#x27;sample&#x27;, use n.</p>
+                    <h3>Can the standard deviation be zero or negative?</h3>
+                    <p>It can be zero, but only when every value is the same, because then no value deviates from the mean. It can never be negative: variance is an average of squares, and the SD is its positive square root.</p>
+                    <h3>How is this different from mean deviation?</h3>
+                    <p>Mean deviation averages the distances from the mean while ignoring their signs. Variance squares the deviations instead, which weights large deviations more heavily, and the SD takes the square root to return to the original units.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="10">
+            <button class="section-header" onclick="toggleSection(10)" aria-expanded="true" aria-controls="section-10">
+                <span class="section-number">🔟</span>
+                <span class="section-title">Sources and Review</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-10">
+                <div class="content-box">
+                    <p>All problems and solutions on this page are original. No outside facts are relied on; every numeric answer is recomputed by software before publishing.</p>
+                    <div class="highlight-box">
+                        <p><strong>How this page was prepared.</strong> Drafted with AI assistance (Claude (Anthropic AI model)) from the sources listed above. 19 calculations on this page were recomputed by software and matched. Automated checks also covered structure, internal links and duplicate text. Software checks cannot confirm facts. </p>
+                        <p>Found an error? <a href="../../contact.html">Report it</a> and we will correct the page.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="11">
+            <button class="section-header" onclick="toggleSection(11)" aria-expanded="true" aria-controls="section-11">
+                <span class="section-number">11.</span>
+                <span class="section-title">Related Pages</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-11">
+                <div class="content-box">
+                    <ul class="bullet-list">
+                        <li><a href="../../repeated-questions/quant-cheat-code.html">Quant Cheat Code: 20 Must-Know Shortcuts &amp; Formulas</a></li>
+                        <li><a href="mean-median-mode.html">Mean, Median and Mode: Grouped and Ungrouped Data</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="page-navigation">
+            <a href="trigonometric-ratios-table.html" class="nav-btn">← Trigonometry Table: Values of sin, cos, tan, cosec, sec and cot for 0°, 30°, 45°, 60° and 90°</a>
+            <a href="index.html" class="nav-btn">↑ Quantitative Aptitude</a>
+            <a href="squares-and-cubes-table.html" class="nav-btn">Squares 1 to 50 and Cubes 1 to 30: Tables, Patterns and Shortcuts →</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>Subject: Quantitative Aptitude | Sources are listed on this page. <a href="../../contact.html">Report an error</a>.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>

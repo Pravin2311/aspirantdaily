@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weighted Average: Formula and Solved Examples</title>
+    <meta name="description" content="Weighted average formula with solved examples: combining group averages, percentage weightage in marks, mixed prices, finding a missing weight and 5 MCQs.">
+    <meta name="keywords" content="weighted average formula, weighted mean, combined average of two groups, weighted average of percentages, weightage marks calculation">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.aspirantdaily.com/study/quant/weighted-average.html">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.aspirantdaily.com/study/quant/weighted-average.html">
+    <meta property="og:title" content="Weighted Average: Formula and Solved Examples">
+    <meta property="og:description" content="Weighted average formula with solved examples: combining group averages, percentage weightage in marks, mixed prices, finding a missing weight and 5 MCQs.">
+    <meta property="og:image" content="https://www.aspirantdaily.com/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Weighted Average Formula: How to Combine Averages, Percentages and Prices",
+  "description": "Weighted average formula with solved examples: combining group averages, percentage weightage in marks, mixed prices, finding a missing weight and 5 MCQs.",
+  "image": "https://www.aspirantdaily.com/og-image.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "url": "https://www.aspirantdaily.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.aspirantdaily.com/icons/icon-512.png"
+    }
+  },
+  "datePublished": "2026-11-01",
+  "dateModified": "2026-11-01",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.aspirantdaily.com/study/quant/weighted-average.html"
+  },
+  "articleSection": "Quantitative Aptitude",
+  "citation": []
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.aspirantdaily.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Study Notes",
+      "item": "https://www.aspirantdaily.com/study/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Quantitative Aptitude",
+      "item": "https://www.aspirantdaily.com/study/quant/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Weighted Average Formula: How to Combine Averages, Percentages and Prices",
+      "item": "https://www.aspirantdaily.com/study/quant/weighted-average.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "When is a simple average enough?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Only when every item carries the same weight, for example when two groups have the same number of members or two subjects count equally. As soon as group sizes, quantities or percentage weightages differ, use the weighted formula."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do the weights have to add up to 1 or 100?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Weights can be counts, kilograms, hours or percentages. The formula divides by the total weight, so 2 and 3 give the same answer as 40% and 60%. If the weights are percentages that already add to 100, you can skip the division by multiplying each value by its decimal weight."
+      }
+    }
+  ]
+}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css?v=2">
+    <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-51XLJE4TVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-51XLJE4TVH');
+  </script>
+  <script>/* AdSense only on the production host (not localhost or preview deployments) */(function(){if(location.hostname!=="www.aspirantdaily.com")return;var a=document.createElement("script");a.async=true;a.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327";a.crossOrigin="anonymous";document.head.appendChild(a);})();</script>
+</head>
+<body class="study-page subject-quant">
+    <nav class="study-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Quantitative Aptitude</a>
+            <div class="nav-controls">
+                <button onclick="toggleAllSections()" class="btn-secondary">Expand/Collapse All</button>
+                <button onclick="window.print()" class="btn-primary">📄 Print/Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> / <a href="../index.html">Study Notes</a> / <a href="index.html">Quantitative Aptitude</a> / <span>Weighted Average Formula: How to Combine Averages, Percentages and Prices</span>
+            </div>
+            <h1>Weighted Average Formula: How to Combine Averages, Percentages and Prices</h1>
+            <p class="page-subtitle">The formula • Weights as counts or percentages • Combined pass rates • Mixed prices • Finding a missing group size • Why the answer sits nearer the heavier weight</p>
+            <div class="page-meta">
+                <span class="badge badge-secondary">SSC</span>
+                <span class="badge badge-secondary">Banking</span>
+                <span class="badge badge-secondary">📅 Last updated: 2026-11-01</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="study-section collapsible" data-section="1">
+            <button class="section-header" onclick="toggleSection(1)" aria-expanded="true" aria-controls="section-1">
+                <span class="section-number">1️⃣</span>
+                <span class="section-title">The Formula</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-1">
+                <div class="content-box">
+<p>A simple average treats every value as equally important. A weighted average lets some values count for more than others. Each value is multiplied by its weight, the products are added, and the total is divided by the sum of the weights:</p>
+<div class="highlight-box"><p><strong>Weighted average = (w₁x₁ + w₂x₂ + … + wₙxₙ) ÷ (w₁ + w₂ + … + wₙ)</strong></p></div>
+<p>The weight is whatever tells you how much each value matters. In a combined class average it is the number of students in each section. In a mixture it is the quantity of each ingredient. In an exam with weightage it is the percentage each part carries. Whatever the context, the arithmetic is the same.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="2">
+            <button class="section-header" onclick="toggleSection(2)" aria-expanded="true" aria-controls="section-2">
+                <span class="section-number">2️⃣</span>
+                <span class="section-title">Combining Group Averages</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-2">
+                <div class="content-box">
+<p>The most common use is merging two or more groups whose averages are known. Multiply each average by its group size to get each group's total, add the totals, and divide by the combined size.</p>
+<div class="case-study">
+<h4>Worked example 1: two batches</h4>
+<p>A morning batch of 25 students averages 72 in a mock test, and an evening batch of 35 averages 60. The combined average is (25 × 72 + 35 × 60) ÷ 60 = (1,800 + 2,100) ÷ 60 = 3,900 ÷ 60 = <strong>65</strong>.</p>
+</div>
+<p>Notice that 65 is closer to 60 than to 72, because the evening batch is larger. A useful way to see it: the answer starts at the smaller average and moves towards the larger one by a fraction equal to the larger average's share of the total weight. Here that is 60 + (72 − 60) × 25 ÷ 60 = 60 + 5 = 65.</p>
+<p>Two facts follow and make good checks. The weighted average always lies between the smallest and largest values. And it sits nearer the value with the heavier weight. If your answer falls outside the range, or on the wrong side of the middle, something has gone wrong.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="3">
+            <button class="section-header" onclick="toggleSection(3)" aria-expanded="true" aria-controls="section-3">
+                <span class="section-number">3️⃣</span>
+                <span class="section-title">Percentage Weightage in Marks</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-3">
+                <div class="content-box">
+<p>Recruitment and school results often combine several parts with fixed weightage. When the weights are percentages that add to 100, multiply each score by its weight as a decimal and add. There is no need to divide, because the weights already total 1.</p>
+<div class="case-study">
+<h4>Worked example 2: a three-part score</h4>
+<p>A selection counts a written test as 20%, a skill test as 30% and an interview as 50%. A candidate scores 80, 70 and 64. The final score is 0.2 × 80 + 0.3 × 70 + 0.5 × 64 = 16 + 21 + 32 = <strong>69</strong>.</p>
+</div>
+<p>The simple average of 80, 70 and 64 is about 71.3, higher than 69, because the candidate's weakest score carried the most weight. This is exactly the situation the weighted formula exists to capture.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)" aria-expanded="true" aria-controls="section-4">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">Combining Percentages and Rates</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
+                <div class="content-box">
+<p>A percentage is itself an average, so two percentages from groups of different sizes must also be weighted. The safest route is to convert back to counts.</p>
+<div class="case-study">
+<h4>Worked example 3: pass rates of two centres</h4>
+<p>At one centre 90% of 200 candidates passed; at another 70% of 300 passed. Passes are 180 + 210 = 390 out of 500, which is <strong>78%</strong>, not the 80% you would get by averaging 90 and 70.</p>
+</div>
+<p>The same logic applies to prices per kilogram, marks per subject and rates per hour. Whenever the value is a 'per something' figure, weight it by how much of that something there is.</p>
+<div class="case-study">
+<h4>Worked example 4: an average price</h4>
+<p>A trader buys 12 kg of rice at ₹150 per kg and 8 kg at ₹200 per kg. The average cost is (12 × 150 + 8 × 200) ÷ 20 = (1,800 + 1,600) ÷ 20 = <strong>₹170 per kg</strong>.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)" aria-expanded="true" aria-controls="section-5">
+                <span class="section-number">5️⃣</span>
+                <span class="section-title">Finding a Missing Weight</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-5">
+                <div class="content-box">
+<p>Sometimes the combined average is known and a group size is not. Each group's distance from the combined average, multiplied by its weight, must balance the other group's. So the weights are in the inverse ratio of the distances.</p>
+<div class="highlight-box"><p><strong>w₁ : w₂ = (x₂ − A) : (A − x₁)</strong>, where A is the weighted average and x₁ &lt; A &lt; x₂</p></div>
+<div class="case-study">
+<h4>Worked example 5: how many joined?</h4>
+<p>15 employees average 60 in a training test. Some new employees who average 70 join, and the overall average becomes 68. The weights are in the ratio (70 − 68) : (68 − 60) = 2 : 8 = 1 : 4 for the original group against the new one. So the new group is 4 times the original: 4 × 15 = <strong>60</strong> new employees.</p>
+</div>
+<p>Check: (15 × 60 + 60 × 70) ÷ 75 = (900 + 4,200) ÷ 75 = 68. This balancing idea is the heart of the alligation method, covered in full on the <a href="alligation-and-mixture.html">alligation and mixture</a> page.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)" aria-expanded="true" aria-controls="section-6">
+                <span class="section-number">6️⃣</span>
+                <span class="section-title">Weights as a Ratio</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-6">
+                <div class="content-box">
+<p>Weights do not need to be actual counts. A ratio works just as well, because scaling every weight by the same number does not change the answer.</p>
+<div class="case-study">
+<h4>Worked example 6: a 2 : 3 split</h4>
+<p>Boys and girls in a school are in the ratio 2 : 3. Boys average 40 kg and girls 60 kg. The average weight of all students is (2 × 40 + 3 × 60) ÷ 5 = 260 ÷ 5 = <strong>52 kg</strong>, whatever the actual numbers of students.</p>
+</div>
+<p>When the weights are equal, the weighted average reduces to the simple average: two values of 90 and 70 with equal weight average 80.</p>
+<p>Change the weights to 1 : 3 and the same two values average 75, pulled towards 70.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)" aria-expanded="true" aria-controls="section-7">
+                <span class="section-number">7️⃣</span>
+                <span class="section-title">Common Traps</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-7">
+                <div class="content-box">
+<ul class="warning-list">
+<li>✘ Averaging two percentages or two averages without weighting by group size.</li>
+<li>✘ Dividing by the number of groups instead of the total weight.</li>
+<li>✘ Using the direct ratio of distances for the weights. It is the inverse: the group farther from the combined average is the smaller one.</li>
+<li>✘ Forgetting to convert percentage weightages to decimals before multiplying.</li>
+</ul>
+<p>For the deviation method and questions on adding, removing or replacing a member, see <a href="average-formulas.html">average formulas</a>. For how spread is measured around an average, see <a href="standard-deviation-variance.html">standard deviation and variance</a>.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="8">
+            <button class="section-header" onclick="toggleSection(8)" aria-expanded="true" aria-controls="section-8">
+                <span class="section-number">8️⃣</span>
+                <span class="section-title">Practice Questions (5)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-8">
+                <div class="content-box">
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q1.</strong> A class has 40 students averaging 45 marks and another has 60 students averaging 55. What is the combined average? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q1" value="a"> (a) 50</label>
+                            <label><input type="radio" name="q1" value="b"> (b) 51</label>
+                            <label><input type="radio" name="q1" value="c"> (c) 52</label>
+                            <label><input type="radio" name="q1" value="d"> (d) 49</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q1">
+                            <p><strong>✅ Answer:</strong> (b) 51</p>
+                            <p><strong>💡 Explanation:</strong> (40 × 45 + 60 × 55) ÷ 100 = (1,800 + 3,300) ÷ 100 = 51. The answer is closer to 55 because that class is larger.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q1')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q2.</strong> An exam counts the written test as 40% and the interview as 60%. A candidate scores 60 in the written test and 85 in the interview. What is the final score? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q2" value="a"> (a) 72.5</label>
+                            <label><input type="radio" name="q2" value="b"> (b) 75</label>
+                            <label><input type="radio" name="q2" value="c"> (c) 70</label>
+                            <label><input type="radio" name="q2" value="d"> (d) 77</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q2">
+                            <p><strong>✅ Answer:</strong> (b) 75</p>
+                            <p><strong>💡 Explanation:</strong> 0.4 × 60 + 0.6 × 85 = 24 + 51 = 75. The simple average, 72.5, ignores the weightage.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q2')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q3.</strong> 10 workers earn ₹20 an hour on average. How many workers earning ₹30 an hour must join so that the overall average becomes ₹26? <span class="badge badge-secondary">hard</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q3" value="a"> (a) 10</label>
+                            <label><input type="radio" name="q3" value="b"> (b) 12</label>
+                            <label><input type="radio" name="q3" value="c"> (c) 15</label>
+                            <label><input type="radio" name="q3" value="d"> (d) 20</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q3">
+                            <p><strong>✅ Answer:</strong> (c) 15</p>
+                            <p><strong>💡 Explanation:</strong> The weights are in the inverse ratio of the distances from ₹26: (30 − 26) : (26 − 20) = 4 : 6 for the ₹20 group against the ₹30 group. So the new group is 6 ÷ 4 times the old one: 10 × 6 ÷ 4 = 15. Check: (10 × 20 + 15 × 30) ÷ 25 = 650 ÷ 25 = 26.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q3')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q4.</strong> A shop sells 5 kg of one tea at ₹120 per kg and 15 kg of another at ₹160 per kg. What is the average price per kg? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q4" value="a"> (a) ₹140</label>
+                            <label><input type="radio" name="q4" value="b"> (b) ₹150</label>
+                            <label><input type="radio" name="q4" value="c"> (c) ₹145</label>
+                            <label><input type="radio" name="q4" value="d"> (d) ₹155</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q4">
+                            <p><strong>✅ Answer:</strong> (b) ₹150</p>
+                            <p><strong>💡 Explanation:</strong> (5 × 120 + 15 × 160) ÷ 20 = (600 + 2,400) ÷ 20 = 3,000 ÷ 20 = ₹150.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q4')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q5.</strong> In school P, 80% of 100 students passed; in school Q, 60% of 400 students passed. What is the pass percentage of the two schools together? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q5" value="a"> (a) 70%</label>
+                            <label><input type="radio" name="q5" value="b"> (b) 64%</label>
+                            <label><input type="radio" name="q5" value="c"> (c) 68%</label>
+                            <label><input type="radio" name="q5" value="d"> (d) 62%</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q5">
+                            <p><strong>✅ Answer:</strong> (b) 64%</p>
+                            <p><strong>💡 Explanation:</strong> Passes: 80 + 240 = 320 out of 500 students, which is 64%. Averaging 80% and 60% to get 70% ignores the school sizes.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q5')">Show Answer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="9">
+            <button class="section-header" onclick="toggleSection(9)" aria-expanded="true" aria-controls="section-9">
+                <span class="section-number">9️⃣</span>
+                <span class="section-title">Frequently Asked Questions</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-9">
+                <div class="content-box">
+                    <h3>When is a simple average enough?</h3>
+                    <p>Only when every item carries the same weight, for example when two groups have the same number of members or two subjects count equally. As soon as group sizes, quantities or percentage weightages differ, use the weighted formula.</p>
+                    <h3>Do the weights have to add up to 1 or 100?</h3>
+                    <p>No. Weights can be counts, kilograms, hours or percentages. The formula divides by the total weight, so 2 and 3 give the same answer as 40% and 60%. If the weights are percentages that already add to 100, you can skip the division by multiplying each value by its decimal weight.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="10">
+            <button class="section-header" onclick="toggleSection(10)" aria-expanded="true" aria-controls="section-10">
+                <span class="section-number">🔟</span>
+                <span class="section-title">Sources and Review</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-10">
+                <div class="content-box">
+                    <p>All problems and solutions on this page are original. No outside facts are relied on; every numeric answer is recomputed by software before publishing.</p>
+                    <div class="highlight-box">
+                        <p><strong>How this page was prepared.</strong> Drafted with AI assistance (Claude (Anthropic AI model)) from the sources listed above. 15 calculations on this page were recomputed by software and matched. Automated checks also covered structure, internal links and duplicate text. Software checks cannot confirm facts. </p>
+                        <p>Found an error? <a href="../../contact.html">Report it</a> and we will correct the page.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="11">
+            <button class="section-header" onclick="toggleSection(11)" aria-expanded="true" aria-controls="section-11">
+                <span class="section-number">11.</span>
+                <span class="section-title">Related Pages</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-11">
+                <div class="content-box">
+                    <ul class="bullet-list">
+                        <li><a href="../../repeated-questions/quant-cheat-code.html">Quant Cheat Code: 20 Must-Know Shortcuts &amp; Formulas</a></li>
+                        <li><a href="average-formulas.html">Average: Formulas and the Deviation Method</a></li>
+                        <li><a href="average-speed-formula.html">Average Speed Formula: Why It Is Not the Simple Mean</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="page-navigation">
+            <a href="squares-and-cubes-table.html" class="nav-btn">← Squares 1 to 50 and Cubes 1 to 30: Tables, Patterns and Shortcuts</a>
+            <a href="index.html" class="nav-btn">Quantitative Aptitude →</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>Subject: Quantitative Aptitude | Sources are listed on this page. <a href="../../contact.html">Report an error</a>.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>
