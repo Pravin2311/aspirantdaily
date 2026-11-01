@@ -103,7 +103,10 @@ def mcq_html(mcqs, prefix="q"):
 
 def prepared_box(meta, review, n_checks):
     checks = (f"{n_checks} calculations on this page were recomputed by software and matched. " if n_checks else "")
-    if review and review.get("status") in ("approved", "published"):
+    if review and review.get("status") in ("approved", "published") and "AI source check" in review.get("reviewer", ""):
+        # Owner asked not to show the AI check publicly; say nothing rather than imply a human review.
+        ed = ""
+    elif review and review.get("status") in ("approved", "published"):
         ed = (f"Reviewed by {esc(review['reviewer'])} on {esc(review['date'])} against the sources listed above"
               f"{' (' + esc(review['scope']) + ')' if review.get('scope') else ''}.")
     else:
