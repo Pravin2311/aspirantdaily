@@ -235,7 +235,7 @@
     "window_days": 28,
     "evaluate_after": "2026-11-20",
     "status": "running",
-    "confounders": "Meta description of the RRB Group D page changed along with content. Most economy/polity pages had near-zero impressions before. Custom 404 page shipped the same day (1347712), site-wide but only affects missing URLs.",
+    "confounders": "Meta description of the RRB Group D page changed along with content. Most economy/polity pages had near-zero impressions before. Custom 404 page shipped the same day (1347712), site-wide but only affects missing URLs. ccdbbb6 (11-01) added a pipeline link block to the held judiciary-and-landmark-cases page by mistake; the pipeline now skips held pages.",
     "next_action": "Weekly interim; decide after 2026-11-20. Consider an RRB Group D title test only after this is evaluated.",
     "baseline": {
       "window": [
@@ -267,7 +267,7 @@
     "window_days": 28,
     "evaluate_after": "2026-11-21",
     "status": "running",
-    "confounders": "Meta descriptions changed with content. Pages had little or no impressions before; the geography post was not indexed. Study-notes updates shipped the same days. a94f873 (same day) made wording-only edits to 3 other blog posts and the share descriptions of 10 cheat codes; not tracked separately.",
+    "confounders": "Meta descriptions changed with content. Pages had little or no impressions before; the geography post was not indexed. Study-notes updates shipped the same days. a94f873 (same day) made wording-only edits to 3 other blog posts and the share descriptions of 10 cheat codes; not tracked separately. Pipeline link blocks were added to the held quant-cheat-code page after the start, by mistake (holds_back defaults to true): 86a576e and dd20dd1 (10-24), 63a158c (10-29) and b8fb2ba (11-01) each appended links to new quant pages. The pipeline now skips held pages (11-01).",
     "next_action": "Weekly interim; decide after 2026-11-21. Check indexing status of the geography post in Search Console.",
     "baseline": {
       "window": [

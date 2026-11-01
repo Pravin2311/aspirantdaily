@@ -731,14 +731,31 @@ def cmd_series(args):
     return 1 if any(line.startswith("REFUSED") for line in log) else 0
 
 
+def held_by(path):
+    """Id of a running experiment that holds `path` back from edits, or None. Same rule as
+    seo/analysis.py: a running experiment holds its pages unless it says "holds_back": false."""
+    try:
+        with open(os.path.join(ROOT, "seo", "experiments.json"), encoding="utf-8") as fh:
+            experiments = json.load(fh)
+    except FileNotFoundError:
+        return None
+    for e in experiments:
+        if e.get("status") == "running" and e.get("holds_back", True) and re.search(e["pages_regex"], "/" + path):
+            return e["id"]
+    return None
+
+
 def update_block(state, path, inner, dry, pending=None):
     """Insert or refresh the pipeline link block in an existing page. With `pending`, the
-    new text is staged there instead of written."""
+    new text is staged there instead of written. Pages held by a running experiment are left alone."""
     full = os.path.join(ROOT, path)
     if pending is not None and path in pending:
         return f"REFUSED  {path}: would get two pipeline link blocks in one run"
     if not os.path.exists(full):
         return f"skip     {path}: does not exist"
+    held = held_by(path)
+    if held:
+        return f"held     {path}: experiment {held} is running"
     text = read(full)
     try:
         new = replace_block(text, inner, [r'[ \t]*<div class="page-navigation">', r"[ \t]*</section>\s*</main>",

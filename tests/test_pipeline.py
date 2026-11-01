@@ -357,6 +357,25 @@ class PipelineTests(unittest.TestCase):
         block2 = content_pipeline.links_block(rel, [("study/quant/y.html", "Y")], "Go deeper")
         self.assertIn("REFUSED", content_pipeline.update_block(state, rel, block2, False))
 
+    def test_link_block_skips_pages_held_by_an_experiment(self):
+        rel = "parent.html"
+        page = "<html>\n<main>\n</main>\n</html>\n"
+        with open(os.path.join(self.tmp, rel), "w", encoding="utf-8") as fh:
+            fh.write(page)
+        os.makedirs(os.path.join(self.tmp, "seo"))
+        experiments = [{"id": "perf", "status": "running", "holds_back": False, "pages_regex": ".*"},
+                       {"id": "held", "status": "running", "pages_regex": r"^/parent\.html$"}]
+        with open(os.path.join(self.tmp, "seo", "experiments.json"), "w", encoding="utf-8") as fh:
+            json.dump(experiments, fh)
+        state = {"pages": {}, "batches": {}}
+        block = content_pipeline.links_block(rel, [("study/quant/x.html", "X")], "Go deeper")
+        self.assertIn("experiment held", content_pipeline.update_block(state, rel, block, False))
+        self.assertEqual(page, open(os.path.join(self.tmp, rel), encoding="utf-8").read())
+        experiments[1]["status"] = "concluded"
+        with open(os.path.join(self.tmp, "seo", "experiments.json"), "w", encoding="utf-8") as fh:
+            json.dump(experiments, fh)
+        self.assertIn("updated", content_pipeline.update_block(state, rel, block, False))
+
 
 if __name__ == "__main__":
     unittest.main()
