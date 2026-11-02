@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AP and GP Formulas: Terms and Sums | AspirantDaily</title>
+    <meta name="description" content="AP and GP formulas with checked examples: nth term, sum of n terms, counting terms, multiples in a range, an AP from two terms, infinite GP sums and AM and GM.">
+    <meta name="keywords" content="ap and gp formulas, nth term of ap, sum of n terms of ap, sum of gp formula, infinite gp sum, number of terms in ap">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.aspirantdaily.com/study/quant/arithmetic-geometric-progression.html">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.aspirantdaily.com/study/quant/arithmetic-geometric-progression.html">
+    <meta property="og:title" content="AP and GP Formulas: Terms and Sums | AspirantDaily">
+    <meta property="og:description" content="AP and GP formulas with checked examples: nth term, sum of n terms, counting terms, multiples in a range, an AP from two terms, infinite GP sums and AM and GM.">
+    <meta property="og:image" content="https://www.aspirantdaily.com/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "AP and GP Formulas: nth Term, Sum of n Terms, Number of Terms, Infinite GP and AM–GM",
+  "description": "AP and GP formulas with checked examples: nth term, sum of n terms, counting terms, multiples in a range, an AP from two terms, infinite GP sums and AM and GM.",
+  "image": "https://www.aspirantdaily.com/og-image.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "url": "https://www.aspirantdaily.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.aspirantdaily.com/icons/icon-512.png"
+    }
+  },
+  "datePublished": "2026-11-02",
+  "dateModified": "2026-11-02",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.aspirantdaily.com/study/quant/arithmetic-geometric-progression.html"
+  },
+  "articleSection": "Quantitative Aptitude",
+  "citation": []
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.aspirantdaily.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Study Notes",
+      "item": "https://www.aspirantdaily.com/study/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Quantitative Aptitude",
+      "item": "https://www.aspirantdaily.com/study/quant/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "AP and GP Formulas: nth Term, Sum of n Terms, Number of Terms, Infinite GP and AM–GM",
+      "item": "https://www.aspirantdaily.com/study/quant/arithmetic-geometric-progression.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I tell an AP from a GP?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Subtract neighbouring terms: a constant difference means an AP. Divide neighbouring terms: a constant ratio means a GP. 2, 6, 18 has differences 4 and 12 but a constant ratio of 3, so it is a GP."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is there a + 1 when counting terms?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "(last − first)/d counts the gaps between terms, not the terms. There is always one more term than there are gaps, just as 5 fence posts have 4 gaps between them."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When does an infinite GP have a sum?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Only when the common ratio is between −1 and 1. Then each term shrinks and the total approaches a/(1 − r). For r = 2 or r = −3, the terms grow and there is no finite sum."
+      }
+    }
+  ]
+}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css?v=2">
+    <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-51XLJE4TVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-51XLJE4TVH');
+  </script>
+  <script>/* AdSense only on the production host (not localhost or preview deployments) */(function(){if(location.hostname!=="www.aspirantdaily.com")return;var a=document.createElement("script");a.async=true;a.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327";a.crossOrigin="anonymous";document.head.appendChild(a);})();</script>
+</head>
+<body class="study-page subject-quant">
+    <nav class="study-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Quantitative Aptitude</a>
+            <div class="nav-controls">
+                <button onclick="toggleAllSections()" class="btn-secondary">Expand/Collapse All</button>
+                <button onclick="window.print()" class="btn-primary">📄 Print/Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> / <a href="../index.html">Study Notes</a> / <a href="index.html">Quantitative Aptitude</a> / <span>AP and GP Formulas: nth Term, Sum of n Terms, Number of Terms, Infinite GP and AM–GM</span>
+            </div>
+            <h1>AP and GP Formulas: nth Term, Sum of n Terms, Number of Terms, Infinite GP and AM–GM</h1>
+            <p class="page-subtitle">AP: a + (n − 1)d and n/2 × (first + last) • Counting terms • Multiples in a range • GP: arⁿ⁻¹ and a(rⁿ − 1)/(r − 1) • Infinite GP: a/(1 − r) • AM and GM</p>
+            <div class="page-meta">
+                <span class="badge badge-secondary">SSC</span>
+                <span class="badge badge-secondary">Banking</span>
+                <span class="badge badge-secondary">Railway</span>
+                <span class="badge badge-secondary">📅 Last updated: 2026-11-02</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="study-section collapsible" data-section="1">
+            <button class="section-header" onclick="toggleSection(1)" aria-expanded="true" aria-controls="section-1">
+                <span class="section-number">1️⃣</span>
+                <span class="section-title">Arithmetic Progressions</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-1">
+                <div class="content-box">
+<p>An <strong>arithmetic progression</strong> (AP) adds the same number, the common difference d, at every step: 5, 8, 11, 14 … has a = 5 and d = 3. Two formulas cover most AP questions:</p>
+<div class="highlight-box">
+<p><strong>nth term: Tₙ = a + (n − 1)d</strong></p>
+<p><strong>Sum of n terms: Sₙ = n/2 × (first + last) = n/2 × [2a + (n − 1)d]</strong></p>
+</div>
+<p>The (n − 1) appears because the first term has had no difference added yet. The sum formula pairs the first term with the last, the second with the second-last, and so on: every pair has the same total.</p>
+<div class="case-study">
+<h4>Worked example 1: the 20th term</h4>
+<p>For 5, 8, 11, …: T₂₀ = 5 + 19 × 3 = <strong>62</strong>.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 2: the sum of 20 terms</h4>
+<p>S₂₀ = 20/2 × (5 + 62) = 10 × 67 = <strong>670</strong>.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="2">
+            <button class="section-header" onclick="toggleSection(2)" aria-expanded="true" aria-controls="section-2">
+                <span class="section-number">2️⃣</span>
+                <span class="section-title">Counting Terms and Multiples</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-2">
+                <div class="content-box">
+<p>Rearranging the nth-term formula gives the number of terms directly:</p>
+<div class="highlight-box"><p><strong>n = (last − first)/d + 1</strong></p></div>
+<div class="case-study">
+<h4>Worked example 3: 7, 11, …, 207</h4>
+<p>n = (207 − 7)/4 + 1 = 50 + 1 = <strong>51</strong> terms.</p>
+</div>
+<p>Questions about multiples in a range are APs in disguise. Find the first and last multiples inside the range, count the terms, then use the sum formula. The <a href="divisibility-rules.html">divisibility rules</a> help find the end points.</p>
+<div class="case-study">
+<h4>Worked example 4: multiples of 7 up to 100</h4>
+<p>The multiples run 7, 14, …, 98: that is (98 − 7)/7 + 1 = 14 terms. Their sum is 14/2 × (7 + 98) = <strong>735</strong>.</p>
+</div>
+<p>When two terms are given, their difference fixes d, because the gap between the mth and nth terms is (n − m)d.</p>
+<div class="case-study">
+<h4>Worked example 5: d from two terms</h4>
+<p>The 4th term is 17 and the 10th is 41. Six steps add 24, so d = <strong>4</strong>.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 6: the first term</h4>
+<p>From the 4th term, go back 3 steps: a = 17 − 3 × 4 = <strong>5</strong>. The AP is 5, 9, 13, 17, …</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="3">
+            <button class="section-header" onclick="toggleSection(3)" aria-expanded="true" aria-controls="section-3">
+                <span class="section-number">3️⃣</span>
+                <span class="section-title">Geometric Progressions</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-3">
+                <div class="content-box">
+<p>A <strong>geometric progression</strong> (GP) multiplies by the same number, the common ratio r, at every step: 3, 6, 12, 24 … has a = 3 and r = 2.</p>
+<div class="highlight-box">
+<p><strong>nth term: Tₙ = a × rⁿ⁻¹</strong></p>
+<p><strong>Sum of n terms: Sₙ = a(rⁿ − 1)/(r − 1)</strong> for r ≠ 1</p>
+</div>
+<div class="case-study">
+<h4>Worked example 7: the 8th term</h4>
+<p>For 3, 6, 12, …: T₈ = 3 × 2⁷ = 3 × 128 = <strong>384</strong>.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 8: the sum of 8 terms</h4>
+<p>S₈ = 3 × (2⁸ − 1)/(2 − 1) = 3 × 255 = <strong>765</strong>. Adding the eight terms one by one gives the same total.</p>
+</div>
+<p>When 0 &lt; r &lt; 1 the terms shrink, and adding infinitely many of them approaches a finite limit:</p>
+<div class="highlight-box"><p><strong>Infinite GP sum = a/(1 − r)</strong>, valid only for −1 &lt; r &lt; 1</p></div>
+<div class="case-study">
+<h4>Worked example 9: 12 + 6 + 3 + …</h4>
+<p>a = 12 and r = 1/2, so the sum is 12 ÷ 1/2 = <strong>24</strong>. Recurring decimals are infinite GPs too; see <a href="recurring-decimals-to-fractions.html">recurring decimals to fractions</a>.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)" aria-expanded="true" aria-controls="section-4">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">Arithmetic and Geometric Means</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
+                <div class="content-box">
+<p>Between two positive numbers a and b, the <strong>arithmetic mean</strong> is (a + b)/2 and the <strong>geometric mean</strong> is √(ab). They are the middle terms of an AP and a GP through a and b. The AM is never smaller than the GM, and they are equal only when a = b.</p>
+<div class="case-study">
+<h4>Worked example 10: AM and GM of 4 and 16</h4>
+<p>AM = 10 and GM = √64 = <strong>8</strong>. So 4, 10, 16 is an AP and 4, 8, 16 is a GP.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)" aria-expanded="true" aria-controls="section-5">
+                <span class="section-number">5️⃣</span>
+                <span class="section-title">Common Traps</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-5">
+                <div class="content-box">
+<ul>
+<li><strong>Using n instead of n − 1.</strong> The nth term adds (n − 1) differences.</li>
+<li><strong>Forgetting the + 1 when counting terms.</strong> (last − first)/d counts gaps.</li>
+<li><strong>Using the infinite formula when r ≥ 1.</strong> The terms grow and there is no finite sum.</li>
+<li><strong>Mixing up AP and GP.</strong> Check differences and ratios before choosing a formula.</li>
+<li><strong>Wrong end points for multiples.</strong> The first multiple of 6 above 100 is 102, not 100.</li>
+</ul>
+<p>For sums of squares and cubes, see <a href="sum-of-natural-numbers-squares-cubes.html">sum of natural numbers, squares and cubes</a>.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)" aria-expanded="true" aria-controls="section-6">
+                <span class="section-number">6️⃣</span>
+                <span class="section-title">Practice Questions (5)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-6">
+                <div class="content-box">
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q1.</strong> What is the 15th term of the AP 3, 8, 13, …? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q1" value="a"> (a) 73</label>
+                            <label><input type="radio" name="q1" value="b"> (b) 78</label>
+                            <label><input type="radio" name="q1" value="c"> (c) 68</label>
+                            <label><input type="radio" name="q1" value="d"> (d) 75</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q1">
+                            <p><strong>✅ Answer:</strong> (a) 73</p>
+                            <p><strong>💡 Explanation:</strong> a = 3 and d = 5, so the 15th term is 3 + 14 × 5 = 73. Using 15 × 5 instead of 14 × 5 gives the trap answer 78.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q1')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q2.</strong> What is the sum of the first 25 odd numbers? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q2" value="a"> (a) 600</label>
+                            <label><input type="radio" name="q2" value="b"> (b) 650</label>
+                            <label><input type="radio" name="q2" value="c"> (c) 625</label>
+                            <label><input type="radio" name="q2" value="d"> (d) 576</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q2">
+                            <p><strong>✅ Answer:</strong> (c) 625</p>
+                            <p><strong>💡 Explanation:</strong> The odd numbers form an AP with a = 1 and d = 2. Sum = 25/2 × (2 + 24 × 2) = 625, which is also 25².</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q2')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q3.</strong> What is the 6th term of the GP 2, 6, 18, …? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q3" value="a"> (a) 162</label>
+                            <label><input type="radio" name="q3" value="b"> (b) 486</label>
+                            <label><input type="radio" name="q3" value="c"> (c) 1458</label>
+                            <label><input type="radio" name="q3" value="d"> (d) 243</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q3">
+                            <p><strong>✅ Answer:</strong> (b) 486</p>
+                            <p><strong>💡 Explanation:</strong> a = 2 and r = 3, so the 6th term is 2 × 3⁵ = 2 × 243 = 486.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q3')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q4.</strong> What is the sum of the infinite GP 9 + 3 + 1 + …? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q4" value="a"> (a) 12</label>
+                            <label><input type="radio" name="q4" value="b"> (b) 15</label>
+                            <label><input type="radio" name="q4" value="c"> (c) 27</label>
+                            <label><input type="radio" name="q4" value="d"> (d) 13.5</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q4">
+                            <p><strong>✅ Answer:</strong> (d) 13.5</p>
+                            <p><strong>💡 Explanation:</strong> a = 9 and r = 1/3, so the sum is 9 ÷ (1 − 1/3) = 9 ÷ 2/3 = 13.5.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q4')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q5.</strong> How many three-digit numbers are divisible by 6? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q5" value="a"> (a) 150</label>
+                            <label><input type="radio" name="q5" value="b"> (b) 149</label>
+                            <label><input type="radio" name="q5" value="c"> (c) 151</label>
+                            <label><input type="radio" name="q5" value="d"> (d) 166</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q5">
+                            <p><strong>✅ Answer:</strong> (a) 150</p>
+                            <p><strong>💡 Explanation:</strong> The first is 102 and the last 996. Number of terms = (996 − 102)/6 + 1 = 149 + 1 = 150.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q5')">Show Answer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)" aria-expanded="true" aria-controls="section-7">
+                <span class="section-number">7️⃣</span>
+                <span class="section-title">Frequently Asked Questions</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-7">
+                <div class="content-box">
+                    <h3>How do I tell an AP from a GP?</h3>
+                    <p>Subtract neighbouring terms: a constant difference means an AP. Divide neighbouring terms: a constant ratio means a GP. 2, 6, 18 has differences 4 and 12 but a constant ratio of 3, so it is a GP.</p>
+                    <h3>Why is there a + 1 when counting terms?</h3>
+                    <p>(last − first)/d counts the gaps between terms, not the terms. There is always one more term than there are gaps, just as 5 fence posts have 4 gaps between them.</p>
+                    <h3>When does an infinite GP have a sum?</h3>
+                    <p>Only when the common ratio is between −1 and 1. Then each term shrinks and the total approaches a/(1 − r). For r = 2 or r = −3, the terms grow and there is no finite sum.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="8">
+            <button class="section-header" onclick="toggleSection(8)" aria-expanded="true" aria-controls="section-8">
+                <span class="section-number">8️⃣</span>
+                <span class="section-title">Sources and Review</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-8">
+                <div class="content-box">
+                    <p>All problems and solutions on this page are original. No outside facts are relied on; every numeric answer is recomputed by software before publishing.</p>
+                    <div class="highlight-box">
+                        <p><strong>How this page was prepared.</strong> Drafted with AI assistance (Claude (Anthropic AI model)) from the sources listed above. 15 calculations on this page were recomputed by software and matched. Automated checks also covered structure, internal links and duplicate text. Software checks cannot confirm facts. </p>
+                        <p>Found an error? <a href="../../contact.html">Report it</a> and we will correct the page.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="9">
+            <button class="section-header" onclick="toggleSection(9)" aria-expanded="true" aria-controls="section-9">
+                <span class="section-number">9️⃣</span>
+                <span class="section-title">Related Pages</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-9">
+                <div class="content-box">
+                    <ul class="bullet-list">
+                        <li><a href="../../repeated-questions/quant-cheat-code.html">Quant Cheat Code: 20 Must-Know Shortcuts &amp; Formulas</a></li>
+                        <li><a href="algebraic-identities.html">Algebraic Identities for SSC: List and Uses</a></li>
+                        <li><a href="x-plus-1-by-x-problems.html">x + 1/x Problems: Finding x² + 1/x² and x³ + 1/x³</a></li>
+                        <li><a href="linear-equations-word-problems.html">Linear Equations: Two-Variable Word Problems</a></li>
+                        <li><a href="quadratic-equations-bank-exams.html">Quadratic Equations for Bank Exams: Comparing x and y</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="page-navigation">
+            <a href="vedic-maths-multiplication.html" class="nav-btn">← Fast Multiplication Tricks for Exams: Multiplying by 11, 25 and 99, Numbers Near 100 and Squares Ending in 5</a>
+            <a href="index.html" class="nav-btn">↑ Quantitative Aptitude</a>
+            <a href="consecutive-numbers.html" class="nav-btn">Sum of Consecutive Numbers: The Middle-Term Method for Consecutive, Odd and Even Numbers, Products and Squares →</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>Subject: Quantitative Aptitude | Sources are listed on this page. <a href="../../contact.html">Report an error</a>.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>

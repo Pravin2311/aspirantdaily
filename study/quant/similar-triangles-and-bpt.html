@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Similar Triangles and the Basic Proportionality Theorem</title>
+    <meta name="description" content="BPT, or Thales&#x27; theorem, with checked examples: segments, the converse, similarity tests, area ratios, shadows and the altitude rule.">
+    <meta name="keywords" content="basic proportionality theorem, thales theorem, similar triangles area ratio, similar triangles questions, bpt theorem problems, midpoint theorem">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.aspirantdaily.com/study/quant/similar-triangles-and-bpt.html">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.aspirantdaily.com/study/quant/similar-triangles-and-bpt.html">
+    <meta property="og:title" content="Similar Triangles and the Basic Proportionality Theorem">
+    <meta property="og:description" content="BPT, or Thales&#x27; theorem, with checked examples: segments, the converse, similarity tests, area ratios, shadows and the altitude rule.">
+    <meta property="og:image" content="https://www.aspirantdaily.com/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Basic Proportionality Theorem and Similar Triangles: Side Ratios, Area Ratios, Shadows and the Altitude Rule",
+  "description": "BPT, or Thales' theorem, with checked examples: segments, the converse, similarity tests, area ratios, shadows and the altitude rule.",
+  "image": "https://www.aspirantdaily.com/og-image.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "url": "https://www.aspirantdaily.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.aspirantdaily.com/icons/icon-512.png"
+    }
+  },
+  "datePublished": "2026-11-02",
+  "dateModified": "2026-11-02",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.aspirantdaily.com/study/quant/similar-triangles-and-bpt.html"
+  },
+  "articleSection": "Quantitative Aptitude",
+  "citation": []
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.aspirantdaily.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Study Notes",
+      "item": "https://www.aspirantdaily.com/study/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Quantitative Aptitude",
+      "item": "https://www.aspirantdaily.com/study/quant/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Basic Proportionality Theorem and Similar Triangles: Side Ratios, Area Ratios, Shadows and the Altitude Rule",
+      "item": "https://www.aspirantdaily.com/study/quant/similar-triangles-and-bpt.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does BPT say?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If a line is drawn parallel to one side of a triangle and meets the other two sides at distinct points, it divides those two sides in the same ratio. It is also called Thales' theorem."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do areas go as the square of the side ratio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Area is half base times height. In similar triangles both the base and the height scale by the same factor k, so the area scales by k × k = k²."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do perimeters, medians and altitudes follow the side ratio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Every length in similar triangles, including perimeters, medians, altitudes and angle bisectors, is in the same ratio as the sides. Only areas use the square."
+      }
+    }
+  ]
+}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css?v=2">
+    <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-51XLJE4TVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-51XLJE4TVH');
+  </script>
+  <script>/* AdSense only on the production host (not localhost or preview deployments) */(function(){if(location.hostname!=="www.aspirantdaily.com")return;var a=document.createElement("script");a.async=true;a.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327";a.crossOrigin="anonymous";document.head.appendChild(a);})();</script>
+</head>
+<body class="study-page subject-quant">
+    <nav class="study-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Quantitative Aptitude</a>
+            <div class="nav-controls">
+                <button onclick="toggleAllSections()" class="btn-secondary">Expand/Collapse All</button>
+                <button onclick="window.print()" class="btn-primary">📄 Print/Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> / <a href="../index.html">Study Notes</a> / <a href="index.html">Quantitative Aptitude</a> / <span>Basic Proportionality Theorem and Similar Triangles: Side Ratios, Area Ratios, Shadows and the Altitude Rule</span>
+            </div>
+            <h1>Basic Proportionality Theorem and Similar Triangles: Side Ratios, Area Ratios, Shadows and the Altitude Rule</h1>
+            <p class="page-subtitle">A line parallel to one side cuts the other two in the same ratio • The converse • AA, SSS and SAS similarity • Areas go as the square of sides • Shadows • Altitude on the hypotenuse</p>
+            <div class="page-meta">
+                <span class="badge badge-secondary">SSC</span>
+                <span class="badge badge-secondary">📅 Last updated: 2026-11-02</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="study-section collapsible" data-section="1">
+            <button class="section-header" onclick="toggleSection(1)" aria-expanded="true" aria-controls="section-1">
+                <span class="section-number">1️⃣</span>
+                <span class="section-title">The Theorem</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-1">
+                <div class="content-box">
+<p>Draw triangle ABC and a line DE parallel to BC, with D on AB and E on AC. The basic proportionality theorem (also called Thales' theorem) says the line cuts the two sides in the same ratio:</p>
+<div class="highlight-box"><p><strong>If DE ∥ BC, then AD/DB = AE/EC</strong> &nbsp;&nbsp; and also AD/AB = AE/AC = DE/BC</p></div>
+<p>The second form compares the small triangle ADE with the whole triangle ABC. They are similar, because the parallel line creates equal corresponding angles. Watch which ratio a question uses: AD/DB compares the two parts of a side, while AD/AB compares a part with the whole side.</p>
+<div class="case-study">
+<h4>Worked example 1: finding a segment</h4>
+<p>DE ∥ BC, AD = 3 cm, DB = 2 cm and AE = 4.5 cm. Then 3/2 = 4.5/EC, so EC = 4.5 × 2/3 = <strong>3 cm</strong>.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 2: the parallel side itself</h4>
+<p>AD = 4 cm, AB = 10 cm and BC = 15 cm. DE/BC = AD/AB, so DE = 15 × 4/10 = <strong>6 cm</strong>. Using AD/DB here would give the wrong answer, because DE is compared with the whole of BC.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="2">
+            <button class="section-header" onclick="toggleSection(2)" aria-expanded="true" aria-controls="section-2">
+                <span class="section-number">2️⃣</span>
+                <span class="section-title">The Converse and the Midpoint Theorem</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-2">
+                <div class="content-box">
+<p>The theorem also works backwards: if a line divides two sides of a triangle in the same ratio, it is parallel to the third side.</p>
+<div class="case-study">
+<h4>Worked example 3: is DE parallel to BC?</h4>
+<p>AD = 6, DB = 4, AE = 9 and EC = 6. AD/DB = 3/2 and AE/EC = 3/2, so the ratios are equal (<strong>true</strong>) and DE ∥ BC.</p>
+</div>
+<p>The special case where D and E are midpoints is the <strong>midpoint theorem</strong>: the line joining the midpoints of two sides is parallel to the third side and half its length. The small triangle then has a quarter of the area.</p>
+<div class="case-study">
+<h4>Worked example 4: midpoints</h4>
+<p>Triangle ABC has an area of 48 cm². D and E are the midpoints of AB and AC. The side ratio is 1 : 2, so triangle ADE has 48 × (1/2)² = <strong>12 cm²</strong>.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="3">
+            <button class="section-header" onclick="toggleSection(3)" aria-expanded="true" aria-controls="section-3">
+                <span class="section-number">3️⃣</span>
+                <span class="section-title">Similarity Tests</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-3">
+                <div class="content-box">
+<p>Two triangles are similar when their corresponding angles are equal and their corresponding sides are in the same ratio. You do not need to check everything; any one of these tests is enough:</p>
+<table>
+<thead><tr><th>Test</th><th>What you need</th></tr></thead>
+<tbody>
+<tr><td>AA</td><td>Two pairs of equal angles (the third pair then follows)</td></tr>
+<tr><td>SSS</td><td>All three pairs of sides in the same ratio</td></tr>
+<tr><td>SAS</td><td>Two pairs of sides in the same ratio and the angle between them equal</td></tr>
+</tbody>
+</table>
+<p>In exam figures AA is the usual route: parallel lines give equal corresponding angles, and a shared angle or vertically opposite angles give the second pair. Always write the vertices in matching order, such as △ADE ~ △ABC, so the sides you compare actually correspond.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)" aria-expanded="true" aria-controls="section-4">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">Areas Go as the Square</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
+                <div class="content-box">
+<p>If two similar triangles have sides in the ratio k, every length (perimeter, altitude, median) is in the ratio k as well, but areas are in the ratio k².</p>
+<div class="highlight-box"><p><strong>Area ratio = (side ratio)²</strong> &nbsp;&nbsp; and &nbsp;&nbsp; <strong>side ratio = √(area ratio)</strong></p></div>
+<div class="case-study">
+<h4>Worked example 5: sides 3 : 5</h4>
+<p>The areas are in the ratio 3² : 5² = <strong>9 : 25</strong>.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 6: area from the side ratio</h4>
+<p>A triangle of area 75 cm² is similar to a smaller one with sides in the ratio 5 : 2. The smaller area is 75 × (2/5)² = <strong>12 cm²</strong>.</p>
+</div>
+<p>For the area of a trapezium cut off by a parallel line, subtract the small triangle from the whole: with AD : AB = 2 : 5, the small triangle is 4 parts out of 25, leaving 21 parts for the trapezium.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)" aria-expanded="true" aria-controls="section-5">
+                <span class="section-number">5️⃣</span>
+                <span class="section-title">Shadows and the Altitude Rule</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-5">
+                <div class="content-box">
+<p>Objects standing upright at the same time of day form similar triangles with their shadows, because the sun's rays arrive at the same angle. So height ÷ shadow is the same for both. For angle-based versions, see <a href="heights-and-distances.html">heights and distances</a>.</p>
+<div class="case-study">
+<h4>Worked example 7: a tower's height</h4>
+<p>A 6 m pole casts a 4 m shadow while a tower casts a 28 m shadow. The tower is 6 × 28/4 = <strong>42 m</strong> tall.</p>
+</div>
+<p>In a right triangle, the altitude from the right angle to the hypotenuse splits it into two similar triangles. That gives a quick rule: the altitude squared equals the product of the two pieces of the hypotenuse.</p>
+<div class="case-study">
+<h4>Worked example 8: the altitude</h4>
+<p>The altitude divides the hypotenuse into 4 cm and 9 cm. Altitude = √(4 × 9) = <strong>6 cm</strong>. For related triangle facts, see <a href="triangle-centres.html">triangle centres</a>.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)" aria-expanded="true" aria-controls="section-6">
+                <span class="section-number">6️⃣</span>
+                <span class="section-title">Common Traps</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-6">
+                <div class="content-box">
+<ul>
+<li><strong>Mixing AD/DB with AD/AB.</strong> Use part : part for the two sides, but part : whole for the parallel side.</li>
+<li><strong>Using the side ratio for areas.</strong> Square it.</li>
+<li><strong>Squaring perimeters.</strong> Perimeters follow the side ratio, not its square.</li>
+<li><strong>Mismatched vertices.</strong> Write the similarity in order so corresponding sides line up.</li>
+<li><strong>Forgetting the converse.</strong> Equal ratios on two sides prove the line is parallel.</li>
+</ul>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)" aria-expanded="true" aria-controls="section-7">
+                <span class="section-number">7️⃣</span>
+                <span class="section-title">Practice Questions (5)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-7">
+                <div class="content-box">
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q1.</strong> In triangle ABC, DE ∥ BC with D on AB and E on AC. If AD = 4 cm, DB = 6 cm and AE = 6 cm, what is EC? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q1" value="a"> (a) 6 cm</label>
+                            <label><input type="radio" name="q1" value="b"> (b) 4 cm</label>
+                            <label><input type="radio" name="q1" value="c"> (c) 9 cm</label>
+                            <label><input type="radio" name="q1" value="d"> (d) 8 cm</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q1">
+                            <p><strong>✅ Answer:</strong> (c) 9 cm</p>
+                            <p><strong>💡 Explanation:</strong> By BPT (Thales&#x27; theorem), AD/DB = AE/EC, so 4/6 = 6/EC and EC = 9 cm.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q1')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q2.</strong> Two similar triangles have corresponding sides in the ratio 4 : 7. The larger has an area of 98 cm². What is the area of the smaller? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q2" value="a"> (a) 32 cm²</label>
+                            <label><input type="radio" name="q2" value="b"> (b) 56 cm²</label>
+                            <label><input type="radio" name="q2" value="c"> (c) 24 cm²</label>
+                            <label><input type="radio" name="q2" value="d"> (d) 16 cm²</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q2">
+                            <p><strong>✅ Answer:</strong> (a) 32 cm²</p>
+                            <p><strong>💡 Explanation:</strong> Areas are in the ratio of the squares of the sides, 16 : 49. So the smaller area is 98 × 16/49 = 32 cm².</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q2')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q3.</strong> The areas of two similar triangles are in the ratio 16 : 81. The smaller has a perimeter of 36 cm. What is the larger one&#x27;s perimeter? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q3" value="a"> (a) 64 cm</label>
+                            <label><input type="radio" name="q3" value="b"> (b) 72 cm</label>
+                            <label><input type="radio" name="q3" value="c"> (c) 54 cm</label>
+                            <label><input type="radio" name="q3" value="d"> (d) 81 cm</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q3">
+                            <p><strong>✅ Answer:</strong> (d) 81 cm</p>
+                            <p><strong>💡 Explanation:</strong> The side ratio is √16 : √81 = 4 : 9, and perimeters follow the side ratio. So the larger perimeter is 36 × 9/4 = 81 cm.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q3')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q4.</strong> A 1.5 m tall man casts a 2 m shadow. At the same time a tree casts a 24 m shadow. How tall is the tree? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q4" value="a"> (a) 16 m</label>
+                            <label><input type="radio" name="q4" value="b"> (b) 18 m</label>
+                            <label><input type="radio" name="q4" value="c"> (c) 32 m</label>
+                            <label><input type="radio" name="q4" value="d"> (d) 20 m</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q4">
+                            <p><strong>✅ Answer:</strong> (b) 18 m</p>
+                            <p><strong>💡 Explanation:</strong> The sun&#x27;s rays make similar triangles, so height/shadow is the same: 1.5/2 = h/24, giving h = 18 m.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q4')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q5.</strong> In triangle ABC, DE ∥ BC with AD : DB = 2 : 3. What is the ratio of the area of triangle ADE to the area of trapezium DBCE? <span class="badge badge-secondary">hard</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q5" value="a"> (a) 4 : 25</label>
+                            <label><input type="radio" name="q5" value="b"> (b) 2 : 3</label>
+                            <label><input type="radio" name="q5" value="c"> (c) 4 : 21</label>
+                            <label><input type="radio" name="q5" value="d"> (d) 4 : 9</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q5">
+                            <p><strong>✅ Answer:</strong> (c) 4 : 21</p>
+                            <p><strong>💡 Explanation:</strong> AD : AB = 2 : 5, so the areas of ADE and ABC are 4 : 25. The trapezium is the rest, 25 − 4 = 21, giving 4 : 21.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q5')">Show Answer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="8">
+            <button class="section-header" onclick="toggleSection(8)" aria-expanded="true" aria-controls="section-8">
+                <span class="section-number">8️⃣</span>
+                <span class="section-title">Frequently Asked Questions</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-8">
+                <div class="content-box">
+                    <h3>What does BPT say?</h3>
+                    <p>If a line is drawn parallel to one side of a triangle and meets the other two sides at distinct points, it divides those two sides in the same ratio. It is also called Thales&#x27; theorem.</p>
+                    <h3>Why do areas go as the square of the side ratio?</h3>
+                    <p>Area is half base times height. In similar triangles both the base and the height scale by the same factor k, so the area scales by k × k = k².</p>
+                    <h3>Do perimeters, medians and altitudes follow the side ratio?</h3>
+                    <p>Yes. Every length in similar triangles, including perimeters, medians, altitudes and angle bisectors, is in the same ratio as the sides. Only areas use the square.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="9">
+            <button class="section-header" onclick="toggleSection(9)" aria-expanded="true" aria-controls="section-9">
+                <span class="section-number">9️⃣</span>
+                <span class="section-title">Sources and Review</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-9">
+                <div class="content-box">
+                    <p>All problems and solutions on this page are original. No outside facts are relied on; every numeric answer is recomputed by software before publishing.</p>
+                    <div class="highlight-box">
+                        <p><strong>How this page was prepared.</strong> Drafted with AI assistance (Claude (Anthropic AI model)) from the sources listed above. 13 calculations on this page were recomputed by software and matched. Automated checks also covered structure, internal links and duplicate text. Software checks cannot confirm facts. </p>
+                        <p>Found an error? <a href="../../contact.html">Report it</a> and we will correct the page.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="10">
+            <button class="section-header" onclick="toggleSection(10)" aria-expanded="true" aria-controls="section-10">
+                <span class="section-number">🔟</span>
+                <span class="section-title">Related Pages</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-10">
+                <div class="content-box">
+                    <ul class="bullet-list">
+                        <li><a href="../../repeated-questions/quant-cheat-code.html">Quant Cheat Code: 20 Must-Know Shortcuts &amp; Formulas</a></li>
+                        <li><a href="triangle-centres.html">Centroid, Incentre, Circumcentre and Orthocentre</a></li>
+                        <li><a href="pythagorean-triplets.html">Pythagorean Triplets and Right Triangles</a></li>
+                        <li><a href="circle-chords-and-tangents.html">Circle Theorems: Chords, Tangents and Angles</a></li>
+                        <li><a href="polygon-angles.html">Interior and Exterior Angles of Polygons</a></li>
+                        <li><a href="coordinate-geometry-basics.html">Coordinate Geometry: Distance, Section and Area Formulas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="page-navigation">
+            <a href="x-plus-1-by-x-problems.html" class="nav-btn">← x + 1/x Problems: From x + 1/x to x² + 1/x², x³ + 1/x³ and Beyond</a>
+            <a href="index.html" class="nav-btn">↑ Quantitative Aptitude</a>
+            <a href="vedic-maths-multiplication.html" class="nav-btn">Fast Multiplication Tricks for Exams: Multiplying by 11, 25 and 99, Numbers Near 100 and Squares Ending in 5 →</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>Subject: Quantitative Aptitude | Sources are listed on this page. <a href="../../contact.html">Report an error</a>.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>

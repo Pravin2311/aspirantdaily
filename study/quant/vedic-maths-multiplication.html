@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Multiplication Tricks: Near Bases, 11, 25 and 99</title>
+    <meta name="description" content="Fast multiplication tricks with checked examples: multiply by 11, 25 and 99, numbers near 100 or 1,000 by the base method, base 50, and squares ending in 5.">
+    <meta name="keywords" content="fast multiplication tricks, vedic maths multiplication, multiply by 11 trick, base method multiplication, multiplication near 100 trick, square of numbers ending in 5">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.aspirantdaily.com/study/quant/vedic-maths-multiplication.html">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.aspirantdaily.com/study/quant/vedic-maths-multiplication.html">
+    <meta property="og:title" content="Fast Multiplication Tricks: Near Bases, 11, 25 and 99">
+    <meta property="og:description" content="Fast multiplication tricks with checked examples: multiply by 11, 25 and 99, numbers near 100 or 1,000 by the base method, base 50, and squares ending in 5.">
+    <meta property="og:image" content="https://www.aspirantdaily.com/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Fast Multiplication Tricks for Exams: Multiplying by 11, 25 and 99, Numbers Near 100 and Squares Ending in 5",
+  "description": "Fast multiplication tricks with checked examples: multiply by 11, 25 and 99, numbers near 100 or 1,000 by the base method, base 50, and squares ending in 5.",
+  "image": "https://www.aspirantdaily.com/og-image.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "url": "https://www.aspirantdaily.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.aspirantdaily.com/icons/icon-512.png"
+    }
+  },
+  "datePublished": "2026-11-02",
+  "dateModified": "2026-11-02",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.aspirantdaily.com/study/quant/vedic-maths-multiplication.html"
+  },
+  "articleSection": "Quantitative Aptitude",
+  "citation": []
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.aspirantdaily.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Study Notes",
+      "item": "https://www.aspirantdaily.com/study/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Quantitative Aptitude",
+      "item": "https://www.aspirantdaily.com/study/quant/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Fast Multiplication Tricks for Exams: Multiplying by 11, 25 and 99, Numbers Near 100 and Squares Ending in 5",
+      "item": "https://www.aspirantdaily.com/study/quant/vedic-maths-multiplication.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Are these tricks the same as Vedic maths?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The near-base method and the squares-ending-in-5 rule are often taught under the name Vedic maths. Whatever the label, each trick on this page is ordinary algebra, and each worked example is checked against direct multiplication."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does the near-base method work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For numbers 100 − a and 100 − b, the product is 100(100 − a − b) + ab. The left part, 100 − a − b, is either number minus the other's deficit, and ab fills the last two places."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I not use a trick?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When the numbers are far from a convenient base, the trick takes longer than ordinary multiplication. Use the base method only when both numbers are within about 10 of 100, 1,000 or 50."
+      }
+    }
+  ]
+}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css?v=2">
+    <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-51XLJE4TVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-51XLJE4TVH');
+  </script>
+  <script>/* AdSense only on the production host (not localhost or preview deployments) */(function(){if(location.hostname!=="www.aspirantdaily.com")return;var a=document.createElement("script");a.async=true;a.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327";a.crossOrigin="anonymous";document.head.appendChild(a);})();</script>
+</head>
+<body class="study-page subject-quant">
+    <nav class="study-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Quantitative Aptitude</a>
+            <div class="nav-controls">
+                <button onclick="toggleAllSections()" class="btn-secondary">Expand/Collapse All</button>
+                <button onclick="window.print()" class="btn-primary">📄 Print/Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> / <a href="../index.html">Study Notes</a> / <a href="index.html">Quantitative Aptitude</a> / <span>Fast Multiplication Tricks for Exams: Multiplying by 11, 25 and 99, Numbers Near 100 and Squares Ending in 5</span>
+            </div>
+            <h1>Fast Multiplication Tricks for Exams: Multiplying by 11, 25 and 99, Numbers Near 100 and Squares Ending in 5</h1>
+            <p class="page-subtitle">× 11 by adding neighbours • × 25 as ÷ 4 • × 99 as × 100 minus once • Near-base method below, above and across 100 • Base 50 • Squares ending in 5</p>
+            <div class="page-meta">
+                <span class="badge badge-secondary">SSC</span>
+                <span class="badge badge-secondary">Banking</span>
+                <span class="badge badge-secondary">Railway</span>
+                <span class="badge badge-secondary">📅 Last updated: 2026-11-02</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="study-section collapsible" data-section="1">
+            <button class="section-header" onclick="toggleSection(1)" aria-expanded="true" aria-controls="section-1">
+                <span class="section-number">1️⃣</span>
+                <span class="section-title">Why Tricks Help</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-1">
+                <div class="content-box">
+<p>Simplification and data-interpretation questions in SSC and bank papers are full of multiplications that are slow by the long method but quick with the right shortcut. Each shortcut below is ordinary algebra in disguise, so you can always check it, and each one only pays off for numbers of the right shape. Learn when to reach for each trick, not just how.</p>
+<p>A quick way to choose: look at the multiplier first. If it is 11, 25, 50, 99 or 125, use the matching rule in the next section. If both numbers sit close to 100, 1,000 or 50, use the near-base method. If the number ends in 5 and is being squared, use the last rule. Anything else is usually faster by ordinary column multiplication or by splitting one number, such as 38 × 7 = 40 × 7 − 2 × 7 = 266.</p>
+<p>For order-of-operations questions where these products appear, see <a href="simplification-bodmas.html">simplification and BODMAS</a>.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="2">
+            <button class="section-header" onclick="toggleSection(2)" aria-expanded="true" aria-controls="section-2">
+                <span class="section-number">2️⃣</span>
+                <span class="section-title">Multiplying by 11, 25 and 99</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-2">
+                <div class="content-box">
+<p><strong>× 11:</strong> for a two-digit number ab, write a, then a + b, then b. If a + b is 10 or more, carry the 1 into the first digit.</p>
+<div class="case-study">
+<h4>Worked example 1: 53 × 11</h4>
+<p>5, then 5 + 3 = 8, then 3: <strong>583</strong>.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 2: 87 × 11, with a carry</h4>
+<p>8, then 8 + 7 = 15, then 7. Carry the 1 into the 8: <strong>957</strong>.</p>
+</div>
+<p>For longer numbers, keep the first and last digits and add each neighbouring pair in between, working right to left so carries move left: 2,341 × 11 = 25,751.</p>
+<p><strong>× 25:</strong> 25 is 100 ÷ 4, so multiply by 100 and divide by 4.</p>
+<div class="case-study">
+<h4>Worked example 3: 48 × 25</h4>
+<p>4,800 ÷ 4 = <strong>1200</strong>. The same idea gives × 50 as × 100 ÷ 2, and × 125 as × 1,000 ÷ 8.</p>
+</div>
+<p><strong>× 99:</strong> 99 is 100 − 1, so multiply by 100 and subtract the number once. Similarly, × 999 is × 1,000 minus once.</p>
+<div class="case-study">
+<h4>Worked example 4: 47 × 99</h4>
+<p>4,700 − 47 = <strong>4653</strong>.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="3">
+            <button class="section-header" onclick="toggleSection(3)" aria-expanded="true" aria-controls="section-3">
+                <span class="section-number">3️⃣</span>
+                <span class="section-title">The Near-Base Method</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-3">
+                <div class="content-box">
+<p>When both numbers are close to 100 (or 1,000), work with how far each is from the base.</p>
+<ol>
+<li>Write each number's difference from the base: negative if below, positive if above.</li>
+<li><strong>Left part:</strong> add one number and the other's difference (cross-add).</li>
+<li><strong>Right part:</strong> multiply the two differences. It must fill as many places as the base has zeros: two for 100, three for 1,000.</li>
+</ol>
+<div class="case-study">
+<h4>Worked example 5: 97 × 94, both below 100</h4>
+<p>Differences −3 and −6. Left: 97 − 6 = 91. Right: 3 × 6 = 18. Answer <strong>9118</strong>.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 6: 104 × 108, both above 100</h4>
+<p>Differences +4 and +8. Left: 104 + 8 = 112. Right: 4 × 8 = 32. Answer <strong>11232</strong>.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 7: 103 × 98, one each side</h4>
+<p>Differences +3 and −2. Left: 103 − 2 = 101, giving 10,100. Right: 3 × (−2) = −6, so subtract: <strong>10094</strong>.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 8: 996 × 993, base 1,000</h4>
+<p>Differences −4 and −7. Left: 996 − 7 = 989. Right: 4 × 7 = 28, written as 028 to fill three places. Answer <strong>989028</strong>.</p>
+</div>
+<p>For numbers near 50, use 50 as a working base: cross-add as usual, multiply the left part by 50 (instead of 100), then add the product of the differences.</p>
+<div class="case-study">
+<h4>Worked example 9: 48 × 46, base 50</h4>
+<p>Differences −2 and −4. Left: 48 − 4 = 44, and 44 × 50 = 2,200. Right: 2 × 4 = 8. Answer <strong>2208</strong>.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)" aria-expanded="true" aria-controls="section-4">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">Squares Ending in 5</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
+                <div class="content-box">
+<p>For a number ending in 5, multiply the part before the 5 by the next whole number, then write 25 after it.</p>
+<div class="case-study">
+<h4>Worked example 10: 75²</h4>
+<p>7 × 8 = 56, then append 25: <strong>5625</strong>. It works because (10n + 5)² = 100n(n + 1) + 25.</p>
+</div>
+<p>The same rule gives 105² = 10 × 11 | 25 = 11,025. For other squares and roots, see <a href="square-roots-and-cube-roots.html">square roots and cube roots</a>.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)" aria-expanded="true" aria-controls="section-5">
+                <span class="section-number">5️⃣</span>
+                <span class="section-title">Common Traps</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-5">
+                <div class="content-box">
+<ul>
+<li><strong>Forgetting the carry with × 11.</strong> 87 × 11 is 957, not 8157.</li>
+<li><strong>Too few places in the right part.</strong> With base 100, 2 × 4 must be written 08.</li>
+<li><strong>Adding a negative product.</strong> For one number above and one below, the right part is subtracted.</li>
+<li><strong>Using the near-base method on distant numbers.</strong> 63 × 78 is faster done directly.</li>
+<li><strong>Not checking.</strong> The unit digit of the product must match the unit digit of the product of the unit digits.</li>
+</ul>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)" aria-expanded="true" aria-controls="section-6">
+                <span class="section-number">6️⃣</span>
+                <span class="section-title">Practice Questions (5)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-6">
+                <div class="content-box">
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q1.</strong> What is 64 × 11? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q1" value="a"> (a) 644</label>
+                            <label><input type="radio" name="q1" value="b"> (b) 704</label>
+                            <label><input type="radio" name="q1" value="c"> (c) 714</label>
+                            <label><input type="radio" name="q1" value="d"> (d) 604</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q1">
+                            <p><strong>✅ Answer:</strong> (b) 704</p>
+                            <p><strong>💡 Explanation:</strong> Write 6 _ 4 and put 6 + 4 = 10 in the middle. Carry the 1 to the 6: 704.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q1')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q2.</strong> What is 96 × 98? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q2" value="a"> (a) 9418</label>
+                            <label><input type="radio" name="q2" value="b"> (b) 9308</label>
+                            <label><input type="radio" name="q2" value="c"> (c) 9480</label>
+                            <label><input type="radio" name="q2" value="d"> (d) 9408</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q2">
+                            <p><strong>✅ Answer:</strong> (d) 9408</p>
+                            <p><strong>💡 Explanation:</strong> Deficits from 100 are 4 and 2. Left part: 96 − 2 = 94. Right part: 4 × 2 = 08. Answer 9408.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q2')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q3.</strong> What is 36 × 25? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q3" value="a"> (a) 900</label>
+                            <label><input type="radio" name="q3" value="b"> (b) 875</label>
+                            <label><input type="radio" name="q3" value="c"> (c) 925</label>
+                            <label><input type="radio" name="q3" value="d"> (d) 850</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q3">
+                            <p><strong>✅ Answer:</strong> (a) 900</p>
+                            <p><strong>💡 Explanation:</strong> Multiplying by 25 is multiplying by 100 and dividing by 4: 3,600 ÷ 4 = 900.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q3')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q4.</strong> What is 107 × 105? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q4" value="a"> (a) 11225</label>
+                            <label><input type="radio" name="q4" value="b"> (b) 11335</label>
+                            <label><input type="radio" name="q4" value="c"> (c) 11235</label>
+                            <label><input type="radio" name="q4" value="d"> (d) 11135</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q4">
+                            <p><strong>✅ Answer:</strong> (c) 11235</p>
+                            <p><strong>💡 Explanation:</strong> Surpluses over 100 are 7 and 5. Left part: 107 + 5 = 112. Right part: 7 × 5 = 35. Answer 11235.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q4')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q5.</strong> What is 85²? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q5" value="a"> (a) 7125</label>
+                            <label><input type="radio" name="q5" value="b"> (b) 7225</label>
+                            <label><input type="radio" name="q5" value="c"> (c) 7325</label>
+                            <label><input type="radio" name="q5" value="d"> (d) 6425</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q5">
+                            <p><strong>✅ Answer:</strong> (b) 7225</p>
+                            <p><strong>💡 Explanation:</strong> For a square ending in 5, multiply the leading digit by the next number, 8 × 9 = 72, and append 25: 7225.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q5')">Show Answer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)" aria-expanded="true" aria-controls="section-7">
+                <span class="section-number">7️⃣</span>
+                <span class="section-title">Frequently Asked Questions</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-7">
+                <div class="content-box">
+                    <h3>Are these tricks the same as Vedic maths?</h3>
+                    <p>The near-base method and the squares-ending-in-5 rule are often taught under the name Vedic maths. Whatever the label, each trick on this page is ordinary algebra, and each worked example is checked against direct multiplication.</p>
+                    <h3>Why does the near-base method work?</h3>
+                    <p>For numbers 100 − a and 100 − b, the product is 100(100 − a − b) + ab. The left part, 100 − a − b, is either number minus the other&#x27;s deficit, and ab fills the last two places.</p>
+                    <h3>When should I not use a trick?</h3>
+                    <p>When the numbers are far from a convenient base, the trick takes longer than ordinary multiplication. Use the base method only when both numbers are within about 10 of 100, 1,000 or 50.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="8">
+            <button class="section-header" onclick="toggleSection(8)" aria-expanded="true" aria-controls="section-8">
+                <span class="section-number">8️⃣</span>
+                <span class="section-title">Sources and Review</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-8">
+                <div class="content-box">
+                    <p>All problems and solutions on this page are original. No outside facts are relied on; every numeric answer is recomputed by software before publishing.</p>
+                    <div class="highlight-box">
+                        <p><strong>How this page was prepared.</strong> Drafted with AI assistance (Claude (Anthropic AI model)) from the sources listed above. 15 calculations on this page were recomputed by software and matched. Automated checks also covered structure, internal links and duplicate text. Software checks cannot confirm facts. </p>
+                        <p>Found an error? <a href="../../contact.html">Report it</a> and we will correct the page.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="9">
+            <button class="section-header" onclick="toggleSection(9)" aria-expanded="true" aria-controls="section-9">
+                <span class="section-number">9️⃣</span>
+                <span class="section-title">Related Pages</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-9">
+                <div class="content-box">
+                    <ul class="bullet-list">
+                        <li><a href="../../repeated-questions/quant-cheat-code.html">Quant Cheat Code: 20 Must-Know Shortcuts &amp; Formulas</a></li>
+                        <li><a href="simplification-bodmas.html">Simplification and BODMAS: Rules and Common Traps</a></li>
+                        <li><a href="square-roots-and-cube-roots.html">Square Roots and Cube Roots Without a Calculator</a></li>
+                        <li><a href="surds-and-indices.html">Surds and Indices: Laws and Comparison</a></li>
+                        <li><a href="squares-and-cubes-table.html">Squares 1 to 50 and Cubes 1 to 30</a></li>
+                        <li><a href="simplification-mcqs.html">Simplification MCQs with Solutions</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="page-navigation">
+            <a href="similar-triangles-and-bpt.html" class="nav-btn">← Basic Proportionality Theorem and Similar Triangles: Side Ratios, Area Ratios, Shadows and the Altitude Rule</a>
+            <a href="index.html" class="nav-btn">↑ Quantitative Aptitude</a>
+            <a href="arithmetic-geometric-progression.html" class="nav-btn">AP and GP Formulas: nth Term, Sum of n Terms, Number of Terms, Infinite GP and AM–GM →</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>Subject: Quantitative Aptitude | Sources are listed on this page. <a href="../../contact.html">Report an error</a>.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>
