@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instalment Problems in Simple and Compound Interest</title>
+    <meta name="description" content="Find equal instalments under compound interest by discounting each payment to today, the simple interest version for a debt due, and the loan from an instalment.">
+    <meta name="keywords" content="equal instalments compound interest, annual instalment formula compound interest, two equal annual instalments, simple interest instalment formula, loan repaid in instalments, present value of instalments">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.aspirantdaily.com/study/quant/installment-problems.html">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.aspirantdaily.com/study/quant/installment-problems.html">
+    <meta property="og:title" content="Instalment Problems in Simple and Compound Interest">
+    <meta property="og:description" content="Find equal instalments under compound interest by discounting each payment to today, the simple interest version for a debt due, and the loan from an instalment.">
+    <meta property="og:image" content="https://www.aspirantdaily.com/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Equal Instalments Under Compound Interest and Simple Interest: Find the Instalment, the Loan or the Interest Paid",
+  "description": "Find equal instalments under compound interest by discounting each payment to today, the simple interest version for a debt due, and the loan from an instalment.",
+  "image": "https://www.aspirantdaily.com/og-image.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "url": "https://www.aspirantdaily.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.aspirantdaily.com/icons/icon-512.png"
+    }
+  },
+  "datePublished": "2026-11-02",
+  "dateModified": "2026-11-02",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.aspirantdaily.com/study/quant/installment-problems.html"
+  },
+  "articleSection": "Quantitative Aptitude",
+  "citation": []
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.aspirantdaily.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Study Notes",
+      "item": "https://www.aspirantdaily.com/study/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Quantitative Aptitude",
+      "item": "https://www.aspirantdaily.com/study/quant/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Equal Instalments Under Compound Interest and Simple Interest: Find the Instalment, the Loan or the Interest Paid",
+      "item": "https://www.aspirantdaily.com/study/quant/installment-problems.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why divide by (1 + r) instead of multiplying?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Each instalment is paid in the future. Dividing by (1 + r/100) once for every year of waiting finds what it is worth today. The loan equals the total of these present values."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a shortcut for two instalments?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "With x as the instalment, P = x/(1 + R) + x/(1 + R)², where R = r/100. At 10% the factors are 10/11 and 100/121, so a loan of 2,100 needs x = 2,100 × 121/210 = 1,210."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is the simple interest version different?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Simple interest questions usually state the debt due at the end. Each instalment paid early earns simple interest until that date, so x(1 + R(n − 1)) + … + x(1 + R) + x = debt due, with R = r/100."
+      }
+    }
+  ]
+}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css?v=2">
+    <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-51XLJE4TVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-51XLJE4TVH');
+  </script>
+  <script>/* AdSense only on the production host (not localhost or preview deployments) */(function(){if(location.hostname!=="www.aspirantdaily.com")return;var a=document.createElement("script");a.async=true;a.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327";a.crossOrigin="anonymous";document.head.appendChild(a);})();</script>
+</head>
+<body class="study-page subject-quant">
+    <nav class="study-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Quantitative Aptitude</a>
+            <div class="nav-controls">
+                <button onclick="toggleAllSections()" class="btn-secondary">Expand/Collapse All</button>
+                <button onclick="window.print()" class="btn-primary">📄 Print/Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> / <a href="../index.html">Study Notes</a> / <a href="index.html">Quantitative Aptitude</a> / <span>Equal Instalments Under Compound Interest and Simple Interest: Find the Instalment, the Loan or the Interest Paid</span>
+            </div>
+            <h1>Equal Instalments Under Compound Interest and Simple Interest: Find the Instalment, the Loan or the Interest Paid</h1>
+            <p class="page-subtitle">Present value of each instalment • Two and three equal instalments • Loan from a given instalment • Total interest paid • Simple-interest instalments for a debt due</p>
+            <div class="page-meta">
+                <span class="badge badge-secondary">SSC</span>
+                <span class="badge badge-secondary">Banking</span>
+                <span class="badge badge-secondary">📅 Last updated: 2026-11-02</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="study-section collapsible" data-section="1">
+            <button class="section-header" onclick="toggleSection(1)" aria-expanded="true" aria-controls="section-1">
+                <span class="section-number">1️⃣</span>
+                <span class="section-title">The Idea: Bring Every Payment Back to Today</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-1">
+                <div class="content-box">
+<p>When a loan is repaid in instalments, the lender is not just collecting the original sum. Each payment arrives later, so its value today is less. Under compound interest at r% a year, a payment made after k years is worth <strong>payment ÷ (1 + r/100)ᵏ</strong> today. The loan equals the total of all these present values:</p>
+<div class="highlight-box"><p><strong>P = x/(1 + R) + x/(1 + R)² + … + x/(1 + R)ⁿ</strong>, where R = r/100 and x is each instalment.</p></div>
+<p>This one equation answers three kinds of question: find x from P, find P from x, or find the interest paid (n × x − P). For the basic compound interest formula, see <a href="compound-interest-formulas.html">compound interest formulas</a>.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="2">
+            <button class="section-header" onclick="toggleSection(2)" aria-expanded="true" aria-controls="section-2">
+                <span class="section-number">2️⃣</span>
+                <span class="section-title">Two and Three Equal Instalments</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-2">
+                <div class="content-box">
+<div class="case-study">
+<h4>Worked example 1: two instalments</h4>
+<p>₹2,100 is borrowed at 10% compound interest and repaid in two equal annual instalments. x(1/1.1 + 1/1.21) = 2,100. Using fractions, 10/11 + 100/121 = 210/121, so x = 2,100 × 121/210 = <strong>₹1,210</strong>.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 2: three instalments</h4>
+<p>₹6,620 at 10% repaid in three equal annual instalments. The three factors are 10/11, 100/121 and 1,000/1,331, which add to 3,310/1,331. So x = 6,620 × 1,331/3,310 = <strong>₹2,662</strong>.</p>
+</div>
+<p>Working in fractions with denominator 11ⁿ (for 10%) or 21ⁿ (for 5%, since 1.05 = 21/20) keeps the arithmetic exact.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="3">
+            <button class="section-header" onclick="toggleSection(3)" aria-expanded="true" aria-controls="section-3">
+                <span class="section-number">3️⃣</span>
+                <span class="section-title">Finding the Loan, and the Interest Paid</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-3">
+                <div class="content-box">
+<p>If the instalment is given, simply discount each payment and add.</p>
+<div class="case-study">
+<h4>Worked example 3: loan from the instalment</h4>
+<p>Two annual instalments of ₹4,410 at 5% compound interest. Present values: 4,410 ÷ 1.05 = 4,200 and 4,410 ÷ 1.1025 = 4,000. The loan was <strong>₹8,200</strong>.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 4: interest paid</h4>
+<p>In example 1, the borrower pays 2 × 1,210 = ₹2,420 in all, so the interest is 2,420 − 2,100 = <strong>₹320</strong>.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 5: tracing the balance</h4>
+<p>A year-by-year check of example 1: after one year the loan grows to 2,310; paying 1,210 leaves 1,100. After the second year that becomes 1,210, which the second instalment clears exactly: <strong>₹1,210</strong>. Tracing the balance is a reliable way to confirm any instalment answer.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)" aria-expanded="true" aria-controls="section-4">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">Unequal and Half-Yearly Instalments</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
+                <div class="content-box">
+<p>When the instalments are not equal, the balance trace is the quickest method: grow the balance by one period's interest, subtract the payment, and repeat.</p>
+<div class="case-study">
+<h4>Worked example 6: the second payment clears the rest</h4>
+<p>₹5,000 is borrowed at 10% compound interest. ₹2,500 is paid after one year, and a second payment one year later clears the loan. After year 1 the balance is 5,500 − 2,500 = 3,000; after year 2 it is 3,300. The second payment is <strong>₹3,300</strong>.</p>
+</div>
+<p>For half-yearly instalments, halve the annual rate and count half-years as periods. A loan at 10% a year compounded half-yearly behaves exactly like one at 5% per period.</p>
+<div class="case-study">
+<h4>Worked example 7: two half-yearly instalments</h4>
+<p>₹8,200 at 10% a year, compounded half-yearly and repaid in two equal half-yearly instalments, works at 5% per period: each instalment is <strong>₹4,410</strong>, the same as two annual instalments at 5%.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)" aria-expanded="true" aria-controls="section-5">
+                <span class="section-number">5️⃣</span>
+                <span class="section-title">Simple Interest Instalments</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-5">
+                <div class="content-box">
+<p>Simple interest questions usually state the <strong>debt due</strong> at the end of n years. Each instalment paid before the due date earns simple interest until then. For instalments at the end of each year:</p>
+<div class="highlight-box"><p><strong>Debt due = n·x + x·R·[0 + 1 + 2 + … + (n − 1)]</strong>, with R = r/100.</p></div>
+<div class="case-study">
+<h4>Worked example 8: three SI instalments</h4>
+<p>A debt of ₹1,092 is due in 3 years at 12% simple interest. The first instalment earns 2 years' interest, the second 1 year's, the third none: x(3 + 0.12 × 3) = 3.36x = 1,092, so x = <strong>₹325</strong>.</p>
+</div>
+<p>Read the question carefully: "a sum borrowed" (present value) and "a debt due" (future value) lead to different equations.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)" aria-expanded="true" aria-controls="section-6">
+                <span class="section-number">6️⃣</span>
+                <span class="section-title">Common Traps</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-6">
+                <div class="content-box">
+<ul>
+<li><strong>Splitting the loan into equal parts.</strong> ₹2,100 ÷ 2 = ₹1,050 ignores interest altogether.</li>
+<li><strong>Multiplying instead of dividing.</strong> Future payments are discounted to today, not grown.</li>
+<li><strong>Mixing SI and CI methods.</strong> SI questions add simple interest to each early payment; CI questions discount by powers of (1 + R).</li>
+<li><strong>Using decimals too early.</strong> 1/1.1 is 10/11 exactly; rounding to 0.909 can shift the answer by a rupee.</li>
+<li><strong>Forgetting to check.</strong> A two-line balance trace confirms the answer in seconds.</li>
+</ul>
+<p>For the gap between simple and compound interest, see <a href="ci-si-difference-formula.html">CI and SI difference</a>.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)" aria-expanded="true" aria-controls="section-7">
+                <span class="section-number">7️⃣</span>
+                <span class="section-title">Practice Questions (5)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-7">
+                <div class="content-box">
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q1.</strong> ₹8,200 is borrowed at 5% per annum compound interest and repaid in two equal annual instalments. What is each instalment? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q1" value="a"> (a) ₹4,410</label>
+                            <label><input type="radio" name="q1" value="b"> (b) ₹4,100</label>
+                            <label><input type="radio" name="q1" value="c"> (c) ₹4,305</label>
+                            <label><input type="radio" name="q1" value="d"> (d) ₹4,200</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q1">
+                            <p><strong>✅ Answer:</strong> (a) ₹4,410</p>
+                            <p><strong>💡 Explanation:</strong> x/1.05 + x/1.05² = 8,200. The present values of ₹4,410 are ₹4,200 and ₹4,000, which add to ₹8,200.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q1')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q2.</strong> A loan of ₹2,310 at 10% compound interest is repaid in two equal annual instalments. Find each instalment. <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q2" value="a"> (a) ₹1,210</label>
+                            <label><input type="radio" name="q2" value="b"> (b) ₹1,331</label>
+                            <label><input type="radio" name="q2" value="c"> (c) ₹1,155</label>
+                            <label><input type="radio" name="q2" value="d"> (d) ₹1,300</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q2">
+                            <p><strong>✅ Answer:</strong> (b) ₹1,331</p>
+                            <p><strong>💡 Explanation:</strong> ₹1,331 is worth 1,331/1.1 = ₹1,210 and 1,331/1.21 = ₹1,100 today, together ₹2,310.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q2')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q3.</strong> A debt of ₹2,550 is due in 2 years. It is cleared by two equal annual instalments at 4% simple interest. What is each instalment? <span class="badge badge-secondary">hard</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q3" value="a"> (a) ₹1,275</label>
+                            <label><input type="radio" name="q3" value="b"> (b) ₹1,200</label>
+                            <label><input type="radio" name="q3" value="c"> (c) ₹1,300</label>
+                            <label><input type="radio" name="q3" value="d"> (d) ₹1,250</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q3">
+                            <p><strong>✅ Answer:</strong> (d) ₹1,250</p>
+                            <p><strong>💡 Explanation:</strong> The first instalment earns interest for 1 year, the second for none: x(1.04) + x = 2,550, so 2.04x = 2,550 and x = ₹1,250.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q3')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q4.</strong> Two equal annual instalments of ₹1,210 repay a loan at 10% compound interest. What was the loan? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q4" value="a"> (a) ₹2,420</label>
+                            <label><input type="radio" name="q4" value="b"> (b) ₹2,000</label>
+                            <label><input type="radio" name="q4" value="c"> (c) ₹2,100</label>
+                            <label><input type="radio" name="q4" value="d"> (d) ₹2,200</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q4">
+                            <p><strong>✅ Answer:</strong> (c) ₹2,100</p>
+                            <p><strong>💡 Explanation:</strong> Discount each payment: 1,210/1.1 = 1,100 and 1,210/1.21 = 1,000. The loan was ₹2,100.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q4')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q5.</strong> In the ₹2,310 loan above, repaid by two instalments of ₹1,331, how much interest is paid in total? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q5" value="a"> (a) ₹231</label>
+                            <label><input type="radio" name="q5" value="b"> (b) ₹352</label>
+                            <label><input type="radio" name="q5" value="c"> (c) ₹462</label>
+                            <label><input type="radio" name="q5" value="d"> (d) ₹300</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q5">
+                            <p><strong>✅ Answer:</strong> (b) ₹352</p>
+                            <p><strong>💡 Explanation:</strong> Total paid = 2 × 1,331 = ₹2,662. Interest = 2,662 − 2,310 = ₹352.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q5')">Show Answer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="8">
+            <button class="section-header" onclick="toggleSection(8)" aria-expanded="true" aria-controls="section-8">
+                <span class="section-number">8️⃣</span>
+                <span class="section-title">Frequently Asked Questions</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-8">
+                <div class="content-box">
+                    <h3>Why divide by (1 + r) instead of multiplying?</h3>
+                    <p>Each instalment is paid in the future. Dividing by (1 + r/100) once for every year of waiting finds what it is worth today. The loan equals the total of these present values.</p>
+                    <h3>Is there a shortcut for two instalments?</h3>
+                    <p>With x as the instalment, P = x/(1 + R) + x/(1 + R)², where R = r/100. At 10% the factors are 10/11 and 100/121, so a loan of 2,100 needs x = 2,100 × 121/210 = 1,210.</p>
+                    <h3>How is the simple interest version different?</h3>
+                    <p>Simple interest questions usually state the debt due at the end. Each instalment paid early earns simple interest until that date, so x(1 + R(n − 1)) + … + x(1 + R) + x = debt due, with R = r/100.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="9">
+            <button class="section-header" onclick="toggleSection(9)" aria-expanded="true" aria-controls="section-9">
+                <span class="section-number">9️⃣</span>
+                <span class="section-title">Sources and Review</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-9">
+                <div class="content-box">
+                    <p>All problems and solutions on this page are original. No outside facts are relied on; every numeric answer is recomputed by software before publishing.</p>
+                    <div class="highlight-box">
+                        <p><strong>How this page was prepared.</strong> Drafted with AI assistance (Claude (Anthropic AI model)) from the sources listed above. 13 calculations on this page were recomputed by software and matched. Automated checks also covered structure, internal links and duplicate text. Software checks cannot confirm facts. </p>
+                        <p>Found an error? <a href="../../contact.html">Report it</a> and we will correct the page.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="10">
+            <button class="section-header" onclick="toggleSection(10)" aria-expanded="true" aria-controls="section-10">
+                <span class="section-number">🔟</span>
+                <span class="section-title">Related Pages</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-10">
+                <div class="content-box">
+                    <ul class="bullet-list">
+                        <li><a href="../../repeated-questions/quant-cheat-code.html">Quant Cheat Code: 20 Must-Know Shortcuts &amp; Formulas</a></li>
+                        <li><a href="simple-interest-problems.html">Simple Interest Formula and Problems</a></li>
+                        <li><a href="compound-interest-formulas.html">Compound Interest: Annual, Half-Yearly and Quarterly</a></li>
+                        <li><a href="ci-si-difference-formula.html">Difference Between CI and SI for 2 and 3 Years</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="page-navigation">
+            <a href="x-plus-1-by-x-problems.html" class="nav-btn">← x + 1/x Problems: From x + 1/x to x² + 1/x², x³ + 1/x³ and Beyond</a>
+            <a href="index.html" class="nav-btn">↑ Quantitative Aptitude</a>
+            <a href="percentage-election-problems.html" class="nav-btn">Percentage Election Problems: Winning Margins, Invalid Votes, Turnout and Vote Switching →</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>Subject: Quantitative Aptitude | Sources are listed on this page. <a href="../../contact.html">Report an error</a>.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>
