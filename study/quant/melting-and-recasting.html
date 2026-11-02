@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melting and Recasting Problems | AspirantDaily</title>
+    <meta name="description" content="Solve melting and recasting problems by equating volumes: count small pieces, find a new radius or height, draw wire, and handle wastage and surface area.">
+    <meta name="keywords" content="melting and recasting problems, sphere melted into small spheres, cone recast into sphere radius, cylinder melted into cones, wire drawn from sphere length, three cubes melted into one cube">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.aspirantdaily.com/study/quant/melting-and-recasting.html">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.aspirantdaily.com/study/quant/melting-and-recasting.html">
+    <meta property="og:title" content="Melting and Recasting Problems | AspirantDaily">
+    <meta property="og:description" content="Solve melting and recasting problems by equating volumes: count small pieces, find a new radius or height, draw wire, and handle wastage and surface area.">
+    <meta property="og:image" content="https://www.aspirantdaily.com/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Melting and Recasting Problems: Equate Volumes to Count Pieces, Find a New Radius, or Draw a Wire",
+  "description": "Solve melting and recasting problems by equating volumes: count small pieces, find a new radius or height, draw wire, and handle wastage and surface area.",
+  "image": "https://www.aspirantdaily.com/og-image.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "url": "https://www.aspirantdaily.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.aspirantdaily.com/icons/icon-512.png"
+    }
+  },
+  "datePublished": "2026-11-02",
+  "dateModified": "2026-11-02",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.aspirantdaily.com/study/quant/melting-and-recasting.html"
+  },
+  "articleSection": "Quantitative Aptitude",
+  "citation": []
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.aspirantdaily.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Study Notes",
+      "item": "https://www.aspirantdaily.com/study/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Quantitative Aptitude",
+      "item": "https://www.aspirantdaily.com/study/quant/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Melting and Recasting Problems: Equate Volumes to Count Pieces, Find a New Radius, or Draw a Wire",
+      "item": "https://www.aspirantdaily.com/study/quant/melting-and-recasting.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why does π usually cancel?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Spheres, cylinders and cones all have π in their volume formulas. When one is melted into another, π appears on both sides of the equation and cancels, so you rarely need to use 22/7 or 3.14."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does surface area stay the same after recasting?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Only volume is conserved. Breaking one sphere into many small ones increases the total surface area, which is why fine powders react faster than lumps."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I handle a hollow shape such as a pipe?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Its volume is the outer volume minus the inner volume: π(R² − r²)h for a pipe, or (4/3)π(R³ − r³) for a hollow sphere. Use that as the melted volume."
+      }
+    }
+  ]
+}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css?v=2">
+    <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-51XLJE4TVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-51XLJE4TVH');
+  </script>
+  <script>/* AdSense only on the production host (not localhost or preview deployments) */(function(){if(location.hostname!=="www.aspirantdaily.com")return;var a=document.createElement("script");a.async=true;a.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327";a.crossOrigin="anonymous";document.head.appendChild(a);})();</script>
+</head>
+<body class="study-page subject-quant">
+    <nav class="study-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Quantitative Aptitude</a>
+            <div class="nav-controls">
+                <button onclick="toggleAllSections()" class="btn-secondary">Expand/Collapse All</button>
+                <button onclick="window.print()" class="btn-primary">📄 Print/Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> / <a href="../index.html">Study Notes</a> / <a href="index.html">Quantitative Aptitude</a> / <span>Melting and Recasting Problems: Equate Volumes to Count Pieces, Find a New Radius, or Draw a Wire</span>
+            </div>
+            <h1>Melting and Recasting Problems: Equate Volumes to Count Pieces, Find a New Radius, or Draw a Wire</h1>
+            <p class="page-subtitle">Volume is conserved • Number of pieces = big volume ÷ small volume • Several solids into one • Drawing wire • Wastage • How surface area changes</p>
+            <div class="page-meta">
+                <span class="badge badge-secondary">SSC</span>
+                <span class="badge badge-secondary">Railway</span>
+                <span class="badge badge-secondary">📅 Last updated: 2026-11-02</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="study-section collapsible" data-section="1">
+            <button class="section-header" onclick="toggleSection(1)" aria-expanded="true" aria-controls="section-1">
+                <span class="section-number">1️⃣</span>
+                <span class="section-title">The One Rule: Volume Is Conserved</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-1">
+                <div class="content-box">
+<p>When a solid is melted and recast, its shape changes but the amount of metal does not. So every problem in this chapter rests on one equation:</p>
+<div class="highlight-box"><p><strong>Volume before = volume after</strong></p>
+<p>Number of pieces = volume of the big solid ÷ volume of one small piece</p></div>
+<div class="table-wrap"><table class="data-table">
+<thead><tr><th>Solid</th><th>Volume</th></tr></thead>
+<tbody>
+<tr><td>Cube (side a)</td><td>a³</td></tr>
+<tr><td>Cuboid</td><td>l × b × h</td></tr>
+<tr><td>Cylinder</td><td>πr²h</td></tr>
+<tr><td>Cone</td><td>(1/3)πr²h</td></tr>
+<tr><td>Sphere</td><td>(4/3)πr³</td></tr>
+<tr><td>Hemisphere</td><td>(2/3)πr³</td></tr>
+</tbody></table></div>
+<p>Write both volumes, cancel π and common numbers, and only then multiply out. For the full formulas, see <a href="cylinder-cone-sphere.html">cylinder, cone and sphere</a> and <a href="cube-and-cuboid.html">cube and cuboid</a>.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="2">
+            <button class="section-header" onclick="toggleSection(2)" aria-expanded="true" aria-controls="section-2">
+                <span class="section-number">2️⃣</span>
+                <span class="section-title">Counting the Pieces</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-2">
+                <div class="content-box">
+<p>When both shapes are the same kind (sphere into spheres, cube into cubes), the count is just the ratio of sizes cubed.</p>
+<div class="case-study">
+<h4>Worked example 1: one sphere into small spheres</h4>
+<p>A sphere of radius 6 cm becomes spheres of radius 2 cm. Count = (6/2)³ = <strong>27</strong>.</p>
+</div>
+<p>When the shapes differ, write both volumes.</p>
+<div class="case-study">
+<h4>Worked example 2: cylinder into cones</h4>
+<p>A cylinder of radius 3 cm and height 10 cm is recast into cones of radius 1 cm and height 3 cm. Cylinder = π × 9 × 10 = 90π. Each cone = (1/3)π × 1 × 3 = π. Count = <strong>90</strong>.</p>
+</div>
+<p>Wastage changes the usable volume. Apply the loss first, then divide, and round down because only whole pieces count.</p>
+<div class="case-study">
+<h4>Worked example 3: 10% lost in melting</h4>
+<p>A cube of side 10 cm is melted with 10% wastage and cast into cubes of side 3 cm. Usable volume = 900 cm³; each small cube is 27 cm³; 900 ÷ 27 = 33.3, so <strong>33</strong> cubes can be made.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="3">
+            <button class="section-header" onclick="toggleSection(3)" aria-expanded="true" aria-controls="section-3">
+                <span class="section-number">3️⃣</span>
+                <span class="section-title">Finding a New Radius, Side or Height</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-3">
+                <div class="content-box">
+<p>Sometimes the question asks for one dimension of the new solid. Set the volumes equal and solve.</p>
+<div class="case-study">
+<h4>Worked example 4: three cubes into one</h4>
+<p>Cubes of sides 3, 4 and 5 cm are melted into a single cube. Total volume = 27 + 64 + 125 = 216 cm³, so the new side is <strong>6 cm</strong>.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 5: sphere into cylinder</h4>
+<p>A sphere of radius 9 cm is recast into a cylinder of radius 6 cm. (4/3)π × 729 = π × 36 × h, so h = 972 ÷ 36 = <strong>27 cm</strong>.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)" aria-expanded="true" aria-controls="section-4">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">Hollow Solids and Hemispheres</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
+                <div class="content-box">
+<p>For a hollow solid, only the shell is metal. Its volume is the outer volume minus the inner one: (4/3)π(R³ − r³) for a hollow sphere, or π(R² − r²)h for a pipe.</p>
+<div class="case-study">
+<h4>Worked example 6: hollow sphere into a solid one</h4>
+<p>A hollow sphere has outer radius 5 cm and inner radius 3 cm. Melted into a solid sphere, (4/3)π(125 − 27) = (4/3)πr³, so r³ = 98 and r ≈ <strong>4.61 cm</strong>. The answer is not 5 − 3 = 2 cm; the shell holds far more metal than its thickness suggests.</p>
+</div>
+<p>A hemisphere holds half a sphere's volume, (2/3)πr³. Bowl-into-bottle questions use this.</p>
+<div class="case-study">
+<h4>Worked example 7: emptying a hemispherical bowl</h4>
+<p>A hemispherical bowl of radius 6 cm is full of liquid, poured into cylindrical bottles of radius 1 cm and height 4 cm. Bowl = (2/3)π × 216 = 144π; each bottle = 4π. The bowl fills <strong>36 bottles</strong>. Liquid questions follow exactly the same volume rule as metal.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)" aria-expanded="true" aria-controls="section-5">
+                <span class="section-number">5️⃣</span>
+                <span class="section-title">Drawing Wire</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-5">
+                <div class="content-box">
+<p>A wire is a very long, thin cylinder. Its length is the melted volume divided by the area of its cross-section, πr². Watch units: if the radius is in millimetres and the answer is wanted in metres, convert carefully.</p>
+<div class="case-study">
+<h4>Worked example 8: wire from a sphere</h4>
+<p>A sphere of radius 3 cm is drawn into wire of radius 0.1 cm. Volume = (4/3)π × 27 = 36π. Length = 36π ÷ (π × 0.01) = 3,600 cm = <strong>36 m</strong>.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)" aria-expanded="true" aria-controls="section-6">
+                <span class="section-number">6️⃣</span>
+                <span class="section-title">What Happens to Surface Area</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-6">
+                <div class="content-box">
+<p>Volume is conserved, surface area is not. Splitting a solid into smaller pieces always increases the total surface area.</p>
+<div class="case-study">
+<h4>Worked example 9: one sphere into 27</h4>
+<p>From example 1, 27 spheres of radius 2 replace one of radius 6. Total surface area ratio = 27 × 2² ÷ 6² = <strong>3</strong>, so the small spheres have three times the surface area. In general, splitting into k equal spheres multiplies the surface area by the cube root of k.</p>
+</div>
+<p><strong>Common traps:</strong> using diameter as radius, forgetting the 1/3 for cones, squaring instead of cubing when comparing spheres, mixing cm and m in wire questions, and rounding up the number of pieces after wastage.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)" aria-expanded="true" aria-controls="section-7">
+                <span class="section-number">7️⃣</span>
+                <span class="section-title">Practice Questions (5)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-7">
+                <div class="content-box">
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q1.</strong> A metal sphere of radius 8 cm is melted and recast into small spheres of radius 2 cm. How many small spheres are made? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q1" value="a"> (a) 64</label>
+                            <label><input type="radio" name="q1" value="b"> (b) 16</label>
+                            <label><input type="radio" name="q1" value="c"> (c) 32</label>
+                            <label><input type="radio" name="q1" value="d"> (d) 128</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q1">
+                            <p><strong>✅ Answer:</strong> (a) 64</p>
+                            <p><strong>💡 Explanation:</strong> Number = (big radius ÷ small radius)³ = 4³ = 64, because the 4/3 π cancels.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q1')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q2.</strong> A cone of radius 6 cm and height 24 cm is melted into a sphere. What is the sphere&#x27;s radius? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q2" value="a"> (a) 4 cm</label>
+                            <label><input type="radio" name="q2" value="b"> (b) 8 cm</label>
+                            <label><input type="radio" name="q2" value="c"> (c) 6 cm</label>
+                            <label><input type="radio" name="q2" value="d"> (d) 3 cm</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q2">
+                            <p><strong>✅ Answer:</strong> (c) 6 cm</p>
+                            <p><strong>💡 Explanation:</strong> Cone volume = (1/3)π × 36 × 24 = 288π. Setting (4/3)πr³ = 288π gives r³ = 216, so r = 6 cm.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q2')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q3.</strong> Cubes of sides 6 cm, 8 cm and 10 cm are melted into one cube. What is its side? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q3" value="a"> (a) 14 cm</label>
+                            <label><input type="radio" name="q3" value="b"> (b) 12 cm</label>
+                            <label><input type="radio" name="q3" value="c"> (c) 24 cm</label>
+                            <label><input type="radio" name="q3" value="d"> (d) 10 cm</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q3">
+                            <p><strong>✅ Answer:</strong> (b) 12 cm</p>
+                            <p><strong>💡 Explanation:</strong> 216 + 512 + 1,000 = 1,728 cm³, and the cube root of 1,728 is 12 cm.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q3')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q4.</strong> A cylinder of radius 6 cm and height 8 cm is melted into spheres of radius 2 cm. How many spheres are made? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q4" value="a"> (a) 24</label>
+                            <label><input type="radio" name="q4" value="b"> (b) 36</label>
+                            <label><input type="radio" name="q4" value="c"> (c) 32</label>
+                            <label><input type="radio" name="q4" value="d"> (d) 27</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q4">
+                            <p><strong>✅ Answer:</strong> (d) 27</p>
+                            <p><strong>💡 Explanation:</strong> Cylinder = π × 36 × 8 = 288π; each sphere = (4/3)π × 8 = 32π/3. 288π ÷ (32π/3) = 27.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q4')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q5.</strong> A sphere of radius 6 cm is melted and recast into a cylinder of radius 4 cm. What is the cylinder&#x27;s height? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q5" value="a"> (a) 12 cm</label>
+                            <label><input type="radio" name="q5" value="b"> (b) 18 cm</label>
+                            <label><input type="radio" name="q5" value="c"> (c) 24 cm</label>
+                            <label><input type="radio" name="q5" value="d"> (d) 16 cm</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q5">
+                            <p><strong>✅ Answer:</strong> (b) 18 cm</p>
+                            <p><strong>💡 Explanation:</strong> (4/3)π × 216 = 288π. Dividing by π × 16 gives a height of 18 cm.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q5')">Show Answer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="8">
+            <button class="section-header" onclick="toggleSection(8)" aria-expanded="true" aria-controls="section-8">
+                <span class="section-number">8️⃣</span>
+                <span class="section-title">Frequently Asked Questions</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-8">
+                <div class="content-box">
+                    <h3>Why does π usually cancel?</h3>
+                    <p>Spheres, cylinders and cones all have π in their volume formulas. When one is melted into another, π appears on both sides of the equation and cancels, so you rarely need to use 22/7 or 3.14.</p>
+                    <h3>Does surface area stay the same after recasting?</h3>
+                    <p>No. Only volume is conserved. Breaking one sphere into many small ones increases the total surface area, which is why fine powders react faster than lumps.</p>
+                    <h3>How do I handle a hollow shape such as a pipe?</h3>
+                    <p>Its volume is the outer volume minus the inner volume: π(R² − r²)h for a pipe, or (4/3)π(R³ − r³) for a hollow sphere. Use that as the melted volume.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="9">
+            <button class="section-header" onclick="toggleSection(9)" aria-expanded="true" aria-controls="section-9">
+                <span class="section-number">9️⃣</span>
+                <span class="section-title">Sources and Review</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-9">
+                <div class="content-box">
+                    <p>All problems and solutions on this page are original. No outside facts are relied on; every numeric answer is recomputed by software before publishing.</p>
+                    <div class="highlight-box">
+                        <p><strong>How this page was prepared.</strong> Drafted with AI assistance (Claude (Anthropic AI model)) from the sources listed above. 14 calculations on this page were recomputed by software and matched. Automated checks also covered structure, internal links and duplicate text. Software checks cannot confirm facts. </p>
+                        <p>Found an error? <a href="../../contact.html">Report it</a> and we will correct the page.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="10">
+            <button class="section-header" onclick="toggleSection(10)" aria-expanded="true" aria-controls="section-10">
+                <span class="section-number">🔟</span>
+                <span class="section-title">Related Pages</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-10">
+                <div class="content-box">
+                    <ul class="bullet-list">
+                        <li><a href="../../repeated-questions/quant-cheat-code.html">Quant Cheat Code: 20 Must-Know Shortcuts &amp; Formulas</a></li>
+                        <li><a href="area-perimeter-2d-formulas.html">Area and Perimeter Formulas for 2D Shapes</a></li>
+                        <li><a href="cube-and-cuboid.html">Cube and Cuboid: Volume, Surface Area and Diagonal</a></li>
+                        <li><a href="cylinder-cone-sphere.html">Cylinder, Cone, Sphere and Hemisphere Formulas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="page-navigation">
+            <a href="sum-of-natural-numbers-squares-cubes.html" class="nav-btn">← Sum of Squares of n Natural Numbers, Plus the Sum of Numbers and Cubes, with Odd, Even and Range Variants</a>
+            <a href="index.html" class="nav-btn">↑ Quantitative Aptitude</a>
+            <a href="pythagorean-triplets.html" class="nav-btn">Pythagorean Triplets List up to 65, How to Generate Them, and Right-Triangle Shortcuts →</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>Subject: Quantitative Aptitude | Sources are listed on this page. <a href="../../contact.html">Report an error</a>.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of First n Natural Numbers, Squares and Cubes</title>
+    <meta name="description" content="The three sum formulas for 1 to n, squares and cubes, plus odd and even variants and sums over a range such as 11² to 20², each with a checked example. 5 MCQs.">
+    <meta name="keywords" content="sum of squares of n natural numbers, sum of first n natural numbers formula, sum of cubes formula, sum of first n odd numbers, sum of even numbers formula, sum of squares from 11 to 20">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.aspirantdaily.com/study/quant/sum-of-natural-numbers-squares-cubes.html">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.aspirantdaily.com/study/quant/sum-of-natural-numbers-squares-cubes.html">
+    <meta property="og:title" content="Sum of First n Natural Numbers, Squares and Cubes">
+    <meta property="og:description" content="The three sum formulas for 1 to n, squares and cubes, plus odd and even variants and sums over a range such as 11² to 20², each with a checked example. 5 MCQs.">
+    <meta property="og:image" content="https://www.aspirantdaily.com/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Sum of Squares of n Natural Numbers, Plus the Sum of Numbers and Cubes, with Odd, Even and Range Variants",
+  "description": "The three sum formulas for 1 to n, squares and cubes, plus odd and even variants and sums over a range such as 11² to 20², each with a checked example. 5 MCQs.",
+  "image": "https://www.aspirantdaily.com/og-image.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "url": "https://www.aspirantdaily.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.aspirantdaily.com/icons/icon-512.png"
+    }
+  },
+  "datePublished": "2026-11-02",
+  "dateModified": "2026-11-02",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.aspirantdaily.com/study/quant/sum-of-natural-numbers-squares-cubes.html"
+  },
+  "articleSection": "Quantitative Aptitude",
+  "citation": []
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.aspirantdaily.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Study Notes",
+      "item": "https://www.aspirantdaily.com/study/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Quantitative Aptitude",
+      "item": "https://www.aspirantdaily.com/study/quant/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Sum of Squares of n Natural Numbers, Plus the Sum of Numbers and Cubes, with Odd, Even and Range Variants",
+      "item": "https://www.aspirantdaily.com/study/quant/sum-of-natural-numbers-squares-cubes.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How can I remember the sum of squares formula?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "n(n + 1)(2n + 1)/6: three factors in a row, n, then one more, then 'double plus one', all over 6. Test it on n = 2: 2 × 3 × 5 ÷ 6 = 5 = 1 + 4."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is the sum of cubes the square of the sum?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is a well-known identity: 1³ + 2³ + … + n³ = (1 + 2 + … + n)². For example 1 + 8 + 27 = 36 = 6². It means you only need to remember the first formula and square it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I find a sum that does not start at 1?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Subtract two sums: the sum from a to b equals the sum to b minus the sum to (a − 1). For squares from 11 to 20, take the sum to 20 and subtract the sum to 10."
+      }
+    }
+  ]
+}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css?v=2">
+    <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-51XLJE4TVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-51XLJE4TVH');
+  </script>
+  <script>/* AdSense only on the production host (not localhost or preview deployments) */(function(){if(location.hostname!=="www.aspirantdaily.com")return;var a=document.createElement("script");a.async=true;a.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327";a.crossOrigin="anonymous";document.head.appendChild(a);})();</script>
+</head>
+<body class="study-page subject-quant">
+    <nav class="study-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Quantitative Aptitude</a>
+            <div class="nav-controls">
+                <button onclick="toggleAllSections()" class="btn-secondary">Expand/Collapse All</button>
+                <button onclick="window.print()" class="btn-primary">📄 Print/Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> / <a href="../index.html">Study Notes</a> / <a href="index.html">Quantitative Aptitude</a> / <span>Sum of Squares of n Natural Numbers, Plus the Sum of Numbers and Cubes, with Odd, Even and Range Variants</span>
+            </div>
+            <h1>Sum of Squares of n Natural Numbers, Plus the Sum of Numbers and Cubes, with Odd, Even and Range Variants</h1>
+            <p class="page-subtitle">1 + 2 + … + n • 1² + 2² + … + n² • 1³ + … + n³ = (sum)² • Odd and even numbers • Squares of even and odd numbers • Sums from a to b</p>
+            <div class="page-meta">
+                <span class="badge badge-secondary">SSC</span>
+                <span class="badge badge-secondary">Railway</span>
+                <span class="badge badge-secondary">📅 Last updated: 2026-11-02</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="study-section collapsible" data-section="1">
+            <button class="section-header" onclick="toggleSection(1)" aria-expanded="true" aria-controls="section-1">
+                <span class="section-number">1️⃣</span>
+                <span class="section-title">The Three Core Formulas</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-1">
+                <div class="content-box">
+<div class="table-wrap"><table class="data-table">
+<thead><tr><th>Sum</th><th>Formula</th><th>n = 10</th></tr></thead>
+<tbody>
+<tr><td>1 + 2 + 3 + … + n</td><td>n(n + 1)/2</td><td>55</td></tr>
+<tr><td>1² + 2² + 3² + … + n²</td><td>n(n + 1)(2n + 1)/6</td><td>385</td></tr>
+<tr><td>1³ + 2³ + 3³ + … + n³</td><td>[n(n + 1)/2]²</td><td>3,025</td></tr>
+</tbody></table></div>
+<p>The first formula comes from pairing terms: 1 + n, 2 + (n − 1), and so on, each pair adding to n + 1, with n/2 pairs. The cube formula is simply the first one squared, so in practice there are only two formulas to learn.</p>
+<div class="case-study">
+<h4>Worked example 1: 1 to 100</h4>
+<p>100 × 101 ÷ 2 = <strong>5,050</strong>.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 2: squares 1 to 10</h4>
+<p>10 × 11 × 21 ÷ 6 = 2,310 ÷ 6 = <strong>385</strong>.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 3: cubes 1 to 10</h4>
+<p>(10 × 11 ÷ 2)² = 55² = <strong>3,025</strong>.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="2">
+            <button class="section-header" onclick="toggleSection(2)" aria-expanded="true" aria-controls="section-2">
+                <span class="section-number">2️⃣</span>
+                <span class="section-title">Odd and Even Numbers</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-2">
+                <div class="content-box">
+<div class="table-wrap"><table class="data-table">
+<thead><tr><th>Sum of the first n …</th><th>Formula</th></tr></thead>
+<tbody>
+<tr><td>Odd numbers: 1 + 3 + 5 + … + (2n − 1)</td><td>n²</td></tr>
+<tr><td>Even numbers: 2 + 4 + 6 + … + 2n</td><td>n(n + 1)</td></tr>
+<tr><td>Squares of odd numbers: 1² + 3² + … + (2n − 1)²</td><td>n(2n − 1)(2n + 1)/3</td></tr>
+<tr><td>Squares of even numbers: 2² + 4² + … + (2n)²</td><td>2n(n + 1)(2n + 1)/3</td></tr>
+</tbody></table></div>
+<p>First find n, the number of terms. For odd numbers up to 49, n = (49 + 1)/2 = 25. For even numbers up to 100, n = 100/2 = 50.</p>
+<div class="case-study">
+<h4>Worked example 4: odd numbers 1 to 49</h4>
+<p>There are 25 odd numbers, so the sum is 25² = <strong>625</strong>.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 5: even numbers 2 to 100</h4>
+<p>50 terms: 50 × 51 = <strong>2,550</strong>, which is twice the sum 1 to 50.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 6: squares of the first five odd numbers</h4>
+<p>5 × 9 × 11 ÷ 3 = <strong>165</strong>. Direct check: 1 + 9 + 25 + 49 + 81 = 165.</p>
+</div>
+<p>The even-squares formula follows from taking out a factor of 4: 2² + 4² + … + (2n)² = 4(1² + 2² + … + n²). This shortcut is often faster than remembering a separate formula.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="3">
+            <button class="section-header" onclick="toggleSection(3)" aria-expanded="true" aria-controls="section-3">
+                <span class="section-number">3️⃣</span>
+                <span class="section-title">Sums Over a Range</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-3">
+                <div class="content-box">
+<p>When a sum starts above 1, subtract two sums that both start at 1:</p>
+<div class="highlight-box"><p><strong>a + … + b = (sum to b) − (sum to a − 1)</strong></p></div>
+<div class="case-study">
+<h4>Worked example 7: squares from 11 to 20</h4>
+<p>Sum of squares to 20 = 20 × 21 × 41 ÷ 6 = 2,870. Sum to 10 = 385. So 11² + … + 20² = <strong>2,485</strong>.</p>
+</div>
+<p>For an arithmetic progression that does not step by 1, such as 7 + 11 + 15 + …, use the AP formula instead: number of terms × (first term + last term) ÷ 2. The pairing idea is the same.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)" aria-expanded="true" aria-controls="section-4">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">Checks and Common Traps</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
+                <div class="content-box">
+<p>Test any formula on a tiny case before trusting it in an exam. For n = 2: numbers 1 + 2 = 3 (2 × 3 ÷ 2), squares 1 + 4 = 5 (2 × 3 × 5 ÷ 6), cubes 1 + 8 = 9 (3²). If the small case fails, you have misremembered the formula.</p>
+<div class="case-study">
+<h4>Worked example 8: direct addition as a check</h4>
+<p>Adding 1 + 9 + 25 + 49 + 81 by hand gives <strong>165</strong>, matching the odd-squares formula in example 6. For small n, quick direct addition is a reliable check.</p>
+</div>
+<ul>
+<li><strong>Wrong n.</strong> For odd or even sums, n is the number of terms, not the last term.</li>
+<li><strong>Forgetting to halve or divide by 6.</strong> The divisors are part of the formula.</li>
+<li><strong>Range errors.</strong> Subtract the sum to a − 1, not to a, or you lose the first term.</li>
+<li><strong>Squaring the sum of squares.</strong> Only the sum of cubes equals a square of the plain sum.</li>
+<li><strong>Mixing the odd and even square formulas.</strong> Derive the even one from 4 × (sum of squares) if unsure.</li>
+</ul>
+<p>For identities such as (a + b)², see <a href="algebraic-identities.html">algebraic identities</a>.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)" aria-expanded="true" aria-controls="section-5">
+                <span class="section-number">5️⃣</span>
+                <span class="section-title">Practice Questions (5)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-5">
+                <div class="content-box">
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q1.</strong> What is 1 + 2 + 3 + … + 50? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q1" value="a"> (a) 1250</label>
+                            <label><input type="radio" name="q1" value="b"> (b) 1275</label>
+                            <label><input type="radio" name="q1" value="c"> (c) 2550</label>
+                            <label><input type="radio" name="q1" value="d"> (d) 1225</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q1">
+                            <p><strong>✅ Answer:</strong> (b) 1275</p>
+                            <p><strong>💡 Explanation:</strong> n(n + 1)/2 = 50 × 51 ÷ 2 = 1,275. 2,550 is the sum before halving.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q1')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q2.</strong> What is 1² + 2² + … + 15²? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q2" value="a"> (a) 1240</label>
+                            <label><input type="radio" name="q2" value="b"> (b) 1200</label>
+                            <label><input type="radio" name="q2" value="c"> (c) 1350</label>
+                            <label><input type="radio" name="q2" value="d"> (d) 1225</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q2">
+                            <p><strong>✅ Answer:</strong> (a) 1240</p>
+                            <p><strong>💡 Explanation:</strong> n(n + 1)(2n + 1)/6 = 15 × 16 × 31 ÷ 6 = 1,240.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q2')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q3.</strong> What is 1³ + 2³ + … + 8³? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q3" value="a"> (a) 1024</label>
+                            <label><input type="radio" name="q3" value="b"> (b) 1156</label>
+                            <label><input type="radio" name="q3" value="c"> (c) 1200</label>
+                            <label><input type="radio" name="q3" value="d"> (d) 1296</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q3">
+                            <p><strong>✅ Answer:</strong> (d) 1296</p>
+                            <p><strong>💡 Explanation:</strong> The sum of cubes is the square of the sum: (8 × 9 ÷ 2)² = 36² = 1,296.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q3')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q4.</strong> What is 51 + 52 + … + 100? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q4" value="a"> (a) 3750</label>
+                            <label><input type="radio" name="q4" value="b"> (b) 3825</label>
+                            <label><input type="radio" name="q4" value="c"> (c) 3775</label>
+                            <label><input type="radio" name="q4" value="d"> (d) 2525</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q4">
+                            <p><strong>✅ Answer:</strong> (c) 3775</p>
+                            <p><strong>💡 Explanation:</strong> Sum to 100 minus sum to 50: 5,050 − 1,275 = 3,775.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q4')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q5.</strong> What is 2² + 4² + 6² + … + 20²? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q5" value="a"> (a) 770</label>
+                            <label><input type="radio" name="q5" value="b"> (b) 1540</label>
+                            <label><input type="radio" name="q5" value="c"> (c) 1440</label>
+                            <label><input type="radio" name="q5" value="d"> (d) 1600</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q5">
+                            <p><strong>✅ Answer:</strong> (b) 1540</p>
+                            <p><strong>💡 Explanation:</strong> Each term is 4 times a square: 4(1² + … + 10²) = 4 × 385 = 1,540.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q5')">Show Answer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)" aria-expanded="true" aria-controls="section-6">
+                <span class="section-number">6️⃣</span>
+                <span class="section-title">Frequently Asked Questions</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-6">
+                <div class="content-box">
+                    <h3>How can I remember the sum of squares formula?</h3>
+                    <p>n(n + 1)(2n + 1)/6: three factors in a row, n, then one more, then &#x27;double plus one&#x27;, all over 6. Test it on n = 2: 2 × 3 × 5 ÷ 6 = 5 = 1 + 4.</p>
+                    <h3>Why is the sum of cubes the square of the sum?</h3>
+                    <p>It is a well-known identity: 1³ + 2³ + … + n³ = (1 + 2 + … + n)². For example 1 + 8 + 27 = 36 = 6². It means you only need to remember the first formula and square it.</p>
+                    <h3>How do I find a sum that does not start at 1?</h3>
+                    <p>Subtract two sums: the sum from a to b equals the sum to b minus the sum to (a − 1). For squares from 11 to 20, take the sum to 20 and subtract the sum to 10.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)" aria-expanded="true" aria-controls="section-7">
+                <span class="section-number">7️⃣</span>
+                <span class="section-title">Sources and Review</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-7">
+                <div class="content-box">
+                    <p>All problems and solutions on this page are original. No outside facts are relied on; every numeric answer is recomputed by software before publishing.</p>
+                    <div class="highlight-box">
+                        <p><strong>How this page was prepared.</strong> Drafted with AI assistance (Claude (Anthropic AI model)) from the sources listed above. 13 calculations on this page were recomputed by software and matched. Automated checks also covered structure, internal links and duplicate text. Software checks cannot confirm facts. </p>
+                        <p>Found an error? <a href="../../contact.html">Report it</a> and we will correct the page.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="8">
+            <button class="section-header" onclick="toggleSection(8)" aria-expanded="true" aria-controls="section-8">
+                <span class="section-number">8️⃣</span>
+                <span class="section-title">Related Pages</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-8">
+                <div class="content-box">
+                    <ul class="bullet-list">
+                        <li><a href="../../repeated-questions/quant-cheat-code.html">Quant Cheat Code: 20 Must-Know Shortcuts &amp; Formulas</a></li>
+                        <li><a href="divisibility-rules.html">Divisibility Rules from 2 to 19 with Examples</a></li>
+                        <li><a href="hcf-and-lcm-word-problems.html">HCF and LCM Word Problems: When to Use Which</a></li>
+                        <li><a href="unit-digit-of-powers.html">Unit Digit of Powers: Cyclicity Method</a></li>
+                        <li><a href="remainder-problems.html">Remainder Problems: Negative Remainders and Cyclicity</a></li>
+                        <li><a href="number-of-factors.html">Number of Factors, Sum of Factors and Even Factors</a></li>
+                        <li><a href="trailing-zeros-in-factorial.html">Trailing Zeros in a Factorial</a></li>
+                        <li><a href="recurring-decimals-to-fractions.html">Converting Recurring Decimals to Fractions</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="page-navigation">
+            <a href="handshakes-and-diagonals.html" class="nav-btn">← Number of Handshakes Formula n(n − 1)/2, Diagonals of a Polygon, League Matches, Lines and Triangles from Points</a>
+            <a href="index.html" class="nav-btn">↑ Quantitative Aptitude</a>
+            <a href="melting-and-recasting.html" class="nav-btn">Melting and Recasting Problems: Equate Volumes to Count Pieces, Find a New Radius, or Draw a Wire →</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>Subject: Quantitative Aptitude | Sources are listed on this page. <a href="../../contact.html">Report an error</a>.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>

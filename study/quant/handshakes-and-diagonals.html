@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handshakes, Diagonals and Matches | AspirantDaily</title>
+    <meta name="description" content="The number of handshakes formula n(n − 1)/2 and its relatives: diagonals of a polygon, league and knockout matches, and lines and triangles through collinear points.">
+    <meta name="keywords" content="number of handshakes formula, handshakes n(n-1)/2, number of diagonals of a polygon, round robin matches formula, knockout tournament matches, triangles from collinear points">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.aspirantdaily.com/study/quant/handshakes-and-diagonals.html">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.aspirantdaily.com/study/quant/handshakes-and-diagonals.html">
+    <meta property="og:title" content="Handshakes, Diagonals and Matches | AspirantDaily">
+    <meta property="og:description" content="The number of handshakes formula n(n − 1)/2 and its relatives: diagonals of a polygon, league and knockout matches, and lines and triangles through collinear points.">
+    <meta property="og:image" content="https://www.aspirantdaily.com/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Number of Handshakes Formula n(n − 1)/2, Diagonals of a Polygon, League Matches, Lines and Triangles from Points",
+  "description": "The number of handshakes formula n(n − 1)/2 and its relatives: diagonals of a polygon, league and knockout matches, and lines and triangles through collinear points.",
+  "image": "https://www.aspirantdaily.com/og-image.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "url": "https://www.aspirantdaily.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.aspirantdaily.com/icons/icon-512.png"
+    }
+  },
+  "datePublished": "2026-11-02",
+  "dateModified": "2026-11-02",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.aspirantdaily.com/study/quant/handshakes-and-diagonals.html"
+  },
+  "articleSection": "Quantitative Aptitude",
+  "citation": []
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.aspirantdaily.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Study Notes",
+      "item": "https://www.aspirantdaily.com/study/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Quantitative Aptitude",
+      "item": "https://www.aspirantdaily.com/study/quant/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Number of Handshakes Formula n(n − 1)/2, Diagonals of a Polygon, League Matches, Lines and Triangles from Points",
+      "item": "https://www.aspirantdaily.com/study/quant/handshakes-and-diagonals.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why divide by 2 in the handshake formula?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Each person shakes n − 1 hands, so n(n − 1) counts every handshake twice: once from each person's side. Dividing by 2 gives each handshake once."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many matches does a knockout tournament need?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "One fewer than the number of teams. Every match knocks out exactly one team, and all but the champion must be knocked out, so n teams need n − 1 matches."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if people shake hands only with the other group?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Then it is not nC2. With m people in one group and k in the other, each of the m shakes k hands, giving m × k handshakes in all."
+      }
+    }
+  ]
+}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css?v=2">
+    <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-51XLJE4TVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-51XLJE4TVH');
+  </script>
+  <script>/* AdSense only on the production host (not localhost or preview deployments) */(function(){if(location.hostname!=="www.aspirantdaily.com")return;var a=document.createElement("script");a.async=true;a.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327";a.crossOrigin="anonymous";document.head.appendChild(a);})();</script>
+</head>
+<body class="study-page subject-quant">
+    <nav class="study-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Quantitative Aptitude</a>
+            <div class="nav-controls">
+                <button onclick="toggleAllSections()" class="btn-secondary">Expand/Collapse All</button>
+                <button onclick="window.print()" class="btn-primary">📄 Print/Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> / <a href="../index.html">Study Notes</a> / <a href="index.html">Quantitative Aptitude</a> / <span>Number of Handshakes Formula n(n − 1)/2, Diagonals of a Polygon, League Matches, Lines and Triangles from Points</span>
+            </div>
+            <h1>Number of Handshakes Formula n(n − 1)/2, Diagonals of a Polygon, League Matches, Lines and Triangles from Points</h1>
+            <p class="page-subtitle">Handshakes = nC2 • Working back from the total • Diagonals n(n − 3)/2 • League, double league and knockout • Lines and triangles when some points are collinear</p>
+            <div class="page-meta">
+                <span class="badge badge-secondary">SSC</span>
+                <span class="badge badge-secondary">Banking</span>
+                <span class="badge badge-secondary">📅 Last updated: 2026-11-02</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="study-section collapsible" data-section="1">
+            <button class="section-header" onclick="toggleSection(1)" aria-expanded="true" aria-controls="section-1">
+                <span class="section-number">1️⃣</span>
+                <span class="section-title">Handshakes Are nC2</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-1">
+                <div class="content-box">
+<p>When each of n people shakes hands exactly once with every other person, every handshake is just a <strong>pair</strong> of people. So the number of handshakes is the number of ways to choose 2 people from n:</p>
+<div class="highlight-box"><p><strong>Handshakes = nC2 = n(n − 1)/2</strong></p></div>
+<p>The reasoning behind it: each person shakes n − 1 hands, giving n(n − 1), but that counts every handshake twice, once from each side. For more on choosing, see <a href="permutations-and-combinations.html">permutations and combinations</a>.</p>
+<div class="case-study">
+<h4>Worked example 1: ten people</h4>
+<p>10 people, all shaking hands once: 10 × 9 ÷ 2 = <strong>45 handshakes</strong>.</p>
+</div>
+<p>Questions often give the total and ask for n. Double the total and look for two consecutive numbers with that product.</p>
+<div class="case-study">
+<h4>Worked example 2: working back from 66</h4>
+<p>66 handshakes means n(n − 1) = 132 = 12 × 11, so there were <strong>12 people</strong>.</p>
+</div>
+<p>If handshakes happen only between two groups, such as 5 men each shaking hands with 4 women but not with each other, the count is simply 5 × 4.</p>
+<div class="case-study">
+<h4>Worked example 3: two groups</h4>
+<p>5 men each shake hands with each of 4 women, and nobody else: <strong>20 handshakes</strong>.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="2">
+            <button class="section-header" onclick="toggleSection(2)" aria-expanded="true" aria-controls="section-2">
+                <span class="section-number">2️⃣</span>
+                <span class="section-title">Diagonals of a Polygon</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-2">
+                <div class="content-box">
+<p>Joining any two vertices of an n-sided polygon gives nC2 lines. n of those are the sides; the rest are diagonals:</p>
+<div class="highlight-box"><p><strong>Diagonals = nC2 − n = n(n − 3)/2</strong></p></div>
+<p>The n − 3 comes from each vertex: it cannot join itself or its two neighbours by a diagonal.</p>
+<div class="case-study">
+<h4>Worked example 4: an octagon</h4>
+<p>8C2 − 8 = 28 − 8 = <strong>20 diagonals</strong>.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 5: which polygon has 35 diagonals?</h4>
+<p>n(n − 3)/2 = 35 gives n(n − 3) = 70 = 10 × 7, so the polygon has <strong>10 sides</strong>.</p>
+</div>
+<p>For interior and exterior angles of polygons, see <a href="polygon-angles.html">polygon angles</a>.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="3">
+            <button class="section-header" onclick="toggleSection(3)" aria-expanded="true" aria-controls="section-3">
+                <span class="section-number">3️⃣</span>
+                <span class="section-title">League and Knockout Matches</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-3">
+                <div class="content-box">
+<ul>
+<li><strong>Single league (round robin):</strong> every team plays every other once, so matches = nC2.</li>
+<li><strong>Double league (home and away):</strong> twice that, n(n − 1).</li>
+<li><strong>Knockout:</strong> each match eliminates one team, and all but the winner must be eliminated, so matches = n − 1.</li>
+</ul>
+<div class="case-study">
+<h4>Worked example 6: eight teams in a league</h4>
+<p>8C2 = <strong>28 matches</strong> in a single round robin.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 7: home and away</h4>
+<p>The same 8 teams playing home and away: 2 × 28 = <strong>56 matches</strong>.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 8: a knockout</h4>
+<p>16 teams in a knockout: <strong>15 matches</strong> (8 + 4 + 2 + 1).</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)" aria-expanded="true" aria-controls="section-4">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">Pairs Where Order Matters, and Triangles in a Polygon</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
+                <div class="content-box">
+<p>Handshakes are unordered: A shaking hands with B is the same event as B shaking hands with A. Some questions describe <strong>ordered</strong> pairs instead, and then you must not halve the count.</p>
+<div class="case-study">
+<h4>Worked example 9: exchanging gifts</h4>
+<p>Each of 10 friends gives a gift to every other friend. A gift from A to B is different from one from B to A, so the count is 10 × 9 = <strong>90 gifts</strong>, twice the 45 handshakes. Greeting cards, letters and phone calls "to each other" usually follow the same rule; read whether each pair acts once or each person acts separately.</p>
+</div>
+<p>Choosing three vertices of a polygon gives a triangle, so an n-sided polygon has nC3 triangles with its vertices as corners.</p>
+<div class="case-study">
+<h4>Worked example 10: triangles in an octagon</h4>
+<p>8C3 = <strong>56 triangles</strong> can be drawn using the vertices of an octagon.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 11: triangles sharing no side with the octagon</h4>
+<p>A harder variant asks for triangles none of whose sides is a side of the polygon. The count is n(n − 4)(n − 5)/6, which for n = 8 gives 8 × 4 × 3 ÷ 6 = <strong>16</strong>.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)" aria-expanded="true" aria-controls="section-5">
+                <span class="section-number">5️⃣</span>
+                <span class="section-title">Lines and Triangles When Some Points Are Collinear</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-5">
+                <div class="content-box">
+<p>With n points and no three on a line, there are nC2 straight lines and nC3 triangles. If m of the points lie on one line, adjust:</p>
+<ul>
+<li><strong>Lines:</strong> nC2 − mC2 + 1. The mC2 lines joining collinear points are really just one line.</li>
+<li><strong>Triangles:</strong> nC3 − mC3. Three collinear points do not make a triangle.</li>
+</ul>
+<div class="case-study">
+<h4>Worked example 12: lines</h4>
+<p>10 points, 4 of them collinear: 45 − 6 + 1 = <strong>40 lines</strong>.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 13: triangles</h4>
+<p>The same points: 120 − 4 = <strong>116 triangles</strong>.</p>
+</div>
+<p><strong>Common traps:</strong> forgetting to halve the handshake count, counting sides as diagonals, using nC2 for a knockout, and forgetting the "+ 1" when collinear points share a line.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)" aria-expanded="true" aria-controls="section-6">
+                <span class="section-number">6️⃣</span>
+                <span class="section-title">Practice Questions (5)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-6">
+                <div class="content-box">
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q1.</strong> At a meeting, each of 15 people shakes hands once with every other person. How many handshakes are there? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q1" value="a"> (a) 105</label>
+                            <label><input type="radio" name="q1" value="b"> (b) 210</label>
+                            <label><input type="radio" name="q1" value="c"> (c) 100</label>
+                            <label><input type="radio" name="q1" value="d"> (d) 120</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q1">
+                            <p><strong>✅ Answer:</strong> (a) 105</p>
+                            <p><strong>💡 Explanation:</strong> Handshakes = 15C2 = 15 × 14 ÷ 2 = 105. 210 counts each handshake twice.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q1')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q2.</strong> How many diagonals does a 12-sided polygon have? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q2" value="a"> (a) 66</label>
+                            <label><input type="radio" name="q2" value="b"> (b) 54</label>
+                            <label><input type="radio" name="q2" value="c"> (c) 60</label>
+                            <label><input type="radio" name="q2" value="d"> (d) 48</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q2">
+                            <p><strong>✅ Answer:</strong> (b) 54</p>
+                            <p><strong>💡 Explanation:</strong> n(n − 3)/2 = 12 × 9 ÷ 2 = 54. 66 is 12C2, which wrongly includes the 12 sides.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q2')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q3.</strong> There were 28 handshakes at a party, everyone shaking hands with everyone else once. How many people were there? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q3" value="a"> (a) 7</label>
+                            <label><input type="radio" name="q3" value="b"> (b) 9</label>
+                            <label><input type="radio" name="q3" value="c"> (c) 14</label>
+                            <label><input type="radio" name="q3" value="d"> (d) 8</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q3">
+                            <p><strong>✅ Answer:</strong> (d) 8</p>
+                            <p><strong>💡 Explanation:</strong> n(n − 1)/2 = 28 gives n(n − 1) = 56 = 8 × 7, so n = 8.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q3')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q4.</strong> In a league of 10 teams, each team plays every other team twice (home and away). How many matches are played? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q4" value="a"> (a) 45</label>
+                            <label><input type="radio" name="q4" value="b"> (b) 100</label>
+                            <label><input type="radio" name="q4" value="c"> (c) 90</label>
+                            <label><input type="radio" name="q4" value="d"> (d) 80</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q4">
+                            <p><strong>✅ Answer:</strong> (c) 90</p>
+                            <p><strong>💡 Explanation:</strong> Single round = 10C2 = 45 matches; playing twice doubles it to 90.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q4')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q5.</strong> 12 points lie in a plane, and exactly 5 of them are on one straight line. How many triangles can be formed using these points as vertices? <span class="badge badge-secondary">hard</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q5" value="a"> (a) 220</label>
+                            <label><input type="radio" name="q5" value="b"> (b) 210</label>
+                            <label><input type="radio" name="q5" value="c"> (c) 200</label>
+                            <label><input type="radio" name="q5" value="d"> (d) 215</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q5">
+                            <p><strong>✅ Answer:</strong> (b) 210</p>
+                            <p><strong>💡 Explanation:</strong> 12C3 = 220, but any 3 of the 5 collinear points form no triangle: 5C3 = 10. So 220 − 10 = 210.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q5')">Show Answer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)" aria-expanded="true" aria-controls="section-7">
+                <span class="section-number">7️⃣</span>
+                <span class="section-title">Frequently Asked Questions</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-7">
+                <div class="content-box">
+                    <h3>Why divide by 2 in the handshake formula?</h3>
+                    <p>Each person shakes n − 1 hands, so n(n − 1) counts every handshake twice: once from each person&#x27;s side. Dividing by 2 gives each handshake once.</p>
+                    <h3>How many matches does a knockout tournament need?</h3>
+                    <p>One fewer than the number of teams. Every match knocks out exactly one team, and all but the champion must be knocked out, so n teams need n − 1 matches.</p>
+                    <h3>What if people shake hands only with the other group?</h3>
+                    <p>Then it is not nC2. With m people in one group and k in the other, each of the m shakes k hands, giving m × k handshakes in all.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="8">
+            <button class="section-header" onclick="toggleSection(8)" aria-expanded="true" aria-controls="section-8">
+                <span class="section-number">8️⃣</span>
+                <span class="section-title">Sources and Review</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-8">
+                <div class="content-box">
+                    <p>All problems and solutions on this page are original. No outside facts are relied on; every numeric answer is recomputed by software before publishing.</p>
+                    <div class="highlight-box">
+                        <p><strong>How this page was prepared.</strong> Drafted with AI assistance (Claude (Anthropic AI model)) from the sources listed above. 18 calculations on this page were recomputed by software and matched. Automated checks also covered structure, internal links and duplicate text. Software checks cannot confirm facts. </p>
+                        <p>Found an error? <a href="../../contact.html">Report it</a> and we will correct the page.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="9">
+            <button class="section-header" onclick="toggleSection(9)" aria-expanded="true" aria-controls="section-9">
+                <span class="section-number">9️⃣</span>
+                <span class="section-title">Related Pages</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-9">
+                <div class="content-box">
+                    <ul class="bullet-list">
+                        <li><a href="../../repeated-questions/quant-cheat-code.html">Quant Cheat Code: 20 Must-Know Shortcuts &amp; Formulas</a></li>
+                        <li><a href="probability-basics.html">Probability with Coins, Dice and Cards</a></li>
+                        <li><a href="permutations-and-combinations.html">Permutations and Combinations: When Order Matters</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="page-navigation">
+            <a href="x-plus-1-by-x-problems.html" class="nav-btn">← x + 1/x Problems: From x + 1/x to x² + 1/x², x³ + 1/x³ and Beyond</a>
+            <a href="index.html" class="nav-btn">↑ Quantitative Aptitude</a>
+            <a href="sum-of-natural-numbers-squares-cubes.html" class="nav-btn">Sum of Squares of n Natural Numbers, Plus the Sum of Numbers and Cubes, with Odd, Even and Range Variants →</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>Subject: Quantitative Aptitude | Sources are listed on this page. <a href="../../contact.html">Report an error</a>.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>

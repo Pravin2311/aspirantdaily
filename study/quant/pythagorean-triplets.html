@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pythagorean Triplets and Right Triangles | AspirantDaily</title>
+    <meta name="description" content="A Pythagorean triplets list up to 65 with multiples, three ways to generate triplets from any number, and how they shortcut ladder, diagonal and distance problems.">
+    <meta name="keywords" content="pythagorean triplets list, pythagorean triplets up to 100, how to find pythagorean triplets, primitive pythagorean triples, right triangle shortcut triplets, euclid formula triplets">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.aspirantdaily.com/study/quant/pythagorean-triplets.html">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.aspirantdaily.com/study/quant/pythagorean-triplets.html">
+    <meta property="og:title" content="Pythagorean Triplets and Right Triangles | AspirantDaily">
+    <meta property="og:description" content="A Pythagorean triplets list up to 65 with multiples, three ways to generate triplets from any number, and how they shortcut ladder, diagonal and distance problems.">
+    <meta property="og:image" content="https://www.aspirantdaily.com/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Pythagorean Triplets List up to 65, How to Generate Them, and Right-Triangle Shortcuts",
+  "description": "A Pythagorean triplets list up to 65 with multiples, three ways to generate triplets from any number, and how they shortcut ladder, diagonal and distance problems.",
+  "image": "https://www.aspirantdaily.com/og-image.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "url": "https://www.aspirantdaily.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.aspirantdaily.com/icons/icon-512.png"
+    }
+  },
+  "datePublished": "2026-11-02",
+  "dateModified": "2026-11-02",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.aspirantdaily.com/study/quant/pythagorean-triplets.html"
+  },
+  "articleSection": "Quantitative Aptitude",
+  "citation": []
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.aspirantdaily.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Study Notes",
+      "item": "https://www.aspirantdaily.com/study/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Quantitative Aptitude",
+      "item": "https://www.aspirantdaily.com/study/quant/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Pythagorean Triplets List up to 65, How to Generate Them, and Right-Triangle Shortcuts",
+      "item": "https://www.aspirantdaily.com/study/quant/pythagorean-triplets.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is a primitive Pythagorean triplet?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "One whose three numbers share no common factor, such as 3-4-5 or 8-15-17. Every other triplet, such as 6-8-10 or 15-20-25, is a whole-number multiple of a primitive one."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can every whole number be part of a triplet?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Every whole number from 3 upwards can. An odd number a gives (a, (a² − 1)/2, (a² + 1)/2), and an even number a gives (a, (a/2)² − 1, (a/2)² + 1)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is one side of a primitive triplet always even?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. In a primitive triplet, exactly one leg is even and the hypotenuse is always odd. This is a quick way to reject options."
+      }
+    }
+  ]
+}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css?v=2">
+    <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-51XLJE4TVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-51XLJE4TVH');
+  </script>
+  <script>/* AdSense only on the production host (not localhost or preview deployments) */(function(){if(location.hostname!=="www.aspirantdaily.com")return;var a=document.createElement("script");a.async=true;a.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327";a.crossOrigin="anonymous";document.head.appendChild(a);})();</script>
+</head>
+<body class="study-page subject-quant">
+    <nav class="study-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Quantitative Aptitude</a>
+            <div class="nav-controls">
+                <button onclick="toggleAllSections()" class="btn-secondary">Expand/Collapse All</button>
+                <button onclick="window.print()" class="btn-primary">📄 Print/Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> / <a href="../index.html">Study Notes</a> / <a href="index.html">Quantitative Aptitude</a> / <span>Pythagorean Triplets List up to 65, How to Generate Them, and Right-Triangle Shortcuts</span>
+            </div>
+            <h1>Pythagorean Triplets List up to 65, How to Generate Them, and Right-Triangle Shortcuts</h1>
+            <p class="page-subtitle">The primitive triplets to memorise • Multiples like 6-8-10 • Odd-number rule • Even-number rule • Euclid&#x27;s formula • Ladders, diagonals and quick checks</p>
+            <div class="page-meta">
+                <span class="badge badge-secondary">SSC</span>
+                <span class="badge badge-secondary">Railway</span>
+                <span class="badge badge-secondary">📅 Last updated: 2026-11-02</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="study-section collapsible" data-section="1">
+            <button class="section-header" onclick="toggleSection(1)" aria-expanded="true" aria-controls="section-1">
+                <span class="section-number">1️⃣</span>
+                <span class="section-title">The Triplets to Memorise</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-1">
+                <div class="content-box">
+<p>A Pythagorean triplet is three whole numbers a, b, c with <strong>a² + b² = c²</strong>, so they can be the sides of a right triangle with c as the hypotenuse. Knowing the common ones turns many geometry and mensuration questions into recognition rather than calculation.</p>
+<div class="table-wrap"><table class="data-table">
+<thead><tr><th>Primitive triplet</th><th>Common multiples</th></tr></thead>
+<tbody>
+<tr><td>3, 4, 5</td><td>6-8-10, 9-12-15, 12-16-20, 15-20-25, 18-24-30</td></tr>
+<tr><td>5, 12, 13</td><td>10-24-26, 15-36-39, 20-48-52</td></tr>
+<tr><td>8, 15, 17</td><td>16-30-34, 24-45-51</td></tr>
+<tr><td>7, 24, 25</td><td>14-48-50</td></tr>
+<tr><td>20, 21, 29</td><td>40-42-58</td></tr>
+<tr><td>12, 35, 37</td><td>24-70-74</td></tr>
+<tr><td>9, 40, 41</td><td>18-80-82</td></tr>
+<tr><td>28, 45, 53</td><td></td></tr>
+<tr><td>11, 60, 61</td><td></td></tr>
+<tr><td>33, 56, 65 and 16, 63, 65</td><td></td></tr>
+</tbody></table></div>
+<div class="case-study">
+<h4>Checked: six primitive triplets</h4>
+<p>5-12-13, 8-15-17, 7-24-25, 20-21-29, 12-35-37 and 9-40-41 all satisfy a² + b² = c²: <strong>6 of 6</strong>.</p>
+</div>
+<div class="case-study">
+<h4>Checked: the rest of the list</h4>
+<p>28-45-53, 11-60-61, 33-56-65, 16-63-65 and 3-4-5: <strong>5 of 5</strong>. Note that 65 is the hypotenuse of two different primitive triplets.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="2">
+            <button class="section-header" onclick="toggleSection(2)" aria-expanded="true" aria-controls="section-2">
+                <span class="section-number">2️⃣</span>
+                <span class="section-title">Generating a Triplet from Any Number</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-2">
+                <div class="content-box">
+<p>If a question gives one side and the number is not in your list, build the triplet. These rules give one triplet for each starting number, usually the primitive one; a number can belong to several triplets, so if the result does not match the other given side, try dividing out a common factor first.</p>
+<ul>
+<li><strong>Odd number a:</strong> the triplet is a, (a² − 1)/2, (a² + 1)/2. The other two numbers are consecutive.</li>
+<li><strong>Even number a:</strong> the triplet is a, (a/2)² − 1, (a/2)² + 1. The other two differ by 2.</li>
+<li><strong>Euclid's formula:</strong> for whole numbers m &gt; n, the triplet is m² − n², 2mn, m² + n².</li>
+</ul>
+<div class="case-study">
+<h4>Worked example 1: starting from 7</h4>
+<p>(49 − 1)/2 = <strong>24</strong> and (49 + 1)/2 = 25, giving 7-24-25.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 2: starting from 12</h4>
+<p>(12/2)² − 1 = <strong>35</strong> and 36 + 1 = 37, giving 12-35-37.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 3: Euclid with m = 5, n = 2</h4>
+<p>25 − 4 = 21, 2 × 5 × 2 = 20 and 25 + 4 = 29: the triplet 20-21-29, and 21² + 20² = 29² holds (<strong>true</strong>).</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="3">
+            <button class="section-header" onclick="toggleSection(3)" aria-expanded="true" aria-controls="section-3">
+                <span class="section-number">3️⃣</span>
+                <span class="section-title">Shortcuts in Right-Triangle Problems</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-3">
+                <div class="content-box">
+<p>Before squaring and taking roots, divide the given sides by any common factor and look for a known triplet.</p>
+<div class="case-study">
+<h4>Worked example 4: legs 18 and 24</h4>
+<p>Divide by 6: 3 and 4. So the hypotenuse is 5 × 6 = <strong>30</strong>.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 5: a ladder</h4>
+<p>A 25 m ladder reaches up a wall with its foot 7 m away. 7-24-25 gives the height straight away: <strong>24 m</strong>.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 6: a rectangle's diagonal</h4>
+<p>A 16 m by 30 m field: halve to 8 and 15, part of 8-15-17, so the diagonal is <strong>34 m</strong>.</p>
+</div>
+<p>The same shortcut works wherever a right angle hides inside another shape.</p>
+<div class="case-study">
+<h4>Worked example 7: a rhombus</h4>
+<p>A rhombus has diagonals 30 cm and 16 cm. The diagonals bisect each other at right angles, so each side is the hypotenuse of a triangle with legs 15 and 8: 8-15-17 gives a side of <strong>17 cm</strong>.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 8: a cone's slant height</h4>
+<p>A cone of radius 7 cm and height 24 cm has slant height <strong>25 cm</strong>, from 7-24-25.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 9: distance between two points</h4>
+<p>From (1, 2) to (6, 14), the horizontal and vertical gaps are 5 and 12, so the distance is <strong>13</strong>.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)" aria-expanded="true" aria-controls="section-4">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">Quick Checks and Common Traps</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
+                <div class="content-box">
+<p>Not every three numbers that look close form a triplet. Test quickly with squares, or use parity: in a primitive triplet exactly one leg is even and the hypotenuse is odd.</p>
+<div class="case-study">
+<h4>Worked example 10: is 6, 8, 11 a triplet?</h4>
+<p>36 + 64 = 100, but 11² = 121, so <strong>no</strong> (false). The right hypotenuse for 6 and 8 is 10.</p>
+</div>
+<ul>
+<li><strong>Treating the longest side as a leg.</strong> The hypotenuse is always the largest number.</li>
+<li><strong>Forgetting to scale back.</strong> After dividing by a common factor, multiply the answer by it.</li>
+<li><strong>Assuming 65 has one triplet.</strong> Both 33-56-65 and 16-63-65 exist, plus multiples like 25-60-65 and 39-52-65.</li>
+<li><strong>Using triplets for non-right triangles.</strong> The shortcut applies only when there is a right angle.</li>
+</ul>
+<p>For squares up to 50, see the <a href="squares-and-cubes-table.html">squares and cubes table</a>; for chords and tangents, which also use right triangles, see <a href="circle-chords-and-tangents.html">circle theorems</a>.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)" aria-expanded="true" aria-controls="section-5">
+                <span class="section-number">5️⃣</span>
+                <span class="section-title">Practice Questions (5)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-5">
+                <div class="content-box">
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q1.</strong> The two shorter sides of a right triangle are 20 cm and 21 cm. What is the hypotenuse? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q1" value="a"> (a) 29 cm</label>
+                            <label><input type="radio" name="q1" value="b"> (b) 31 cm</label>
+                            <label><input type="radio" name="q1" value="c"> (c) 41 cm</label>
+                            <label><input type="radio" name="q1" value="d"> (d) 27 cm</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q1">
+                            <p><strong>✅ Answer:</strong> (a) 29 cm</p>
+                            <p><strong>💡 Explanation:</strong> 20-21-29 is a primitive triplet: 400 + 441 = 841 = 29².</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q1')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q2.</strong> A right triangle has one leg 9 cm and hypotenuse 41 cm. What is the other leg? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q2" value="a"> (a) 32 cm</label>
+                            <label><input type="radio" name="q2" value="b"> (b) 40 cm</label>
+                            <label><input type="radio" name="q2" value="c"> (c) 36 cm</label>
+                            <label><input type="radio" name="q2" value="d"> (d) 38 cm</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q2">
+                            <p><strong>✅ Answer:</strong> (b) 40 cm</p>
+                            <p><strong>💡 Explanation:</strong> 9 is odd, so (81 − 1)/2 = 40 and (81 + 1)/2 = 41. The triplet is 9-40-41.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q2')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q3.</strong> The legs of a right triangle are 11 and 60. What is the hypotenuse? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q3" value="a"> (a) 59</label>
+                            <label><input type="radio" name="q3" value="b"> (b) 62</label>
+                            <label><input type="radio" name="q3" value="c"> (c) 61</label>
+                            <label><input type="radio" name="q3" value="d"> (d) 71</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q3">
+                            <p><strong>✅ Answer:</strong> (c) 61</p>
+                            <p><strong>💡 Explanation:</strong> By the odd-number rule, 11 gives (121 − 1)/2 = 60 and (121 + 1)/2 = 61.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q3')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q4.</strong> A rectangle measures 33 m by 56 m. How long is its diagonal? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q4" value="a"> (a) 63 m</label>
+                            <label><input type="radio" name="q4" value="b"> (b) 67 m</label>
+                            <label><input type="radio" name="q4" value="c"> (c) 69 m</label>
+                            <label><input type="radio" name="q4" value="d"> (d) 65 m</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q4">
+                            <p><strong>✅ Answer:</strong> (d) 65 m</p>
+                            <p><strong>💡 Explanation:</strong> 33-56-65 is a primitive triplet: 1,089 + 3,136 = 4,225 = 65².</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q4')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q5.</strong> The legs of a right triangle are 15 cm and 36 cm. What is the hypotenuse? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q5" value="a"> (a) 41 cm</label>
+                            <label><input type="radio" name="q5" value="b"> (b) 39 cm</label>
+                            <label><input type="radio" name="q5" value="c"> (c) 38 cm</label>
+                            <label><input type="radio" name="q5" value="d"> (d) 45 cm</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q5">
+                            <p><strong>✅ Answer:</strong> (b) 39 cm</p>
+                            <p><strong>💡 Explanation:</strong> Divide by 3 to get 5 and 12, part of 5-12-13. Multiply back: 13 × 3 = 39 cm.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q5')">Show Answer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)" aria-expanded="true" aria-controls="section-6">
+                <span class="section-number">6️⃣</span>
+                <span class="section-title">Frequently Asked Questions</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-6">
+                <div class="content-box">
+                    <h3>What is a primitive Pythagorean triplet?</h3>
+                    <p>One whose three numbers share no common factor, such as 3-4-5 or 8-15-17. Every other triplet, such as 6-8-10 or 15-20-25, is a whole-number multiple of a primitive one.</p>
+                    <h3>Can every whole number be part of a triplet?</h3>
+                    <p>Every whole number from 3 upwards can. An odd number a gives (a, (a² − 1)/2, (a² + 1)/2), and an even number a gives (a, (a/2)² − 1, (a/2)² + 1).</p>
+                    <h3>Is one side of a primitive triplet always even?</h3>
+                    <p>Yes. In a primitive triplet, exactly one leg is even and the hypotenuse is always odd. This is a quick way to reject options.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)" aria-expanded="true" aria-controls="section-7">
+                <span class="section-number">7️⃣</span>
+                <span class="section-title">Sources and Review</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-7">
+                <div class="content-box">
+                    <p>All problems and solutions on this page are original. No outside facts are relied on; every numeric answer is recomputed by software before publishing.</p>
+                    <div class="highlight-box">
+                        <p><strong>How this page was prepared.</strong> Drafted with AI assistance (Claude (Anthropic AI model)) from the sources listed above. 17 calculations on this page were recomputed by software and matched. Automated checks also covered structure, internal links and duplicate text. Software checks cannot confirm facts. </p>
+                        <p>Found an error? <a href="../../contact.html">Report it</a> and we will correct the page.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="8">
+            <button class="section-header" onclick="toggleSection(8)" aria-expanded="true" aria-controls="section-8">
+                <span class="section-number">8️⃣</span>
+                <span class="section-title">Related Pages</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-8">
+                <div class="content-box">
+                    <ul class="bullet-list">
+                        <li><a href="../../repeated-questions/quant-cheat-code.html">Quant Cheat Code: 20 Must-Know Shortcuts &amp; Formulas</a></li>
+                        <li><a href="triangle-centres.html">Centroid, Incentre, Circumcentre and Orthocentre</a></li>
+                        <li><a href="circle-chords-and-tangents.html">Circle Theorems: Chords, Tangents and Angles</a></li>
+                        <li><a href="polygon-angles.html">Interior and Exterior Angles of Polygons</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="page-navigation">
+            <a href="melting-and-recasting.html" class="nav-btn">← Melting and Recasting Problems: Equate Volumes to Count Pieces, Find a New Radius, or Draw a Wire</a>
+            <a href="index.html" class="nav-btn">Quantitative Aptitude →</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>Subject: Quantitative Aptitude | Sources are listed on this page. <a href="../../contact.html">Report an error</a>.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>
