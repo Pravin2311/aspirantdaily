@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Population Growth and Depreciation Problems | AspirantDaily</title>
+    <meta name="description" content="The population increase percentage formula P(1 + r/100)ⁿ and its depreciation twin, with backward cases, changing rates, birth and death rates and migration.">
+    <meta name="keywords" content="population increase percentage formula, population growth formula, depreciation formula percentage, population after n years, population n years ago formula, machine depreciation problems">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.aspirantdaily.com/study/quant/population-growth-and-depreciation.html">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.aspirantdaily.com/study/quant/population-growth-and-depreciation.html">
+    <meta property="og:title" content="Population Growth and Depreciation Problems | AspirantDaily">
+    <meta property="og:description" content="The population increase percentage formula P(1 + r/100)ⁿ and its depreciation twin, with backward cases, changing rates, birth and death rates and migration.">
+    <meta property="og:image" content="https://www.aspirantdaily.com/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Population Increase Percentage Formula: P(1 + r/100)ⁿ for Growth, P(1 − r/100)ⁿ for Depreciation, and Backward Cases",
+  "description": "The population increase percentage formula P(1 + r/100)ⁿ and its depreciation twin, with backward cases, changing rates, birth and death rates and migration.",
+  "image": "https://www.aspirantdaily.com/og-image.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "url": "https://www.aspirantdaily.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.aspirantdaily.com/icons/icon-512.png"
+    }
+  },
+  "datePublished": "2026-11-02",
+  "dateModified": "2026-11-02",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.aspirantdaily.com/study/quant/population-growth-and-depreciation.html"
+  },
+  "articleSection": "Quantitative Aptitude",
+  "citation": []
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.aspirantdaily.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Study Notes",
+      "item": "https://www.aspirantdaily.com/study/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Quantitative Aptitude",
+      "item": "https://www.aspirantdaily.com/study/quant/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Population Increase Percentage Formula: P(1 + r/100)ⁿ for Growth, P(1 − r/100)ⁿ for Depreciation, and Backward Cases",
+      "item": "https://www.aspirantdaily.com/study/quant/population-growth-and-depreciation.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is population growth the same as compound interest?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Each year's growth is calculated on the population at the start of that year, exactly as interest is added to a growing balance. The formula P(1 + r/100)ⁿ is the compound interest amount formula."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I find the population some years ago?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Divide instead of multiplying. Population n years ago = present population ÷ (1 + r/100)ⁿ. For depreciation, divide by (1 − r/100)ⁿ."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if the rate changes each year?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Multiply by a separate factor for each year, such as 1.10 × 1.20 for +10% then +20%. Use a factor below 1, such as 0.90, for a year of decrease."
+      }
+    }
+  ]
+}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css?v=2">
+    <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-51XLJE4TVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-51XLJE4TVH');
+  </script>
+  <script>/* AdSense only on the production host (not localhost or preview deployments) */(function(){if(location.hostname!=="www.aspirantdaily.com")return;var a=document.createElement("script");a.async=true;a.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327";a.crossOrigin="anonymous";document.head.appendChild(a);})();</script>
+</head>
+<body class="study-page subject-quant">
+    <nav class="study-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Quantitative Aptitude</a>
+            <div class="nav-controls">
+                <button onclick="toggleAllSections()" class="btn-secondary">Expand/Collapse All</button>
+                <button onclick="window.print()" class="btn-primary">📄 Print/Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> / <a href="../index.html">Study Notes</a> / <a href="index.html">Quantitative Aptitude</a> / <span>Population Increase Percentage Formula: P(1 + r/100)ⁿ for Growth, P(1 − r/100)ⁿ for Depreciation, and Backward Cases</span>
+            </div>
+            <h1>Population Increase Percentage Formula: P(1 + r/100)ⁿ for Growth, P(1 − r/100)ⁿ for Depreciation, and Backward Cases</h1>
+            <p class="page-subtitle">Growth: P(1 + r/100)ⁿ • Depreciation: P(1 − r/100)ⁿ • Going back in time • Different rates each year • Birth rate minus death rate • People moving away</p>
+            <div class="page-meta">
+                <span class="badge badge-secondary">SSC</span>
+                <span class="badge badge-secondary">Banking</span>
+                <span class="badge badge-secondary">Railway</span>
+                <span class="badge badge-secondary">📅 Last updated: 2026-11-02</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="study-section collapsible" data-section="1">
+            <button class="section-header" onclick="toggleSection(1)" aria-expanded="true" aria-controls="section-1">
+                <span class="section-number">1️⃣</span>
+                <span class="section-title">Growth Is Compound</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-1">
+                <div class="content-box">
+<p>When a population grows by r% a year, each year's increase is r% of the population at the start of <em>that</em> year, not of the original. That is compounding, so the population increase percentage formula is the compound interest formula in a new setting:</p>
+<div class="highlight-box"><p><strong>Population after n years = P × (1 + r/100)ⁿ</strong></p></div>
+<p>Depreciation, where a machine, car or building loses r% of its value every year, uses the same idea with a minus sign:</p>
+<div class="highlight-box"><p><strong>Value after n years = P × (1 − r/100)ⁿ</strong></p></div>
+<p>For the interest version and the rule for half-yearly periods, see <a href="compound-interest-formulas.html">compound interest formulas</a>.</p>
+<div class="case-study">
+<h4>Worked example 1: 50,000 at 10% for 2 years</h4>
+<p>50,000 × 1.1 = 55,000 after one year, and 55,000 × 1.1 = <strong>60,500</strong> after two. Simple addition of 20% would give 60,000, missing the 500 growth on the first year's increase.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 2: a machine losing 10% a year</h4>
+<p>A machine costs ₹80,000. After 3 years at 10% depreciation: 80,000 × 0.9³ = 80,000 × 0.729 = <strong>₹58,320</strong>.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="2">
+            <button class="section-header" onclick="toggleSection(2)" aria-expanded="true" aria-controls="section-2">
+                <span class="section-number">2️⃣</span>
+                <span class="section-title">Going Back in Time</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-2">
+                <div class="content-box">
+<p>To find an earlier value, undo each year by dividing.</p>
+<ul>
+<li>Population n years ago = present ÷ (1 + r/100)ⁿ</li>
+<li>Original cost before depreciation = present value ÷ (1 − r/100)ⁿ</li>
+</ul>
+<div class="case-study">
+<h4>Worked example 3: population 3 years ago</h4>
+<p>A town has 66,550 people and has grown by 10% a year. 66,550 ÷ 1.331 = <strong>50,000</strong>. Check forwards: 50,000 → 55,000 → 60,500 → 66,550.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 4: original cost of a scooter</h4>
+<p>A scooter is worth ₹43,740 after 2 years of 10% depreciation. 43,740 ÷ 0.81 = <strong>₹54,000</strong>.</p>
+</div>
+<p>Do not reverse a growth by subtracting the same percentage. A 10% rise followed by a 10% fall does not return to the start, so 66,550 minus 30% is not the population 3 years ago.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="3">
+            <button class="section-header" onclick="toggleSection(3)" aria-expanded="true" aria-controls="section-3">
+                <span class="section-number">3️⃣</span>
+                <span class="section-title">Different Rates in Different Years</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-3">
+                <div class="content-box">
+<p>When the rate changes, multiply by a separate factor for each year. A rise of r% is the factor (1 + r/100) and a fall of r% is (1 − r/100).</p>
+<div class="case-study">
+<h4>Worked example 5: +10% then +20%</h4>
+<p>20,000 × 1.1 × 1.2 = <strong>26,400</strong>. The order of the two years does not matter, because multiplication can be done in any order.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 6: +20% then −10%</h4>
+<p>10,000 × 1.2 × 0.9 = <strong>10,800</strong>, a net rise of 8%. The quick check is the successive-change formula: 20 − 10 − 200/100 = 8%. See <a href="successive-percentage-change.html">successive percentage change</a>.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)" aria-expanded="true" aria-controls="section-4">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">Births, Deaths and Migration</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
+                <div class="content-box">
+<p>If a question gives a birth rate and a death rate, the growth rate is their difference. Treat the net rate as r and use the usual formula.</p>
+<div class="case-study">
+<h4>Worked example 7: birth rate 4%, death rate 1.5%</h4>
+<p>The net growth rate is 2.5%. A population of 80,000 becomes 80,000 × 1.025² = <strong>84,050</strong> after 2 years.</p>
+</div>
+<p>When a fixed number of people move away (or arrive) each year, the formula no longer applies because the change is not a percentage. Work year by year: grow first, then subtract the migrants, unless the question says otherwise.</p>
+<div class="case-study">
+<h4>Worked example 8: 5% growth and 2,000 leaving each year</h4>
+<p>Year 1: 100,000 × 1.05 = 105,000, minus 2,000 = 103,000. Year 2: 103,000 × 1.05 = 108,150, minus 2,000 = <strong>106,150</strong>.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)" aria-expanded="true" aria-controls="section-5">
+                <span class="section-number">5️⃣</span>
+                <span class="section-title">Finding the Rate or the Number of Years</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-5">
+                <div class="content-box">
+<p>Some questions give the start and end values and ask for the rate or the time. Divide the end value by the start value to get the total growth factor, then take the right root or count the steps.</p>
+<div class="case-study">
+<h4>Worked example 9: the growth rate</h4>
+<p>A population rises from 40,000 to 48,400 in 2 years. The factor is 48,400 ÷ 40,000 = 1.21, and √1.21 = 1.1, so the rate is <strong>10%</strong> a year. Squares to recognise: 1.21 (10%), 1.1025 (5%), 1.44 (20%), 1.5625 (25%).</p>
+</div>
+<div class="case-study">
+<h4>Worked example 10: the number of years</h4>
+<p>A property worth ₹100,000 depreciates by 10% a year. When is it worth ₹72,900? The factor is 0.729 = 0.9³, so after 3 years: 100,000 × 0.9³ = <strong>72,900</strong>. Multiplying 0.9 repeatedly (0.9, 0.81, 0.729, 0.6561) until you hit the factor is quicker than logarithms in an exam.</p>
+</div>
+<p>If the factor is not an exact power, the question probably expects the nearest whole year, or you have misread which value is the start.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)" aria-expanded="true" aria-controls="section-6">
+                <span class="section-number">6️⃣</span>
+                <span class="section-title">Common Traps</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-6">
+                <div class="content-box">
+<ul>
+<li><strong>Adding the percentages.</strong> 10% for 2 years is 21%, not 20%.</li>
+<li><strong>Reversing growth by subtracting.</strong> Divide by the growth factor instead.</li>
+<li><strong>Expecting +x% and −x% to cancel.</strong> They leave a net loss of x²/100 %.</li>
+<li><strong>Adding birth and death rates.</strong> The net rate is births minus deaths.</li>
+<li><strong>Using the formula with a fixed migration figure.</strong> Work year by year instead.</li>
+</ul>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)" aria-expanded="true" aria-controls="section-7">
+                <span class="section-number">7️⃣</span>
+                <span class="section-title">Practice Questions (5)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-7">
+                <div class="content-box">
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q1.</strong> A town&#x27;s population is 62,500 and grows by 4% a year. What will it be after 2 years? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q1" value="a"> (a) 67,600</label>
+                            <label><input type="radio" name="q1" value="b"> (b) 67,500</label>
+                            <label><input type="radio" name="q1" value="c"> (c) 65,000</label>
+                            <label><input type="radio" name="q1" value="d"> (d) 70,304</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q1">
+                            <p><strong>✅ Answer:</strong> (a) 67,600</p>
+                            <p><strong>💡 Explanation:</strong> 62,500 × 1.04 × 1.04 = 65,000 × 1.04 = 67,600. Adding 8% at once (67,500) ignores growth on the first year&#x27;s increase.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q1')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q2.</strong> A car bought for ₹400,000 loses 20% of its value each year. What is it worth after 2 years? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q2" value="a"> (a) ₹240,000</label>
+                            <label><input type="radio" name="q2" value="b"> (b) ₹320,000</label>
+                            <label><input type="radio" name="q2" value="c"> (c) ₹256,000</label>
+                            <label><input type="radio" name="q2" value="d"> (d) ₹288,000</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q2">
+                            <p><strong>✅ Answer:</strong> (c) ₹256,000</p>
+                            <p><strong>💡 Explanation:</strong> 400,000 × 0.8 × 0.8 = 256,000. Subtracting 40% at once (240,000) takes the second year&#x27;s fall on the original price.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q2')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q3.</strong> A village has 79,860 people today. If its population grew by 10% each year, what was it 3 years ago? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q3" value="a"> (a) 58,000</label>
+                            <label><input type="radio" name="q3" value="b"> (b) 60,000</label>
+                            <label><input type="radio" name="q3" value="c"> (c) 62,000</label>
+                            <label><input type="radio" name="q3" value="d"> (d) 66,000</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q3">
+                            <p><strong>✅ Answer:</strong> (b) 60,000</p>
+                            <p><strong>💡 Explanation:</strong> Divide by 1.1 three times: 79,860 ÷ 1.331 = 60,000.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q3')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q4.</strong> A population of 50,000 rises by 10% in one year and falls by 10% the next. What is it after 2 years? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q4" value="a"> (a) 50,000</label>
+                            <label><input type="radio" name="q4" value="b"> (b) 50,500</label>
+                            <label><input type="radio" name="q4" value="c"> (c) 45,000</label>
+                            <label><input type="radio" name="q4" value="d"> (d) 49,500</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q4">
+                            <p><strong>✅ Answer:</strong> (d) 49,500</p>
+                            <p><strong>💡 Explanation:</strong> 50,000 × 1.1 × 0.9 = 49,500. Equal percentage rises and falls do not cancel; the net change is −1%.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q4')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q5.</strong> A machine is worth ₹25,600 after 3 years of 20% annual depreciation. What did it cost? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q5" value="a"> (a) ₹50,000</label>
+                            <label><input type="radio" name="q5" value="b"> (b) ₹40,000</label>
+                            <label><input type="radio" name="q5" value="c"> (c) ₹51,200</label>
+                            <label><input type="radio" name="q5" value="d"> (d) ₹45,000</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q5">
+                            <p><strong>✅ Answer:</strong> (a) ₹50,000</p>
+                            <p><strong>💡 Explanation:</strong> Divide by 0.8 three times: 25,600 ÷ 0.512 = ₹50,000.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q5')">Show Answer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="8">
+            <button class="section-header" onclick="toggleSection(8)" aria-expanded="true" aria-controls="section-8">
+                <span class="section-number">8️⃣</span>
+                <span class="section-title">Frequently Asked Questions</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-8">
+                <div class="content-box">
+                    <h3>Is population growth the same as compound interest?</h3>
+                    <p>Yes. Each year&#x27;s growth is calculated on the population at the start of that year, exactly as interest is added to a growing balance. The formula P(1 + r/100)ⁿ is the compound interest amount formula.</p>
+                    <h3>How do I find the population some years ago?</h3>
+                    <p>Divide instead of multiplying. Population n years ago = present population ÷ (1 + r/100)ⁿ. For depreciation, divide by (1 − r/100)ⁿ.</p>
+                    <h3>What if the rate changes each year?</h3>
+                    <p>Multiply by a separate factor for each year, such as 1.10 × 1.20 for +10% then +20%. Use a factor below 1, such as 0.90, for a year of decrease.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="9">
+            <button class="section-header" onclick="toggleSection(9)" aria-expanded="true" aria-controls="section-9">
+                <span class="section-number">9️⃣</span>
+                <span class="section-title">Sources and Review</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-9">
+                <div class="content-box">
+                    <p>All problems and solutions on this page are original. No outside facts are relied on; every numeric answer is recomputed by software before publishing.</p>
+                    <div class="highlight-box">
+                        <p><strong>How this page was prepared.</strong> Drafted with AI assistance (Claude (Anthropic AI model)) from the sources listed above. 15 calculations on this page were recomputed by software and matched. Automated checks also covered structure, internal links and duplicate text. Software checks cannot confirm facts. </p>
+                        <p>Found an error? <a href="../../contact.html">Report it</a> and we will correct the page.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="10">
+            <button class="section-header" onclick="toggleSection(10)" aria-expanded="true" aria-controls="section-10">
+                <span class="section-number">🔟</span>
+                <span class="section-title">Related Pages</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-10">
+                <div class="content-box">
+                    <ul class="bullet-list">
+                        <li><a href="../../repeated-questions/quant-cheat-code.html">Quant Cheat Code: 20 Must-Know Shortcuts &amp; Formulas</a></li>
+                        <li><a href="successive-percentage-change.html">Successive Percentage Change Formula</a></li>
+                        <li><a href="product-constancy-price-and-consumption.html">Price Rise and Consumption Cut: Product Constancy</a></li>
+                        <li><a href="percentage-election-problems.html">Election and Votes Percentage Problems</a></li>
+                        <li><a href="percentage-income-expenditure-savings.html">Income, Expenditure and Savings Percentage Problems</a></li>
+                        <li><a href="passing-marks-percentage.html">Passing Marks Percentage Problems</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="page-navigation">
+            <a href="linear-equations-word-problems.html" class="nav-btn">← Linear Equations Word Problems: Turning Sentences into Two Equations, Then Solving Fast</a>
+            <a href="index.html" class="nav-btn">↑ Quantitative Aptitude</a>
+            <a href="work-and-wages.html" class="nav-btn">Work and Wages Problems: Share the Payment in the Ratio of Work Done, Including Helpers and People Who Leave →</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>Subject: Quantitative Aptitude | Sources are listed on this page. <a href="../../contact.html">Report an error</a>.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>
