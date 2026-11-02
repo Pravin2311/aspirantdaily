@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centroid, Incentre, Circumcentre, Orthocentre</title>
+    <meta name="description" content="The four triangle centres for SSC geometry: which lines meet, the 2:1 centroid rule, angle formulas at the incentre, circumcentre and orthocentre, and radii.">
+    <meta name="keywords" content="centroid incentre circumcentre orthocentre properties, angle bhc orthocentre formula, angle boc circumcentre, angle bic incentre 90 + a/2, centroid divides median 2:1, circumradius of right triangle, euler line">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.aspirantdaily.com/study/quant/triangle-centres.html">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.aspirantdaily.com/study/quant/triangle-centres.html">
+    <meta property="og:title" content="Centroid, Incentre, Circumcentre, Orthocentre">
+    <meta property="og:description" content="The four triangle centres for SSC geometry: which lines meet, the 2:1 centroid rule, angle formulas at the incentre, circumcentre and orthocentre, and radii.">
+    <meta property="og:image" content="https://www.aspirantdaily.com/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Centroid, Incentre, Circumcentre and Orthocentre: Properties and Angle Formulas for SSC",
+  "description": "The four triangle centres for SSC geometry: which lines meet, the 2:1 centroid rule, angle formulas at the incentre, circumcentre and orthocentre, and radii.",
+  "image": "https://www.aspirantdaily.com/og-image.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "url": "https://www.aspirantdaily.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.aspirantdaily.com/icons/icon-512.png"
+    }
+  },
+  "datePublished": "2026-11-02",
+  "dateModified": "2026-11-02",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.aspirantdaily.com/study/quant/triangle-centres.html"
+  },
+  "articleSection": "Quantitative Aptitude",
+  "citation": []
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.aspirantdaily.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Study Notes",
+      "item": "https://www.aspirantdaily.com/study/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Quantitative Aptitude",
+      "item": "https://www.aspirantdaily.com/study/quant/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Centroid, Incentre, Circumcentre and Orthocentre: Properties and Angle Formulas for SSC",
+      "item": "https://www.aspirantdaily.com/study/quant/triangle-centres.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Which triangle centre always lies inside the triangle?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The centroid and the incentre are always inside. The circumcentre and orthocentre are inside only for acute triangles; for a right triangle they lie on it (midpoint of the hypotenuse and the right-angle vertex), and for an obtuse triangle they lie outside."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the Euler line?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In any triangle that is not equilateral, the orthocentre H, centroid G and circumcentre O lie on one straight line, with HG = 2 × GO. The incentre is not on this line except in an isosceles triangle."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does ∠BOC = 2A work for an obtuse angle A?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If A is obtuse, O lies outside the triangle on the far side of BC, and the reflex angle at O is 2A. The non-reflex angle BOC is then 360° − 2A. Exams usually stick to acute triangles for this formula."
+      }
+    }
+  ]
+}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css?v=2">
+    <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-51XLJE4TVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-51XLJE4TVH');
+  </script>
+  <script>/* AdSense only on the production host (not localhost or preview deployments) */(function(){if(location.hostname!=="www.aspirantdaily.com")return;var a=document.createElement("script");a.async=true;a.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327";a.crossOrigin="anonymous";document.head.appendChild(a);})();</script>
+</head>
+<body class="study-page subject-quant">
+    <nav class="study-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Quantitative Aptitude</a>
+            <div class="nav-controls">
+                <button onclick="toggleAllSections()" class="btn-secondary">Expand/Collapse All</button>
+                <button onclick="window.print()" class="btn-primary">📄 Print/Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> / <a href="../index.html">Study Notes</a> / <a href="index.html">Quantitative Aptitude</a> / <span>Centroid, Incentre, Circumcentre and Orthocentre: Properties and Angle Formulas for SSC</span>
+            </div>
+            <h1>Centroid, Incentre, Circumcentre and Orthocentre: Properties and Angle Formulas for SSC</h1>
+            <p class="page-subtitle">Medians, bisectors, perpendicular bisectors, altitudes • ∠BIC = 90° + A/2 • ∠BOC = 2A • ∠BHC = 180° − A • R and r • Equilateral and right triangles</p>
+            <div class="page-meta">
+                <span class="badge badge-secondary">SSC</span>
+                <span class="badge badge-secondary">📅 Last updated: 2026-11-02</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="study-section collapsible" data-section="1">
+            <button class="section-header" onclick="toggleSection(1)" aria-expanded="true" aria-controls="section-1">
+                <span class="section-number">1️⃣</span>
+                <span class="section-title">Four Centres, Four Kinds of Line</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-1">
+                <div class="content-box">
+<p>Each centre is where three special lines of a triangle meet. Learn the line first, and most properties follow.</p>
+<div class="table-wrap"><table class="data-table">
+<thead><tr><th>Centre</th><th>Lines that meet</th><th>Key fact</th><th>Angle formula</th></tr></thead>
+<tbody>
+<tr><td><strong>Centroid (G)</strong></td><td>Medians (vertex to midpoint of opposite side)</td><td>Divides each median 2 : 1 from the vertex</td><td>No angle formula</td></tr>
+<tr><td><strong>Incentre (I)</strong></td><td>Angle bisectors</td><td>Equidistant from the three sides; centre of the inscribed circle</td><td>∠BIC = 90° + A/2</td></tr>
+<tr><td><strong>Circumcentre (O)</strong></td><td>Perpendicular bisectors of the sides</td><td>Equidistant from the three vertices; centre of the circumcircle</td><td>∠BOC = 2A (A acute)</td></tr>
+<tr><td><strong>Orthocentre (H)</strong></td><td>Altitudes (vertex perpendicular to opposite side)</td><td>Lies on the right-angle vertex of a right triangle</td><td>∠BHC = 180° − A</td></tr>
+</tbody></table></div>
+<p>A memory hook: <strong>I</strong> for <em>in</em>scribed circle and b<em>i</em>sectors; <strong>O</strong> for the circle <em>o</em>utside; <strong>H</strong> for <em>h</em>eights (altitudes); <strong>G</strong> for the centre of <em>g</em>ravity, where a cardboard triangle balances.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="2">
+            <button class="section-header" onclick="toggleSection(2)" aria-expanded="true" aria-controls="section-2">
+                <span class="section-number">2️⃣</span>
+                <span class="section-title">The Three Angle Formulas</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-2">
+                <div class="content-box">
+<p>These are the most tested results in SSC geometry. Each takes one line to apply.</p>
+<div class="case-study">
+<h4>Worked example 1: incentre</h4>
+<p>In triangle ABC, ∠A = 70°. Then ∠BIC = 90° + 35° = <strong>125°</strong>. Why: ∠IBC + ∠ICB = (B + C)/2 = (180° − A)/2, so the angle at I is 180° minus that, which simplifies to 90° + A/2.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 2: circumcentre</h4>
+<p>∠A = 50° in an acute triangle. ∠BOC = 2 × 50° = <strong>100°</strong>, because the angle at the centre of a circle is twice the angle at the circumference on the same arc.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 3: orthocentre</h4>
+<p>∠A = 65°. ∠BHC = 180° − 65° = <strong>115°</strong>. The altitudes from B and C, with the two sides at A, form a quadrilateral with two right angles, so the angle at H is 180° − A.</p>
+</div>
+<p>A quick way to keep them apart: for A = 60°, the incentre gives 120°, the circumcentre 120° and the orthocentre 120°. The three formulas agree only at 60°, which makes a handy check in an equilateral triangle, where all four centres are the same point.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="3">
+            <button class="section-header" onclick="toggleSection(3)" aria-expanded="true" aria-controls="section-3">
+                <span class="section-number">3️⃣</span>
+                <span class="section-title">Centroid: The 2 : 1 Rule and Coordinates</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-3">
+                <div class="content-box">
+<p>The centroid cuts each median so that the part next to the vertex is twice the part next to the side. The three medians also divide the triangle into six smaller triangles of equal area.</p>
+<div class="case-study">
+<h4>Worked example 4: length along a median</h4>
+<p>Median AD is 9 cm long. AG = 2/3 × 9 = <strong>6 cm</strong> and GD = 3 cm.</p>
+</div>
+<p>In coordinate geometry the centroid is simply the average of the three vertices: G = ((x₁ + x₂ + x₃)/3, (y₁ + y₂ + y₃)/3).</p>
+<div class="case-study">
+<h4>Worked example 5: centroid from coordinates</h4>
+<p>Vertices (2, 3), (4, 7) and (6, −1). G = (12/3, 9/3) = <strong>(4, 3)</strong>.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)" aria-expanded="true" aria-controls="section-4">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">Circumradius and Inradius</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
+                <div class="content-box">
+<p>Two formulas cover any triangle, where Δ is the area and s the semi-perimeter:</p>
+<div class="highlight-box"><p><strong>R = abc ÷ 4Δ</strong> &nbsp;&nbsp; and &nbsp;&nbsp; <strong>r = Δ ÷ s</strong></p></div>
+<div class="case-study">
+<h4>Worked example 6: the 13-14-15 triangle</h4>
+<p>s = 21, and Heron's formula gives Δ = √(21 × 8 × 7 × 6) = 84. R = 13 × 14 × 15 ÷ 336 = <strong>8.125</strong> and r = 84 ÷ 21 = <strong>4</strong>.</p>
+</div>
+<p><strong>Right triangles</strong> are simpler. The circumcentre is the midpoint of the hypotenuse, so R = hypotenuse ÷ 2, and the orthocentre sits at the right-angle vertex.</p>
+<div class="case-study">
+<h4>Worked example 7: 6-8-10 triangle</h4>
+<p>The hypotenuse is 10, so R = <strong>5</strong>. Area = 24 and s = 12, so r = <strong>2</strong>. For a right triangle, r also equals (sum of legs − hypotenuse)/2 = (14 − 10)/2 = 2.</p>
+</div>
+<p><strong>Equilateral triangles</strong> have all four centres at one point, with R = a/√3, r = a/(2√3) and R = 2r.</p>
+<div class="case-study">
+<h4>Worked example 8: equilateral, side 12</h4>
+<p>R = 12/√3 = 4√3 ≈ <strong>6.93</strong> and r = 2√3 ≈ <strong>3.46</strong>, exactly half.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)" aria-expanded="true" aria-controls="section-5">
+                <span class="section-number">5️⃣</span>
+                <span class="section-title">Common Traps</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-5">
+                <div class="content-box">
+<ul>
+<li><strong>Swapping 90° + A/2 and 180° − A.</strong> Incentre adds half of A to 90°; orthocentre subtracts A from 180°.</li>
+<li><strong>Using 2 : 1 from the wrong end.</strong> The longer part of a median is next to the vertex.</li>
+<li><strong>Assuming every centre is inside.</strong> Only the centroid and incentre always are.</li>
+<li><strong>Using ∠BOC = 2A for an obtuse angle.</strong> Then the non-reflex angle is 360° − 2A.</li>
+<li><strong>Confusing r and R in equilateral triangles.</strong> The circumradius is the larger one, twice the inradius.</li>
+</ul>
+<p>For angle sums of polygons, see <a href="polygon-angles.html">polygon angles</a>.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)" aria-expanded="true" aria-controls="section-6">
+                <span class="section-number">6️⃣</span>
+                <span class="section-title">Practice Questions (5)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-6">
+                <div class="content-box">
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q1.</strong> I is the incentre of triangle ABC and ∠A = 80°. What is ∠BIC? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q1" value="a"> (a) 130°</label>
+                            <label><input type="radio" name="q1" value="b"> (b) 140°</label>
+                            <label><input type="radio" name="q1" value="c"> (c) 100°</label>
+                            <label><input type="radio" name="q1" value="d"> (d) 160°</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q1">
+                            <p><strong>✅ Answer:</strong> (a) 130°</p>
+                            <p><strong>💡 Explanation:</strong> At the incentre, ∠BIC = 90° + A/2 = 90° + 40° = 130°. 160° would be the circumcentre&#x27;s 2A.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q1')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q2.</strong> O is the circumcentre of an acute triangle ABC and ∠BOC = 140°. What is ∠A? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q2" value="a"> (a) 140°</label>
+                            <label><input type="radio" name="q2" value="b"> (b) 35°</label>
+                            <label><input type="radio" name="q2" value="c"> (c) 70°</label>
+                            <label><input type="radio" name="q2" value="d"> (d) 110°</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q2">
+                            <p><strong>✅ Answer:</strong> (c) 70°</p>
+                            <p><strong>💡 Explanation:</strong> The angle at the centre is twice the angle at the circumference: ∠BOC = 2∠A, so ∠A = 70°.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q2')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q3.</strong> A right triangle has legs 9 cm and 12 cm. What is its circumradius? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q3" value="a"> (a) 6 cm</label>
+                            <label><input type="radio" name="q3" value="b"> (b) 7.5 cm</label>
+                            <label><input type="radio" name="q3" value="c"> (c) 9 cm</label>
+                            <label><input type="radio" name="q3" value="d"> (d) 15 cm</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q3">
+                            <p><strong>✅ Answer:</strong> (b) 7.5 cm</p>
+                            <p><strong>💡 Explanation:</strong> The hypotenuse is 15 cm, and in a right triangle the circumcentre is the midpoint of the hypotenuse, so R = 15 ÷ 2 = 7.5 cm.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q3')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q4.</strong> H is the orthocentre of triangle ABC and ∠BHC = 100°. What is ∠A? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q4" value="a"> (a) 50°</label>
+                            <label><input type="radio" name="q4" value="b"> (b) 100°</label>
+                            <label><input type="radio" name="q4" value="c"> (c) 40°</label>
+                            <label><input type="radio" name="q4" value="d"> (d) 80°</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q4">
+                            <p><strong>✅ Answer:</strong> (d) 80°</p>
+                            <p><strong>💡 Explanation:</strong> At the orthocentre, ∠BHC = 180° − A, so ∠A = 180° − 100° = 80°.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q4')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q5.</strong> What is the inradius of an equilateral triangle of side 6√3 cm? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q5" value="a"> (a) 6 cm</label>
+                            <label><input type="radio" name="q5" value="b"> (b) 4 cm</label>
+                            <label><input type="radio" name="q5" value="c"> (c) 3 cm</label>
+                            <label><input type="radio" name="q5" value="d"> (d) 1.5 cm</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q5">
+                            <p><strong>✅ Answer:</strong> (c) 3 cm</p>
+                            <p><strong>💡 Explanation:</strong> For an equilateral triangle r = a ÷ (2√3) = 6√3 ÷ 2√3 = 3 cm. The circumradius is twice that, 6 cm.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q5')">Show Answer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)" aria-expanded="true" aria-controls="section-7">
+                <span class="section-number">7️⃣</span>
+                <span class="section-title">Frequently Asked Questions</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-7">
+                <div class="content-box">
+                    <h3>Which triangle centre always lies inside the triangle?</h3>
+                    <p>The centroid and the incentre are always inside. The circumcentre and orthocentre are inside only for acute triangles; for a right triangle they lie on it (midpoint of the hypotenuse and the right-angle vertex), and for an obtuse triangle they lie outside.</p>
+                    <h3>What is the Euler line?</h3>
+                    <p>In any triangle that is not equilateral, the orthocentre H, centroid G and circumcentre O lie on one straight line, with HG = 2 × GO. The incentre is not on this line except in an isosceles triangle.</p>
+                    <h3>Does ∠BOC = 2A work for an obtuse angle A?</h3>
+                    <p>If A is obtuse, O lies outside the triangle on the far side of BC, and the reflex angle at O is 2A. The non-reflex angle BOC is then 360° − 2A. Exams usually stick to acute triangles for this formula.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="8">
+            <button class="section-header" onclick="toggleSection(8)" aria-expanded="true" aria-controls="section-8">
+                <span class="section-number">8️⃣</span>
+                <span class="section-title">Sources and Review</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-8">
+                <div class="content-box">
+                    <p>All problems and solutions on this page are original. No outside facts are relied on; every numeric answer is recomputed by software before publishing.</p>
+                    <div class="highlight-box">
+                        <p><strong>How this page was prepared.</strong> Drafted with AI assistance (Claude (Anthropic AI model)) from the sources listed above. 18 calculations on this page were recomputed by software and matched. Automated checks also covered structure, internal links and duplicate text. Software checks cannot confirm facts. </p>
+                        <p>Found an error? <a href="../../contact.html">Report it</a> and we will correct the page.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="9">
+            <button class="section-header" onclick="toggleSection(9)" aria-expanded="true" aria-controls="section-9">
+                <span class="section-number">9️⃣</span>
+                <span class="section-title">Related Pages</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-9">
+                <div class="content-box">
+                    <ul class="bullet-list">
+                        <li><a href="../../repeated-questions/quant-cheat-code.html">Quant Cheat Code: 20 Must-Know Shortcuts &amp; Formulas</a></li>
+                        <li><a href="polygon-angles.html">Interior and Exterior Angles of Polygons</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="page-navigation">
+            <a href="heights-and-distances.html" class="nav-btn">← Heights and Distances: Angle of Elevation and Depression Problems with 30°, 45° and 60°</a>
+            <a href="index.html" class="nav-btn">Quantitative Aptitude →</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>Subject: Quantitative Aptitude | Sources are listed on this page. <a href="../../contact.html">Report an error</a>.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>
