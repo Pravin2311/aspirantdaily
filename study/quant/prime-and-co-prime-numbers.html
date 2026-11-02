@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime, Composite and Co-Prime Numbers | AspirantDaily</title>
+    <meta name="description" content="How to check a prime number quickly with the square-root test and the 6k ± 1 filter, spot disguised composites, and find co-prime pairs and counts.">
+    <meta name="keywords" content="how to check prime number quickly, prime number test, co-prime numbers, primes up to 100, is 221 a prime number, numbers co-prime to n">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.aspirantdaily.com/study/quant/prime-and-co-prime-numbers.html">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.aspirantdaily.com/study/quant/prime-and-co-prime-numbers.html">
+    <meta property="og:title" content="Prime, Composite and Co-Prime Numbers | AspirantDaily">
+    <meta property="og:description" content="How to check a prime number quickly with the square-root test and the 6k ± 1 filter, spot disguised composites, and find co-prime pairs and counts.">
+    <meta property="og:image" content="https://www.aspirantdaily.com/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How to Check a Prime Number Quickly: The Square-Root Test, 6k ± 1, Co-Prime Pairs and Counting Co-Primes",
+  "description": "How to check a prime number quickly with the square-root test and the 6k ± 1 filter, spot disguised composites, and find co-prime pairs and counts.",
+  "image": "https://www.aspirantdaily.com/og-image.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "url": "https://www.aspirantdaily.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.aspirantdaily.com/icons/icon-512.png"
+    }
+  },
+  "datePublished": "2026-11-02",
+  "dateModified": "2026-11-02",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.aspirantdaily.com/study/quant/prime-and-co-prime-numbers.html"
+  },
+  "articleSection": "Quantitative Aptitude",
+  "citation": []
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.aspirantdaily.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Study Notes",
+      "item": "https://www.aspirantdaily.com/study/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Quantitative Aptitude",
+      "item": "https://www.aspirantdaily.com/study/quant/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "How to Check a Prime Number Quickly: The Square-Root Test, 6k ± 1, Co-Prime Pairs and Counting Co-Primes",
+      "item": "https://www.aspirantdaily.com/study/quant/prime-and-co-prime-numbers.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is 1 a prime number?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. A prime has exactly two distinct factors, 1 and itself. The number 1 has only one factor, so it is neither prime nor composite."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is it enough to test divisors up to the square root?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If n = a × b with both factors above √n, their product would exceed n. So any composite number has at least one factor no bigger than √n, and checking primes up to √n is enough."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do co-prime numbers have to be prime?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Co-prime only means the HCF is 1. 8 and 15 are both composite but co-prime, because they share no prime factor."
+      }
+    }
+  ]
+}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css?v=2">
+    <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-51XLJE4TVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-51XLJE4TVH');
+  </script>
+  <script>/* AdSense only on the production host (not localhost or preview deployments) */(function(){if(location.hostname!=="www.aspirantdaily.com")return;var a=document.createElement("script");a.async=true;a.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327";a.crossOrigin="anonymous";document.head.appendChild(a);})();</script>
+</head>
+<body class="study-page subject-quant">
+    <nav class="study-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Quantitative Aptitude</a>
+            <div class="nav-controls">
+                <button onclick="toggleAllSections()" class="btn-secondary">Expand/Collapse All</button>
+                <button onclick="window.print()" class="btn-primary">📄 Print/Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> / <a href="../index.html">Study Notes</a> / <a href="index.html">Quantitative Aptitude</a> / <span>How to Check a Prime Number Quickly: The Square-Root Test, 6k ± 1, Co-Prime Pairs and Counting Co-Primes</span>
+            </div>
+            <h1>How to Check a Prime Number Quickly: The Square-Root Test, 6k ± 1, Co-Prime Pairs and Counting Co-Primes</h1>
+            <p class="page-subtitle">Prime, composite, neither • Test primes up to √n • The 6k ± 1 filter • Disguised composites like 221 and 323 • Co-prime pairs • How many numbers are co-prime to n</p>
+            <div class="page-meta">
+                <span class="badge badge-secondary">SSC</span>
+                <span class="badge badge-secondary">Railway</span>
+                <span class="badge badge-secondary">📅 Last updated: 2026-11-02</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="study-section collapsible" data-section="1">
+            <button class="section-header" onclick="toggleSection(1)" aria-expanded="true" aria-controls="section-1">
+                <span class="section-number">1️⃣</span>
+                <span class="section-title">Prime, Composite or Neither</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-1">
+                <div class="content-box">
+<p>A <strong>prime</strong> number has exactly two factors, 1 and itself: 2, 3, 5, 7, 11 and so on. A <strong>composite</strong> number has more than two factors, such as 12 = 2 × 2 × 3. The number 1 is <strong>neither</strong>, because it has only one factor.</p>
+<ul>
+<li>2 is the only even prime. Every other even number is divisible by 2.</li>
+<li>There are 25 primes up to 100 and 168 up to 1,000.</li>
+<li>Every whole number above 1 is either prime or a product of primes in exactly one way.</li>
+</ul>
+<p>Prime questions in SSC and railway papers test two things: whether you can check a number quickly, and whether you recognise numbers that only look prime.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="2">
+            <button class="section-header" onclick="toggleSection(2)" aria-expanded="true" aria-controls="section-2">
+                <span class="section-number">2️⃣</span>
+                <span class="section-title">The Square-Root Test</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-2">
+                <div class="content-box">
+<p>The answer to how to check a prime number quickly is to try dividing only by primes up to its square root. If none divides it, the number is prime.</p>
+<ol>
+<li>Find the whole-number part of √n. For 97 it is 9, because 9² = 81 and 10² = 100.</li>
+<li>List the primes up to that value: 2, 3, 5, 7.</li>
+<li>Test each one. If any divides n, it is composite; if none does, it is prime.</li>
+</ol>
+<div class="case-study">
+<h4>Worked example 1: is 97 prime?</h4>
+<p>97 is odd, its digit sum 16 is not a multiple of 3, it does not end in 0 or 5, and 97 ÷ 7 leaves 6. All <strong>4</strong> tests fail to divide it, so 97 is prime.</p>
+</div>
+<p>Use the <a href="divisibility-rules.html">divisibility rules</a> for 2, 3, 5 and 11 to clear those primes in a glance, and divide only for 7, 13, 17 and beyond. For numbers up to 1,000 you never need a prime above 31, since 31² = 961 and 37² is already 1,369.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="3">
+            <button class="section-header" onclick="toggleSection(3)" aria-expanded="true" aria-controls="section-3">
+                <span class="section-number">3️⃣</span>
+                <span class="section-title">Disguised Composites</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-3">
+                <div class="content-box">
+<p>Some numbers pass the quick checks for 2, 3, 5 and 7 and look prime, but are products of two larger primes. Examiners like these because they catch anyone who stops testing early.</p>
+<div class="case-study">
+<h4>Worked example 2: 221</h4>
+<p>√221 is about 14.9, so test up to 13. 221 ÷ 13 = 17 exactly, with remainder <strong>0</strong>. 221 = 13 × 17 is composite.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 3: 323</h4>
+<p>√323 is about 17.97, so test up to 17. 323 ÷ 17 = 19, remainder <strong>0</strong>. 323 = 17 × 19.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 4: 1,001</h4>
+<p>1,001 = 7 × 11 × 13 = <strong>1001</strong>. It is worth memorising, along with 91 = 7 × 13, 119 = 7 × 17, 143 = 11 × 13, 187 = 11 × 17 and 209 = 11 × 19.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)" aria-expanded="true" aria-controls="section-4">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">The 6k ± 1 Filter</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
+                <div class="content-box">
+<p>Every prime greater than 3 is one more or one less than a multiple of 6. Numbers of the form 6k, 6k + 2 and 6k + 4 are even, and 6k + 3 is a multiple of 3, which leaves only 6k − 1 and 6k + 1.</p>
+<div class="case-study">
+<h4>Worked example 5: 89</h4>
+<p>89 ÷ 6 leaves remainder <strong>5</strong>, so 89 = 6 × 15 − 1 and passes the filter. Testing 2, 3, 5 and 7 confirms it is prime.</p>
+</div>
+<p>The filter only rules numbers <em>out</em>. 25 = 6 × 4 + 1 passes it but is 5 × 5, so you still need the square-root test for anything that survives.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)" aria-expanded="true" aria-controls="section-5">
+                <span class="section-number">5️⃣</span>
+                <span class="section-title">Co-Prime Numbers</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-5">
+                <div class="content-box">
+<p>Two numbers are <strong>co-prime</strong> (relatively prime) when their HCF is 1, that is, they share no prime factor. Neither number has to be prime.</p>
+<div class="case-study">
+<h4>Worked example 6: 15 and 28</h4>
+<p>15 = 3 × 5 and 28 = 2² × 7 share no prime, so the HCF is <strong>1</strong>: they are co-prime.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 7: 21 and 35</h4>
+<p>Both are multiples of 7, so the HCF is <strong>7</strong> and they are not co-prime.</p>
+</div>
+<p>Two facts make co-primes useful. Any two consecutive numbers are co-prime, and for a co-prime pair the LCM is simply the product.</p>
+<div class="case-study">
+<h4>Worked example 8: LCM of 8 and 15</h4>
+<p>They are co-prime, so LCM = 8 × 15 = <strong>120</strong>. For more on this, see <a href="hcf-lcm-of-fractions.html">HCF and LCM of fractions</a>.</p>
+</div>
+<p>To count the numbers from 1 to n that are co-prime to n, write n's distinct prime factors p, q, … and use n × (1 − 1/p) × (1 − 1/q) × …</p>
+<div class="case-study">
+<h4>Worked example 9: co-primes to 36</h4>
+<p>36 = 2² × 3², so the count is 36 × 1/2 × 2/3 = <strong>12</strong>: 1, 5, 7, 11, 13, 17, 19, 23, 25, 29, 31 and 35. The powers do not matter, only the distinct primes.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)" aria-expanded="true" aria-controls="section-6">
+                <span class="section-number">6️⃣</span>
+                <span class="section-title">Common Traps</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-6">
+                <div class="content-box">
+<ul>
+<li><strong>Calling 1 a prime.</strong> It is neither prime nor composite.</li>
+<li><strong>Stopping at 7.</strong> For numbers above 121, test 11, 13 and beyond up to the square root.</li>
+<li><strong>Thinking co-primes must be primes.</strong> 8 and 15 are co-prime but both composite.</li>
+<li><strong>Trusting the 6k ± 1 filter alone.</strong> 25, 35 and 49 all pass it.</li>
+<li><strong>Using repeated primes in the co-prime count.</strong> For 36, use 2 and 3 once each.</li>
+</ul>
+<p>For counting all the factors of a number, see <a href="number-of-factors.html">number of factors</a>.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)" aria-expanded="true" aria-controls="section-7">
+                <span class="section-number">7️⃣</span>
+                <span class="section-title">Practice Questions (5)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-7">
+                <div class="content-box">
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q1.</strong> Which of these numbers is prime? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q1" value="a"> (a) 91</label>
+                            <label><input type="radio" name="q1" value="b"> (b) 119</label>
+                            <label><input type="radio" name="q1" value="c"> (c) 113</label>
+                            <label><input type="radio" name="q1" value="d"> (d) 133</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q1">
+                            <p><strong>✅ Answer:</strong> (c) 113</p>
+                            <p><strong>💡 Explanation:</strong> 91 = 7 × 13, 119 = 7 × 17 and 133 = 7 × 19. 113 is not divisible by 2, 3, 5 or 7, and √113 is below 11, so it is prime.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q1')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q2.</strong> Which pair of numbers is co-prime? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q2" value="a"> (a) (16, 27)</label>
+                            <label><input type="radio" name="q2" value="b"> (b) (14, 21)</label>
+                            <label><input type="radio" name="q2" value="c"> (c) (15, 35)</label>
+                            <label><input type="radio" name="q2" value="d"> (d) (18, 24)</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q2">
+                            <p><strong>✅ Answer:</strong> (a) (16, 27)</p>
+                            <p><strong>💡 Explanation:</strong> 16 = 2⁴ and 27 = 3³ share no prime factor, so their HCF is 1. The other pairs share 7, 5 and 6 respectively.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q2')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q3.</strong> How many prime numbers lie between 50 and 70? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q3" value="a"> (a) 3</label>
+                            <label><input type="radio" name="q3" value="b"> (b) 5</label>
+                            <label><input type="radio" name="q3" value="c"> (c) 6</label>
+                            <label><input type="radio" name="q3" value="d"> (d) 4</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q3">
+                            <p><strong>✅ Answer:</strong> (d) 4</p>
+                            <p><strong>💡 Explanation:</strong> Check the odd numbers 51 to 69 for 3, 5 and 7: only 53, 59, 61 and 67 survive. That makes 4 primes.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q3')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q4.</strong> To test whether 437 is prime, what is the largest prime you need to try as a divisor? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q4" value="a"> (a) 23</label>
+                            <label><input type="radio" name="q4" value="b"> (b) 19</label>
+                            <label><input type="radio" name="q4" value="c"> (c) 17</label>
+                            <label><input type="radio" name="q4" value="d"> (d) 21</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q4">
+                            <p><strong>✅ Answer:</strong> (b) 19</p>
+                            <p><strong>💡 Explanation:</strong> √437 is about 20.9, so the largest prime to try is 19. In fact 437 = 19 × 23, so it is composite.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q4')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q5.</strong> How many numbers from 1 to 30 are co-prime to 30? <span class="badge badge-secondary">hard</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q5" value="a"> (a) 10</label>
+                            <label><input type="radio" name="q5" value="b"> (b) 6</label>
+                            <label><input type="radio" name="q5" value="c"> (c) 8</label>
+                            <label><input type="radio" name="q5" value="d"> (d) 12</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q5">
+                            <p><strong>✅ Answer:</strong> (c) 8</p>
+                            <p><strong>💡 Explanation:</strong> 30 = 2 × 3 × 5, so the count is 30 × (1/2) × (2/3) × (4/5) = 8: 1, 7, 11, 13, 17, 19, 23 and 29.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q5')">Show Answer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="8">
+            <button class="section-header" onclick="toggleSection(8)" aria-expanded="true" aria-controls="section-8">
+                <span class="section-number">8️⃣</span>
+                <span class="section-title">Frequently Asked Questions</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-8">
+                <div class="content-box">
+                    <h3>Is 1 a prime number?</h3>
+                    <p>No. A prime has exactly two distinct factors, 1 and itself. The number 1 has only one factor, so it is neither prime nor composite.</p>
+                    <h3>Why is it enough to test divisors up to the square root?</h3>
+                    <p>If n = a × b with both factors above √n, their product would exceed n. So any composite number has at least one factor no bigger than √n, and checking primes up to √n is enough.</p>
+                    <h3>Do co-prime numbers have to be prime?</h3>
+                    <p>No. Co-prime only means the HCF is 1. 8 and 15 are both composite but co-prime, because they share no prime factor.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="9">
+            <button class="section-header" onclick="toggleSection(9)" aria-expanded="true" aria-controls="section-9">
+                <span class="section-number">9️⃣</span>
+                <span class="section-title">Sources and Review</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-9">
+                <div class="content-box">
+                    <p>All problems and solutions on this page are original. No outside facts are relied on; every numeric answer is recomputed by software before publishing.</p>
+                    <div class="highlight-box">
+                        <p><strong>How this page was prepared.</strong> Drafted with AI assistance (Claude (Anthropic AI model)) from the sources listed above. 14 calculations on this page were recomputed by software and matched. Automated checks also covered structure, internal links and duplicate text. Software checks cannot confirm facts. </p>
+                        <p>Found an error? <a href="../../contact.html">Report it</a> and we will correct the page.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="10">
+            <button class="section-header" onclick="toggleSection(10)" aria-expanded="true" aria-controls="section-10">
+                <span class="section-number">🔟</span>
+                <span class="section-title">Related Pages</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-10">
+                <div class="content-box">
+                    <ul class="bullet-list">
+                        <li><a href="../../repeated-questions/quant-cheat-code.html">Quant Cheat Code: 20 Must-Know Shortcuts &amp; Formulas</a></li>
+                        <li><a href="divisibility-rules.html">Divisibility Rules from 2 to 19 with Examples</a></li>
+                        <li><a href="hcf-and-lcm-word-problems.html">HCF and LCM Word Problems: When to Use Which</a></li>
+                        <li><a href="hcf-lcm-of-fractions.html">HCF and LCM of Fractions and Decimals</a></li>
+                        <li><a href="unit-digit-of-powers.html">Unit Digit of Powers: Cyclicity Method</a></li>
+                        <li><a href="remainder-problems.html">Remainder Problems: Negative Remainders and Cyclicity</a></li>
+                        <li><a href="number-of-factors.html">Number of Factors, Sum of Factors and Even Factors</a></li>
+                        <li><a href="trailing-zeros-in-factorial.html">Trailing Zeros in a Factorial</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="page-navigation">
+            <a href="same-selling-price-profit-and-loss.html" class="nav-btn">← Same Selling Price, Profit x% and Loss x%: Why There Is Always a Loss of x²/100 %</a>
+            <a href="index.html" class="nav-btn">Quantitative Aptitude →</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>Subject: Quantitative Aptitude | Sources are listed on this page. <a href="../../contact.html">Report an error</a>.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>
