@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letter Pairs in a Word: Same Gap as in Alphabet</title>
+    <meta name="description" content="Count letter pairs in a word with the same gap as in the alphabet, forwards and backwards, using a position grid that misses nothing. 5 MCQs checked pair by pair.">
+    <meta name="keywords" content="how many pairs of letters in the word, letter pairs same as alphabet, pairs of letters reasoning, letter gap reasoning trick, forward and backward letter pairs">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.aspirantdaily.com/study/reasoning/letter-pairs-in-word.html">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.aspirantdaily.com/study/reasoning/letter-pairs-in-word.html">
+    <meta property="og:title" content="Letter Pairs in a Word: Same Gap as in Alphabet">
+    <meta property="og:description" content="Count letter pairs in a word with the same gap as in the alphabet, forwards and backwards, using a position grid that misses nothing. 5 MCQs checked pair by pair.">
+    <meta property="og:image" content="https://www.aspirantdaily.com/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How Many Pairs of Letters in the Word Have as Many Letters Between Them as in the Alphabet?",
+  "description": "Count letter pairs in a word with the same gap as in the alphabet, forwards and backwards, using a position grid that misses nothing. 5 MCQs checked pair by pair.",
+  "image": "https://www.aspirantdaily.com/og-image.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "url": "https://www.aspirantdaily.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.aspirantdaily.com/icons/icon-512.png"
+    }
+  },
+  "datePublished": "2026-11-02",
+  "dateModified": "2026-11-02",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.aspirantdaily.com/study/reasoning/letter-pairs-in-word.html"
+  },
+  "articleSection": "Reasoning",
+  "citation": []
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.aspirantdaily.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Study Notes",
+      "item": "https://www.aspirantdaily.com/study/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Reasoning",
+      "item": "https://www.aspirantdaily.com/study/reasoning/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "How Many Pairs of Letters in the Word Have as Many Letters Between Them as in the Alphabet?",
+      "item": "https://www.aspirantdaily.com/study/reasoning/letter-pairs-in-word.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do backward pairs count?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Usually yes: most questions mean 'forward and backward', and many say so. If a question says 'in the same order as in the alphabet' or 'forward only', count only pairs whose second letter comes later in the alphabet."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if a letter repeats in the word?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Treat each occurrence as a separate letter at its own position. In DEFINITE, the two I's pair with different letters because their positions in the word differ."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do adjacent letters like ST count?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Two letters next to each other in the word with nothing between them form a pair if they are also next to each other in the alphabet, such as S-T or O-N."
+      }
+    }
+  ]
+}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css?v=2">
+    <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-51XLJE4TVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-51XLJE4TVH');
+  </script>
+  <script>/* AdSense only on the production host (not localhost or preview deployments) */(function(){if(location.hostname!=="www.aspirantdaily.com")return;var a=document.createElement("script");a.async=true;a.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327";a.crossOrigin="anonymous";document.head.appendChild(a);})();</script>
+</head>
+<body class="study-page subject-reasoning">
+    <nav class="study-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Reasoning</a>
+            <div class="nav-controls">
+                <button onclick="toggleAllSections()" class="btn-secondary">Expand/Collapse All</button>
+                <button onclick="window.print()" class="btn-primary">📄 Print/Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> / <a href="../index.html">Study Notes</a> / <a href="index.html">Reasoning</a> / <span>How Many Pairs of Letters in the Word Have as Many Letters Between Them as in the Alphabet?</span>
+            </div>
+            <h1>How Many Pairs of Letters in the Word Have as Many Letters Between Them as in the Alphabet?</h1>
+            <p class="page-subtitle">What counts as a pair • Write positions under the word • Check each letter against all later letters • Forward-only vs both directions • Repeated letters</p>
+            <div class="page-meta">
+                <span class="badge badge-secondary">SSC</span>
+                <span class="badge badge-secondary">Banking</span>
+                <span class="badge badge-secondary">📅 Last updated: 2026-11-02</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="study-section collapsible" data-section="1">
+            <button class="section-header" onclick="toggleSection(1)" aria-expanded="true" aria-controls="section-1">
+                <span class="section-number">1️⃣</span>
+                <span class="section-title">What Counts as a Pair</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-1">
+                <div class="content-box">
+<p>The question asks: how many pairs of letters in a word have <strong>as many letters between them in the word as they have between them in the alphabet</strong>?</p>
+<p>Put simply, take any two letters of the word. Count the gap between them in the word, and the gap between them in the alphabet. If the two gaps are equal, the pair counts.</p>
+<ul>
+<li><strong>Forward pair:</strong> the later letter in the word is also later in the alphabet, as in G…H or L…N.</li>
+<li><strong>Backward pair:</strong> the later letter in the word comes earlier in the alphabet, as in T…S or I…E.</li>
+</ul>
+<p>Unless the question says "forward only" or "in alphabetical order", count both. The gap can be zero: two neighbouring letters in the word that are neighbours in the alphabet (such as S and T) form a pair.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="2">
+            <button class="section-header" onclick="toggleSection(2)" aria-expanded="true" aria-controls="section-2">
+                <span class="section-number">2️⃣</span>
+                <span class="section-title">The Position Grid</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-2">
+                <div class="content-box">
+<p>Write each letter's alphabet position under it. Then the rule becomes simple arithmetic: for letters at word positions i and j, the pair counts if</p>
+<div class="highlight-box"><p><strong>|alphabet position difference| = j − i</strong></p></div>
+<p>Work letter by letter from the left. For each letter, compare it with every letter to its right, stopping once the word-gap is larger than any alphabet difference could be. This systematic sweep is what stops you missing pairs.</p>
+<div class="case-study">
+<h4>Worked example 1: FIGHTER</h4>
+<p>Positions: F 6, I 9, G 7, H 8, T 20, E 5, R 18.</p>
+<ul>
+<li>F (word place 1): no letter to its right is the right distance away in the alphabet.</li>
+<li>I (place 2): E is 4 places later in the word and 4 letters earlier in the alphabet (9 − 5). <strong>Pair I-E</strong> (backward).</li>
+<li>G (place 3): H is next in the word and next in the alphabet. <strong>Pair G-H</strong> (forward).</li>
+<li>T (place 5): R is 2 places later and 2 letters earlier (20 − 18). <strong>Pair T-R</strong> (backward).</li>
+</ul>
+<p>Total: <strong>3 pairs</strong>.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 2: forward only</h4>
+<p>If the question asks only for pairs in alphabetical order, FIGHTER has just <strong>1</strong>: G-H. The other two run backwards.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="3">
+            <button class="section-header" onclick="toggleSection(3)" aria-expanded="true" aria-controls="section-3">
+                <span class="section-number">3️⃣</span>
+                <span class="section-title">Longer Words and Overlapping Pairs</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-3">
+                <div class="content-box">
+<p>One letter can belong to several pairs. Keep going after you find the first match for a letter.</p>
+<div class="case-study">
+<h4>Worked example 3: BRIGHTEN</h4>
+<p>Positions: B 2, R 18, I 9, G 7, H 8, T 20, E 5, N 14. The I at place 3 pairs with E at place 7 (gap 4, and 9 − 5 = 4) and with N at place 8 (gap 5, and 14 − 9 = 5). G-H is a neighbouring pair. Total: <strong>3 pairs</strong>, two of which share the letter I.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 4: CHARGED</h4>
+<p>Positions: C 3, H 8, A 1, R 18, G 7, E 5, D 4. C pairs with A (gap 2, 3 − 1 = 2) and with G (gap 4, 7 − 3 = 4), and E-D are neighbours in both. Total: <strong>3 pairs</strong>.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 5: a word with a single pair</h4>
+<p>STRANGE: positions S 19, T 20, R 18, A 1, N 14, G 7, E 5. S and T sit side by side in both the word and the alphabet, so they form a pair. Checking every other combination finds nothing: T and R are next to each other in the word but two apart in the alphabet, and S and R are neighbours in the alphabet but two places apart in the word. Total: <strong>1 pair</strong>. Words with letters spread widely across the alphabet, like this one, rarely have more than one or two.</p>
+</div>
+<p>For a quick pre-check, look for letters close together in the alphabet: if every letter in a word is far from the others in the alphabet, there can be only a few pairs.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)" aria-expanded="true" aria-controls="section-4">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">Repeated Letters and Common Traps</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
+                <div class="content-box">
+<p>Each occurrence of a repeated letter is a separate letter at its own position. In DEFINITE, the first I (place 4) and the second I (place 6) pair with different letters, so treat them as two different starting points.</p>
+<ul>
+<li><strong>Counting the letters between, not the gap.</strong> Using j − i on word places and the difference of alphabet positions keeps both sides consistent.</li>
+<li><strong>Forgetting backward pairs.</strong> They are often half the answer.</li>
+<li><strong>Stopping at one pair per letter.</strong> A letter can pair with several others.</li>
+<li><strong>Double counting.</strong> Each pair is counted once, from its left letter.</li>
+<li><strong>Misreading "forward only".</strong> Check the wording before you start counting.</li>
+</ul>
+<p>Use the <a href="alphabet-positions-ejoty.html">EJOTY trick</a> to write alphabet positions quickly, and see <a href="letter-series.html">letter series</a> for related gap-based questions.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)" aria-expanded="true" aria-controls="section-5">
+                <span class="section-number">5️⃣</span>
+                <span class="section-title">Practice Questions (5)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-5">
+                <div class="content-box">
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q1.</strong> How many pairs of letters in the word PLANETS have as many letters between them in the word as in the English alphabet (counting both directions)? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q1" value="a"> (a) 1</label>
+                            <label><input type="radio" name="q1" value="b"> (b) 3</label>
+                            <label><input type="radio" name="q1" value="c"> (c) 2</label>
+                            <label><input type="radio" name="q1" value="d"> (d) 4</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q1">
+                            <p><strong>✅ Answer:</strong> (c) 2</p>
+                            <p><strong>💡 Explanation:</strong> L-N (one letter between in both the word and the alphabet) and T-S (adjacent in both, read backwards). That makes 2 pairs.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q1')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q2.</strong> How many such pairs are there in the word MONKEY? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q2" value="a"> (a) 1</label>
+                            <label><input type="radio" name="q2" value="b"> (b) 0</label>
+                            <label><input type="radio" name="q2" value="c"> (c) 2</label>
+                            <label><input type="radio" name="q2" value="d"> (d) 3</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q2">
+                            <p><strong>✅ Answer:</strong> (a) 1</p>
+                            <p><strong>💡 Explanation:</strong> Only O-N qualifies: they are next to each other in the word and next to each other in the alphabet (read backwards). No other pair matches.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q2')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q3.</strong> How many such pairs are there in the word HIJACK? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q3" value="a"> (a) 2</label>
+                            <label><input type="radio" name="q3" value="b"> (b) 1</label>
+                            <label><input type="radio" name="q3" value="c"> (c) 4</label>
+                            <label><input type="radio" name="q3" value="d"> (d) 3</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q3">
+                            <p><strong>✅ Answer:</strong> (d) 3</p>
+                            <p><strong>💡 Explanation:</strong> H-I, I-J and H-J (one letter between in both) all qualify. A, C and K do not pair with anything, so the answer is 3.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q3')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q4.</strong> How many such pairs are there in the word GLIMPSE? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q4" value="a"> (a) 3</label>
+                            <label><input type="radio" name="q4" value="b"> (b) 2</label>
+                            <label><input type="radio" name="q4" value="c"> (c) 1</label>
+                            <label><input type="radio" name="q4" value="d"> (d) 4</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q4">
+                            <p><strong>✅ Answer:</strong> (b) 2</p>
+                            <p><strong>💡 Explanation:</strong> G-I has one letter between in both. I-E has three letters between in the word (M, P, S) and three in the alphabet (F, G, H), read backwards. That makes 2.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q4')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q5.</strong> How many such pairs are there in the word DEFINITE? <span class="badge badge-secondary">hard</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q5" value="a"> (a) 5</label>
+                            <label><input type="radio" name="q5" value="b"> (b) 6</label>
+                            <label><input type="radio" name="q5" value="c"> (c) 7</label>
+                            <label><input type="radio" name="q5" value="d"> (d) 8</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q5">
+                            <p><strong>✅ Answer:</strong> (c) 7</p>
+                            <p><strong>💡 Explanation:</strong> D-E, D-F, E-F, D-I, E-I, F-I (all forwards from the first I) and I-E backwards from the second I. That makes 7 pairs.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q5')">Show Answer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)" aria-expanded="true" aria-controls="section-6">
+                <span class="section-number">6️⃣</span>
+                <span class="section-title">Frequently Asked Questions</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-6">
+                <div class="content-box">
+                    <h3>Do backward pairs count?</h3>
+                    <p>Usually yes: most questions mean &#x27;forward and backward&#x27;, and many say so. If a question says &#x27;in the same order as in the alphabet&#x27; or &#x27;forward only&#x27;, count only pairs whose second letter comes later in the alphabet.</p>
+                    <h3>What if a letter repeats in the word?</h3>
+                    <p>Treat each occurrence as a separate letter at its own position. In DEFINITE, the two I&#x27;s pair with different letters because their positions in the word differ.</p>
+                    <h3>Do adjacent letters like ST count?</h3>
+                    <p>Yes. Two letters next to each other in the word with nothing between them form a pair if they are also next to each other in the alphabet, such as S-T or O-N.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)" aria-expanded="true" aria-controls="section-7">
+                <span class="section-number">7️⃣</span>
+                <span class="section-title">Sources and Review</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-7">
+                <div class="content-box">
+                    <p>All problems and solutions on this page are original. No outside facts are relied on; every numeric answer is recomputed by software before publishing.</p>
+                    <div class="highlight-box">
+                        <p><strong>How this page was prepared.</strong> Drafted with AI assistance (Claude (Anthropic AI model)) from the sources listed above. 10 calculations on this page were recomputed by software and matched. Automated checks also covered structure, internal links and duplicate text. Software checks cannot confirm facts. </p>
+                        <p>Found an error? <a href="../../contact.html">Report it</a> and we will correct the page.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="8">
+            <button class="section-header" onclick="toggleSection(8)" aria-expanded="true" aria-controls="section-8">
+                <span class="section-number">8️⃣</span>
+                <span class="section-title">Related Pages</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-8">
+                <div class="content-box">
+                    <ul class="bullet-list">
+                        <li><a href="analogy-types.html">Analogy Questions: Types and Tricks</a></li>
+                        <li><a href="letter-series.html">Letter Series and Alphanumeric Series</a></li>
+                        <li><a href="alphabet-positions-ejoty.html">Alphabet Positions and the EJOTY Trick</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="page-navigation">
+            <a href="mirror-and-water-images.html" class="nav-btn">← Mirror and Water Images: Letters, Numbers, Words and the Mirror Image of Clock Time</a>
+            <a href="index.html" class="nav-btn">Reasoning →</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>Subject: Reasoning | Sources are listed on this page. <a href="../../contact.html">Report an error</a>.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>
