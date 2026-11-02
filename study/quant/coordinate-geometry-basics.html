@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coordinate Geometry: Distance, Section and Area Formulas</title>
+    <meta name="description" content="The section formula in coordinate geometry with the distance, midpoint, centroid and triangle-area formulas, collinearity tests and 9 checked examples.">
+    <meta name="keywords" content="section formula coordinate geometry, distance formula, area of triangle coordinates, centroid formula coordinates, collinear points condition, coordinate geometry ssc questions">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.aspirantdaily.com/study/quant/coordinate-geometry-basics.html">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.aspirantdaily.com/study/quant/coordinate-geometry-basics.html">
+    <meta property="og:title" content="Coordinate Geometry: Distance, Section and Area Formulas">
+    <meta property="og:description" content="The section formula in coordinate geometry with the distance, midpoint, centroid and triangle-area formulas, collinearity tests and 9 checked examples.">
+    <meta property="og:image" content="https://www.aspirantdaily.com/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Section Formula in Coordinate Geometry, Plus Distance, Midpoint, Centroid and Area of a Triangle",
+  "description": "The section formula in coordinate geometry with the distance, midpoint, centroid and triangle-area formulas, collinearity tests and 9 checked examples.",
+  "image": "https://www.aspirantdaily.com/og-image.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "url": "https://www.aspirantdaily.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.aspirantdaily.com/icons/icon-512.png"
+    }
+  },
+  "datePublished": "2026-11-02",
+  "dateModified": "2026-11-02",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.aspirantdaily.com/study/quant/coordinate-geometry-basics.html"
+  },
+  "articleSection": "Quantitative Aptitude",
+  "citation": []
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.aspirantdaily.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Study Notes",
+      "item": "https://www.aspirantdaily.com/study/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Quantitative Aptitude",
+      "item": "https://www.aspirantdaily.com/study/quant/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Section Formula in Coordinate Geometry, Plus Distance, Midpoint, Centroid and Area of a Triangle",
+      "item": "https://www.aspirantdaily.com/study/quant/coordinate-geometry-basics.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the difference between internal and external division?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Internal division finds a point between A and B, so the ratio terms are added in the denominator. External division finds a point on the line beyond A or B, so the terms are subtracted: x = (mx₂ − nx₁)/(m − n)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I check that three points are collinear?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Put them into the triangle-area formula. If the area is zero, the points lie on one line. Equivalently, the slopes AB and BC are equal."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why can the area formula give a negative number?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The sign depends on whether the vertices are listed clockwise or anticlockwise. Area is always the absolute value, so drop the minus sign."
+      }
+    }
+  ]
+}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css?v=2">
+    <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-51XLJE4TVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-51XLJE4TVH');
+  </script>
+  <script>/* AdSense only on the production host (not localhost or preview deployments) */(function(){if(location.hostname!=="www.aspirantdaily.com")return;var a=document.createElement("script");a.async=true;a.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327";a.crossOrigin="anonymous";document.head.appendChild(a);})();</script>
+</head>
+<body class="study-page subject-quant">
+    <nav class="study-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Quantitative Aptitude</a>
+            <div class="nav-controls">
+                <button onclick="toggleAllSections()" class="btn-secondary">Expand/Collapse All</button>
+                <button onclick="window.print()" class="btn-primary">📄 Print/Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> / <a href="../index.html">Study Notes</a> / <a href="index.html">Quantitative Aptitude</a> / <span>Section Formula in Coordinate Geometry, Plus Distance, Midpoint, Centroid and Area of a Triangle</span>
+            </div>
+            <h1>Section Formula in Coordinate Geometry, Plus Distance, Midpoint, Centroid and Area of a Triangle</h1>
+            <p class="page-subtitle">Distance formula • Section formula: internal and external • Midpoint • Centroid • Area of a triangle • Collinear points • Fourth vertex of a parallelogram</p>
+            <div class="page-meta">
+                <span class="badge badge-secondary">SSC</span>
+                <span class="badge badge-secondary">📅 Last updated: 2026-11-02</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="study-section collapsible" data-section="1">
+            <button class="section-header" onclick="toggleSection(1)" aria-expanded="true" aria-controls="section-1">
+                <span class="section-number">1️⃣</span>
+                <span class="section-title">Distance Between Two Points</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-1">
+                <div class="content-box">
+<p>Every point in the plane is written as (x, y). The distance between A(x₁, y₁) and B(x₂, y₂) comes straight from Pythagoras: the horizontal and vertical gaps are the two legs of a right triangle and AB is the hypotenuse.</p>
+<div class="highlight-box"><p><strong>AB = √[(x₂ − x₁)² + (y₂ − y₁)²]</strong></p></div>
+<p>The distance from the origin to (x, y) is √(x² + y²). Spotting a <a href="pythagorean-triplets.html">Pythagorean triplet</a> in the gaps often saves the square root.</p>
+<div class="case-study">
+<h4>Worked example 1: (1, 2) to (4, 6)</h4>
+<p>The gaps are 3 and 4, so AB = √(9 + 16) = <strong>5</strong>.</p>
+</div>
+<p>The distance formula also tests shapes: four equal sides with equal diagonals make a square, and two pairs of equal opposite sides make a parallelogram.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="2">
+            <button class="section-header" onclick="toggleSection(2)" aria-expanded="true" aria-controls="section-2">
+                <span class="section-number">2️⃣</span>
+                <span class="section-title">The Section Formula</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-2">
+                <div class="content-box">
+<p>The point P that divides the join of A(x₁, y₁) and B(x₂, y₂) <strong>internally</strong> in the ratio m : n is:</p>
+<div class="highlight-box"><p><strong>P = ((mx₂ + nx₁)/(m + n), (my₂ + ny₁)/(m + n))</strong></p></div>
+<p>Notice the cross-pairing: m goes with B's coordinates and n with A's. Mixing them up is the most common error with the section formula in coordinate geometry, so say "m to the far end" as you write it.</p>
+<div class="case-study">
+<h4>Worked example 2: 1 : 2 between (2, 3) and (8, 9)</h4>
+<p>x = (1 × 8 + 2 × 2)/3 = 4 and y = (1 × 9 + 2 × 3)/3 = 5, giving P = (<strong>4</strong>, 5). It sits one third of the way from A to B, as a 1 : 2 ratio should.</p>
+</div>
+<p>The <strong>midpoint</strong> is the special case m = n = 1: ((x₁ + x₂)/2, (y₁ + y₂)/2).</p>
+<div class="case-study">
+<h4>Worked example 3: midpoint of (−2, 4) and (6, −8)</h4>
+<p>((−2 + 6)/2, (4 − 8)/2) = (<strong>2</strong>, −2).</p>
+</div>
+<p>For <strong>external</strong> division, the point lies outside AB, and the plus signs become minus signs: ((mx₂ − nx₁)/(m − n), (my₂ − ny₁)/(m − n)).</p>
+<div class="case-study">
+<h4>Worked example 4: external division</h4>
+<p>Divide the join of (1, 2) and (4, 5) externally in the ratio 2 : 1. x = (8 − 1)/1 = 7 and y = (10 − 2)/1 = 8, so P = (<strong>7</strong>, 8), beyond B.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="3">
+            <button class="section-header" onclick="toggleSection(3)" aria-expanded="true" aria-controls="section-3">
+                <span class="section-number">3️⃣</span>
+                <span class="section-title">Finding the Ratio</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-3">
+                <div class="content-box">
+<p>Some questions give the dividing point (or the line it lies on) and ask for the ratio. Write the ratio as k : 1, apply the formula to the coordinate you know, and solve for k.</p>
+<div class="case-study">
+<h4>Worked example 5: where the x-axis cuts a segment</h4>
+<p>In what ratio does the x-axis divide the join of (2, −3) and (5, 6)? On the x-axis y = 0, so (6k − 3)/(k + 1) = 0, giving k = 3/6 = <strong>1/2</strong>. The ratio is 1 : 2.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 6: the crossing point</h4>
+<p>With the ratio 1 : 2, x = (1 × 5 + 2 × 2)/3 = <strong>3</strong>, so the segment crosses the x-axis at (3, 0).</p>
+</div>
+<p>A quick shortcut: the x-axis divides the join of (x₁, y₁) and (x₂, y₂) in the ratio −y₁ : y₂, and the y-axis in the ratio −x₁ : x₂. A positive ratio means internal division.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)" aria-expanded="true" aria-controls="section-4">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">Centroid and Area of a Triangle</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
+                <div class="content-box">
+<p>The <strong>centroid</strong> G, where the three medians meet, is the average of the vertices: G = ((x₁ + x₂ + x₃)/3, (y₁ + y₂ + y₃)/3). It divides each median in the ratio 2 : 1 from the vertex. For the other centres, see <a href="triangle-centres.html">triangle centres</a>.</p>
+<div class="case-study">
+<h4>Worked example 7: centroid of (1, 2), (3, 4), (5, 9)</h4>
+<p>((1 + 3 + 5)/3, (2 + 4 + 9)/3) = (<strong>3</strong>, 5).</p>
+</div>
+<p>The area of a triangle from its vertices is:</p>
+<div class="highlight-box"><p><strong>Area = ½ |x₁(y₂ − y₃) + x₂(y₃ − y₁) + x₃(y₁ − y₂)|</strong></p></div>
+<div class="case-study">
+<h4>Worked example 8: (1, 1), (4, 2), (2, 5)</h4>
+<p>½ |1(2 − 5) + 4(5 − 1) + 2(1 − 2)| = ½ |−3 + 16 − 2| = <strong>5.5</strong> square units.</p>
+</div>
+<p>If the area works out to zero, the three points are <strong>collinear</strong>. For (1, 2), (3, 6) and (5, 10), the bracket is 1(6 − 10) + 3(10 − 2) + 5(2 − 6) = −4 + 24 − 20 = <span>0</span>, so the points lie on one line.</p>
+<div class="case-study">
+<h4>Worked example 9: the fourth vertex of a parallelogram</h4>
+<p>A(1, 2), B(4, 3) and C(6, 6) are three vertices of parallelogram ABCD. The diagonals bisect each other, so A + C = B + D, giving D = (1 + 6 − 4, 2 + 6 − 3) = (<strong>3</strong>, 5).</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)" aria-expanded="true" aria-controls="section-5">
+                <span class="section-number">5️⃣</span>
+                <span class="section-title">Common Traps</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-5">
+                <div class="content-box">
+<ul>
+<li><strong>Pairing m with the wrong point.</strong> m multiplies the coordinates of the second point B.</li>
+<li><strong>Using + for external division.</strong> External division uses m − n in the denominator.</li>
+<li><strong>Forgetting the ½ or the absolute value</strong> in the area formula.</li>
+<li><strong>Squaring a negative gap wrongly.</strong> (−8)² is +64; the order of subtraction does not matter for distance.</li>
+<li><strong>Taking the vertex order of a parallelogram for granted.</strong> D = A + C − B only when the vertices are listed in order around the shape.</li>
+</ul>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)" aria-expanded="true" aria-controls="section-6">
+                <span class="section-number">6️⃣</span>
+                <span class="section-title">Practice Questions (5)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-6">
+                <div class="content-box">
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q1.</strong> What is the distance between the points (−3, 2) and (5, 8)? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q1" value="a"> (a) 10</label>
+                            <label><input type="radio" name="q1" value="b"> (b) 14</label>
+                            <label><input type="radio" name="q1" value="c"> (c) 8</label>
+                            <label><input type="radio" name="q1" value="d"> (d) 12</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q1">
+                            <p><strong>✅ Answer:</strong> (a) 10</p>
+                            <p><strong>💡 Explanation:</strong> The differences are 8 and 6, so the distance is √(64 + 36) = √100 = 10.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q1')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q2.</strong> Which point divides the join of (−1, 7) and (4, −3) internally in the ratio 2 : 3? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q2" value="a"> (a) (2, 1)</label>
+                            <label><input type="radio" name="q2" value="b"> (b) (1, 3)</label>
+                            <label><input type="radio" name="q2" value="c"> (c) (3, 1)</label>
+                            <label><input type="radio" name="q2" value="d"> (d) (1, 5)</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q2">
+                            <p><strong>✅ Answer:</strong> (b) (1, 3)</p>
+                            <p><strong>💡 Explanation:</strong> x = (2 × 4 + 3 × (−1))/5 = 1 and y = (2 × (−3) + 3 × 7)/5 = 3. The point is (1, 3).</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q2')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q3.</strong> What is the centroid of the triangle with vertices (2, 5), (−4, 3) and (8, −2)? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q3" value="a"> (a) (6, 6)</label>
+                            <label><input type="radio" name="q3" value="b"> (b) (3, 3)</label>
+                            <label><input type="radio" name="q3" value="c"> (c) (2, 2)</label>
+                            <label><input type="radio" name="q3" value="d"> (d) (2, 3)</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q3">
+                            <p><strong>✅ Answer:</strong> (c) (2, 2)</p>
+                            <p><strong>💡 Explanation:</strong> Average the x-coordinates: (2 − 4 + 8)/3 = 2. Average the y-coordinates: (5 + 3 − 2)/3 = 2.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q3')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q4.</strong> What is the area of the triangle with vertices (2, 3), (−1, 0) and (2, −4)? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q4" value="a"> (a) 21</label>
+                            <label><input type="radio" name="q4" value="b"> (b) 7</label>
+                            <label><input type="radio" name="q4" value="c"> (c) 14</label>
+                            <label><input type="radio" name="q4" value="d"> (d) 10.5</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q4">
+                            <p><strong>✅ Answer:</strong> (d) 10.5</p>
+                            <p><strong>💡 Explanation:</strong> ½|2(0 + 4) + (−1)(−4 − 3) + 2(3 − 0)| = ½|8 + 7 + 6| = 10.5 square units.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q4')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q5.</strong> For what value of k are the points (1, k), (2, 5) and (3, 7) collinear? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q5" value="a"> (a) 3</label>
+                            <label><input type="radio" name="q5" value="b"> (b) 5</label>
+                            <label><input type="radio" name="q5" value="c"> (c) 1</label>
+                            <label><input type="radio" name="q5" value="d"> (d) 4</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q5">
+                            <p><strong>✅ Answer:</strong> (a) 3</p>
+                            <p><strong>💡 Explanation:</strong> The x-coordinates go up by 1 each time, so the y-coordinates must go up by the same amount: 5 − k = 7 − 5, giving k = 3. The area formula then gives 0.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q5')">Show Answer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)" aria-expanded="true" aria-controls="section-7">
+                <span class="section-number">7️⃣</span>
+                <span class="section-title">Frequently Asked Questions</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-7">
+                <div class="content-box">
+                    <h3>What is the difference between internal and external division?</h3>
+                    <p>Internal division finds a point between A and B, so the ratio terms are added in the denominator. External division finds a point on the line beyond A or B, so the terms are subtracted: x = (mx₂ − nx₁)/(m − n).</p>
+                    <h3>How do I check that three points are collinear?</h3>
+                    <p>Put them into the triangle-area formula. If the area is zero, the points lie on one line. Equivalently, the slopes AB and BC are equal.</p>
+                    <h3>Why can the area formula give a negative number?</h3>
+                    <p>The sign depends on whether the vertices are listed clockwise or anticlockwise. Area is always the absolute value, so drop the minus sign.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="8">
+            <button class="section-header" onclick="toggleSection(8)" aria-expanded="true" aria-controls="section-8">
+                <span class="section-number">8️⃣</span>
+                <span class="section-title">Sources and Review</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-8">
+                <div class="content-box">
+                    <p>All problems and solutions on this page are original. No outside facts are relied on; every numeric answer is recomputed by software before publishing.</p>
+                    <div class="highlight-box">
+                        <p><strong>How this page was prepared.</strong> Drafted with AI assistance (Claude (Anthropic AI model)) from the sources listed above. 15 calculations on this page were recomputed by software and matched. Automated checks also covered structure, internal links and duplicate text. Software checks cannot confirm facts. </p>
+                        <p>Found an error? <a href="../../contact.html">Report it</a> and we will correct the page.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="9">
+            <button class="section-header" onclick="toggleSection(9)" aria-expanded="true" aria-controls="section-9">
+                <span class="section-number">9️⃣</span>
+                <span class="section-title">Related Pages</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-9">
+                <div class="content-box">
+                    <ul class="bullet-list">
+                        <li><a href="../../repeated-questions/quant-cheat-code.html">Quant Cheat Code: 20 Must-Know Shortcuts &amp; Formulas</a></li>
+                        <li><a href="triangle-centres.html">Centroid, Incentre, Circumcentre and Orthocentre</a></li>
+                        <li><a href="pythagorean-triplets.html">Pythagorean Triplets and Right Triangles</a></li>
+                        <li><a href="circle-chords-and-tangents.html">Circle Theorems: Chords, Tangents and Angles</a></li>
+                        <li><a href="polygon-angles.html">Interior and Exterior Angles of Polygons</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="page-navigation">
+            <a href="surds-and-indices.html" class="nav-btn">← Laws of Indices and Surds: Exponent Rules, Fractional Powers, Equations and Comparing Surds</a>
+            <a href="index.html" class="nav-btn">↑ Quantitative Aptitude</a>
+            <a href="percentage-income-expenditure-savings.html" class="nav-btn">Income Expenditure Savings Problems: When Income and Spending Change by Different Percentages →</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>Subject: Quantitative Aptitude | Sources are listed on this page. <a href="../../contact.html">Report an error</a>.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>
