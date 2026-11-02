@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricity: Ohm&#x27;s Law, Resistance and Circuits</title>
+    <meta name="description" content="Ohm&#x27;s law, resistivity, series and parallel resistors, Joule heating and power from NCERT Class 10, with worked circuit sums and the kWh calculation.">
+    <meta name="keywords" content="series and parallel resistance formula, ohm&#x27;s law formula, resistivity formula, joule&#x27;s law of heating, electric power formula, kilowatt hour to joule, ammeter in series voltmeter in parallel, why domestic circuits are in parallel">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.aspirantdaily.com/study/science-tech/electricity-ohms-law.html">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.aspirantdaily.com/study/science-tech/electricity-ohms-law.html">
+    <meta property="og:title" content="Electricity: Ohm&#x27;s Law, Resistance and Circuits">
+    <meta property="og:description" content="Ohm&#x27;s law, resistivity, series and parallel resistors, Joule heating and power from NCERT Class 10, with worked circuit sums and the kWh calculation.">
+    <meta property="og:image" content="https://www.aspirantdaily.com/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Electricity: Ohm's Law, Resistivity, Series and Parallel Resistors, Joule Heating and Electric Power",
+  "description": "Ohm's law, resistivity, series and parallel resistors, Joule heating and power from NCERT Class 10, with worked circuit sums and the kWh calculation.",
+  "image": "https://www.aspirantdaily.com/og-image.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "url": "https://www.aspirantdaily.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.aspirantdaily.com/icons/icon-512.png"
+    }
+  },
+  "datePublished": "2026-11-02",
+  "dateModified": "2026-11-02",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.aspirantdaily.com/study/science-tech/electricity-ohms-law.html"
+  },
+  "articleSection": "Science & Tech",
+  "citation": [
+    "https://ncert.nic.in/textbook/pdf/jesc111.pdf"
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.aspirantdaily.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Study Notes",
+      "item": "https://www.aspirantdaily.com/study/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Science & Tech",
+      "item": "https://www.aspirantdaily.com/study/science-tech/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Electricity: Ohm's Law, Resistivity, Series and Parallel Resistors, Joule Heating and Electric Power",
+      "item": "https://www.aspirantdaily.com/study/science-tech/electricity-ohms-law.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the formula for resistors in series and in parallel?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In series, add the resistances: Rs = R1 + R2 + R3, so the total is larger than any one resistor. In parallel, add the reciprocals: 1/Rp = 1/R1 + 1/R2 + 1/R3, so the total is smaller than the smallest resistor."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why are household appliances connected in parallel?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Each appliance then gets the full mains voltage and draws the current it needs, and one appliance failing does not cut off the others. In series the same current would flow through a bulb and a heater, which need very different currents."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many joules are in one unit of electricity?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "One unit is one kilowatt hour: 1000 W for 3600 s, which is 3.6 × 10^6 joules."
+      }
+    }
+  ]
+}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css?v=2">
+    <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-51XLJE4TVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-51XLJE4TVH');
+  </script>
+  <script>/* AdSense only on the production host (not localhost or preview deployments) */(function(){if(location.hostname!=="www.aspirantdaily.com")return;var a=document.createElement("script");a.async=true;a.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327";a.crossOrigin="anonymous";document.head.appendChild(a);})();</script>
+</head>
+<body class="study-page subject-science-tech">
+    <nav class="study-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Science &amp; Tech</a>
+            <div class="nav-controls">
+                <button onclick="toggleAllSections()" class="btn-secondary">Expand/Collapse All</button>
+                <button onclick="window.print()" class="btn-primary">📄 Print/Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> / <a href="../index.html">Study Notes</a> / <a href="index.html">Science &amp; Tech</a> / <span>Electricity: Ohm&#x27;s Law, Resistivity, Series and Parallel Resistors, Joule Heating and Electric Power</span>
+            </div>
+            <h1>Electricity: Ohm&#x27;s Law, Resistivity, Series and Parallel Resistors, Joule Heating and Electric Power</h1>
+            <p class="page-subtitle">V = IR • R = ρl/A • Series: Rs = R1 + R2 + R3 • Parallel: 1/Rp = 1/R1 + 1/R2 + 1/R3 • H = I²Rt • P = VI = I²R = V²/R • 1 kWh = 3.6 × 10⁶ J</p>
+            <div class="page-meta">
+                <span class="badge badge-secondary">SSC</span>
+                <span class="badge badge-secondary">Railway</span>
+                <span class="badge badge-secondary">📅 Last updated: 2026-11-02</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="study-section collapsible" data-section="1">
+            <button class="section-header" onclick="toggleSection(1)" aria-expanded="true" aria-controls="section-1">
+                <span class="section-number">1️⃣</span>
+                <span class="section-title">The Five Formulas You Need</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-1">
+                <div class="content-box">
+<p>Almost every SSC and Railway electricity question uses one of five relations from NCERT Class 10. Learn them with their units and you can solve the rest by substitution.</p>
+<div class="table-wrap"><table class="data-table">
+<thead><tr><th>Quantity</th><th>Formula</th><th>SI unit</th><th>Remember</th></tr></thead>
+<tbody>
+<tr><td>Current</td><td>I = Q/t</td><td>ampere (A)</td><td>1 C is the charge of nearly 6 × 10<sup>18</sup> electrons</td></tr>
+<tr><td>Potential difference</td><td>V = W/Q</td><td>volt (V) = J/C</td><td>1 V moves 1 C with 1 J of work</td></tr>
+<tr><td>Ohm's law</td><td>V = IR</td><td>ohm (Ω) = V/A</td><td>Holds only at constant temperature</td></tr>
+<tr><td>Resistance of a wire</td><td>R = ρl/A</td><td>ρ in Ω m</td><td>R doubles with length; falls as the wire gets thicker</td></tr>
+<tr><td>Heat and power</td><td>H = I²Rt; P = VI = I²R = V²/R</td><td>joule, watt</td><td>1 kWh = 3.6 × 10<sup>6</sup> J</td></tr>
+</tbody></table></div>
+<p>Two measuring rules come up in almost every paper: the <strong>ammeter goes in series</strong> with the part whose current you want, and the <strong>voltmeter goes in parallel</strong> across the two points whose potential difference you want. By convention, current flows opposite to the direction of electron flow.</p>
+<div class="case-study">
+<h4>Worked example 1: charge from current and time</h4>
+<p>A bulb filament draws 0.5 A for 10 minutes. Q = It = 0.5 A × 600 s = <strong>300 C</strong>.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="2">
+            <button class="section-header" onclick="toggleSection(2)" aria-expanded="true" aria-controls="section-2">
+                <span class="section-number">2️⃣</span>
+                <span class="section-title">Ohm&#x27;s Law and Resistivity</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-2">
+                <div class="content-box">
+<p>Ohm (1827) found that for a metallic wire, <strong>V is directly proportional to I</strong> as long as the temperature stays the same. The ratio V/I is the wire's resistance R, so the V–I graph is a straight line through the origin. From I = V/R, the current is inversely proportional to resistance: double R and the current halves.</p>
+<p>Resistance depends on three things: <strong>length</strong> (R ∝ l), <strong>area of cross-section</strong> (R ∝ 1/A) and the <strong>material</strong>. Together these give R = ρl/A, where ρ (rho) is the <strong>resistivity</strong>, a property of the material alone. Changing the wire's length or thickness changes R but not ρ.</p>
+<ul>
+<li><strong>Metals and alloys:</strong> ρ of 10<sup>−8</sup> to 10<sup>−6</sup> Ω m, so they are good conductors. NCERT lists silver (1.60 × 10<sup>−8</sup>) and copper (1.62 × 10<sup>−8</sup>) as the lowest.</li>
+<li><strong>Insulators:</strong> rubber and glass are around 10<sup>12</sup> to 10<sup>17</sup> Ω m.</li>
+<li><strong>Alloys</strong> such as nichrome (nickel, chromium, manganese, iron) have higher resistivity than their metals and do not oxidise easily when hot, so they make heating coils in irons and toasters.</li>
+<li><strong>Tungsten</strong> is used almost only for bulb filaments; <strong>copper and aluminium</strong> carry power on transmission lines.</li>
+</ul>
+<p><strong>Ratio trick:</strong> NCERT's Example 11.6 halves the length and doubles the area of a 4 Ω wire. R = ρl/A changes by (1/2) × (1/2) = 1/4, so the new wire is 1 Ω. Any "same material, new size" question works this way.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="3">
+            <button class="section-header" onclick="toggleSection(3)" aria-expanded="true" aria-controls="section-3">
+                <span class="section-number">3️⃣</span>
+                <span class="section-title">Series and Parallel: Step-by-Step Method</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-3">
+                <div class="content-box">
+<div class="table-wrap"><table class="data-table">
+<thead><tr><th></th><th>Series</th><th>Parallel</th></tr></thead>
+<tbody>
+<tr><td>Equivalent resistance</td><td>Rs = R1 + R2 + R3</td><td>1/Rp = 1/R1 + 1/R2 + 1/R3</td></tr>
+<tr><td>Same in every resistor</td><td>Current</td><td>Potential difference</td></tr>
+<tr><td>Shared between resistors</td><td>Voltage: V = V1 + V2 + V3</td><td>Current: I = I1 + I2 + I3</td></tr>
+<tr><td>Total compared with parts</td><td>Larger than the largest</td><td>Smaller than the smallest</td></tr>
+<tr><td>If one part fails</td><td>Whole circuit stops</td><td>Others keep working</td></tr>
+</tbody></table></div>
+<p><strong>Method for a mixed circuit:</strong> (1) find groups wired in parallel and replace each with its equivalent; (2) add the groups that are now in series; (3) use I = V/R for the total current; (4) work back to each resistor with V = IR.</p>
+<p><strong>Shortcuts:</strong> two resistors in parallel give R1R2/(R1 + R2); n equal resistors R give nR in series and R/n in parallel.</p>
+<div class="case-study">
+<h4>Worked example 2: lamp and resistor in series (NCERT 11.7)</h4>
+<p>A 20 Ω lamp and a 4 Ω conductor in series across 6 V. Rs = 24 Ω, so I = 6/24 = <strong>0.25 A</strong>. The lamp takes 20 × 0.25 = 5 V and the conductor 4 × 0.25 = 1 V, adding back to 6 V.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 3: three resistors in parallel (NCERT 11.8)</h4>
+<p>5 Ω, 10 Ω and 30 Ω across 12 V. Branch currents are 2.4 A, 1.2 A and 0.4 A, total 4 A. 1/Rp = 1/5 + 1/10 + 1/30 = 1/3, so Rp = <strong>3 Ω</strong>, and 12/3 = 4 A agrees.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 4: mixed circuit (NCERT 11.9)</h4>
+<p>10 Ω and 40 Ω in parallel give 8 Ω. 30 Ω, 20 Ω and 60 Ω in parallel give 10 Ω. The two groups are in series: 8 + 10 = <strong>18 Ω</strong>. On 12 V the current is 12/18 ≈ 0.67 A.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)" aria-expanded="true" aria-controls="section-4">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">Heating Effect, Fuses and Electric Power</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
+                <div class="content-box">
+<p>The energy a source supplies is VIt, and in a resistor it all becomes heat. Substituting V = IR gives <strong>Joule's law of heating: H = I²Rt</strong>. Heat rises with the <strong>square</strong> of current, and directly with resistance and time.</p>
+<ul>
+<li><strong>Bulbs:</strong> the filament must get very hot without melting, so it is tungsten (melting point 3380°C), and the bulb is filled with inactive nitrogen and argon to make the filament last longer.</li>
+<li><strong>Fuse:</strong> a wire of suitable melting point placed <strong>in series</strong> with the device. Too much current heats and melts it, breaking the circuit. Domestic fuses are rated 1 A, 2 A, 3 A, 5 A, 10 A and so on.</li>
+</ul>
+<p><strong>Power</strong> is the rate of using energy: P = VI = I²R = V²/R, in watts. 1 W is 1 A at 1 V. Bills use the <strong>kilowatt hour</strong>, the "unit": 1 kWh = 1000 W × 3600 s = 3.6 × 10<sup>6</sup> J. You pay for energy, not for electrons; electrons are not used up.</p>
+<div class="case-study">
+<h4>Worked example 5: bulb on half voltage</h4>
+<p>A 220 V, 100 W bulb has R = 220²/100 = 484 Ω. On 110 V, P = 110²/484 = <strong>25 W</strong>. Since P = V²/R, half the voltage gives a quarter of the power.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 6: electricity bill (NCERT 11.13)</h4>
+<p>A 400 W fridge runs 8 hours a day for 30 days: 400 × 8 × 30 = 96,000 Wh = 96 kWh. At ₹3 per unit the cost is <strong>₹288</strong>.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 7: Joule heating from a known heat rate</h4>
+<p>100 J of heat is produced each second in 4 Ω (NCERT 11.11). I² = H/(Rt) = 100/4 = 25, so I = 5 A and V = IR = 20 V. Check: I² = 5² = <strong>25</strong>.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)" aria-expanded="true" aria-controls="section-5">
+                <span class="section-number">5️⃣</span>
+                <span class="section-title">Common Traps in Exam Questions</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-5">
+                <div class="content-box">
+<ol>
+<li><strong>Doubling the current</strong> through the same resistor quadruples the heat (H ∝ I²), not doubles it.</li>
+<li><strong>Same wires, series vs parallel:</strong> two equal wires across the same voltage have 2R in series and R/2 in parallel. Since H = V²t/R, parallel produces 4 times the heat, so series : parallel = 1 : 4.</li>
+<li><strong>Resistivity does not change</strong> when you stretch or cut a wire; only resistance does.</li>
+<li><strong>Ohm's law needs constant temperature.</strong> A bulb filament's V/I ratio is not fixed as it heats up.</li>
+<li><strong>Units:</strong> convert minutes to seconds for joules, and W h to kWh by dividing by 1000 for bills.</li>
+</ol>
+<p>For more everyday physics, see <a href="physics-in-everyday-life.html">physics in everyday life</a>.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)" aria-expanded="true" aria-controls="section-6">
+                <span class="section-number">6️⃣</span>
+                <span class="section-title">Practice Questions (5)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-6">
+                <div class="content-box">
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q1.</strong> A wire of resistance R is cut into five equal parts, which are then joined in parallel. If the new resistance is R′, what is R/R′? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q1" value="a"> (a) 25</label>
+                            <label><input type="radio" name="q1" value="b"> (b) 1/25</label>
+                            <label><input type="radio" name="q1" value="c"> (c) 1/5</label>
+                            <label><input type="radio" name="q1" value="d"> (d) 5</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q1">
+                            <p><strong>✅ Answer:</strong> (a) 25</p>
+                            <p><strong>💡 Explanation:</strong> Each piece has resistance R/5. Five equal resistors of R/5 in parallel give (R/5)/5 = R/25, so R/R′ = 25. This is NCERT exercise 1.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q1')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q2.</strong> A bulb rated 220 V, 100 W is run on 110 V. What power does it consume? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q2" value="a"> (a) 100 W</label>
+                            <label><input type="radio" name="q2" value="b"> (b) 25 W</label>
+                            <label><input type="radio" name="q2" value="c"> (c) 75 W</label>
+                            <label><input type="radio" name="q2" value="d"> (d) 50 W</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q2">
+                            <p><strong>✅ Answer:</strong> (b) 25 W</p>
+                            <p><strong>💡 Explanation:</strong> R = V²/P = 220²/100 = 484 Ω. At 110 V, P = 110²/484 = 25 W. Halving the voltage quarters the power.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q2')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q3.</strong> Which of these does NOT represent electric power? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q3" value="a"> (a) VI</label>
+                            <label><input type="radio" name="q3" value="b"> (b) I²R</label>
+                            <label><input type="radio" name="q3" value="c"> (c) IR²</label>
+                            <label><input type="radio" name="q3" value="d"> (d) V²/R</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q3">
+                            <p><strong>✅ Answer:</strong> (c) IR²</p>
+                            <p><strong>💡 Explanation:</strong> NCERT gives P = VI = I²R = V²/R. IR² has the wrong units, since I times R is a voltage and one more R does not give watts.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q3')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q4.</strong> Why are heating elements of toasters and irons made of an alloy rather than a pure metal? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q4" value="a"> (a) Alloys conduct better</label>
+                            <label><input type="radio" name="q4" value="b"> (b) Alloys are cheaper</label>
+                            <label><input type="radio" name="q4" value="c"> (c) Alloys are magnetic</label>
+                            <label><input type="radio" name="q4" value="d"> (d) Alloys have high resistivity and do not oxidise readily when hot</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q4">
+                            <p><strong>✅ Answer:</strong> (d) Alloys have high resistivity and do not oxidise readily when hot</p>
+                            <p><strong>💡 Explanation:</strong> NCERT says alloys have higher resistivity than their constituent metals and do not burn (oxidise) readily at high temperatures, which suits heating devices.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q4')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q5.</strong> How is a voltmeter connected to measure the potential difference across a resistor? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q5" value="a"> (a) In series with it</label>
+                            <label><input type="radio" name="q5" value="b"> (b) In parallel across it</label>
+                            <label><input type="radio" name="q5" value="c"> (c) Across the fuse</label>
+                            <label><input type="radio" name="q5" value="d"> (d) In series with the ammeter</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q5">
+                            <p><strong>✅ Answer:</strong> (b) In parallel across it</p>
+                            <p><strong>💡 Explanation:</strong> NCERT: a voltmeter is always connected in parallel across the points between which the potential difference is measured; the ammeter goes in series.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q5')">Show Answer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)" aria-expanded="true" aria-controls="section-7">
+                <span class="section-number">7️⃣</span>
+                <span class="section-title">Frequently Asked Questions</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-7">
+                <div class="content-box">
+                    <h3>What is the formula for resistors in series and in parallel?</h3>
+                    <p>In series, add the resistances: Rs = R1 + R2 + R3, so the total is larger than any one resistor. In parallel, add the reciprocals: 1/Rp = 1/R1 + 1/R2 + 1/R3, so the total is smaller than the smallest resistor.</p>
+                    <h3>Why are household appliances connected in parallel?</h3>
+                    <p>Each appliance then gets the full mains voltage and draws the current it needs, and one appliance failing does not cut off the others. In series the same current would flow through a bulb and a heater, which need very different currents.</p>
+                    <h3>How many joules are in one unit of electricity?</h3>
+                    <p>One unit is one kilowatt hour: 1000 W for 3600 s, which is 3.6 × 10^6 joules.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="8">
+            <button class="section-header" onclick="toggleSection(8)" aria-expanded="true" aria-controls="section-8">
+                <span class="section-number">8️⃣</span>
+                <span class="section-title">Sources and Review</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-8">
+                <div class="content-box">
+                    <ul class="bullet-list">
+                        <li><a href="https://ncert.nic.in/textbook/pdf/jesc111.pdf" rel="noopener">Science, Class X, Chapter 11: Electricity (Reprint 2026-27)</a>, NCERT (accessed 2026-11-02). Used for: current, potential difference, Ohm&#x27;s law, resistivity, series and parallel resistors, heating effect, fuse, electric power and the kilowatt hour (printed pp. 171-194)..</li>
+                    </ul>
+                    <div class="highlight-box">
+                        <p><strong>How this page was prepared.</strong> Drafted with AI assistance (Claude (Anthropic AI model)) from the sources listed above. 7 calculations on this page were recomputed by software and matched. Automated checks also covered structure, internal links and duplicate text. Software checks cannot confirm facts. </p>
+                        <p>Found an error? <a href="../../contact.html">Report it</a> and we will correct the page.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="9">
+            <button class="section-header" onclick="toggleSection(9)" aria-expanded="true" aria-controls="section-9">
+                <span class="section-number">9️⃣</span>
+                <span class="section-title">Related Pages</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-9">
+                <div class="content-box">
+                    <ul class="bullet-list">
+                        <li><a href="physics-in-everyday-life.html">🔭 Physics in Everyday Life</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="page-navigation">
+            <a href="human-eye-defects.html" class="nav-btn">← Human Eye Defects and Their Correction: Myopia, Hypermetropia, Presbyopia and Cataract</a>
+            <a href="index.html" class="nav-btn">↑ Science &amp; Tech</a>
+            <a href="acids-bases-ph.html" class="nav-btn">Acids, Bases and the pH Scale: Indicators, pH in Daily Life, Natural Acids and Important Salts →</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>Subject: Science &amp; Tech | Sources are listed on this page. <a href="../../contact.html">Report an error</a>.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>
