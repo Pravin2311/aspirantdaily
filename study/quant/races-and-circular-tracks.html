@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Races and Circular Track Problems | AspirantDaily</title>
+    <meta name="description" content="Solve race problems (A beats B by x m or t seconds, starts, dead heats) and circular track meeting time in same and opposite directions, plus meeting at the start.">
+    <meta name="keywords" content="circular track meeting time, race problems a beats b by, dead heat race problems, circular track same direction opposite direction, meet at starting point lcm, number of distinct meeting points">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.aspirantdaily.com/study/quant/races-and-circular-tracks.html">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.aspirantdaily.com/study/quant/races-and-circular-tracks.html">
+    <meta property="og:title" content="Races and Circular Track Problems | AspirantDaily">
+    <meta property="og:description" content="Solve race problems (A beats B by x m or t seconds, starts, dead heats) and circular track meeting time in same and opposite directions, plus meeting at the start.">
+    <meta property="og:image" content="https://www.aspirantdaily.com/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Races and Circular Track Problems: Beats, Starts, Dead Heats, Circular Track Meeting Time and Meeting at the Start",
+  "description": "Solve race problems (A beats B by x m or t seconds, starts, dead heats) and circular track meeting time in same and opposite directions, plus meeting at the start.",
+  "image": "https://www.aspirantdaily.com/og-image.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "url": "https://www.aspirantdaily.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.aspirantdaily.com/icons/icon-512.png"
+    }
+  },
+  "datePublished": "2026-11-02",
+  "dateModified": "2026-11-02",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.aspirantdaily.com/study/quant/races-and-circular-tracks.html"
+  },
+  "articleSection": "Quantitative Aptitude",
+  "citation": []
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.aspirantdaily.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Study Notes",
+      "item": "https://www.aspirantdaily.com/study/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Quantitative Aptitude",
+      "item": "https://www.aspirantdaily.com/study/quant/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Races and Circular Track Problems: Beats, Starts, Dead Heats, Circular Track Meeting Time and Meeting at the Start",
+      "item": "https://www.aspirantdaily.com/study/quant/races-and-circular-tracks.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why can't I add the margins in a chained race?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Because each margin is measured over a different stretch. A beats B over the full distance, but B beats C over B's full distance, which is longer than what B ran when A finished. Scale the second margin to the distance B actually ran."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a dead heat?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A dead heat is a race where both runners finish at exactly the same moment. Questions ask how much start the slower runner needs, or how much shorter the slower runner's distance must be, for this to happen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do circular track answers depend on where they meet?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The first-meeting time does not. It depends only on the track length and the relative speed. Meeting at the starting point is a separate question, answered with the LCM of the lap times."
+      }
+    }
+  ]
+}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css?v=2">
+    <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-51XLJE4TVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-51XLJE4TVH');
+  </script>
+  <script>/* AdSense only on the production host (not localhost or preview deployments) */(function(){if(location.hostname!=="www.aspirantdaily.com")return;var a=document.createElement("script");a.async=true;a.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327";a.crossOrigin="anonymous";document.head.appendChild(a);})();</script>
+</head>
+<body class="study-page subject-quant">
+    <nav class="study-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Quantitative Aptitude</a>
+            <div class="nav-controls">
+                <button onclick="toggleAllSections()" class="btn-secondary">Expand/Collapse All</button>
+                <button onclick="window.print()" class="btn-primary">📄 Print/Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> / <a href="../index.html">Study Notes</a> / <a href="index.html">Quantitative Aptitude</a> / <span>Races and Circular Track Problems: Beats, Starts, Dead Heats, Circular Track Meeting Time and Meeting at the Start</span>
+            </div>
+            <h1>Races and Circular Track Problems: Beats, Starts, Dead Heats, Circular Track Meeting Time and Meeting at the Start</h1>
+            <p class="page-subtitle">Beats by metres and by seconds • Chained races • Starts and dead heats • First meeting on a circular track • Meeting at the starting point • Number of meeting points</p>
+            <div class="page-meta">
+                <span class="badge badge-secondary">SSC</span>
+                <span class="badge badge-secondary">Banking</span>
+                <span class="badge badge-secondary">📅 Last updated: 2026-11-02</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="study-section collapsible" data-section="1">
+            <button class="section-header" onclick="toggleSection(1)" aria-expanded="true" aria-controls="section-1">
+                <span class="section-number">1️⃣</span>
+                <span class="section-title">Race Vocabulary</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-1">
+                <div class="content-box">
+<p>Race questions use a few fixed phrases. Translate each into a statement about distances run in the same time:</p>
+<ul>
+<li><strong>A beats B by x m</strong> in an L m race: when A finishes L m, B has run L − x m.</li>
+<li><strong>A beats B by t seconds</strong>: B finishes t seconds after A.</li>
+<li><strong>A gives B a start of x m</strong>: B begins x m ahead, so B runs only L − x m.</li>
+<li><strong>Dead heat</strong>: both finish at the same moment.</li>
+</ul>
+<p>In the same time, distances are in the ratio of speeds. That single fact drives every race calculation; see <a href="relative-speed.html">relative speed</a> for the underlying idea.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="2">
+            <button class="section-header" onclick="toggleSection(2)" aria-expanded="true" aria-controls="section-2">
+                <span class="section-number">2️⃣</span>
+                <span class="section-title">Beats in Metres and Seconds</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-2">
+                <div class="content-box">
+<p>When a question gives both a distance margin and a time margin, they describe the same gap: the loser needs t seconds to cover the last x metres. So the loser's speed is x ÷ t.</p>
+<div class="case-study">
+<h4>Worked example 1: 20 m or 4 seconds</h4>
+<p>In a 400 m race, A beats B by 20 m or 4 s. B covers 20 m in 4 s, so B's speed is 5 m/s and B takes 400 ÷ 5 = 80 s. A finishes 4 s earlier, in <strong>76 s</strong>.</p>
+</div>
+<p>Chained races need scaling, because each margin applies to a different distance.</p>
+<div class="case-study">
+<h4>Worked example 2: A beats B, B beats C</h4>
+<p>In a 100 m race, A beats B by 10 m and B beats C by 10 m. When A runs 100, B runs 90. B and C run in the ratio 100 : 90, so while B runs 90, C runs 81. A beats C by <strong>19 m</strong>, not 20.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="3">
+            <button class="section-header" onclick="toggleSection(3)" aria-expanded="true" aria-controls="section-3">
+                <span class="section-number">3️⃣</span>
+                <span class="section-title">Starts and Dead Heats</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-3">
+                <div class="content-box">
+<p>For a dead heat, the slower runner's distance must be in the same ratio to the full distance as the speeds.</p>
+<div class="case-study">
+<h4>Worked example 3: how much start?</h4>
+<p>A runs 5/3 times as fast as B. In a 200 m race, while A runs 200 m, B runs 200 × 3/5 = 120 m. For a dead heat, A must give B a start of 200 − 120 = <strong>80 m</strong>.</p>
+</div>
+<p>If a question gives both a start and a margin, add or subtract them carefully: if A gives B a 10 m start and still wins by 5 m, then while A runs the full distance L, B runs only L − 15 m.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)" aria-expanded="true" aria-controls="section-4">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">Circular Tracks: The First Meeting</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
+                <div class="content-box">
+<p>Two runners leaving one point on a circular track meet again whenever the gap between them equals a whole lap. So the track length plays the role of the distance in a relative-speed problem:</p>
+<div class="highlight-box">
+<p><strong>Opposite directions: first meeting time = track length ÷ (a + b)</strong></p>
+<p><strong>Same direction: first meeting time = track length ÷ (a − b)</strong></p>
+</div>
+<div class="case-study">
+<h4>Worked example 4: opposite directions</h4>
+<p>A 600 m track, speeds 4 m/s and 6 m/s in opposite directions. They first meet after 600 ÷ 10 = <strong>60 s</strong>.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 5: same direction</h4>
+<p>Same track and speeds, same direction. The faster runner gains 2 m/s and needs a full lap's lead: 600 ÷ 2 = <strong>300 s</strong>.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)" aria-expanded="true" aria-controls="section-5">
+                <span class="section-number">5️⃣</span>
+                <span class="section-title">Meeting at the Start and Counting Meeting Points</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-5">
+                <div class="content-box">
+<p>Meeting <em>anywhere</em> is not the same as meeting <em>at the starting point</em>. They are back at the start together only when each has finished a whole number of laps, so use the LCM of the lap times.</p>
+<div class="case-study">
+<h4>Worked example 6: two runners at the start</h4>
+<p>On the 600 m track, the lap times are 150 s and 100 s. They are next at the start together after LCM(150, 100) = <strong>300 s</strong>, whichever direction they run.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 7: three runners</h4>
+<p>Lap times 30, 40 and 60 s. All three are next at the start after LCM = <strong>120 s</strong>.</p>
+</div>
+<p>To count distinct meeting points, write the speeds in lowest terms as a : b. In the same direction they meet at |a − b| distinct points; in opposite directions, at a + b points.</p>
+<div class="case-study">
+<h4>Worked example 8: how many meeting points?</h4>
+<p>Speeds 4 and 6 m/s reduce to 2 : 3. Running in opposite directions they meet at 2 + 3 = <strong>5</strong> distinct points; in the same direction at only 1, the starting point.</p>
+</div>
+<p><strong>Common traps:</strong> adding margins in chained races, using the first-meeting formula when the question asks about the starting point, and forgetting to convert km/h to m/s on tracks measured in metres.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)" aria-expanded="true" aria-controls="section-6">
+                <span class="section-number">6️⃣</span>
+                <span class="section-title">Practice Questions (5)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-6">
+                <div class="content-box">
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q1.</strong> In a 1 km race, A beats B by 50 m and B beats C by 40 m. By how much does A beat C? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q1" value="a"> (a) 90 m</label>
+                            <label><input type="radio" name="q1" value="b"> (b) 88 m</label>
+                            <label><input type="radio" name="q1" value="c"> (c) 92 m</label>
+                            <label><input type="radio" name="q1" value="d"> (d) 85 m</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q1">
+                            <p><strong>✅ Answer:</strong> (b) 88 m</p>
+                            <p><strong>💡 Explanation:</strong> When A runs 1,000 m, B runs 950 m. B runs 1,000 m while C runs 960 m, so in 950 m C runs 950 × 0.96 = 912 m. A wins by 88 m, not 90.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q1')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q2.</strong> Two runners start together on a 400 m circular track and run in opposite directions at 5 m/s and 3 m/s. When do they first meet? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q2" value="a"> (a) 50 s</label>
+                            <label><input type="radio" name="q2" value="b"> (b) 200 s</label>
+                            <label><input type="radio" name="q2" value="c"> (c) 80 s</label>
+                            <label><input type="radio" name="q2" value="d"> (d) 100 s</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q2">
+                            <p><strong>✅ Answer:</strong> (a) 50 s</p>
+                            <p><strong>💡 Explanation:</strong> Opposite directions: they close the 400 m loop at 5 + 3 = 8 m/s, so they meet after 400 ÷ 8 = 50 s.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q2')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q3.</strong> The same two runners now run in the same direction. When does the faster one first catch the slower one? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q3" value="a"> (a) 50 s</label>
+                            <label><input type="radio" name="q3" value="b"> (b) 100 s</label>
+                            <label><input type="radio" name="q3" value="c"> (c) 160 s</label>
+                            <label><input type="radio" name="q3" value="d"> (d) 200 s</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q3">
+                            <p><strong>✅ Answer:</strong> (d) 200 s</p>
+                            <p><strong>💡 Explanation:</strong> Same direction: the faster runner gains 5 − 3 = 2 m/s and must gain one full lap of 400 m. 400 ÷ 2 = 200 s.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q3')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q4.</strong> Three cyclists complete a lap in 12, 18 and 30 minutes. If they start together from the same point, after how long are they next all at the start together? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q4" value="a"> (a) 90 min</label>
+                            <label><input type="radio" name="q4" value="b"> (b) 120 min</label>
+                            <label><input type="radio" name="q4" value="c"> (c) 180 min</label>
+                            <label><input type="radio" name="q4" value="d"> (d) 360 min</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q4">
+                            <p><strong>✅ Answer:</strong> (c) 180 min</p>
+                            <p><strong>💡 Explanation:</strong> They meet at the start when each has done a whole number of laps: LCM(12, 18, 30) = 180 minutes.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q4')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q5.</strong> In a 300 m race, A beats B by 30 m or by 6 seconds. How long does A take to finish? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q5" value="a"> (a) 60 s</label>
+                            <label><input type="radio" name="q5" value="b"> (b) 54 s</label>
+                            <label><input type="radio" name="q5" value="c"> (c) 50 s</label>
+                            <label><input type="radio" name="q5" value="d"> (d) 48 s</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q5">
+                            <p><strong>✅ Answer:</strong> (b) 54 s</p>
+                            <p><strong>💡 Explanation:</strong> B covers 30 m in 6 s, so B&#x27;s speed is 5 m/s and B&#x27;s time is 60 s. A finishes 6 s sooner, in 54 s.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q5')">Show Answer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)" aria-expanded="true" aria-controls="section-7">
+                <span class="section-number">7️⃣</span>
+                <span class="section-title">Frequently Asked Questions</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-7">
+                <div class="content-box">
+                    <h3>Why can&#x27;t I add the margins in a chained race?</h3>
+                    <p>Because each margin is measured over a different stretch. A beats B over the full distance, but B beats C over B&#x27;s full distance, which is longer than what B ran when A finished. Scale the second margin to the distance B actually ran.</p>
+                    <h3>What is a dead heat?</h3>
+                    <p>A dead heat is a race where both runners finish at exactly the same moment. Questions ask how much start the slower runner needs, or how much shorter the slower runner&#x27;s distance must be, for this to happen.</p>
+                    <h3>Do circular track answers depend on where they meet?</h3>
+                    <p>The first-meeting time does not. It depends only on the track length and the relative speed. Meeting at the starting point is a separate question, answered with the LCM of the lap times.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="8">
+            <button class="section-header" onclick="toggleSection(8)" aria-expanded="true" aria-controls="section-8">
+                <span class="section-number">8️⃣</span>
+                <span class="section-title">Sources and Review</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-8">
+                <div class="content-box">
+                    <p>All problems and solutions on this page are original. No outside facts are relied on; every numeric answer is recomputed by software before publishing.</p>
+                    <div class="highlight-box">
+                        <p><strong>How this page was prepared.</strong> Drafted with AI assistance (Claude (Anthropic AI model)) from the sources listed above. 13 calculations on this page were recomputed by software and matched. Automated checks also covered structure, internal links and duplicate text. Software checks cannot confirm facts. </p>
+                        <p>Found an error? <a href="../../contact.html">Report it</a> and we will correct the page.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="9">
+            <button class="section-header" onclick="toggleSection(9)" aria-expanded="true" aria-controls="section-9">
+                <span class="section-number">9️⃣</span>
+                <span class="section-title">Related Pages</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-9">
+                <div class="content-box">
+                    <ul class="bullet-list">
+                        <li><a href="../../repeated-questions/quant-cheat-code.html">Quant Cheat Code: 20 Must-Know Shortcuts &amp; Formulas</a></li>
+                        <li><a href="speed-time-distance-basics.html">Speed, Time and Distance: Formulas and Unit Conversion</a></li>
+                        <li><a href="relative-speed.html">Relative Speed: Same and Opposite Directions</a></li>
+                        <li><a href="train-problems.html">Train Problems: Crossing a Pole, Platform and Another Train</a></li>
+                        <li><a href="boats-and-streams.html">Boats and Streams: Upstream and Downstream Formulas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="page-navigation">
+            <a href="recurring-decimals-to-fractions.html" class="nav-btn">← Convert Recurring Decimal to Fraction: The 9s and 0s Rule for Pure and Mixed Recurring Decimals</a>
+            <a href="index.html" class="nav-btn">↑ Quantitative Aptitude</a>
+            <a href="alternate-days-work.html" class="nav-btn">Working on Alternate Days Problems: Two-Day Cycles, Who Starts First, and Workers Who Leave Before the End →</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>Subject: Quantitative Aptitude | Sources are listed on this page. <a href="../../contact.html">Report an error</a>.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>

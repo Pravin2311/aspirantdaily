@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trailing Zeros in a Factorial | AspirantDaily</title>
+    <meta name="description" content="Count the number of zeros in a factorial by dividing by 5, 25 and 125, find the highest power of any prime or composite in n!, and handle product traps.">
+    <meta name="keywords" content="number of zeros in factorial, trailing zeros in 100 factorial, highest power of prime in n factorial, legendre formula factorial, highest power of 6 in factorial, zeros at the end of a product">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.aspirantdaily.com/study/quant/trailing-zeros-in-factorial.html">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.aspirantdaily.com/study/quant/trailing-zeros-in-factorial.html">
+    <meta property="og:title" content="Trailing Zeros in a Factorial | AspirantDaily">
+    <meta property="og:description" content="Count the number of zeros in a factorial by dividing by 5, 25 and 125, find the highest power of any prime or composite in n!, and handle product traps.">
+    <meta property="og:image" content="https://www.aspirantdaily.com/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Number of Zeros in a Factorial: Divide by 5, 25, 125 and Find the Highest Power of Any Prime in n!",
+  "description": "Count the number of zeros in a factorial by dividing by 5, 25 and 125, find the highest power of any prime or composite in n!, and handle product traps.",
+  "image": "https://www.aspirantdaily.com/og-image.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "url": "https://www.aspirantdaily.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.aspirantdaily.com/icons/icon-512.png"
+    }
+  },
+  "datePublished": "2026-11-02",
+  "dateModified": "2026-11-02",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.aspirantdaily.com/study/quant/trailing-zeros-in-factorial.html"
+  },
+  "articleSection": "Quantitative Aptitude",
+  "citation": []
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.aspirantdaily.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Study Notes",
+      "item": "https://www.aspirantdaily.com/study/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Quantitative Aptitude",
+      "item": "https://www.aspirantdaily.com/study/quant/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Number of Zeros in a Factorial: Divide by 5, 25, 125 and Find the Highest Power of Any Prime in n!",
+      "item": "https://www.aspirantdaily.com/study/quant/trailing-zeros-in-factorial.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why do we count only fives and not twos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Each trailing zero needs one 2 and one 5. A factorial has far more even factors than multiples of 5, so the fives always run out first and decide the count."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why divide by 25 as well as 5?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A multiple of 25 such as 50 contributes two fives (50 = 2 × 5 × 5), but dividing by 5 counts it only once. Dividing by 25 picks up the second five, by 125 the third, and so on."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a number with exactly 5 zeros at the end of its factorial?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. 24! ends in 4 zeros and 25! jumps to 6, because 25 adds two fives at once. Counts like 5, 11 and 17 are skipped in the same way."
+      }
+    }
+  ]
+}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css?v=2">
+    <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-51XLJE4TVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-51XLJE4TVH');
+  </script>
+  <script>/* AdSense only on the production host (not localhost or preview deployments) */(function(){if(location.hostname!=="www.aspirantdaily.com")return;var a=document.createElement("script");a.async=true;a.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327";a.crossOrigin="anonymous";document.head.appendChild(a);})();</script>
+</head>
+<body class="study-page subject-quant">
+    <nav class="study-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Quantitative Aptitude</a>
+            <div class="nav-controls">
+                <button onclick="toggleAllSections()" class="btn-secondary">Expand/Collapse All</button>
+                <button onclick="window.print()" class="btn-primary">📄 Print/Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> / <a href="../index.html">Study Notes</a> / <a href="index.html">Quantitative Aptitude</a> / <span>Number of Zeros in a Factorial: Divide by 5, 25, 125 and Find the Highest Power of Any Prime in n!</span>
+            </div>
+            <h1>Number of Zeros in a Factorial: Divide by 5, 25, 125 and Find the Highest Power of Any Prime in n!</h1>
+            <p class="page-subtitle">Why fives decide the zeros • n/5 + n/25 + n/125 • Highest power of a prime • Composite divisors like 6, 12 and 15 • Products that are not factorials • Missing zero counts</p>
+            <div class="page-meta">
+                <span class="badge badge-secondary">SSC</span>
+                <span class="badge badge-secondary">Banking</span>
+                <span class="badge badge-secondary">📅 Last updated: 2026-11-02</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="study-section collapsible" data-section="1">
+            <button class="section-header" onclick="toggleSection(1)" aria-expanded="true" aria-controls="section-1">
+                <span class="section-number">1️⃣</span>
+                <span class="section-title">Why Fives Decide the Zeros</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-1">
+                <div class="content-box">
+<p>A zero at the end of a number comes from a factor of 10 = 2 × 5. So the number of trailing zeros of n! equals the number of complete (2, 5) pairs in its prime factors.</p>
+<p>Even numbers appear every second step, but multiples of 5 only every fifth step, so n! always has more twos than fives. The <strong>fives run out first</strong>, and the count of fives is the count of zeros.</p>
+<p>Some numbers carry more than one five: 25 = 5 × 5 carries two, 125 carries three. That gives the standard formula, where each term is the whole-number part of the division:</p>
+<div class="highlight-box"><p><strong>Zeros in n! = n/5 + n/25 + n/125 + n/625 + …</strong></p>
+<p>Stop when the divisor is larger than n.</p></div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="2">
+            <button class="section-header" onclick="toggleSection(2)" aria-expanded="true" aria-controls="section-2">
+                <span class="section-number">2️⃣</span>
+                <span class="section-title">Worked Counts</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-2">
+                <div class="content-box">
+<div class="case-study">
+<h4>Worked example 1: 100!</h4>
+<p>100/5 = 20 and 100/25 = 4. 125 is larger than 100, so stop. 100! ends in <strong>24 zeros</strong>.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 2: 250!</h4>
+<p>250/5 = 50, 250/25 = 10, 250/125 = 2. Total <strong>62 zeros</strong>.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 3: 1000!</h4>
+<p>200 + 40 + 8 + 1 (from 625) = <strong>249 zeros</strong>.</p>
+</div>
+<p>A shortcut: divide n by 5, then divide the answer by 5 again, and keep going, adding the whole-number results. For 1000: 200, 40, 8, 1, giving 249. It is the same calculation, done in a chain.</p>
+<p>To check an answer, remember that the count grows by one with each new multiple of 5 and by two at each multiple of 25. So 99! and 100! differ by 2 zeros, because 100 is a multiple of 25, while 104! and 105! differ by only 1.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="3">
+            <button class="section-header" onclick="toggleSection(3)" aria-expanded="true" aria-controls="section-3">
+                <span class="section-number">3️⃣</span>
+                <span class="section-title">Highest Power of Any Prime in n!</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-3">
+                <div class="content-box">
+<p>The same idea works for any prime p (this is often called Legendre's formula):</p>
+<div class="highlight-box"><p><strong>Highest power of p in n! = n/p + n/p² + n/p³ + …</strong></p></div>
+<div class="case-study">
+<h4>Worked example 4: power of 3 in 50!</h4>
+<p>50/3 = 16, 50/9 = 5, 50/27 = 1, and 81 > 50. The highest power of 3 dividing 50! is <strong>3²²</strong>.</p>
+</div>
+<p>For a <strong>composite</strong> number, split it into primes, count each prime in n!, and take the limiting one.</p>
+<div class="case-study">
+<h4>Worked example 5: power of 6 in 30!</h4>
+<p>6 = 2 × 3. 30! has 15 + 7 + 3 + 1 = 26 twos and 10 + 3 + 1 = 14 threes. Each 6 needs one of each, so the threes limit it: <strong>6¹⁴</strong>.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 6: power of 12 in 40!</h4>
+<p>12 = 2² × 3. 40! has 38 twos, enough for 19 copies of 2², and 13 + 4 + 1 = 18 threes. The smaller figure wins: <strong>12¹⁸</strong>. Remember to divide the count by the exponent when a prime appears squared.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)" aria-expanded="true" aria-controls="section-4">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">Products That Are Not Factorials</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
+                <div class="content-box">
+<p>When the product skips numbers, the twos are no longer guaranteed to outnumber the fives. Count both.</p>
+<div class="case-study">
+<h4>Worked example 7: 5 × 10 × 15 × … × 100</h4>
+<p>There are 20 terms, each 5 times a number from 1 to 20, so the product is 5²⁰ × 20!. Fives: 20 + 4 = 24. Twos come only from 20!: 10 + 5 + 2 + 1 = 18. The twos run out first, so the product ends in <strong>18 zeros</strong>, not 24.</p>
+</div>
+<p>The same care is needed for products such as 1 × 3 × 5 × … (all odd), which have no twos at all and so <strong>no trailing zeros</strong>, however many fives they contain.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)" aria-expanded="true" aria-controls="section-5">
+                <span class="section-number">5️⃣</span>
+                <span class="section-title">Skipped Counts and Common Traps</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-5">
+                <div class="content-box">
+<p>Because multiples of 25 add two fives at once, some zero counts never occur.</p>
+<div class="case-study">
+<h4>Worked example 8: is there an n! with exactly 5 zeros?</h4>
+<p>24! has 4 zeros, but 25! jumps to <strong>6</strong> (5 + 1). No factorial ends in exactly 5 zeros. Factorials from 25! to 29! all end in 6 zeros.</p>
+</div>
+<ul>
+<li><strong>Stopping at n/5.</strong> Always add n/25, n/125 and higher terms while they are at least 1.</li>
+<li><strong>Using decimals.</strong> Each term is a whole-number part; 60/25 counts as 2, not 2.4.</li>
+<li><strong>Assuming twos are plentiful in any product.</strong> That holds for factorials only.</li>
+<li><strong>Forgetting the exponent.</strong> For 12 = 2² × 3, halve the count of twos.</li>
+<li><strong>Answering with the limiting prime's partner.</strong> The smaller count decides.</li>
+</ul>
+<p>For counting divisors, see <a href="number-of-factors.html">number of factors</a>.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)" aria-expanded="true" aria-controls="section-6">
+                <span class="section-number">6️⃣</span>
+                <span class="section-title">Practice Questions (5)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-6">
+                <div class="content-box">
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q1.</strong> How many zeros are there at the end of 60!? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q1" value="a"> (a) 12</label>
+                            <label><input type="radio" name="q1" value="b"> (b) 14</label>
+                            <label><input type="radio" name="q1" value="c"> (c) 15</label>
+                            <label><input type="radio" name="q1" value="d"> (d) 13</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q1">
+                            <p><strong>✅ Answer:</strong> (b) 14</p>
+                            <p><strong>💡 Explanation:</strong> 60 ÷ 5 = 12 and 60 ÷ 25 = 2 (whole parts), so 60! ends in 12 + 2 = 14 zeros.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q1')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q2.</strong> How many trailing zeros does 125! have? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q2" value="a"> (a) 31</label>
+                            <label><input type="radio" name="q2" value="b"> (b) 30</label>
+                            <label><input type="radio" name="q2" value="c"> (c) 25</label>
+                            <label><input type="radio" name="q2" value="d"> (d) 32</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q2">
+                            <p><strong>✅ Answer:</strong> (a) 31</p>
+                            <p><strong>💡 Explanation:</strong> 125/5 = 25, 125/25 = 5 and 125/125 = 1. Total 31. Forgetting the 125 term gives 30.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q2')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q3.</strong> What is the highest power of 7 that divides 100!? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q3" value="a"> (a) 14</label>
+                            <label><input type="radio" name="q3" value="b"> (b) 15</label>
+                            <label><input type="radio" name="q3" value="c"> (c) 17</label>
+                            <label><input type="radio" name="q3" value="d"> (d) 16</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q3">
+                            <p><strong>✅ Answer:</strong> (d) 16</p>
+                            <p><strong>💡 Explanation:</strong> Count multiples of 7 (14) and of 49 (2): 14 + 2 = 16. 343 is larger than 100, so stop there.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q3')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q4.</strong> How many zeros does 500! end with? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q4" value="a"> (a) 120</label>
+                            <label><input type="radio" name="q4" value="b"> (b) 100</label>
+                            <label><input type="radio" name="q4" value="c"> (c) 124</label>
+                            <label><input type="radio" name="q4" value="d"> (d) 125</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q4">
+                            <p><strong>✅ Answer:</strong> (c) 124</p>
+                            <p><strong>💡 Explanation:</strong> 500/5 = 100, 500/25 = 20, 500/125 = 4, and 625 &gt; 500. Total 124.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q4')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q5.</strong> What is the highest power of 15 that divides 50!? <span class="badge badge-secondary">hard</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q5" value="a"> (a) 22</label>
+                            <label><input type="radio" name="q5" value="b"> (b) 12</label>
+                            <label><input type="radio" name="q5" value="c"> (c) 10</label>
+                            <label><input type="radio" name="q5" value="d"> (d) 16</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q5">
+                            <p><strong>✅ Answer:</strong> (b) 12</p>
+                            <p><strong>💡 Explanation:</strong> 15 = 3 × 5. 50! has 22 threes but only 12 fives, so at most 12 copies of 15 can be formed.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q5')">Show Answer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)" aria-expanded="true" aria-controls="section-7">
+                <span class="section-number">7️⃣</span>
+                <span class="section-title">Frequently Asked Questions</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-7">
+                <div class="content-box">
+                    <h3>Why do we count only fives and not twos?</h3>
+                    <p>Each trailing zero needs one 2 and one 5. A factorial has far more even factors than multiples of 5, so the fives always run out first and decide the count.</p>
+                    <h3>Why divide by 25 as well as 5?</h3>
+                    <p>A multiple of 25 such as 50 contributes two fives (50 = 2 × 5 × 5), but dividing by 5 counts it only once. Dividing by 25 picks up the second five, by 125 the third, and so on.</p>
+                    <h3>Is there a number with exactly 5 zeros at the end of its factorial?</h3>
+                    <p>No. 24! ends in 4 zeros and 25! jumps to 6, because 25 adds two fives at once. Counts like 5, 11 and 17 are skipped in the same way.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="8">
+            <button class="section-header" onclick="toggleSection(8)" aria-expanded="true" aria-controls="section-8">
+                <span class="section-number">8️⃣</span>
+                <span class="section-title">Sources and Review</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-8">
+                <div class="content-box">
+                    <p>All problems and solutions on this page are original. No outside facts are relied on; every numeric answer is recomputed by software before publishing.</p>
+                    <div class="highlight-box">
+                        <p><strong>How this page was prepared.</strong> Drafted with AI assistance (Claude (Anthropic AI model)) from the sources listed above. 14 calculations on this page were recomputed by software and matched. Automated checks also covered structure, internal links and duplicate text. Software checks cannot confirm facts. </p>
+                        <p>Found an error? <a href="../../contact.html">Report it</a> and we will correct the page.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="9">
+            <button class="section-header" onclick="toggleSection(9)" aria-expanded="true" aria-controls="section-9">
+                <span class="section-number">9️⃣</span>
+                <span class="section-title">Related Pages</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-9">
+                <div class="content-box">
+                    <ul class="bullet-list">
+                        <li><a href="../../repeated-questions/quant-cheat-code.html">Quant Cheat Code: 20 Must-Know Shortcuts &amp; Formulas</a></li>
+                        <li><a href="divisibility-rules.html">Divisibility Rules from 2 to 19 with Examples</a></li>
+                        <li><a href="hcf-and-lcm-word-problems.html">HCF and LCM Word Problems: When to Use Which</a></li>
+                        <li><a href="unit-digit-of-powers.html">Unit Digit of Powers: Cyclicity Method</a></li>
+                        <li><a href="remainder-problems.html">Remainder Problems: Negative Remainders and Cyclicity</a></li>
+                        <li><a href="number-of-factors.html">Number of Factors, Sum of Factors and Even Factors</a></li>
+                        <li><a href="lcm-with-remainders.html">Least Number Leaving a Given Remainder</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="page-navigation">
+            <a href="x-plus-1-by-x-problems.html" class="nav-btn">← x + 1/x Problems: From x + 1/x to x² + 1/x², x³ + 1/x³ and Beyond</a>
+            <a href="index.html" class="nav-btn">↑ Quantitative Aptitude</a>
+            <a href="recurring-decimals-to-fractions.html" class="nav-btn">Convert Recurring Decimal to Fraction: The 9s and 0s Rule for Pure and Mixed Recurring Decimals →</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>Subject: Quantitative Aptitude | Sources are listed on this page. <a href="../../contact.html">Report an error</a>.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alternate-Day and Leaving-Midway Work Problems</title>
+    <meta name="description" content="Solve working on alternate days problems with LCM units and two-day cycles, see why the starting worker matters, and handle workers who leave before the end.">
+    <meta name="keywords" content="working on alternate days problems, alternate days time and work, a and b work on alternate days, leaves before completion time and work, work cycle method, time and work alternate days formula">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.aspirantdaily.com/study/quant/alternate-days-work.html">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.aspirantdaily.com/study/quant/alternate-days-work.html">
+    <meta property="og:title" content="Alternate-Day and Leaving-Midway Work Problems">
+    <meta property="og:description" content="Solve working on alternate days problems with LCM units and two-day cycles, see why the starting worker matters, and handle workers who leave before the end.">
+    <meta property="og:image" content="https://www.aspirantdaily.com/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Working on Alternate Days Problems: Two-Day Cycles, Who Starts First, and Workers Who Leave Before the End",
+  "description": "Solve working on alternate days problems with LCM units and two-day cycles, see why the starting worker matters, and handle workers who leave before the end.",
+  "image": "https://www.aspirantdaily.com/og-image.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "url": "https://www.aspirantdaily.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.aspirantdaily.com/icons/icon-512.png"
+    }
+  },
+  "datePublished": "2026-11-02",
+  "dateModified": "2026-11-02",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.aspirantdaily.com/study/quant/alternate-days-work.html"
+  },
+  "articleSection": "Quantitative Aptitude",
+  "citation": []
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.aspirantdaily.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Study Notes",
+      "item": "https://www.aspirantdaily.com/study/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Quantitative Aptitude",
+      "item": "https://www.aspirantdaily.com/study/quant/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Working on Alternate Days Problems: Two-Day Cycles, Who Starts First, and Workers Who Leave Before the End",
+      "item": "https://www.aspirantdaily.com/study/quant/alternate-days-work.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why does it matter who starts?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When the job does not end exactly on a cycle boundary, the leftover work falls to whoever's turn it is. A faster worker finishes the leftover sooner, so starting with the faster worker usually gives a slightly shorter total."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use average daily work for alternate days?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Only for whole cycles. The average of 2.5 units a day in a 3-and-2 cycle is correct over pairs of days, but the last part must be done day by day, because the worker on duty that day does it alone."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I set up 'leaves k days before completion'?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Let the total time be T. The worker who stays works T days and the one who leaves works T − k days. Add their contributions, set the sum equal to the job, and solve for T."
+      }
+    }
+  ]
+}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css?v=2">
+    <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-51XLJE4TVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-51XLJE4TVH');
+  </script>
+  <script>/* AdSense only on the production host (not localhost or preview deployments) */(function(){if(location.hostname!=="www.aspirantdaily.com")return;var a=document.createElement("script");a.async=true;a.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327";a.crossOrigin="anonymous";document.head.appendChild(a);})();</script>
+</head>
+<body class="study-page subject-quant">
+    <nav class="study-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Quantitative Aptitude</a>
+            <div class="nav-controls">
+                <button onclick="toggleAllSections()" class="btn-secondary">Expand/Collapse All</button>
+                <button onclick="window.print()" class="btn-primary">📄 Print/Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> / <a href="../index.html">Study Notes</a> / <a href="index.html">Quantitative Aptitude</a> / <span>Working on Alternate Days Problems: Two-Day Cycles, Who Starts First, and Workers Who Leave Before the End</span>
+            </div>
+            <h1>Working on Alternate Days Problems: Two-Day Cycles, Who Starts First, and Workers Who Leave Before the End</h1>
+            <p class="page-subtitle">Give the job a size • Two-day cycles • Leftover work on the last day • Who starts matters • Leaving k days before completion • Helpers on every third day</p>
+            <div class="page-meta">
+                <span class="badge badge-secondary">SSC</span>
+                <span class="badge badge-secondary">Banking</span>
+                <span class="badge badge-secondary">📅 Last updated: 2026-11-02</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="study-section collapsible" data-section="1">
+            <button class="section-header" onclick="toggleSection(1)" aria-expanded="true" aria-controls="section-1">
+                <span class="section-number">1️⃣</span>
+                <span class="section-title">Give the Job a Size</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-1">
+                <div class="content-box">
+<p>All alternate-day problems become simple arithmetic once the job has a concrete size. Take the LCM of the individual times as the total work in units; then each worker's daily output is a whole number. This is the same idea as the <a href="time-and-work-lcm-method.html">LCM method for time and work</a>.</p>
+<p>If A takes 10 days and B 15, call the job 30 units. A does 3 units a day and B does 2.</p>
+<p>Working in whole units avoids adding fractions such as 1/10 + 1/15 again and again, and it makes the leftover on the final day easy to see. If the LCM is large, any common multiple works just as well; the answer does not depend on the size you choose.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="2">
+            <button class="section-header" onclick="toggleSection(2)" aria-expanded="true" aria-controls="section-2">
+                <span class="section-number">2️⃣</span>
+                <span class="section-title">Two-Day Cycles</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-2">
+                <div class="content-box">
+<p>When two people take turns, group the days into <strong>cycles</strong>. One cycle (A's day plus B's day) does a fixed amount of work. Count how many whole cycles fit, then finish the remainder day by day.</p>
+<div class="case-study">
+<h4>Worked example 1: an exact fit</h4>
+<p>A takes 10 days and B 15; they alternate, A first. The job is 30 units and each cycle does 3 + 2 = 5 units in 2 days. Six cycles do 30 units exactly, so the job takes <strong>12 days</strong>.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 2: work left over</h4>
+<p>A takes 12 days and B 18; they alternate, A first. Job = 36 units, A 3 a day, B 2 a day, 5 units per cycle. Seven cycles (14 days) do 35 units. One unit remains, and day 15 is A's, who needs 1/3 of a day. Total: <strong>14⅓ days</strong>.</p>
+</div>
+<p>The key step is to stop the cycles <em>before</em> the job is finished, then hand the leftover to whoever's turn comes next.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="3">
+            <button class="section-header" onclick="toggleSection(3)" aria-expanded="true" aria-controls="section-3">
+                <span class="section-number">3️⃣</span>
+                <span class="section-title">Who Starts Matters</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-3">
+                <div class="content-box">
+<p>With an exact fit, the order makes no difference. With a leftover, it does.</p>
+<div class="case-study">
+<h4>Worked example 3: B starts instead</h4>
+<p>Same job as example 2, but B goes first. After seven cycles (14 days) the same unit remains, and day 15 is now B's. B does 2 units a day, so needs half a day: total <strong>14.5 days</strong>, longer than 14⅓. The faster worker should take the last turn, so starting with them usually saves time.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)" aria-expanded="true" aria-controls="section-4">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">Workers Who Leave or Stop Early</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
+                <div class="content-box">
+<p>Two wordings are common. Set each up differently.</p>
+<ul>
+<li><strong>"A leaves after d days"</strong>: work together for d days, subtract that work, and let the remaining worker finish.</li>
+<li><strong>"A leaves k days before the job is completed"</strong>: let the total time be T. The stayer works T days and the leaver T − k days. Write one equation and solve for T.</li>
+</ul>
+<div class="case-study">
+<h4>Worked example 4: leaving after 4 days</h4>
+<p>A (10 days) and B (15 days) work together for 4 days, then A leaves. Job = 30 units; 4 days together do 20. B alone does the last 10 units at 2 a day in 5 days. Total: <strong>9 days</strong>.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 5: leaving before the end</h4>
+<p>A (20 days) and B (30 days) start together, but A leaves 5 days before the job is finished. Job = 60 units; A does 3, B 2. 3(T − 5) + 2T = 60 gives 5T = 75, so T = <strong>15 days</strong>.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)" aria-expanded="true" aria-controls="section-5">
+                <span class="section-number">5️⃣</span>
+                <span class="section-title">Helpers on Some Days, and Common Traps</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-5">
+                <div class="content-box">
+<p>The cycle idea extends to any repeating pattern: a helper every third day, or two helpers taking turns beside a regular worker.</p>
+<div class="case-study">
+<h4>Worked example 6: help every third day</h4>
+<p>A (20 days) works daily and B (30 days) joins on every third day. Job = 60 units; a 3-day cycle does 3 + 3 + (3 + 2) = 11 units. Five cycles (15 days) give 55. Day 16 is A alone, bringing the total to 58, and A needs 2/3 of day 17 for the last 2 units. Total: about <strong>16.67 days</strong>.</p>
+</div>
+<ul>
+<li><strong>Running the last cycle in full.</strong> The job may end partway through a cycle.</li>
+<li><strong>Using the cycle average for the leftover.</strong> On the last day, only the worker on duty counts.</li>
+<li><strong>Mixing up "leaves after" and "leaves before".</strong> The equations are different.</li>
+<li><strong>Forgetting the whole cycles in the final count.</strong> Add the cycle days to the leftover fraction.</li>
+</ul>
+<p>For men, days and hours together, see the <a href="men-days-hours-formula.html">M1D1H1/W1 formula</a>.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)" aria-expanded="true" aria-controls="section-6">
+                <span class="section-number">6️⃣</span>
+                <span class="section-title">Practice Questions (5)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-6">
+                <div class="content-box">
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q1.</strong> A can finish a job in 6 days and B in 12 days. They work on alternate days, A starting. In how many days is the job done? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q1" value="a"> (a) 9 days</label>
+                            <label><input type="radio" name="q1" value="b"> (b) 8 days</label>
+                            <label><input type="radio" name="q1" value="c"> (c) 7 days</label>
+                            <label><input type="radio" name="q1" value="d"> (d) 8.5 days</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q1">
+                            <p><strong>✅ Answer:</strong> (b) 8 days</p>
+                            <p><strong>💡 Explanation:</strong> Job = 12 units; A does 2 a day and B 1. Each 2-day cycle does 3 units, so 4 cycles (8 days) finish the 12 units exactly.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q1')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q2.</strong> A can finish a job in 8 days and B in 12 days. They work on alternate days, A starting. How long does the job take? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q2" value="a"> (a) 9.5 days</label>
+                            <label><input type="radio" name="q2" value="b"> (b) 10 days</label>
+                            <label><input type="radio" name="q2" value="c"> (c) 9 days</label>
+                            <label><input type="radio" name="q2" value="d"> (d) 10.5 days</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q2">
+                            <p><strong>✅ Answer:</strong> (a) 9.5 days</p>
+                            <p><strong>💡 Explanation:</strong> Job = 24 units; A does 3 and B 2 a day. 4 cycles (8 days) give 20 units. Day 9 (A) brings it to 23, and B needs half of day 10 for the last unit: 9.5 days.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q2')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q3.</strong> A can do a job in 15 days and B in 10 days. They start together, but B leaves 3 days before the job is finished. How long does the job take? <span class="badge badge-secondary">hard</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q3" value="a"> (a) 7 days</label>
+                            <label><input type="radio" name="q3" value="b"> (b) 8 days</label>
+                            <label><input type="radio" name="q3" value="c"> (c) 9 days</label>
+                            <label><input type="radio" name="q3" value="d"> (d) 7.8 days</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q3">
+                            <p><strong>✅ Answer:</strong> (d) 7.8 days</p>
+                            <p><strong>💡 Explanation:</strong> Job = 30 units; A does 2 and B 3 a day. If the job takes T days, 2T + 3(T − 3) = 30, so 5T = 39 and T = 7.8 days.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q3')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q4.</strong> A can do a job in 12 days and B in 24 days. They work together for 4 days, then A leaves. How many days in all does the job take? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q4" value="a"> (a) 14 days</label>
+                            <label><input type="radio" name="q4" value="b"> (b) 12 days</label>
+                            <label><input type="radio" name="q4" value="c"> (c) 16 days</label>
+                            <label><input type="radio" name="q4" value="d"> (d) 18 days</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q4">
+                            <p><strong>✅ Answer:</strong> (c) 16 days</p>
+                            <p><strong>💡 Explanation:</strong> Job = 24 units; A does 2 and B 1 a day. Four days together give 12 units. B alone does the other 12 in 12 days, so the total is 16 days.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q4')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q5.</strong> A, B and C can finish a job in 10, 12 and 15 days. A works every day, helped by B on odd-numbered days and by C on even-numbered days. How long does the job take? <span class="badge badge-secondary">hard</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q5" value="a"> (a) 6 days</label>
+                            <label><input type="radio" name="q5" value="b"> (b) 5.7 days</label>
+                            <label><input type="radio" name="q5" value="c"> (c) 5.5 days</label>
+                            <label><input type="radio" name="q5" value="d"> (d) 6.3 days</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q5">
+                            <p><strong>✅ Answer:</strong> (b) 5.7 days</p>
+                            <p><strong>💡 Explanation:</strong> Job = 60 units; A 6, B 5, C 4 a day. Days alternate between 11 and 10 units. After 5 days 53 units are done, and day 6 (A + C, 10 units) needs 0.7 of the day for the last 7.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q5')">Show Answer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)" aria-expanded="true" aria-controls="section-7">
+                <span class="section-number">7️⃣</span>
+                <span class="section-title">Frequently Asked Questions</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-7">
+                <div class="content-box">
+                    <h3>Why does it matter who starts?</h3>
+                    <p>When the job does not end exactly on a cycle boundary, the leftover work falls to whoever&#x27;s turn it is. A faster worker finishes the leftover sooner, so starting with the faster worker usually gives a slightly shorter total.</p>
+                    <h3>Can I use average daily work for alternate days?</h3>
+                    <p>Only for whole cycles. The average of 2.5 units a day in a 3-and-2 cycle is correct over pairs of days, but the last part must be done day by day, because the worker on duty that day does it alone.</p>
+                    <h3>How do I set up &#x27;leaves k days before completion&#x27;?</h3>
+                    <p>Let the total time be T. The worker who stays works T days and the one who leaves works T − k days. Add their contributions, set the sum equal to the job, and solve for T.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="8">
+            <button class="section-header" onclick="toggleSection(8)" aria-expanded="true" aria-controls="section-8">
+                <span class="section-number">8️⃣</span>
+                <span class="section-title">Sources and Review</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-8">
+                <div class="content-box">
+                    <p>All problems and solutions on this page are original. No outside facts are relied on; every numeric answer is recomputed by software before publishing.</p>
+                    <div class="highlight-box">
+                        <p><strong>How this page was prepared.</strong> Drafted with AI assistance (Claude (Anthropic AI model)) from the sources listed above. 11 calculations on this page were recomputed by software and matched. Automated checks also covered structure, internal links and duplicate text. Software checks cannot confirm facts. </p>
+                        <p>Found an error? <a href="../../contact.html">Report it</a> and we will correct the page.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="9">
+            <button class="section-header" onclick="toggleSection(9)" aria-expanded="true" aria-controls="section-9">
+                <span class="section-number">9️⃣</span>
+                <span class="section-title">Related Pages</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-9">
+                <div class="content-box">
+                    <ul class="bullet-list">
+                        <li><a href="../../repeated-questions/quant-cheat-code.html">Quant Cheat Code: 20 Must-Know Shortcuts &amp; Formulas</a></li>
+                        <li><a href="time-and-work-lcm-method.html">Time and Work: The LCM (Total Work) Method</a></li>
+                        <li><a href="men-days-hours-formula.html">M1D1H1/W1 = M2D2H2/W2 Formula</a></li>
+                        <li><a href="pipes-and-cisterns.html">Pipes and Cisterns: Inlets, Outlets and Leaks</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="page-navigation">
+            <a href="races-and-circular-tracks.html" class="nav-btn">← Races and Circular Track Problems: Beats, Starts, Dead Heats, Circular Track Meeting Time and Meeting at the Start</a>
+            <a href="index.html" class="nav-btn">Quantitative Aptitude →</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>Subject: Quantitative Aptitude | Sources are listed on this page. <a href="../../contact.html">Report an error</a>.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>
