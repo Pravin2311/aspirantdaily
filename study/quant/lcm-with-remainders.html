@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Least Number Leaving a Given Remainder | AspirantDaily</title>
+    <meta name="description" content="Find the least or greatest number leaving given remainders: LCM + r, LCM − k, an extra divisibility condition, n-digit limits, unequal remainders and counting.">
+    <meta name="keywords" content="least number which when divided leaves remainder, lcm remainder problems, same remainder lcm plus, greatest 4 digit number divisible with remainder, least number divisible by 7 leaving remainder, different remainders lcm minus">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.aspirantdaily.com/study/quant/lcm-with-remainders.html">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.aspirantdaily.com/study/quant/lcm-with-remainders.html">
+    <meta property="og:title" content="Least Number Leaving a Given Remainder | AspirantDaily">
+    <meta property="og:description" content="Find the least or greatest number leaving given remainders: LCM + r, LCM − k, an extra divisibility condition, n-digit limits, unequal remainders and counting.">
+    <meta property="og:image" content="https://www.aspirantdaily.com/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Least Number Which When Divided Leaves a Remainder: LCM + r, LCM − k and the Harder Variants",
+  "description": "Find the least or greatest number leaving given remainders: LCM + r, LCM − k, an extra divisibility condition, n-digit limits, unequal remainders and counting.",
+  "image": "https://www.aspirantdaily.com/og-image.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "url": "https://www.aspirantdaily.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.aspirantdaily.com/icons/icon-512.png"
+    }
+  },
+  "datePublished": "2026-11-02",
+  "dateModified": "2026-11-02",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.aspirantdaily.com/study/quant/lcm-with-remainders.html"
+  },
+  "articleSection": "Quantitative Aptitude",
+  "citation": []
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.aspirantdaily.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Study Notes",
+      "item": "https://www.aspirantdaily.com/study/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Quantitative Aptitude",
+      "item": "https://www.aspirantdaily.com/study/quant/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Least Number Which When Divided Leaves a Remainder: LCM + r, LCM − k and the Harder Variants",
+      "item": "https://www.aspirantdaily.com/study/quant/lcm-with-remainders.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why is the answer LCM + r and not just r?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The number r itself leaves remainder r when divided by any larger number, so it technically fits. Exam questions intend a number larger than the divisors, and the first such number is LCM + r. If an option equals r, read the question again."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if the remainders follow no pattern?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Solve one condition at a time. List numbers meeting the condition with the largest divisor, and pick the first that meets the next condition. Then every later answer differs by the LCM of the divisors."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can the remainder be larger than a divisor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. A remainder must be smaller than its divisor, so remainder 5 is impossible for division by 4. If a question seems to need it, it is badly framed."
+      }
+    }
+  ]
+}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css?v=2">
+    <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-51XLJE4TVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-51XLJE4TVH');
+  </script>
+  <script>/* AdSense only on the production host (not localhost or preview deployments) */(function(){if(location.hostname!=="www.aspirantdaily.com")return;var a=document.createElement("script");a.async=true;a.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327";a.crossOrigin="anonymous";document.head.appendChild(a);})();</script>
+</head>
+<body class="study-page subject-quant">
+    <nav class="study-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Quantitative Aptitude</a>
+            <div class="nav-controls">
+                <button onclick="toggleAllSections()" class="btn-secondary">Expand/Collapse All</button>
+                <button onclick="window.print()" class="btn-primary">📄 Print/Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> / <a href="../index.html">Study Notes</a> / <a href="index.html">Quantitative Aptitude</a> / <span>Least Number Which When Divided Leaves a Remainder: LCM + r, LCM − k and the Harder Variants</span>
+            </div>
+            <h1>Least Number Which When Divided Leaves a Remainder: LCM + r, LCM − k and the Harder Variants</h1>
+            <p class="page-subtitle">Same remainder: LCM + r • Constant shortfall: LCM − k • Also divisible by another number • Greatest and smallest n-digit • Unrelated remainders • How many such numbers</p>
+            <div class="page-meta">
+                <span class="badge badge-secondary">SSC</span>
+                <span class="badge badge-secondary">Banking</span>
+                <span class="badge badge-secondary">Railway</span>
+                <span class="badge badge-secondary">📅 Last updated: 2026-11-02</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="study-section collapsible" data-section="1">
+            <button class="section-header" onclick="toggleSection(1)" aria-expanded="true" aria-controls="section-1">
+                <span class="section-number">1️⃣</span>
+                <span class="section-title">Case 1: The Same Remainder Every Time</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-1">
+                <div class="content-box">
+<p>If a number N leaves the same remainder r when divided by a, b and c, then N − r is divisible by all three. So N − r is a common multiple of a, b and c, and the least such N is:</p>
+<div class="highlight-box"><p><strong>N = LCM(a, b, c) + r</strong> &nbsp;&nbsp; and in general &nbsp;&nbsp; <strong>N = LCM × k + r</strong></p></div>
+<div class="case-study">
+<h4>Worked example 1: remainder 3 each time</h4>
+<p>Least number leaving remainder 3 when divided by 4, 6 and 10: LCM(4, 6, 10) = 60, so N = <strong>63</strong>. Check: 63 = 4 × 15 + 3 = 6 × 10 + 3 = 10 × 6 + 3.</p>
+</div>
+<p>Every such number is 60 apart: 63, 123, 183, and so on. That single fact drives all the harder versions below.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="2">
+            <button class="section-header" onclick="toggleSection(2)" aria-expanded="true" aria-controls="section-2">
+                <span class="section-number">2️⃣</span>
+                <span class="section-title">Case 2: Each Remainder Is the Divisor Minus k</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-2">
+                <div class="content-box">
+<p>Sometimes the remainders differ, but each falls short of its divisor by the same amount k. Then N + k is divisible by every divisor, so:</p>
+<div class="highlight-box"><p><strong>N = LCM(a, b, c) − k</strong></p></div>
+<div class="case-study">
+<h4>Worked example 2: remainders 2, 3 and 4</h4>
+<p>Least number leaving remainders 2, 3 and 4 when divided by 4, 5 and 6. The gaps are 4 − 2 = 2, 5 − 3 = 2 and 6 − 4 = 2, all equal. N = LCM(4, 5, 6) − 2 = 60 − 2 = <strong>58</strong>.</p>
+</div>
+<p>Always check that the gaps really are equal. If they are not, use the method in Case 5.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="3">
+            <button class="section-header" onclick="toggleSection(3)" aria-expanded="true" aria-controls="section-3">
+                <span class="section-number">3️⃣</span>
+                <span class="section-title">Case 3: Also Divisible by Another Number</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-3">
+                <div class="content-box">
+<p>Write the general form LCM × k + r and try k = 1, 2, 3, … until the extra condition holds. The answer usually appears within a few tries.</p>
+<div class="case-study">
+<h4>Worked example 3: remainder 4, and divisible by 7</h4>
+<p>Find the least number that leaves remainder 4 when divided by 6, 9 and 15, and is divisible by 7. LCM = 90, so N = 90k + 4. Trying k = 1, 2, 3 gives 94, 184 and 274, none divisible by 7. k = 4 gives <strong>364 = 7 × 52</strong>.</p>
+</div>
+<p>A shortcut for the trial: 90 leaves remainder 6 on division by 7, so you need 6k + 4 to be a multiple of 7. That happens first at k = 4 (6 × 4 + 4 = 28).</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)" aria-expanded="true" aria-controls="section-4">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">Case 4: Greatest or Smallest n-Digit Number</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
+                <div class="content-box">
+<p>Find the multiple of the LCM nearest the limit, then add r.</p>
+<ul>
+<li><strong>Greatest n-digit:</strong> divide the largest n-digit number by the LCM, drop the remainder, and add r.</li>
+<li><strong>Smallest n-digit:</strong> take the first multiple of the LCM at or above the smallest n-digit number, and add r.</li>
+</ul>
+<div class="case-study">
+<h4>Worked example 4: four-digit limits</h4>
+<p>Remainder 3 when divided by 12, 18 and 30, so N = 180k + 3. 9,999 ÷ 180 = 55 with remainder 99, so the greatest four-digit answer is 180 × 55 + 3 = <strong>9,903</strong>.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 5: the smallest four-digit answer</h4>
+<p>The first multiple of 180 at or above 1,000 is 1,080 (180 × 6), so the smallest four-digit answer is <strong>1,083</strong>.</p>
+</div>
+<p>Make sure that adding r does not push the answer over the limit. If it does, use the previous multiple.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)" aria-expanded="true" aria-controls="section-5">
+                <span class="section-number">5️⃣</span>
+                <span class="section-title">Case 5: Unrelated Remainders and Counting</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-5">
+                <div class="content-box">
+<p>When the remainders have no common pattern, build the number one condition at a time.</p>
+<div class="case-study">
+<h4>Worked example 6: remainder 2 on 5, remainder 3 on 7</h4>
+<p>Numbers leaving remainder 2 on division by 5 are 2, 7, 12, 17, … Test each against 7: 17 = 7 × 2 + 3 works. The least answer is <strong>17</strong>, and the rest are 17 + 35k.</p>
+</div>
+<p>To count how many numbers in a range qualify, count the values of k for which LCM × k + r falls inside it.</p>
+<div class="case-study">
+<h4>Worked example 7: how many three-digit numbers?</h4>
+<p>Three-digit numbers leaving remainder 1 when divided by 4, 5 and 6 have the form 60k + 1. The first is 121 (k = 2) and the last 961 (k = 16), so there are <strong>15</strong>.</p>
+</div>
+<p><strong>Common traps:</strong> adding r in Case 2 instead of subtracting k; forgetting that the answer must exceed the divisors; and choosing a non-least option such as 2 × LCM + r. For greatest-divisor questions (HCF of differences), see <a href="hcf-and-lcm-word-problems.html">HCF and LCM word problems</a>, and for remainders of large powers see <a href="remainder-problems.html">remainder problems</a>.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)" aria-expanded="true" aria-controls="section-6">
+                <span class="section-number">6️⃣</span>
+                <span class="section-title">Practice Questions (5)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-6">
+                <div class="content-box">
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q1.</strong> What is the least number that leaves remainder 7 when divided by 9, 12 and 15? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q1" value="a"> (a) 180</label>
+                            <label><input type="radio" name="q1" value="b"> (b) 187</label>
+                            <label><input type="radio" name="q1" value="c"> (c) 173</label>
+                            <label><input type="radio" name="q1" value="d"> (d) 367</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q1">
+                            <p><strong>✅ Answer:</strong> (b) 187</p>
+                            <p><strong>💡 Explanation:</strong> LCM(9, 12, 15) = 180, so the number is 180 + 7 = 187. 367 also works but is not the least.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q1')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q2.</strong> What is the least number that leaves remainders 5, 7 and 9 when divided by 6, 8 and 10? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q2" value="a"> (a) 119</label>
+                            <label><input type="radio" name="q2" value="b"> (b) 121</label>
+                            <label><input type="radio" name="q2" value="c"> (c) 239</label>
+                            <label><input type="radio" name="q2" value="d"> (d) 115</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q2">
+                            <p><strong>✅ Answer:</strong> (a) 119</p>
+                            <p><strong>💡 Explanation:</strong> Each remainder is 1 less than its divisor, so the number is 1 short of a common multiple: LCM(6, 8, 10) − 1 = 120 − 1 = 119.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q2')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q3.</strong> What is the greatest three-digit number that leaves remainder 2 when divided by 6, 8 and 10? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q3" value="a"> (a) 998</label>
+                            <label><input type="radio" name="q3" value="b"> (b) 842</label>
+                            <label><input type="radio" name="q3" value="c"> (c) 960</label>
+                            <label><input type="radio" name="q3" value="d"> (d) 962</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q3">
+                            <p><strong>✅ Answer:</strong> (d) 962</p>
+                            <p><strong>💡 Explanation:</strong> LCM = 120. The largest multiple of 120 below 1,000 is 960, so the number is 960 + 2 = 962.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q3')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q4.</strong> What is the least number that leaves remainder 3 when divided by 5, 6 and 8, and is exactly divisible by 9? <span class="badge badge-secondary">hard</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q4" value="a"> (a) 363</label>
+                            <label><input type="radio" name="q4" value="b"> (b) 123</label>
+                            <label><input type="radio" name="q4" value="c"> (c) 243</label>
+                            <label><input type="radio" name="q4" value="d"> (d) 483</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q4">
+                            <p><strong>✅ Answer:</strong> (c) 243</p>
+                            <p><strong>💡 Explanation:</strong> The number has the form 120k + 3. Try k = 1, 2, … : 123 is not divisible by 9, but 243 = 9 × 27 is.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q4')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q5.</strong> How many three-digit numbers below 500 leave remainder 4 when divided by both 6 and 8? <span class="badge badge-secondary">hard</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q5" value="a"> (a) 16</label>
+                            <label><input type="radio" name="q5" value="b"> (b) 18</label>
+                            <label><input type="radio" name="q5" value="c"> (c) 15</label>
+                            <label><input type="radio" name="q5" value="d"> (d) 17</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q5">
+                            <p><strong>✅ Answer:</strong> (d) 17</p>
+                            <p><strong>💡 Explanation:</strong> Such numbers are 24k + 4. In 100 to 499 they run from 100 (k = 4) to 484 (k = 20), which is 17 numbers.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q5')">Show Answer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)" aria-expanded="true" aria-controls="section-7">
+                <span class="section-number">7️⃣</span>
+                <span class="section-title">Frequently Asked Questions</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-7">
+                <div class="content-box">
+                    <h3>Why is the answer LCM + r and not just r?</h3>
+                    <p>The number r itself leaves remainder r when divided by any larger number, so it technically fits. Exam questions intend a number larger than the divisors, and the first such number is LCM + r. If an option equals r, read the question again.</p>
+                    <h3>What if the remainders follow no pattern?</h3>
+                    <p>Solve one condition at a time. List numbers meeting the condition with the largest divisor, and pick the first that meets the next condition. Then every later answer differs by the LCM of the divisors.</p>
+                    <h3>Can the remainder be larger than a divisor?</h3>
+                    <p>No. A remainder must be smaller than its divisor, so remainder 5 is impossible for division by 4. If a question seems to need it, it is badly framed.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="8">
+            <button class="section-header" onclick="toggleSection(8)" aria-expanded="true" aria-controls="section-8">
+                <span class="section-number">8️⃣</span>
+                <span class="section-title">Sources and Review</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-8">
+                <div class="content-box">
+                    <p>All problems and solutions on this page are original. No outside facts are relied on; every numeric answer is recomputed by software before publishing.</p>
+                    <div class="highlight-box">
+                        <p><strong>How this page was prepared.</strong> Drafted with AI assistance (Claude (Anthropic AI model)) from the sources listed above. 14 calculations on this page were recomputed by software and matched. Automated checks also covered structure, internal links and duplicate text. Software checks cannot confirm facts. </p>
+                        <p>Found an error? <a href="../../contact.html">Report it</a> and we will correct the page.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="9">
+            <button class="section-header" onclick="toggleSection(9)" aria-expanded="true" aria-controls="section-9">
+                <span class="section-number">9️⃣</span>
+                <span class="section-title">Related Pages</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-9">
+                <div class="content-box">
+                    <ul class="bullet-list">
+                        <li><a href="../../repeated-questions/quant-cheat-code.html">Quant Cheat Code: 20 Must-Know Shortcuts &amp; Formulas</a></li>
+                        <li><a href="divisibility-rules.html">Divisibility Rules from 2 to 19 with Examples</a></li>
+                        <li><a href="hcf-and-lcm-word-problems.html">HCF and LCM Word Problems: When to Use Which</a></li>
+                        <li><a href="unit-digit-of-powers.html">Unit Digit of Powers: Cyclicity Method</a></li>
+                        <li><a href="remainder-problems.html">Remainder Problems: Negative Remainders and Cyclicity</a></li>
+                        <li><a href="number-of-factors.html">Number of Factors, Sum of Factors and Even Factors</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="page-navigation">
+            <a href="area-perimeter-2d-formulas.html" class="nav-btn">← Area and Perimeter Formulas for All 2D Shapes: Square to Sector, with One Worked Use Each</a>
+            <a href="index.html" class="nav-btn">Quantitative Aptitude →</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>Subject: Quantitative Aptitude | Sources are listed on this page. <a href="../../contact.html">Report an error</a>.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>
