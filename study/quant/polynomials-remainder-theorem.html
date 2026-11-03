@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remainder and Factor Theorem for Polynomials | AspirantDaily</title>
+    <meta name="description" content="The remainder theorem for polynomials: the remainder on dividing p(x) by (x − a) is p(a). Factor theorem, unknown coefficients, (ax − b) divisors and shortcuts.">
+    <meta name="keywords" content="remainder theorem polynomial, factor theorem, remainder when polynomial is divided, find k if polynomial divisible, remainder theorem questions, sum of coefficients of polynomial">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.aspirantdaily.com/study/quant/polynomials-remainder-theorem.html">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.aspirantdaily.com/study/quant/polynomials-remainder-theorem.html">
+    <meta property="og:title" content="Remainder and Factor Theorem for Polynomials | AspirantDaily">
+    <meta property="og:description" content="The remainder theorem for polynomials: the remainder on dividing p(x) by (x − a) is p(a). Factor theorem, unknown coefficients, (ax − b) divisors and shortcuts.">
+    <meta property="og:image" content="https://www.aspirantdaily.com/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Remainder Theorem for Polynomials: Put x = a, Find the Remainder, Test Factors and Find Unknown Coefficients",
+  "description": "The remainder theorem for polynomials: the remainder on dividing p(x) by (x − a) is p(a). Factor theorem, unknown coefficients, (ax − b) divisors and shortcuts.",
+  "image": "https://www.aspirantdaily.com/og-image.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "url": "https://www.aspirantdaily.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.aspirantdaily.com/icons/icon-512.png"
+    }
+  },
+  "datePublished": "2026-11-03",
+  "dateModified": "2026-11-03",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.aspirantdaily.com/study/quant/polynomials-remainder-theorem.html"
+  },
+  "articleSection": "Quantitative Aptitude",
+  "citation": []
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.aspirantdaily.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Study Notes",
+      "item": "https://www.aspirantdaily.com/study/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Quantitative Aptitude",
+      "item": "https://www.aspirantdaily.com/study/quant/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Remainder Theorem for Polynomials: Put x = a, Find the Remainder, Test Factors and Find Unknown Coefficients",
+      "item": "https://www.aspirantdaily.com/study/quant/polynomials-remainder-theorem.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why does putting x = a give the remainder?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Any division can be written p(x) = (x − a) × q(x) + r, where the remainder r is a constant. Putting x = a makes the first term zero, leaving p(a) = r."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What value do I put for a divisor like 2x + 3?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Set the divisor to zero and solve: 2x + 3 = 0 gives x = −3/2. The remainder is p(−3/2)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if the divisor is a quadratic?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Then the remainder can be a linear expression ax + b, not a single number. Use the two roots of the quadratic to get two equations for a and b."
+      }
+    }
+  ]
+}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css?v=2">
+    <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-51XLJE4TVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-51XLJE4TVH');
+  </script>
+  <script>/* AdSense only on the production host (not localhost or preview deployments) */(function(){if(location.hostname!=="www.aspirantdaily.com")return;var a=document.createElement("script");a.async=true;a.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327";a.crossOrigin="anonymous";document.head.appendChild(a);var b=document.createElement("script");b.src="/ads.js";document.head.appendChild(b);})();</script>
+</head>
+<body class="study-page subject-quant">
+    <nav class="study-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Quantitative Aptitude</a>
+            <div class="nav-controls">
+                <button onclick="toggleAllSections()" class="btn-secondary">Expand/Collapse All</button>
+                <button onclick="window.print()" class="btn-primary">📄 Print/Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> / <a href="../index.html">Study Notes</a> / <a href="index.html">Quantitative Aptitude</a> / <span>Remainder Theorem for Polynomials: Put x = a, Find the Remainder, Test Factors and Find Unknown Coefficients</span>
+            </div>
+            <h1>Remainder Theorem for Polynomials: Put x = a, Find the Remainder, Test Factors and Find Unknown Coefficients</h1>
+            <p class="page-subtitle">Remainder = p(a) • Dividing by x + a • Dividing by ax − b • Factor theorem: p(a) = 0 • Finding an unknown coefficient • Sum of coefficients = p(1)</p>
+            <div class="page-meta">
+                <span class="badge badge-secondary">SSC</span>
+                <span class="badge badge-secondary">📅 Last updated: 2026-11-03</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="study-section collapsible" data-section="1">
+            <button class="section-header" onclick="toggleSection(1)" aria-expanded="true" aria-controls="section-1">
+                <span class="section-number">1️⃣</span>
+                <span class="section-title">The Theorem</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-1">
+                <div class="content-box">
+<p>When a polynomial p(x) is divided by (x − a), the remainder is simply p(a). There is no need for long division.</p>
+<div class="highlight-box"><p><strong>Remainder when p(x) ÷ (x − a) = p(a)</strong></p></div>
+<p>The reason is short. Every division can be written as p(x) = (x − a) × q(x) + r, where r is a constant. Putting x = a makes (x − a) zero, so p(a) = r. That one line is the whole remainder theorem for polynomials.</p>
+<div class="case-study">
+<h4>Worked example 1: divide by (x − 2)</h4>
+<p>p(x) = x³ − 2x² + 4x − 5. Put x = 2: 8 − 8 + 8 − 5 = <strong>3</strong>.</p>
+</div>
+<p>For a divisor (x + a), set it to zero: x = −a. Signs are where most mistakes happen, so write the substitution out in brackets.</p>
+<div class="case-study">
+<h4>Worked example 2: divide by (x + 1)</h4>
+<p>Same p(x). Put x = −1: (−1)³ − 2(−1)² + 4(−1) − 5 = −1 − 2 − 4 − 5 = <strong>−12</strong>.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 3: a fourth-degree polynomial</h4>
+<p>x⁴ + x³ − 2x² + x + 1 divided by (x + 2). Put x = −2: 16 − 8 − 8 − 2 + 1 = <strong>−1</strong>. Even powers of a negative number are positive; odd powers keep the minus sign.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="2">
+            <button class="section-header" onclick="toggleSection(2)" aria-expanded="true" aria-controls="section-2">
+                <span class="section-number">2️⃣</span>
+                <span class="section-title">Divisors Like 2x − 1</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-2">
+                <div class="content-box">
+<p>For a divisor (ax − b), the value to substitute is the root of the divisor, x = b/a.</p>
+<div class="case-study">
+<h4>Worked example 4: divide by (2x − 1)</h4>
+<p>p(x) = 4x³ − 2x + 7. Put x = 1/2: 4 × 1/8 − 1 + 7 = 0.5 − 1 + 7 = <strong>6.5</strong>.</p>
+</div>
+<p>Working in fractions such as 1/2, 1/8 and 1/4 keeps the arithmetic exact. Decimals work too, as long as you do not round.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="3">
+            <button class="section-header" onclick="toggleSection(3)" aria-expanded="true" aria-controls="section-3">
+                <span class="section-number">3️⃣</span>
+                <span class="section-title">The Factor Theorem</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-3">
+                <div class="content-box">
+<p>If the remainder is zero, the divisor divides the polynomial exactly. So:</p>
+<div class="highlight-box"><p><strong>(x − a) is a factor of p(x) if and only if p(a) = 0</strong></p></div>
+<div class="case-study">
+<h4>Worked example 5: is (x − 1) a factor of x³ − 6x² + 11x − 6?</h4>
+<p>p(1) = 1 − 6 + 11 − 6 = <strong>0</strong>, so yes.</p>
+</div>
+<p>A quick test for (x − 1): it is a factor exactly when the coefficients add up to zero, because p(1) is the sum of the coefficients. For (x + 1), compare the sum of the even-power coefficients with the sum of the odd-power ones.</p>
+<div class="case-study">
+<h4>Worked example 6: the other factors</h4>
+<p>Dividing out (x − 1) leaves x² − 5x + 6 = (x − 2)(x − 3). Checking p(2) = 0 and p(3) = 0 confirms all three roots, 1, 2 and 3, whose product is <strong>6</strong>, matching the constant term's size.</p>
+</div>
+<p>For integer roots, try only the divisors of the constant term. Here the candidates were ±1, ±2, ±3 and ±6, which is a short list to test.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)" aria-expanded="true" aria-controls="section-4">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">Finding an Unknown Coefficient</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
+                <div class="content-box">
+<p>If a question says the polynomial is divisible by (x − a), or leaves a given remainder, set p(a) equal to that value and solve for the unknown.</p>
+<div class="case-study">
+<h4>Worked example 7: 2x³ + kx² − 5x + 2 divisible by (x − 2)</h4>
+<p>p(2) = 16 + 4k − 10 + 2 = 8 + 4k = 0, so k = <strong>−2</strong>.</p>
+</div>
+<p>With two unknowns, the question will give two conditions. Each condition is one equation, and the pair is solved as in <a href="linear-equations-word-problems.html">linear equations</a>.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)" aria-expanded="true" aria-controls="section-5">
+                <span class="section-number">5️⃣</span>
+                <span class="section-title">Sum of Coefficients</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-5">
+                <div class="content-box">
+<p>Putting x = 1 into any polynomial adds up its coefficients. This answers "sum of the coefficients" questions without expanding anything.</p>
+<div class="case-study">
+<h4>Worked example 8: (3x − 2)⁵</h4>
+<p>The sum of the coefficients is (3 − 2)⁵ = <strong>1</strong>. Expanding the bracket would take far longer.</p>
+</div>
+<p>In the same way, putting x = 0 gives the constant term: for (3x − 2)⁵ it is (−2)⁵ = −32. Putting x = −1 gives the alternating sum of the coefficients, which is how the (x + 1) factor test works.</p>
+<p>For identities used in these expansions, see <a href="algebraic-identities.html">algebraic identities</a>.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)" aria-expanded="true" aria-controls="section-6">
+                <span class="section-number">6️⃣</span>
+                <span class="section-title">Common Traps</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-6">
+                <div class="content-box">
+<ul>
+<li><strong>Using x = a for a divisor (x + a).</strong> Substitute x = −a.</li>
+<li><strong>Losing signs with negative powers.</strong> (−2)³ = −8 but (−2)⁴ = +16.</li>
+<li><strong>Using x = b for a divisor (ax − b).</strong> Substitute x = b/a.</li>
+<li><strong>Forgetting the constant term.</strong> It is part of p(a).</li>
+<li><strong>Expecting a number when dividing by a quadratic.</strong> The remainder can then be linear.</li>
+</ul>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)" aria-expanded="true" aria-controls="section-7">
+                <span class="section-number">7️⃣</span>
+                <span class="section-title">Practice Questions (5)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-7">
+                <div class="content-box">
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q1.</strong> What is the remainder when x³ + 3x² − 5x + 4 is divided by (x − 1)? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q1" value="a"> (a) 4</label>
+                            <label><input type="radio" name="q1" value="b"> (b) 5</label>
+                            <label><input type="radio" name="q1" value="c"> (c) 1</label>
+                            <label><input type="radio" name="q1" value="d"> (d) 3</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q1">
+                            <p><strong>✅ Answer:</strong> (d) 3</p>
+                            <p><strong>💡 Explanation:</strong> Put x = 1: 1 + 3 − 5 + 4 = 3.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q1')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q2.</strong> What is the remainder when 2x³ − x² + 3x − 1 is divided by (x + 1)? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q2" value="a"> (a) 7</label>
+                            <label><input type="radio" name="q2" value="b"> (b) −7</label>
+                            <label><input type="radio" name="q2" value="c"> (c) −5</label>
+                            <label><input type="radio" name="q2" value="d"> (d) 1</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q2">
+                            <p><strong>✅ Answer:</strong> (b) −7</p>
+                            <p><strong>💡 Explanation:</strong> Put x = −1: −2 − 1 − 3 − 1 = −7. Dividing by x + 1 means putting x = −1, not x = 1.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q2')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q3.</strong> For what value of k is x³ − kx + 6 divisible by (x − 3)? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q3" value="a"> (a) 11</label>
+                            <label><input type="radio" name="q3" value="b"> (b) 9</label>
+                            <label><input type="radio" name="q3" value="c"> (c) 12</label>
+                            <label><input type="radio" name="q3" value="d"> (d) 3</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q3">
+                            <p><strong>✅ Answer:</strong> (a) 11</p>
+                            <p><strong>💡 Explanation:</strong> By the factor theorem, p(3) = 0: 27 − 3k + 6 = 0, so k = 11.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q3')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q4.</strong> What is the remainder when 8x³ − 4x² + 2x − 1 is divided by (2x − 1)? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q4" value="a"> (a) 1</label>
+                            <label><input type="radio" name="q4" value="b"> (b) −1</label>
+                            <label><input type="radio" name="q4" value="c"> (c) 0</label>
+                            <label><input type="radio" name="q4" value="d"> (d) 2</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q4">
+                            <p><strong>✅ Answer:</strong> (c) 0</p>
+                            <p><strong>💡 Explanation:</strong> Put x = 1/2: 1 − 1 + 1 − 1 = 0. So 2x − 1 is in fact a factor.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q4')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q5.</strong> Which of these is a factor of x³ − 7x + 6? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q5" value="a"> (a) x − 1</label>
+                            <label><input type="radio" name="q5" value="b"> (b) x + 1</label>
+                            <label><input type="radio" name="q5" value="c"> (c) x − 3</label>
+                            <label><input type="radio" name="q5" value="d"> (d) x + 2</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q5">
+                            <p><strong>✅ Answer:</strong> (a) x − 1</p>
+                            <p><strong>💡 Explanation:</strong> p(1) = 1 − 7 + 6 = 0, so x − 1 is a factor. p(−1), p(3) and p(−2) all equal 12, not 0.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q5')">Show Answer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="8">
+            <button class="section-header" onclick="toggleSection(8)" aria-expanded="true" aria-controls="section-8">
+                <span class="section-number">8️⃣</span>
+                <span class="section-title">Frequently Asked Questions</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-8">
+                <div class="content-box">
+                    <h3>Why does putting x = a give the remainder?</h3>
+                    <p>Any division can be written p(x) = (x − a) × q(x) + r, where the remainder r is a constant. Putting x = a makes the first term zero, leaving p(a) = r.</p>
+                    <h3>What value do I put for a divisor like 2x + 3?</h3>
+                    <p>Set the divisor to zero and solve: 2x + 3 = 0 gives x = −3/2. The remainder is p(−3/2).</p>
+                    <h3>What if the divisor is a quadratic?</h3>
+                    <p>Then the remainder can be a linear expression ax + b, not a single number. Use the two roots of the quadratic to get two equations for a and b.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="9">
+            <button class="section-header" onclick="toggleSection(9)" aria-expanded="true" aria-controls="section-9">
+                <span class="section-number">9️⃣</span>
+                <span class="section-title">Sources and Review</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-9">
+                <div class="content-box">
+                    <p>All problems and solutions on this page are original. No outside facts are relied on; every numeric answer is recomputed by software before publishing.</p>
+                    <div class="highlight-box">
+                        <p><strong>How this page was prepared.</strong> Drafted with AI assistance (Claude (Anthropic AI model)) from the sources listed above. 13 calculations on this page were recomputed by software and matched. Automated checks also covered structure, internal links and duplicate text. Software checks cannot confirm facts. </p>
+                        <p>Found an error? <a href="../../contact.html">Report it</a> and we will correct the page.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="10">
+            <button class="section-header" onclick="toggleSection(10)" aria-expanded="true" aria-controls="section-10">
+                <span class="section-number">🔟</span>
+                <span class="section-title">Related Pages</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-10">
+                <div class="content-box">
+                    <ul class="bullet-list">
+                        <li><a href="../../repeated-questions/quant-cheat-code.html">Quant Cheat Code: 20 Must-Know Shortcuts &amp; Formulas</a></li>
+                        <li><a href="algebraic-identities.html">Algebraic Identities for SSC: List and Uses</a></li>
+                        <li><a href="x-plus-1-by-x-problems.html">x + 1/x Problems: Finding x² + 1/x² and x³ + 1/x³</a></li>
+                        <li><a href="linear-equations-word-problems.html">Linear Equations: Two-Variable Word Problems</a></li>
+                        <li><a href="quadratic-equations-bank-exams.html">Quadratic Equations for Bank Exams: Comparing x and y</a></li>
+                        <li><a href="arithmetic-geometric-progression.html">AP and GP: nth Term and Sum Formulas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="page-navigation">
+            <a href="logarithm-rules.html" class="nav-btn">← Logarithm Rules for Exams: Product, Quotient, Power, Change of Base, Using log 2 and log 3, and Counting Digits</a>
+            <a href="index.html" class="nav-btn">↑ Quantitative Aptitude</a>
+            <a href="discount-and-tax-gst-problems.html" class="nav-btn">GST Profit and Loss Problems: Discount Then Tax, Price Before Tax, the Discount Hidden in a Bill, and Profit →</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>Subject: Quantitative Aptitude | Sources are listed on this page. <a href="../../contact.html">Report an error</a>.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>
