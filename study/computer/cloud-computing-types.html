@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Computing: IaaS, PaaS, SaaS and Deployment Models</title>
+    <meta name="description" content="IaaS, PaaS, SaaS examples from NCERT, with NIST&#x27;s public, private, community and hybrid cloud, the five essential characteristics, grid computing and MeghRaj.">
+    <meta name="keywords" content="iaas paas saas examples, cloud computing service models, types of cloud deployment, public private hybrid community cloud, nist cloud definition, cloud vs grid computing, meghraj gi cloud">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.aspirantdaily.com/study/computer/cloud-computing-types.html">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.aspirantdaily.com/study/computer/cloud-computing-types.html">
+    <meta property="og:title" content="Cloud Computing: IaaS, PaaS, SaaS and Deployment Models">
+    <meta property="og:description" content="IaaS, PaaS, SaaS examples from NCERT, with NIST&#x27;s public, private, community and hybrid cloud, the five essential characteristics, grid computing and MeghRaj.">
+    <meta property="og:image" content="https://www.aspirantdaily.com/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Cloud Computing: IaaS, PaaS and SaaS With Examples, the Four Deployment Models, Five Characteristics, and Cloud vs Grid",
+  "description": "IaaS, PaaS, SaaS examples from NCERT, with NIST's public, private, community and hybrid cloud, the five essential characteristics, grid computing and MeghRaj.",
+  "image": "https://www.aspirantdaily.com/og-image.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "url": "https://www.aspirantdaily.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.aspirantdaily.com/icons/icon-512.png"
+    }
+  },
+  "datePublished": "2026-11-04",
+  "dateModified": "2026-11-04",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.aspirantdaily.com/study/computer/cloud-computing-types.html"
+  },
+  "articleSection": "Computer Awareness",
+  "citation": [
+    "https://ncert.nic.in/textbook/pdf/keip102.pdf",
+    "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf"
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.aspirantdaily.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Study Notes",
+      "item": "https://www.aspirantdaily.com/study/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Computer Awareness",
+      "item": "https://www.aspirantdaily.com/study/computer/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Cloud Computing: IaaS, PaaS and SaaS With Examples, the Four Deployment Models, Five Characteristics, and Cloud vs Grid",
+      "item": "https://www.aspirantdaily.com/study/computer/cloud-computing-types.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the easiest way to remember IaaS, PaaS and SaaS?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ask what you still manage yourself. In IaaS you manage the operating system and everything above it. In PaaS you manage only your application. In SaaS you manage nothing but your own use of the software."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is cloud storage like Google Drive IaaS or SaaS?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For an ordinary user it is SaaS, because you use a finished application through a browser or app. NCERT lists Dropbox, a similar storage service, among its SaaS examples."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is grid computing different from cloud computing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A cloud provider rents services to many users. A grid links many computers so they can work together as one virtual supercomputer on a single large task."
+      }
+    }
+  ]
+}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css?v=2">
+    <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-51XLJE4TVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-51XLJE4TVH');
+  </script>
+  <script>/* AdSense only on the production host (not localhost or preview deployments) */(function(){if(location.hostname!=="www.aspirantdaily.com")return;var a=document.createElement("script");a.async=true;a.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327";a.crossOrigin="anonymous";document.head.appendChild(a);var b=document.createElement("script");b.src="/ads.js";document.head.appendChild(b);})();</script>
+</head>
+<body class="study-page subject-computer">
+    <nav class="study-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Computer Awareness</a>
+            <div class="nav-controls">
+                <button onclick="toggleAllSections()" class="btn-secondary">Expand/Collapse All</button>
+                <button onclick="window.print()" class="btn-primary">📄 Print/Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> / <a href="../index.html">Study Notes</a> / <a href="index.html">Computer Awareness</a> / <span>Cloud Computing: IaaS, PaaS and SaaS With Examples, the Four Deployment Models, Five Characteristics, and Cloud vs Grid</span>
+            </div>
+            <h1>Cloud Computing: IaaS, PaaS and SaaS With Examples, the Four Deployment Models, Five Characteristics, and Cloud vs Grid</h1>
+            <p class="page-subtitle">Services over the Internet, pay per use • IaaS: infrastructure • PaaS: a platform to deploy apps • SaaS: ready software • Public, private, community, hybrid • Five NIST characteristics • Cloud vs grid</p>
+            <div class="page-meta">
+                <span class="badge badge-secondary">SSC</span>
+                <span class="badge badge-secondary">Banking</span>
+                <span class="badge badge-secondary">📅 Last updated: 2026-11-04</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="study-section collapsible" data-section="1">
+            <button class="section-header" onclick="toggleSection(1)" aria-expanded="true" aria-controls="section-1">
+                <span class="section-number">1️⃣</span>
+                <span class="section-title">What Cloud Computing Means</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-1">
+                <div class="content-box">
+<p>In <strong>cloud computing</strong>, computer services are delivered over the Internet instead of running on your own machine. NCERT lists what can be delivered: software, hardware such as servers, databases and storage. Companies called <strong>cloud service providers</strong> supply these resources and usually charge <strong>per use</strong>, much as we pay for electricity by the unit.</p>
+<p>You already use the cloud if you back up photos online or host a website. The main benefit is that a user can run a big application or process a lot of data without owning the storage or processing power, as long as there is an Internet connection.</p>
+<p>The US standards body NIST gives the definition most textbooks follow. Its model has <strong>five essential characteristics</strong>, <strong>three service models</strong> and <strong>four deployment models</strong>. Exams ask about all three groups, so this page covers each.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="2">
+            <button class="section-header" onclick="toggleSection(2)" aria-expanded="true" aria-controls="section-2">
+                <span class="section-number">2️⃣</span>
+                <span class="section-title">IaaS, PaaS and SaaS With Examples</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-2">
+                <div class="content-box">
+<p>NCERT suggests thinking of the cloud as "everything as a service". The three standard service models differ in how much the provider manages for you.</p>
+<div class="table-wrap"><table class="data-table">
+<thead><tr><th>Model</th><th>What you get</th><th>What you still control</th><th>Example in NCERT</th></tr></thead>
+<tbody>
+<tr><td>IaaS (Infrastructure as a Service)</td><td>Servers, virtual machines, storage and backup, network parts, operating systems</td><td>The operating system, storage and the applications you deploy</td><td>Renting remote hardware to configure and run your own software</td></tr>
+<tr><td>PaaS (Platform as a Service)</td><td>A ready environment to develop, test and deliver applications</td><td>Your deployed application and its settings</td><td>A pre-configured Apache server with MySQL and Python installed</td></tr>
+<tr><td>SaaS (Software as a Service)</td><td>Finished application software, usually by licence or subscription</td><td>Only limited settings inside the application</td><td>Google Docs, Microsoft Office 365, Dropbox</td></tr>
+</tbody></table></div>
+<p>A useful way to place IaaS, PaaS and SaaS examples is to ask <em>who installs what</em>. With IaaS you get bare infrastructure and install the operating system and software yourself. With PaaS the platform is installed for you and you only upload your application. With SaaS there is nothing to install: you open the software and use it.</p>
+<p>In all three models the user pays as per usage. NCERT points out that this removes the need for a large investment upfront, which helps new or growing organisations.</p>
+<p>In India, the Government's cloud initiative, <strong>GI Cloud</strong>, is named <strong>MeghRaj</strong>. This name is a frequent one-line question in banking and SSC computer awareness papers.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="3">
+            <button class="section-header" onclick="toggleSection(3)" aria-expanded="true" aria-controls="section-3">
+                <span class="section-number">3️⃣</span>
+                <span class="section-title">The Four Deployment Models</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-3">
+                <div class="content-box">
+<p>Service models describe <em>what</em> you get. Deployment models describe <em>who</em> the cloud is for. NIST defines four:</p>
+<div class="table-wrap"><table class="data-table">
+<thead><tr><th>Deployment model</th><th>Who uses it</th><th>Where it can be</th></tr></thead>
+<tbody>
+<tr><td>Private cloud</td><td>One organization only, which may have several units</td><td>On or off the organization's premises</td></tr>
+<tr><td>Community cloud</td><td>A group of organizations with shared concerns, such as security or compliance needs</td><td>On or off premises</td></tr>
+<tr><td>Public cloud</td><td>Open use by the general public</td><td>On the cloud provider's premises</td></tr>
+<tr><td>Hybrid cloud</td><td>A combination of two or more of the above that stay distinct but are linked</td><td>Mixed</td></tr>
+</tbody></table></div>
+<p>A private cloud may be owned and run by the organization itself, by a third party, or by both. In a hybrid cloud, the separate clouds are bound together by technology that lets data and applications move between them. NIST's example is "cloud bursting", where extra load spills from one cloud to another.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)" aria-expanded="true" aria-controls="section-4">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">Five Essential Characteristics</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
+                <div class="content-box">
+<p>NIST says a service counts as cloud computing when it has these five features:</p>
+<ol>
+<li><strong>On-demand self-service:</strong> the user can get computing capacity, such as server time or storage, automatically, without asking a person at the provider.</li>
+<li><strong>Broad network access:</strong> the service is reached over the network from phones, tablets, laptops and workstations.</li>
+<li><strong>Resource pooling:</strong> the provider's resources serve many customers at once and are assigned according to demand. Customers usually do not know the exact location of their resources.</li>
+<li><strong>Rapid elasticity:</strong> capacity can grow or shrink quickly with demand, sometimes automatically. To the user it can seem unlimited.</li>
+<li><strong>Measured service:</strong> usage is metered, monitored and reported, which is what makes pay-per-use billing possible.</li>
+</ol>
+<p>A quick memory aid is the order of the list: self-service, network, pooling, elasticity, metering. A question that lists four of these and one unrelated term, such as "grid" or "blockchain", is asking you to spot the odd one out.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)" aria-expanded="true" aria-controls="section-5">
+                <span class="section-number">5️⃣</span>
+                <span class="section-title">Cloud vs Grid Computing</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-5">
+                <div class="content-box">
+<p>NCERT places <strong>grid computing</strong> next to the cloud because the two are often confused. A grid is a network of computers in different places, which may be of different kinds. Each computer is called a <strong>node</strong>. The nodes come together to solve one large task, acting like a <strong>virtual supercomputer</strong>.</p>
+<p>The cloud focuses on providing services to many users; a grid is application-specific. In IaaS a provider <em>rents</em> infrastructure to users, while in a grid many nodes <em>join</em> to solve a common problem. Grids come in two types: a <strong>data grid</strong>, which manages large distributed data, and a <strong>CPU or processor grid</strong>, which splits processing across nodes. Building a grid needs middleware; NCERT names the open-source <strong>Globus toolkit</strong>.</p>
+<p>For other emerging technologies in the same NCERT chapter, see <a href="artificial-intelligence-basics.html">AI and machine learning basics</a>. For the networks that carry cloud services, see <a href="computer-networks-lan-man-wan.html">types of computer network</a>.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)" aria-expanded="true" aria-controls="section-6">
+                <span class="section-number">6️⃣</span>
+                <span class="section-title">Practice Questions (5)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-6">
+                <div class="content-box">
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q1.</strong> Editing a document online in Google Docs or Microsoft Office 365 is an example of which cloud service model? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q1" value="a"> (a) IaaS</label>
+                            <label><input type="radio" name="q1" value="b"> (b) PaaS</label>
+                            <label><input type="radio" name="q1" value="c"> (c) SaaS</label>
+                            <label><input type="radio" name="q1" value="d"> (d) Grid computing</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q1">
+                            <p><strong>✅ Answer:</strong> (c) SaaS</p>
+                            <p><strong>💡 Explanation:</strong> These are ready-to-use applications delivered over the Internet, which NCERT gives as examples of Software as a Service.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q1')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q2.</strong> A developer rents a pre-configured server with MySQL and Python already installed and only uploads the application. Which service is this? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q2" value="a"> (a) PaaS</label>
+                            <label><input type="radio" name="q2" value="b"> (b) SaaS</label>
+                            <label><input type="radio" name="q2" value="c"> (c) IaaS</label>
+                            <label><input type="radio" name="q2" value="d"> (d) Community cloud</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q2">
+                            <p><strong>✅ Answer:</strong> (a) PaaS</p>
+                            <p><strong>💡 Explanation:</strong> PaaS gives a ready platform to deploy and run applications without setting up the infrastructure. This is NCERT&#x27;s own PaaS example.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q2')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q3.</strong> According to NIST, a cloud that is a composition of two or more distinct cloud infrastructures is a: <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q3" value="a"> (a) Public cloud</label>
+                            <label><input type="radio" name="q3" value="b"> (b) Private cloud</label>
+                            <label><input type="radio" name="q3" value="c"> (c) Community cloud</label>
+                            <label><input type="radio" name="q3" value="d"> (d) Hybrid cloud</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q3">
+                            <p><strong>✅ Answer:</strong> (d) Hybrid cloud</p>
+                            <p><strong>💡 Explanation:</strong> NIST defines a hybrid cloud as two or more distinct infrastructures (private, community or public) bound together by technology that allows data and application portability.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q3')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q4.</strong> Which of these is NOT one of NIST&#x27;s five essential characteristics of cloud computing? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q4" value="a"> (a) Rapid elasticity</label>
+                            <label><input type="radio" name="q4" value="b"> (b) Data grid</label>
+                            <label><input type="radio" name="q4" value="c"> (c) Resource pooling</label>
+                            <label><input type="radio" name="q4" value="d"> (d) Measured service</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q4">
+                            <p><strong>✅ Answer:</strong> (b) Data grid</p>
+                            <p><strong>💡 Explanation:</strong> The five characteristics are on-demand self-service, broad network access, resource pooling, rapid elasticity and measured service. A data grid is a type of grid computing.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q4')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q5.</strong> What is the Government of India&#x27;s cloud initiative called? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q5" value="a"> (a) DigiLocker</label>
+                            <label><input type="radio" name="q5" value="b"> (b) MeghRaj</label>
+                            <label><input type="radio" name="q5" value="c"> (c) Aadhaar</label>
+                            <label><input type="radio" name="q5" value="d"> (d) BharatNet</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q5">
+                            <p><strong>✅ Answer:</strong> (b) MeghRaj</p>
+                            <p><strong>💡 Explanation:</strong> NCERT notes that the GI Cloud initiative has been named MeghRaj.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q5')">Show Answer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)" aria-expanded="true" aria-controls="section-7">
+                <span class="section-number">7️⃣</span>
+                <span class="section-title">Frequently Asked Questions</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-7">
+                <div class="content-box">
+                    <h3>What is the easiest way to remember IaaS, PaaS and SaaS?</h3>
+                    <p>Ask what you still manage yourself. In IaaS you manage the operating system and everything above it. In PaaS you manage only your application. In SaaS you manage nothing but your own use of the software.</p>
+                    <h3>Is cloud storage like Google Drive IaaS or SaaS?</h3>
+                    <p>For an ordinary user it is SaaS, because you use a finished application through a browser or app. NCERT lists Dropbox, a similar storage service, among its SaaS examples.</p>
+                    <h3>How is grid computing different from cloud computing?</h3>
+                    <p>A cloud provider rents services to many users. A grid links many computers so they can work together as one virtual supercomputer on a single large task.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="8">
+            <button class="section-header" onclick="toggleSection(8)" aria-expanded="true" aria-controls="section-8">
+                <span class="section-number">8️⃣</span>
+                <span class="section-title">Sources and Review</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-8">
+                <div class="content-box">
+                    <ul class="bullet-list">
+                        <li><a href="https://ncert.nic.in/textbook/pdf/keip102.pdf" rel="noopener">Informatics Practices, Class XI, Chapter 2: Emerging Trends (Reprint 2026-27)</a>, NCERT (accessed 2026-11-04). Used for: cloud computing, IaaS, PaaS, SaaS with examples, MeghRaj and grid computing (printed pp. 23-26)..</li>
+                        <li><a href="https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf" rel="noopener">The NIST Definition of Cloud Computing, Special Publication 800-145 (2011)</a>, National Institute of Standards and Technology (accessed 2026-11-04). Used for: the definition, five essential characteristics, three service models and four deployment models (pp. 2-3)..</li>
+                    </ul>
+                    <div class="highlight-box">
+                        <p><strong>How this page was prepared.</strong> Drafted with AI assistance (Claude (Anthropic AI model)) from the sources listed above. Automated checks also covered structure, internal links and duplicate text. Software checks cannot confirm facts. </p>
+                        <p>Found an error? <a href="../../contact.html">Report it</a> and we will correct the page.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="9">
+            <button class="section-header" onclick="toggleSection(9)" aria-expanded="true" aria-controls="section-9">
+                <span class="section-number">9️⃣</span>
+                <span class="section-title">Related Pages</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-9">
+                <div class="content-box">
+                    <ul class="bullet-list">
+                        <li><a href="../science-tech/computer-and-it-fundamentals.html">💻 Computer &amp; IT Fundamentals</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="page-navigation">
+            <a href="cyber-security-terms.html" class="nav-btn">← Cyber Security Terms for Exams: Phishing (and Its Phone and SMS Forms), Hacking, DoS and DDoS, Snooping, Firewall, HTTPS and Cookies</a>
+            <a href="index.html" class="nav-btn">↑ Computer Awareness</a>
+            <a href="artificial-intelligence-basics.html" class="nav-btn">Difference Between AI and Machine Learning, With NLP, Virtual and Augmented Reality, Robotics and the Five Vs of Big Data →</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>Subject: Computer Awareness | Sources are listed on this page. <a href="../../contact.html">Report an error</a>.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>
