@@ -23,7 +23,7 @@
     "window_days": 28,
     "evaluate_after": "2026-11-20",
     "status": "running",
-    "confounders": "Pages changed on different days (20-23 Oct); impressions are very small (single digits per page), so only large changes are readable. Apex-to-www consolidation is still moving impressions between URLs.",
+    "confounders": "Pages changed on different days (20-23 Oct); impressions are very small (single digits per page), so only large changes are readable. Apex-to-www consolidation is still moving impressions between URLs. 2026-11-04 (owner-approved): breadcrumb structured data fixed on indian-space-policy, one-nation-one-election, semiconductor-mission-india (incomplete microdata copy removed; JSON-LD middle step now the section index). Breadcrumb display in results may change from that date.",
     "next_action": "Interim check weekly; decide after 2026-11-20.",
     "baseline": {
       "window": [
@@ -168,7 +168,7 @@
     "window_days": 28,
     "evaluate_after": "2026-11-20",
     "status": "running",
-    "confounders": "Separate from 2026-10-23-ca-fact-corrections (its baseline was already taken). Titles changed on two pages along with content. Very small impression counts.",
+    "confounders": "Separate from 2026-10-23-ca-fact-corrections (its baseline was already taken). Titles changed on two pages along with content. Very small impression counts. 2026-11-04 (owner-approved): breadcrumb structured data fixed on national-green-hydrogen-mission-india (incomplete microdata copy removed; JSON-LD middle step now the section index). Breadcrumb display in results may change from that date.",
     "next_action": "Weekly interim; decide after 2026-11-20.",
     "baseline": {
       "window": [
@@ -200,7 +200,7 @@
     "window_days": 28,
     "evaluate_after": "2026-11-20",
     "status": "running",
-    "confounders": "Descriptions and one title (deepfake) changed along with content. The start-up, UCC and budget pages are in the same commit as this entry. Very small impression counts per page.",
+    "confounders": "Descriptions and one title (deepfake) changed along with content. The start-up, UCC and budget pages are in the same commit as this entry. Very small impression counts per page. 2026-11-04 (owner-approved): breadcrumb structured data fixed on chandrayan-updates, digital-personal-data-protection-act, india-usa-partnership, uniform-civil-code-debate (incomplete microdata copy removed; JSON-LD middle step now the section index). Breadcrumb display in results may change from that date.",
     "next_action": "Weekly interim; decide after 2026-11-20.",
     "baseline": {
       "window": [
