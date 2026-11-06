@@ -193,9 +193,10 @@ class PipelineTests(unittest.TestCase):
         page = os.path.join(self.tmp, "study", "quant", GOOD_ID + ".html")
         state, topics = content_lib.load_state(), content_pipeline.topics_by_id()
         with open(os.path.join(self.tmp, "study", "quant", "other.html"), "w", encoding="utf-8") as fh:
-            fh.write("<html><h1>Other Page</h1></html>")
+            fh.write("<html><h1>Other Page: Euler&#x27;s Rule</h1></html>")
         nav = content_pipeline.series_nav(topics[GOOD_ID]["path"], None, "study/quant/other.html")
-        self.assertIn('href="other.html" class="nav-btn">Other Page →', nav)
+        # The h1 is already escaped, so it must not be escaped a second time.
+        self.assertIn('href="other.html" class="nav-btn">Other Page: Euler&#x27;s Rule →', nav)
         # A one-page series keeps the hub-only bar, and republishing finds nothing to change.
         self.assertEqual(content_pipeline.apply_series(state, topics, False), [])
         self.assertIn("same", run("publish", "--batch", "batch-001", "--no-site-checks")[1])

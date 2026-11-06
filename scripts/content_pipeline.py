@@ -22,6 +22,7 @@ draft). No paid API is called by this script.
 """
 import argparse
 import csv
+import html
 import json
 import os
 import re
@@ -222,7 +223,8 @@ def related_for(pid, topics, state):
 
 def title_of(path):
     m = re.search(r"<h1[^>]*>(.*?)</h1>", read(os.path.join(ROOT, path)), re.S)
-    return re.sub(r"<[^>]+>|\s+", " ", m.group(1)).strip() if m else path
+    # The h1 is already escaped HTML; unescape so callers can esc() it once.
+    return html.unescape(re.sub(r"<[^>]+>|\s+", " ", m.group(1)).strip()) if m else path
 
 
 def cmd_render(args):
