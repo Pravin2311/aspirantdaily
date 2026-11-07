@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parts of CPU: ALU, Control Unit, Registers, Buses</title>
+    <meta name="description" content="Parts of CPU from NCERT: ALU, control unit, registers, fetch-decode-execute, data, address and control buses, cache, microprocessor generations, microcontrollers.">
+    <meta name="keywords" content="parts of cpu, components of cpu, alu and control unit, functions of control unit, types of bus in computer, microprocessor vs microcontroller">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.aspirantdaily.com/study/computer/cpu-components.html">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.aspirantdaily.com/study/computer/cpu-components.html">
+    <meta property="og:title" content="Parts of CPU: ALU, Control Unit, Registers, Buses">
+    <meta property="og:description" content="Parts of CPU from NCERT: ALU, control unit, registers, fetch-decode-execute, data, address and control buses, cache, microprocessor generations, microcontrollers.">
+    <meta property="og:image" content="https://www.aspirantdaily.com/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "CPU Components: ALU, Control Unit and Registers, the Machine Cycle, System Bus and Microprocessor Generations",
+  "description": "Parts of CPU from NCERT: ALU, control unit, registers, fetch-decode-execute, data, address and control buses, cache, microprocessor generations, microcontrollers.",
+  "image": "https://www.aspirantdaily.com/og-image.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "url": "https://www.aspirantdaily.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.aspirantdaily.com/icons/icon-512.png"
+    }
+  },
+  "datePublished": "2026-11-07",
+  "dateModified": "2026-11-07",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.aspirantdaily.com/study/computer/cpu-components.html"
+  },
+  "articleSection": "Computer Awareness",
+  "citation": [
+    "https://ncert.nic.in/textbook/pdf/kecs101.pdf"
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.aspirantdaily.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Study Notes",
+      "item": "https://www.aspirantdaily.com/study/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Computer Awareness",
+      "item": "https://www.aspirantdaily.com/study/computer/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "CPU Components: ALU, Control Unit and Registers, the Machine Cycle, System Bus and Microprocessor Generations",
+      "item": "https://www.aspirantdaily.com/study/computer/cpu-components.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What are the main parts of a CPU?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "NCERT names the Arithmetic Logic Unit, the Control Unit and the registers. The ALU calculates, the CU directs execution and data flow, and registers hold working data."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between a microprocessor and a microcontroller?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A microprocessor has only the CPU on its chip. A microcontroller embeds a CPU, RAM, ROM and peripherals on one chip for a specific task, like a washing machine."
+      }
+    }
+  ]
+}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css?v=2">
+    <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-51XLJE4TVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-51XLJE4TVH');
+  </script>
+  <script>/* AdSense only on the production host (not localhost or preview deployments) */(function(){if(location.hostname!=="www.aspirantdaily.com")return;var a=document.createElement("script");a.async=true;a.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327";a.crossOrigin="anonymous";document.head.appendChild(a);var b=document.createElement("script");b.src="/ads.js";document.head.appendChild(b);})();</script>
+</head>
+<body class="study-page subject-computer">
+    <nav class="study-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Computer Awareness</a>
+            <div class="nav-controls">
+                <button onclick="toggleAllSections()" class="btn-secondary">Expand/Collapse All</button>
+                <button onclick="window.print()" class="btn-primary">📄 Print/Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> / <a href="../index.html">Study Notes</a> / <a href="index.html">Computer Awareness</a> / <span>CPU Components: ALU, Control Unit and Registers, the Machine Cycle, System Bus and Microprocessor Generations</span>
+            </div>
+            <h1>CPU Components: ALU, Control Unit and Registers, the Machine Cycle, System Bus and Microprocessor Generations</h1>
+            <p class="page-subtitle">ALU vs CU vs registers • Fetch-decode-execute • Data, address, control bus • Cache • Five microprocessor generations • Microcontrollers</p>
+            <div class="page-meta">
+                <span class="badge badge-secondary">SSC</span>
+                <span class="badge badge-secondary">Banking</span>
+                <span class="badge badge-secondary">Railways</span>
+                <span class="badge badge-secondary">📅 Last updated: 2026-11-07</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="study-section collapsible" data-section="1">
+            <button class="section-header" onclick="toggleSection(1)" aria-expanded="true" aria-controls="section-1">
+                <span class="section-number">1️⃣</span>
+                <span class="section-title">What the CPU Is</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-1">
+                <div class="content-box">
+<p>NCERT's Class 11 Computer Science textbook (Chapter 1, "Computer System") describes the <strong>Central Processing Unit (CPU)</strong> as the electronic circuitry that carries out the actual processing. It is usually called the brain of the computer, and is also commonly called the processor.</p>
+<p>Physically, a CPU sits on one or more microchips called integrated circuits (ICs), which are made of semiconductor materials.</p>
+<p>A computer system mainly comprises four parts:</p>
+<ul>
+<li>the CPU;</li>
+<li>memory;</li>
+<li>input/output devices;</li>
+<li>storage devices.</li>
+</ul>
+<p>The CPU receives instructions and data through programs. It fetches the program and data from memory, performs arithmetic and logic operations as instructed, and stores the result back in memory.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="2">
+            <button class="section-header" onclick="toggleSection(2)" aria-expanded="true" aria-controls="section-2">
+                <span class="section-number">2️⃣</span>
+                <span class="section-title">The Three Parts Inside the CPU</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-2">
+                <div class="content-box">
+<div class="table-wrap"><table class="data-table">
+<thead><tr><th>Component</th><th>What it does</th><th>Exam keyword</th></tr></thead>
+<tbody>
+<tr><td>Arithmetic Logic Unit (ALU)</td><td>Performs all the arithmetic and logic operations an instruction calls for</td><td>Calculation and comparison</td></tr>
+<tr><td>Control Unit (CU)</td><td>Controls sequential instruction execution, interprets instructions, and guides data flow through memory, the ALU and input/output devices</td><td>Coordinator or "manager"; does no calculation itself</td></tr>
+<tr><td>Registers</td><td>The CPU's local memory for data, instructions and intermediate results during processing; part of the CPU chip, limited in size and number</td><td>Fastest storage in the computer</td></tr>
+</tbody>
+</table></div>
+<p>NCERT puts it this way: other than the registers, the CPU has two main components, the ALU and the CU. Common registers named in exam guides include:</p>
+<ul>
+<li>the program counter, which holds the address of the next instruction;</li>
+<li>the instruction register, which holds the current instruction;</li>
+<li>the accumulator, which holds ALU results;</li>
+<li>the memory address register and the memory data register.</li>
+</ul>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="3">
+            <button class="section-header" onclick="toggleSection(3)" aria-expanded="true" aria-controls="section-3">
+                <span class="section-number">3️⃣</span>
+                <span class="section-title">The Machine Cycle: Fetch, Decode, Execute, Store</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-3">
+                <div class="content-box">
+<p>Every instruction passes through the same loop:</p>
+<ol>
+<li><strong>Fetch:</strong> the CPU places the instruction's memory address on the address bus and reads the instruction from main memory.</li>
+<li><strong>Decode:</strong> the Control Unit interprets what the instruction asks for.</li>
+<li><strong>Execute:</strong> the ALU carries out the arithmetic or logic operation, with operands held in registers.</li>
+<li><strong>Store:</strong> the result is written back to a register or to memory.</li>
+</ol>
+<p>The clock sets the pace of this loop. NCERT explains that the internal clock generates pulses at regular intervals, and the clock speed indicates how fast the computer can execute instructions. Clock speed was once measured in hertz and kilohertz; it is now measured in gigahertz, or billions of pulses per second.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)" aria-expanded="true" aria-controls="section-4">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">How the CPU Talks to Memory: The System Bus</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
+                <div class="content-box">
+<p>Components exchange data over physical wires called a <strong>bus</strong>. NCERT names three types, which together make up the <strong>system bus</strong>:</p>
+<div class="table-wrap"><table class="data-table">
+<thead><tr><th>Bus</th><th>Carries</th><th>Direction</th></tr></thead>
+<tbody>
+<tr><td>Data bus</td><td>Data between components</td><td>Bidirectional</td></tr>
+<tr><td>Address bus</td><td>The memory address the CPU wants to read from or write to</td><td>Unidirectional</td></tr>
+<tr><td>Control bus</td><td>Control signals, such as read or write</td><td>Unidirectional</td></tr>
+</tbody>
+</table></div>
+<ul>
+<li><strong>Read:</strong> the CPU specifies the address, and a dedicated piece of hardware called the <strong>memory controller</strong> places the data on the data bus.</li>
+<li><strong>Write:</strong> the CPU places the data on the data bus, and it is written to the address given on the address bus.</li>
+</ul>
+<p>Because the CPU interacts directly only with main memory, anything from an input device or the hard disk must first be placed in main memory before it can be processed.</p>
+<p><strong>Cache</strong> sits between the CPU and primary memory. It is a very high-speed memory holding copies of frequently accessed data. The CPU checks the cache first and goes to main memory only if the data is not found there.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)" aria-expanded="true" aria-controls="section-5">
+                <span class="section-number">5️⃣</span>
+                <span class="section-title">Microprocessors and Their Generations</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-5">
+                <div class="content-box">
+<p>A CPU built on a single microchip is a <strong>microprocessor</strong>. Today almost all CPUs are microprocessors, so the two terms are used synonymously. NCERT's Table 1.2 traces their generations:</p>
+<div class="table-wrap"><table class="data-table">
+<thead><tr><th>Generation</th><th>Era</th><th>Chip</th><th>Word size</th><th>Max memory</th><th>Examples</th></tr></thead>
+<tbody>
+<tr><td>First</td><td>1971–73</td><td>LSI</td><td>4/8 bit</td><td>1 KB</td><td>Intel 8080</td></tr>
+<tr><td>Second</td><td>1974–78</td><td>LSI</td><td>8 bit</td><td>1 MB</td><td>Motorola 6800, Intel 8085</td></tr>
+<tr><td>Third</td><td>1979–80</td><td>VLSI</td><td>16 bit</td><td>16 MB</td><td>Intel 8086</td></tr>
+<tr><td>Fourth</td><td>1981–95</td><td>VLSI</td><td>32 bit</td><td>4 GB</td><td>Intel 80386, Motorola 68030</td></tr>
+<tr><td>Fifth</td><td>1995 to date</td><td>SLSI</td><td>64 bit</td><td>64 GB</td><td>Pentium, Celeron, Xeon (multicore)</td></tr>
+</tbody>
+</table></div>
+<p>NCERT defines the key specifications:</p>
+<ul>
+<li><strong>Word size</strong> is the maximum number of bits processed at a time. Today the minimum is 16 bits and the maximum 64 bits.</li>
+<li><strong>Cores</strong> are the basic computation units. CPUs with two, four and eight cores are dual-core, quad-core and octa-core processors.</li>
+</ul>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)" aria-expanded="true" aria-controls="section-6">
+                <span class="section-number">6️⃣</span>
+                <span class="section-title">Microprocessor vs Microcontroller</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-6">
+                <div class="content-box">
+<p>A <strong>microcontroller</strong> puts a CPU, a fixed amount of RAM, ROM and other peripherals on a single chip. A microprocessor has only the CPU on the chip. Microcontrollers are designed for specific tasks, so they are smaller and cheaper, and they are embedded inside other devices.</p>
+<p>NCERT's examples include the keyboard, mouse, washing machine, digital camera, pendrive, remote controller and microwave. In a fully automatic washing machine, the microcontroller runs the whole washing cycle without human intervention.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)" aria-expanded="true" aria-controls="section-7">
+                <span class="section-number">7️⃣</span>
+                <span class="section-title">Worked Example: Adding Two Numbers</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-7">
+                <div class="content-box">
+<p>Suppose a program says "add the numbers stored at two memory locations and save the total". The parts of the CPU share the work like this:</p>
+<ol>
+<li>The Control Unit sends each location's address on the address bus, with a read signal on the control bus.</li>
+<li>The memory controller places each number on the data bus, and the numbers land in registers.</li>
+<li>The ALU adds them.</li>
+<li>The Control Unit then sends the destination address and a write signal, and the total travels back over the data bus into memory.</li>
+</ol>
+<p>Every step happens on a tick of the clock, which is why a higher clock speed means more instructions per second.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="8">
+            <button class="section-header" onclick="toggleSection(8)" aria-expanded="true" aria-controls="section-8">
+                <span class="section-number">8️⃣</span>
+                <span class="section-title">Exam Traps</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-8">
+                <div class="content-box">
+<ul>
+<li>The <strong>Control Unit does not calculate</strong>. Arithmetic and comparisons are the ALU's job.</li>
+<li>Registers are faster than cache, and cache is faster than RAM. The CPU cannot read secondary storage directly.</li>
+<li>The data bus is bidirectional; the address and control buses are one-way.</li>
+<li>"CPU" and "microprocessor" are used synonymously today. A microcontroller is a whole small computer on a chip.</li>
+</ul>
+<p>Related: <a href="computer-memory-types.html">types of computer memory</a>, <a href="memory-units-bit-to-yottabyte.html">memory units</a> and <a href="logic-gates.html">logic gates</a>.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="9">
+            <button class="section-header" onclick="toggleSection(9)" aria-expanded="true" aria-controls="section-9">
+                <span class="section-number">9️⃣</span>
+                <span class="section-title">Practice Questions (8)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-9">
+                <div class="content-box">
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q1.</strong> Which part of the CPU performs arithmetic and logic operations? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q1" value="a"> (a) Arithmetic Logic Unit</label>
+                            <label><input type="radio" name="q1" value="b"> (b) Control Unit</label>
+                            <label><input type="radio" name="q1" value="c"> (c) Cache</label>
+                            <label><input type="radio" name="q1" value="d"> (d) Memory controller</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q1">
+                            <p><strong>✅ Answer:</strong> (a) Arithmetic Logic Unit</p>
+                            <p><strong>💡 Explanation:</strong> NCERT says the ALU performs all the arithmetic and logic operations needed by program instructions.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q1')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q2.</strong> Which component interprets instructions and guides data flow? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q2" value="a"> (a) ALU</label>
+                            <label><input type="radio" name="q2" value="b"> (b) Control Unit</label>
+                            <label><input type="radio" name="q2" value="c"> (c) Registers</label>
+                            <label><input type="radio" name="q2" value="d"> (d) Data bus</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q2">
+                            <p><strong>✅ Answer:</strong> (b) Control Unit</p>
+                            <p><strong>💡 Explanation:</strong> The Control Unit controls sequential execution, interprets instructions and guides data flow through the system.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q2')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q3.</strong> The CPU&#x27;s own small, fastest local memory is the: <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q3" value="a"> (a) RAM</label>
+                            <label><input type="radio" name="q3" value="b"> (b) Hard disk</label>
+                            <label><input type="radio" name="q3" value="c"> (c) Register</label>
+                            <label><input type="radio" name="q3" value="d"> (d) ROM</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q3">
+                            <p><strong>✅ Answer:</strong> (c) Register</p>
+                            <p><strong>💡 Explanation:</strong> NCERT calls registers the CPU&#x27;s local memory, part of the CPU chip and limited in size and number.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q3')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q4.</strong> Which bus is bidirectional? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q4" value="a"> (a) Address bus</label>
+                            <label><input type="radio" name="q4" value="b"> (b) Control bus</label>
+                            <label><input type="radio" name="q4" value="c"> (c) All three</label>
+                            <label><input type="radio" name="q4" value="d"> (d) Data bus</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q4">
+                            <p><strong>✅ Answer:</strong> (d) Data bus</p>
+                            <p><strong>💡 Explanation:</strong> NCERT says the data bus is bidirectional while the control and address buses are unidirectional.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q4')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q5.</strong> The address of the memory location the CPU wants to access travels on the: <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q5" value="a"> (a) Address bus</label>
+                            <label><input type="radio" name="q5" value="b"> (b) Data bus</label>
+                            <label><input type="radio" name="q5" value="c"> (c) Control bus</label>
+                            <label><input type="radio" name="q5" value="d"> (d) USB bus</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q5">
+                            <p><strong>✅ Answer:</strong> (a) Address bus</p>
+                            <p><strong>💡 Explanation:</strong> The address bus carries addresses between the CPU and main memory for each read or write.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q5')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q6.</strong> A chip with CPU, RAM, ROM and peripherals together is a: <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q6" value="a"> (a) Microprocessor</label>
+                            <label><input type="radio" name="q6" value="b"> (b) Microcontroller</label>
+                            <label><input type="radio" name="q6" value="c"> (c) Register</label>
+                            <label><input type="radio" name="q6" value="d"> (d) Cache</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q6">
+                            <p><strong>✅ Answer:</strong> (b) Microcontroller</p>
+                            <p><strong>💡 Explanation:</strong> NCERT defines a microcontroller as CPU, fixed RAM, ROM and peripherals embedded on a single chip.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q6')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q7.</strong> A CPU with eight cores is called: <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q7" value="a"> (a) Quad-core</label>
+                            <label><input type="radio" name="q7" value="b"> (b) Dual-core</label>
+                            <label><input type="radio" name="q7" value="c"> (c) Octa-core</label>
+                            <label><input type="radio" name="q7" value="d"> (d) Hexa-core</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q7">
+                            <p><strong>✅ Answer:</strong> (c) Octa-core</p>
+                            <p><strong>💡 Explanation:</strong> NCERT says two, four and eight cores make dual-core, quad-core and octa-core processors.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q7')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q8.</strong> According to NCERT&#x27;s table, the Intel 8086 belongs to which microprocessor generation? <span class="badge badge-secondary">hard</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q8" value="a"> (a) First</label>
+                            <label><input type="radio" name="q8" value="b"> (b) Second</label>
+                            <label><input type="radio" name="q8" value="c"> (c) Fourth</label>
+                            <label><input type="radio" name="q8" value="d"> (d) Third</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q8">
+                            <p><strong>✅ Answer:</strong> (d) Third</p>
+                            <p><strong>💡 Explanation:</strong> Table 1.2 places the Intel 8086 in the third generation, 1979-80, VLSI, 16-bit word size.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q8')">Show Answer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="10">
+            <button class="section-header" onclick="toggleSection(10)" aria-expanded="true" aria-controls="section-10">
+                <span class="section-number">🔟</span>
+                <span class="section-title">Frequently Asked Questions</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-10">
+                <div class="content-box">
+                    <h3>What are the main parts of a CPU?</h3>
+                    <p>NCERT names the Arithmetic Logic Unit, the Control Unit and the registers. The ALU calculates, the CU directs execution and data flow, and registers hold working data.</p>
+                    <h3>What is the difference between a microprocessor and a microcontroller?</h3>
+                    <p>A microprocessor has only the CPU on its chip. A microcontroller embeds a CPU, RAM, ROM and peripherals on one chip for a specific task, like a washing machine.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="11">
+            <button class="section-header" onclick="toggleSection(11)" aria-expanded="true" aria-controls="section-11">
+                <span class="section-number">11.</span>
+                <span class="section-title">Sources and Review</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-11">
+                <div class="content-box">
+                    <ul class="bullet-list">
+                        <li><a href="https://ncert.nic.in/textbook/pdf/kecs101.pdf" rel="noopener">Computer Science, Class XI, Chapter 1: Computer System (Reprint 2026-27)</a>, National Council of Educational Research and Training (NCERT) (accessed 2026-11-07). Used for: CPU, ALU, control unit and registers, cache and memory types, system bus, microprocessors and Table 1.2 generations, specifications, microcontrollers..</li>
+                    </ul>
+                    <div class="highlight-box">
+                        <p><strong>How this page was prepared.</strong> Drafted with AI assistance (Claude (Anthropic AI model)) from the sources listed above. 2 calculations on this page were recomputed by software and matched. Automated checks also covered structure, internal links and duplicate text. Software checks cannot confirm facts. </p>
+                        <p>Found an error? <a href="../../contact.html">Report it</a> and we will correct the page.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="12">
+            <button class="section-header" onclick="toggleSection(12)" aria-expanded="true" aria-controls="section-12">
+                <span class="section-number">12.</span>
+                <span class="section-title">Related Pages</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-12">
+                <div class="content-box">
+                    <ul class="bullet-list">
+                        <li><a href="../science-tech/computer-and-it-fundamentals.html">💻 Computer &amp; IT Fundamentals</a></li>
+                        <li><a href="../../repeated-questions/computer-awareness-cheat-code.html">Computer Awareness Cheat Code: 15 Must-Know Facts</a></li>
+                        <li><a href="computer-memory-types.html">Computer Memory: RAM, ROM, Cache and Secondary Storage</a></li>
+                        <li><a href="memory-units-bit-to-yottabyte.html">Memory Units: Bit, Byte, KB to YB</a></li>
+                        <li><a href="number-system-conversion.html">Binary, Octal, Decimal and Hexadecimal Conversion</a></li>
+                        <li><a href="logic-gates.html">Logic Gates and Truth Tables</a></li>
+                        <li><a href="computer-history-and-pioneers.html">History of Computers and Pioneers</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="page-navigation">
+            <a href="transmission-media.html" class="nav-btn">← Transmission Media: Twisted Pair, Coaxial, Optical Fibre and Wireless</a>
+            <a href="index.html" class="nav-btn">Computer Awareness →</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>Subject: Computer Awareness | Sources are listed on this page. <a href="../../contact.html">Report an error</a>.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>
