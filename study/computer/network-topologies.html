@@ -4,23 +4,23 @@
     <meta charset="UTF-8">
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Network Topologies: Bus, Star, Ring, Mesh and Tree</title>
-    <meta name="description" content="Bus, star, ring, mesh and tree topologies compared by cabling, cost and what fails when a link breaks, with the n(n-1)/2 mesh formula worked. 6 MCQs.">
-    <meta name="keywords" content="network topology types, bus star ring mesh topology, mesh topology formula n(n-1)/2, advantages of star topology">
+    <title>Types of Network Topology: Bus, Star, Ring, Mesh, Tree</title>
+    <meta name="description" content="Bus, star, ring, mesh and tree topologies compared by cabling, cost and failure, a quick table to identify a topology from its description, and the n(n-1)/2 formula.">
+    <meta name="keywords" content="types of network topology, network topology types, bus star ring mesh tree topology, mesh topology formula n(n-1)/2, which topology uses a single backbone cable">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://www.aspirantdaily.com/study/computer/network-topologies.html">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://www.aspirantdaily.com/study/computer/network-topologies.html">
-    <meta property="og:title" content="Network Topologies: Bus, Star, Ring, Mesh and Tree">
-    <meta property="og:description" content="Bus, star, ring, mesh and tree topologies compared by cabling, cost and what fails when a link breaks, with the n(n-1)/2 mesh formula worked. 6 MCQs.">
+    <meta property="og:title" content="Types of Network Topology: Bus, Star, Ring, Mesh, Tree">
+    <meta property="og:description" content="Bus, star, ring, mesh and tree topologies compared by cabling, cost and failure, a quick table to identify a topology from its description, and the n(n-1)/2 formula.">
     <meta property="og:image" content="https://www.aspirantdaily.com/og-image.jpg">
     <meta name="twitter:card" content="summary_large_image">
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Network Topology Types: Bus, Star, Ring, Mesh and Tree Compared",
-  "description": "Bus, star, ring, mesh and tree topologies compared by cabling, cost and what fails when a link breaks, with the n(n-1)/2 mesh formula worked. 6 MCQs.",
+  "headline": "Types of Network Topology: Bus, Star, Ring, Mesh and Tree Compared, With the Mesh Cable Formula",
+  "description": "Bus, star, ring, mesh and tree topologies compared by cabling, cost and failure, a quick table to identify a topology from its description, and the n(n-1)/2 formula.",
   "image": "https://www.aspirantdaily.com/og-image.jpg",
   "author": {
     "@type": "Organization",
@@ -36,7 +36,7 @@
     }
   },
   "datePublished": "2026-10-29",
-  "dateModified": "2026-10-29",
+  "dateModified": "2026-11-07",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://www.aspirantdaily.com/study/computer/network-topologies.html"
@@ -73,7 +73,7 @@
     {
       "@type": "ListItem",
       "position": 4,
-      "name": "Network Topology Types: Bus, Star, Ring, Mesh and Tree Compared",
+      "name": "Types of Network Topology: Bus, Star, Ring, Mesh and Tree Compared, With the Mesh Cable Formula",
       "item": "https://www.aspirantdaily.com/study/computer/network-topologies.html"
     }
   ]
@@ -131,14 +131,14 @@
     <header class="page-header">
         <div class="container">
             <div class="breadcrumb">
-                <a href="../../index.html">Home</a> / <a href="../index.html">Study Notes</a> / <a href="index.html">Computer Awareness</a> / <span>Network Topology Types: Bus, Star, Ring, Mesh and Tree Compared</span>
+                <a href="../../index.html">Home</a> / <a href="../index.html">Study Notes</a> / <a href="index.html">Computer Awareness</a> / <span>Types of Network Topology: Bus, Star, Ring, Mesh and Tree Compared, With the Mesh Cable Formula</span>
             </div>
-            <h1>Network Topology Types: Bus, Star, Ring, Mesh and Tree Compared</h1>
+            <h1>Types of Network Topology: Bus, Star, Ring, Mesh and Tree Compared, With the Mesh Cable Formula</h1>
             <p class="page-subtitle">What topology means • Bus • Ring • Star • Mesh and its cable formula • Tree or hybrid • Comparison table</p>
             <div class="page-meta">
                 <span class="badge badge-secondary">SSC</span>
                 <span class="badge badge-secondary">Banking</span>
-                <span class="badge badge-secondary">📅 Last updated: 2026-10-29</span>
+                <span class="badge badge-secondary">📅 Last updated: 2026-11-07</span>
             </div>
         </div>
     </header>
@@ -263,10 +263,36 @@
         <section class="study-section collapsible" data-section="8">
             <button class="section-header" onclick="toggleSection(8)" aria-expanded="true" aria-controls="section-8">
                 <span class="section-number">8️⃣</span>
-                <span class="section-title">Common Traps</span>
+                <span class="section-title">Identify the Topology From the Description</span>
                 <span class="toggle-icon">▼</span>
             </button>
             <div class="section-content" id="section-8">
+                <div class="content-box">
+<p>Many quiz questions describe a layout and ask you to name it. Match the clue to the shape:</p>
+<div class="table-wrap"><table class="data-table">
+<thead><tr><th>Clue in the question</th><th>Topology</th></tr></thead>
+<tbody>
+<tr><td>All devices share one central cable or backbone</td><td>Bus</td></tr>
+<tr><td>Data on the cable travels in both directions and any node can receive it</td><td>Bus</td></tr>
+<tr><td>Each node links to exactly two neighbours and the links form a closed loop</td><td>Ring</td></tr>
+<tr><td>Data moves in one direction only, clockwise or anticlockwise</td><td>Ring</td></tr>
+<tr><td>Every device has its own cable to a central hub or switch</td><td>Star</td></tr>
+<tr><td>Failure of the central device can stop the whole network</td><td>Star</td></tr>
+<tr><td>Every device is directly linked to every other device</td><td>Mesh</td></tr>
+<tr><td>Needs n(n &minus; 1)/2 cables for n nodes</td><td>Mesh</td></tr>
+<tr><td>Hierarchical, parent-child branches built from star, ring or bus</td><td>Tree (hybrid)</td></tr>
+<tr><td>Several LANs joined across a WAN</td><td>Tree (hybrid)</td></tr>
+</tbody></table></div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="9">
+            <button class="section-header" onclick="toggleSection(9)" aria-expanded="true" aria-controls="section-9">
+                <span class="section-number">9️⃣</span>
+                <span class="section-title">Common Traps</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-9">
                 <div class="content-box">
 <ul class="warning-list">
 <li>✘ Using n(n − 1) for mesh cables. Halve it: each cable has two ends.</li>
@@ -278,13 +304,13 @@
                 </div>
             </div>
         </section>
-        <section class="study-section collapsible" data-section="9">
-            <button class="section-header" onclick="toggleSection(9)" aria-expanded="true" aria-controls="section-9">
-                <span class="section-number">9️⃣</span>
+        <section class="study-section collapsible" data-section="10">
+            <button class="section-header" onclick="toggleSection(10)" aria-expanded="true" aria-controls="section-10">
+                <span class="section-number">🔟</span>
                 <span class="section-title">Practice Questions (6)</span>
                 <span class="toggle-icon">▼</span>
             </button>
-            <div class="section-content" id="section-9">
+            <div class="section-content" id="section-10">
                 <div class="content-box">
                     <div class="mcq-item">
                         <p class="mcq-question"><strong>Q1.</strong> In which topology is every device connected to a single central device? <span class="badge badge-secondary">easy</span></p>
@@ -373,13 +399,13 @@
                 </div>
             </div>
         </section>
-        <section class="study-section collapsible" data-section="10">
-            <button class="section-header" onclick="toggleSection(10)" aria-expanded="true" aria-controls="section-10">
-                <span class="section-number">🔟</span>
+        <section class="study-section collapsible" data-section="11">
+            <button class="section-header" onclick="toggleSection(11)" aria-expanded="true" aria-controls="section-11">
+                <span class="section-number">11.</span>
                 <span class="section-title">Frequently Asked Questions</span>
                 <span class="toggle-icon">▼</span>
             </button>
-            <div class="section-content" id="section-10">
+            <div class="section-content" id="section-11">
                 <div class="content-box">
                     <h3>Which network topology is most common today?</h3>
                     <p>Home and office wired LANs are usually built as a star around a switch, and larger networks join many such stars into a tree. The site cannot give a market share figure, so treat this as the typical layout rather than a statistic.</p>
@@ -388,43 +414,45 @@
                 </div>
             </div>
         </section>
-        <section class="study-section collapsible" data-section="11">
-            <button class="section-header" onclick="toggleSection(11)" aria-expanded="true" aria-controls="section-11">
-                <span class="section-number">11.</span>
-                <span class="section-title">Sources and Review</span>
-                <span class="toggle-icon">▼</span>
-            </button>
-            <div class="section-content" id="section-11">
-                <div class="content-box">
-                    <ul class="bullet-list">
-                        <li><a href="https://ncert.nic.in/textbook/pdf/lecs110.pdf" rel="noopener">Computer Science Class XII, Chapter 10: Computer Networks</a>, NCERT (accessed 2026-10-27). Used for: definition of topology and the mesh, ring, bus, star and tree or hybrid topologies (§10.5), including the n(n-1)/2 note.</li>
-                    </ul>
-                    <div class="highlight-box">
-                        <p><strong>How this page was prepared.</strong> Drafted with AI assistance (Claude (Anthropic AI model)) from the sources listed above. 5 calculations on this page were recomputed by software and matched. Automated checks also covered structure, internal links and duplicate text. Software checks cannot confirm facts. Reviewed by praveenkumar on 2026-10-29 against the sources listed above.</p>
-                        <p>Found an error? <a href="../../contact.html">Report it</a> and we will correct the page.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
         <section class="study-section collapsible" data-section="12">
             <button class="section-header" onclick="toggleSection(12)" aria-expanded="true" aria-controls="section-12">
                 <span class="section-number">12.</span>
-                <span class="section-title">Related Pages</span>
+                <span class="section-title">Sources and Review</span>
                 <span class="toggle-icon">▼</span>
             </button>
             <div class="section-content" id="section-12">
                 <div class="content-box">
                     <ul class="bullet-list">
+                        <li><a href="https://ncert.nic.in/textbook/pdf/lecs110.pdf" rel="noopener">Computer Science Class XII, Chapter 10: Computer Networks</a>, NCERT (accessed 2026-10-27). Used for: definition of topology and the mesh, ring, bus, star and tree or hybrid topologies (§10.5), including the n(n-1)/2 note.</li>
+                    </ul>
+                    <div class="highlight-box">
+                        <p><strong>How this page was prepared.</strong> Drafted with AI assistance (Claude (Anthropic AI model)) from the sources listed above. 5 calculations on this page were recomputed by software and matched. Automated checks also covered structure, internal links and duplicate text. Software checks cannot confirm facts. </p>
+                        <p>Found an error? <a href="../../contact.html">Report it</a> and we will correct the page.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="13">
+            <button class="section-header" onclick="toggleSection(13)" aria-expanded="true" aria-controls="section-13">
+                <span class="section-number">13.</span>
+                <span class="section-title">Related Pages</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-13">
+                <div class="content-box">
+                    <ul class="bullet-list">
                         <li><a href="../science-tech/computer-and-it-fundamentals.html">💻 Computer &amp; IT Fundamentals</a></li>
+                        <li><a href="computer-networks-lan-man-wan.html">Computer Networks: LAN, MAN, WAN and PAN</a></li>
+                        <li><a href="transmission-media.html">Transmission Media: Wired and Wireless</a></li>
+                        <li><a href="networking-devices.html">Hub, Switch, Router, Modem and Gateway</a></li>
                     </ul>
                 </div>
             </div>
         </section>
 
         <div class="page-navigation">
-            <a href="ms-word-shortcuts.html" class="nav-btn">← MS Word Shortcut Keys: Frequently Used Ctrl Shortcuts, Paragraph Alignment, Find and Replace, and Function Keys F1 to F12</a>
-            <a href="index.html" class="nav-btn">↑ Computer Awareness</a>
-            <a href="networking-devices.html" class="nav-btn">Networking Devices: Hub, Switch, Router, Modem, Gateway, Repeater and NIC →</a>
+            <a href="upi-and-digital-payment-systems.html" class="nav-btn">← NEFT, RTGS, IMPS and UPI Compared: Who Runs Them, Timings, Limits and Settlement</a>
+            <a href="index.html" class="nav-btn">Computer Awareness →</a>
         </div>
     </main>
 
