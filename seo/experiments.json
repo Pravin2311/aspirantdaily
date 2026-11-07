@@ -659,8 +659,31 @@
     "window_days": 28,
     "evaluate_after": "2026-12-05",
     "status": "running",
-    "confounders": "Batch-006 re-render bumped dateModified and refreshed link blocks on 5 sibling computer pages and changed the page's prev/next neighbours. Site-wide experiments (headers, adsense host guard) still running. Low volume, so a single-page result is noisy.",
+    "confounders": "Batch-006 re-render bumped dateModified and refreshed link blocks on 5 sibling computer pages and changed the page's prev/next neighbours. Site-wide experiments (headers, adsense host guard) still running. Low volume, so a single-page result is noisy. The 670e595 re-render restored the page's original prev/next neighbours.",
     "next_action": "On 2026-12-05 compare cluster position and impressions; if it moved to page 1-2, apply the same query-phrase retarget to other pages ranking 30+ for clear clusters.",
+    "holds_back": false
+  },
+  {
+    "id": "2026-11-07-trig-table-title",
+    "date": "2026-11-07",
+    "commits": [
+      "670e595"
+    ],
+    "pages_regex": "^/study/quant/trigonometric-ratios-table\\.html$",
+    "change": "Title 'Trigonometric Ratios Table for 0° to 90° | AspirantDaily' -> 'Trigonometry Table: sin, cos, tan Values for 0° to 90°'; description reworded to lead with 'Trigonometry table of sin, cos, tan...'. Body unchanged.",
+    "hypothesis": "The page ranks 1-5 for trigonometry table queries (about 85 impressions in 28 days) but got 0 clicks. Leading with the searchers' words 'trigonometry table' and 'sin, cos, tan' should raise CTR.",
+    "metric": "ctr",
+    "secondary_metrics": [
+      "clicks",
+      "impressions",
+      "position"
+    ],
+    "baseline": "GSC 2026-10-08..2026-11-04 (domain property): 'trigonometry ratio table' 48 impr pos 1.2; 'trigonometric ratio table' 8 pos 2.8; 'trigonometric ratios table' 8 pos 5.4; 'trig ratio table' 6 pos 1.0; 0 clicks for the cluster.",
+    "window_days": 28,
+    "evaluate_after": "2026-12-05",
+    "status": "running",
+    "confounders": "Google may show the table itself in the results page, so zero clicks may persist whatever the title. Page is also in 2026-10-28-study-series-nav (74 pages). Low volume.",
+    "next_action": "On 2026-12-05 compare clicks and CTR for the cluster; if still 0 with position <= 3, treat it as a SERP-feature query and stop spending effort on it.",
     "holds_back": false
   }
 ]
