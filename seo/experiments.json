@@ -640,5 +640,27 @@
     "confounders": "Site is young and Bing only started reporting on 2026-10-23, so organic growth from age alone is likely. Cheat codes also gain inbound links (they are not held). Overlaps titles-meta-sweep and practice-mcq-pages. Index state from seo/inspect_all.py on 2026-10-29 is the indexing baseline.",
     "next_action": "On 2026-11-26 compare impressions and index state; after the 2026-11-20..27 verdicts add the box to held notes too.",
     "holds_back": false
+  },
+  {
+    "id": "2026-11-07-network-topology-retarget",
+    "date": "2026-11-07",
+    "commits": [
+      "3c6370f"
+    ],
+    "pages_regex": "^/study/computer/network-topologies\\.html$",
+    "change": "Title 'Network Topologies: Bus, Star, Ring, Mesh and Tree' -> 'Types of Network Topology: Bus, Star, Ring, Mesh, Tree'; h1, description and primary query reworded to 'types of network topology'; new 'Identify the Topology From the Description' clue table (10 rows, NCERT lecs110 s10.5) for quiz-style queries.",
+    "hypothesis": "GSC showed 25+ topology query variants (about 120 impressions in 28 days) at position 34-50 plus quiz-question queries. Matching the searchers' phrase and answering clue-style questions should lift position and impressions for the cluster.",
+    "metric": "position",
+    "secondary_metrics": [
+      "impressions",
+      "clicks"
+    ],
+    "baseline": "GSC 2026-10-08..2026-11-04 (domain property): 'types of network topology' 21 impr pos 41.2; 'types of topology' 13 pos 40.7; 'network topology types' 10 pos 34.2; 0 clicks for the cluster.",
+    "window_days": 28,
+    "evaluate_after": "2026-12-05",
+    "status": "running",
+    "confounders": "Batch-006 re-render bumped dateModified and refreshed link blocks on 5 sibling computer pages and changed the page's prev/next neighbours. Site-wide experiments (headers, adsense host guard) still running. Low volume, so a single-page result is noisy.",
+    "next_action": "On 2026-12-05 compare cluster position and impressions; if it moved to page 1-2, apply the same query-phrase retarget to other pages ranking 30+ for clear clusters.",
+    "holds_back": false
   }
 ]
