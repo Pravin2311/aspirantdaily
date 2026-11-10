@@ -36,7 +36,7 @@
     }
   },
   "datePublished": "2026-10-29",
-  "dateModified": "2026-11-07",
+  "dateModified": "2026-11-10",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://www.aspirantdaily.com/study/computer/memory-units-bit-to-yottabyte.html"
@@ -45,7 +45,8 @@
   "citation": [
     "https://ncert.nic.in/textbook/pdf/kecs101.pdf",
     "https://ncert.nic.in/textbook/pdf/lecs111.pdf",
-    "https://physics.nist.gov/cuu/Units/binary.html"
+    "https://physics.nist.gov/cuu/Units/binary.html",
+    "https://www.bipm.org/en/cgpm-2022/resolution-3"
   ]
 }
     </script>
@@ -99,7 +100,7 @@
       "name": "What comes after the yottabyte?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Exam tables, including NCERT's, stop at the yottabyte, so YB is the safe answer for the largest unit. Learn the eight-step order KB, MB, GB, TB, PB, EB, ZB, YB and its powers of 2 rather than names beyond it."
+        "text": "NCERT's table stops at the yottabyte, so YB is the largest unit for exam questions. Beyond it, the SI added ronna (10^27) and quetta (10^30) in 2022, giving the ronnabyte (RB) and quettabyte (QB) as decimal units."
       }
     }
   ]
@@ -141,7 +142,7 @@
                 <span class="badge badge-secondary">SSC</span>
                 <span class="badge badge-secondary">Banking</span>
                 <span class="badge badge-secondary">Railway</span>
-                <span class="badge badge-secondary">📅 Last updated: 2026-11-07</span>
+                <span class="badge badge-secondary">📅 Last updated: 2026-11-10</span>
             </div>
         </div>
     </header>
@@ -189,10 +190,30 @@
         <section class="study-section collapsible" data-section="3">
             <button class="section-header" onclick="toggleSection(3)" aria-expanded="true" aria-controls="section-3">
                 <span class="section-number">3️⃣</span>
-                <span class="section-title">Converting Between Units</span>
+                <span class="section-title">What Comes After YB? 1024 YB and the New SI Prefixes</span>
                 <span class="toggle-icon">▼</span>
             </button>
             <div class="section-content" id="section-3">
+                <div class="content-box">
+<p>Continuing the 1024 table one more step, <strong>1024 YB = 2⁹⁰ bytes</strong>. NCERT's table has no named unit for it and stops at the yottabyte, so for exam questions <strong>YB is the largest unit</strong>.</p>
+<p>Outside the textbook, the SI has gone further. In 2022 the 27th General Conference on Weights and Measures (CGPM) added four prefixes, partly because data science needs to express digital information beyond 10²⁴:</p>
+<div class="table-wrap"><table class="data-table">
+<thead><tr><th>Prefix</th><th>Symbol</th><th>Factor</th><th>Storage unit</th></tr></thead>
+<tbody>
+<tr><td>ronna</td><td>R</td><td>10²⁷</td><td>ronnabyte (RB)</td></tr>
+<tr><td>quetta</td><td>Q</td><td>10³⁰</td><td>quettabyte (QB)</td></tr>
+</tbody></table></div>
+<p>The other two, ronto and quecto, are for tiny submultiples. These are decimal SI prefixes, so 1 RB is 1000 YB in SI terms, not 1024 YB.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)" aria-expanded="true" aria-controls="section-4">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">Converting Between Units</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
                 <div class="content-box">
 <p>Going to a smaller unit, multiply by 1024 for each step. Going to a larger unit, divide by 1024 for each step. Count the steps before you calculate.</p>
 <div class="case-study">
@@ -210,13 +231,13 @@
                 </div>
             </div>
         </section>
-        <section class="study-section collapsible" data-section="4">
-            <button class="section-header" onclick="toggleSection(4)" aria-expanded="true" aria-controls="section-4">
-                <span class="section-number">4️⃣</span>
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)" aria-expanded="true" aria-controls="section-5">
+                <span class="section-number">5️⃣</span>
                 <span class="section-title">KB or KiB: The Two Conventions</span>
                 <span class="toggle-icon">▼</span>
             </button>
-            <div class="section-content" id="section-4">
+            <div class="section-content" id="section-5">
                 <div class="content-box">
 <p>In the International System of Units (SI), kilo means exactly 1000 and mega means exactly 1,000,000. To avoid the clash with 1024, the International Electrotechnical Commission approved separate binary prefixes in December 1998: <strong>kibi (Ki)</strong> for 2¹⁰, <strong>mebi (Mi)</strong> for 2²⁰, <strong>gibi (Gi)</strong> for 2³⁰, and so on. Under that scheme 1 MiB = 1,048,576 bytes while 1 MB = 1,000,000 bytes. NIST notes that these binary prefixes are not part of the SI.</p>
 <div class="case-study">
@@ -227,13 +248,13 @@
                 </div>
             </div>
         </section>
-        <section class="study-section collapsible" data-section="5">
-            <button class="section-header" onclick="toggleSection(5)" aria-expanded="true" aria-controls="section-5">
-                <span class="section-number">5️⃣</span>
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)" aria-expanded="true" aria-controls="section-6">
+                <span class="section-number">6️⃣</span>
                 <span class="section-title">Bits per Second Versus Bytes</span>
                 <span class="toggle-icon">▼</span>
             </button>
-            <div class="section-content" id="section-5">
+            <div class="section-content" id="section-6">
                 <div class="content-box">
 <p>Network speeds are given in bits per second: Kbps, Mbps, Gbps. File sizes are given in bytes. A lower-case b means bits and an upper-case B means bytes, so 1 MBps is eight times 1 Mbps.</p>
 <div class="case-study">
@@ -243,13 +264,13 @@
                 </div>
             </div>
         </section>
-        <section class="study-section collapsible" data-section="6">
-            <button class="section-header" onclick="toggleSection(6)" aria-expanded="true" aria-controls="section-6">
-                <span class="section-number">6️⃣</span>
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)" aria-expanded="true" aria-controls="section-7">
+                <span class="section-number">7️⃣</span>
                 <span class="section-title">Common Traps</span>
                 <span class="toggle-icon">▼</span>
             </button>
-            <div class="section-content" id="section-6">
+            <div class="section-content" id="section-7">
                 <div class="content-box">
 <ul class="warning-list">
 <li>✘ Putting EB after ZB. The order is PB, EB, ZB, YB.</li>
@@ -261,13 +282,13 @@
                 </div>
             </div>
         </section>
-        <section class="study-section collapsible" data-section="7">
-            <button class="section-header" onclick="toggleSection(7)" aria-expanded="true" aria-controls="section-7">
-                <span class="section-number">7️⃣</span>
-                <span class="section-title">Practice Questions (6)</span>
+        <section class="study-section collapsible" data-section="8">
+            <button class="section-header" onclick="toggleSection(8)" aria-expanded="true" aria-controls="section-8">
+                <span class="section-number">8️⃣</span>
+                <span class="section-title">Practice Questions (7)</span>
                 <span class="toggle-icon">▼</span>
             </button>
-            <div class="section-content" id="section-7">
+            <div class="section-content" id="section-8">
                 <div class="content-box">
                     <div class="mcq-item">
                         <p class="mcq-question"><strong>Q1.</strong> How many bits make one nibble? <span class="badge badge-secondary">easy</span></p>
@@ -353,51 +374,66 @@
                         </div>
                         <button class="btn-show-answer" onclick="showAnswer('q6')">Show Answer</button>
                     </div>
-                </div>
-            </div>
-        </section>
-        <section class="study-section collapsible" data-section="8">
-            <button class="section-header" onclick="toggleSection(8)" aria-expanded="true" aria-controls="section-8">
-                <span class="section-number">8️⃣</span>
-                <span class="section-title">Frequently Asked Questions</span>
-                <span class="toggle-icon">▼</span>
-            </button>
-            <div class="section-content" id="section-8">
-                <div class="content-box">
-                    <h3>Is 1 KB equal to 1000 bytes or 1024 bytes?</h3>
-                    <p>Both conventions exist. Computer awareness questions and the NCERT textbook use 1 KB = 1024 bytes. Under SI rules, kilo means exactly 1000, and the IEC name for 1024 bytes is the kibibyte (KiB). Unless a question says otherwise, answer with 1024.</p>
-                    <h3>What comes after the yottabyte?</h3>
-                    <p>Exam tables, including NCERT&#x27;s, stop at the yottabyte, so YB is the safe answer for the largest unit. Learn the eight-step order KB, MB, GB, TB, PB, EB, ZB, YB and its powers of 2 rather than names beyond it.</p>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q7.</strong> Which SI prefix, added in 2022, stands for 10^30? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q7" value="a"> (a) ronna</label>
+                            <label><input type="radio" name="q7" value="b"> (b) quetta</label>
+                            <label><input type="radio" name="q7" value="c"> (c) yotta</label>
+                            <label><input type="radio" name="q7" value="d"> (d) zetta</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q7">
+                            <p><strong>✅ Answer:</strong> (b) quetta</p>
+                            <p><strong>💡 Explanation:</strong> The 27th CGPM in 2022 added ronna (10^27) and quetta (10^30). Yotta is 10^24 and zetta 10^21.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q7')">Show Answer</button>
+                    </div>
                 </div>
             </div>
         </section>
         <section class="study-section collapsible" data-section="9">
             <button class="section-header" onclick="toggleSection(9)" aria-expanded="true" aria-controls="section-9">
                 <span class="section-number">9️⃣</span>
-                <span class="section-title">Sources and Review</span>
+                <span class="section-title">Frequently Asked Questions</span>
                 <span class="toggle-icon">▼</span>
             </button>
             <div class="section-content" id="section-9">
                 <div class="content-box">
-                    <ul class="bullet-list">
-                        <li><a href="https://ncert.nic.in/textbook/pdf/kecs101.pdf" rel="noopener">Computer Science Class XI, Chapter 1: Computer System</a>, NCERT (accessed 2026-10-27). Used for: bit, nibble and byte; Table 1.1 measurement units KB to YB (each 1024 times the previous).</li>
-                        <li><a href="https://ncert.nic.in/textbook/pdf/lecs111.pdf" rel="noopener">Computer Science Class XII, Chapter 11: Data Communication</a>, NCERT (accessed 2026-10-27). Used for: data transfer rate units (Kbps to Tbps) and the Mbps vs MBps note.</li>
-                        <li><a href="https://physics.nist.gov/cuu/Units/binary.html" rel="noopener">Prefixes for binary multiples</a>, National Institute of Standards and Technology (NIST), Physics Laboratory (accessed 2026-10-27). Used for: IEC binary prefixes (kibi, mebi, gibi ...), 1 MB = 10^6 B in SI versus 1 MiB = 2^20 B.</li>
-                    </ul>
-                    <div class="highlight-box">
-                        <p><strong>How this page was prepared.</strong> Drafted with AI assistance (Claude (Anthropic AI model)) from the sources listed above. 7 calculations on this page were recomputed by software and matched. Automated checks also covered structure, internal links and duplicate text. Software checks cannot confirm facts. Reviewed by praveenkumar on 2026-10-29 against the sources listed above.</p>
-                        <p>Found an error? <a href="../../contact.html">Report it</a> and we will correct the page.</p>
-                    </div>
+                    <h3>Is 1 KB equal to 1000 bytes or 1024 bytes?</h3>
+                    <p>Both conventions exist. Computer awareness questions and the NCERT textbook use 1 KB = 1024 bytes. Under SI rules, kilo means exactly 1000, and the IEC name for 1024 bytes is the kibibyte (KiB). Unless a question says otherwise, answer with 1024.</p>
+                    <h3>What comes after the yottabyte?</h3>
+                    <p>NCERT&#x27;s table stops at the yottabyte, so YB is the largest unit for exam questions. Beyond it, the SI added ronna (10^27) and quetta (10^30) in 2022, giving the ronnabyte (RB) and quettabyte (QB) as decimal units.</p>
                 </div>
             </div>
         </section>
         <section class="study-section collapsible" data-section="10">
             <button class="section-header" onclick="toggleSection(10)" aria-expanded="true" aria-controls="section-10">
                 <span class="section-number">🔟</span>
-                <span class="section-title">Related Pages</span>
+                <span class="section-title">Sources and Review</span>
                 <span class="toggle-icon">▼</span>
             </button>
             <div class="section-content" id="section-10">
+                <div class="content-box">
+                    <ul class="bullet-list">
+                        <li><a href="https://ncert.nic.in/textbook/pdf/kecs101.pdf" rel="noopener">Computer Science Class XI, Chapter 1: Computer System</a>, NCERT (accessed 2026-10-27). Used for: bit, nibble and byte; Table 1.1 measurement units KB to YB (each 1024 times the previous).</li>
+                        <li><a href="https://ncert.nic.in/textbook/pdf/lecs111.pdf" rel="noopener">Computer Science Class XII, Chapter 11: Data Communication</a>, NCERT (accessed 2026-10-27). Used for: data transfer rate units (Kbps to Tbps) and the Mbps vs MBps note.</li>
+                        <li><a href="https://physics.nist.gov/cuu/Units/binary.html" rel="noopener">Prefixes for binary multiples</a>, National Institute of Standards and Technology (NIST), Physics Laboratory (accessed 2026-10-27). Used for: IEC binary prefixes (kibi, mebi, gibi ...), 1 MB = 10^6 B in SI versus 1 MiB = 2^20 B.</li>
+                        <li><a href="https://www.bipm.org/en/cgpm-2022/resolution-3" rel="noopener">Resolution 3 of the 27th CGPM (2022): On the extension of the range of SI prefixes</a>, Bureau International des Poids et Mesures (BIPM) (accessed 2026-11-10). Used for: SI prefixes ronna (R, 10^27), quetta (Q, 10^30), ronto and quecto added in 2022, partly for data science.</li>
+                    </ul>
+                    <div class="highlight-box">
+                        <p><strong>How this page was prepared.</strong> Drafted with AI assistance (Claude (Anthropic AI model)) from the sources listed above. 9 calculations on this page were recomputed by software and matched. Automated checks also covered structure, internal links and duplicate text. Software checks cannot confirm facts. </p>
+                        <p>Found an error? <a href="../../contact.html">Report it</a> and we will correct the page.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="11">
+            <button class="section-header" onclick="toggleSection(11)" aria-expanded="true" aria-controls="section-11">
+                <span class="section-number">11.</span>
+                <span class="section-title">Related Pages</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-11">
                 <div class="content-box">
                     <ul class="bullet-list">
                         <li><a href="../science-tech/computer-and-it-fundamentals.html">💻 Computer &amp; IT Fundamentals</a></li>
@@ -414,9 +450,8 @@
         </section>
 
         <div class="page-navigation">
-            <a href="malware-types.html" class="nav-btn">← Types of Malware: Virus, Worm, Trojan, Ransomware, Spyware, Adware and Keylogger, With How Each Spreads</a>
-            <a href="index.html" class="nav-btn">↑ Computer Awareness</a>
-            <a href="ms-word-shortcuts.html" class="nav-btn">MS Word Shortcut Keys: Frequently Used Ctrl Shortcuts, Paragraph Alignment, Find and Replace, and Function Keys F1 to F12 →</a>
+            <a href="upi-and-digital-payment-systems.html" class="nav-btn">← NEFT, RTGS, IMPS and UPI Compared: Who Runs Them, Timings, Limits and Settlement</a>
+            <a href="index.html" class="nav-btn">Computer Awareness →</a>
         </div>
     </main>
 

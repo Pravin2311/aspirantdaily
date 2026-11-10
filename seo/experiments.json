@@ -1854,5 +1854,26 @@
     "confounders": "Most impressions come from anonymised queries, so the visible 'formula' queries may not represent them. Pages are in 2026-10-28-study-series-nav; pipeline reshuffles prev/next links.",
     "next_action": "On 2026-12-08 compare CTR and clicks with the baseline; if CTR is still under 1% at position <= 10, check the SERP for a featured snippet or image pack.",
     "holds_back": false
+  },
+  {
+    "id": "2026-11-10-memory-units-after-yb",
+    "date": "2026-11-10",
+    "commits": [],
+    "pages_regex": "^/study/computer/memory-units-bit-to-yottabyte\\.html$",
+    "change": "Added a section 'What Comes After YB? 1024 YB and the New SI Prefixes' (1024 YB = 2^90 bytes; ronna R 10^27 and quetta Q 10^30 added by the 27th CGPM in 2022, sourced to BIPM Resolution 3), rewrote the FAQ answer, added one MCQ. Title and description unchanged.",
+    "hypothesis": "Search Console shows the page for '1024 yb is equal to', '1yb is equal to', 'what is after yb' and 'kb mb gb tb pb eb zb yb' at positions 8-11 with 0 clicks; the page did not answer what comes after YB. Answering it should improve position and earn clicks for that cluster.",
+    "metric": "clicks",
+    "secondary_metrics": [
+      "impressions",
+      "position",
+      "ctr"
+    ],
+    "baseline": "GSC domain property 28d 2026-10-12..2026-11-08: page 107 impressions, avg position 8.3, 0 clicks; '1024 yb is equal to' 7 impr pos 10.1, '1024 yb' 3 pos 9.7, '1yb is equal to' 2 pos 11, 'what is after yb' 1 pos 9.",
+    "window_days": 28,
+    "evaluate_after": "2026-12-08",
+    "status": "running",
+    "confounders": "Very low volume; pipeline re-render also reshuffled prev/next links in the computer series.",
+    "next_action": "On 2026-12-08 check position for the 'yb' query cluster and clicks; low volume means a directional read only.",
+    "holds_back": false
   }
 ]
