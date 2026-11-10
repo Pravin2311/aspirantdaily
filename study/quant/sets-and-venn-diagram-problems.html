@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venn Diagram Problems with 3 Sets: Formula and Tricks</title>
+    <meta name="description" content="Venn diagram set problems for SSC and bank exams: two- and three-set formulas, only, exactly two and at least questions, minimum overlap and 7 worked examples.">
+    <meta name="keywords" content="venn diagram problems with three sets, n(a union b union c) formula, exactly two sets formula, venn diagram questions for ssc, minimum overlap venn diagram, sets problems quantitative aptitude">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.aspirantdaily.com/study/quant/sets-and-venn-diagram-problems.html">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.aspirantdaily.com/study/quant/sets-and-venn-diagram-problems.html">
+    <meta property="og:title" content="Venn Diagram Problems with 3 Sets: Formula and Tricks">
+    <meta property="og:description" content="Venn diagram set problems for SSC and bank exams: two- and three-set formulas, only, exactly two and at least questions, minimum overlap and 7 worked examples.">
+    <meta property="og:image" content="https://www.aspirantdaily.com/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Venn Diagram Problems with Two and Three Sets: Formulas, Exactly-Two Shortcut and Minimum Overlap",
+  "description": "Venn diagram set problems for SSC and bank exams: two- and three-set formulas, only, exactly two and at least questions, minimum overlap and 7 worked examples.",
+  "image": "https://www.aspirantdaily.com/og-image.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "url": "https://www.aspirantdaily.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AspirantDaily",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.aspirantdaily.com/icons/icon-512.png"
+    }
+  },
+  "datePublished": "2026-11-10",
+  "dateModified": "2026-11-10",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.aspirantdaily.com/study/quant/sets-and-venn-diagram-problems.html"
+  },
+  "articleSection": "Quantitative Aptitude",
+  "citation": []
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.aspirantdaily.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Study Notes",
+      "item": "https://www.aspirantdaily.com/study/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Quantitative Aptitude",
+      "item": "https://www.aspirantdaily.com/study/quant/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Venn Diagram Problems with Two and Three Sets: Formulas, Exactly-Two Shortcut and Minimum Overlap",
+      "item": "https://www.aspirantdaily.com/study/quant/sets-and-venn-diagram-problems.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the formula for three sets in a Venn diagram?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "n(A ∪ B ∪ C) = n(A) + n(B) + n(C) − n(A ∩ B) − n(B ∩ C) − n(A ∩ C) + n(A ∩ B ∩ C): add the singles, subtract the pairs, add the triple."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I find the number in exactly two sets?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Subtract the all-three figure from each pairwise overlap and add the three results. Without pairwise data, use: sum of set totals − at least one = exactly two + 2 × all three."
+      }
+    }
+  ]
+}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css?v=2">
+    <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-51XLJE4TVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-51XLJE4TVH');
+  </script>
+  <script>/* AdSense only on the production host (not localhost or preview deployments) */(function(){if(location.hostname!=="www.aspirantdaily.com")return;var a=document.createElement("script");a.async=true;a.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7495143337429327";a.crossOrigin="anonymous";document.head.appendChild(a);var b=document.createElement("script");b.src="/ads.js";document.head.appendChild(b);})();</script>
+</head>
+<body class="study-page subject-quant">
+    <nav class="study-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Quantitative Aptitude</a>
+            <div class="nav-controls">
+                <button onclick="toggleAllSections()" class="btn-secondary">Expand/Collapse All</button>
+                <button onclick="window.print()" class="btn-primary">📄 Print/Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> / <a href="../index.html">Study Notes</a> / <a href="index.html">Quantitative Aptitude</a> / <span>Venn Diagram Problems with Two and Three Sets: Formulas, Exactly-Two Shortcut and Minimum Overlap</span>
+            </div>
+            <h1>Venn Diagram Problems with Two and Three Sets: Formulas, Exactly-Two Shortcut and Minimum Overlap</h1>
+            <p class="page-subtitle">Two-set formula • Three-set formula • Seven regions • Exactly-two shortcut • Maximum and minimum overlap • Percentages</p>
+            <div class="page-meta">
+                <span class="badge badge-secondary">SSC</span>
+                <span class="badge badge-secondary">Banking</span>
+                <span class="badge badge-secondary">Railway</span>
+                <span class="badge badge-secondary">📅 Last updated: 2026-11-10</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="study-section collapsible" data-section="1">
+            <button class="section-header" onclick="toggleSection(1)" aria-expanded="true" aria-controls="section-1">
+                <span class="section-number">1️⃣</span>
+                <span class="section-title">Two Sets: The Formula Every Question Starts From</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-1">
+                <div class="content-box">
+<p>Set questions in SSC and bank exams usually describe a survey: so many people like tea, so many like coffee, some like both and some like neither. Every one of them rests on one counting rule. When you add the two groups, the people in both get counted twice, so you take them out once:</p>
+<p><strong>n(A ∪ B) = n(A) + n(B) − n(A ∩ B)</strong></p>
+<p>Here n(A ∪ B) is the number in at least one set and n(A ∩ B) the number in both. Anyone outside both sets is "neither", so <strong>total = n(A ∪ B) + neither</strong>.</p>
+<div class="case-study">
+<h4>Worked example 1: tea and coffee</h4>
+<p>In a group of 60, 35 like tea, 30 like coffee and 10 like neither. How many like both?</p>
+<p>At least one = 60 − 10 = 50. Both = 35 + 30 − 50 = <strong>15</strong>.</p>
+</div>
+<p>Once you know "both", the rest follows: tea only = 35 − 15 = 20 and coffee only = 30 − 15 = 15.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="2">
+            <button class="section-header" onclick="toggleSection(2)" aria-expanded="true" aria-controls="section-2">
+                <span class="section-number">2️⃣</span>
+                <span class="section-title">Three Sets: The Inclusion-Exclusion Formula</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-2">
+                <div class="content-box">
+<p>With three sets A, B and C, adding the three totals counts the pairwise overlaps twice, so you subtract them. That removes the centre (people in all three) once too often, so you add it back:</p>
+<p><strong>n(A ∪ B ∪ C) = n(A) + n(B) + n(C) − n(A ∩ B) − n(B ∩ C) − n(A ∩ C) + n(A ∩ B ∩ C)</strong></p>
+<p>Read it as: add the singles, subtract the pairs, add the triple. The same pattern continues for four sets, but exam questions stop at three.</p>
+<div class="case-study">
+<h4>Worked example 2: three languages</h4>
+<p>Of 100 students, 50 study Hindi, 45 English and 40 Maths. 20 study Hindi and English, 15 English and Maths, 18 Hindi and Maths, and 8 study all three. How many study none?</p>
+<p>At least one = 50 + 45 + 40 − 20 − 15 − 18 + 8 = <strong>90</strong>, so none = 100 − 90 = <strong>10</strong>.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="3">
+            <button class="section-header" onclick="toggleSection(3)" aria-expanded="true" aria-controls="section-3">
+                <span class="section-number">3️⃣</span>
+                <span class="section-title">The Seven Regions and What Each Question Asks</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-3">
+                <div class="content-box">
+<p>Three overlapping circles split into seven regions. Label them once and every "only", "exactly" and "at least" question becomes a matter of adding the right regions.</p>
+<div class="table-wrap"><table class="data-table">
+<thead><tr><th>Phrase in the question</th><th>Regions to add</th></tr></thead>
+<tbody>
+<tr><td>Only A</td><td>A, minus everything it shares with B or C</td></tr>
+<tr><td>Exactly one set</td><td>only A + only B + only C</td></tr>
+<tr><td>Exactly two sets</td><td>the three "pair only" regions (each pair minus the centre)</td></tr>
+<tr><td>All three</td><td>the centre</td></tr>
+<tr><td>At least two</td><td>exactly two + all three</td></tr>
+<tr><td>At least one</td><td>all seven regions, n(A ∪ B ∪ C)</td></tr>
+<tr><td>None</td><td>total − at least one</td></tr>
+</tbody></table></div>
+<p>The key move is to <strong>fill the diagram from the centre outwards</strong>. Write the "all three" number first, subtract it from each pairwise figure to get the "pair only" regions, then subtract from each set total to get the "only" regions.</p>
+<div class="case-study">
+<h4>Worked example 3: filling the regions</h4>
+<p>Take the numbers from example 2. Centre = 8. Pair-only regions: Hindi-English 20 − 8 = 12, English-Maths 15 − 8 = 7, Hindi-Maths 18 − 8 = 10. So <strong>exactly two = 29</strong>.</p>
+<p>Only Hindi = 50 − 12 − 10 − 8 = 20. Only English = 45 − 12 − 7 − 8 = 18. Only Maths = 40 − 7 − 10 − 8 = 15. So <strong>exactly one = 53</strong>.</p>
+<p>Check: 53 + 29 + 8 = 90, the same "at least one" figure as before.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="4">
+            <button class="section-header" onclick="toggleSection(4)" aria-expanded="true" aria-controls="section-4">
+                <span class="section-number">4️⃣</span>
+                <span class="section-title">The Exactly-Two Shortcut</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-4">
+                <div class="content-box">
+<p>Some questions do not give the pairwise overlaps at all. They give the three set totals, the number in at least one set and the number in all three, and ask for "exactly two". Two facts settle it:</p>
+<ul>
+<li>Sum of set totals = (exactly one) + 2 × (exactly two) + 3 × (all three), because a person in two sets is counted twice and a person in three sets three times.</li>
+<li>At least one = (exactly one) + (exactly two) + (all three).</li>
+</ul>
+<p>Subtracting the second from the first gives <strong>sum of totals − at least one = (exactly two) + 2 × (all three)</strong>.</p>
+<div class="case-study">
+<h4>Worked example 4: no pairwise data</h4>
+<p>Three clubs have 60, 50 and 40 members. 100 people belong to at least one club and 10 belong to all three. How many belong to exactly two?</p>
+<p>Sum of totals = 150. Then 150 − 100 = exactly two + 2 × 10, so exactly two = 50 − 20 = <strong>30</strong>.</p>
+</div>
+<p>From there, exactly one = 100 − 30 − 10 = 60.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="5">
+            <button class="section-header" onclick="toggleSection(5)" aria-expanded="true" aria-controls="section-5">
+                <span class="section-number">5️⃣</span>
+                <span class="section-title">Maximum and Minimum Overlap</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-5">
+                <div class="content-box">
+<p>A favourite twist asks for the least or greatest possible overlap. Treat it as a squeeze on the total.</p>
+<ul>
+<li><strong>Least overlap of two sets:</strong> n(A) + n(B) − total, if that is positive; otherwise zero.</li>
+<li><strong>Greatest overlap of two sets:</strong> the smaller of n(A) and n(B).</li>
+<li><strong>Least number in all three:</strong> n(A) + n(B) + n(C) − 2 × total, if positive.</li>
+</ul>
+<div class="case-study">
+<h4>Worked example 5: least overlap</h4>
+<p>Out of 100 people, 70 read newspaper P and 60 read newspaper Q. At least how many read both? 70 + 60 − 100 = <strong>30</strong>. At most 60 can read both.</p>
+</div>
+<div class="case-study">
+<h4>Worked example 6: least in all three</h4>
+<p>Out of 100 students, 70 passed Physics, 75 Chemistry and 80 Maths. At least how many passed all three? 70 + 75 + 80 − 2 × 100 = <strong>25</strong>.</p>
+</div>
+<p>Why the 2 × total? Each of the 100 students can "absorb" at most two of the passes without being in all three, so at most 200 passes can sit outside the centre. The remaining 225 − 200 = 25 must belong to students who passed all three.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="6">
+            <button class="section-header" onclick="toggleSection(6)" aria-expanded="true" aria-controls="section-6">
+                <span class="section-number">6️⃣</span>
+                <span class="section-title">Percentage Versions</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-6">
+                <div class="content-box">
+<p>The same formulas work with percentages. Treat the whole group as 100%.</p>
+<div class="case-study">
+<h4>Worked example 7: failed in both</h4>
+<p>In an exam, 35% failed English, 25% failed Maths and 10% failed both. What percentage passed both?</p>
+<p>Failed at least one = 35 + 25 − 10 = 50%. Passed both = 100 − 50 = <strong>50%</strong>.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="7">
+            <button class="section-header" onclick="toggleSection(7)" aria-expanded="true" aria-controls="section-7">
+                <span class="section-number">7️⃣</span>
+                <span class="section-title">Common Traps</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-7">
+                <div class="content-box">
+<ul class="warning-list">
+<li>✘ Reading "20 like tea and coffee" as "20 like only tea and coffee". Pairwise figures normally include the people in all three sets; subtract the centre first.</li>
+<li>✘ Forgetting the "neither" group. The union is the total minus those in no set, not the total itself.</li>
+<li>✘ Adding back the triple overlap twice. In the three-set formula it is added once.</li>
+<li>✘ Mixing "exactly two" with "at least two". At least two includes the centre.</li>
+<li>✘ Giving a negative answer to a minimum-overlap question. If n(A) + n(B) is less than the total, the least overlap is zero.</li>
+</ul>
+<p>For diagram-choice questions (which figure shows doctors, women and mothers), see <a href="../reasoning/venn-diagram-reasoning.html">Venn diagram reasoning</a>. Two-subject pass and fail problems are worked in <a href="passing-marks-percentage.html">passing marks percentage</a>.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="8">
+            <button class="section-header" onclick="toggleSection(8)" aria-expanded="true" aria-controls="section-8">
+                <span class="section-number">8️⃣</span>
+                <span class="section-title">Practice Questions (6)</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-8">
+                <div class="content-box">
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q1.</strong> In a group of 80, 40 like cricket, 35 like football and 15 like neither. How many like both? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q1" value="a"> (a) 5</label>
+                            <label><input type="radio" name="q1" value="b"> (b) 10</label>
+                            <label><input type="radio" name="q1" value="c"> (c) 15</label>
+                            <label><input type="radio" name="q1" value="d"> (d) 20</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q1">
+                            <p><strong>✅ Answer:</strong> (b) 10</p>
+                            <p><strong>💡 Explanation:</strong> At least one = 80 − 15 = 65. Both = 40 + 35 − 65 = 10.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q1')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q2.</strong> 30 people read A, 25 read B and 20 read C. 10 read A and B, 8 read B and C, 6 read A and C, and 4 read all three. How many read at least one? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q2" value="a"> (a) 51</label>
+                            <label><input type="radio" name="q2" value="b"> (b) 55</label>
+                            <label><input type="radio" name="q2" value="c"> (c) 59</label>
+                            <label><input type="radio" name="q2" value="d"> (d) 75</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q2">
+                            <p><strong>✅ Answer:</strong> (b) 55</p>
+                            <p><strong>💡 Explanation:</strong> Inclusion-exclusion: 30 + 25 + 20 − 10 − 8 − 6 + 4 = 55.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q2')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q3.</strong> Using the same data (A and B 10, B and C 8, A and C 6, all three 4), how many read exactly two papers? <span class="badge badge-secondary">medium</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q3" value="a"> (a) 24</label>
+                            <label><input type="radio" name="q3" value="b"> (b) 20</label>
+                            <label><input type="radio" name="q3" value="c"> (c) 16</label>
+                            <label><input type="radio" name="q3" value="d"> (d) 12</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q3">
+                            <p><strong>✅ Answer:</strong> (d) 12</p>
+                            <p><strong>💡 Explanation:</strong> Subtract the centre from each pair: 6 + 4 + 2 = 12.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q3')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q4.</strong> Three sets have 50, 40 and 30 members. 90 people are in at least one set and 10 are in all three. How many are in exactly two sets? <span class="badge badge-secondary">hard</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q4" value="a"> (a) 10</label>
+                            <label><input type="radio" name="q4" value="b"> (b) 20</label>
+                            <label><input type="radio" name="q4" value="c"> (c) 30</label>
+                            <label><input type="radio" name="q4" value="d"> (d) 40</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q4">
+                            <p><strong>✅ Answer:</strong> (a) 10</p>
+                            <p><strong>💡 Explanation:</strong> Sum of totals − at least one = exactly two + 2 × all three: 120 − 90 = 30 = exactly two + 20, so exactly two = 10.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q4')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q5.</strong> Of 100 students, 80 passed English, 85 Hindi and 90 Maths. At least how many passed all three? <span class="badge badge-secondary">hard</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q5" value="a"> (a) 45</label>
+                            <label><input type="radio" name="q5" value="b"> (b) 50</label>
+                            <label><input type="radio" name="q5" value="c"> (c) 55</label>
+                            <label><input type="radio" name="q5" value="d"> (d) 60</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q5">
+                            <p><strong>✅ Answer:</strong> (c) 55</p>
+                            <p><strong>💡 Explanation:</strong> Least in all three = 80 + 85 + 90 − 2 × 100 = 55.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q5')">Show Answer</button>
+                    </div>
+                    <div class="mcq-item">
+                        <p class="mcq-question"><strong>Q6.</strong> 40% of students failed Science, 30% failed Maths and 15% failed both. What percentage passed both? <span class="badge badge-secondary">easy</span></p>
+                        <div class="mcq-options">
+                            <label><input type="radio" name="q6" value="a"> (a) 30%</label>
+                            <label><input type="radio" name="q6" value="b"> (b) 45%</label>
+                            <label><input type="radio" name="q6" value="c"> (c) 55%</label>
+                            <label><input type="radio" name="q6" value="d"> (d) 70%</label>
+                        </div>
+                        <div class="mcq-answer" id="answer-q6">
+                            <p><strong>✅ Answer:</strong> (b) 45%</p>
+                            <p><strong>💡 Explanation:</strong> Failed at least one = 40 + 30 − 15 = 55%, so 100 − 55 = 45% passed both.</p>
+                        </div>
+                        <button class="btn-show-answer" onclick="showAnswer('q6')">Show Answer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="9">
+            <button class="section-header" onclick="toggleSection(9)" aria-expanded="true" aria-controls="section-9">
+                <span class="section-number">9️⃣</span>
+                <span class="section-title">Frequently Asked Questions</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-9">
+                <div class="content-box">
+                    <h3>What is the formula for three sets in a Venn diagram?</h3>
+                    <p>n(A ∪ B ∪ C) = n(A) + n(B) + n(C) − n(A ∩ B) − n(B ∩ C) − n(A ∩ C) + n(A ∩ B ∩ C): add the singles, subtract the pairs, add the triple.</p>
+                    <h3>How do I find the number in exactly two sets?</h3>
+                    <p>Subtract the all-three figure from each pairwise overlap and add the three results. Without pairwise data, use: sum of set totals − at least one = exactly two + 2 × all three.</p>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="10">
+            <button class="section-header" onclick="toggleSection(10)" aria-expanded="true" aria-controls="section-10">
+                <span class="section-number">🔟</span>
+                <span class="section-title">Sources and Review</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-10">
+                <div class="content-box">
+                    <p>All problems and solutions on this page are original. No outside facts are relied on; every numeric answer is recomputed by software before publishing.</p>
+                    <div class="highlight-box">
+                        <p><strong>How this page was prepared.</strong> Drafted with AI assistance (Claude (Anthropic AI model)) from the sources listed above. 14 calculations on this page were recomputed by software and matched. Automated checks also covered structure, internal links and duplicate text. Software checks cannot confirm facts. </p>
+                        <p>Found an error? <a href="../../contact.html">Report it</a> and we will correct the page.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="study-section collapsible" data-section="11">
+            <button class="section-header" onclick="toggleSection(11)" aria-expanded="true" aria-controls="section-11">
+                <span class="section-number">11.</span>
+                <span class="section-title">Related Pages</span>
+                <span class="toggle-icon">▼</span>
+            </button>
+            <div class="section-content" id="section-11">
+                <div class="content-box">
+                    <ul class="bullet-list">
+                        <li><a href="../../repeated-questions/quant-cheat-code.html">Quant Cheat Code: 20 Must-Know Shortcuts &amp; Formulas</a></li>
+                        <li><a href="algebraic-identities.html">Algebraic Identities for SSC: List and Uses</a></li>
+                        <li><a href="x-plus-1-by-x-problems.html">x + 1/x Problems: Finding x² + 1/x² and x³ + 1/x³</a></li>
+                        <li><a href="linear-equations-word-problems.html">Linear Equations: Two-Variable Word Problems</a></li>
+                        <li><a href="quadratic-equations-bank-exams.html">Quadratic Equations for Bank Exams: Comparing x and y</a></li>
+                        <li><a href="polynomials-remainder-theorem.html">Polynomials: Remainder and Factor Theorems</a></li>
+                        <li><a href="logarithm-rules.html">Logarithm Rules and Problems</a></li>
+                        <li><a href="arithmetic-geometric-progression.html">AP and GP: nth Term and Sum Formulas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="page-navigation">
+            <a href="x-plus-1-by-x-problems.html" class="nav-btn">← x + 1/x Problems: From x + 1/x to x² + 1/x², x³ + 1/x³ and Beyond</a>
+            <a href="index.html" class="nav-btn">Quantitative Aptitude →</a>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>Subject: Quantitative Aptitude | Sources are listed on this page. <a href="../../contact.html">Report an error</a>.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts.js"></script>
+</body>
+</html>
