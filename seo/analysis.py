@@ -579,9 +579,29 @@ def gsc_page_regex(regex):
     return "^https?://[^/]+" + regex[1:] if regex.startswith("^/") else regex
 
 
+GSC_REGEX_MAX = 1000  # longer expressions make Search Console return HTTP 500
+
+
 def window_daily(gsc, site, regex, start, end):
-    rows = gsc.query(site, start, end, ["date"],
-                     filters=[{"dimension": "page", "operator": "includingRegex", "expression": gsc_page_regex(regex)}])
+    # Search Console uses RE2 (no lookarounds) and rejects very long expressions, so those
+    # experiments are filtered here from date x page rows instead.
+    if len(regex) <= GSC_REGEX_MAX and "(?" not in regex:
+        return gsc.query(site, start, end, ["date"],
+                         filters=[{"dimension": "page", "operator": "includingRegex", "expression": gsc_page_regex(regex)}])
+    pat = re.compile(gsc_page_regex(regex))
+    by_date = {}
+    for r in gsc.query(site, start, end, ["date", "page"]):
+        if not pat.search(r["page"]):
+            continue
+        d = by_date.setdefault(r["date"], {"date": r["date"], "clicks": 0, "impressions": 0, "pos_w": 0.0})
+        d["clicks"] += r["clicks"]
+        d["impressions"] += r["impressions"]
+        d["pos_w"] += r["position"] * r["impressions"]
+    rows = []
+    for d in sorted(by_date.values(), key=lambda x: x["date"]):
+        imp = d["impressions"]
+        rows.append({"date": d["date"], "clicks": d["clicks"], "impressions": imp,
+                     "ctr": d["clicks"] / imp if imp else 0.0, "position": d["pos_w"] / imp if imp else 0.0})
     return rows
 
 
