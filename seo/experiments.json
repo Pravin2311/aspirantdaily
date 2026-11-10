@@ -685,5 +685,26 @@
     "confounders": "Google may show the table itself in the results page, so zero clicks may persist whatever the title. Page is also in 2026-10-28-study-series-nav (74 pages). Low volume.",
     "next_action": "On 2026-12-05 compare clicks and CTR for the cluster; if still 0 with position <= 3, treat it as a SERP-feature query and stop spending effort on it.",
     "holds_back": false
+  },
+  {
+    "id": "2026-11-10-zero-click-retitles",
+    "date": "2026-11-10",
+    "commits": [],
+    "pages_regex": "^/study/(reasoning/(dice-problems|calendar-odd-days)|quant/(polygon-angles|standard-deviation-variance)|polity/(election-of-president|ordinance-making-power-article-123))\\.html$",
+    "change": "Titles reworded to the searchers' own words (6 pages); descriptions also reworded on election-of-president and ordinance-making-power-article-123. Body unchanged. dice: 'Dice Problems: Opposite Faces' -> 'Dice Opposite Faces: Standard Dice Rules and Tricks'; calendar: 'Calendar Problems: Odd Days Method' -> 'Odd Days Meaning and Calendar Tricks: Find Any Day'; polygon: 'Interior and Exterior Angles of Polygons' -> 'Interior and Exterior Angles of Polygon: Formulas'; SD: 'Standard Deviation and Variance: Formulas and Shortcuts' -> 'Standard Deviation Shortcut Formula and Variance'; election: 'Election of the President: Electoral College and Vote Value' -> 'Vote Value of MLA and MP in President Election'; ordinance: 'Ordinance-Making Power of the President (Article 123)' -> 'Ordinance Power of the President: Article 123'.",
+    "hypothesis": "Each page had 0 clicks on 50-500 impressions at average position 6-16. Leading with the query wording (opposite faces, odd days meaning, polygon formula, SD shortcut formula, vote value of MLA/MP, ordinance power) should earn first clicks.",
+    "metric": "clicks",
+    "secondary_metrics": [
+      "ctr",
+      "impressions",
+      "position"
+    ],
+    "baseline": "GSC domain property, 28 days 2026-10-12..2026-11-08, www+apex combined: dice-problems 440 impr pos 7.1; calendar-odd-days 359 pos 8.3; polygon-angles 327 pos 16.2; standard-deviation-variance 64 pos 10; election-of-president 57 pos 8; ordinance-making-power-article-123 53 pos 10. All 0 clicks.",
+    "window_days": 28,
+    "evaluate_after": "2026-12-08",
+    "status": "running",
+    "confounders": "Low volumes (SD, election, ordinance under 70 impressions); impressions rising site-wide since late October; quant/reasoning pages are also in 2026-10-28-study-series-nav, and the pipeline reshuffles prev/next links at each publish. dice, calendar and polygon were edited by hand (pipeline refuses hand-edited files).",
+    "next_action": "On 2026-12-08 compare clicks and CTR per page against the baseline; keep titles that earned clicks, and for pages still at 0 clicks with position <= 10 look at the snippet and SERP features instead.",
+    "holds_back": false
   }
 ]
