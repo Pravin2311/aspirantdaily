@@ -1835,7 +1835,9 @@
   {
     "id": "2026-11-10-formula-retitles",
     "date": "2026-11-10",
-    "commits": [],
+    "commits": [
+      "68e12cb"
+    ],
     "pages_regex": "^/study/reasoning/(cube-cutting-and-painting|counting-figures)\\.html$",
     "change": "Titles (title, og:title) reworded to lead with 'formula' wording from queries; body and description unchanged. cube: 'Cube Cutting and Painting' -> 'Cube Cutting Formula: Painted Cube Faces and Number of Cuts'; counting: 'Counting Triangles and Squares in Figures' -> 'How Many Triangles? Counting Figures Formula and Tricks'. Edited by hand (batch-002 is refused by the pipeline as hand-edited); drafts updated to match.",
     "hypothesis": "Both rank around position 8 with near-zero CTR. The visible queries ask for a formula ('cube cutting formula', 'painted cube formula', 'square figure counting formula', 'how many triangles in a square'); a title that promises the formula should earn clicks.",
