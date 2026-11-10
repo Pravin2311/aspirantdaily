@@ -1858,7 +1858,9 @@
   {
     "id": "2026-11-10-memory-units-after-yb",
     "date": "2026-11-10",
-    "commits": [],
+    "commits": [
+      "18ec2f5"
+    ],
     "pages_regex": "^/study/computer/memory-units-bit-to-yottabyte\\.html$",
     "change": "Added a section 'What Comes After YB? 1024 YB and the New SI Prefixes' (1024 YB = 2^90 bytes; ronna R 10^27 and quetta Q 10^30 added by the 27th CGPM in 2022, sourced to BIPM Resolution 3), rewrote the FAQ answer, added one MCQ. Title and description unchanged.",
     "hypothesis": "Search Console shows the page for '1024 yb is equal to', '1yb is equal to', 'what is after yb' and 'kb mb gb tb pb eb zb yb' at positions 8-11 with 0 clicks; the page did not answer what comes after YB. Answering it should improve position and earn clicks for that cluster.",
