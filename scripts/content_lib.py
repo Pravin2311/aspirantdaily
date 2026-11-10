@@ -223,6 +223,7 @@ SOURCES = {
     "ORIG": "Original problems and solutions; every numeric answer is verified by an automated computation check",
     "IEC": "IEC 80000-13 / NIST guidance on binary prefixes (nist.gov)",
     "ISO": "ISO/IEC 7498-1 (OSI reference model)",
+    "ISO4217": "ISO 4217 currency code list, published by the maintenance agency SIX (six-group.com)",
     "IETF": "IETF RFCs for the protocols named (ietf.org)",
     "CERTIN": "CERT-In advisories and glossary (cert-in.org.in)",
     "MSDOC": "Microsoft Support documentation (support.microsoft.com)",
