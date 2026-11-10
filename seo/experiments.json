@@ -689,7 +689,9 @@
   {
     "id": "2026-11-10-zero-click-retitles",
     "date": "2026-11-10",
-    "commits": [],
+    "commits": [
+      "f1d9475"
+    ],
     "pages_regex": "^/study/(reasoning/(dice-problems|calendar-odd-days)|quant/(polygon-angles|standard-deviation-variance)|polity/(election-of-president|ordinance-making-power-article-123))\\.html$",
     "change": "Titles reworded to the searchers' own words (6 pages); descriptions also reworded on election-of-president and ordinance-making-power-article-123. Body unchanged. dice: 'Dice Problems: Opposite Faces' -> 'Dice Opposite Faces: Standard Dice Rules and Tricks'; calendar: 'Calendar Problems: Odd Days Method' -> 'Odd Days Meaning and Calendar Tricks: Find Any Day'; polygon: 'Interior and Exterior Angles of Polygons' -> 'Interior and Exterior Angles of Polygon: Formulas'; SD: 'Standard Deviation and Variance: Formulas and Shortcuts' -> 'Standard Deviation Shortcut Formula and Variance'; election: 'Election of the President: Electoral College and Vote Value' -> 'Vote Value of MLA and MP in President Election'; ordinance: 'Ordinance-Making Power of the President (Article 123)' -> 'Ordinance Power of the President: Article 123'.",
     "hypothesis": "Each page had 0 clicks on 50-500 impressions at average position 6-16. Leading with the query wording (opposite faces, odd days meaning, polygon formula, SD shortcut formula, vote value of MLA/MP, ordinance power) should earn first clicks.",
